@@ -1,1 +1,1 @@
-# -dis8645-2025-2-proyectos
+# dis8645-2025-2-proyectos
