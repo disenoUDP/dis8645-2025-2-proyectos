@@ -33,7 +33,13 @@ Un teléfono de auxilio que se queja y desahoga cuando tu lo llames
 
 ### "Espacio, tiempo y esencia desde un enfoque orientado a objetos"
 
-Capítulo N°8 del libro mencionado en las observaciones.
+Capítulo N°8 del libro mencionado en las observaciones. Según Harman, el tiempo y el espacio son inseparables de la experiencia de vivir para los humanos. Pese a la importancia de las discusiones de dichos tópicos, es que el autor propone el relegarlos al segundo plano al centrarse en el estudio de la "estructura de los objetos". 
+En un inicio se define al "espacio" como el mundo material, todo aquello conocido y por conocer, desde lo local hasta lo universal y más allá.
+En cuanto al tiempo viene a ser una medida de medición, la cual incluye el presente, el pasado y el futuro, conceptos que se le asocia la idea de lo remoto (distante). 
+
+Se destaca la frase "el espacio y el tiempo de todos los días contienen misterios abundantes, por más que el sentido común a menudo los amortigue". Por ello no son sorprendes cosas que son de nuestro "saber" o se pueden presenciar con la imaginación. Hechos que a veces son maravillosos a través de los ojos de un filosofo, pues son los estímulos más claros y básicos que tenemos. En la juventud el hacerse preguntas fuera de los limites del entendimiento humano nos sirve para comprender aquellos conceptos, puesto que sería maravilloso "ver" si existe un inicio o un final para poder moldear nuestras ideas ante posibilidades inpensables. Tales ideas se manifiestan en cosas como el tiempo, lo que lelva a imaginarnos las posibilidades de atravesar distintas épocas y adentrarnos en lo desconocido. 
+
+Harman busca el poder mostrar que el origen del espacio y el tiempo proviende de los objetos en si mismos, independiente que estos primeros posean alguna relación o no. Al tener un enfoque en el concepto de objetos dentro de la filosofía es que se suele limitar al tratarlo como parte de la relación sujeto-objeto, relegando las relaciones de los objetos entre si o con otros conceptos a otras disciplinas. Continuando con la lectura, el ensayo nos porpone una tensión ocurrente entre 3 elementos: los objetos y sus accidentes, sus relaciones y cualidades. En este sentido, un objeto 
 
 
 ***
