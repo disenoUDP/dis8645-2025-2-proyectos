@@ -32,6 +32,40 @@ La referencia que nos dieron en el Discord fue la siguiente:
 
 5. La realidad física no importa. Una montaña no es más o menos objeto que una montaña alucinada.”
 
+El primer objeto que quiero definir sería un burrito, la comida, no el animal.
+
+De buenas a primeras, las características que me imagino son:  
+
+- Enrollado f 
+
+- Relleno l  
+
+- Cilíndrico  
+
+- Comestible  
+
+-  Cálido  
+
+- Agarrable 
+
+- Autocontenido 
+
+- Panta rei, un concepto que se refiere al constante cambio, que yo había conocido por una frase sobre “si un hombre toma una sopa en un restaurante 2 veces, es acaso esta experiencia la misma” donde la respuesta sería no, ya que la sopa no es exactamente la misma, como tampoco lo es el hombre, debido a que también ha cambiado, de esta manera un Burrito es Panta rei, que aunque su relleno sea el mismo, cada mordisco será diferente debido a la cantidad de ingredientes que son consumidos.
+
+- Cultural
+
+- Anarquico, debido a que no se rige a una serie de ingredientes obligatorios, este puede ser rellenado de la manera que más le guste al consumidor, mientras que otros platillos normalmente sigues unas reglas preestablecidas, como podría ser con el lomo salteado por ejemplo.
+
+- Misterioso, debido a que no se puede saber qué es lo que contiene hasta que sea abierto, cortado o mordido, he incluso cuando se observa desde una pequeña apertura, no se tiene la historia completa, debido a que puede haber algún ingrediente no visible o saboreable en esa primera mordida.
+
+- Polifacético ya que contiene las texturas y sabores de todos los ingredientes contenidos dentro de sí, en contraste de algo más directo como podría ser la sal, que sabe salada. 
+
+
+Bibliografía:  
+
+- https://es.wikipedia.org/wiki/Panta_rei
+
+
 ## Encargo 20 “⁠Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.”
 
 Bleh
