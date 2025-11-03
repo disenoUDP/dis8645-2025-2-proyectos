@@ -66,18 +66,18 @@ El objeto es una entidad fatalmente fracturada entre su realidad intima y sus ac
 
 1- Interprete
 2- Oyente (Escucha)
-3- Hablador
+3- Hablador (llamada)
 4- Traspaso
 5- Estático/Quieto
 6- Atractivo
 7- Suave
 8- Tierno
 9- Conectado
-10- Paciente
+10- Paciente (se necesita)
 11- Frío
-12- 
-13-
-14-
+12- Eléctrico
+13- Gritón
+14- 
 15-
 
 
