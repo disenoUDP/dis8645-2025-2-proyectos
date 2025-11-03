@@ -39,8 +39,15 @@ En cuanto al tiempo viene a ser una medida de medición, la cual incluye el pres
 
 Se destaca la frase "el espacio y el tiempo de todos los días contienen misterios abundantes, por más que el sentido común a menudo los amortigue". Por ello no son sorprendes cosas que son de nuestro "saber" o se pueden presenciar con la imaginación. Hechos que a veces son maravillosos a través de los ojos de un filosofo, pues son los estímulos más claros y básicos que tenemos. En la juventud el hacerse preguntas fuera de los limites del entendimiento humano nos sirve para comprender aquellos conceptos, puesto que sería maravilloso "ver" si existe un inicio o un final para poder moldear nuestras ideas ante posibilidades inpensables. Tales ideas se manifiestan en cosas como el tiempo, lo que lelva a imaginarnos las posibilidades de atravesar distintas épocas y adentrarnos en lo desconocido. 
 
-Harman busca el poder mostrar que el origen del espacio y el tiempo proviende de los objetos en si mismos, independiente que estos primeros posean alguna relación o no. Al tener un enfoque en el concepto de objetos dentro de la filosofía es que se suele limitar al tratarlo como parte de la relación sujeto-objeto, relegando las relaciones de los objetos entre si o con otros conceptos a otras disciplinas. Continuando con la lectura, el ensayo nos porpone una tensión ocurrente entre 3 elementos: los objetos y sus accidentes, sus relaciones y cualidades. En este sentido, un objeto 
+Harman busca el poder mostrar que el origen del espacio y el tiempo proviende de los objetos en si mismos, independiente que estos primeros posean alguna relación o no. Al tener un enfoque en el concepto de objetos dentro de la filosofía es que se suele limitar al tratarlo como parte de la relación sujeto-objeto, relegando las relaciones de los objetos entre si o con otros conceptos a otras disciplinas. Continuando con la lectura, el ensayo nos porpone una tensión ocurrente entre 3 elementos: los objetos y sus accidentes, sus relaciones y cualidades. En este sentido, un objeto es una especie de "cosa" con una realidad unitaria, utilizandi su sentido más amplio. Por ello se establecen una serie de normas: El tamaño relativo no importa, La simpleza no importa, La perduración no importa, La naturaleza no importa y La realidad física no importa. El simple hecho que algo es o parece ser una cosa.
 
+Además, pese a que algunos "razgos" accidentales hayan cambiado, pues sigue siendo el mismo objeto, siendo este mismo más profundo que su fachada transitoria y cambiante. 
+
+Dentro de todas las ideas que rodean a los objetos se encuentran las cualidades inherentes, las cuales son necesarias para ser lo que es. Tales como su esencia. Estos no se pueden alterar.
+
+Las relaciones y accidentes. Diferentes objetos comparten similitudes en cuanto a sus cualidades, pero no por ello son la misma cosa. 
+
+El objeto es una entidad fatalmente fracturada entre su realidad intima y sus accidentes, relaciones y cualidades, un conjunto de tensiones que hacen que todo el universo sea posible, incluyendo el espacio y tiempo.
 
 ***
 
@@ -48,10 +55,32 @@ Harman busca el poder mostrar que el origen del espacio y el tiempo proviende de
 
 "Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor"
 
-
 ![imagen](./imagenes/IMG_1315.jpg)
-
 -> Recuperado de: discord del curso.
+
+
+#### TELÉFONO (Antiguo)
+
+![imagen](./imagenes/IMG_1316.jpg)
+-> Recuperado de: discord del curso.
+
+1- Interprete
+2- Oyente (Escucha)
+3- Hablador
+4- Traspaso
+5- Estático/Quieto
+6- Atractivo
+7- Suave
+8- Tierno
+9- Conectado
+10- Paciente
+11- Frío
+12- 
+13-
+14-
+15-
+
+
 
 ### encargo-20: Máquinas sentimentales
 
