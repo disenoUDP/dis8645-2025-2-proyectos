@@ -29,3 +29,11 @@ un arduino r3, por ejemplo, tiene un microprocesador. Dispositivos más avanzado
 - [GAN](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
 - [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network)
+
+- [OCR](https://www.onlineocr.net/es)
+
+- [google collab](https://colab.research.google.com)
+
+- [CCC](https://www.ccc.de/en/home)
+
+- [github CLI](https://cli.github.com)
