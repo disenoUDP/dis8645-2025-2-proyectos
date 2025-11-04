@@ -40,6 +40,8 @@ https://www.lozano-hemmer.com/vicious_circular_breathing.php
 
 https://mac.uchile.cl/actividades/efimera_-las-llamadas-que-nunca-hice/
 
+Trabajar más con materialidades y menos impresión 3D, desarrollar texturas para darle más dimensiones al proyecto.
+
 ### Referentes
 
 - [Ian Goodfellow](https://en.wikipedia.org/wiki/Ian_Goodfellow) libro [Making pictures with generative adversarial networks casey reas](https://www.creativeapplications.net/books/making-pictures-with-generative-adversarial-networks-casey-reas/)
