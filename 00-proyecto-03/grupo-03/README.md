@@ -11,9 +11,7 @@ máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a 
 
 ### idea clifford1one
 
-#### austeridad(?)
-
-- una experiencia donde se le pide al objeto usuario que se despoje de todas sus pertenencias, y que una báscula pese las cosas que dejó.
+- idea austeridad: una experiencia donde se le pide al objeto usuario que se despoje de todas sus pertenencias, y que una báscula pese las cosas que dejó.
 
 - idea amurrao/timidez: una maquina que vaya poneindo ladrillos o bloques de algun tipo. Si lo miras comeinza a construit una pared para que no
 ![mr. burns gif](./imgs/burns.gif)
