@@ -31,7 +31,7 @@ Emociones: Negación, tristeza, vulnerabilidad.
 
 Concepto: Normalmente finge que todo está bien; emite sonidos alegres, colores, se mueve, pero cuando nadie la está mirando se detiene y cambia completamente, se vuelve oscura o emite sonidos raros o poco perceptibles
 
-Su reacción cambiaria según la atención que recibe, frente a otros se “controla” y al quedarse sola se deja caer.
+Su reacción cambiaria según la atención que recibe, frente a otros se “controla” y al quedarse sola se retrae.
 
 𖤐 **Objeto del Consuelo**
 
