@@ -7,7 +7,9 @@ cmd + space: Terminal
 ### Cómo usar Github desde la terminal?
 Ni idea no entiendo nada >n< dms pro
 
-### Ideas de objetos:
+### Ideas Grupo 01:
+
++ Objetos:
 
 + **Tetera hirviendo:** Suena, Caliente, Metalica, Molesta, Almacenadora, Contenedora, Peligrosa, científica, ruidosa, Térmica, Transportable, Dolorosa, Dañina, Tradicional, Humeante, Estresante, Húmeda
 
