@@ -32,3 +32,6 @@ Su referencia [Anna Ridler](https://annaridler.com/mosaic-virus)
   13 ls
   14 code .
 ```
+
+Esto lo hizo Copilot.
+ada lovelace fue la primera programadora de la historia de la computación
