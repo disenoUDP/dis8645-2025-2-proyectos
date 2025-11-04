@@ -8,81 +8,25 @@ Martes 4 Noviembre 2025
 
 Al llegar me instalé y fui a por agua. Tras ello volví y estaban hablando sobre una empresa llamada ["Qualcomm"](https://es.wikipedia.org/wiki/Qualcomm). Por lo que supe esta hace poco se relacionó con arduino y a travez de este vínculo es que lanzaron al mercado a una nueva tarjeta con un microprocesador, el ["Arduino UNO Q"](https://docs.arduino.cc/hardware/uno-q/). A la par se comenzó a hablar de inteligencia artificial para comenzar a entender un poco sobre ello, aludiendo al proyecto [ml5js](https://ml5js.org/).
 
-***
-
-## Propuestas de proyectos
-
-01 - Máquina transicional
-
-Máquina que muestra el cambio emocional, enfocado en la transición emocional. Cambios de humor entre dos emociones. Se muestran con luces y movimiento.
-
-02- Máquina que decepciona
-
-Generar una expectativa para luego romperla. Todos esperen lo que va a pasar, pero nunca pasa.
-
- 03 - Maquina saturadora/quejadora
-
-Un teléfono de auxilio que se queja y desahoga cuando tu lo llames
+- https://es.wikipedia.org/wiki/Captcha
+- https://en.wikipedia.org/wiki/Stable_Diffusion
+- https://aws.amazon.com/es/what-is/stable-diffusion/
+- https://en.wikipedia.org/wiki/Generative_adversarial_network
+- https://en.wikipedia.org/wiki/Ian_Goodfellow
+- https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas
+- http://www.feliperivas.com/
+- https://www.cultura.gob.cl/coleccionarte/felipe-rivas-san-martin/
+- https://www.youtube.com/@3blue1brown/videos
+- https://en.wikipedia.org/wiki/Recurrent_neural_network
+- https://www.ndtv.com/offbeat/google-ai-chatbot-gemini-has-a-meltdown-after-failing-task-tells-user-i-am-a-disgrace-9043790
 
 ***
 
-## Lectura individual
+## Título
 
-### "Espacio, tiempo y esencia desde un enfoque orientado a objetos"
 
-Capítulo N°8 del libro mencionado en las observaciones. Según Harman, el tiempo y el espacio son inseparables de la experiencia de vivir para los humanos. Pese a la importancia de las discusiones de dichos tópicos, es que el autor propone el relegarlos al segundo plano al centrarse en el estudio de la "estructura de los objetos". 
-En un inicio se define al "espacio" como el mundo material, todo aquello conocido y por conocer, desde lo local hasta lo universal y más allá.
-En cuanto al tiempo viene a ser una medida de medición, la cual incluye el presente, el pasado y el futuro, conceptos que se le asocia la idea de lo remoto (distante). 
-
-Se destaca la frase "el espacio y el tiempo de todos los días contienen misterios abundantes, por más que el sentido común a menudo los amortigue". Por ello no son sorprendes cosas que son de nuestro "saber" o se pueden presenciar con la imaginación. Hechos que a veces son maravillosos a través de los ojos de un filosofo, pues son los estímulos más claros y básicos que tenemos. En la juventud el hacerse preguntas fuera de los limites del entendimiento humano nos sirve para comprender aquellos conceptos, puesto que sería maravilloso "ver" si existe un inicio o un final para poder moldear nuestras ideas ante posibilidades inpensables. Tales ideas se manifiestan en cosas como el tiempo, lo que lelva a imaginarnos las posibilidades de atravesar distintas épocas y adentrarnos en lo desconocido. 
-
-Harman busca el poder mostrar que el origen del espacio y el tiempo proviende de los objetos en si mismos, independiente que estos primeros posean alguna relación o no. Al tener un enfoque en el concepto de objetos dentro de la filosofía es que se suele limitar al tratarlo como parte de la relación sujeto-objeto, relegando las relaciones de los objetos entre si o con otros conceptos a otras disciplinas. Continuando con la lectura, el ensayo nos porpone una tensión ocurrente entre 3 elementos: los objetos y sus accidentes, sus relaciones y cualidades. En este sentido, un objeto es una especie de "cosa" con una realidad unitaria, utilizandi su sentido más amplio. Por ello se establecen una serie de normas: El tamaño relativo no importa, La simpleza no importa, La perduración no importa, La naturaleza no importa y La realidad física no importa. El simple hecho que algo es o parece ser una cosa.
-
-Además, pese a que algunos "razgos" accidentales hayan cambiado, pues sigue siendo el mismo objeto, siendo este mismo más profundo que su fachada transitoria y cambiante. 
-
-Dentro de todas las ideas que rodean a los objetos se encuentran las cualidades inherentes, las cuales son necesarias para ser lo que es. Tales como su esencia. Estos no se pueden alterar.
-
-Las relaciones y accidentes. Diferentes objetos comparten similitudes en cuanto a sus cualidades, pero no por ello son la misma cosa. 
-
-El objeto es una entidad fatalmente fracturada entre su realidad intima y sus accidentes, relaciones y cualidades, un conjunto de tensiones que hacen que todo el universo sea posible, incluyendo el espacio y tiempo.
 
 ***
-
-### encargo-19: Objetos y cualidades
-
-"Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor"
-
-![imagen](./imagenes/IMG_1315.jpg)
--> Recuperado de: discord del curso.
-
-
-#### TELÉFONO (Antiguo)
-
-![imagen](./imagenes/IMG_1316.jpg)
--> Recuperado de: discord del curso.
-
-1- Interprete
-2- Oyente (Escucha)
-3- Hablador (llamada)
-4- Traspaso
-5- Estático/Quieto
-6- Atractivo
-7- Suave
-8- Tierno
-9- Conectado
-10- Paciente (se necesita)
-11- Frío
-12- Eléctrico
-13- Gritón
-14- 
-15-
-
-
-
-### encargo-20: Máquinas sentimentales
-
-"Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún."
-
 
 ### Posdata
 
