@@ -1,5 +1,7 @@
 # Sesión-12a
 
+Martes 28 de octubre, 2025
+
 ## Trabajo en clase
 
 ### Cosas que hablamos en la mañana
