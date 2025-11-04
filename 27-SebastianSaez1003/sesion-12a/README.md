@@ -60,12 +60,32 @@ De buenas a primeras, las características que me imagino son:
 
 - Polifacético ya que contiene las texturas y sabores de todos los ingredientes contenidos dentro de sí, en contraste de algo más directo como podría ser la sal, que sabe salada. 
 
+- Superficie suave 
+
+- Sabroso
+
+- Frágil
 
 Bibliografía:  
 
 - https://es.wikipedia.org/wiki/Panta_rei
 
-
 ## Encargo 20 “⁠Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.”
 
-Bleh
+Luego de hacer una lluvia de ideas con mi grupo, nos decidimos por las siguientes máquinas:  
+
+- Máquina generadora de estrés: una máquina que mediante constantes alarmas, te recuerda de todo lo que deberías estar haciendo.  
+
+- Maquina dependiente de música: una mascota virtual que vive de escuchar música, tan literalmente que si produces música para ella, rápidamente muere.  
+
+- Máquina selectora de importancia: una máquina que cada día que pasa elige las alarmas de tu teléfono por su cuenta.  
+
+Pero igual como ejercicio me propuse pensar en algunas otras máquinas que podrían ser aplicadas a distintos sentimientos, donde al menos a mi me gustan máquinas que tengan personalidad y/o sean graciosas, que es en lo que me he estado enfocando el último año :  
+
+- Una máquina que se ríe ante cualquier sonido que detecte durante 5 segundos, causando una burla ante alguien que esté hablando o para aliviar el ambiente.
+
+- Una máquina “debilucha” con forma de garra mecánica que siente dolor al agarrar algo muy pesado, que en este caso sería cualquier cosa, expresando su disgusto y sufrimiento con sonidos y gritos de horror.
+
+- Una máquina enamorada toxicamente del usuarix, al punto que cualquier tipo de interacción es la mejor cosa que le ha pasado en la vida, abriendo múltiples oportunidades para su interacción.
+
+- Una máquina ambigua e irónica, similar a una bola 8, en la que le haces una pregunta y te da una respuesta pero esta máquina nunca te dirá si o no, sino que te intentará dejar aún más indeciso que en un principio.
