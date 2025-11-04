@@ -19,12 +19,15 @@ Al llegar me instalé y fui a por agua. Tras ello volví y estaban hablando sobr
 - https://www.youtube.com/@3blue1brown/videos
 - https://en.wikipedia.org/wiki/Recurrent_neural_network
 - https://www.ndtv.com/offbeat/google-ai-chatbot-gemini-has-a-meltdown-after-failing-task-tells-user-i-am-a-disgrace-9043790
+- https://en.wikipedia.org/wiki/Optical_character_recognition
 
 ***
 
 ## Título
 
+"Espacio latente" y "Alucinar"
 
+El tiempo límite de la modificación del repo pasado es el martes 11 nov
 
 ***
 
