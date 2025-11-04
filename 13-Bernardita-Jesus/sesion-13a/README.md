@@ -24,6 +24,22 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 Mateo nos mostró los avances de su proyecto de título.
 
+### Ideas Proyectos-02
+
+https://www.instagram.com/p/DQUYa_lgui7/?igsh=cHRjanBuYXAxMnh5
+
+https://es.wikipedia.org/wiki/La_insoportable_levedad_del_ser
+
+https://www.suneo.mx/literatura/subidas/Milan%20Kundera%20La%20Insoportable%20Levedad%20del%20Ser.pdf
+
+https://www.theuncomfortable.com/
+
+https://en.wikipedia.org/wiki/Can%27t_Help_Myself_(Sun_Yuan_and_Peng_Yu)
+
+https://www.lozano-hemmer.com/vicious_circular_breathing.php
+
+https://mac.uchile.cl/actividades/efimera_-las-llamadas-que-nunca-hice/
+
 ### Referentes
 
 - [Ian Goodfellow](https://en.wikipedia.org/wiki/Ian_Goodfellow) libro [Making pictures with generative adversarial networks casey reas](https://www.creativeapplications.net/books/making-pictures-with-generative-adversarial-networks-casey-reas/)
