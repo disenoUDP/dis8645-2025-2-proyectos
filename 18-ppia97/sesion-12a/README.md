@@ -47,57 +47,49 @@
 
 𖤐 **Máquina de la Ansiedad**
 
-Emoción central: Inquietud, anticipación, tensión constante.
+Emociones: Inquietud, anticipación, tensión.
 
-Concepto: una máquina que vibra de forma irregular, como si estuviera siempre esperando algo. No reacciona directamente al contacto, sino a la presencia cercana: cuando alguien se aproxima, su temblor aumenta; cuando la persona se aleja, tarda un rato en calmarse.
+Concepto: Se mueve o vibra irregularmente como si estuviera esperando algo. Reacciona a la presencia de algo cercano; cuando alguien se aproxima, empieza a tiritar más y cuando la persona se aleja recién empieza a calmarse.
 
-Comportamiento emocional: No entiende la diferencia entre cuidado y amenaza; cualquier estímulo la altera. Su funcionamiento transmite un estado de alerta perpetua.
+No entiende la diferencia entre cuidado y amenaza, cualquier estímulo lo puede alterar.
 
-Significado: Una metáfora del cuerpo ansioso: incluso en calma, siente que algo podría salir mal.
+Metáfora del cuerpo ansioso incluso en “calma” siempre siente que algo podría salir mal.
 
-𖤐 **Máquina de la Vergüenza**
+𖤐 **Máquina de Vergüenza**
 
-Emoción central: Incomodidad, autoconsciencia, rechazo.
+Emociones: Incomodidad y rechazo.
 
-Concepto: Una máquina que “no soporta” ser observada. Cuando detecta una mirada o un gesto de atención, gira lentamente, se oculta o apaga su luz. Pero si nadie la mira, comienza a moverse tímidamente o a emitir un brillo suave, como si disfrutara del anonimato.
+Concepto: No soporta ser observada. Cuando detecta una mirada o algo de atención gira sigilosamente y se oculta o se apaga. Si nadie la mira empezará a moverse de manera tímida o a emitir una luz tenue, como si disfrutara del anonimato.
 
-Comportamiento emocional: Parece tener una personalidad introspectiva, que teme el juicio y prefiere pasar desapercibida.
+Tiene una personalidad introspectiva que teme y prefiere pasar desapercibida. Representa la incomodidad de ser visto, evitando la exposición.
 
-Significado: Es la materialización de la incomodidad de ser visto, la emoción de quien se protege evitando la exposición.
+𖤐 **Máquina de malentendido**
 
-𖤐 **Malentendido**
+Emociones: Confusión, extrañeza, desconexión.
 
-Concepto: intenta comunicarse, pero siempre dice algo distinto de lo que se espera. Si la saludas, responde con una pausa larga o un sonido incongruente.
-
-Comportamiento: Sus respuestas emocionales nunca coinciden con la intención del usuario; parece no entender los códigos humanos.
-
-Idea central: Representa las fallas en la comunicación afectiva.
-
-Emociones en juego: Confusión, frustración, extrañeza, desconexión.
+Concepto: Intenta comunicarse, pero siempre dice algo distinto de lo que se espera. Si la saludas, responde con una pausa larga o un sonido sin mucho sentido. Sus respuestas nunca coinciden con lo que le comunica el usuario, no entendería los códigos humanos.
 
 𔘓 𖤐 **Máquina negadora**
 
-Concepto: finge que todo está bien. Muestra colores vivos, sonidos alegres o movimientos ordenados, pero cuando nadie la mira, se detiene y cambia completamente de tono: la superficie se apaga, se encorva o emite un sonido bajo.
+Emociones: Negación, tristeza, vulnerabilidad.
 
-Comportamiento: Su reacción cambia según la atención: frente a otros se “controla”; en soledad, se deja caer.
+Concepto: Normalmente finge que todo está bien; emite sonidos alegres, colores, se mueve, pero cuando nadie la está mirando se detiene y cambia completamente, se vuelve oscura o emite sonidos raros o poco perceptibles
 
-Idea central: Representa la represión emocional o el esfuerzo de mantener una fachada.
-
-Emociones en juego: Negación, tristeza, tensión, vulnerabilidad.
+Su reacción cambiaria según la atención que recibe, frente a otros se “controla” y al quedarse sola se deja caer.
 
 𖤐 **Objeto del Consuelo** 
 
-Emoción: cuidado / contención
+Emociones: Cuidado, contención.
 
-Idea: una máquina que detecta el contacto de dos personas a la vez (dos puntos táctiles). Solo cuando ambas tocan, se enciende una luz cálida. Si una se va, se apaga lentamente, como si lamentara la separación.
-
-Técnicamente posible: dos sensores táctiles + control de intensidad de LED.
-
-Impacto emocional: habla de la presencia compartida.
+Concepto: Detecta el contacto de dos personas al mismo tiempo y cuando ambos se tocan se comienza a encender una luz cálida. Si alguna de las 2 personas se va; comienza a apagarse lentamente, como si lamentara la separación.
 
 𖤐 **Máquina de la Confianza - Cuidado, ternura**
 
-Solo reacciona después de varios contactos; al principio desconfía, luego se abre con luz cálida. 
+Emociones: Cuidado, ternura.
+
+Solo reacciona después de varias interacciones, al principio desconfía, luego se abre con una luz cálida. Máquina de “traducción de intenciones”
+
+Reacciona distinto según el tipo de acercamiento (brusco o suave). No responde al “qué”, sino al “cómo”.
 
 𔘓 𖤐 **El Traductor de las Intenciones**
 
@@ -110,18 +102,12 @@ Cuanto más la usas o interactúas con ella, más rápido se deteriora. Represen
 𔘓 𖤐 **LATENCIA — Máquina de la Melancolía**
 
 > Latencia:  retraso que ocurre entre una acción y su respuesta, comúnmente medido en milisegundos
+Emociones: Sensible, afectiva, vulnerable, pausada, introspectiva.
 
-Concepto:
-Latencia es una máquina que reacciona ante la presencia humana, pero cuya función principal es recordar lo que se ha perdido. Cada vez que alguien la toca, emitirá una luz tenue y mostrará una palabra breve (por ver), como si intentara reconstruir algo que ya no está.
+Concepto: Una máquina que extraña, aunque nunca tuvo nada que perder. Reacciona ante la presencia de una persona pero su función principal es recordar lo que se ha perdido. Cada vez que alguien la toca, emitirá una luz tenue y mostrará una palabra suelta o frase incompleta, como si intentara reconstruir algo que ya no está.
 
 Su comportamiento transmite una emoción contenida: no brilla intensamente, no busca llamar la atención. En cambio, parpadea lentamente, simulando un recuerdo que se niega a desaparecer.
 
 Cuando no hay contacto, entra en un estado de reposo, donde la luz late suavemente, manteniendo una sensación de espera. No comprende el significado del gesto humano, pero lo guarda, y lo transforma en memoria.
-
-Idea central:
-Una máquina que extraña, aunque nunca tuvo nada que perder.
-
-Cualidades principales:
-Melancólica, paciente, silenciosa, persistente, sensible, afectiva, vulnerable, pausada, introspectiva, incompleta, translúcida, orgánica, distante, receptiva, y simbólica.
 
 
