@@ -12,7 +12,7 @@ ml5.js es un machine learning para poder aplicarlo en sketches de p5.js.
 
 Una pantalla para nosotros puede mostrar una imagen, mientras que para una máquina eso es unos tensores.
 
-Me di cuenta de porqué MIsaa siempre se equivoca en 1 cosa que le piden en los captchas que hacemos en clases, ya que el captcha sirve para entrenar la asociación de palabras con imágenes.
+Me di cuenta de porqué Misaa siempre se equivoca en 1 cosa que le piden en los captchas que hacemos en clases, ya que el captcha sirve para entrenar la asociación de palabras con imágenes.
 
 Stable difusión parte con un lienzo y lo llena con cosas random, un ruido, después empieza a compararlo con las imágenes que tiene para llegar a la imagen de una carretera.
 
