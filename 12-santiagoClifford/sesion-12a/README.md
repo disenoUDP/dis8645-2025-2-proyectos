@@ -29,7 +29,7 @@ una experiencia donde se le pide al objeto usuario que se despoje de todas sus p
 
 casco, te responde “asistente virtual”
 
-robot que brinde abrazos.normalmente se asocia a los robots con la flata de emociones
+robot que brinde abrazos.normalmente se asocia a los robots con la falta de emociones
 
 el usuarie es la interacción. el movimiento del cuerpo es cmo el mouse
 brea
@@ -68,8 +68,6 @@ una interfaz donde la persona controla un computador a través de su interacció
 #### incomodidad frente al conflicto
 
 casco que detecta al tono de la voz(tranquilo, agresivo, compasivo, etc.). Muestra de manera visual, el tono con el que se está hablando. Funciona como un "medidor de temperatura" en la habitación, referente a si el ambiente está tenso, tranquilo, etc.
-
-
 
 ### feedback
 
