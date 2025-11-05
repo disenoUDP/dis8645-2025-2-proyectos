@@ -1,4 +1,4 @@
-#. ݁₊ ⊹  Besto proyecto - Grupo 05݁  ݁ . ⊹ ₊ ݁. 
+# . ݁₊ ⊹  Besto proyecto - Grupo 05݁  ݁ . ⊹ ₊ ݁. 
 
 ## Integrantes
 
