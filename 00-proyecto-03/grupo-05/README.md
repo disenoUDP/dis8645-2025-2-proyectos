@@ -1,6 +1,6 @@
 # . ݁₊ ⊹  Besto proyecto - Grupo 05݁  ݁ . ⊹ ₊ ݁. 
 
-## Integrantes
+## Integrantes del equipo
 
 - [Braulio Figueroa](https://github.com/brauliofigueroa2001) - Investigador y redactor
 - [Camila Parada](https://github.com/Camila-Parada) - Diseño gráfico y registro
