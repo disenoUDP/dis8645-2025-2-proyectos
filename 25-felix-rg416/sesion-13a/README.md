@@ -40,14 +40,19 @@ Su referencia [Anna Ridler](https://annaridler.com/mosaic-virus)
 <https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.management/>
 
 - Abrir la carpeta github `cd .\github\`
+- *Para la mayoría de comandos se debe estar dentro de la carpeta que se quiere modificar*
 - Abrir la carpeta dis8645-2025-2-proyectos dentro de github `cd .\dis8645-2025-2-proyectos\`
+- *el `.\` significa "aquí mismo" es en vez de escribir toda la dirección de nuevo*
 - Agregar cambios a la app de GitHub `git add .`
-- Hacer commit de los cambios con el mensaje "ideas proyectos" `git commit -m "ideas proyectos"`
+- *El punto `.` es como decir "todo esto" en vez de escribir toda la dirección de nuevo*
+- Hacer commit de los cambios con el mensaje "ideas proyectos" `git commit -m "ideas proyectos"` *siempre va el mensaje*
 - Subir los cambios a GitHub `git push`
 - Crear una carpeta `md "nombreDeCarpeta"`
 - Crear un nuevo archivo o item `ni "nombre.tipo"` (yo creé un README.md así: `ni "README.md"`)
 - Eliminar un item `ri direccion\de\la\carpeta`
 - Abrir un archivo `ii direccion\del\archivo`
+- Hacer Sync `git pull origin`
+- Abrir una carpeta en VsCode `code .`
 
 ---
 
