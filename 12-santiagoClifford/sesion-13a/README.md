@@ -37,3 +37,5 @@ un arduino r3, por ejemplo, tiene un microprocesador. Dispositivos más avanzado
 - [CCC](https://www.ccc.de/en/home)
 
 - [github CLI](https://cli.github.com)
+
+- [Rafael Lozano Hemmer](https://www.lozano-hemmer.com)
