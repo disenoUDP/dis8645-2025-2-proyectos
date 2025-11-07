@@ -1,19 +1,5 @@
 # Sesión-12b
 
-## Trabajo en clase
+Viernes 31 de octubre, 2025
 
-### Cosas que hablamos en la mañana
-
-- 
-
-- 
-
-### Referentes
-
--
-
--
-
-### Palabras impoertantes
-
-## Encargo
+## No hubo clases
