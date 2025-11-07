@@ -56,7 +56,7 @@ Hacer para próximo martes: presupuesto, carta gantt macro (semana a semana), bo
 | Componente| Cantidad | valor| Link | Anotaciones|
 |---|---|---|---|---|
 |Resistencias 220|x|x|x|x|
-|Sensor ultrasónico|1|$1.500|U[ltrasonico-hc](https://afel.cl/products/sensor-de-ultrasonico-hc-sr04)|x|
+|Sensor ultrasónico|1|$1.500|[Ultrasonico-hc](https://afel.cl/products/sensor-de-ultrasonico-hc-sr04)|x|
 |Potenciómetro|1|$500|[potenciómetro](https://afel.cl/products/potenciometro-10k-ohm)|
 |Matriz LED RGB 8x8|1|$9990|[matrizLEDrgbNeopixel](https://afel.cl/products/matriz-led-rgb-neopixel-8x8-ws2812-cjmcu64?_pos=2&_sid=c81d7044e&_ss=r)|x|
 |Botones|3|$100|[botonTactil](https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor?_pos=1&_sid=433c4d5a9&_ss=r)|x|
