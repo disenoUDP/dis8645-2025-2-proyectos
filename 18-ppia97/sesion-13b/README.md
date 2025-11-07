@@ -34,3 +34,6 @@ Ambos robots
 - Diodo Led RGB x15 (https://afel.cl/products/diodo-led-rgb-5mm) = **1500**
 - Resistencias 220oms (https://afel.cl/products/kit-600-resistencias-1-4w-30-valores) = **4990**
 - **17.480** total
+
+
+VER si podemos hacer que las dos interactuen
