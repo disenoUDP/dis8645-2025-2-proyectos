@@ -45,7 +45,7 @@
 **𓇢𓆸** ⁠Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.
 
 
-𖤐 **Máquina de la Ansiedad**
+### 𖤐 **Máquina de la Ansiedad**
 
 Emociones: Inquietud, anticipación, tensión.
 
@@ -74,7 +74,7 @@ Metáfora del cuerpo ansioso incluso en “calma” siempre siente que algo podr
 
 La idea es que la máquina siempre tenga una tensión de fondo, así que al inicio solo tendrá una vibración mínima y constante (un valor bajo de PWM) para simular esa calma que nunca es total en un cuerpo ansioso. En el momento en que alguien se acerca (y el sensor ultrasónico lo detecta), la máquina entra inmediatamente en un estado de inquietud creciente: la vibración no debe subir de forma lineal, sino con picos erráticos y acelerados, como si estuviera tiritando más y más a medida que la persona se acerca. Si la persona llega a la máxima proximidad, la máquina tiene que ir al pico de pánico y disparar la vibración a su máximo (PWM 255). Luego, la clave es cuando la persona se aleja, la vibración no debe detenerse de golpe, sino que tiene que ir disminuyendo de manera lenta y prolongada, mostrando que el cuerpo no se relaja al instante y que la tensión residual permanece por un tiempo, incluso cuando el "peligro" ya pasó. 
 
-𖤐 **Máquina de Vergüenza**
+#### 𖤐 **Máquina de Vergüenza**
 
 Emociones: Incomodidad y rechazo.
 
