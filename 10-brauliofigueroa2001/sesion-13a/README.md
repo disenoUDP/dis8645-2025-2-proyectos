@@ -14,7 +14,7 @@ pendiente rellenar apuntes de esta clase, ver videos sobre la instalación de gi
 
 ### ideas de proyecto
 
-- la máquina vendehumo, una especie de máquina bomba, tendría por objetivo generar una expectativa muy grande en el usuario a través de una ornamentación exagerada. La contradicción de esta máquina radica en el resultado que se genera a través del uso de esta
+- la máquina vendehumo, una especie de máquina bomba, tendría por objetivo generar una expectativa muy grande en el usuario a través de una ornamentación exagerada. La contradicción de esta máquina radica en el resultado que se genera ya que al estar tan adornada se esperaría que su funcionamiento sea acorde a su apariencia física pero es totalmente lo contrario, al apretar el botón que la activa, ocurre un resultado decepcionante el cuál es literalmente soltar humo. El botón tiene un número de pulsaciones definidas de forma aleatoria para que haga funcionar la máquina, de esta forma el usuario al presionar el botón 3,4 veces y aún no funcione, pensará que la máquina es inútil y estará aún más decepcionado cuando vea que después de ciertos intentos el único resultado de su esfuerzo sea que la máquina bota humo/vapor
 
 
 
