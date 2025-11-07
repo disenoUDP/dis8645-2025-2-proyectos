@@ -128,7 +128,7 @@ En la parte superior de la consola tendrá el LDR.
 
 En su lado izquierdo y derecho existirá un botón de una flecha apuntando hacia la dirección en la que está montada, no la munición, la forma geométrica la cual se puede asociar a un triángulo en conjunto a un rectángulo, específicamente como se puede observar en la siguiente imagen:
 
-![Imagen de que es una flecha](./imagenes/flecha-izquierda)
+![Imagen de que es una flecha](./imagenes/flecha-izquierda.png)
  
 Los cambios del display respecto a su comunicación serán cada periodo de tiempo de aproximadamente 2 a 5 minutos.
 
