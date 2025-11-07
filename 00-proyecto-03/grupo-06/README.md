@@ -64,7 +64,9 @@ Eres una persona terrible, como es posible que dejaras que esto les pasará a lo
 
 ## Máquina literal
 
-Una consola portable, de tamaño y forma similar a una gameboy advance.
+Una consola portable, de tamaño y forma similar a una game and watch.
+
+![Consola Game and Watch](./imagenes/game-and-watch)
 
 Tiene un display en las que se podrá observar todo lo necesario sobre tu *YRA PET.
 
