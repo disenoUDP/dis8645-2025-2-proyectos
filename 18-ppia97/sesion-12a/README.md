@@ -207,7 +207,7 @@ Inspiradas en la relación entre interacción humana y emoción contenida, estas
 Ambas funcionan como pequeños organismos emocionales que, aunque digitales, imitan la forma en que los humanos recuerdan, esperan y sienten.
 
 ------------------------------------------
-
+### Propuestas rechazadas
 
 ### X 𖤐 **Máquina de malentendido**
 
