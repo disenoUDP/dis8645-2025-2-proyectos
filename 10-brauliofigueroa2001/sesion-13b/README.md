@@ -21,7 +21,12 @@ parte 1
 - una forma sería almacenar humo dentro de un contenedor con una "puerta" controlada por un servomotor la cuál al abrirse en un tiempo determinado permite liberar cierta cantidad de humo
 - la segunda forma es con el mecanismo de los desodorantes/aspersores esparcir alguna especie de líquido con olor ahumado
 - explorar cómo funcionan los humidificadores, existen módulos humidificadores pequeños que venden por separado, explorar cómo funcionan
-- la manivela al girarse para adelante va prendiendo leds y activando sonidos de una escala, a su vez el motor vibrador comienza a vibrar "más"
+- la manivela al girarse para adelante va prendiendo leds y activando sonidos ascendentes de una escala, a su vez el motor vibrador comienza a vibrar "más"
 - la manivela al girarse hacia atrás reproduce los sonidos en escala descendente y la barra de carga de los leds va retrocediendo, a su vez, el motor también va bajando la vibración
-- la manivela al girarse hacia a
+- la idea es mostrar un avance que sea ambiguo, que no sea obvio pero que de cierta forma muestre un progreso que incentive al usuario a seguir utilizando la máquina
+- posible easteregg al llevar a la manivela a números negativos (colocar sólo si es que nos sobra tiempo) "gira pal otro lado"
+
+
+### pseudocódigo
+
 - 
