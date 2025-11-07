@@ -86,7 +86,11 @@ Principalmente 2 sensores de harían cargo de esta interacción con el mundo rea
 
 - LDR el cual permite que a *YRA le llega luz para su mundo, como si fuera un agujero en el techo dejando que entre luz del sol durante el día en un cuarto cerrado, esto permite que su nictofobia(miedo a la oscuridad) no cause que su temor se apodere de su ser.
 
+![ejemplo del uso del LDR](./imagenes/EjemploLDR.jpg)
+
 - Un Giroscopio que se asegurara que *YRA no es agitado ni tratado de manera brusca.
+
+![ejemplo del mal uso del *YRA PET](./imagenes/Agitando-objeto.jpg)
 
 Estas no son simplemente una sugerencia, son obligaciones, *YRA morirá si es que no son tomadas en cuenta y consideradas con la mejor intención.
 
