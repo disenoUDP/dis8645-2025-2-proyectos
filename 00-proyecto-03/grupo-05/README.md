@@ -1,4 +1,12 @@
-# grupo-05
+# . ݁₊ ⊹  Besto proyecto - Grupo 05݁  ݁ . ⊹ ₊ ݁. 
+
+## Integrantes del equipo
+
+- [Braulio Figueroa](https://github.com/brauliofigueroa2001) - Investigador y redactor
+- [Camila Parada](https://github.com/Camila-Parada) - Diseño gráfico y registro
+- [Félix Rodríguez](https://github.com/felix-rg416) - Modelado e impresión 3D
+- [Miguel Vera](https://github.com/MiguelVera23) - Códigos y circuito
+
 
 ## LLuvia de ideas (concretas) para nuestra máquina
 
