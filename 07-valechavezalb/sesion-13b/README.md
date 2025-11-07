@@ -13,3 +13,5 @@ la máquina reacciona depende la intensidad con que la toque, si es muy bruco, l
 
 - touchdesigner para las visuales y hacerlas en una página web con p5.
 - se visualizará en una pantalla y a esto hacerlo una carcasa.
+
+arduino uno r4 wifi servidor y cliente 
