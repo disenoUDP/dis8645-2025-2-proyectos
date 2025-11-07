@@ -82,15 +82,12 @@ CUALIDADES:
 
 ### Encargo en clases
 
-Objetos x
+- Objetos x
+  - Hot Wheels
+  - Cubo Rubik
+  - Anillo
 
-Lentes
-Tejido
-Hot Wheels
-Anillo
-Reloj
-
-1. Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor.
+`1.Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor.`
 
 - Hot Wheels fórmula 1
   - Auto
@@ -104,8 +101,26 @@ Reloj
   - rampas
   - variedad
   - niñez
-  - nostalgia 
- 
+  - nostalgia
+  - velocidad imaginaria
+  - sonido de motor que nunca suena
+  - simulacro
+
+- Cubo Rubik
+  - colores
+  - rotación
+  - diversión
+  - juego
+  - inteligencia
+  - tridimensional
+  - cubo
+  - portable
+  - rompecabezas
+  - tiene su propio idioma
+  - combinaciones de colores
+  - velocidad
+  - variedades
+
 - Anillo piedra rosada
   - plata
   - redondo
@@ -118,5 +133,7 @@ Reloj
   - pequeño
   - barato
 
-2. Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.
+`2. Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.`
  
+- Hacer algo que se realiza minuisciosamente pero realizarlo de manera súper rápida y brusca. Como tejer algo.
+- Algo que se hace en la vida cotidiana, pero hacerlo de una manera absurdamente distinta. Como lavarse los dientes con...
