@@ -74,7 +74,7 @@ Metáfora del cuerpo ansioso incluso en “calma” siempre siente que algo podr
 
 La idea es que la máquina siempre tenga una tensión de fondo, así que al inicio solo tendrá una vibración mínima y constante (un valor bajo de PWM) para simular esa calma que nunca es total en un cuerpo ansioso. En el momento en que alguien se acerca (y el sensor ultrasónico lo detecta), la máquina entra inmediatamente en un estado de inquietud creciente: la vibración no debe subir de forma lineal, sino con picos erráticos y acelerados, como si estuviera tiritando más y más a medida que la persona se acerca. Si la persona llega a la máxima proximidad, la máquina tiene que ir al pico de pánico y disparar la vibración a su máximo (PWM 255). Luego, la clave es cuando la persona se aleja, la vibración no debe detenerse de golpe, sino que tiene que ir disminuyendo de manera lenta y prolongada, mostrando que el cuerpo no se relaja al instante y que la tensión residual permanece por un tiempo, incluso cuando el "peligro" ya pasó. 
 
-#### 𖤐 **Máquina de Vergüenza**
+### 𖤐 **Máquina de Vergüenza**
 
 Emociones: Incomodidad y rechazo.
 
@@ -99,14 +99,14 @@ Tiene una personalidad introspectiva que teme y prefiere pasar desapercibida. Re
 
 La Máquina de la Vergüenza opera en dos estados fundamentales: el Anonimato y el Rechazo. En su estado predeterminado de Anonimato (cuando el sensor Ultrasónico detecta una distancia máxima), la máquina esta tranquila; el LED emite una luz tenue controlada por PWM, y el Servomotor realiza un movimiento muy lento y tímido. Cuando el sensor de proximidad detecta la presencia de una persona, se activa inmediatamente el estado de Rechazo: el motor ejecuta un movimiento rápido y sigiloso para llevar la máquina a su posición de ocultamiento, mientras que el LED se apaga abruptamente para pasar desapercibida. La máquina solo retornará al estado de Anonimato lentamente y tras un breve periodo de latencia una vez que la presencia se haya retirado, volviendo a su forma inicial.
 
-𖤐 **Máquina de malentendido**
+### 𖤐 **Máquina de malentendido**
 
 Emociones: Confusión, extrañeza, desconexión.
 
 Concepto: Intenta comunicarse, pero siempre dice algo distinto de lo que se espera. Si la saludas, responde con una pausa larga o un sonido sin mucho sentido. Sus respuestas nunca coinciden con lo que le comunica el usuario, no entendería los códigos humanos.
 
 
-𔘓 𖤐 **Máquina negadora**
+### 𔘓 𖤐 **Máquina negadora**
 
 Emociones: Negación, tristeza, vulnerabilidad.
 
@@ -114,13 +114,13 @@ Concepto: Normalmente finge que todo está bien; emite sonidos alegres, colores,
 
 Su reacción cambiaria según la atención que recibe, frente a otros se “controla” y al quedarse sola se deja caer.
 
-𖤐 **Objeto del Consuelo** 
+### 𖤐 **Objeto del Consuelo** 
 
 Emociones: Cuidado, contención.
 
 Concepto: Detecta el contacto de dos personas al mismo tiempo y cuando ambos se tocan se comienza a encender una luz cálida. Si alguna de las 2 personas se va; comienza a apagarse lentamente, como si lamentara la separación.
 
-𖤐 **Máquina de la Confianza - Cuidado, ternura**
+### 𖤐 **Máquina de la Confianza - Cuidado, ternura**
 
 Emociones: Cuidado, ternura.
 
@@ -128,15 +128,15 @@ Solo reacciona después de varias interacciones, al principio desconfía, luego 
 
 Reacciona distinto según el tipo de acercamiento (brusco o suave). No responde al “qué”, sino al “cómo”.
 
-𔘓 𖤐 **El Traductor de las Intenciones**
+### 𔘓 𖤐 **El Traductor de las Intenciones**
 
 Reacciona distinto según el tipo de acercamiento (brusco o suave). No responde al “qué”, sino al “cómo”.
 
-𖤐 **El Mecanismo de la Autoexplotación - Agotamiento emocional**  
+### 𖤐 **El Mecanismo de la Autoexplotación - Agotamiento emocional**  
 
 Cuanto más la usas o interactúas con ella, más rápido se deteriora. Representa al cuerpo o mente que no sabe descansar.
 
-𔘓 𖤐 **LATENCIA — Máquina de la Melancolía**
+### 𔘓 𖤐 **LATENCIA — Máquina de la Melancolía**
 
 > Latencia:  retraso que ocurre entre una acción y su respuesta, comúnmente medido en milisegundos
 Emociones: Sensible, afectiva, vulnerable, pausada, introspectiva.
