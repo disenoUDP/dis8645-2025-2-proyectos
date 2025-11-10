@@ -6,6 +6,10 @@
 
 - Próximo año trabajarán con Raspberry pi
 - MIT fire hose: tratar de aprender en mit es como tratar de tomar agua de un grifo, te ahogas
+- Hablamos también de que si no cargan las fotos en el ReadMe, debe ser por el caché
+
+También revisaron la encuesta que nos mandaron; quedamos en que debemos ir a más exposiciones y más salidas a terrenos. También que es un poco normal perderse en clases, pero no significa que no debemos comunicar. Debemos comunicar a los profes como nos estamos sintiendo con las clases y como nos estamos encontrando con ellas.
+
 - FECHA EXÁMEN: Miércoles 10 de diciembre a las 9:00am
 - Nos pusimos de acuerdo para armar los grupos de trabajo
   - Somos el grupo 4:
@@ -134,6 +138,44 @@ CUALIDADES:
   - barato
 
 `2. Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.`
- 
+
+Partimos con la idea de realizar alguna acción delicada pero con su antónimo, a que me refiero, por ejemplo tejer es algo que se realiza minuciosamente y queremos que su acción sea brusca (lo contrario)
 - Hacer algo que se realiza minuisciosamente pero realizarlo de manera súper rápida y brusca. Como tejer algo.
 - Algo que se hace en la vida cotidiana, pero hacerlo de una manera absurdamente distinta. Como lavarse los dientes con...
+
+Idea 1: Máquina ...
+
+Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
+
+Idea 2: Radio fantasma
+
+Una radio que no sintoniza estaciones reales, sino que genera un collage emocional de sonidos del entorno
+
+Reproduce sonidos distorsionados o samples según el tono predominante.
+
+LEDs muestran visualmente las “emociones” del entorno. una radio que no comunica información, sino estados de ánimo.
+
+Idea 3: Máquina de resonancia sentimental
+
+Usa un sensor biométrico (pulso o temperatura de la piel) para generar sonido y visuales reactivos.
+
+Si el usuario está calmado, emite un sonido suave.
+
+Si está nervioso, la frecuencia sube y los LEDs titilan.
+
+Idea 4: Caja de memoria sonora
+
+un dispositivo que graba pequeños fragmentos de sonido cada vez que alguien se acerca (sensor de proximidad).
+
+Luego los reproduce al azar con distorsiones suaves. Cuando alguien toca o se acerca a la caja, emite esta "melodia" creada de fragmentos de grabaciones. memoria afectiva.
+
+Idea 5: Máquina que llora
+
+un artefacto que “llora” agua (con una pequeña bomba) cuando detecta ciertos sonidos, como gritos o altos volúmenes. convierte el ruido del mundo en lágrimas
+
+`Mis ideas (aparte de las ideas grupales):`
+
+- Máquinas que den sentimiento tipo `ternura`
+  - Máquina de suspiros: suspira cada vez que alguien pasa cerca, como si se enamorara en silencio.
+  - Ventilador que te peina: cuando detecta que te acercas, sopla suavemente, como si te arreglara el pelo.
+  - Máquina de caricias frustradas: intenta tocarte con un brazo mecánico, pero siempre se detiene a medio camino.
