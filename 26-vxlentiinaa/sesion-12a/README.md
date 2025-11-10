@@ -143,11 +143,11 @@ Partimos con la idea de realizar alguna acción delicada pero con su antónimo, 
 - Hacer algo que se realiza minuisciosamente pero realizarlo de manera súper rápida y brusca. Como tejer algo.
 - Algo que se hace en la vida cotidiana, pero hacerlo de una manera absurdamente distinta. Como lavarse los dientes con...
 
-Idea 1: Máquina ...
+`Idea 1: Máquina ...`
 
 Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
 
-Idea 2: Radio fantasma
+`Idea 2: Radio fantasma`
 
 Una radio que no sintoniza estaciones reales, sino que genera un collage emocional de sonidos del entorno
 
@@ -155,7 +155,7 @@ Reproduce sonidos distorsionados o samples según el tono predominante.
 
 LEDs muestran visualmente las “emociones” del entorno. una radio que no comunica información, sino estados de ánimo.
 
-Idea 3: Máquina de resonancia sentimental
+`Idea 3: Máquina de resonancia sentimental`
 
 Usa un sensor biométrico (pulso o temperatura de la piel) para generar sonido y visuales reactivos.
 
@@ -163,13 +163,13 @@ Si el usuario está calmado, emite un sonido suave.
 
 Si está nervioso, la frecuencia sube y los LEDs titilan.
 
-Idea 4: Caja de memoria sonora
+`Idea 4: Caja de memoria sonora`
 
 un dispositivo que graba pequeños fragmentos de sonido cada vez que alguien se acerca (sensor de proximidad).
 
 Luego los reproduce al azar con distorsiones suaves. Cuando alguien toca o se acerca a la caja, emite esta "melodia" creada de fragmentos de grabaciones. memoria afectiva.
 
-Idea 5: Máquina que llora
+`Idea 5: Máquina que llora`
 
 un artefacto que “llora” agua (con una pequeña bomba) cuando detecta ciertos sonidos, como gritos o altos volúmenes. convierte el ruido del mundo en lágrimas
 
