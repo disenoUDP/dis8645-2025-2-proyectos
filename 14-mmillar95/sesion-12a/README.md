@@ -8,6 +8,24 @@ Revisión de la encuesta.
 
 [Mónica Bate.](https://proyectosonec.org/artista/monica-bate/)
 
+## Recomendaciones musicales de Aarón
+
+Octubre 28 martes: Tame impala - currents
+
+Octubre 29 miércoles: Marineros - o marineros
+
+Octubre 30 jueves: fakuta - tormenta solar
+
+Octubre 31 viernes: Ela minus - acts of rebellion
+
+Noviembre 01 sábado: Los prisioneros - pateando piedras
+
+Noviembre 02 domingo: Gonzalo martinez y sus congas pensantes
+
+Noviembre 03 lunes: Esdlcp - historial de caídas
+
+Fuente: [13-Bernardita-Jesus](https://github.com/mmillar95/dis8645-2025-2-proyectos/tree/main/13-Bernardita-Jesus/sesion-12a)
+
 ## Proyecto_03 
 
 Fecha de presentación: Miercoles 10 de Diciembre, 09:00 am.
