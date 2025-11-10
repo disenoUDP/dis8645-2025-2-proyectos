@@ -4,8 +4,6 @@
 
 ### clase
 
-
-
 #### info adicional
 
 los pines de los componentes por lo general están separados por 1 mills, 1 mills es una milésima de 1 pulgada(1inch/1000).
