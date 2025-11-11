@@ -10,7 +10,7 @@ Martes 11 de noviembre, 2025
 
 ---
 
-### Desarrollo de la parte formal y la carcasa
+### Desarrollo de la parte formal de la carcasa
 
 #### Modelado
 
