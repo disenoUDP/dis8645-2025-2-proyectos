@@ -9,4 +9,4 @@ primera parte: trabajo grupal
 - la idea de esta ornamentación es que tenga coherencia y se vea detallado y pro, no que sea poner cosas por todos lados y que se vea desordenado
 - definir la forma en la que se resetea la máquina y cada uno de sus actuadores
 - las luces se detienen de forma gradual pero el resto de la máquina no? quizá esto podría generar una especie de incongruencia
-- definir las ´ñ
+- sonidos: sonidos cambian tonos a medida que te acercas al clímax? estos sonidos también vendrían acompañados con un aumento de volumen? establecer si poner más indicadores de que te acercas a la meta harán que el usuario se sienta más cautivado/motivado a llegar a la meta
