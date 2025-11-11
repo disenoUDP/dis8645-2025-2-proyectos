@@ -1,8 +1,11 @@
 # sesion-14a
 
-Corrección de diagrama de flujo
+Hoy llegue a corregir un poco el diagrama de flujo ya que realmente estaba suuuuuuper enredado, le pedí ayuda a Mateo y Misaa, de cómo podría crear esta acción constante, donde la máquina cada 30 segundos empezará a “girar”.
+
+Aqui esta la 1ra version hecha en Mermaid, que también tiene errores ortograficos:
 
 ![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo1.png)
+
 
 ``` mermaid
 ---
