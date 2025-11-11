@@ -8,6 +8,8 @@ Martes 11 de Noviembre, 2025
 
 - Hablamos de la exposición de Discusiones Contemporáneas, que se inaugura mañana. En la que Aarón, Mateo y Fran estuvieron trabajando. Por eso Aarón no podrá venir, ya que estuvo programando todos los videos para que fueran interactivos y respondieran a preguntas.
 
+---
+
 ### Desarrollo de la parte formal y la carcasa
 
 #### Modelado
@@ -35,5 +37,3 @@ La propuesta contempla dividir el huevo en dos secciones, una mitad impresa en 3
 -
 
 ### Palabras importantes
-
-## Encargo
