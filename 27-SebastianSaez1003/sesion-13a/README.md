@@ -118,6 +118,22 @@ No, no podrás, recibirás constantes recuerdos cada pocos segundos de cómo dej
 
 Eres una persona terrible, como es posible que dejaras que esto les pasará a los pobres *YRA.
 
+## Máquina literal
+
+Una consola portable, de tamaño y forma similar a una gameboy advance.
+
+Tiene un display en las que se podrá observar todo lo necesario sobre tu *YRA PET.
+
+En la parte superior de la consola tendrá el LDR.
+
+En su lado izquierdo y derecho existirá un botón de una flecha apuntando hacia la dirección en la que está montada, no la munición, la forma geométrica la cual se puede asociar a un triángulo en conjunto a un rectángulo, específicamente como se puede observar en la siguiente imagen:
+
+![Imagen de que es una flecha](./imagenes/flecha-izquierda.png)
+ 
+Los cambios del display respecto a su comunicación serán cada periodo de tiempo de aproximadamente 2 a 5 minutos.
+
+Los cambios referentes a el LDR y el giroscopio sera instantaneo, donde *YRA sufrirá las consecuencias de tus acciones apenas ocurran, dándote no menos de 5 segundos, ni más que 20 segundos para actuar acorde al bienestar de *YRA.
+
 ## Componentes principales
 
 Display, dependerá del tamaño que establezcamos para la máquina
@@ -132,3 +148,5 @@ ACELERÓMETRO
 https://afel.cl/products/sensor-acelerometro-gy-291-adxl345-3-ejes?pr_prod_strat=e5_desc&pr_rec_id=c81a06bbc&pr_rec_pid=8381999546520&pr_ref_pid=8381993943192&pr_seq=uniform
 
 Arduino, para la programación del funcionamiento de *YRA.
+
+LED, para demostrar que está prendida la consola.

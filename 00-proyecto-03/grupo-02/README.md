@@ -1,5 +1,6 @@
 # grupo-02
-## IDEAS INICIALES 
+## PROCESO: IDEAS INICIALES
+
 
 ### 𖤐 **Máquina de la Ansiedad**
 
@@ -186,3 +187,25 @@ Reacciona distinto según el tipo de acercamiento (brusco o suave). No responde 
 ### X 𖤐 **El Mecanismo de la Autoexplotación - Agotamiento emocional**  
 
 Cuanto más la usas o interactúas con ella, más rápido se deteriora. Representa al cuerpo o mente que no sabe descansar.
+
+------------------------------------
+Decidimos que haremos dos robots: Máquina de la Ansiedad + Máquina de la verguenza
+### Presupuestos:
+
+Ambos robots
+
+- Placa arduino uno + cable x2 ✔
+- Protoboard (grande) x2 ✔
+- Cables macho-macho x2: $1000 (https://afel.cl/products/pack-20-cables-de-conexion-macho-macho) = **2000**
+
+- Sensor ultrasónico x2 (https://afel.cl/products/sensor-de-ultrasonico-hc-sr04) = **3000**
+- Motor vibrador PWM Switch DC (1) (https://afel.cl/products/motor-vibrador-pwm-switch-dc) = **2000**
+- Módulo Mosfet IRF520 (1) (https://afel.cl/products/modulo-mosfet-irf520) = **2000**
+- Micro Servomotor SG90 (1) (https://afel.cl/products/micro-servomotor-sg90) = **1990**
+- Diodo Led RGB x15 (https://afel.cl/products/diodo-led-rgb-5mm) = **1500**
+- Resistencias 220oms (https://afel.cl/products/kit-600-resistencias-1-4w-30-valores) = **4990**
+- **17.480** total
+
+
+VER si podemos hacer que las dos interactuen
+
