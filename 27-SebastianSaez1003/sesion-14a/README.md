@@ -2,7 +2,7 @@
 
 Corrección de diagrama de flujo
 
-![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo2.png)
+![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo1.png)
 
 ``` mermaid
 ---
