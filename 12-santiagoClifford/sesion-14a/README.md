@@ -28,7 +28,7 @@ graph TB;
 
 pseudocódigo en proceso
 ```cpp
-const int servoBody;
+/*const int servoBody;
 const int servoGarra;
 const int pinSensorPresencia;
 const int sensorBrazo;
@@ -37,11 +37,10 @@ int cercania;
 
 bool usuarioPresente = false;
 
-cercania = digitalRead(pinSensorPresencia);
+cercania = digitalRead(pinSensorPresencia);*/
 
 if(pinSensorPresencia >= rangoDeteccion){
  pedirAmor();
- 
 }
 
 if(pinSensorBrazo){
@@ -57,10 +56,22 @@ if(amorRecibido){
 }
 
 void pataleta(){
- estarLorrando;
+ llorar();
 }
 
-if(!amorRecibido && tiempoTranscurrido>30000){
-    protocoloAUtodestruccion;
+void pataletaBrigida(){
+ llorar();
+ gritar();
+ tiritar();
+}
+
+void protocoloAutodestruccion(){
+ audioAutodestruccion();
+ audioCuentaRegresiva();
+ 
+ if(tiempoTranscurrido>30000){
+    girar();
+    cabezazoAlBoton();
+}
 }
 ```
