@@ -75,3 +75,17 @@ void protocoloAutodestruccion(){
 }
 }
 ```
+
+## avance en cuaderno
+
+![croquis1](./imagenes/croquis1.jpg)
+planificación de hoy. Estábamos muy atrasados así que anoté todo lo pendiente y establecimos tiempos limitados para cada actividad
+
+![croquis2](./imagenes/croquis2.jpg)
+plataforma del robot y estado de ánimo
+
+![croquis3](./imagenes/croquis3.jpg)
+planificación flujo y flujo detallado de las funciones
+
+![croquis4](./imagenes/croquis4.jpg)
+ideas de cómo diseñar la vértebra
