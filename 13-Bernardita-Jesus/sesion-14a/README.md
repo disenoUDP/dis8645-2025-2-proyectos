@@ -1,5 +1,7 @@
 # Sesión-14a
 
+Martes 11 de Noviembre, 2025
+
 ## Trabajo en clase
 
 ### Cosas que hablamos en la mañana
