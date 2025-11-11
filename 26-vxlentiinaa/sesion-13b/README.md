@@ -33,6 +33,12 @@ El proyecto propone la creación de una máquina sentimental, un artefacto inter
 
 `Próximo martes tener: presupuesto, carta gantt macro (semana a semana), bocetos físicos y diagramas de flujo, pseudocódigo`
 
+![Presupuesto](./imagenes/presupuestoMaquinasSentimentales.png)
+
+![Carta Gantt](./imagenes/cartaGantt.jpeg)
+
+![Diagrama de Flujo](./imagenes/diagramaDeFlujo1.jpg)
+
 ---
 
 ### Segundo bloque, clase por Mateo y Janis
@@ -47,6 +53,146 @@ El proyecto propone la creación de una máquina sentimental, un artefacto inter
 - plantear bien la idea material
 
 `arduino uno r4 wifi, investigar servidor y cliente, conexiones inalambricas`
+
+Janis nos dijo que trabajaramos con arduino r4 wifi, ella nos ayudaría y Mateo nos ayudaría a realizar los mapping en una página web desde github.
+
+---
+
+ARDUINO UNO R4 WIFI
+
+¿Qué hardware tiene el UNO R4 WiFi?
+
+- El UNO R4 WiFi combina un microcontrolador principal Renesas RA4M1 (ARM Cortex-M4) y un módulo ESP32-S3 que se encarga de Wi-Fi y Bluetooth. Esto significa que la conectividad inalámbrica se gestiona por el coprocesador ESP32-S3 integrado
+
+Librerías y ejemplos oficiales
+
+- Arduino distribuye ejemplos y una librería WiFi específica para el UNO R4 (incluida en el paquete de la placa en el IDE). En la documentación oficial hay ejemplos de WebClient, WebServer (AP_SimpleWebServer) y otros. Empieza por instalar el paquete UNO R4 WiFi en el Boards Manager y revisar “WiFi examples” en la doc
+
+Modos de operación Wi-Fi (conceptos)
+
+- Modo cliente (Station, STA): el UNO R4 se conecta a un router/SSID como cualquier dispositivo; con WiFi.begin(ssid, pass) obtienes IP y puedes abrir sockets/TCP/HTTP hacia servidores externos.
+- Modo punto de acceso (AP / SoftAP): el UNO R4 puede crear su propia red Wi-Fi (SSID propio) y atender clientes locales; útil para páginas web locales o control sin router.
+- Servidor vs cliente (aplicación):
+  - Servidor = tu UNO R4 escucha conexiones entrantes (p. ej. web server HTTP, socket TCP server).
+  - Cliente = tu UNO R4 abre conexiones a servidores externos (p. ej. hacer GET a una API, enviar datos a un servidor TCP).
+
+Ejemplo mínimo: Cliente HTTP (conseguir un recurso web)
+```cpp
+#include <WiFi.h>        // librería incluida en el core UNO R4 WiFi
+#include <WiFiClient.h>
+
+const char* ssid = "TU_SSID";
+const char* password = "TU_PASSWORD";
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+  WiFi.begin(ssid, password);
+  Serial.print("Conectando a WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println();
+  Serial.print("IP: ");
+  Serial.println(WiFi.localIP());
+
+  // conexión HTTP simple
+  WiFiClient client;
+  if (client.connect("example.com", 80)) {
+    client.println("GET / HTTP/1.1");
+    client.println("Host: example.com");
+    client.println("Connection: close");
+    client.println();
+    while (client.connected() || client.available()) {
+      if (client.available()) {
+        String line = client.readStringUntil('\n');
+        Serial.println(line);
+      }
+    }
+    client.stop();
+  } else {
+    Serial.println("No se pudo conectar al servidor HTTP");
+  }
+}
+
+void loop() { }
+
+```
+
+Ejemplo mínimo: Servidor web en modo AP (página simple)
+
+```cpp
+#include <WiFi.h>
+#include <WebServer.h>   // puede llamarse WebServer o WiFiServer según ejemplo
+
+const char* ap_ssid = "MiUNO_R4_AP";
+const char* ap_pass = "12345678";
+
+WebServer server(80);
+
+void handleRoot() {
+  server.send(200, "text/html", "<h1>Hola desde UNO R4 WiFi</h1>");
+}
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.softAP(ap_ssid, ap_pass);          // crea AP
+  Serial.println("AP creado, IP: ");
+  Serial.println(WiFi.softAPIP());
+  server.on("/", handleRoot);
+  server.begin();
+}
+
+void loop() {
+  server.handleClient();
+}
+
+```
+
+HTTPS / SSL y limitaciones
+
+- El UNO R4 tiene ejemplos para conexiones HTTPS (Web Client SSL). Hacer HTTPS en microcontroladores requiere cuidado con certificados y memoria; revisa el ejemplo oficial “WebClient SSL” para ver cómo gestionarlo.
+- Limitación práctica: conectar el UNO R4 como cliente a redes WPA2-Enterprise puede no ser posible con el módulo Wi-Fi del R4 (ESP32-S3) según reportes de usuarios — confirmar si tu red usa ese tipo de autenticación
+
+Problemas y consejos prácticos / troubleshooting
+
+- Si las páginas en modo AP no responden (timeout): revisa que la IP devuelta por el AP sea la que usas en el navegador; algunos usuarios reportan timeouts con el ejemplo AP_SimpleWebServer y han necesitado comprobar versión del core y navegador. Instalar/actualizar el UNO R4 board package suele resolver muchos problemas.
+- Asegúrate de tener la versión correcta del core UNO R4 en el IDE (Boards Manager) — las librerías WiFi necesarias vienen con ese paquete.
+- Para debugear: Serial prints del estado de conexión (WiFi.status()), WiFi.localIP() / WiFi.softAPIP(), y chequear si el puerto está abierto (telnet/nmap) desde la máquina cliente ayudan mucho
+
+Recursos oficiales y lecturas recomendadas (para profundizar)
+
+- Página oficial UNO R4 WiFi (datos de la placa, resumen): documentación Arduino.
+- Tutoriales / ejemplos WiFi para UNO R4 en la documentación de Arduino (WebServer, WebClient, AP).
+- Datasheet / manual del UNO R4 WiFi (PDF) — info técnica y características.
+- Hilos y foros (problemas reales, WPA2 Enterprise y timeouts AP): Arduino Forum / StackOverflow. Útiles para ver soluciones prácticas y errores reportados por la comunidad.
+
+<https://docs.arduino.cc/hardware/uno-r4-wifi/>
+
+<https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/>
+
+<https://forum.arduino.cc/t/arduino-uno-r4-wifi-web-client-ssl-example-html-js-syntax-from-web-server/1375227>
+
+<https://forum.arduino.cc/t/using-arduino-r4-wifi-on-a-wpa-2-enterprise-network/1272729>
+
+<https://docs.arduino.cc/tutorials/uno-r4-wifi/r4-wifi-getting-started/>
+
+<https://docs.arduino.cc/resources/datasheets/ABX00087-datasheet.pdf>
+
+<https://forum.arduino.cc/t/unor4-with-wifi-and-the-wifisslclient-library/1184221>
+
+<https://forum.arduino.cc/t/uno-r4-wifi-access-point/1225068>
+
+<https://docs.arduino.cc/tutorials/uno-r4-wifi/cheat-sheet/>
+
+<https://forum.arduino.cc/t/arduino-r4-wifi-vs2022-tcp-client-server/1397088>
+
+<https://forum.arduino.cc/t/arduino-r4-wifi-access-point/1146018>
+
+<https://github.com/tigoe/Wifi_Examples>
+
+---
 
 El proyecto propone la creación de una máquina sentimental, un artefacto interactivo capaz de reaccionar sensiblemente al entorno especialmente al tacto humano esas emociones a través de visuales luminosos y patrones en movimiento.
 
