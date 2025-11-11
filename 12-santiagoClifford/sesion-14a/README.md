@@ -89,3 +89,12 @@ planificación flujo y flujo detallado de las funciones
 
 ![croquis4](./imagenes/croquis4.jpg)
 ideas de cómo diseñar la vértebra
+
+### avance post clase
+
+comencé a diseñar un sistema que controle la posición de jorgito, para que pueda transicionar entre sus 2 estados, erguido y caído.
+
+![planimetría de la vértebra](./imagenes/planim.png)
+![foto de la vértebra](./imagenes/vertebra.png)
+
+la idea sería encadenar varios de estos módulos, y conectarlos con un hilo. Y que la tensión del hilo permita que la espina se "estire".
