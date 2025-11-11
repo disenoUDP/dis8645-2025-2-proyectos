@@ -1,6 +1,6 @@
 # Sesión-14a
 
-Martes 11 de Noviembre, 2025
+Martes 11 de noviembre, 2025
 
 ## Trabajo en clase
 
