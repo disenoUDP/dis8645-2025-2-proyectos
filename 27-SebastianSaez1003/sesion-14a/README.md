@@ -2,4 +2,4 @@
 
 Corrección de diagrama de flujo
 
-![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo2)
+![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo2.png)
