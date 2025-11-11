@@ -22,7 +22,7 @@ flowchart TB
     n23 --> n34["cada click aumenta la velocidad del audio (hasta 3 niveles)"]
     n36[" "] --> n37[" "]
     n39[" "] --> n40[" "]
-    n35 --> n41["La enseñanza es: que algunas veces tratar hacer todo no soluciona nada."]
+    n35 --> n41["La moraleja es: que algunas veces tratar hacer todo no soluciona nada."]
     n35@{ shape: rect}
     n36@{ shape: anchor}
     n37@{ shape: anchor}
