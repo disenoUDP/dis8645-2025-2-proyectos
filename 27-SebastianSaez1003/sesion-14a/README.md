@@ -2,10 +2,15 @@
 
 Hoy llegue a corregir un poco el diagrama de flujo ya que realmente estaba suuuuuuper enredado, le pedí ayuda a Mateo y Misaa, de cómo podría crear esta acción constante, donde la máquina cada 30 segundos empezará a “girar”.
 
-Aqui esta la 1ra version hecha en Mermaid, que también tiene errores ortograficos:
+Aquí está la 1ra versión hecha en Mermaid, que realmente es difícil de seguir ya que no tiene un punto de inicio claro.
 
 ![Corrección de diagrama de flujo](./imagenes/diagramaDeFlujo1.png)
 
+Luego de ver esto, Janis me hizo la recomendación de copiar el código de mermaid directamente al Markdown, que realmente se ve mucho mejor.
+
+También me puse a hacer prueba con mis compañeros de grupo, para que gracias a sus comentarios y su verdadero entendimiento de cómo iría a funcionar esta máquina, llegamos a un diagrama de flujo mucho más claro.
+
+El 2do diagrama de flujo sería el siguiente:
 
 ``` mermaid
 ---
