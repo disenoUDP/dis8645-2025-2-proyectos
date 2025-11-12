@@ -18,4 +18,8 @@ Esa es la situación que podríamos intentar alcanzar, una situación de inconve
 
 En mi mente la interacción perfecta es que el usuario tenga que presionar botones, los cuales pueden causar la caída de la máquina.
 
+Con esto en mente, realizamos una cotización de los posibles componentes que podríamos querer usar con mis compañeros para el proyecto.
 
+Y a partir de esto, realizamos un pseudocódigo con el estilo que ya habíamos aplicado para el proyecto 2, llamando a los archivos según su categorización de si son actuadores o sensores, una sección de créditos, ensamblaje.
+
+No tiene nombre de proyecto porque aun no lo decidimos, pero porque es un huevo, de nombre gracioso le pondremos Webo por ahora y no es un pseudocódigo, sino que el Webo se está empollando.
