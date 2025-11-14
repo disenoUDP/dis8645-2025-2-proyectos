@@ -4,8 +4,6 @@
 
 ### clase
 
-
-
 #### info adicional
 
 los pines de los componentes por lo general están separados por 1 mills, 1 mills es una milésima de 1 pulgada(1inch/1000).
@@ -37,3 +35,5 @@ un arduino r3, por ejemplo, tiene un microprocesador. Dispositivos más avanzado
 - [CCC](https://www.ccc.de/en/home)
 
 - [github CLI](https://cli.github.com)
+
+- [Rafael Lozano Hemmer](https://www.lozano-hemmer.com)
