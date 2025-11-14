@@ -35,5 +35,18 @@ Se supone que se me dijo que la idea del abrazo aunque buena, era simple.
 
 De solo pensarlo me da un poquito de felicidad...un ser que luche por su propia existencia en un mundo como el nuestro !OH EL DRAMA!
 
+![Boceto 1](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-12b/imagenes/Boceto%201.jpg)
+
+![Boceto 2](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-12b/imagenes/Boceto%202.jpg)
+
+---
+
+- Para esto se usarian servos para las manos y que estas se agarren como una garra de maquina
+- Caja de sonido para emitir pequeñas suplicas
+- Sensor ultrasonico para detectar a una persona cerca
+- Motor de vibración para emitir descontento
+
+
+Obviamente se deberia desarrollar la idea con mis compañeres pero mi intención es esa. algo que se vea infantil pero con una carga emocional
 
 
