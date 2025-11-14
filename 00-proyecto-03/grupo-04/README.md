@@ -1,4 +1,16 @@
-# grupo-04
+# grupo-04 - Cachureos
+
+INTEGRANTES
+- Yamna Carrión / [yamna-bit](https://github.com/yamna-bit)
+- Valentina Chávez / [valechavezalb](https://github.com/valechavezalb)
+- Antonia Fuentealba / [AntFuentealba](https://github.com/AntFuentealba)
+- Millaray Millar / [mmillar95](https://github.com/mmillar95)
+- Sofía Pérez / [sofia-perezm](https://github.com/sofia-perezm)
+- Valentina Ruz / [vxlentiinaa](https://github.com/vxlentiinaa)
+
+---
+
+## Lluvia de ideas
 
 Idea 1: Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
 ideas
