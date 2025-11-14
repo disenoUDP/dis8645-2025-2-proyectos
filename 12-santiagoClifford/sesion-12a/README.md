@@ -12,7 +12,6 @@ hicimos los grupos.
 | FranUDP          | modelado 3d, impresion 3d, código, circuitos, problem solving | diseño grafico  |
 | santiagoClifford | código, UX, conceptualización, escritura                      | delegar         |
 
-
 ### máquinas sentimentales
 
 objetos cuyas cualidades externas, que producen sentimiento específicos.
@@ -29,13 +28,13 @@ una experiencia donde se le pide al objeto usuario que se despoje de todas sus p
 
 casco, te responde “asistente virtual”
 
-robot que brinde abrazos.normalmente se asocia a los robots con la flata de emociones
+robot que brinde abrazos.normalmente se asocia a los robots con la falta de emociones
 
 el usuarie es la interacción. el movimiento del cuerpo es cmo el mouse
 brea
 epilepsia
 agorafobia
-https://etimologias.dechile.net/?abrazo
+<https://etimologias.dechile.net/?abrazo>
 
 - despertador que te hace despertarte de mala gana.
 
@@ -68,8 +67,6 @@ una interfaz donde la persona controla un computador a través de su interacció
 #### incomodidad frente al conflicto
 
 casco que detecta al tono de la voz(tranquilo, agresivo, compasivo, etc.). Muestra de manera visual, el tono con el que se está hablando. Funciona como un "medidor de temperatura" en la habitación, referente a si el ambiente está tenso, tranquilo, etc.
-
-
 
 ### feedback
 
