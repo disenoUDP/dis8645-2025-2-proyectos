@@ -3,7 +3,7 @@
 
 idea inicial: máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti
 
-Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
+Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no comprende mucho las emociones humanas, si no, acciones simples con instrucciones simples, por lo tanto si a este no se le da "cariño" en los primeros 30 minutos de cuando te detecta, este preferira desconectarse antes de sentirse ignorado (en este caso se quedaria en una suspensión y no completamente apagado)
 
 ---
 
