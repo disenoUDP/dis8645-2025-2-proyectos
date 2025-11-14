@@ -1,20 +1,31 @@
 # sesion-13a
 
+Como funciona la Inteligencia Artificial:
 
-idea inicial: máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti
+La Inteligencia Artificial (IA) es un campo de la informática dedicado a crear sistemas para realizar tareas donde se requieren la  inteligencia humana. con las toma de decisiones y diferentes respuestas. Impulsada por técnicas como el Aprendizaje Automático (Machine Learning) y las Redes Neuronales Profundas (Deep Learning), la IA analiza grandes volúmenes de datos para identificar patrones y hacer predicciones.
 
-Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no comprende mucho las emociones humanas, si no, acciones simples con instrucciones simples, por lo tanto si a este no se le da "cariño" en los primeros 30 minutos de cuando te detecta, este preferira desconectarse antes de sentirse ignorado (en este caso se quedaria en una suspensión y no completamente apagado)
+- G: Generadora, Crea nuevos datos, como imágenes o texto. Su objetivo es generar ejemplos tan realistas que puedan engañar a la red Discriminadora.
+- D: Discriminadora, Evalúa los datos que recibe. Trata de entender si el contexto (el ejemplo de dato) que se le presenta es real 
 
----
+CHAR - RNN, Character-level Recurrent Neural Network) es un tipo de Red Neuronal Recurrente (RNN) que opera y hace predicciones a nivel de carácter individual en lugar de a nivel de palabra completa.
 
-Mapa de flujo hecho en papel:
-![Flujo](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-13a/imagenes/Flujo.jpg)
 
-Después mi compañera lo pasó a Mermaid para una versión digital (Ver en su Github)
+- sensor de presión o de fuerza
+- medidor de c02 mq-135
+- Exposición de bolsas que simulaban pulmones
 
-Con ello comencé con los bocetos de nuestro mono sin nombre:
+Diferentes exposiciones para diferentes ideas:
 
-![Monkey](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-13a/imagenes/Mono%20Boceto.jpeg)
+https://www.theuncomfortable.com/
+
+https://mac.uchile.cl/actividades/efimera_-las-llamadas-que-nunca-hice/
+
+https://tech.yahoo.com/apps/articles/messenger-app-keep-friends-anxiously-221716106.html
+
+https://en.wikipedia.org/wiki/Can't_Help_Myself_(Sun_Yuan_and_Peng_Yu) 
+
+Can't Help Myself (Sun Yuan and Peng Yu)
+
 
 
 
