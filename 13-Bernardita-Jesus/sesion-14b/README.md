@@ -4,13 +4,23 @@
 
 ### Cosas que hablamos en la mañana
 
-- 
+- hablamos de la exposicion en la que trabajaron aaron, mateo y fran, que fue realizada en el centro cultural montecarmelo, yo fuia esa expociion y estuvo alucinante, era muchas pamtallas reproduciendo relatos, sobre unas estanterias metaalicas que funcionaban como modulos para darle mas profuncidad a esta expsicion que se trataba de las narrativas presentadas en diferectes pantallas, unas 50 pantallas, me encanto la profundidad que supieron darle en la museaografia 
 
-- 
+- aaron dijo que fue el proyecto mas dificil de su vida, pero est muy feliz y emocionade por lo que logro haciendo esta exposicion 
+
+- lenguaje bash, lenguaje de la terminal
+- roy macdonald
+
+- rasberry pi 
+
+- boot, iniciar, reboot reiniciar
+
+- instalar bibliotecas y espicificar las versiones para que no instale la mas actual o otra ya que puede romper el codigo.
 
 ### Referentes
 
--
+- roy macdonald
+
 
 -
 
