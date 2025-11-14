@@ -55,7 +55,6 @@ int tiempoTranscurrido;
 
 void setup(){
 standBy = true;
-
 }
 
 void loop(){
@@ -65,10 +64,7 @@ if (standBy==true){
 }
 if(userDetected==true){
 convencer();
-}
-
-
-}
+}}
 
 void modoStandBy(){
 cercaniaUser = analogRead(pinSensorUltraS);
@@ -78,15 +74,15 @@ standBy = false;
 }}
 
 void convencer(){
-    play.audio;
-    servo.apretar;
+ play.audio;
+ servo.apretar;
     
-   presionDetected = analogRead(pinSensorPresion);
-   if(presionDetected<1){
-    pataleta();
-   }else{
-    servo.apretar;
-   }
+ presionDetected = analogRead(pinSensorPresion);
+ if(presionDetected<1){
+ pataleta();
+ }else{
+ servo.apretar;
+ }
 }
 
 void pataleta(){
@@ -150,6 +146,18 @@ void pedirAmor(){
 
 ```
 
+se puede corregir desde la 11a
+
+### avance
+
+hoydía nos esforzamos mucho con ailén y carla en avanzar en el psudocódigo, para ello nos ayudamos de diagramas y "pensar en voz alta".
+
+![declaraciones if en papel](./imagenes/pseudo-v1.jpg)
+
+![diagrana de flujo para orientarme](./imagenes/diagramaFlujo.jpg)
+
+Gracias a esto pudimos llegar al siguiente resultado:
+
 pseucódigo esta vez si es pseudo
 
 ```cpp
@@ -172,5 +180,3 @@ pseucódigo esta vez si es pseudo
 
 //pasados 30 segundos vuelve al estado standBy 
 ```
-
-se puede corregir desde la 11a

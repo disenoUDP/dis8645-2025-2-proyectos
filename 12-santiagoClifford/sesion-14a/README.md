@@ -101,3 +101,25 @@ comencé a diseñar un sistema que controle la posición de jorgito, para que pu
 ![foto de la vértebra](./imagenes/vertebra.png)
 
 la idea sería encadenar varios de estos módulos, y conectarlos con un hilo. Y que la tensión del hilo permita que la espina se "estire".
+
+![gif de la probeta 1](./imagenes/vertebra-probeta1.gif)
+
+aquí jotamorales me ayudó, e imprimió 2 de estas piezas. Y las probé como encajaban.
+
+![gif probeta 1 otra prueba](./imagenes/vertebra-probeta1b.gif)
+
+aquí me dí cuenta que este modelo era muy inestable, así que hice una 2da prueba.
+
+![vértebra v2](./imagenes/vertebra-v2.png)
+
+imrpimí 4 de estos y lo probé. (imprimí 4 pq con la probeta anterior aprendí que mientras más altura, más inestable, por lo que con 4 era más fiel a como sería la versión final).
+
+![probeta de la vertebra-v2](./imagenes/vertebra-v2-ver.gif)
+
+aquí lo probé y sruge el problema de que mientras más lejano es el módulo al origen de la cuerda, menos peso tiene, y por lo tanto, le cuesta más "caer".
+
+![croquis vertebra 3](./imagenes/vertebra3.jpg)
+
+![avance modelo 3d con rhino, vertebra v3](./imagenes/modeloPrematuro-vertebra3.png)
+
+este modelo no dio fruto, finalmente osaremos un modelo que diseñó Francisco.
