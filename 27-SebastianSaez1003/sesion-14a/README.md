@@ -55,5 +55,19 @@ flowchart TD
     linkStyle 30 stroke:#00C853,fill:none
     linkStyle 31 stroke:#D50000,fill:none
 
-
 ```
+
+También me puse a hacer prueba con mis compañeros de grupo, para que gracias a sus comentarios y su verdadero entendimiento de cómo iría a funcionar esta máquina, llegamos a un diagrama de flujo mucho más claro.
+
+El 2do diagrama de flujo sería el siguiente:
+
+(diagrama hecho con el código de mermaid)
+
+Por mi parte me puse a probar 2 de los componentes más esenciales para nuestro proyecto, siendo el sensor tilt SW-520D y el motor.
+
+Primero busque código de ejemplo del módulo SW-520D, encontrando uno que dejaba bastante claro su funcionamiento para mi a primera vista que puede ser encontrado aquí:
+
+https://acortes.co/proyecto-21-sensor-de-inclinacion-sw-520d/
+
+
+
