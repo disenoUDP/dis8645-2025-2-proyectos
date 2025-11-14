@@ -1,50 +1,55 @@
 # grupo-03
 
-## ideas equipo
+## GEE: Grupo Emocionalmente Estable 
 
-### idea din0
+Idea elegida: máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti
 
-#### apego ansioso
+Máquina de Abrazos: El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
 
-máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti.
+Componentes: 
+- Parlante
+- Cable H-H
+- 3 servos
+- Sensor ultrasónico 
+- Módulo mp3
+- Botón de árcade falso
+- Sensor de presión 
 
-### idea clifford1one
+Mapa de flujo:
 
-- idea austeridad: una experiencia donde se le pide al objeto usuario que se despoje de todas sus pertenencias, y que una báscula pese las cosas que dejó.
+```mermaid
+flowchart TB
+    A["stand BY"] --> B["usuarie detectade"]
+    B --> C["jorge pide amor"]
+    C -- usuarie abraza --> F(["jorge feliz"])
+    F --> K(["abraza devuelta"])
+    K --> L(["abraza fuerte devuelta y no suelta"])
+    L --> C
+    C -- usuarie NO abraza --> G(["jorge triste"])
+    G --> D(["entra en crisis, llora y se queja"])
+    D --> E(["30 segundos sin amor"])
+    E --> H(["amenaza con apagarse"])
+    H --> I(["le da tiempo para que lo abraces de nuevo"])
+    I --> C
 
-- idea amurrao/timidez: una maquina que vaya poneindo ladrillos o bloques de algun tipo. Si lo miras comeinza a construit una pared para que no
-![mr. burns gif](./imgs/burns.gif)
+    A@{ shape: rounded}
+    B@{ shape: rounded}
+    C@{ shape: diam}
+     A:::Peach
+     B:::Peach
+     C:::Ash
+     F:::Rose
+     K:::Rose
+     L:::Rose
+     G:::Aqua
+     D:::Aqua
+     E:::Aqua
+     H:::Aqua
+     I:::Aqua
+    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+```
+Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
 
-- idea original ![un robot sosteniendo un corazón humano que parece estar derritiéndose](./imagenes/feelinBot.jpg)
-
-esto mi hizo pensar en la asociación que tienen los robots con materiales rígidos y duros, mientras que las cosas blandas y flexibles van más asociadas a lo animal, o lo orgánico en general. Esa asociación me hizo pensar en los [fluídos no Newtonianos](https://en.wikipedia.org/wiki/Non-Newtonian_fluid). Y me topé con [este video](https://youtu.be/3zoTKXXNQIU?si=m6Zejq6GEwo8gfu5), donde las vibraciones de un parlante hacen que el fluido vaya moviéndose y tomando diferentes formas.
-
-Otra idea que tuve fue un robot que se presente con una actitud confrontacional y violenta, pero si recibe un input "violento" este se vuelva dócil y temeroso. Esto combina bien con la idea del fluído no newtoniano, pero a la inversa. Es decir, al enfrentar a este fluído de forma agresiva(con un golpe), este se vuelve rígido, pero al acercarse amable y lentamente, este te recibe y abraza.
-
-### idea franUDP
-
-#### confusión, "dislexia"
-
-una interfaz donde la persona controla un computador a través de su interacción con el entorno(espacio físico).
-
-### idea jotín
-
-#### incomodidad frente al conflicto
-
-casco que detecta al tono de la voz(tranquilo, agresivo, compasivo, etc.). Muestra de manera visual, el tono con el que se está hablando. Funciona como un "medidor de temperatura" en la habitación, referente a si el ambiente está tenso, tranquilo, etc.
-
-### idea aileen
-
-#### angustia o pena
-
-máquina que a partir de una acción exponga un problema social y genere un sentimiento de pena o angustia.
-
-ejemplo:
-
-explotación laboral o consumismo, la máquina repite algo para siempre sin descanso
-
-crisis climática, la máquina tiene miedo a quedar sola ya debido a la extinción de especies o emite sonidos, como es pajarito que canta buscando una pareja pero es el único que queda.
-
-contaminación, a medida que el aire se vuelve “más sucio” (simulado), el ventilador respira más rápido y con ruido de asfixia.
-
-desvalance social, dos mecanismos conectados: uno siempre recibe más energía o recursos (agua, luz, movimiento) que el otro.
