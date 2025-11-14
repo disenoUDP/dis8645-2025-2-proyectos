@@ -109,36 +109,30 @@ int presionDetected = -1;
 int tiempoTranscurrido;
 
 void setup(){
-
 }
 
 void loop(){
-
 cercaniaUser = analogRead(pinSensorUltraS);
 if(cercaniaUser < 10){
-    brazoAbrazable = true;
+ brazoAbrazable = true;
 }
 else{
-    brazoAbrazable = false;
+ brazoAbrazable = false;
 }
 
 if (userDetected==false){
  modoStandBy();
 } else if(userDetected==true){
  pedirAmor();
-
-  if(brazoAbrazable==true) {
-    servo.apretar;
+ if(brazoAbrazable==true) {
+ servo.apretar;
 }else if(brazoAbrazable== false){
-    pataletaLeve();
+ pataletaLeve();
 if(tiempoTranscurrido>10000 && tiempoTranscurrido<20000){
-    pataletaBrigida();
+ pataletaBrigida();
 }else if(tiempoTranscurrido>20000){
-    autoDestruccion();
-}
-} 
-}
-}
+ autoDestruccion();
+}}}}
 
 void pedirAmor(){
     play.audio;
