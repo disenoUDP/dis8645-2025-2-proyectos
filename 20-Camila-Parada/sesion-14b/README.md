@@ -27,6 +27,12 @@ Por ende comencé con un listado de cosas pendientes para reafirmar según la in
 
 ***
 
+## Bill of materials
+
+a
+
+***
+
 ### Posdata
 
 Un día de vacío.
