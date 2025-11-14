@@ -29,7 +29,16 @@ Por ende comencé con un listado de cosas pendientes para reafirmar según la in
 
 ## Bill of materials
 
-a
+| Componentes | Tipo | Qty | Precio | Link |
+|-------------|------|-----|--------|------|
+| Encoder rotatorio KY-040 360 grados | Sensor | 1 | $2.000  | https://afel.cl/products/encoder-rotatorio-ky-040-360-grados |
+| Modulo reproductor MP3 | Actuador | 1 | $2.990 | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini |
+| Motor vibrador PWM Switch DC | Actuador | 1 | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
+| Mini humidificador USB tipo C de 5V | Actuador | 1 | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
+| Micro Servomotor SG90 | Actuador | 1 | $1.990 | https://afel.cl/products/micro-servomotor-sg90|
+| Mini Parlante Altavoz | Actuador | 1 | $2.590 | https://mcielectronics.cl/shop/product/mini-parlante-altavoz-8-ohms-0-5w/ |
+| Pack Led 10mm (5) | Actuador | Varios | $3.033 – $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm/ |
+
 
 ***
 
