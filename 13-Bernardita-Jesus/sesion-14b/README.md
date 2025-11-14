@@ -17,6 +17,10 @@
 
 - instalar bibliotecas y espicificar las versiones para que no instale la mas actual o otra ya que puede romper el codigo.
 
+modelado
+
+desfazar superficie o cap y shell
+
 ### Referentes
 
 - roy macdonald
