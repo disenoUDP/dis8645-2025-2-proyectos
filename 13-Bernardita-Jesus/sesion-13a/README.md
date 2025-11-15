@@ -12,6 +12,8 @@ Martes 04 de noviembre, 2025
 
 - Los teléfonos tienen un CPU, una unidad central de procesamiento.
 
+---
+
 ml5.js
 
 Hablamos de la programación de inteligencias artificiales. Para entrenar una IA, hay que asignarle valores numéricos a los datos que usamos. En las imágenes, por ejemplo, hay que convertir cada píxel en un valor numérico. En cambio, con los textos, le enseñamos palabras y va generando una base de datos, una cadena de caracteres de texto e imagen.
