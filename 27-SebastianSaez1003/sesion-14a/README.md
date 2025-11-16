@@ -69,5 +69,84 @@ Primero busque código de ejemplo del módulo SW-520D, encontrando uno que dejab
 
 https://acortes.co/proyecto-21-sensor-de-inclinacion-sw-520d/
 
+https://acortes.co/proyecto-21-sensor-de-inclinacion-sw-520d/
 
+En realidad el sensor es relativamente fácil de usar, ya que no es dependiente de una biblioteca para su funcionamiento, simplemente hay que establecer su pin para que el arduino reciba una señal, y de esta manera, tomando el código de ejemplo que estaba en esa página web que es el siguiente:
 
+```cpp
+int pinSensor = 8;
+int pinLed = 13;
+
+void setup() 
+{
+  pinMode(pinSensor,INPUT);
+  pinMode(pinLed,OUTPUT);
+}
+
+void loop() 
+{
+  if(digitalRead(pinSensor))
+  {
+    digitalWrite(pinLed,HIGH);
+    delay(1000);
+    digitalWrite(pinLed,LOW);
+    delay(1000);
+   }
+   else
+     digitalWrite(pinLed,LOW);
+}
+
+```
+Lo modifique un poco para poder saber cual es la posición en la que se encuentra el sensor tilt con un mensaje en el monitor serial.
+
+El código con mis modificaciones sería el siguiente:
+
+``` cpp
+
+// establecer el pin que sera conectado 
+// el sensor para obtener su dato
+int pinSensor = 8;
+// crear una variable booleana para establecer 
+// si hay inclinacion o no presente
+bool parado;
+
+// lo que es necesario para los funcionamientos en void loop
+void setup() 
+{
+// establecer que el pin llamado pinSensor va a ser un input
+  pinMode(pinSensor,INPUT);
+// comenzar la comunicacion serial
+  Serial.begin(9600);
+}
+
+// aqui ocurre todos los funcionamientos del codigo
+void loop() 
+{
+  // si se recibe una señal desde el pinSensor
+  if(digitalRead(pinSensor))
+  {
+    // significa que esta de lado
+    parado = false;
+     }
+      else {
+      // sino significa que esta parado
+      parado = true;
+       }
+
+// si es que esta parado
+if (parado){
+  Serial.println("estoy hacia arriba");
+  Serial.println(parado);
+  delay(1000);
+}
+// si es que no esta parado
+else if (!parado){
+  Serial.println("estoy de lado");
+  Serial.println(parado);
+  delay(1000);
+  }
+}
+
+```
+
+Que en realidad, está sobre complejizado, la parte de la booleana que cree no era necesaria en absoluto, pero bueno, me entiendo y eso es lo importante.
