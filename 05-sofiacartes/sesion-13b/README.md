@@ -63,3 +63,110 @@ Hacer para próximo martes: presupuesto, carta gantt macro (semana a semana), bo
 |Joystick|x|$2000|[Joystick](https://afel.cl/products/joystick-palanca-de-mando?srsltid=AfmBOopSseOjbBU2wAQgNmAwmkg3E93k1qXa3xfHCyL3NsIaDLuQZYwu)|x|
 |Clables macho macho y macho hembra|x|x|[MachoMacho](https://afel.cl/products/pack-20-cables-de-conexion-macho-macho?_pos=2&_sid=effb69b91&_ss=r) [conexionMachoHembra](https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra?pr_prod_strat=jac&pr_rec_id=94b0883d2&pr_rec_pid=8381938139288&pr_ref_pid=8381849272472&pr_seq=uniform)|x|
 |Pantalla LCD Azul|1|$2400|[pantallaLCDverde](https://afel.cl/products/pantalla-lcd-verde-20x04-2004-con-i2c?_pos=5&_sid=8686c6746&_ss=r)|x|
+
+#### Pseudocódigo
+
+```cpp
+INICIO
+
+// --- DECLARACIÓN DE COMPONENTES ---
+Definir PantallaPixeles[8][8]
+Definir PantallaLCD(20x4, i2c)
+Definir SensorUltrasonico
+Definir Joystick (X, Y, Botón)
+Definir BotónPrincipal
+Definir BotónSecundario
+Definir Potenciómetro
+Definir LED_RGB
+
+Definir FiguraActual
+Definir PixelRoto
+Definir Distancia
+
+// --- ESTADO INICIAL ---
+MostrarLCD("S.O.S")
+ApagarPantallaPixeles()
+LED_RGB = ColorInicial
+
+// --- BUCLE PRINCIPAL ---
+Mientras (VERDADERO)
+    Distancia = Leer(SensorUltrasonico)
+    
+    Si (Distancia < UMBRAL_DETECCIÓN)
+        MostrarFiguraPerfecta()
+    FinSi
+    
+    Si (Distancia < UMBRAL_ERROR)
+        RomperFigura()
+    FinSi
+
+    LeerControles()
+    
+    ActualizarPantallaPixeles()
+    ActualizarLCD()
+FinMientras
+
+// --- FUNCIONES PRINCIPALES ---
+
+Función MostrarFiguraPerfecta()
+    Si (FiguraActual == NULO)
+        FiguraActual = GenerarFiguraAleatoria()   // Triángulo, X o Cuadrado
+    FinSi
+    Dibujar(FiguraActual)
+    MostrarLCD("Figura detectada")
+FinFunción
+
+Función RomperFigura()
+    PixelRoto = SeleccionarPixelAleatorio(FiguraActual)
+    MoverPixel(PixelRoto, desplazamientoPequeño)
+    MostrarLCD("Algo se rompió...")
+FinFunción
+
+Función LeerControles()
+    // --- JOYSTICK ---
+    Dirección = Leer(Joystick)
+    Si (Dirección ≠ CENTRO)
+        MoverPixel(PixelRoto, DirecciónContraria(Dirección))
+    FinSi
+    
+    Si (BotónJoystickPresionado)
+        RestaurarFiguraAlPuntoDeError()
+    FinSi
+    
+    // --- BOTÓN PRINCIPAL ---
+    Si (BotónPrincipalPresionado)
+        CambiarColorLED(LED_RGB)
+        PixelRoto = MoverPixelAleatoriamente(FiguraActual)
+    FinSi
+    
+    // --- POTENCIÓMETRO ---
+    Nivel = Leer(Potenciómetro)
+    Si (Nivel > UMBRAL_AUTODESTRUCCIÓN)
+        AutodestruirFigura()
+    FinSi
+    
+    // --- BOTÓN SECUNDARIO ---
+    Si (BotónSecundarioPresionado)
+        ReiniciarTodo()
+    FinSi
+FinFunción
+
+// --- FUNCIONES AUXILIARES ---
+
+Función RestaurarFiguraAlPuntoDeError()
+    Restaurar(FiguraActual, estadoConPixelRoto)
+    MostrarLCD("Intento de reparación...")
+FinFunción
+
+Función AutodestruirFigura()
+    DesarmarTodosLosPixeles()
+    MostrarLCD("AUTODESTRUCCIÓN ACTIVADA")
+FinFunción
+
+Función ReiniciarTodo()
+    FiguraActual = NULO
+    PixelRoto = NULO
+    MostrarLCD("S.O.S")
+    ApagarPantallaPixeles()
+FinFunción
+```
