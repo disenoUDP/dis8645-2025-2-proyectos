@@ -14,6 +14,33 @@
 
 ---
 
+### Tipos de sensores
+
+`Sensor capacitivo TTP223`
+
+- Detecta el toque de un dedo sin necesidad de presión (funciona por proximidad).
+- Muy sensible y puede colocarse bajo una capa de tela o lana.
+- Ideal si quieres que tu máquina “reaccione” apenas la acarician.
+
+`Sensor piezoeléctrico`
+
+- Detecta vibraciones o presión física (por ejemplo, un golpe o toque fuerte).
+- Económico y fácil de usar.
+- Puede servir para reacciones más intensas o bruscas (“sobresalto”).
+
+`FSR (Force Sensitive Resistor)`
+
+- Mide cuánta presión se aplica sobre su superficie
+- Ideal si quieres que la intensidad del toque cambie el color o brillo de las luces.
+
+`Sensor de proximidad IR (infrarrojo) o ultrasónico`
+
+- Detecta si alguien se acerca sin tocar el objeto.
+- Puede hacer que la máquina “se despierte” o se ilumine cuando alguien se aproxima.
+- Da una sensación más “viva” o atenta al entorno.
+
+---
+
 Discurso (modificar)
 
 El proyecto propone la creación de una máquina sentimental, un artefacto interactivo capaz de reaccionar sensiblemente al entorno especialmente al ruido, la voz o el tacto y de expresar esas emociones a través de visuales luminosos y patrones en movimiento.
@@ -218,7 +245,6 @@ Máquina Reactiva: En su estado de reposo, su formas y materialidad atraen. "La 
 
 Interacción:
 
-
 > 1. La máquina permanece en reposo y en silencio.
 
 > 2. Su forma y materialidad generan curiosidad.
@@ -239,8 +265,23 @@ Interacción:
 
 ### Tipos de referentes
 
-- Referentes de tejidos
-- Referentes de exposiciones
+- Referentes de tejidos:
+  - <https://www.instagram.com/reel/DLCM7ZnNiwB/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://www.instagram.com/reel/DLJyp0TNG3k/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://www.instagram.com/reel/DLCM7ZnNiwB/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://www.instagram.com/p/DK9ApkqNf6U/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+
+- Referentes de exposiciones y sonidos:
+  - <https://www.instagram.com/reel/DDyt8KZsJri/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://www.instagram.com/p/C11l-kFITt2/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://pin.it/6CpVtawrp>
+  - <https://pin.it/fDnes87sV>
+  - <https://pin.it/4nmQqom6A>
+  - <https://www.instagram.com/reel/DLZj0VeNKEI/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+    
 - Referentes de códigos
+
 - Referentes de objetos:
+  - <https://www.instagram.com/p/Cq9-Ho_o6ik/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
+  - <https://www.instagram.com/reel/DFHz-sXu-8F/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==>
   - Makey Makey
