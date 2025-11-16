@@ -16,9 +16,13 @@ Martes 04 de noviembre, 2025
 
 ml5.js
 
-Hablamos de la programación de inteligencias artificiales. Para entrenar una IA, hay que asignarle valores numéricos a los datos que usamos. En las imágenes, por ejemplo, hay que convertir cada píxel en un valor numérico. En cambio, con los textos, le enseñamos palabras y va generando una base de datos, una cadena de caracteres de texto e imagen.
+Hablamos de la programación de inteligencias artificiales. Para entrenar una IA, hay que asignarle valores numéricos a los datos que usamos. 
 
-Con los CAPTCHA ayudamos a que las IAs hagan asociaciones entre palabras e imágenes. Pero, ¿cómo pasa una IA de aprender con una fotografía en la que le decimos que existe un neumático, a reconocer en otra foto que también hay un neumático? En modelos como Stable Diffusion, a eso podríamos llamarle el momento en que ya tiene datos de reconocimiento y empieza a interpretar otras fotografías, por ejemplo.
+En las imágenes, por ejemplo, hay que convertir cada píxel en un valor numérico. En cambio, con los textos, le enseñamos palabras y va generando una base de datos, una cadena de caracteres de texto e imagen.
+
+Con los CAPTCHA ayudamos a que las IAs hagan asociaciones entre palabras e imágenes. Pero, ¿cómo pasa una IA de aprender con una fotografía en la que le decimos que existe un neumático, a reconocer en otra foto que también hay un neumático? 
+
+En modelos como Stable Diffusion, a eso podríamos llamarle el momento en que ya tiene datos de reconocimiento y empieza a interpretar otras fotografías, por ejemplo.
 
 GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfellow.
 
@@ -26,7 +30,11 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 Mateo nos mostró los avances de su proyecto de título.
 
-### Ideas Proyectos-02
+---
+
+## Proyectos-03
+
+### Ideas
 
 https://www.instagram.com/p/DQUYa_lgui7/?igsh=cHRjanBuYXAxMnh5
 
@@ -50,6 +58,3 @@ Trabajar más con materialidades y menos impresión 3D, desarrollar texturas par
 
 - [felipe rivas san martin](https://www.cultura.gob.cl/coleccionarte/felipe-rivas-san-martin/) atlas quear 
 
-### Palabras importantes
-
-## Encargo

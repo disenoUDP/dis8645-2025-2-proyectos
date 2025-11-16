@@ -16,3 +16,7 @@ viernes 7 de noviembre
 ## Pseudo código
 
 Hay una manivela que hace girar el encoder, cuando va completando una vuelta, el reproductor va generando un tono que aumenta proporcionalmente a la cantidad de vueltas que se le da a la manivela. Hay 10 leds que se van prendiendo uno a uno a medida que se va girando la manivela. Cuando se cumplen ciertas vueltas, el motor vibrador empieza a funcionar. Cuando pasen más vueltas se activa el dispensador de humo.
+
+A Miguel le quedó harto más bonito el pseudo código.
+
+Revisar [AQUÍ](https://github.com/MiguelVera23/dis8645-2025-2-proyectos/blob/main/29-MiguelVera23/sesion-13b/README.md)

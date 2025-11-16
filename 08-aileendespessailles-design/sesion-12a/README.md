@@ -6,15 +6,15 @@
 
 los objetos no tienen por qué ser eternos, viables, etc.
 
-- Metáfora conectar cualidades no esenciales de los objetos 
+- Metáfora conectar cualidades no esenciales de los objetos
 
-Reflexión final de la clase: “envuelto como un completo, abrazado en un océano de repeticiones de memoria corta” 
+Reflexión final de la clase: “envuelto como un completo, abrazado en un océano de repeticiones de memoria corta”
 
-máquinas sentimentales, objetos con cualidades extrañas que producen sentimientos específicos o emociones específicas no generales: 
+máquinas sentimentales, objetos con cualidades extrañas que producen sentimientos específicos o emociones específicas no generales:
 
 objeto 1, yo
 
-objeto 2, máquina 
+objeto 2, máquina
 
 metáfora, como se intersecctan 2 cualidades esenciales de 2 objetos, objeto 1 = cualidades y objeto 2 = materialidades.
 
@@ -38,11 +38,11 @@ una interfaz donde la persona controla un computador a través de su interacció
 
 casco que detecta al tono de la voz(tranquilo, agresivo, compasivo, etc.). Muestra de manera visual, el tono con el que se está hablando. Funciona como un "medidor de temperatura" en la habitación, referente a si el ambiente está tenso, tranquilo, etc.
 
-### idea aileen, angustia o pena 
+### idea aileen, angustia o pena
 
-máquina que a partir de una acción exponga un problema social y genere un sentimiento de pena o angustia. ejemplo: 
+máquina que a partir de una acción exponga un problema social y genere un sentimiento de pena o angustia. ejemplo:
 
-- explotación laboral o consumismo, la máquina repite algo para siempre sin descanso 
-- crisis climática provoca que la máquina sienta miedo a la soledad debido a la extinción de especies. Como metáfora de esta situación, emite un canto de pájaro que busca pareja, aunque sabe que es el único sobreviviente. 
+- explotación laboral o consumismo, la máquina repite algo para siempre sin descanso
+- crisis climática provoca que la máquina sienta miedo a la soledad debido a la extinción de especies. Como metáfora de esta situación, emite un canto de pájaro que busca pareja, aunque sabe que es el único sobreviviente.
 - contaminación, a medida que el aire se vuelve “más sucio” (simulado), el ventilador respira más rápido y con ruido de asfixia.
 - desbalance social, dos mecanismos conectados: uno siempre recibe más energía o recursos (agua, luz, movimiento) que el otro.
