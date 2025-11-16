@@ -1,0 +1,81 @@
+// Entradas del encoder rotatorio
+#define CLK 2
+#define DT 3
+#define SW 4
+int step = 0;
+int currentStateCLK;
+int lastStateCLK;
+int vueltas;
+String currentDir = "";
+unsigned long lastButtonPress = 0;
+
+void setup() {
+
+	// ajusta los pines del encoder como entradas
+	pinMode(CLK, INPUT);
+	pinMode(DT, INPUT);
+	pinMode(SW, INPUT_PULLUP);
+
+	// ajusta el Monitor Serial
+	Serial.begin(9600);
+
+	// lee el estado inicial del CLK
+	lastStateCLK = digitalRead(CLK);
+}
+
+void loop() {
+
+	// Lee el estado actual del CLK
+	currentStateCLK = digitalRead(CLK);
+	// si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
+	// Reacciona solo a 1 cambio de estado para evitar un doble conteo
+
+	if (currentStateCLK != lastStateCLK && currentStateCLK == 1) {
+
+		// si el estado DT es diferente al estado del CLK
+		// entonces el encoder de rotación tiene un CCW y esto significa que
+		//está en sentido antihorario CCW es decir Esta decrementando
+		if (digitalRead(DT) != currentStateCLK) {
+			step--;
+			currentDir = "CCW";
+		} else {
+			// } CW sentido Horario así que incrementa
+			step++;
+			currentDir = "CW";
+		}
+
+		// pasos multiplo de 20
+		// if (step % 20 == 0) {
+		// 	vueltas++;
+		// }
+
+		// pasos cada 20
+		if (step == vueltas * 20) {
+			vueltas++;
+		}
+
+		Serial.print("Direction: ");
+		Serial.print(currentDir);
+		Serial.print(" | Step: ");
+		Serial.print(step);
+		Serial.print(" | Vueltas: ");
+		Serial.println(vueltas);
+	}
+	
+	// guardar el ultimo estado de CLK
+	lastStateCLK = currentStateCLK;
+	// lee el estado del boton
+	int btnState = digitalRead(SW);
+	//si nosotros detectamos una senal baja, presionamos el boton
+	// if (btnState == LOW) {
+	// 	//si han pasado 50ms desde la ultimo pulso bajo,
+	// 	//significa que el botón ha sido presionado,suéltelo y presione otra //vez
+	// 	if (millis() - lastButtonPress > 50) {
+	// 		Serial.println("Button pressed!");
+	// 	}
+	// 	// guarda el ultimo evento de pulsación del boton
+	// 	lastButtonPress = millis();
+	// }
+	// Ponga un ligero retardo para ayudar a eliminar el rebote de la //lectura
+	delay(1);
+}
