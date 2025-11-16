@@ -30,6 +30,8 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 Mateo nos mostró los avances de su proyecto de título.
 
+---
+
 ## Proyectos-03
 
 ### Ideas
