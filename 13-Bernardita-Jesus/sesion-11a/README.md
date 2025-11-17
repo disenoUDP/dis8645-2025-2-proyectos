@@ -66,6 +66,8 @@ El elogio de la sombra, Libro
 
 [Marshall McLuhan](https://es.wikipedia.org/wiki/Marshall_McLuhan), libro [Comprender los medios de comunicacion](https://semioticaderedes-carlon.com/wp-content/uploads/2018/04/McLuhan_Marshall__Comprender_los_medios_de_comunicacion.pdf)
 
+---
+
 ### Referentes
 
 - [Grizzly beaar](https://en.wikipedia.org/wiki/Grizzly_Bear_(band))
