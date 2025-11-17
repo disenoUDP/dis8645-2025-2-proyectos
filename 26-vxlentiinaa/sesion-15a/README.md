@@ -8,18 +8,22 @@
 
 El viernes después de clases, mandé un mensaje muy largo por nuestro grupo en discord y ocurrieron cositas con el proyecto, nos dimos cuenta que en verdad ninguna estaba satisfecha al 100% con lo que estábamos haciendo, por lo que tratamos de darle otra vuelta al proyecto. Sentíamos que estábamos forzando el porqué del uso del sensor y la materialidad con las lanas.
 
-máquina sentimental “Atrápame si puedes”
+Así que el día sábado y domingo no pusimos full con el proyecto y avanzamos lo más que podíamos (con lo que teníamos). Así que, esta es nuestra nueva propuesta:
 
-SENTIMIENTOS:
+---
+
+MÁQUINA SENTIMENTAL "ATRÁPAME SI PUEDES"
+
+`SENTIMIENTOS:`
 - frustración
 - dominar (tener el control)
 - dirigir
 - competitividad
 
-METÁFORA:
+`METÁFORA:`
 - La máquina es una representación tecnológica del logro frustrado: esa sensación cotidiana en la que la promesa del éxito se rompe por un detalle mínimo. Al mismo tiempo, habla de la experiencia humana de perseguir algo que siempre se escapa: expectativas, logros, reconocimiento o metas personales y emocionales que parecen estar al alcance… pero nunca del todo. En ese juego constante entre deseo y evasión, la máquina encarna la relación desigual entre la intención humana y la respuesta arbitraria de un sistema. Una máquina que te hace sentir el delicado filo entre querer algo… y perderlo por un gesto mínimo.
 
-PRESENTACIÓN TEXTUAL
+`PRESENTACIÓN TEXTUAL`
 - “Atrápame si puedes” es una máquina interactiva que funciona con gestos de la mano. El usuario mueve su mano frente a un sensor, y ese gesto controla un punto en una pantalla. El objetivo del juego es alcanzar un objeto que aparece en la pantalla.
 
 Pero la máquina está diseñada para escaparse justo cuando estás a punto de atrapar el objetivo. Detecta tu cercanía y activa una especie de “glitch” o falla visual que hace que el objetivo huya. Esto provoca una mezcla de frustración y risa, porque el error no es real: la máquina te está troleando a propósito.
@@ -28,26 +32,156 @@ A veces te deja sumar puntos, otras veces te engaña, y te invita a seguir inten
 
 En resumen: es un juego que reconoce tus gestos, te hace creer que vas a ganar y luego se escapa, generando una experiencia divertida, frustrante y muy humana.
 
-BILL OF MATERIAL
-- Sensor de gestualidad PAJ 7620
-- Conversor de nivel lógico I2C 5V a 3.3V
-- Arduino Uno R4 Minima
-- Pantalla
-- Carcasa
-- Plinto
-- Cables
+`BILL OF MATERIAL`
 
-DIAGRAMA DE FLUJO
+|Nombre componente|Característica|Cantidad|Especificaciones|
+|---|---|---|---|
+|Sensor de gestualidad|PAJ 7620|1|  Es capaz de reconocer 9 gestos en direcciones diferentes, que incluyen: arriba, abajo, izquierda, derecha, adelante, atrás, en sentido horario, antihorario y balanceo|
+|Conversor de nivel lógico|I2C 5V a 3.3V|1|Este convertidor de nivel lógico bidireccional es la solución ideal para interconectar dispositivos que operan con diferentes voltajes, como 5V y 3.3V|
+|Arduino Uno|R4 minima|1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
+|Pantalla|está en el lab|1|Hay que pedirla|
+|Carcasa|Impresión 3D|1|Filamento: |
+|Plinto| | | |
+|Cables| | | |
 
-1- Pantalla prendida con algún texto (SALUDA PARA COMENZAR👋🏻)
-2- Título: "Atrápame si puedes"  monito: Mosquito Abstracto (gráfica sofi)
-3- Empieza el juego y el punto se estará moviendo todo el rato
-4- Tratar de atrapar el punto- tiene 3 vidas -
-4a- lo atrapé: 2 vidas
-4b- lo atrapé: 1 vida
-4c- Tratar de atraparlo por última vez, la máquina te trollea
-5- Cuando te trollea aparece el glitch
-6- "ingresar texto gracioso" o "imagen chistosa"
-7- vuelve al inicio (saluda para comenzar)
+`DIAGRAMA DE FLUJO`
 
-Que pasaría si: si la persona atrapa al mosquito una vez y se va, la máquina también vuelve al inicio
+```mermaid
+flowchart TD
+n1["Pantalla prendida con algún texto (*Saluda para comenzar👋🏻*)"]
+n1 --> n2["Título: *Atrápame si puedes* y un puntito abstracto en la parte de abajo"]
+n2 --> n3["Empieza el juego y el punto se estará moviendo en la pantalla"]
+n3 --> n4["Tratar de atrapar el punto (*ej: tiene 4 vidas*)"]
+n4 --> n5>"1. Lo atrapé = 3 vidas"]
+n4 --> n6>"2. Lo atrapé = 2 vidas"]
+n4 --> n7>"3. Lo atrapé = 1 vidas"]
+n5 & n6 & n7 --> n12["Si la persona juega hasta aquí, la máquina volverá a su incio"]
+n4 --> n8>"4. Cuando lo intentes atrapar la última vez"]
+n8 --> n9["La máquina te *trollea*"]
+n9 --> n10["Aparece el glitch"]
+n10 --> n11["Aparece un texto (ej: *era broma*)"]
+n11 --> n13["Vuelve al inicio (*Saluda para comenzar*)"]
+n13@{ shape: dbl-circ}
+n13 --> n1
+
+     n1:::Rose
+     n2:::Aqua
+     n3:::Lime
+     n4:::Sunset
+     n5:::Lavender
+     n6:::YellowSoft
+     n7:::Aqua
+     n12:::Rose
+     n8:::Lavender
+     n9:::YellowSoft
+     n10:::Aqua
+     n11:::Sunset
+     n13:::Lime
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
+```
+
+`PSEUDOCÓDIGO`
+
+```cpp
+INICIAR variables:
+    estado = "espera"
+    puntaje = 0
+    objetivo = posición_inicial
+
+MIENTRAS el sistema esté encendido:
+    
+    leer gestos y distancia del usuario
+
+    SI estado == "espera" Y el usuario se acerca:
+        mostrar_mensaje("¿Vienes a perder?")
+        estado = "invitación"
+
+    SI estado == "invitación" Y el usuario hace el gesto de empezar:
+        calibrar_controles()
+        estado = "jugando"
+
+    SI estado == "jugando":
+        mover_cursor_segun_gestos()
+        mover_objetivo_con_su_logica()
+
+        SI el usuario está muy cerca de atrapar:
+            decidir_si_trollear()
+
+        SI el jugador atrapa el objetivo:
+            SI hay_trolleo:
+                hacer_glitch_y_huir()
+                burlarse_del_usuario()
+            SINO:
+                sumar_puntos()
+                mostrar_feedback_positivo()
+
+                SI puntaje alcanza el mínimo para ganar:
+                    estado = "victoria"
+
+    SI estado == "victoria":
+        SI hay_trolleo:
+            hacer_glitch_y_huir()
+            mostrar_mensaje("¿Pensaste que te dejaría ganar?")
+            estado = "jugando"
+        SINO:
+            celebrar()
+            reiniciar_juego()
+
+    esperar_pequeño_momento()
+```
+
+---
+
+Comportamiento: qué hace, cómo lo hace y que sentimientos provoca
+
+Qué hace la máquina
+- Detecta presencia y gestos con el sensor PAJ7620
+- La pantalla se prende con el puntito o destello en el medio. Te muestra un objeto (punto) en la pantalla y controlas el cursor con tus gestos
+- El objetivo intenta escaparse cuando el sensor detecta que estás demasiado cerca de atraparlo
+- Cuando se escapa activa un glitch visual.
+- Repite el ciclo cada vez que estás por ganar
+- La máquina se apaga cuando ya no detecta presencia
+
+Cómo lo hace
+- PAJ7620 provee vectores de gesto (dirección, velocidad, sí/no reconocimiento de gesto) y proximidad estimada; se usan para mapear la posición del cursor en la pantalla.
+
+Que sentimientos provoca
+- Frustración cómica: porque pierdes por un fallo artificial y reconocible (te ríes y te enojas a la vez).
+- Competitividad y repetición: la necesidad de “hacerlo bien” hace que vuelvas a intentarlo.
+
+Cómo invita a jugar
+- Mensajes con texto provocativos: “¿Otra vez? Ven, hazlo mejor.” / “No te creas tan pro…”
+- Sonido llamativo (sonido de inicio).
+
+Sensores
+- PAJ7620 — sensor de gestualidad (reconoce gestos, proporciona vectores de movimiento y proximidad relativa). Es core del control.
+
+Actuadores / salidas
+- Pantalla: monitor LCD/LED 1080p o pantalla vertical según diseño.
+- Altavoces: efectos, música
+
+Controlador
+Arduino Uno R4 WiFi:
+- Si es simple (gráficos vectoriales), Arduino R4 + pantalla posible pero con limitaciones.
+
+Inputs y outputs 
+
+Inputs:
+- Gestos (x,y,velocidad,gesto reconocido) — PAJ7620
+- Distancia/proximidad — PAJ7620 
+- Sonido ambiente (opcional mic)
+
+Outputs:
+- Cursor en pantalla (posición mapeada desde gesto)
+- Objetivo/target (movimiento autónomo)
+- Animaciones (glitch, escape, celebraciones)
+- Audio: efectos y música
+
+
+
+dd
