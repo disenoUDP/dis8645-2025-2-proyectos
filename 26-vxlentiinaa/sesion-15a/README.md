@@ -137,9 +137,10 @@ MIENTRAS el sistema esté encendido:
 
 ---
 
-Comportamiento: qué hace, cómo lo hace y que sentimientos provoca
+### Comportamiento: qué hace, cómo lo hace y que sentimientos provoca
 
-Qué hace la máquina
+`Qué hace la máquina`
+
 - Detecta presencia y gestos con el sensor PAJ7620
 - La pantalla se prende con el puntito o destello en el medio. Te muestra un objeto (punto) en la pantalla y controlas el cursor con tus gestos
 - El objetivo intenta escaparse cuando el sensor detecta que estás demasiado cerca de atraparlo
@@ -147,29 +148,35 @@ Qué hace la máquina
 - Repite el ciclo cada vez que estás por ganar
 - La máquina se apaga cuando ya no detecta presencia
 
-Cómo lo hace
+`Cómo lo hace`
+
 - PAJ7620 provee vectores de gesto (dirección, velocidad, sí/no reconocimiento de gesto) y proximidad estimada; se usan para mapear la posición del cursor en la pantalla.
 
-Que sentimientos provoca
+`Que sentimientos provoca`
+
 - Frustración cómica: porque pierdes por un fallo artificial y reconocible (te ríes y te enojas a la vez).
 - Competitividad y repetición: la necesidad de “hacerlo bien” hace que vuelvas a intentarlo.
 
-Cómo invita a jugar
+`Cómo invita a jugar`
+
 - Mensajes con texto provocativos: “¿Otra vez? Ven, hazlo mejor.” / “No te creas tan pro…”
 - Sonido llamativo (sonido de inicio).
 
-Sensores
+`Sensores`
+
 - PAJ7620 — sensor de gestualidad (reconoce gestos, proporciona vectores de movimiento y proximidad relativa). Es core del control.
 
-Actuadores / salidas
+`Actuadores / salidas`
+
 - Pantalla: monitor LCD/LED 1080p o pantalla vertical según diseño.
 - Altavoces: efectos, música
 
-Controlador
+`Controlador`
+
 Arduino Uno R4 WiFi:
 - Si es simple (gráficos vectoriales), Arduino R4 + pantalla posible pero con limitaciones.
 
-Inputs y outputs 
+`Inputs y outputs`
 
 Inputs:
 - Gestos (x,y,velocidad,gesto reconocido) — PAJ7620
@@ -182,6 +189,116 @@ Outputs:
 - Animaciones (glitch, escape, celebraciones)
 - Audio: efectos y música
 
+Estética visual:
+- Paleta de colores: neón (magenta, cian, amarillo o verde)
+- Tipografia: pixel-retro
+- Máquina física: Pantalla en horizontal y por delante, pedestal con una caja que sostiene el sensor 
 
+Forma de la gráfica:
+- Cursor en forma de bolita con destellos que se está moviendo
 
-dd
+---
+
+`Sensor de gestualidad PAJ7620:`
+
+- El sensor es diseñado para reconocer gestos con la mano, sin contacto. Usa tecnología óptica y un procesador interno que interpreta los movimientos.
+
+`¿Cómo funciona el sensor?`
+
+1. Un sensor óptico cercano a una cámara IR
+    - Captura cambios de luz infrarroja cuando tu mano pasa frente al sensor
+    - No obtiene imágenes completas, sino “patrones de movimiento”
+
+2. Procesador interno
+    - Analiza el movimiento detectado por el sensor
+    - Compara el patrón con uno de sus gestos preprogramados
+    - Envía el resultado por I2C al microcontrolador
+
+3. Comunicación I2C
+    - Dirección: 0x73
+    - Solo usa SDA y SCL
+    - El Arduino solo tiene que preguntar al sensor si detecto un gesto
+
+`¿Que gestos puede detectar?`
+
+El sensor detecta movimientos en el aire, entre 5-15 cm del sensor
+
+1. Arriba
+2. Abajo
+3. Derecha
+4. Izquierda
+5. Avanzar (push)
+6. Retroceder (pull)
+7. RollOver (rotación circular)
+8. Waving (saludo)
+
+`¿Cómo lo interpreta el sensor?`
+
+1. Tu mano pasa por el área del sensor
+2. La luz IR rebota en la mano
+3. El sensor detecta el movimiento como una variación progresiva
+4. El motor de gestos compara la dirección y velocidad del cambio
+5. Devuelve el código de gesto al microcontrolador 
+
+|¿Cómo se conecta al arduino?|pin|
+|---|---|
+|VCC|-> 3.3V|
+|GND|-> GND|
+|SDA|-> SDA pin 20|
+|SCL|-> SCL pin 21|
+
+`Código básico para el sensor`
+
+```cpp
+#include <Wire.h>
+#include "PAJ7620.h"
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Iniciando PAJ7620...");
+
+  uint8_t error = paj7620Init();   
+  if (error) {
+    Serial.print("Error iniciando el sensor, código: ");
+    Serial.println(error);
+  } else {
+    Serial.println("PAJ7620 listo!");
+  }
+}
+
+void loop() {
+  uint8_t gesture = paj7620ReadReg(0x43);  // Registro de gestos
+
+  switch (gesture) {
+    case GES_UP_FLAG:
+      Serial.println("Arriba");
+      break;
+    case GES_DOWN_FLAG:
+      Serial.println("Abajo");
+      break;
+    case GES_LEFT_FLAG:
+      Serial.println("Izquierda");
+      break;
+    case GES_RIGHT_FLAG:
+      Serial.println("Derecha");
+      break;
+    case GES_FORWARD_FLAG:
+      Serial.println("Push / Adelante");
+      break;
+    case GES_BACKWARD_FLAG:
+      Serial.println("Pull / Atras");
+      break;
+    case GES_CLOCKWISE_FLAG:
+      Serial.println("Rollover horario");
+      break;
+    case GES_COUNT_CLOCKWISE_FLAG:
+      Serial.println("Rollover antihorario");
+      break;
+    case GES_WAVE_FLAG:
+      Serial.println("Wave (Agitar mano)");
+      break;
+  }
+
+  delay(100);
+}
+```
