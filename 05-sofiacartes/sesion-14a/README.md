@@ -1,5 +1,19 @@
-# sesion-14a
+# sesion-14a 11/11
 
+## Avance proyecto 03
+
+### Explicación del proyecto
+
+Game over es una experiencia interactiva que explora la frustración y la imposibilidad de alcanzar la perfección. Cada intento por “arreglarla” solo genera más caos.
+
+Está compuesta por una pantalla de 8x8 píxeles, un joysticky y 5 botones.
+En la pantalla LCD muestra de "Acércate y juega" mientras que en la pantalla neopixel aparece una figura perfectamente formada: Un cuadrado. Pero al apretar inicio el juego, algo se rompe. Un píxel se mueve, y la figura deja de ser perfecta. Desde ese momento, el usuario intenta repararla… aunque la máquina nunca lo permitirá.
+
+### Primeros bocetos e ideas
+
+juego arcade
+
+### Diagrama
 
 ```mermaid
 ---
@@ -44,3 +58,13 @@ flowchart TB
     style n41 stroke:#BBDEFB
 
 ```
+
+#### Por hacer:
+
+- Terminar código pantalla 8x8.
+- Concectar los otros botones a la pantalla
+- Juntar las dos pantallas
+- Hacer que el primel LED corrido sea rojo
+- Ver sonido
+- Carcasa
+- Ver si se puede cambiar la intensidad de la pantalla 8x8
