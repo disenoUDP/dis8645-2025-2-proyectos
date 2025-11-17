@@ -17,6 +17,8 @@
 
 - instalar bibliotecas y espicificar las versiones para que no instale la mas actual o otra ya que puede romper el codigo.
 
+---
+
 ## Proyecto-03
 
 proyecto inestable, inclineacion, temporizador inconveniente, le gusta girar a nuestro temporizador, bailarina, caaer por su propia cuenta
