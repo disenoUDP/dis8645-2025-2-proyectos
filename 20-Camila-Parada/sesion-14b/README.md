@@ -32,7 +32,7 @@ Por ende comencé con un listado de cosas pendientes para reafirmar según la in
 | Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
 |-------------|------|-----|------------|--------|------|
 | Arduino UNO R4 Mínima | Tarjetas de Desarrollo | 1 | 5V | $24.990 | https://mcielectronics.cl/shop/product/arduino-uno-r4-minima |
-| Cables de Conexión (60) | Dupont | Varios | 300 V | $2.500 | https://afel.cl/products/pack-60-cables-de-conexion |
+| Pack 60 Cables Dupont | Conexión | Varios | 300 V | $2.500 | https://afel.cl/products/pack-60-cables-de-conexion |
 | Encoder rotatorio KY-040 360 grados | Sensor | 1 | 5V | $2.000  | https://afel.cl/products/encoder-rotatorio-ky-040-360-grados |
 | Modulo reproductor MP3 | Actuador | 1 | 3.2 a 5V | $2.990 | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini |
 | Motor vibrador PWM Switch DC | Actuador | 1 | 3 a 5.3 VDC | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
