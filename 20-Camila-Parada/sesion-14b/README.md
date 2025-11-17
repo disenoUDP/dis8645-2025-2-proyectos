@@ -44,6 +44,26 @@ Por ende comencé con un listado de cosas pendientes para reafirmar según la in
 
 ***
 
+## Instrucciones
+
+Antes de hacer funcionar el aparato hay que corroborar que este se encuentre conectado a una fuente de alimentación de 5V aprox.
+Para saber si está encendido basta con ver si se enciende un led de la carcasa.
+
+### Pasos para activar la máquina
+
+1. Ponerse frente a la máquina y sujetar la manibela.
+2. Girar la manivela en sentido horario.
+3. Ver cómo las luces se encienden progresivamente y escuchar el sonido que indica haber avanzado 1 nivel.
+4. Seguir girando de forma continua. 
+
+***
+
+## Contexto de uso
+
+Esta máquina está para ser pensada como un "Artículo de broma". 
+
+***
+
 ### Posdata
 
 Un día de vacío.
