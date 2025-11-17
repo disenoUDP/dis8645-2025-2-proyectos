@@ -33,7 +33,9 @@ No está hecha para ganar.
 ![IMG3](./imagenes/IMG3.jpg)
 ![IMG4](./imagenes/IMG4.jpg)
 
-#### Código trabajado en clases
+### Código trabajado en clases
+
+#### Pantalla 8x8 con botón de inicio, de juego y joystick
 
 ```cpp
 #include <Adafruit_NeoPixel.h>
@@ -204,6 +206,27 @@ void loop() {
       tiempoUltimoMovimiento = millis();
     }
   }
+}
+```
+
+#### Pantalla LCD
+
+```cpp
+#include <LiquidCrystal.h>
+
+// RS, E, D4, D5, D6, D7
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  lcd.begin(16, 2);  // Cambia a (20, 4) si usas LCD 20x4
+  lcd.print("Hola Mundo"); // Escribe el texto
+  delay(1000);
+}
+
+void loop() {
+  // Desplaza todo el contenido hacia la izquierda
+  lcd.scrollDisplayLeft();
+  delay(300); // Velocidad del deslizamiento (más pequeño = más rápido)
 }
 ```
 
