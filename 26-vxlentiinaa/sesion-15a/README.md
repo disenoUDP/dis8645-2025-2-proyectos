@@ -302,3 +302,123 @@ void loop() {
   delay(100);
 }
 ```
+---
+
+El lunes 17-11-2025 logramos que el punto subiera y bajara con los siguientes códigos 
+
+`IZQUIERDA Y DERECHA`
+
+```cpp
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define ANCHO 128
+#define ALTO 64
+
+// Crear display OLED
+Adafruit_SSD1306 display(ANCHO, ALTO, &Wire, -1);
+
+const int Sensor_Fuerza = A0;  // Pin del sensor de fuerza
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(Sensor_Fuerza, INPUT);
+
+    // Inicializar pantalla OLED
+    if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+        Serial.println("ERROR: Pantalla OLED no encontrada");
+        while (true);  
+    }
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(10, 10);
+    display.println("FSR + OLED OK");
+    display.display();
+    delay(1000);
+}
+
+void loop() {
+    int valorFuerza = analogRead(Sensor_Fuerza);
+
+    Serial.print("Sensor de Fuerza: ");
+    Serial.println(valorFuerza);
+
+    // Convertir presión en posición HORIZONTAL
+    // 0 -> izquierda (x=5)
+    // 1023 -> derecha (x=120)
+    int posicionX = map(valorFuerza, 0, 1023, 5, 120);
+
+    // Limitar movimientos
+    if (posicionX < 0) posicionX = 0;
+    if (posicionX > 127) posicionX = 127;
+
+    // Dibujar puntito
+    display.clearDisplay();
+    display.fillCircle(posicionX, 32, 3, SSD1306_WHITE);  // y=32 (centro vertical)
+    display.display();
+
+    delay(50);
+}
+
+```
+
+`DERECHA`
+
+```cpp
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define ANCHO 128
+#define ALTO 64
+
+// Crear display OLED
+Adafruit_SSD1306 display(ANCHO, ALTO, &Wire, -1);
+
+const int Sensor_Fuerza = A0;  // Pin del sensor de fuerza
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(Sensor_Fuerza, INPUT);
+
+    // Inicializar pantalla OLED
+    if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+        Serial.println("ERROR: Pantalla OLED no encontrada");
+        while (true);  
+    }
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(10, 10);
+    display.println("FSR + OLED OK");
+    display.display();
+    delay(1000);
+}
+
+void loop() {
+    int valorFuerza = analogRead(Sensor_Fuerza);
+
+    Serial.print("Sensor de Fuerza: ");
+    Serial.println(valorFuerza);
+
+    // Convertir presión en posición vertical
+    // 0 -> abajo (y=60)
+    // 1023 -> arriba (y=5)
+    int posicionY = map(valorFuerza, 0, 1023, 60, 5);
+
+    // Limitar movimientos
+    if (posicionY < 0) posicionY = 0;
+    if (posicionY > 63) posicionY = 63;
+
+    // Dibujar puntito
+    display.clearDisplay();
+    display.fillCircle(64, posicionY, 3, SSD1306_WHITE);
+    display.display();
+
+    delay(50);
+}
+```
