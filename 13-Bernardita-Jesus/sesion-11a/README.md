@@ -12,7 +12,9 @@ Martes 21 de octubre, 2025
 
 - La semana del 9 de diciembre será una mini versión de Diseño Abierto, ya que la universidad está de aniversario y quisieron enfocarse en otras actividades.
 
-### Proyecto-03
+---
+
+## Proyecto-03
 
 Hablamos de que este proyecto se va a presentar en Diseño Abierto. Vamos a formar nuevos grupos, más grandes y con roles o cargos específicos.
 
