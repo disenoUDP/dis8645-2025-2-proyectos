@@ -16,6 +16,8 @@ Martes 04 de noviembre, 2025
 
 ml5.js
 
+Admega3283 microcontrolador que se puede programar.
+
 Hablamos de la programación de inteligencias artificiales. Para entrenar una IA, hay que asignarle valores numéricos a los datos que usamos. 
 
 En las imágenes, por ejemplo, hay que convertir cada píxel en un valor numérico. En cambio, con los textos, le enseñamos palabras y va generando una base de datos, una cadena de caracteres de texto e imagen.
@@ -28,11 +30,25 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 [3blue1brown](https://www.youtube.com/@3blue1brown/videos) De aquí es de donde Misa ha aprendido todo lo que sabe de inteligencia artificial.
 
+TPU, Unidades de procesamiento Tensorial.
+
 Mateo nos mostró los avances de su proyecto de título.
+
+dataset de montones de Letras en afiches políticos, hizo su propia ia que genera imagenes con imagenes que el va metiendo, y se forMA COMO UN FLUJO generativo de creacion de letras.
+
+Google Collab es un préstamo de computadora.
 
 ---
 
 ## Proyectos-03
+
+### Revisión de ideas grupales
+
+Mostramos nuestras ideas iniciales, que giraban en torno a un tamagotchi ultra demandante de música. La propuesta era generar sonido para que pudiera “sobrevivir” constantemente, casi como un ser tóxico y dependiente de la música, forzándote a un proceso creativo de producción.
+
+Conversamos que hacer este ser dependiente de la música era complejo de explicar, porque es difícil definir qué sí y qué no es música, incluso un simple sonido podría considerarse música. Por eso fuimos ajustando la idea para evitar esas incoherencias y darle más claridad al proyecto.
+
+Lo que se nos ocurrió fue seguir trabajando con un tamagotchi incómodo y desagradable de usar, uno que muera ante cualquier falta de interacción, que te haga sentir culpa por tu negligencia. Esa fue la dirección que apareció para sostener y justificar ese sentimiento. Todo pensado a partir de un conjunto de sensores que obliguen a cumplir y cuidar ciertas acciones para mantenerlo vivo.
 
 ### Ideas
 
@@ -56,5 +72,12 @@ Trabajar más con materialidades y menos impresión 3D, desarrollar texturas par
 
 - [Ian Goodfellow](https://en.wikipedia.org/wiki/Ian_Goodfellow) libro [Making pictures with generative adversarial networks casey reas](https://www.creativeapplications.net/books/making-pictures-with-generative-adversarial-networks-casey-reas/)
 
-- [felipe rivas san martin](https://www.cultura.gob.cl/coleccionarte/felipe-rivas-san-martin/) atlas quear 
+- [felipe rivas san martin](https://www.cultura.gob.cl/coleccionarte/felipe-rivas-san-martin/) atlas quear
 
+### Palabras importantes
+
+microcontrolador
+
+Captcha
+
+TPU, Unidades de procesamiento Tensorial
