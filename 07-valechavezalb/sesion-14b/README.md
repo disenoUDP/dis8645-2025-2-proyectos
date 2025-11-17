@@ -256,16 +256,16 @@ _continuará..._
 
 
 ### 🔺 Diagrama de flujo
-1- Pantalla prendida con algún texto (SALUDA PARA COMENZAR👋🏻)
-2- Título: "Atrápame si puedes"  monito: Mosquito Abstracto (gráfica sofi)
-3- Empieza el juego y el punto se estará moviendo todo el rato
-4- Tratar de atrapar el punto- tiene 3 vidas -
-4a- lo atrapé: 2 vidas
-4b- lo atrapé: 1 vida
-4c- Tratar de atraparlo por última vez, la máquina te trollea
-5- Cuando te trollea aparece el glitch
-6- "ingresar texto gracioso" o "imagen chistosa"
-7- vuelve al inicio (saluda para comenzar)
+1. Pantalla prendida con algún texto (SALUDA PARA COMENZAR👋🏻)
+2. Título: "Atrápame si puedes"  monito: Mosquito Abstracto (gráfica sofi)
+3. Empieza el juego y el punto se estará moviendo todo el rato
+4. Tratar de atrapar el punto- tiene 3 vidas
+5. lo atrapé: 2 vidas
+6. lo atrapé: 1 vida
+7. Tratar de atraparlo por última vez, la máquina te trollea
+8. Cuando te trollea aparece el glitch
+9. "ingresar texto gracioso" o "imagen chistosa"
+10. vuelve al inicio (saluda para comenzar)
 
 ### 🔺 Pesudocódigo
 ```cpp
