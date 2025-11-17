@@ -20,6 +20,8 @@ Mónica Bate.
 
 Hablamos un poco de que es normal perderse en clase, y que debemos comunicar mucho más cómo nos estamos encontrando con las clases.
 
+---
+
 ## Proyecto-03
 
 Se va a realizar el miércoles 10 de diciembre a las 9.
