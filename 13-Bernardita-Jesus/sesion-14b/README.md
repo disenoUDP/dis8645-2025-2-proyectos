@@ -17,11 +17,11 @@
 
 - instalar bibliotecas y espicificar las versiones para que no instale la mas actual o otra ya que puede romper el codigo.
 
-### 
+## Proyecto-03
 
 proyecto inestable, inclineacion, temporizador inconveniente, le gusta girar a nuestro temporizador, bailarina, caaer por su propia cuenta
 
-### modelado
+### Modelado
 
 desfazar superficie o cap y shell
 
@@ -36,8 +36,3 @@ cargar todos los componentes en un lado, al menos el mayor peso y poner el senso
 - roy macdonald
 
 
--
-
-### Palabras impoertantes
-
-## Encargo
