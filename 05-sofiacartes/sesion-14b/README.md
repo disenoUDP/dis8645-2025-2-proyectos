@@ -26,3 +26,9 @@ No está hecha para ganar.
 #### Concepto
 
 **Game over** es una experiencia interactiva que explora la frustración y la imposibilidad de alcanzar la perfección.
+
+![IMG1](./imagenes/IMG1.jpg)
+![IMG2](./imagenes/IMG2.jpg)
+![IMG5](./imagenes/IMG5.jpg)
+![IMG3](./imagenes/IMG3.jpg)
+![IMG4](./imagenes/IMG4.jpg)
