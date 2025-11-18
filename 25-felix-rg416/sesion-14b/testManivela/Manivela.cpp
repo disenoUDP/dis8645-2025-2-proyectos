@@ -31,3 +31,19 @@ void Manivela::calculoVueltas() {
             if (Manivela::paso == Manivela::vueltas * 20) {
                 Manivela::vueltas++;
             }
+
+void rangos() {
+    if (vueltas >= 0 && vueltas <= 1) {
+        rango0();
+    } else if (vueltas >= 2 && vueltas <= 8) {
+        rango1();
+    } else if (vueltas >= 9 && vueltas <= 16) {
+        rango2();
+    } else if (vueltas >= 17 && vueltas <= 24) {
+        rango3();
+    } else if (vueltas >= 25 && vueltas <= 29) {
+        rango4();
+    } else if (vueltas >= 30) {
+        rango5();
+    }
+}
