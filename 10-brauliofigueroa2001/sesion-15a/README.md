@@ -6,6 +6,8 @@
 
 #### módulo motor vibrador 
 
+![modulovibrador](./imagenes/modulovibrador.jpg)
+
 - logré hacer que vibrara mediante el uso del siguiente código que encontré en una página [caferobot](https://thecaferobot.com/learn/interfacing-a-vibration-motor-module-with-arduino/)
 
 ````cpp
