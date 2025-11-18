@@ -109,4 +109,3 @@ Me ha costado entender cómo hacer las clases.
 Lo puse en Arduino IDE y no me funciona, me tira varios errores.
 
 El martes le preguntaré a Aarón para que me ayude a solucionar mis dudas.
-
