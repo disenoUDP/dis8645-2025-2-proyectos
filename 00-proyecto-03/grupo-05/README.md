@@ -41,7 +41,7 @@ Texto
 | Motor vibrador PWM Switch DC | Actuador | 1 | 3 a 5.3 VDC | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
 | Mini humidificador USB tipo C de 5V | Actuador | 1 | 5V | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
 | Micro Servomotor SG90 | Actuador | 1 |  3 a 7.2 V | $1.990 | https://afel.cl/products/micro-servomotor-sg90 |
-| Mini Parlante Altavoz | Salida audio | 1 | 5 VDC | $2.590 | https://mcielectronics.cl/shop/product/mini-parlante-altavoz-8-ohms-0-5w |
+| Mini Parlante Altavoz de 3w | Salida audio | 1 | 3 VDC | $3.000 | https://afel.cl/products/mini-parlante-altavoz-de-3w |
 | Pack Led 10mm (5) | Actuador | Varios | 1.9 a 3.2 V | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
 
 ### ⋅⋯⋯⋅ Instrucciones ⋅⋯⋯⋅
@@ -67,5 +67,5 @@ Texto
 Texto
 
 ***
-
+/
 ⚡︎ ⋆.˚
