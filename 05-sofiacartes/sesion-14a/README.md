@@ -13,6 +13,12 @@ En la pantalla LCD muestra de "Acércate y juega" mientras que en la pantalla ne
 
 juego arcade
 
+![Boceto](./imagenes/Boceto02.jpg)
+![Boceto](./imagenes/Boceto03.jpg)
+
+![Boceto](./imagenes/Boceto01.jpg)
+![Boceto](./imagenes/Boceto04.jpg)
+
 ### Diagrama
 
 ```mermaid
