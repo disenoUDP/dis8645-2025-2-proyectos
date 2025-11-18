@@ -22,15 +22,23 @@ Al tener libertad acerca de la propuesta es que como equipo se llegó al objetiv
 
 ## Cuerpo de la obra: sentimiento y metáfora
 
-Vender humo se refiere a ofrecer un objeto de nulo o escaso valor con mala fé. En este proyecto buscamos vender humo para evocar *decepción*, por lo que la venta debe ser muy convincente. La *decepción* viene al traicionar la *expectativa* por lo que no podemos tener una sin la otra. El primer paso para decepcionar al usuario es hacer que espere algo de la máquina ya que si no le importa el resultado no será efectiva. Debemos hacer que sienta que se le debe algo para pagar el esfuerzo invertido en activarla, en este caso girar la manivela. Para complementar esta "deuda" añadiremos de manera indirecta indicadores de progreso que dosifiquen la entrega de recompensas a medida que se progresa. Mostraremos que a corto plazo sus acciones tienen efectos en la máquina y daremos pistas de un gran climax al completar la secuencia:
-1. Usuario aprenderá que al girar la manivela se activan solidos y se prenden luces
-2. Las luces aumentarán a medida que progresa y al ser limitadas indica que hay un final
-3. Se añadirán elementos al alcanzar *milestones* de progreso como vibración, compuertas que se abren o sonidos cambiantes.
-4. Al completar la cantidad de vueltas las luces indicarán una sorpresa inminente
-5. El esfuerzo del usuario se verá traducido en un poco de humo y un sonido patético
-6. La máquina te vendió humo
+La expresión coloquial “Vendehúmos” se refiere una persona que ofrece un objeto de nulo o escaso valor (con promesas difíciles de cumplir) con mala fe, usualmente buscando sacar ventaja frente a los incautos. 
 
-Obviamente la decepción no será devastadora y es muy dificíl hacer que no tenga un tono cómico ya que la estructura de la interacción se asemeja a la de un chiste. Nuestra misión se habrá cumplido si el usuario llega al final de la interacción ya que significa que logramos hacer que compre humo de una máquina estática, sin leyenda y demandante. Vale mencionar que la máquina debe ser llamativa para que el usuario se acerque y empiece todo. Queremos aprovechar rasgos de las personas como la curiosidad o las ganas de no desperdiciar el esfuerzo/tiempo ya invertido. Estos aspectos serán el principal motor que hará funcionar nuestra máquina y contamos con ellos para que se generen interacciones.
+El contexto de nuestro proyecto se centra trabajar con esta metáfora del engaño de una forma literal. Esperamos generar *decepción* por parte de nuestros usuarios tras pasar por una serie de procesos para activar los distintos mecanismos presentes en la máquina, los cuales tras estimular de forma continua los distintos sentidos (vista, audición y tacto) se desactiven para dar paso a un falso humo (concentrado seguro). Para ello es fundamental el poder crear un “gancho” (elemento atractivo) que mantenga al usuario constantemente manipulado la máquina.
+La *decepción* viene tras traicionar la *expectativa* del usuario frente la incertidumbre de la función real de la máquina y posterior uso para descubrirlo, por lo que no podemos tener una sin la otra. 
+
+El primer paso para ello es hacer que el usuario “espere algo” de la máquina, poniendo especial énfasis en las características físicas del objeto para generar una primera buena impresión, ya que sin la expectativa del resultado no se producirán los efectos esperados. A la par, es importante el mantener un incentivo a cambio del esfuerzo invertido por hacer funcionar la máquina mediante una manivela. Para ello se establecerá una “deuda visual” a través de un “medidor de progreso”, el cual tras ir completando los niveles irá aumentando y activando “recompensas” (sonido y vibración). 
+
+El usuario puede evidenciar que en un corto plazo sus acciones tienen efectos en la máquina, cuyas pistas dirigen las expectativas hacia un gran clímax tras completar la secuencia:
+
+1. Usuario aprenderá que al girar la manivela en sentido horario se encienden luces y suena un sonido para denotar el progreso.
+2. Más luces se irán encendiendo según el “nivel” a medida que más giros de la manivela haya. Al haber una cantidad limitada indica que hay un final.
+3. Se añadirán elementos al alcanzar *milestones*(hitos) de progreso como vibración, compuertas que se abren o sonidos cambiantes.
+4. Al completar la cantidad de vueltas las luces harán un juego visual (algunas se encienden, mientras unas se apagan) para preparar al usuario para una “sorpresa inminente”.
+5. El tiempo y esfuerzo del usuario se verá traducido en un evento final de la máquina, la cual libera un poco de humo y reproduce un sonido patético.
+6. Tras ello la máquina se reinicia junto con el contador. Ello deja al usuario confundido, frustrado o decepcionado tras darse cuenta que la máquina te vendió humo (literal).
+
+La emoción resultante (variante según la persona) no será devastadora, puesto que la estructura de la interacción en conjunto con el final se asemeja a un mal chiste. Nuestra misión se habrá cumplido si el usuario llega al final de la interacción, ya que significa que logramos hacer que "compre el humo" de una máquina estática, sin leyenda y demandante. Queremos aprovechar rasgos de las personas como la curiosidad y la energía para "desperdiciar" el esfuerzo/tiempo ya invertido (esto último queda a criterio del usuario).
 
 ***
 
