@@ -29,4 +29,6 @@ parte 1
 
 ### pseudocódigo
 
+- agregar pseudocódigo de bitácoras de miguelvera23
+
 - 
