@@ -42,13 +42,11 @@ La emoción resultante (variante según la persona) no será devastadora, puesto
 
 ***
 
-## Planificación
+## Planificación y procesos previos
 
-Texto
+Para poder trabajar en el proyecto de forma más estratégica y ordenada es que se denomina esta sección en la que existen una serie de pasos previos para planificar, redefinir y hacer converger las ideas de nuestro equipo.
 
 ### ⋅⋯⋯⋅ Carta Gant ⋅⋯⋯⋅
-
-Para poder programar de forma más estratégica el avance y desarrollo del proyecto en cuestión es que se creó la siguente carta.
 
 ![carta-gantt](./imagenes/carta-gantt.png)
 
@@ -91,8 +89,13 @@ Antes de hacer funcionar el aparato hay que corroborar que este se encuentre con
 
 1. Ponerse frente a la máquina y sujetar la manibela.
 2. Girar la manivela en sentido horario.
-3. Ver cómo las luces se encienden progresivamente y escuchar el sonido que indica haber avanzado 1 nivel.
-4. Seguir girando de forma continua. 
+3. Ver cómo las luces se encienden y escuchar el sonido que indica haber avanzado 1 nivel.
+4. Seguir girando de forma continua hasta avanzar al siguiente nivel.
+5. Tras a la mitad de todos los niveles, la máquina comienza a vibrar y emitir sonidos distontos.
+6. Seguir girando la manivela sin parar, independiente de las cosas que ocurran.
+7. Girar hasta que se rellene la barra de progreso y se habra la compuerta secreta.
+8. Admirar el humo que emana.
+9. Comenzar todo otra vez.
 
 
 ### ⋅⋯⋯⋅ Contexto de uso ⋅⋯⋯⋅
