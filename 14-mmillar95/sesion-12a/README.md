@@ -34,6 +34,15 @@ Se pueden repetir los grupos de presentaciones anteriores.
 
 Enfasis a los apuntes personales.
 
+Grupo 4:
+
+- Yamna Carrión
+- Valentina Chávez
+- Millaray Millar
+- Valentina Ruz
+- Sofía Pérez
+- Antonia Fuentealba
+
 ## Maquinas sentimentales 
 
 Las habilidades más raras son las que nos permiten vincularnos.
@@ -44,10 +53,90 @@ Las habilidades más raras son las que nos permiten vincularnos.
 
 ![pizarra](./imagenes/pizarra.png)
 
+## Encargo en clases
+
+1. Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor.
+
+Objeto 01: Cepillo de dientes eléctrico
+
+- Vibración
+- Plástico
+- Sonido
+- Rotación
+- Batería
+- Cerdas
+- Humedad
+- Zumbido
+- Torque
+- Resonancia
+- Micromovimiento
+- Inducción
+- Fantasma-táctil
+- Asimetría
+- Electro-aroma
+  
+Objeto 02: Plato de lentejas
+
+- Calor
+- Aroma
+- Textura
+- Viscosidad
+- Vapor
+- Espesor
+- Grano
+- Sedimento
+- Burbuja
+- Densidad
+- Terronalidad
+- Gelificación
+- Opacidad
+- Maceración
+- Grupo
 
 
+2. Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.
+
+Ideas sacadas del repositorio de: [26-vxlentiinaa](https://github.com/mmillar95/dis8645-2025-2-proyectos/blob/main/26-vxlentiinaa/sesion-12a/README.md?plain=1)
+
+`Idea 1: Máquina ...`
+
+Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
+
+`Idea 2: Radio fantasma`
+
+Una radio que no sintoniza estaciones reales, sino que genera un collage emocional de sonidos del entorno
+
+Reproduce sonidos distorsionados o samples según el tono predominante.
+
+LEDs muestran visualmente las “emociones” del entorno. una radio que no comunica información, sino estados de ánimo.
+
+`Idea 3: Máquina de resonancia sentimental`
+
+Usa un sensor biométrico (pulso o temperatura de la piel) para generar sonido y visuales reactivos.
+
+Si el usuario está calmado, emite un sonido suave.
+
+Si está nervioso, la frecuencia sube y los LEDs titilan.
+
+`Idea 4: Caja de memoria sonora`
+
+un dispositivo que graba pequeños fragmentos de sonido cada vez que alguien se acerca (sensor de proximidad).
+
+Luego los reproduce al azar con distorsiones suaves. Cuando alguien toca o se acerca a la caja, emite esta "melodia" creada de fragmentos de grabaciones. memoria afectiva.
+
+`Idea 5: Máquina que llora`
+
+un artefacto que “llora” agua (con una pequeña bomba) cuando detecta ciertos sonidos, como gritos o altos volúmenes. convierte el ruido del mundo en lágrimas
 
 
+Ideas propias:
 
+- Idea 01: Planta emocional sintética
+
+Una “planta” electrónica que interpreta el ambiente afectivamente, cuando hay silencio, extiende sus hojas pero cuando hay ruido fuerte, se retrae como si estuviera asustada.
+
+- Idea 02: Botón Mentiroso 
+
+Un botón que nunca hace lo que promete, cuando lo presionas esperando que haga algo, hace otra cosa completamente distinta, a veces prende una luz… otras vibra… otras canta un sonido ridículo.
 
 
