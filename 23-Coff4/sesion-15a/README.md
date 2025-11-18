@@ -40,7 +40,15 @@ Frases de "Jorge" (Aka sin nombre)
 
 Ya no hay nada por lo que seguir existiendo...adios 
 
+---
 
 La idea ahora es buscar codigo para el sensor ultrasonico, posiblemente reutilizare el codigo de nuestro anterior proyecto (obviamente dando sus respectivos creditos)
 Ese es otro de los archivos que debo subir
+
+Trabajo proximo: 2 booleanas 
+1 presencia de usuario
+2 brazo amor
+cada una de las boleanas necesitan imprimir en el puerto serial que se prendieran.
+En una de las boleanas debe ir un if (nombre de la boleana) (); 
+
 
