@@ -13,7 +13,7 @@
 
 ***
 
-## Cuerpo de la obre: sentimiento y metáfora
+## Cuerpo de la obra: sentimiento y metáfora
 
 debe ser muy convincente. La *decepción* viene al traicionar la *expectativa* por lo que no podemos tener una sin la otra. El primer paso para decepcionar al usuario es hacer que espere algo de la máquina ya que si no le importa el resultado no será efectiva. Debemos hacer que sienta que se le debe algo para pagar el esfuerzo invertido en activarla, en este caso girar la manivela. Para complementar esta "deuda" añadiremos de manera indirecta indicadores de progreso que dosifiquen la entrega de recompensas a medida que se progresa. Mostraremos que a corto plazo sus acciones tienen efectos en la máquina y daremos pistas de un gran climax al completar la secuencia:
 1. Usuario aprenderá que al girar la manivela se activan solidos y se prenden luces
