@@ -371,4 +371,11 @@ n13 --> n1
 
 ### Imágenes de referencia 
 
-subir imágenes
+![imagen 1](./imagenes/imagenReferencia1.jpeg)
+
+![imagen 2](./imagenes/imagenReferencia2.jpeg)
+
+![imagen 3](./imagenes/imagenReferencia3.jpeg)
+
+![imagen 4](./imagenes/imagenReferencia4.jpeg)
+
