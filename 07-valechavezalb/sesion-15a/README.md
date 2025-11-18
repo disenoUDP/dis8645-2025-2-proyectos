@@ -190,7 +190,7 @@ void loop() {
 
 ### 👾🧚🏻 Para las animaciones
 Al final decidimos usar pixel art para nuestras gráficas, para esto se crearon ilustraciones que serán cargadas en p5 que es donde estará la interfaz del juego.
-![imagen de referencia](imagenes/graficas.png)
+![imagen](imagenes/graficas.png)
 
 ### Código de las animaciones en p5
 ```java
@@ -278,6 +278,8 @@ Primero probaremos la conexión serial. Pero antes de esto hay que descargar un 
 Esta aplicación ejecuta p5.serialserver, que permite la conectividad entre dispositivos serie locales y aplicaciones web mediante la biblioteca p5.serialport de p5.js.
 
 Probando, me di cuenta de que esta aplicación no funcionaba como corresponde, no encontraba el puerto serial y no lograba hacer la conexión, es por eso que le pedimos ayuda a Aarón, y nos guió con la biblioteca para poder usar el arduino con p5.
+![imagen de referencia](imagenes/conexión.p5.ino.png)
+
 
 ### p5.webserial.js de Gohai
 (https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
