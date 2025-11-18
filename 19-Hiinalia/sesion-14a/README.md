@@ -11,3 +11,7 @@ Hicimos una reducción de la cantidad de componentes que vamos a necesitar para 
 Estuve trabajando en lo que sería la mascota ya definida. Decidimos que va a ser un pollito con tutú que gira. La parte del tutú para explicar el por qué le gusta girar tanto. Es porque está bailando.
 
 Hice algunos bocetos y los pasé directamente a Piskel para ver cómo se vería como pixel. Quedó una mini animación del pollito girando y distintas expresiones de prueba.
+
+![expresiones](./imagenes/expresiones.png)
+
+![girando](./imagenes/girando.gif)
