@@ -2,31 +2,51 @@
 
 ## Apuntes clase
 
-¿cómo funciona la inteligencia artificial?
+### ¿Cómo funciona la inteligencia artificial?
 
-las imágenes funcionan bajo una matriz de números
+- las imágenes funcionan bajo una matriz de números
+- le entrega valores númericos, que se modifican según como entrenamos esta imágen
 
-le entrega valores númericos, que se modifican según como entrenamos esta imágen
-
-¿cómo ocurre con las palabras?
+### ¿Cómo ocurre con las palabras?
 
 también genera una matriz de números, el cual busca en distintas oartes la compatibilidad de la palabbra. El cual, es formado por una cadena de números.
 
 `nosotros entrenamos a la ia, con la confirmación.`
 
-- tpu
-- GAN Ian Goodfellow [anteism](https://www.anteism.com/)
-- Casey Reas
-- RNN -> son hechos con modelos de lenguaje, le importa el contexto reciente.
-- OCR
-- [creativeapplications](https://www.creativeapplications.net/books/making-pictures-with-generative-adversarial-networks-casey-reas/)
-- [3blue1brown](https://www.youtube.com/@3blue1brown/videos)
-- google colab
-- VAE
+### ¿Cómo funciona la IA generativa?
+
+- el uso del captcha para asociar palabras a imágenes.
+- **TPU** (Tensor Processing Unit): es un chip especial creado por Google para que las inteligencias artificiales aprendan y trabajen más rápido. Muchos de los macbook actuales vienen con tpu.
+- **CPU**: el cerebro normal del computador, hace de todo, pero más lento en tareas de IA.
+- **GPU**: muy buena para cálculos en paralelo, como los de videojuegos o redes neuronales.
+- **TPU**: una “GPU especializada” diseñada exclusivamente para IA.
+- **RNN** (Red Nuronal Recurrente): es un tipo de inteligencia artificial que sirve para trabajar con información que viene en secuencia. Como trabaja con datos, siempre se puede equivocar ya que juega con probabilidades.
+
+### Google Colaboratory
+
+Google Colaboratory, te prestan un servidor de Google de cualquier parte del mundo para usar un computador. Cada usuario con una cuenta de google puede acceder esto. Tiene TPU y GPU. Este entorno es muy usando en este tiempo para usar Inteligencia Artificial. Puedes usar la TPU de ese computador si es que el propio no cuenta con ese elemento.
+
+### Homebrew
+
+Es un programa que te permite instalar fácilmente software en el computador, especialmente en macOS. Usaremos esto para poder escribir en github pero desde la terminal del computador.
+
+`Para poder instalarlo:`
+1. se debe ir a la página: (https://brew.sh/).
+2. copiar el link que aparece en la página.
+3. abrir la terminal del computador.
+4. pegar lo copiado.
+5. hacer enter y seguir los pasos.
+
+- Revisar `los videos para instalar` correctamente el programa.
+
+Con esto tendremos github para poder usarla en la consola. De esta manera es mucho más fácil rebobinar commits cuando nos equivocamos. 
+
+También entramos en VS Code, sin importar que el servisor de github en la nube se caiga. Las carpetas se alojan en el computador por lo que se pueden programar directamente desde vs code.
+
 - epoca: es lo que le entrenas para que sepa que es lo que necesitamos, hace un check de muchas para saber qué es.
 por ejemplo: si ve 4 sillas ve cada una de ellas para sabe que es una silla. si ve mil sillas ya tiene una idea de que es la silla.
 
-### Ideas Grupo 01:
+#### Ideas Grupo 01:
 
 Objetos:
 

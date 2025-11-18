@@ -14,13 +14,17 @@ Martes 28 de octubre, 2025
 
 ### Revisando la encuenta
 
-Ir a más exposiciones. Tal vez en algunas semanas vamos a ver la exposición de Misa con Sinosisi(?.
+Ir a más exposiciones. Tal vez en algunas semanas vamos a ver la exposición de Misa.
 
 Mónica Bate.
 
 Hablamos un poco de que es normal perderse en clase, y que debemos comunicar mucho más cómo nos estamos encontrando con las clases.
 
-### Proyecto-03
+---
+
+## Proyecto-03
+
+En grupos de trabajo de entre 5 o 6 personas.
 
 Se va a realizar el miércoles 10 de diciembre a las 9.
 
@@ -54,7 +58,7 @@ Noviembre 03 lunes: Esdlcp - historial de caídas
 
 - Se hacer diagramas de flujo y utilizar bien mermaind
 
-### Proyecto-03
+### Grupos de trabajo
 
 Hicimos los grupos de trabajo tomando en cuenta nuestras habilidades, para complementarnos.
 
@@ -62,14 +66,12 @@ Conversamos bien sobre la esencia de las cosas ¿qué es una pizarra?, ¿qué la
 
 Me gustó eso de que las cosas realmente están definidas por sus características accidentales.
 
+---
+
 ### Referentes
 
-- matias serrano
+- Matias Serrano
 
-- sinosisi
+- Claudia Gonzalez
 
 - Monica Bate
-
--
-
-### Palabras importantes
