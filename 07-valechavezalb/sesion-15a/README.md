@@ -278,7 +278,7 @@ Primero probaremos la conexión serial. Pero antes de esto hay que descargar un 
 Esta aplicación ejecuta p5.serialserver, que permite la conectividad entre dispositivos serie locales y aplicaciones web mediante la biblioteca p5.serialport de p5.js.
 
 Probando, me di cuenta de que esta aplicación no funcionaba como corresponde, no encontraba el puerto serial y no lograba hacer la conexión, es por eso que le pedimos ayuda a Aarón, y nos guió con la biblioteca para poder usar el arduino con p5.
-![imagen de referencia](imagenes/conexión.p5.ino.png)
+![imagen](imagenes/conexion.p5.ino.png)
 
 
 ### p5.webserial.js de Gohai
