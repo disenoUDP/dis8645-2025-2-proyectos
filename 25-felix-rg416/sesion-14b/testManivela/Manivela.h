@@ -12,6 +12,14 @@ class Manivela {
 
     void calculoVueltas();
 
+    void rangos();
+    void rango0();
+    void rango1();  
+    void rango2();
+    void rango3();
+    void rango4();
+    void rango5();
+    
     // patitas del encoder
     int patitaCLK = 2;
     int patitaDT = 3;
