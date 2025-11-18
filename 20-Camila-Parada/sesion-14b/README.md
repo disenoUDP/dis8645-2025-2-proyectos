@@ -29,16 +29,38 @@ Por ende comencé con un listado de cosas pendientes para reafirmar según la in
 
 ## Bill of materials
 
-| Componentes | Tipo | Qty | Precio | Link |
-|-------------|------|-----|--------|------|
-| Encoder rotatorio KY-040 360 grados | Sensor | 1 | $2.000  | https://afel.cl/products/encoder-rotatorio-ky-040-360-grados |
-| Modulo reproductor MP3 | Actuador | 1 | $2.990 | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini |
-| Motor vibrador PWM Switch DC | Actuador | 1 | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
-| Mini humidificador USB tipo C de 5V | Actuador | 1 | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
-| Micro Servomotor SG90 | Actuador | 1 | $1.990 | https://afel.cl/products/micro-servomotor-sg90|
-| Mini Parlante Altavoz | Salida audio | 1 | $2.590 | https://mcielectronics.cl/shop/product/mini-parlante-altavoz-8-ohms-0-5w/ |
-| Pack Led 10mm (5) | Actuador | Varios | $3.033 – $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm/ |
+| Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
+|-------------|------|-----|------------|--------|------|
+| Arduino UNO R4 Mínima | Tarjetas de Desarrollo | 1 | 5V | $24.990 | https://mcielectronics.cl/shop/product/arduino-uno-r4-minima |
+| Pack 60 Cables Dupont | Conexión | Varios | 300 V | $2.500 | https://afel.cl/products/pack-60-cables-de-conexion |
+| Encoder rotatorio KY-040 360 grados | Sensor | 1 | 5V | $2.000  | https://afel.cl/products/encoder-rotatorio-ky-040-360-grados |
+| Modulo reproductor MP3 | Actuador | 1 | 3.2 a 5V | $2.990 | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini |
+| Motor vibrador PWM Switch DC | Actuador | 1 | 3 a 5.3 VDC | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
+| Mini humidificador USB tipo C de 5V | Actuador | 1 | 5V | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
+| Micro Servomotor SG90 | Actuador | 1 |  3 a 7.2 V | $1.990 | https://afel.cl/products/micro-servomotor-sg90 |
+| Mini Parlante Altavoz | Salida audio | 1 | 5 VDC | $2.590 | https://mcielectronics.cl/shop/product/mini-parlante-altavoz-8-ohms-0-5w |
+| Pack Led 10mm (5) | Actuador | Varios | 1.9 a 3.2 V | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
 
+
+***
+
+## Instrucciones
+
+Antes de hacer funcionar el aparato hay que corroborar que este se encuentre conectado a una fuente de alimentación de 5V aprox.
+Para saber si está encendido basta con ver si se enciende un led de la carcasa.
+
+### Pasos para activar la máquina
+
+1. Ponerse frente a la máquina y sujetar la manibela.
+2. Girar la manivela en sentido horario.
+3. Ver cómo las luces se encienden progresivamente y escuchar el sonido que indica haber avanzado 1 nivel.
+4. Seguir girando de forma continua. 
+
+***
+
+## Contexto de uso
+
+Esta máquina está para ser pensada como un "Artículo de broma". 
 
 ***
 
