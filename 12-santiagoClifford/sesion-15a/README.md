@@ -26,4 +26,3 @@ componentes:
 //autodestrucción: reproducción de audio, el servo02 gira 120°, el servo03 gira 90 grados lentamente. Luego el servo02 vuelve a 0° lentamente, y luego a 120° velozmente.
 //si el ultrasónico detecta un objeto a menos de 5cm se interrumpe la autoDestrucción. Toda esta secuencia dura en total 15 segundos, luego el servo02 se queda en 120° durante 20segundos y luevo vuelve a 0°
 ```
-
