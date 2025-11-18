@@ -178,13 +178,11 @@ DEFINIR LA EMOCIÓN/LA METÁFORA
 
 ### PLanificación
 
-"CARTA GANTT"
+![carta gantt](./imagenes/cartaGantt.jpeg)
 
-"DIAGRAMA DE FLUJO"
+![diagrama de flujo](./imagenes/diagramaDeFlujo1.jpeg)
 
-"PRESUPUESTO"
-
-"BOCETOS FÍSICOS"
+![presupuesto](./imagenes/presupuestoMaquinasSentimentales.png)
 
 ---
 
