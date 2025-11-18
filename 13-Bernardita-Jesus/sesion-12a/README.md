@@ -66,6 +66,8 @@ Conversamos bien sobre la esencia de las cosas ¿qué es una pizarra?, ¿qué la
 
 Me gustó eso de que las cosas realmente están definidas por sus características accidentales.
 
+---
+
 ### Referentes
 
 - Matias Serrano
