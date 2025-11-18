@@ -4,6 +4,25 @@
 
 ## Apuntes
 
+- Martes 25 día de paseo
+  - 09:30 metro salvador
+  - 11:00 MAC parque forestal
+- Viernes 28 trabajo en clases, última sesión
+- El proyecto tiene que ser específico
+- Miércoles 26 charla Mateo 
+
+
+---
+
+¿Cómo conectar p5.js a Arduino?
+
+- Para conectar p5.js con Arduino, necesitamos una aplicación intermedia como p5.serialcontrol o `Node.js, que actúe como servidor serial y luego usar la biblioteca p5.serialport en tu código p5.js.
+- Si queremos conectar el controlador de p5.js directamente con arduino para luego interactuar con p5.js nuevamente, necesitaremos una placa usb host y una biblioteca llamada `USB Host Library 2.0`
+
+Entrada serial a p5.js usando la biblioteca p5.serialport:
+
+[Entrada Serial a P5.js](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/#:~:text=El%20boceto%20p5.,js&text=Al%20ejecutar%20este%20sketch%20p5,escuchar%20algunos%20datos%20seriales%20entrantes.)
+
 ---
 
 El viernes después de clases, mandé un mensaje muy largo por nuestro grupo en discord y ocurrieron cositas con el proyecto, nos dimos cuenta que en verdad ninguna estaba satisfecha al 100% con lo que estábamos haciendo, por lo que tratamos de darle otra vuelta al proyecto. Sentíamos que estábamos forzando el porqué del uso del sensor y la materialidad con las lanas.
