@@ -48,6 +48,8 @@ Para poder trabajar en el proyecto de forma más estratégica y ordenada es que 
 
 ### ⋅⋯⋯⋅ Carta Gant ⋅⋯⋯⋅
 
+Documento que expone el cronograma semanal y las etapas de trabajo a la que se asigna cada semana.
+
 ![carta-gantt](./imagenes/carta-gantt.png)
 
 ### ⋅⋯⋯⋅ Pseudocódigo ⋅⋯⋯⋅
