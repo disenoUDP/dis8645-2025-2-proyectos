@@ -10,6 +10,9 @@
 ***
 ## Introducción
 
+Para la última etapa del año es que se enfocó en la producción de una “máquina sentimental”. 
+Esta idea es un constructo que combina los conocimientos vistos a lo largo del semestre (referente al desarrollo de mecanismos fabricados con la tecnología de Arduino) en conjunto con rasgos y reacciones psicofisiológicas como lo son las emociones. 
+Esta última se define como “Alteración del ánimo intensa y pasajera (agradable o penosa) que va acompañada de cierta conmoción somática (relacionado con el cuerpo)”. Al considerar la libertad frente al encargo es que como equipo se llegó al objetivo de crear una experiencia que tenga como efecto el generar decepción al usuario.
 
 ***
 
