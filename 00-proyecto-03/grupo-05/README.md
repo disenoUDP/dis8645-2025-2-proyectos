@@ -15,6 +15,16 @@
 
 ## Cuerpo de la obre: sentimiento y metáfora
 
+debe ser muy convincente. La *decepción* viene al traicionar la *expectativa* por lo que no podemos tener una sin la otra. El primer paso para decepcionar al usuario es hacer que espere algo de la máquina ya que si no le importa el resultado no será efectiva. Debemos hacer que sienta que se le debe algo para pagar el esfuerzo invertido en activarla, en este caso girar la manivela. Para complementar esta "deuda" añadiremos de manera indirecta indicadores de progreso que dosifiquen la entrega de recompensas a medida que se progresa. Mostraremos que a corto plazo sus acciones tienen efectos en la máquina y daremos pistas de un gran climax al completar la secuencia:
+1. Usuario aprenderá que al girar la manivela se activan solidos y se prenden luces
+2. Las luces aumentarán a medida que progresa y al ser limitadas indica que hay un final
+3. Se añadirán elementos al alcanzar *milestones* de progreso como vibración, compuertas que se abren o sonidos cambiantes.
+4. Al completar la cantidad de vueltas las luces indicarán una sorpresa inminente
+5. El esfuerzo del usuario se verá traducido en un poco de humo y un sonido patético
+6. La máquina te vendió humo
+
+Obviamente la decepción no será devastadora y es muy dificíl hacer que no tenga un tono cómico ya que la estructura de la interacción se asemeja a la de un chiste. Nuestra misión se habrá cumplido si el usuario llega al final de la interacción ya que significa que logramos hacer que compre humo de una máquina estática, sin leyenda y demandante. Vale mencionar que la máquina debe ser llamativa para que el usuario se acerque y empiece todo. Queremos aprovechar rasgos de las personas como la curiosidad o las ganas de no desperdiciar el esfuerzo/tiempo ya invertido. Estos aspectos serán el principal motor que hará funcionar nuestra máquina y contamos con ellos para que se generen interacciones.
+
 ***
 
 ## Planificación
