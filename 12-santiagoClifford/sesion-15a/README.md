@@ -3,9 +3,11 @@
 ## 2025-11-18
 
 componentes:
-
-- 3 servo
-- ultraS
+- motor dc: brazos
+- 2 servo:
+  - servo01: columna
+  - servo02: rotación
+- ultrasónico
 - módulo mp3
 - parlante
 - sensor de presión
@@ -30,6 +32,7 @@ componentes:
 
 ## sensor de presión
 
-<https://www.youtube.com/watch?v=pEbdN-JzKDA>
+[tutorial del sensor de presión](https://www.youtube.com/watch?v=pEbdN-JzKDA)
 
 ![video del sensor de presión funcionando](./imagenes/presion.gif)
+
