@@ -1,4 +1,2 @@
 # sesion-12b
-## APUNTES CLASE 04.11.25
-
-★ Google Colab: computador virtual
+𓆝 𓆟 𓆞 𓆝 feriado 31/10
