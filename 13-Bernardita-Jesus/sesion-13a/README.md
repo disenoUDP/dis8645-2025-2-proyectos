@@ -68,6 +68,8 @@ https://mac.uchile.cl/actividades/efimera_-las-llamadas-que-nunca-hice/
 
 Trabajar más con materialidades y menos impresión 3D, desarrollar texturas para darle más dimensiones al proyecto.
 
+---
+
 ### Referentes
 
 - [Ian Goodfellow](https://en.wikipedia.org/wiki/Ian_Goodfellow) libro [Making pictures with generative adversarial networks casey reas](https://www.creativeapplications.net/books/making-pictures-with-generative-adversarial-networks-casey-reas/)
@@ -76,8 +78,8 @@ Trabajar más con materialidades y menos impresión 3D, desarrollar texturas par
 
 ### Palabras importantes
 
-microcontrolador
+[Microcontrolador](https://es.wikipedia.org/wiki/Microcontrolador): Un microcontrolador es un circuito integrado programable, capaz de ejecutar las órdenes grabadas en su memoria. 
 
-Captcha
+[CAPTCHA](https://es.wikipedia.org/wiki/Captcha): Un CAPTCHA, siglas de Completely Automated Public Turing test to Tell Computers and Humans Apart, en español "prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos", es un sistema de desafío-respuesta utilizado en informática para determinar si el usuario es una persona o un bot.
 
-TPU, Unidades de procesamiento Tensorial
+[TPU](https://www.techtarget.com/whatis/definition/tensor-processing-unit-TPU): Una unidad de procesamiento tensorial (TPU) es un circuito integrado de aplicación específica (ASIC) diseñado específicamente para acelerar las tareas de procesamiento matemático y lógico de alto volumen que suelen estar relacionadas con las cargas de trabajo de aprendizaje automático (ML).
