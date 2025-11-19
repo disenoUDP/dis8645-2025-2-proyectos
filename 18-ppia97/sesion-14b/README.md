@@ -8,3 +8,8 @@
 * Nos funcionó bien el movimiento en ambos, seguimos complicadas con el tema de la carcasa. Además presentimos que la vibración del motor vibrador va a ser muy leve aunque está al máximo.
 * El led también funcionó increíble, pudimos configurarlo para que diera color morado.
 
+![clase](./imagenes/led1.jpg)
+
+![clase](./imagenes/led2.jpg)
+
+![clase](./imagenes/led3.jpg)
