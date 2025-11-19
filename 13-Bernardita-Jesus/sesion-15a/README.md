@@ -10,6 +10,8 @@ Martes 18 de noviembre, 2025
 
 - Además, hablamos un poco de los eventos que va a tener la universidad, como una exposición de textil y una charla de Mateo para el otro miércoles.
 
+---
+
 ## Proyecto-03
 
 ### Revisión de avances del proyecto
@@ -57,3 +59,5 @@ Yo estuve ordenando los componentes para que queden bien distribuidos y funcione
 -
 
 ### Palabras importantes
+
+alginato
