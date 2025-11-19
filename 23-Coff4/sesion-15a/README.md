@@ -7,6 +7,8 @@ Ok, este dia han pasado diferentes cosas en las cuales me he involucrado
 En primer lugar la Aileen paso diferentes links con los cuales probar el parlante para la reproduccion de audio
 Lo unico malo de esto es que solo tenemos uno para comprobar. por lo tanto las pruebas en terreno son muy acortadas. Tengo unas fotos junto al codigo en donde se muestran los intentos que logre hacer. en donde convertí un audio de 4 segundos en el formato requerido y con un conventor pude pasarlo a codigo y meterlo en el programa.
 
+![alt text](http://url/to/img.png)
+
 Dejare la carpeta con el codigo y un link adicional de wokwi:
 
 https://wokwi.com/projects/447971725908102145
@@ -119,5 +121,12 @@ if (d < 20) {
 }
 ```
 
+---
+
+Ok...Por razones de fuerza mayor terminamos juntandonos después de clases para seguir con el proyecto en llamadas de discord
+
+En la primera vimos orden y resolvimos unas cuantas dudas y en la segunda nos pusimos de lleno a hacer el .ino
+
+Adjunto pruebas de los sucesos
 
 
