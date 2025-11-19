@@ -22,6 +22,8 @@ Mientras tanto, Seba avanzaba con lo de los millis. Moss estuvo revisando el fun
 
 Luego Seba se dio cuenta de que algunos pines estaban soldados juntos, los desoldaron y se resolvió.
 
+![foto pantalla funcionando](./imagenes/pantalla.jpeg)
+
 ### Carcasa
 
 Jose trajo unas pruebas de alginato para la parte inferior de la carcasa, ya que va a recibir constantemente golpes y este material ayudaría al rebote. Podría decirse que esa, por ahora, es nuestra primera opción, si no funciona, vamos a probar con silicona, porque yo logré conseguir silicona para hacer testeos.
