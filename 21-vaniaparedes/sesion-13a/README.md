@@ -4,6 +4,31 @@
 ✅ Instalado
 cmd + space: Terminal
 
+### inteligencia artificial
+¿Cómo funciona?
+- Imágenes bajo una matriz de números
+- Le entrega valores númericos, que se modifican según como entrenamos esta imágen
+
+### ¿Cómo ocurre con las palabras?
+
+también genera una matriz de números, el cual busca en distintas oartes la compatibilidad de la palabbra. El cual, es formado por una cadena de números.
+
+`nosotros entrenamos a la ia, con la confirmación.`
+
+### IA generativa
+
+- uso del captcha para asociar palabras a imágenes.
+- **TPU** (Tensor Processing Unit): es un chip especial creado por Google para que las inteligencias artificiales aprendan y trabajen más rápido. Muchos de los macbook actuales vienen con tpu.
+- **CPU**: el cerebro normal del computador, hace de todo, pero más lento en tareas de IA.
+- **GPU**: muy buena para cálculos en paralelo, como los de videojuegos o redes neuronales.
+- **TPU**: una “GPU especializada” diseñada exclusivamente para IA.
+- **RNN** (Red Nuronal Recurrente): es un tipo de inteligencia artificial que sirve para trabajar con información que viene en secuencia. Como trabaja con datos, siempre se puede equivocar ya que juega con probabilidades.
+
+### Google Colaboratory
+
+Google Colaboratory, te prestan un servidor de Google de cualquier parte del mundo para usar un computador. Cada usuario con una cuenta de google puede acceder esto. Tiene TPU y GPU. Este entorno es muy usando en este tiempo para usar Inteligencia Artificial. Puedes usar la TPU de ese computador si es que el propio no cuenta con ese elemento.
+
+
 ### Cómo usar Github desde la terminal?
 Ni idea no entiendo nada >n< dms pro
 

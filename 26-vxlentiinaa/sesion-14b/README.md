@@ -122,6 +122,10 @@ void setColor(int r, int g, int b) {
 }
 ```
 
+---
+
+## Avance proyecto 03
+
 ### Presentación Textual
 
 "ECOS DE GESTOS"
@@ -172,15 +176,44 @@ DEFINIR LA EMOCIÓN/LA METÁFORA
 
 ---
 
-### PLanificación
+### Planificación
 
-"CARTA GANTT"
+![carta gantt](./imagenes/cartaGantt.jpeg)
 
-"DIAGRAMA DE FLUJO"
+![diagrama de flujo](./imagenes/diagramaDeFlujo1.jpg)
 
-"PRESUPUESTO"
+![presupuesto](./imagenes/presupuestoMaquinasSentimentales.png)
 
-"BOCETOS FÍSICOS"
+---
+
+### Conexión datos de Arduino con Touchdesigner
+
+Primero se debe elegir el protocolo de comunicación adecuado, este puede ser:
+
+- `Comunicación serial:` para comunicaciones DAT seriales de TD.
+- `OSC (Open Sound Control):` ideal para arte generativo en tiempo real. Baja latencia.
+- `MIDI:` ideal para proyectos con música o sonidos.
+- `Websocket:` protocolo de comunicación bidireccional, ideal para proyectos conectados a internet como una página web.
+
+Una vez elegido, en este caso usaré OSC ya que es especial para animaciones generativas y arduino.
+
+### Conectando datos entre arduino y TD (por valechavez)
+
+- crear un nodo DAT Serial - Serial1_Callbacks.
+- active: on.
+- port: usbmodem... que es el nombre del Arduino que está conecatdo a nuestro computador.
+- baud rate: 9600 este debe coincidir con el puerto serial que configuramos en arduino.
+  
+Aquí es donde el DAT lee el sensor y sus valores para luego jugar con los parámetros de las visuales.
+
+![touch designer](./imagenes/touchdesignerConArduino.png)
+
+### Asignación de entradas de Arduino a elementos visuales de Touchdesigner
+
+1. configurar DAT serial, mencionado y explicado en el apartado anterior.
+2. crear un DAT in CHOP para convertir los datos en canales y poder crear las animaciones.
+3. agregar un CHOP Math para escalar los datos a un rango utilizable. En este caso el sensor de fuerza va de 0 a 1000.
+4. conectar la salida del Math a una Spherepara que controle parámetros como radio, posición o color con los datos del sensor de fuerza.
 
 ---
 
@@ -220,3 +253,162 @@ Una maquina que reacciona cuando le aplicas una fuerza ¿cuál es la reacción? 
 - Sensores FSR de presión. Resistencia que cambia de valor cuando se le aplica la fuerza. Sensor muy sensible, ya que es poco preciso.
 - Ver temas contingentes. que para acceder a este vivienda tengas que tener x horas de trabajo o x horas de algo.
 - Materialidad, basándose en la naturaleza de la materia. Liquidps, etc.
+
+---
+
+### Propuestas nuevas 
+
+- `Marea:` es una máquina sentimental creada para ir en contra del ritmo con el que el mundo insiste en arrastrarnos. Vivimos dentro de un movimiento constante: ruido, velocidad, exigencias que no dan espacio para sentir nada con honestidad. Esta máquina nace justamente para suspender ese flujo, para ofrecer un minuto seguro donde la persona pueda bajar la intensidad, respirar y encontrarse consigo misma sin presión.
+- `La Máquina que Se Ofende Fácilmente:` una máquina cuyo “carácter” es extremadamente sensible. Si te acercas demasiado o la tocas con brusquedad, se “ofende”, apaga sus luces y muestra mensajes pasivo-agresivos del estilo “Ah, ok… veo que no te importo”.
+  - Lejos: te “mira” con curiosidad (luces suaves, postura tranquila).
+  - Normal: si te acercas con calma, la máquina se anima (cambia color, vibra levemente).
+  - Ofendida: si detecta un movimiento brusco o toque fuerte, se cierra emocionalmente (luces apagadas, pantalla mostrando mensajes dramáticos).
+Luego de unos segundos, vuelve lentamente a su estado normal.
+- `La Máquina sentimental que no quiere jugar contigo:` es un personaje que invita entusiastamente a jugar, pero cuando tomas su “control” activa un error intencional y se retracta. Utiliza un sensor ultrasónico para detectar cercanía y un sensor FSR en el control para identificar cuándo alguien lo toma y así gatillar la broma. Cuando la persona se aleja, el personaje vuelve a su actitud amistosa y reinicia el ciclo.
+
+---
+
+### Propuesta Nueva
+
+Después de hablar el fin de semana, nos pusimos de acuerdo con esta propuesta (en el readMe 15a está más especificado)
+
+`“Atrápame si puedes”` es una máquina interactiva que funciona con gestos de la mano. El usuario mueve su mano frente a un sensor, y ese gesto controla un punto en una pantalla. El objetivo del juego es alcanzar un objeto que aparece en la pantalla.
+
+Pero la máquina está diseñada para escaparse justo cuando estás a punto de atrapar el objetivo. Detecta tu cercanía y activa una especie de “glitch” o falla visual que hace que el objetivo huya. Esto provoca una mezcla de frustración y risa, porque el error no es real: la máquina te está troleando a propósito.
+
+A veces te deja sumar puntos, otras veces te engaña, y te invita a seguir intentando con mensajes provocativos. La interacción crea una especie de competencia emocional entre el usuario y la máquina.
+
+En resumen: es un juego que reconoce tus gestos, te hace creer que vas a ganar y luego se escapa, generando una experiencia divertida, frustrante y muy humana.
+
+### Sensor de gestualidad PAJ 7620
+
+Es un sensor que reconoce gestos sin contacto y puede detectar 9 gestos principales:
+
+arriba
+abajo
+izquierda
+derecha
+adelante (push)
+atrás (pull)
+reloj (circular CW)
+antireloj (circular CCW)
+movimiento ondulante (wave)
+
+| Sensor PAJ7620 | Arduino         |
+|----------------|-----------------|
+| VCC            | 3.3V            |
+| GND            | GND             |
+| SDA            | SDA (A4 en UNO  |
+| SCL            | SCL (A5 en UNO  |
+
+![sensor 1](./imagenes/sensorDeGestos.jpeg)
+
+![sensor 2](./imagenes/sensorDeGestos2.png)
+
+### Código básico para sensor
+
+```cpp
+#include <Wire.h>
+#include "PAJ7620.h"
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+
+  uint8_t error = paj7620Init();
+  if (error) {
+    Serial.print("Error inicializando sensor: ");
+    Serial.println(error);
+  } else {
+    Serial.println("PAJ7620 listo!");
+  }
+}
+
+void loop() {
+  uint8_t gesture = paj7620ReadGesture();
+  
+  switch (gesture) {
+    case GES_UP_FLAG:
+      Serial.println("Arriba");
+      break;
+    case GES_DOWN_FLAG:
+      Serial.println("Abajo");
+      break;
+    case GES_LEFT_FLAG:
+      Serial.println("Izquierda");
+      break;
+    case GES_RIGHT_FLAG:
+      Serial.println("Derecha");
+      break;
+    case GES_FORWARD_FLAG:
+      Serial.println("Adelante");
+      break;
+    case GES_BACKWARD_FLAG:
+      Serial.println("Atras");
+      break;
+    case GES_CLOCKWISE_FLAG:
+      Serial.println("Circular CW");
+      break;
+    case GES_ANTICLOCKWISE_FLAG:
+      Serial.println("Circular CCW");
+      break;
+    case GES_WAVE_FLAG:
+      Serial.println("Wave / Saludo");
+      break;
+  }
+
+  delay(100);
+}
+```
+
+### Diagrama de flujo
+
+```mermaid
+flowchart TD
+n1["Pantalla prendida con algún texto (*Saluda para comenzar👋🏻*)"]
+n1 --> n2["Título: *Atrápame si puedes* y un puntito abstracto en la parte de abajo"]
+n2 --> n3["Empieza el juego y el punto se estará moviendo en la pantalla"]
+n3 --> n4["Tratar de atrapar el punto (*ej: tiene 4 vidas*)"]
+n4 --> n5>"1. Lo atrapé = 3 vidas"]
+n4 --> n6>"2. Lo atrapé = 2 vidas"]
+n4 --> n7>"3. Lo atrapé = 1 vidas"]
+n5 & n6 & n7 --> n12["Si la persona juega hasta aquí, la máquina volverá a su incio"]
+n4 --> n8>"4. Cuando lo intentes atrapar la última vez"]
+n8 --> n9["La máquina te *trollea*"]
+n9 --> n10["Aparece el glitch"]
+n10 --> n11["Aparece un texto (ej: *era broma*)"]
+n11 --> n13["Vuelve al inicio (*Saluda para comenzar*)"]
+n13@{ shape: dbl-circ}
+n13 --> n1
+
+     n1:::Rose
+     n2:::Aqua
+     n3:::Lime
+     n4:::Sunset
+     n5:::Lavender
+     n6:::YellowSoft
+     n7:::Aqua
+     n12:::Rose
+     n8:::Lavender
+     n9:::YellowSoft
+     n10:::Aqua
+     n11:::Sunset
+     n13:::Lime
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
+```
+
+### Imágenes de referencia 
+
+![imagen 1](./imagenes/imagenReferencia1.jpeg)
+
+![imagen 2](./imagenes/imagenReferencia2.jpeg)
+
+![imagen 3](./imagenes/imagenReferencia3.jpeg)
+
+![imagen 4](./imagenes/imagenReferencia4.jpeg)
+

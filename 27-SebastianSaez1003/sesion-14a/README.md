@@ -150,3 +150,6 @@ else if (!parado){
 ```
 
 Que en realidad, está sobre complejizado, la parte de la booleana que cree no era necesaria en absoluto, pero bueno, me entiendo y eso es lo importante.
+
+El archivo de este código de prueba también estará subido en la carpeta de esta sesión.
+
