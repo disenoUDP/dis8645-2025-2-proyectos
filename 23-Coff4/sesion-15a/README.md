@@ -53,6 +53,10 @@ En una de las boleanas debe ir un if (nombre de la boleana) ();
 
 ---
 
+De aquí  se saco el inicio de todo el codigo y después se usó gemini 
+
+https://naylampmechatronics.com/blog/10_tutorial-de-arduino-y-sensor-ultrasonico-hc-sr04.html
+
 ```cpp
 
 const int Trigger = 2;   //Pin digital 2 para el Trigger del sensor
