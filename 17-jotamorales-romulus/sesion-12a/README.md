@@ -1,6 +1,6 @@
 # sesion-12a
 
-Conformamos los grupos para el proyecto 3. Y definimos nuestras habilidades y nuestros atados. 
+Conformamos los grupos para el proyecto 3 y definimos nuestras habilidades y nuestros atados. 
 
 ## Grupos — Habilidades
 
