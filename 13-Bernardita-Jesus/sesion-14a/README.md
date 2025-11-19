@@ -10,17 +10,19 @@ Martes 11 de noviembre, 2025
 
 ---
 
+## Proyecto-03
+
 ### Desarrollo de la parte formal de la carcasa
 
-#### Modelado
+**Modelado**
 
 El modelado 3D podríamos realizarlo mediante impresión 3D, tallado en plumavit o modelado en arcilla, formando la figura de un huevo y dejando espacio para alojar en su interior el Arduino, el sensor tilt y el DF Player, y en su exterior la pantalla, los botones, los LEDs y el speaker.
 
-#### Molde
+**Molde**
 
 Con el molde podríamos hacer la pieza de resina, silicona o yeso, la verdad por la que más nos vamos es por la de silicona ya que la resina tiene un buen acabado pero es bastante tóxica y hay que tomar muchas precauciones para que no le salgan burbujas.
 
-#### Relleno / vertido
+**Relleno / vertido**
 
 Con el molde podríamos hacer la pieza de resina, silicona o yeso, la verdad por la que más nos vamos es por la de silicona ya que la resina tiene un buen acabado pero es bastante tóxica y hay que tomar muchas precauciones para que no le salgan burbujas.
 
@@ -30,10 +32,3 @@ Nos inclinamos por realizar la carcasa mediante impresión 3D, ya que esta técn
 
 La propuesta contempla dividir el huevo en dos secciones, una mitad impresa en 3D, que contendrá el interior con la estructura técnica y los componentes (Arduino, pantalla, botones, etc.), y una segunda mitad fabricada en silicona, que funcionará como la parte externa que cae y entra en contacto con el suelo, por su flexibilidad y absorción de impacto.
 
-### Referentes
-
--
-
--
-
-### Palabras importantes
