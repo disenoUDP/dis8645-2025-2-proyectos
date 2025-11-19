@@ -28,7 +28,7 @@ Justificar el movimiento de nuestro Tamagochi desde el imaginario de los pájaro
 
 También le preguntamos a 19-Hiinalia si era muy difícil ilustrar en pixel art un pájaro del paraíso, que era el que nos calzaba con lo que buscábamos, así que comenzamos a trabajar en un diseño más acorde.
 
-
+![fotos](./imagenes/pajaro.jpg)
 
 > Fuente [imagen 1](https://invdes.com.mx/wp-content/uploads/2018/04/29-04-18-ave.jpg) y fuente [imagen 2](https://media.istockphoto.com/id/1308355886/es/foto/p%C3%A1jaro-rifle-de-victoria.jpg)
 
