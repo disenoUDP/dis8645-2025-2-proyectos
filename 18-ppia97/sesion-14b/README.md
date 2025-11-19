@@ -12,4 +12,4 @@
 
 ![clase](./imagenes/led2.jpg)
 
-![clase](./imagenes/led3.jpg)
+![clase](./imagenes/led3.png)
