@@ -16,9 +16,7 @@ Viernes 14 de noviembre, 2025
 
 - Raspberry Pi 
 
-- boot, iniciar, reboot, reiniciar.
-
-- Instalar bibliotecas y especificar las versiones para que no instale la más actual u otra, ya que puede romper el código.
+- boot, iniciar, reboot, reiniciar. Instalar bibliotecas y especificar las versiones para que no instale la más actual u otra, ya que puede romper el código.
 
 ---
 
