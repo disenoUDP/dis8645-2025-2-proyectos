@@ -38,11 +38,25 @@
 - Arduino Uno + cable ×2 ✔  
 - Protoboard grande ×2 ✔  
 - Cables macho-macho ×2 — $1.000 c/u → **$2.000**  
-- Sensor ultrasónico ×2 — **$3.000**  
-- Motor vibrador PWM Switch DC (1) — **$2.000**  
+- Sensor ultrasónico ×2 — **$3.000**
+
+![sensor](./imagenes/sensorultrasonico.jpg)
+
+- Motor vibrador PWM Switch DC (1) — **$2.000**
+
+![motorvibrador](./imagenes/motorVibrador.jpg)
+
 - Módulo Mosfet IRF520 (1) — **$2.000**  
-- Micro Servomotor SG90 (1) — **$1.990**  
-- Diodo LED RGB ×15 — **$1.500**  
+- Micro Servomotor SG90 (1) — **$1.990**
+
+![servomotor](./imagenes/servomotor.jpg)
+
+
+- Diodo LED RGB ×15 — **$1.500**
+
+![LED](./imagenes/led.jpg)
+
+
 - Resistencias 220Ω (kit 600 und.) — **$4.990**
 
 **Total: $17.480**
