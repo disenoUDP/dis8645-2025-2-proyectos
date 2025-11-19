@@ -54,12 +54,6 @@ Yo estuve ordenando los componentes para que queden bien distribuidos y funcione
 
 - Botones
 
-### Referentes
-
--
-
--
-
 ### Palabras importantes
 
 alginato
