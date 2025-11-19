@@ -52,8 +52,6 @@ Muy interesante todo ese tema de lo que son y no son objetos, y trabajar en el l
 
 ## Encargo-17: Claudia González Godoy
 
-Cada persona debe subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra.
-
 > Fuente https://www.claudiagonzalez.cl/
 
 Es curadora y Doctora en Historia del Arte. 
