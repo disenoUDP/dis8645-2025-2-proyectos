@@ -20,12 +20,13 @@ Máquina de Abrazos: El dispositivo, un muñeco con forma de mono, solicita un a
 |-----------------------|----------|
 | Parlante              | 1        | 
 | Cable H-H             | varios   | 
-| Servo motor           | 1        | 
+| Servo motor           | 2        | 
 | Sensor ultrasónico    | 1        |
 | Módulo MP3            | 1        | 
 | Botón de arcade falso | 1        |
 | Sensor de presión     | 1        | 
 | Motor DC              | 1        | 
+| Mosfet                | 1        | 
 
 ---
 
