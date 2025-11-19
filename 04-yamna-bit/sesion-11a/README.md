@@ -1,6 +1,6 @@
 # sesion-11a
 
-## Máquinas Computacionales: 21/10
+##  Clase 11a 21/10: MÁQUINAS COMPUTACIONALES 
 
 Nota de clase: Partimos compartiendo cosas buenas que nos habían pasado durante la semana, Después conversamos sobre cómo nos fue en la solemne en general, las experiencias fueron súper buenas. Diseño Abierto no sera como las otras ediciones, ya que la universidad está de aniversario por lo cúal decidieron enfocar la atención en otras actividades :(.
 
