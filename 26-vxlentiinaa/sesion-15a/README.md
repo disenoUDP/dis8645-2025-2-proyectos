@@ -531,6 +531,195 @@ void loop() {
 }
 ```
 
+### Códigos de arduino
+
+- Aarón nos ayudó a ordenar el código que teníamos, luego separamos las clases de los sensores.
+- Comentamos el código y agregamos unos `Serial.print` para luego mandar los datos a p5.js
+
+`AtrapameSiPuedes.ino`
+
+```cpp
+// incluir 1 clase para recibir datos de sensores
+// incluir 1 clase para emitir datos segun eso
+
+#include "SensorFuerza.h" // incluye las clases SensorFuerza y Puntito
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+// Puntito puntito;
+
+void setup() {
+  Serial.begin(9600);
+  ejeX.configurar(A0);   // se asigna un sensor al pinA0
+  ejeY.configurar(A1);   // se asigna un sensor al pinA1
+}
+
+void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
+  ejeX.leer();
+  ejeY.leer();
+
+  Serial.println(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
+  Serial.println(ejeY.valorCrudo);
+
+  Serial.print("valorX");
+  Serial.print(",");
+  Serial.println("valorY");
+
+  delay(40);
+  // enviar valores a p5
+  // enviar valor ejeX.valorCrudo
+  // luego enviar ejeY.valorCrudo
+  // Serial.write(ejeX.valorCrudo, ejeY.valorCrudo);
+}
+```
+
+`SensorFuerza.h`
+
+```cpp
+#ifndef SENSOR_FUERZA_H // si no esta Sensor fuerza definido
+#define SENSOR_FUERZA_H // aqui lo definimos 
+
+#include <Arduino.h>  // incluimos las funciones basicas de arduino
+
+class SensorFuerza {     // definimos la clase sensor fuerza
+public:
+  SensorFuerza();  // constructor
+  ~SensorFuerza(); // destructor
+
+  void configurar(int nuevaPatita); // guarda en que pin se encuentra el sensor
+  void leer();  // declara la funcion para leer el sensor
+
+  int patita;       // guarda el numero del pin (A0,A1)
+  int valorCrudo;   // guarda el numero del sensor, entre 0 a 1023 (segun presion)
+  int valorMapeado; 
+};
+
+#endif
+```
+
+`SensorFuerza.cpp`
+
+```cpp
+#include "SensorFuerza.h"
+// incluye el .h de SensorFuerza
+
+SensorFuerza::SensorFuerza() {} //constructor
+
+SensorFuerza::~SensorFuerza() {} // destructor
+
+void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
+  SensorFuerza::patita = nuevaPatita;
+  pinMode(SensorFuerza::patita, INPUT);  // pin donde se encuentra el sensor
+}
+
+void SensorFuerza::leer() {   // funcion para leer el sensor
+  SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
+                                                                // y cada vez que se llama .leer, se actualiza el valor
+}
+```
+### Códigos de p5.js
+
+- Con Valentina Chavez y Yamna Carrión, logramos conectar arduino con p5.js
+- Este código no es el oficial, pero con este empezamos
+
+```p5.js
+//sketch realizado con ayuda de la librería de Gohai
+//conexión de datos de arduino hacia p5 utilizando un sensor de fuerza
+//este sensor lee parametros como izquierda-derecha, arriba-abajo
+
+const BAUDRATE = 9600;  //velocidad del puerto
+let port;               //variable del puerto
+let connectBtn;         //boton
+
+let sensorX = 0;        //izquierda-derecha
+let sensorY = 0;        //arriba-abajo
+
+// 0 = esperamos X, 1 = esperamos Y
+let lecturaEstado = 0;
+
+//imagenes 
+let img; //imagen en png de la red atrapa mosquitos
+let backImg; //imagen de misaa
+
+//aqui es donde se cargan las imagenes y todos los recursos que utilizaremos
+function preload() {
+  img = loadImage("redAtrapaHadas.png");
+  backImg = loadImage("janisEstatica.gif");
+  
+}
+
+//configuracion del lienzo
+function setup() {
+  createCanvas(1920, 1080); //tamaño del lienzo
+  background(20); //color de fondo
+
+  port = createSerial(); //creamos el puerto serial para la conexión
+  port.bufferSize(1024); //buffer que nos permitirá leer con una velocidad adecuada los datos que entrega arduino
+
+  //botón para conectar el arduino
+  connectBtn = createButton('Conectar Arduino'); //texto para el boton
+  connectBtn.position(10, 10); //posición del boton
+  connectBtn.mousePressed(connectBtnClick); //al hacer clic se activa
+}
+
+function draw() {
+  background(200);
+  
+  image(backImg, 400, 400, 200, 200); //aqui se llama a la imagen para que se pueda dibujar 
+
+  
+  //lee los valores de arduino en el formato correspondiente a p5
+  let line = port.readUntil("\n"); 
+  while (line && line.length > 0) {
+    line = trim(line);
+
+    // si la línea no es solo números (tiene letras, comas, etc.), la ignoramos
+    if (/^\d+$/.test(line)) {
+      let v = int(line);
+
+      if (lecturaEstado === 0) {
+        sensorX = v;
+        lecturaEstado = 1; // la próxima numérica será Y
+      } else {
+        sensorY = v;
+        lecturaEstado = 0; // volvemos a esperar X
+      }
+    }
+
+    // leer siguiente línea del buffer (los datos)
+    line = port.readUntil("\n"); //salto de linea 
+  }
+
+  // Mapear a la pantalla
+  let posX = map(sensorX, 0, 1023, 0, width);
+  let posY = map(sensorY, 0, 1023, height, 0); // invertido
+
+  let imgSize = 120; // tamaño de la imagen
+  imageMode(CENTER); //posicion de la imagen al centro, (CORNER) tambien funciona
+  image(img, posX, posY, imgSize, imgSize); //posicion y tamaño de la imagen
+  
+  // tamaño, color y texto de los valores que recibe el sensor en p5, esto puede modificarse para agregar las vidas y el conteo de puntos.
+  fill(180);
+  textSize(14);
+  text(`X: ${sensorX}`, 10, height - 30);
+  text(`Y: ${sensorY}`, 10, height - 10);
+  
+  //agregamos la otra imagen, en este caso la de janis
+  let janisEstaticaSize = 220; // tamaño de la imagen (puedes cambiarlo)
+  imageMode(CENTER);
+  image(backImg);
+}
+
+//funcion para que el boton de conectar el arduino a p5 funcione al hacer clic y lea la placa
+function connectBtnClick() {
+  if (!port.opened()) {
+    port.open(BAUDRATE);
+  } else {
+    port.close();
+  }
+}
+```
+
 ---
 
 ### Conexiones Actualizado
