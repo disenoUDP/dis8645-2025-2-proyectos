@@ -820,7 +820,7 @@ flowchart TB
 
 ### Mateo
 
-![mateo](./imagenes/aaron.png)
+![mateo](./imagenes/mateo.png)
 
 ![mateo estatico](./imagenes/mateoEstatico.gif)
 
