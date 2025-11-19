@@ -12,6 +12,14 @@ Martes 11 de noviembre, 2025
 
 ## Proyecto-03
 
+### Definición del proyecto
+
+Un dispositivo temporizador mecánico–electrónico con forma de huevo que genera una interacción incómoda mediante balanceos y tambaleos activados por sensores. Su comportamiento busca transformar una acción cotidiana en una experiencia deliberadamente inconveniente, enfatizando la relación de inestabilidad.
+
+Revisamos el diagrama de flujo que hizo 27-SebastianSaez1003 con Mermaid, donde queda mucho más claro la interacción y el funcionamiento de nuestro huevo, y fuimos corrigiendo en conjunto para darle más claridad.
+
+Probaron el sensor tilt SW-520D y el motor, para ir agregándolos al código.
+
 ### Desarrollo de la parte formal de la carcasa
 
 **Modelado**
