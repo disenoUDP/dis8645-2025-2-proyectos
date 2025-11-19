@@ -30,13 +30,15 @@ La inteligencia Artificial (IA) funciona procesando grandes cantidades de datos 
 - `TPU` una “GPU especializada” diseñada exclusivamente para IA.
 - RNN Red Nuronal Recurrente: es un tipo de inteligencia artificial que sirve para trabajar con información que viene en secuencia. Como trabaja con datos, siempre se puede equivocar ya que juega con probabilidades.
 
-`Google Colaboratory`
+---
+
+### `Google Colaboratory`
 
 Servicio en la nube gratuito que permite escribir y ejecutar código Python directamente en un navegador web, sin necesidad de instalar ningún software.
 
 Google Colaboratory, te prestan un servidor de Google de cualquier parte del mundo para usar un computador. Cada usuario con una cuenta de google puede acceder esto. Tiene TPU y GPU. Este entorno es muy usando en este tiempo para usar Inteligencia Artificial. Puedes usar la TPU de ese computador si es que el propio no cuenta con ese elemento.
 
-`Homebrew`
+### `Homebrew`
 
 Es un popular gestor de paquetes de código abierto que simplifica la instalación de software en macOS y Linux a través de la línea de comandos, y se refiere a software casero o no oficial hecho por aficionados, especialmente para sistemas de consolas de videojuegos. El primer uso es el más común hoy en día y permite a los desarrolladores instalar herramientas, librerías y aplicaciones de manera eficiente
 
@@ -57,7 +59,7 @@ Con esto tendremos github para poder usarla en la consola. De esta manera es muc
 
 ### Ideas para el Proyecto N°3 (grupo 4)
 
-Una maquina que reacciona cuando le aplicas una fuerza ¿cuál es la reacción? ¿qué hace cuando le aplicas mucha fuerza? ¿qué hace cuando le aplicas una menor fuerza?
+Una máquina que reacciona cuando le aplicas una fuerza ¿cuál es la reacción? ¿qué hace cuando le aplicas mucha fuerza? ¿qué hace cuando le aplicas una menor fuerza?
 
 - Punching bag, le pegas y se calma.
 - Sensores de fuerza.
