@@ -28,7 +28,7 @@ Justificar el movimiento de nuestro Tamagochi desde el imaginario de los pájaro
 
 También le preguntamos a 19-Hiinalia si era muy difícil ilustrar en pixel art un pájaro del paraíso, que era el que nos calzaba con lo que buscábamos, así que comenzamos a trabajar en un diseño más acorde.
 
-### Modelado
+### Modelado carcasa
 
 Para el modelado, partí del trazado de un huevo en Rhino que aprendí a hacer con una imagen que encontré en Pinterest, y luego le hice una diferencia booleana, siempre trabajando la forma a la mitad para que sea más como
 
