@@ -41,7 +41,7 @@
 
 ---
 
-Discurso (modificar)
+`Discurso (modificar)`
 
 El proyecto propone la creación de una máquina sentimental, un artefacto interactivo capaz de reaccionar sensiblemente al entorno especialmente al ruido, la voz o el tacto y de expresar esas emociones a través de visuales luminosos y patrones en movimiento.
 
@@ -227,7 +227,7 @@ la máquina reacciona depende la intensidad con que la toque, si es muy bruzco, 
 
 ---
 
-`MANIFIESTO`
+### `MANIFIESTO`
 
 La máquina sentimental es un organismo artificial que responde al tacto humano como si tuviera emociones propias. Representa el intento de traducir afectos en datos; de convertir gestos en lenguaje digital.
 

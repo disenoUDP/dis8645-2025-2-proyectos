@@ -24,6 +24,13 @@ También revisaron la encuesta que nos mandaron; quedamos en que debemos ir a m�
 
 ### Repaso clase 11b ¿Qué es una Máquina Sentimental?
 
+`¿Qué es un objeto?`
+
+Un objeto es una mesa, una pizarra, La Moneda, el pensamiento, imágenes mentales.
+  - Se asume que todas las cosas son objetos.
+  - No tiene por qué ser físico o tangible.
+
+
 - `Metáforas:` cuando juntamos cualidades no escenciales de dos objetos, ojalá de objetos que no tengan relación
 
 `EJEMPLO:`
