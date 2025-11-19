@@ -12,7 +12,9 @@ Martes 21 de octubre, 2025
 
 - La semana del 9 de diciembre será una mini versión de Diseño Abierto, ya que la universidad está de aniversario y quisieron enfocarse en otras actividades.
 
-### Proyecto-03
+---
+
+## Proyecto-03
 
 Hablamos de que este proyecto se va a presentar en Diseño Abierto. Vamos a formar nuevos grupos, más grandes y con roles o cargos específicos.
 
@@ -63,6 +65,8 @@ El elogio de la sombra, Libro
 [Manifiesto Posthuamanista](https://cuadrivio.net/manifiesto-posthumanista/)
 
 [Marshall McLuhan](https://es.wikipedia.org/wiki/Marshall_McLuhan), libro [Comprender los medios de comunicacion](https://semioticaderedes-carlon.com/wp-content/uploads/2018/04/McLuhan_Marshall__Comprender_los_medios_de_comunicacion.pdf)
+
+---
 
 ### Referentes
 

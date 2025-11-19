@@ -17,10 +17,15 @@
 #### Ideas
 
 Vestibles
+
 Mascota 
+
 Asistente experimental
+
 Objetos contemplativo
+
 Music Player
+
 Garra
 
 [Grizzly Bear](https://en.wikipedia.org/wiki/Grizzly_Bear_(band))
