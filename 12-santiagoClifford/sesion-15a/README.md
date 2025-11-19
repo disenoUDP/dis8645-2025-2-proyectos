@@ -36,3 +36,27 @@ componentes:
 
 ![video del sensor de presión funcionando](./imagenes/presion.gif)
 
+### encargos pendientes
+
+hoy, 19 de noviembre, me pongo al día.
+
+#### encargo 17 - sesión-11b
+
+Claudia González Godoy es una artista nacida en 1983. Ha tenido varias de sus obras expuestas en diferentes museos y exhibiciones, como la galería Gabriela Mistral, o el museo de la Solidaridad Salvador Allende.
+
+##### investigación sobre ríos
+
+- <https://es.wikipedia.org/wiki/Río>
+¿qué es un río?
+
+según wikipedia, un río es una corriente de agua que fluye con continuidad por un cauce.
+
+el proyecto más antiguo que pude encontrar relacionado a la fluidez de un líquido por un cauce es [water resistenace](https://www.claudiagonzalez.cl/projects/water-resistance).
+
+"es un proyecto de investigación artística que busca establecer una reflexión sobre los medios y los dispositivos electrónicos a partir del agua como punto de tensión en el desarrollo tecnológico. Comprende además una exploración sobre las materialidades o interfaces de interacción y cómo a partir de sus interconexiones con los soportes puede provocarse una tensión entre dos elementos de suma relevancia para la vida: el agua y la electricidad."
+
+considero este como el punto inicial donde Claudia se interesa en las propiedades del agua con fines artísticos. A partir de entonces Claudia creó múltiples proyectos referentes al agua, y la fluidez de esta misma.
+
+A partir de este interés por la fluidez, el paso más esperable a seguir es el fenómeno de los ríos, siendo una especie de "magnificación" de lo que ya venía trabajando. Por ejemplo, el proyecto [hidroscopía mapocho](https://www.claudiagonzalez.cl/projects/hidroscopia-mapocho) estudia y reflexiona sobre el estado y percepción que tenemos sobre los ríos metidos en espacios urbanos, y cómo se van mezclando los cauces naturales con los artificiales.
+
+Me parece un fenómeno muy interesante de abordar. Además , el agua como material me llama mucho la atención, ya que como diseñador industrial, me siento acostumbrado y cómodo trabajando con materiales sólidos, y los líquidos presentan una complejidad y espontáneidad muy interesante.
