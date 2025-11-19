@@ -11,6 +11,7 @@
 
 ### Grizzly Bear
 ![foto_de_la_banda](./imagenes/Grizzly-Bear.jpg)
+
 El nombre “Grizzly Bear” empezó como un proyecto en solitario de Ed Droste.
 
 Estilo musical
