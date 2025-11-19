@@ -14,11 +14,15 @@ Martes 28 de octubre, 2025
 
 ### Revisando la encuenta
 
-Ir a más exposiciones. Tal vez en algunas semanas vamos a ver la exposición de Misa.
+Hicieron una encuesta sobre cómo percibíamos el semestre y el trabajo de los docentes y ayudantes, como instancia de retroalimentación y conversación para ajustar lo que sea necesario.
+
+Hablamos un poco de que es normal perderse en clase y que necesitamos comunicar mucho más cómo nos estamos encontrando con las sesiones.
+
+También se comentó que, al inicio, iban bastante rápido con la materia y que realmente había muchas cosas que aprender en poco tiempo.
+
+Tenemos planeado ir a más exposiciones. Tal vez en unas semanas vayamos a ver la exposición de Misa.
 
 Mónica Bate.
-
-Hablamos un poco de que es normal perderse en clase, y que debemos comunicar mucho más cómo nos estamos encontrando con las clases.
 
 ---
 
