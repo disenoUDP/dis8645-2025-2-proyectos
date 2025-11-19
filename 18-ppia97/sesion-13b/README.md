@@ -46,3 +46,6 @@ Hay algunos materiales que pueden estar en el lab, ver luego.
 
 También hicimos ideas de carcasas.
 
+![boceto](./imagenes/carcasa.jpg)
+![boceto](./imagenes/carcasa1.jpg)
+
