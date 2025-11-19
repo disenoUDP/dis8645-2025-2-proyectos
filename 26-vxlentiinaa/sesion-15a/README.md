@@ -19,96 +19,6 @@ Así que el día sábado y domingo no pusimos full con el proyecto y avanzamos l
 
 ---
 
-¿Cómo conectar p5.js a Arduino?
-
-- Para conectar p5.js con Arduino, necesitamos una aplicación intermedia como p5.serialcontrol o `Node.js, que actúe como servidor serial y luego usar la biblioteca p5.serialport en tu código p5.js.
-- Si queremos conectar el controlador de p5.js directamente con arduino para luego interactuar con p5.js nuevamente, necesitaremos una placa usb host y una biblioteca llamada `USB Host Library 2.0`
-
-Entrada serial a p5.js usando la biblioteca p5.serialport:
-
-[Entrada Serial a P5.js](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/#:~:text=El%20boceto%20p5.,js&text=Al%20ejecutar%20este%20sketch%20p5,escuchar%20algunos%20datos%20seriales%20entrantes.)
-
-- El objetivo es que Arduino envíe datos (por ejemplo de un sensor) al navegador web, donde p5.js los recibe y los usa para controlar visualizaciones o interfaces. Al mismo tiempo, p5.js puede enviar datos de vuelta al Arduino para controlar actuadores. La comunicación se realiza vía puerto serie (USB) o mediante la API Web Serial en el navegador.
-
-El flujo seria:
-
-1. Arduino. Prepara su sketch para leer sensores o reaccionar a comandos seriales.
-2. Conecta Arduino al PC por USB.
-3. En p5.js (navegador), se abre el puerto serie y se reciben los datos.
-4. p5.js muestra algo visual en canvas, o envía datos a Arduino.
-5. Todo se sincroniza para que los sensores/actuadores del mundo real interactúen con la visualización web.
-
-Aquí dejo los paso a paso que me dejó chatgpt y este video de youtube [Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y)
-
-### `Paso 1`
-
-Conectar el sensor: por ejemplo un potenciómetro al pin A0, y 5V/GND. 
-
-Escribe y carga un sketch como este (simplificado):
-
-```cpp
-void setup() {
-  Serial.begin(9600);
-}
-void loop() {
-  int sensorVal = analogRead(A0);
-  Serial.println(sensorVal);
-  delay(100);
-}
-```
-
-Esto hace que Arduino envíe el valor del sensor por el puerto serie.
-
-### `Paso 2`
-
-Crea un archivo index.html que incluya p5.js y la librería de Web Serial (por ejemplo p5.webserial.js). 
-
-En el sketch.js de p5.js, inicializa la conexión serial. Ejemplo:
-
-```cpp
-const serial = new p5.WebSerial();
-let inData = 0;
-
-function setup() {
-  createCanvas(400, 300);
-  if (!navigator.serial) {
-    alert("Este navegador no soporta Web Serial");
-  }
-  serial.on("data", serialEvent);
-  serial.getPorts();
-  serial.on("portavailable", openPort);
-}
-
-function openPort() {
-  serial.open({ baudRate: 9600 });
-}
-
-function serialEvent() {
-  let dataString = serial.readLine();
-  if (dataString) {
-    inData = Number(dataString);
-  }
-}
-
-function draw() {
-  background(0);
-  fill(255);
-  text("Sensor: " + inData, 30, 50);
-}
-```
-
-Este código escucha los datos que envía Arduino y los muestra en pantalla.
-
-### `Paso 3`
-
-1. Conecta Arduino al computador por USB.
-2. Abre la página web (index.html).
-3. Haz clic en “choose port” o similar para seleccionar el puerto serie de Arduino.
-4. Una vez conectado, deberías ver los valores del sensor en la visualización p5.js.
-5. Si quieres, puedes en p5.js enviar datos hacia Arduino (por ejemplo para encender/ajustar un LED) usando serial.write()
-
----
-
 MÁQUINA SENTIMENTAL "ATRÁPAME SI PUEDES"
 
 `SENTIMIENTOS:`
@@ -141,7 +51,7 @@ En resumen: es un juego que reconoce tus gestos, te hace creer que vas a ganar y
 |Plinto| | | |
 |Cables| | | |
 
-`DIAGRAMA DE FLUJO`
+### `DIAGRAMA DE FLUJO`
 
 ```mermaid
 flowchart TD
@@ -182,7 +92,7 @@ n13 --> n1
     classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
 ```
 
-`PSEUDOCÓDIGO`
+### `PSEUDOCÓDIGO`
 
 ```cpp
 INICIAR variables:
@@ -401,9 +311,110 @@ void loop() {
 ```
 ---
 
-El lunes 17-11-2025 logramos que el punto subiera y bajara con los siguientes códigos 
+### Proceso Actualizado
 
-`IZQUIERDA Y DERECHA`
+- Como grupo decidimos cambiar el sensor de gestualidad por los sensores de fuerza / presión que habíamos comprado, ya que el sensor de gestualidad estaba muy díficil y no pudimos hacerlo funcionar, no leía los gestos de la mano.
+- También decidimos que usaremos p5.js para hacer el juego y poder conectarlo con arduino.
+
+### Presentación Textual Actualizado
+
+### Metáfora Actualizada
+
+---
+
+### ¿Cómo conectar p5.js a Arduino?
+
+- Para conectar p5.js con Arduino, necesitamos una aplicación intermedia como p5.serialcontrol o `Node.js, que actúe como servidor serial y luego usar la biblioteca p5.serialport en tu código p5.js.
+- Si queremos conectar el controlador de p5.js directamente con arduino para luego interactuar con p5.js nuevamente, necesitaremos una placa usb host y una biblioteca llamada `USB Host Library 2.0`
+
+Entrada serial a p5.js usando la biblioteca p5.serialport:
+
+[Entrada Serial a P5.js](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/#:~:text=El%20boceto%20p5.,js&text=Al%20ejecutar%20este%20sketch%20p5,escuchar%20algunos%20datos%20seriales%20entrantes.)
+
+- El objetivo es que Arduino envíe datos (por ejemplo de un sensor) al navegador web, donde p5.js los recibe y los usa para controlar visualizaciones o interfaces. Al mismo tiempo, p5.js puede enviar datos de vuelta al Arduino para controlar actuadores. La comunicación se realiza vía puerto serie (USB) o mediante la API Web Serial en el navegador.
+
+El flujo seria:
+
+1. Arduino. Prepara su sketch para leer sensores o reaccionar a comandos seriales.
+2. Conecta Arduino al PC por USB.
+3. En p5.js (navegador), se abre el puerto serie y se reciben los datos.
+4. p5.js muestra algo visual en canvas, o envía datos a Arduino.
+5. Todo se sincroniza para que los sensores/actuadores del mundo real interactúen con la visualización web.
+
+Aquí dejo los paso a paso que me dejó chatgpt y este video de youtube [Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y)
+
+### `Paso 1`
+
+Conectar el sensor: por ejemplo un potenciómetro al pin A0, y 5V/GND. 
+
+Escribe y carga un sketch como este (simplificado):
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+  int sensorVal = analogRead(A0);
+  Serial.println(sensorVal);
+  delay(100);
+}
+```
+
+Esto hace que Arduino envíe el valor del sensor por el puerto serie.
+
+### `Paso 2`
+
+Crea un archivo index.html que incluya p5.js y la librería de Web Serial (por ejemplo p5.webserial.js). 
+
+En el sketch.js de p5.js, inicializa la conexión serial. Ejemplo:
+
+```cpp
+const serial = new p5.WebSerial();
+let inData = 0;
+
+function setup() {
+  createCanvas(400, 300);
+  if (!navigator.serial) {
+    alert("Este navegador no soporta Web Serial");
+  }
+  serial.on("data", serialEvent);
+  serial.getPorts();
+  serial.on("portavailable", openPort);
+}
+
+function openPort() {
+  serial.open({ baudRate: 9600 });
+}
+
+function serialEvent() {
+  let dataString = serial.readLine();
+  if (dataString) {
+    inData = Number(dataString);
+  }
+}
+
+function draw() {
+  background(0);
+  fill(255);
+  text("Sensor: " + inData, 30, 50);
+}
+```
+
+Este código escucha los datos que envía Arduino y los muestra en pantalla.
+
+### `Paso 3`
+
+1. Conecta Arduino al computador por USB.
+2. Abre la página web (index.html).
+3. Haz clic en “choose port” o similar para seleccionar el puerto serie de Arduino.
+4. Una vez conectado, deberías ver los valores del sensor en la visualización p5.js.
+5. Si quieres, puedes en p5.js enviar datos hacia Arduino (por ejemplo para encender/ajustar un LED) usando serial.write()
+
+---
+
+- El lunes 17-11-2025, hicimos la conexión de los sensores de fuerza con arduino y una pantalla Oled para visualizar el punto. Logramos que el puntito subiera y bajara (eje Y) y que fuera de izquierda a derecha (eje X) con los siguientes códigos:
+
+### `IZQUIERDA Y DERECHA (EJE X)`
 
 ```cpp
 #include <Wire.h>
@@ -462,7 +473,7 @@ void loop() {
 
 ```
 
-`DERECHA`
+### `SUBIR Y BAJAR (EJE Y) `
 
 ```cpp
 #include <Wire.h>
@@ -522,4 +533,66 @@ void loop() {
 
 ---
 
-Decidimos como grupo que usaremos los sensores de fuerza 
+### Conexiones Actualizado
+
+|Conexión|Pin|
+|---|---|
+|FSR extremo 1|-> 5V|
+|FSR extremo 2|-> A0|
+|Resistencia 10kΩ extremo 1|-> A0|
+|Resistencia 10kΩ extremo 2|-> GND|
+
+### Bill of materials Actualizado
+
+|Nombre componente|Característica|Cantidad|Especificaciones|
+|---|---|---|---|
+|Sensor de fuerza|FSR402|2|una resistencia que cambia su valor (en ohmios Ω) dependiendo de la cantidad que se presiona.|
+|Arduino Uno|R4 minima o |1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
+|Pantalla Dell|14 pulgadas|1|pantalla de vale ruz|
+|Carcasa|Impresión 3D|1|Filamento: |
+|Plinto| | | |
+|Cables| | | |
+
+---
+
+### Diagrama de flujo Atualizado
+
+```mermaid
+flowchart TB
+    n1["Pantalla prendida con algún texto (presionar para empezar)"] --> n2["Título: *Atrápame si puedes* y personajes en la parte de abajo"]
+    n2 --> n3["Empieza el juego y aparecen los personajes"]
+    n3 --> n4["seleccionar el personaje (instruccion de controles)"]
+    n4 --> n12["en un tiempo de 1 min 30s se debe atrapar el personaje 3 veces"]
+    n12 --> n14["lo atrapaste?"]
+    n14 --> n15["si"] & n16["no"]
+    n15 --> n17["ganaste"]
+    n16 --> n18["perdiste"]
+    n17 --> n19@{ label: "<span style=\"color:\">Vuelve al inicio (*presiona para comenzar*)</span>" }
+    n18 --> n19
+
+    n19@{ shape: rect}
+     n1:::Rose
+     n2:::Aqua
+     n3:::Lime
+     n4:::Sunset
+     n12:::Rose
+     n14:::Lime
+     n15:::YellowSoft
+     n16:::Rose
+     n17:::Lime
+     n18:::Lavender
+     n19:::Aqua
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
+    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+```
+
+### Carta Gantt Actualizado
+
+### Presupuesto Actualizado
+
+### Bocetos Físicos Actualizado
