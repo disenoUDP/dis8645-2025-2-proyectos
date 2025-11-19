@@ -75,3 +75,11 @@ Me gustó eso de que las cosas realmente están definidas por sus característic
 - Claudia Gonzalez
 
 - Monica Bate
+
+---
+
+## Encargo-19: Definir 2 objetos 
+
+Según la referencia dada en el libro de Harman publicada en discord. Sacar 15 cualidades de cada uno. Mientras más raras, mejor
+
+
