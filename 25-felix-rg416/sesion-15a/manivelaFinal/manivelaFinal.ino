@@ -1,16 +1,24 @@
 #include "Manivela.h"
+#include <Arduino.h>
+
+Manivela manivela;
+const int humo = 7;
 
 void setup() {
-//     Serial.begin(9600);
-//     manivela.configurar();
+  pinMode(humo, LOW);
+  manivela.configurar();
+  Serial.begin(9600);
 }
 
 void loop(){
-//     manivela.calculoVueltas();
-//     Serial.print("Direccion: ");
-//     Serial.print(manivela.direccionActual);
-//     Serial.print(" | Paso: ");
-//     Serial.println(manivela.paso);
-//     Serial.print(" | Vueltas: ");
-//     Serial.println(manivela.getVueltas());
+  manivela.calcularRango();
+  manivela.calculoVueltas();
+  if (manivela.rango = 1){
+    digitalWrite(humo, HIGH);
+    delay (6000);
+    digitalWrite(humo, LOW);
+  }
+  Serial.print(manivela.vueltas);
+  Serial.println(manivela.rango);
+  Serial.println(manivela.paso);
 }
