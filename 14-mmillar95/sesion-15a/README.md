@@ -35,4 +35,4 @@ La máquina representa el desajuste: el usuario quiere atrapar un objetivo claro
 
 La ideas es que el control de la máquina se diseña intencionalmente como un objeto incómodo y contradictorio. No busca facilitar la interacción, sino amplificar la metáfora del logro frustrado. Al ser pesado, con botones invertidos pero con una ergonomia intuitiva (que lo hace ver como un control igual que los demas), se convierte en una extensión física del desajuste que propone la obra.
 
-![control remoto](./imagenes/controlRemoto)
+![control remoto](./imagenes/controlReferentes.png)
