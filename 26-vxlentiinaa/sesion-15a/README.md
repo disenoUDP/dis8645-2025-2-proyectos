@@ -11,6 +11,11 @@
 - El proyecto tiene que ser específico
 - Miércoles 26 charla Mateo 
 
+---
+
+El viernes después de clases, mandé un mensaje muy largo por nuestro grupo en discord y ocurrieron cositas con el proyecto, nos dimos cuenta que en verdad ninguna estaba satisfecha al 100% con lo que estábamos haciendo, por lo que tratamos de darle otra vuelta al proyecto. Sentíamos que estábamos forzando el porqué del uso del sensor y la materialidad con las lanas.
+
+Así que el día sábado y domingo no pusimos full con el proyecto y avanzamos lo más que podíamos (con lo que teníamos). Así que, esta es nuestra nueva propuesta:
 
 ---
 
@@ -23,11 +28,84 @@ Entrada serial a p5.js usando la biblioteca p5.serialport:
 
 [Entrada Serial a P5.js](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/#:~:text=El%20boceto%20p5.,js&text=Al%20ejecutar%20este%20sketch%20p5,escuchar%20algunos%20datos%20seriales%20entrantes.)
 
----
+- El objetivo es que Arduino envíe datos (por ejemplo de un sensor) al navegador web, donde p5.js los recibe y los usa para controlar visualizaciones o interfaces. Al mismo tiempo, p5.js puede enviar datos de vuelta al Arduino para controlar actuadores. La comunicación se realiza vía puerto serie (USB) o mediante la API Web Serial en el navegador.
 
-El viernes después de clases, mandé un mensaje muy largo por nuestro grupo en discord y ocurrieron cositas con el proyecto, nos dimos cuenta que en verdad ninguna estaba satisfecha al 100% con lo que estábamos haciendo, por lo que tratamos de darle otra vuelta al proyecto. Sentíamos que estábamos forzando el porqué del uso del sensor y la materialidad con las lanas.
+El flujo seria:
 
-Así que el día sábado y domingo no pusimos full con el proyecto y avanzamos lo más que podíamos (con lo que teníamos). Así que, esta es nuestra nueva propuesta:
+1. Arduino. Prepara su sketch para leer sensores o reaccionar a comandos seriales.
+2. Conecta Arduino al PC por USB.
+3. En p5.js (navegador), se abre el puerto serie y se reciben los datos.
+4. p5.js muestra algo visual en canvas, o envía datos a Arduino.
+5. Todo se sincroniza para que los sensores/actuadores del mundo real interactúen con la visualización web.
+
+Aquí dejo los paso a paso que me dejó chatgpt y este video de youtube [Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y)
+
+### `Paso 1`
+
+Conectar el sensor: por ejemplo un potenciómetro al pin A0, y 5V/GND. 
+
+Escribe y carga un sketch como este (simplificado):
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+  int sensorVal = analogRead(A0);
+  Serial.println(sensorVal);
+  delay(100);
+}
+```
+
+Esto hace que Arduino envíe el valor del sensor por el puerto serie.
+
+### `Paso 2`
+
+Crea un archivo index.html que incluya p5.js y la librería de Web Serial (por ejemplo p5.webserial.js). 
+
+En el sketch.js de p5.js, inicializa la conexión serial. Ejemplo:
+
+```cpp
+const serial = new p5.WebSerial();
+let inData = 0;
+
+function setup() {
+  createCanvas(400, 300);
+  if (!navigator.serial) {
+    alert("Este navegador no soporta Web Serial");
+  }
+  serial.on("data", serialEvent);
+  serial.getPorts();
+  serial.on("portavailable", openPort);
+}
+
+function openPort() {
+  serial.open({ baudRate: 9600 });
+}
+
+function serialEvent() {
+  let dataString = serial.readLine();
+  if (dataString) {
+    inData = Number(dataString);
+  }
+}
+
+function draw() {
+  background(0);
+  fill(255);
+  text("Sensor: " + inData, 30, 50);
+}
+```
+
+Este código escucha los datos que envía Arduino y los muestra en pantalla.
+
+### `Paso 3`
+
+1. Conecta Arduino al computador por USB.
+2. Abre la página web (index.html).
+3. Haz clic en “choose port” o similar para seleccionar el puerto serie de Arduino.
+4. Una vez conectado, deberías ver los valores del sensor en la visualización p5.js.
+5. Si quieres, puedes en p5.js enviar datos hacia Arduino (por ejemplo para encender/ajustar un LED) usando serial.write()
 
 ---
 
@@ -441,3 +519,7 @@ void loop() {
     delay(50);
 }
 ```
+
+---
+
+Decidimos como grupo que usaremos los sensores de fuerza 
