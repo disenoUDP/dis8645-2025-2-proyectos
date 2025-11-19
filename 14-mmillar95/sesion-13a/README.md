@@ -36,5 +36,33 @@ La inteligencia artificial (IA) funciona imitando ciertas capacidades humanas co
 - **GPU**: muy buena para cálculos en paralelo, como los de videojuegos o redes neuronales.
 - **TPU**: una “GPU especializada” diseñada exclusivamente para IA.
 - **RNN** (Red Nuronal Recurrente): es un tipo de inteligencia artificial que sirve para trabajar con información que viene en secuencia. Como trabaja con datos, siempre se puede equivocar ya que juega con probabilidades.
-
+- 
 Información sacada de [05-sofiacartes](https://github.com/mmillar95/dis8645-2025-2-proyectos/edit/main/05-sofiacartes/sesion-13a/README.md)
+
+### Google Colaboratory
+
+Google Colaboratory es un servicio que te permite usar un computador en la nube, aprovechando servidores de Google desde cualquier lugar del mundo. Cualquier persona con una cuenta de Google puede acceder a este entorno, que actualmente es muy utilizado para trabajar con Inteligencia Artificial. Además, ofrece acceso a GPU y TPU, lo que permite ejecutar modelos avanzados incluso si tu propio equipo no cuenta con este tipo de hardware.
+
+### Homebrew
+
+Homebrew es una herramienta que facilita la instalación de software en tu computador, especialmente en macOS (aunque también funciona en Linux). La utilizaremos para poder trabajar con GitHub directamente desde la terminal.
+
+Instalación:
+
+1. Ir a la página: (https://brew.sh/).
+2. Copiar el link que aparece en la página.
+3. Abrir la terminal del computador.
+4. Pegar lo copiado.
+5. Hacer enter y seguir los pasos.
+
+### Ideas para el Proyecto 03 (Grupo 04)
+
+- Maquina que siente diferente: le pegas y se calma
+- Maquina que cambia una grafica segun la intensidad con la cual la tratas
+- Experimentar con materialidades
+- Hilo conductor, ver si funciona
+- Graficas
+- Sensor de fuerza
+- Sensor touch
+- Reacción de fluidos con la presión.
+- Cómo medir el impacto/velocidad de la fuerza.
