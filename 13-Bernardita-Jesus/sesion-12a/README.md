@@ -146,3 +146,12 @@ Según la referencia dada en el libro de Harman publicada en discord. Sacar 15 c
   
   - Operativa
 
+## Encargo-20: Lluvia de ideas grupal
+
+Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales, máquinas que trabajan con emociones/sensaciones/afectos específicos, y decidir entre ustedes las más interesantes.
+
+Máquina generadora de estrés: una máquina que te recuerde y cronograme todo lo que deberías estar haciendo, constantemente agobiándote.
+
+Máquina dependiente de música: una máquina mascota virtual, tipo tamagotchi, que necesita escuchar música para subsistir. Hay que producirle música o reproducirle música para que viva.
+
+Máquina selectora de alarmas: una máquina que escoja aleatoriamente las alarmas de tu teléfono, sonando cuando ella quiera.
