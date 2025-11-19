@@ -1,35 +1,52 @@
 #include "Manivela.h"
 
 Manivela::Manivela() {}
-
 Manivela::~Manivela() {}
 
+// configuracion de patitas del encoder
 void Manivela::configurar() {
   pinMode(Manivela::patitaCLK, INPUT);
   pinMode(Manivela::patitaDT, INPUT);
   pinMode(Manivela::patitaSW, INPUT_PULLUP);
 
+  // lee el estado inicial del CLK
   Manivela::ultimoEstadoCLK = digitalRead(Manivela::patitaCLK);
-
-  Manivela::vueltas = 0;
 }
 
 void Manivela::calculoVueltas() {
+
+  // lee el estado actual del CLK
   Manivela::estadoActualCLK = digitalRead(Manivela::patitaCLK);
-  if (Manivela::estadoActualCLK != Manivela::ultimoEstadoCLK) {
+  // si los ultimos estado actuales del CLK son diferentes ocurrió un pulso
+  // reacciona solo a 1 cambio de estado para evitar un doble conteo
+
+  if (Manivela::estadoActualCLK != Manivela::ultimoEstadoCLK && Manivela::estadoActualCLK == 1) {
 
     if (digitalRead(Manivela::patitaDT) != Manivela::estadoActualCLK) {
-      Manivela::paso --;
+      Manivela::paso++;
       Manivela::direccionActual = "CW";
     } else {
-      Manivela::paso ++;
+      Manivela::paso--;
       Manivela::direccionActual = "CCW";
     }
 
     if (Manivela::paso % 20 == 0) {
-      Manivela::vueltas ++;
+      Manivela::vueltas++;
     }
   }
+
+  Manivela::ultimoEstadoCLK = Manivela::estadoActualCLK;
+
+  int btnState = digitalRead(Manivela::patitaSW);
+
+  if (btnState == LOW) {
+
+    if (millis() - ultimaPresionBoton > 50) {
+      Serial.println("Boton presiondao");
+    }
+    ultimaPresionBoton = millis();
+  }
+  delay(1);
 }
 
 void Manivela::calcularRango() {
