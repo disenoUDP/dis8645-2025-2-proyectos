@@ -7,7 +7,7 @@ durante toda la clase tuve problemas para hacerlo funcionar, pero después logr�
 
 parlante y modulo mp3 funcionando 
 ![alt text](https://youtube.com/shorts/4IWM7DNA-Q4?si=JkXYWv_esgSIQElV)
-
+<https://youtube.com/shorts/4IWM7DNA-Q4?si=JkXYWv_esgSIQElV>
 
 después durante la tarde estuve trabajando en los moldes de la cabeza del peluche
 
