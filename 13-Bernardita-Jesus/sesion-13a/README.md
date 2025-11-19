@@ -54,7 +54,9 @@ Mostramos nuestras ideas iniciales, que giraban en torno a un tamagotchi ultra d
 
 Conversamos que hacer este ser dependiente de la música era complejo de explicar, porque es difícil definir qué sí y qué no es música, incluso un simple sonido podría considerarse música. Por eso fuimos ajustando la idea para evitar esas incoherencias y darle más claridad al proyecto.
 
-Lo que se nos ocurrió fue seguir trabajando con un tamagotchi incómodo y desagradable de usar, uno que muera ante cualquier falta de interacción, que te haga sentir culpa por tu negligencia. Esa fue la dirección que apareció para sostener y justificar ese sentimiento. Todo pensado a partir de un conjunto de sensores que obliguen a cumplir y cuidar ciertas acciones para mantenerlo vivo.
+Lo que se nos ocurrió fue seguir trabajando con un tamagotchi incómodo y desagradable de usar, uno que muera ante cualquier falta de interacción, que te haga sentir culpa por tu negligencia. 
+
+Esa fue la dirección que apareció para sostener y justificar ese sentimiento. Todo pensado a partir de un conjunto de sensores que obliguen a cumplir y cuidar ciertas acciones para mantenerlo vivo.
 
 ### Ideas
 
