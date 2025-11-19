@@ -32,6 +32,33 @@ Nos recomendó usar si o sí el USBC como funete de poder.
 
 ---
 
-Hoy me toca empezar con el modelado 3D del proyecto.
+Ahora voy a empezar a hacer el código para el humificador.
 
-Lo haré en Inventor.
+Para empezar, se debe definir el pin y el nombre `humo`, también definir que debe estar en `HIGH` y que cuando lo queramos usar estará en `LOW`.
+
+```cpp
+const int humo = 7;
+...
+// dentro del setup
+pinMode(humo, HIGH);
+```
+
+Para llamarlo con el rangoN sería algo así:
+
+```cpp
+if (rango == 5) {
+  digitalWrite(humo, LOW);
+}
+```
+
+---
+
+Estuve tratrando de hacer el código de los rangos en clases, pero no funcionó.
+
+[Codigo de rangos en clases](./manivelaFinalMentira/)
+
+Modifiqué el código de MCIelectronics para que funcione con rangos.
+
+[Encoder con rangos sin clases](./encoderConRangos/)
+
+Traté de poner notas para que se entienda mejor.
