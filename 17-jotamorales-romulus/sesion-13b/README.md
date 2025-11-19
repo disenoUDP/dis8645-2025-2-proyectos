@@ -1,6 +1,6 @@
 # sesion-13b
 
-LLegue tarde este dia y me tuve que poner al corriente con los apuntes de mis compañeros y en que estabmos del proyecto. 
+Llegué tarde este día y tuve que ponerme al corriente con los apuntes de mis compañeros y con el estado en que estaba el proyecto.
 
 ## Idea desarrollada
 
