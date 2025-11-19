@@ -67,7 +67,7 @@ Y si, funciono, como en cambios memorables fue que la alimentación la cambia a 
 
 El código que ocupe para la prueba fue el siguiente :
 
-```
+``` cpp
 
 #include <SoftwareSerial.h>
 #include <DFRobotDFPlayerMini.h>
@@ -91,7 +91,6 @@ void setup() {
 
   Serial.println("DFPlayer online!");
   player.volume(3);
- // player.play(1);
 }
 
 void loop() {
