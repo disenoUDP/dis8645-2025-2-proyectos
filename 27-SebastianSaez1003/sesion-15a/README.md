@@ -60,3 +60,45 @@ Esto me hizo saber que era buena práctica el poner una resistencia al botón, l
 Hice que el botón causará que se agregaran 5 segundos al temporizador, aquí hay un pequeño problema, que es que se podría mantener presionado el botón para aumentar constantemente los segundos, que le quitaria un poco la inconveniencia de tener que presionar múltiples veces el botón, pero esto será un problema para el seba del futuro, solo se que tendre que tener en cuenta lo del cambio de estado, escribiendo algo para tener en cuenta el cambio.
 
 Pero con esto, en código de WEBO llegó a una nueva versión con el botón funcional y el display funcional, tal vez a la noche agregue esos otros componentes que tenía probados de las sesiones anteriores.
+
+En la noche, Aileen del grupo 3 GEE (Grupo emocionalmente estable) me mando un modo de formatear la tarjeta sd que a ellos si les funciono, lo hice pero no me seguía detectando la tarjeta, así que en desesperación le pedí a chat gpt un paso a paso del cableado y código de ejemplo más simple posible para el funcionamiento de ese módulo, como también de la manera en la que debería ser establecido el nombre de los archivos.
+
+Y si, funciono, como en cambios memorables fue que la alimentación la cambia a 3.3V, que no debería de hacer mucho problema según el datasheet debido a que soporta 5V tambien pero bueno, el otro cambio fue poner una resistencia para el pin RX que estaría conectado al arduino mediante el pin 3 y funciono, no se que cambio pero no lo voy a querer cambiar como para arruinar algo, wuju.
+
+El código que ocupe para la prueba fue el siguiente :
+
+```
+
+#include <SoftwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+
+SoftwareSerial dfSerial(2, 3); // RX, TX
+DFRobotDFPlayerMini player;
+
+void setup() {
+  Serial.begin(115200);
+  dfSerial.begin(9600);
+
+  Serial.println("Initializing DFPlayer...");
+
+  if (!player.begin(dfSerial)) {
+    Serial.println("Unable to begin. Check:");
+    Serial.println("1. Wiring");
+    Serial.println("2. SD card FAT32");
+    Serial.println("3. Voltage divider on RX");
+    while (true);
+  }
+
+  Serial.println("DFPlayer online!");
+  player.volume(3);
+ // player.play(1);
+}
+
+void loop() {
+player.play(1);
+delay(4000);
+
+}
+
+```
+
