@@ -37,14 +37,28 @@ La obra trata sobre las alteraciones que se le han hecho al rio Biobio y el efec
 
 Durante la experiencia a veces sentiamos el suelo vibrar y escuchabamos sonidos de agua corriendo, con espacios de silencio y quietud diseñados para contrastar el antes y después de la intervención humana.
 
-### Other things: <!-- Things to organize + random stuff -->
-> ### SUB_SUBTITULO
-
 -----------------------------------------------------------------------------------------------------------
 ## Encargo 17 <!-- subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra. -->
-### TITULO
+### [Claudia González Godoy](https://www.claudiagonzalez.cl/cgg/)
 
+Artista medial chilena, en sus obras abarca el comportamiento de la materialidad en el tiempo y cómo esto se manifiesta en lo sonoro. 
+
+Suele emplear elementos electrónicos para explorar y experimentar en torno a temas de ecología, usualmente relacionados con el agua, los rios y la tierra.
+
+Sus obras son parte de colecciones tanto nacionales como internacionales de instituciones como el MINCAP, ifa Gallery y ZKM Karlsruhe. Además ha participado en multiples eventos, exposiciones, festivales, talleres, charlas y demás. Cómo ZKM, ifa Gallery, Bienal de Artes Mediales, Tsonami y FILE.
+
+#### [Serie Hidroscopias](https://artishockrevista.com/2025/09/14/claudia-gonzalez-godoy-hidroscopias/)
+
+Serie de obras que inició el 2016, son una crítica al impacto que ha tenido el ser humano en los ecosistemas denominados como "rios". Esto lo hace mediante instalaciones que integran electrónica y registros sonoros, además de diversos materiales y recursos propios del territorio local
+
+* [Hidroscopia / Mapocho:](https://www.claudiagonzalez.cl/projects/hidroscopia-mapocho/) </br> Se abordó la condición visible e invisible del rio Mapocho, mediante la recolección de muestras de agua en diversos puntos del rio. </br></br>
+
+* [Hidroscopia/ Maule:](https://www.claudiagonzalez.cl/projects/hidroscopia-maule/) </br> Se siguió el cause del rio desde su origen, en la Laguna del Maule, hasta su desembocadura en el océano Pacífico. </br></br>
+
+
+* [Hidroscopia/ Biobío:](https://www.claudiagonzalez.cl/projects/hidroscopia-biobio/) </br> Muestra al rio como un organismo vivo que interactua con su entorno, y que ha sido dañado por el ser humano mediante embalses y otras alteraciones. </br></br>
 
 -----------------------------------------------------------------------------------------------------------
 ## Encargo 18 <!-- subir taxonomía detallada de sensores, actuadores, software y hardware utilizado en 1 obra exhibida en la Bienal de Artes Mediales 2025, citando correctamente a las fuentes. -->
-### TITULO
+### [~~~ desde la raíz ~~~](https://www.santiagocultura.cl/events/yto-aranda-presenta-%e2%88%bc%e2%88%bc%e2%88%bcdesde-la-raiz%e2%88%bc%e2%88%bc%e2%88%bc-en-la-17a-bienal-de-artes-mediales/) 
+
