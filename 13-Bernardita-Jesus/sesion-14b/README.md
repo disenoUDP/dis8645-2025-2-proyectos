@@ -24,7 +24,7 @@ Viernes 14 de noviembre, 2025
 
 Proyecto inestable, inclinación, temporizador inconveniente, le gusta girar a nuestro temporizador, bailarina, caer por su propia cuenta.
 
-Justificar el movimiento de nuestro Tamagochi desde el imaginario de los pájaros y sus bailes; para eso, en vez de un pollito, se me ocurrió investigar sobre otras aves que bailen y trabajar la identidad del proyecto desde ahí.
+Justificar el movimiento de nuestro Tamagochi desde el imaginario de los pájaros y sus bailes, para eso, en vez de un pollito, se me ocurrió investigar sobre otras aves que bailen y trabajar la identidad del proyecto desde ahí.
 
 También le preguntamos a 19-Hiinalia si era muy difícil ilustrar en pixel art un pájaro del paraíso, que era el que nos calzaba con lo que buscábamos, así que comenzamos a trabajar en un diseño más acorde.
 
