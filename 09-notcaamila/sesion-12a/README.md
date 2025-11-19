@@ -13,4 +13,13 @@
 
 ## Encargo nº 20: *“⁠Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.”
 
+Estas son las ideas a las que llegamos junto a nuestro grupo, después de hacer la lluvia de ideas:
+
+*gracias Seba por redactar las ideas* <3
+
+Máquina generadora de estrés: una máquina que mediante constantes alarmas, te recuerda de todo lo que deberías estar haciendo.
+
+Maquina dependiente de música: una mascota virtual que vive de escuchar música, tan literalmente que si produces música para ella, rápidamente muere.
+
+Máquina selectora de importancia: una máquina que cada día que pasa elige las alarmas de tu teléfono por su cuenta
 
