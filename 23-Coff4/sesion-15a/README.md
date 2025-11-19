@@ -7,7 +7,17 @@ Ok, este dia han pasado diferentes cosas en las cuales me he involucrado
 En primer lugar la Aileen paso diferentes links con los cuales probar el parlante para la reproduccion de audio
 Lo unico malo de esto es que solo tenemos uno para comprobar. por lo tanto las pruebas en terreno son muy acortadas. Tengo unas fotos junto al codigo en donde se muestran los intentos que logre hacer. en donde convertí un audio de 4 segundos en el formato requerido y con un conventor pude pasarlo a codigo y meterlo en el programa.
 
-![alt text](http://url/to/img.png)
+Para el audio se uso Audacity con una duración de solo 4 segundos
+
+![Alterando un audio](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Audacity.png)
+
+Al final no funcionó la bocina, pero se sacaron conclusiones de que posiblemente sea la tarjeta sd
+
+![Intento de bocina](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Bocina.png)
+
+El santi hizo funcionar el sensor de presión por lo tanto se documenta
+
+![Sensor de presion](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Presion.png)
 
 Dejare la carpeta con el codigo y un link adicional de wokwi:
 
@@ -128,5 +138,11 @@ Ok...Por razones de fuerza mayor terminamos juntandonos después de clases para 
 En la primera vimos orden y resolvimos unas cuantas dudas y en la segunda nos pusimos de lleno a hacer el .ino
 
 Adjunto pruebas de los sucesos
+
+![alt text](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Llamada.png)
+
+y tambien aclarar que el archivo ino ya esta subido aqui mismo. 
+
+Eso por ahora :3
 
 
