@@ -169,8 +169,7 @@ flowchart TB
 |![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
 |![bosque2](./imagenes/bosque2.jpeg)|![inicio](./imagenes/inicio2.gif)|
 |![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
-|![red 1](./imagenes/redAtrapaHadas.png)|insertar red|
-
+|![red 1](./imagenes/redAtrapaHadas.png)|![red 2](./imagenes/redAtrapaHadas2.png)|
 
 ---
 
@@ -402,7 +401,7 @@ Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v
 - Esta aplicación ejecuta p5.serialserver, que permite la conectividad entre dispositivos serie locales y aplicaciones web mediante la biblioteca p5.serialport de p5.js.
 - Nos dimos cuenta que esta aplicación no funcionaba, no encontraba el puerto serial, por lo que no se podía hacer la conexión.
 
-INSERTAR IMAGEN
+![p5 Serial Control](./imagenes/p5SerialControl.png)
 
 - Le pedimos ayuda a Aarón con respecto a la aplicación, nos recomendó usar otra biblioteca para poder conectar Arduino con p5.js
 
@@ -547,7 +546,7 @@ Para que funcione correctamente, debemos tener en cuenta que:
 
 ### Resultado
 
-INSERTAR IMAGENES
+![resultado](./imagenes/p5Resultado.png)
 
 ---
 
