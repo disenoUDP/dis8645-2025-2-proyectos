@@ -6,6 +6,17 @@
 
 "Getting an education at MIT is like trying to get a drink of water from a fire hose" - Jerome Wiesner, ex presidente del MIT. 
 
+Aarón nos mostró las respuestas de la encuesta que nos mandaron. Algunas conclusiones a las que llegamos luego de leer las respuestas fueron que:
+
+1. Debemos tener menos miedo de comunicarle a los profesores cuando algo no nos parece -y también cuando SI nos parece algo-. *COMUNICAR*
+
+2. Tenemos que ir a más exposiciones y salidas a terreno.
+
+👾 Importante: la fecha del examen es: 10 de diciembre, 9 AM. 
+
+## Definición de nuestro grupo
+
+Sebastián Sáez, Josefa Quape, Bernardita Lobo, Angie O'Ryan, Morgan Aravena y yop.
 
 ## Encargo nº 19: *“Definir 2 objetos (según la referencia dada en el libro de Harman publicada en discord). Sacar 15 cualidades de cada uno. Mientras más raras, mejor”*
 
