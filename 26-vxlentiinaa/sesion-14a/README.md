@@ -137,7 +137,11 @@ void setColor(int r, int g, int b) {
 
 ### Bocetos y propuestas
 
-subir imágenes
+![boceto 1](./imagenes/boceto1.jpeg)
+
+![boceto 2](./imagenes/boceto2.jpeg)
+
+![boceto 3](./imagenes/boceto3.jpeg)
 
 ### Ejemplos de módulos de tejidos
 
