@@ -31,5 +31,17 @@ En otras palabras, realmente necesito mejorar mis apuntes, lo haré pronto para 
 
 Luchando contra el sueño, prefiero guardar energías para poder prestar atención en la mañana y tomar buenos apuntes.
 
+.
 
+.
+
+.
+
+## aquí estamos de nuevo
+
+los planes no salieron tan bien y me encuentro rellenando mi bitácora a pocas horas de que la evalúen... vamos con fé de que al menos no tendré 0 de puntaje en esta ocasión
+
+para esta sesión hay encargo, que corresponde al nº 17, dice así: *"cada persona debe subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra."*
+
+## Claudia González Godoy
 
