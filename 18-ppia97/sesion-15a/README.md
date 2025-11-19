@@ -12,4 +12,12 @@ Pasaron muchas cosas:
 - En motor que nos dieron en el lab esta malo, tendremos que buscar otro.
 - Con los led no tenemos ningún problema al momento, funcionan bien, al igual que los sensores.
 - Seguimos muy nerviosas por el tema de la carcasa, pero los profesores dicen que no es vital para el viernes, enfocarnos en el readme y bitácoras individuales.
-- 
+
+![clase](./imagenes/19.1.jpg)
+
+Una compañera nos ayudó a imprimir con filamento, ya que la que teniamos pesaba demasiado.
+
+![clase](./imagenes/19.2.jpg)
+![clase](./imagenes/19.3.jpg)
+![clase](./imagenes/19.4.jpg)
+
