@@ -80,6 +80,69 @@ Me gustó eso de que las cosas realmente están definidas por sus característic
 
 ## Encargo-19: Definir 2 objetos 
 
-Según la referencia dada en el libro de Harman publicada en discord. Sacar 15 cualidades de cada uno. Mientras más raras, mejor
+Según la referencia dada en el libro de Harman publicada en discord. Sacar 15 cualidades de cada uno. Mientras más raras, mejor.
 
+- Una **servilleta** es:
+
+  - Transitoria
+  
+  - Celulósica
+  
+  - Suave
+  
+  - Plegable
+  
+  - Condicionada
+  
+  - Cultural
+  
+  - Silenciosa
+  
+  - Ordinaria
+  
+  - Envolvente
+  
+  - Entramada
+  
+  - Estatus
+  
+  - Dogmática
+  
+  - Absorbente
+  
+  - Liviana
+  
+  - Deformable
+
+- Una **tarjeta tne** es:
+
+  - Portable
+  
+  - Identificable
+  
+  - Protocolar
+  
+  - Unívoca
+  
+  - Laminada
+  
+  - Punzante
+  
+  - Viabilizadora
+  
+  - Legitimadora
+  
+  - Estable
+  
+  - Delimitante
+  
+  - Clasificadora
+  
+  - Autorizante
+  
+  - Verificable
+  
+  - Normada
+  
+  - Operativa
 
