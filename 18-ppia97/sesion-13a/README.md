@@ -47,6 +47,8 @@ Actuadores:
 * Diodo Led RGB 5mm: para alternar entre colores alegres (simulación) y el apagado/colores oscuros (vulnerabilidad). (https://afel.cl/products/diodo-led-rgb-5mm)E
 * Resistencia de 220 para proteger el LED. (https://afel.cl/products/kit-600-resistencias-1-4w-30-valores)
 
+> Para el LED RGB (enlace 1.1), necesitamos tres resistencias de 220 (una para cada color: Rojo, Verde, Azul) para conectarlo de forma segura a la placa Arduino. 
+
 La Máquina de la Vergüenza opera en dos estados fundamentales: el Anonimato y el Rechazo. En su estado predeterminado de Anonimato (cuando el sensor Ultrasónico detecta una distancia máxima), la máquina esta tranquila; el LED emite una luz tenue controlada por PWM, y el Servomotor realiza un movimiento muy lento y tímido. Cuando el sensor de proximidad detecta la presencia de una persona, se activa inmediatamente el estado de Rechazo: el motor ejecuta un movimiento rápido y sigiloso para llevar la máquina a su posición de ocultamiento, mientras que el LED se apaga abruptamente para pasar desapercibida. La máquina solo retornará al estado de Anonimato lentamente y tras un breve periodo de latencia una vez que la presencia se haya retirado, volviendo a su forma inicial.
 
 > Inspiradas en la relación entre interacción humana y emoción contenida, estas máquinas exploran la materialización de sentimientos a través del comportamiento lumínico y la respuesta táctil. Ambas funcionan como pequeños organismos emocionales que, aunque digitales, imitan la forma en que los humanos recuerdan, esperan y sienten.
