@@ -1,6 +1,12 @@
 # grupo-03
 
-## GEE: Grupo Emocionalmente Estable 
+## GEE: Grupo Emocionalmente Estable - Integrantes
+
+- [Aileen D’Espessailles Rojas](https://github.com/aileendespessailles-design) 
+- [Santiago Gaete Fernández](https://github.com/santiagoClifford)
+- [José Morales Berríos](https://github.com/jotamorales-romulus)
+- [Carla Pino Barrios](https://github.com/Coff4)
+- [Francisco Stephens González](https://github.com/FranUDP) 
 
 Idea elegida: máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti
 
