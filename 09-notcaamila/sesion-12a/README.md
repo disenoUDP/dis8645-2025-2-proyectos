@@ -17,9 +17,9 @@ Estas son las ideas a las que llegamos junto a nuestro grupo, después de hacer 
 
 *gracias Seba por redactar las ideas* <3
 
-Máquina generadora de estrés: una máquina que mediante constantes alarmas, te recuerda de todo lo que deberías estar haciendo.
+👾 Máquina generadora de estrés: una máquina que mediante constantes alarmas, te recuerda de todo lo que deberías estar haciendo.
 
-Maquina dependiente de música: una mascota virtual que vive de escuchar música, tan literalmente que si produces música para ella, rápidamente muere.
+👾 Maquina dependiente de música: una mascota virtual que vive de escuchar música, tan literalmente que si produces música para ella, rápidamente muere.
 
-Máquina selectora de importancia: una máquina que cada día que pasa elige las alarmas de tu teléfono por su cuenta
+👾 Máquina selectora de importancia: una máquina que cada día que pasa elige las alarmas de tu teléfono por su cuenta
 
