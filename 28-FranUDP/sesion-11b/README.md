@@ -60,5 +60,15 @@ Serie de obras que inició el 2016, son una crítica al impacto que ha tenido el
 
 -----------------------------------------------------------------------------------------------------------
 ## Encargo 18 <!-- subir taxonomía detallada de sensores, actuadores, software y hardware utilizado en 1 obra exhibida en la Bienal de Artes Mediales 2025, citando correctamente a las fuentes. -->
-### [~~~ desde la raíz ~~~](https://www.santiagocultura.cl/events/yto-aranda-presenta-%e2%88%bc%e2%88%bc%e2%88%bcdesde-la-raiz%e2%88%bc%e2%88%bc%e2%88%bc-en-la-17a-bienal-de-artes-mediales/) 
+### [~~~ desde la raíz ~~~]() 
 
+
+
+
+
+
+
+
+https://www.santiagocultura.cl/events/yto-aranda-presenta-%e2%88%bc%e2%88%bc%e2%88%bcdesde-la-raiz%e2%88%bc%e2%88%bc%e2%88%bc-en-la-17a-bienal-de-artes-mediales/
+
+https://17.bienaldeartesmediales.cl/obra/desde-la-raiz-una-aproximacion-al-bosque-esclerofilo/
