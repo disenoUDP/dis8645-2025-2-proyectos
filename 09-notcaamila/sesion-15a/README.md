@@ -10,3 +10,5 @@ Me mandaron el archivo STL y lo laminé para posteriormente imprimirlo durante l
 
 A continuación el resultado.
 
+![Fotografía Impresión](./imagenes/impresionAntoKiara.jpg)
+
