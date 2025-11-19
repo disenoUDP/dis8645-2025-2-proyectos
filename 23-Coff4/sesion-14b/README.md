@@ -80,13 +80,21 @@ if (tiempoTranscurrido > 10 seg) {
 
 ```
 
-![alt text](http://url/to/img.png)
+Esta es otra version del mapa de flujo que hicimos con el santi en la propia clase:
 
-![alt text](http://url/to/img.png)
+![Para ordenarnos](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-14b/imagenes/otro%20mapa.png)
 
-![alt text](http://url/to/img.png)
+Estas son algunas lineas de codigo que anteriormente fueron plasmadas para comenzar con el proyecto (aunque se nos habia pedido pseudocodigo y no codigo como tal):
 
-![alt text](http://url/to/img.png)
+![Maneras de como hacerlo](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-14b/imagenes/Funciones.png)
+
+Dibujo para entender como funciona el mecanismo que hizo FranUdp:
+
+![Funcionamiento del mono](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-14b/imagenes/Mecanismo.png)
+
+Composicion de como es el mono por dentro de la tela:
+
+![Partes por dentro](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-14b/imagenes/interior.png)
 
 
   
