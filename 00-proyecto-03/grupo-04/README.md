@@ -167,8 +167,10 @@ flowchart TB
 |Paisaje|Inicio|
 |---|---|
 |![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
-|![bosque2|![inicio](./imagenes/inicio2.gif)|
+|![bosque2](./imagenes/bosque2.jpeg)|![inicio](./imagenes/inicio2.gif)|
 |![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
+|![red 1](./imagenes/redAtrapaHadas.png)|insertar red|
+
 
 ---
 
