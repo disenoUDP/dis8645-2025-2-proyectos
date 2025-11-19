@@ -194,6 +194,6 @@ void loop() {
 }
 ```
 
-![IMG1](./imagenes/avance.jpg)
+![IMG1](./imagenes/Avance.jpg)
 ![IMG1](./imagenes/avance2.jpg)
 ![IMG1](./imagenes/avance3.jpg)
