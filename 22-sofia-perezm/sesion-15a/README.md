@@ -315,7 +315,7 @@ El lunes y martes me dediqué a crear los personajes de este juego, quería que 
 
 Lo que empezó como una experimentación con al interfaz de la web, haciendo a aarón como si fuera un personaje de videojuego, pero agregandole alas, terminó dando paso a la creación de los demás personaje que finalmente se componen de todo el equipo docente. Después de crear los personajes, me dediqué a animar cada uno de estos y a crear el vuelo aleatorio que haría cada uno, además animé como se veria la selección de personajes. A continuación dejo fotos del proceso.
 
-![aarón](./aaró_volando-gif-drawing (1).gif)
+![aarón](./imagenes/aarón_volando.gif) 
 
 ![misaa](./imagenes/misa_volando.gif)
 
