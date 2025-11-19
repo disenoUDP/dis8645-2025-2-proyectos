@@ -19,3 +19,4 @@ Para avanzar en el proyecto, ya contamos con varios componentes: el parlante con
 Propuse que en vez de ser un animal pensado para ser tomado en brazos, se pueda fijar a una base o placa a modo de teatrillo, funcionando como un objeto expositivo. Esta base no invitaría necesariamente a cargarlo, sino a acercarse, tocarlo e interactuar, reforzando la tensión entre su apariencia tierna y su comportamiento emocionalmente demandante.
 
 ![boceto animal](./imagenes/bocetoinicial.png)
+
