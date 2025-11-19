@@ -62,8 +62,39 @@ Ideas vistas en clase junto a mi grupo:
 
 Objetos + Cualidades
 
-Lana: suavidad, patrones, colores, Entrelasado, hebras,  
+LENTES
+1. Nítidos
+2. Frágiles
+3. Fríos
+4. Reflectantes
+5. Correctivos
+6. Dependientes
+7. Transparentes
+8. Pesados
+9. Ajustables
+10. Vulnerables
+11. Empañables
+12. Rígidos
+13. Delicados
+14. Ampliadores
+15. Limitantes
 
-Lentes: metálicos, plateados, pequeños, de vidrio, joyas transparentes, marco de la mirada, goma, tornillos, ópticos, marco redondeado, sombras,
+
+LANA
+1. Suave
+2. Flexible
+3. Cálida
+4. Porosa
+5. Enredable
+6. Texturada
+7. Absorbente
+8. Esponjosa
+9. Natural
+10. Transformable
+11. Elástica
+12. Densa
+13. Atemperante
+14. Fibrosa
+15. Maleable
 
 #### Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
