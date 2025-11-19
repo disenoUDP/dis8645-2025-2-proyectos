@@ -18,4 +18,75 @@ Por esta clase se intentara ver un pseudocodigo para a continuacion ver como deb
 - Con todo ocurrido, volvera a su estado inicial
 
 
+1. ¿Hay alguien cerca?
+
+Si detecta una "Presencia": El Monkey inicia su fase de "Pedir Amor".
+
+- Si NO detecta una "Presencia": El BR se queda "En Espera" (standBy).
+
+2. Pidiendo Amor
+3. 
+Una vez que el Monito está pidiendo amor, tiene dos resultados posibles:
+
+Si recibe el "Amor":
+
+El Monito se "Agarra" (da el abrazo).
+
+Si NO recibe el "Amor":
+
+El pequeño inicia una "Pataleta". 
+
+Esto consta de 3 fases.
+
+
+---
+```cpp
+
+int tiempoTranscurrido;
+bool presenciaDetectada;
+bool amorRecibido;
+
+presenciaDetectada = true;
+amorRecibido = false;
+
+if (presenciaDetectada) {
+    // Si hay alguien, iniciamos la "Petición de Amor"
+    printf("¡Presencia detectada! Pidiendo amor..."); + Reproduccion de audio (RandomSeed)
+
+if (amorRecibido) {
+        // Accion: agarrarBrazo()
+        printf("Amor Recibido. Sistema APEGADO y con cariño!");
+        tiempoTranscurrido = 0; // Reiniciamos el tiempo
+    } else {
+        // Si no hay amor, iniciamos la "Pataleta"
+           print(ACASO NO TE AGRADO?!) + Audio
+
+if (tiempoTranscurrido > 45 seg) {
+            // Accion: autoDestruccion()
+            printf(Sistema de autodestrucción activada"); + Audio + Movimiento del motor hacia el botón
+        
+    }
+// esta variable deberia cambiarse para cada pataleta
+
+// en estos casos creo que ddeberia de hacerlo con "else"
+
+if (tiempoTranscurrido > 25 seg) {
+            // Accion: pataletaMedia()
+            printf("Gritos de mono"); + Audio + movimiento del motor (para simular vibración)
+
+if (tiempoTranscurrido > 10 seg) {
+            // Accion: pataletaLeve()
+            printf("vamos acercate por favor"); + Audio
+
+```
+
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
+
+
   
