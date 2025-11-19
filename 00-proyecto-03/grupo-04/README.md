@@ -137,6 +137,7 @@ flowchart TB
 `PROPUESTA ELEGIDA`
 
 - Máquina sentimental "Atrápame si puedes"
+  
 "BOCETOS FÍSICOS" ✅
 
 ---
@@ -184,7 +185,7 @@ luego enviar ejeY.valorCrudo
 // incluir 1 clase para recibir datos de sensores
 // incluir 1 clase para emitir datos segun eso
 
-#include "SensorFuerza.h" // incluye las clases SensorFuerza y Puntito
+#include "SensorFuerza.h" // incluye las clases SensorFuerza
 
 SensorFuerza ejeX;
 SensorFuerza ejeY;
@@ -201,7 +202,7 @@ void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
   ejeY.leer();
 
   Serial.println(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
-  Serial.println(ejeY.valorCrudo);
+  Serial.println(ejeY.valorCrudo);  // manda al serial monitor el valor crudo del sensor Y
 
   Serial.print("valorX");
   Serial.print(",");
@@ -232,7 +233,7 @@ void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
 
 void SensorFuerza::leer() {   // funcion para leer el sensor
   SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
-                                                                // y cada vez que se llama .leer, se actualiza el valor
+// y cada vez que se llama .leer, se actualiza el valor
 }
 ```
 
