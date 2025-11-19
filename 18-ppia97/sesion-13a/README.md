@@ -15,7 +15,8 @@
 - Cables
 
 Actuadores:
-  * Motor vibrador PWM Switch DC: actuador que generará la vibración/temblor. (https://afel.cl/products/motor-vibrador-pwm-switch-dc)
+  * Motor vibrador PWM Switch DC: actuador que generará la vibración/temblor. (https://afel.cl/products/motor-vibrador-pwm-switch-dc) **Nos enteramos después que este modelo viene con módulo mosfet incluído**
+  
   * Módulo Mosfet IRF520: Módulo de potencia para encender y apagar el motor y controlar su intensidad (PWM). (https://afel.cl/products/modulo-mosfet-irf520)
 
 Sensores:
