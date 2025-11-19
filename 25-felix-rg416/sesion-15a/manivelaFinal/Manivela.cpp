@@ -19,15 +19,15 @@ void Manivela::calculoVueltas() {
   if (Manivela::estadoActualCLK != Manivela::ultimoEstadoCLK) {
 
     if (digitalRead(Manivela::patitaDT) != Manivela::estadoActualCLK) {
-      Manivela::paso++;
+      Manivela::paso --;
       Manivela::direccionActual = "CW";
     } else {
-      Manivela::paso--;
+      Manivela::paso ++;
       Manivela::direccionActual = "CCW";
     }
 
-    if (Manivela::paso == Manivela::vueltas * 20) {
-      Manivela::vueltas++;
+    if (Manivela::paso % 20 == 0) {
+      Manivela::vueltas ++;
     }
   }
 }

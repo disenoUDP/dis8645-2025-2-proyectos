@@ -14,11 +14,15 @@ Martes 28 de octubre, 2025
 
 ### Revisando la encuenta
 
-Ir a más exposiciones. Tal vez en algunas semanas vamos a ver la exposición de Misa.
+Hicieron una encuesta sobre cómo percibíamos el semestre y el trabajo de los docentes y ayudantes, como instancia de retroalimentación y conversación para ajustar lo que sea necesario.
+
+Hablamos un poco de que es normal perderse en clase y que necesitamos comunicar mucho más cómo nos estamos encontrando con las sesiones.
+
+También se comentó que, al inicio, iban bastante rápido con la materia y que realmente había muchas cosas que aprender en poco tiempo.
+
+Tenemos planeado ir a más exposiciones. Tal vez en unas semanas vayamos a ver la exposición de Misa.
 
 Mónica Bate.
-
-Hablamos un poco de que es normal perderse en clase, y que debemos comunicar mucho más cómo nos estamos encontrando con las clases.
 
 ---
 
@@ -75,3 +79,83 @@ Me gustó eso de que las cosas realmente están definidas por sus característic
 - Claudia Gonzalez
 
 - Monica Bate
+
+---
+
+## Encargo-19: Definir 2 objetos 
+
+Según la referencia dada en el libro de Harman publicada en discord. Sacar 15 cualidades de cada uno. Mientras más raras, mejor.
+
+- Una **servilleta** es:
+
+  - Transitoria
+  
+  - Celulósica
+  
+  - Suave
+  
+  - Plegable
+  
+  - Condicionada
+  
+  - Cultural
+  
+  - Silenciosa
+  
+  - Ordinaria
+  
+  - Envolvente
+  
+  - Entramada
+  
+  - Estatus
+  
+  - Dogmática
+  
+  - Absorbente
+  
+  - Liviana
+  
+  - Deformable
+
+- Una **tarjeta tne** es:
+
+  - Portable
+  
+  - Identificable
+  
+  - Protocolar
+  
+  - Unívoca
+  
+  - Laminada
+  
+  - Punzante
+  
+  - Viabilizadora
+  
+  - Legitimadora
+  
+  - Estable
+  
+  - Delimitante
+  
+  - Clasificadora
+  
+  - Autorizante
+  
+  - Verificable
+  
+  - Normada
+  
+  - Operativa
+
+## Encargo-20: Lluvia de ideas grupal
+
+Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales, máquinas que trabajan con emociones/sensaciones/afectos específicos, y decidir entre ustedes las más interesantes.
+
+Máquina generadora de estrés: una máquina que te recuerde y cronograme todo lo que deberías estar haciendo, constantemente agobiándote.
+
+Máquina dependiente de música: una máquina mascota virtual, tipo tamagotchi, que necesita escuchar música para subsistir. Hay que producirle música o reproducirle música para que viva.
+
+Máquina selectora de alarmas: una máquina que escoja aleatoriamente las alarmas de tu teléfono, sonando cuando ella quiera.

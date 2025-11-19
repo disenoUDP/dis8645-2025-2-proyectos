@@ -14,6 +14,8 @@ Martes 04 de noviembre, 2025
 
 ---
 
+### Fundamentos del aprendizaje automático
+
 ml5.js
 
 Admega3283 microcontrolador que se puede programar.
@@ -32,11 +34,15 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 TPU, Unidades de procesamiento Tensorial.
 
-Mateo nos mostró los avances de su proyecto de título.
+---
 
-dataset de montones de Letras en afiches políticos, hizo su propia ia que genera imagenes con imagenes que el va metiendo, y se forMA COMO UN FLUJO generativo de creacion de letras.
+### Mateo nos mostró los avances de su proyecto de título
 
-Google Collab es un préstamo de computadora.
+Es un dataset compuesto por montones de letras tomadas de afiches políticos chilenos. 
+
+Programó todo un sistema para organizar tanto los afiches como las letras. Con eso entrenó su propia IA, que genera imágenes a partir del material que él va incorporando, formando un flujo generativo de creación tipográfica.
+
+Google Colab funciona como un préstamo de computadora.
 
 ---
 
@@ -48,7 +54,9 @@ Mostramos nuestras ideas iniciales, que giraban en torno a un tamagotchi ultra d
 
 Conversamos que hacer este ser dependiente de la música era complejo de explicar, porque es difícil definir qué sí y qué no es música, incluso un simple sonido podría considerarse música. Por eso fuimos ajustando la idea para evitar esas incoherencias y darle más claridad al proyecto.
 
-Lo que se nos ocurrió fue seguir trabajando con un tamagotchi incómodo y desagradable de usar, uno que muera ante cualquier falta de interacción, que te haga sentir culpa por tu negligencia. Esa fue la dirección que apareció para sostener y justificar ese sentimiento. Todo pensado a partir de un conjunto de sensores que obliguen a cumplir y cuidar ciertas acciones para mantenerlo vivo.
+Lo que se nos ocurrió fue seguir trabajando con un tamagotchi incómodo y desagradable de usar, uno que muera ante cualquier falta de interacción, que te haga sentir culpa por tu negligencia. 
+
+Esa fue la dirección que apareció para sostener y justificar ese sentimiento. Todo pensado a partir de un conjunto de sensores que obliguen a cumplir y cuidar ciertas acciones para mantenerlo vivo.
 
 ### Ideas
 

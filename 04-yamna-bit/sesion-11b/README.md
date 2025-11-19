@@ -18,12 +18,9 @@ Graham Harman: Filosófo Estadounidense
 
 MESA = Clase
 
-  - Mesa humanista-> Overnwing.
-    
-  - Mesa científica-> Undernwing.
-
+- Mesa humanista-> Overnwing.
+- Mesa científica-> Undernwing.
 - Relaciónes-> Funciones-> Método OOP.
-
 - Cualidades materiales-> Variables > Atributos OOP.
   
 La paradoja de Zenon:
@@ -38,7 +35,7 @@ OOO: ontología orientada a objetos.
 
 HANDSCHUN: Zapato de mano. 
 
-¿Por qué debería existir la palabra guante?
+>¿Por qué debería existir la palabra guante?
 
 FILOSOFÍA: amor al conocimiento (arte dentro de ello)
 
@@ -47,6 +44,17 @@ FILOSOFÍA: amor al conocimiento (arte dentro de ello)
 Explicar en otras palabras, algo que suele ser obvio.
 
 MÁQUINAS SENTIMENTALES: de manera sentimental
+
+## Encargo 17
+
+Cada persona debe subir una investigación detallada de la obra artística de **Claudia González Godoy**, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra.
+
+## Claudia González Godoy
+
+Claudia González Godoy es una artista medial chilena que trabaja desde el cruce entre electrónica, territorio y memoria. Su investigación sobre los ríos se ha convertido en el eje central de su obra. En esta línea crea las Hidroscopias, un proyecto donde sigue distintos ríos de Chile Mapocho, Loa, Maule y Biobío para escuchar sus tensiones ecológicas, políticas y sociales.
+Su método combina trabajo de campo, microscopía, sonido, video y el uso experimental del agua como material sensible. Recolecta muestras, registra voces locales y observa las transformaciones del agua para convertirlas en imágenes, números, sonidos o paisajes alterados. El agua, en su obra, deja de ser un “recurso” y se vuelve un cuerpo vivo que evidencia presiones humanas, sequías, embalses y memorias del lugar.
+
+Ha expuesto en la Bienal de Artes Mediales, FILE (Brasil), Tsonami y museos como ZKM Karlsruhe y ifa Gallery Stuttgart. Ha recibido residencias y colaboraciones con equipos comunitarios, investigadores de sonido y realizadores audiovisuales. Su formación cruza ** Artes Mediales, electrónica y experimentación sonora**, lo que se siente en su obra. Las referencias que suelen aparecer en su trabajo van desde la ciencia  (microscopios, mediciones eléctricas) hasta prácticas rituales, ecológicas y colaborativas.
 
 ## Encargo 17
 
