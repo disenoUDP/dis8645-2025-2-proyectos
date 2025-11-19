@@ -16,15 +16,53 @@ INTEGRANTES
 
 ## Inputs y Outputs
 
+---
+
 ## Planificación
 
-"CARTA GANTT"
+Como grupo planificamos que haremos en cada semana del trabajo mediante una carta gantt, vimos el presupuesto de los materiales que necesitabamos (algunos ya estaban, pero decidimos dejarlos) y por último, hicimos un diagrama de flujo del proyecto en [mermaid](https://mermaid.js.org/)
 
-"DIAGRAMA DE FLUJO" ✅
+### Carta Gantt
 
-"PRESUPUESTO" ✅
+### Diagrama de Flujo
 
-"BOCETOS FÍSICOS" ✅
+```mermaid
+flowchart TB
+    n1["Pantalla prendida con algún texto (presionar para empezar)"] --> n2["Título: *Atrápame si puedes* y personajes en la parte de abajo"]
+    n2 --> n3["Empieza el juego y aparecen los personajes"]
+    n3 --> n4["seleccionar el personaje (instrucción de controles o personaje en aleatorio)"]
+    n4 --> n12["en un tiempo de 1 min 30s se debe atrapar el personaje 3 veces"]
+    n12 --> n14["lo atrapaste?"]
+    n14 --> n15["si"] & n16["no"]
+    n15 --> n17["ganaste"]
+    n16 --> n18["perdiste"]
+    n17 --> n19@{ label: "<span style=\"color:\">Vuelve al inicio (*presiona para comenzar*)</span>" }
+    n18 --> n19
+
+    n19@{ shape: rect}
+     n1:::Rose
+     n2:::Aqua
+     n3:::Lime
+     n4:::Sunset
+     n12:::Rose
+     n14:::Lime
+     n15:::YellowSoft
+     n16:::Rose
+     n17:::Lime
+     n18:::Lavender
+     n19:::Aqua
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
+    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+```
+
+### Presupuesto
+
+![Presupuesto](./imagenes/presupuesto.png)
 
 ---
 
@@ -47,6 +85,8 @@ INTEGRANTES
 - **La** **Máquina** **sentimental** **que** **no** **quiere** **jugar** **contigo:** es un personaje que invita entusiastamente a jugar, pero cuando tomas su “control” activa un error intencional y se retracta. Utiliza un sensor ultrasónico para detectar cercanía y un sensor FSR en el control para identificar cuándo alguien lo toma y así gatillar la broma. Cuando la persona se aleja, el personaje vuelve a su actitud amistosa y reinicia el ciclo.
 
 `PROPUESTA ELEGIDA`
+
+"BOCETOS FÍSICOS" ✅
 
 ---
 
