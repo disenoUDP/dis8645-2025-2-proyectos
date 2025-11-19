@@ -75,4 +75,4 @@ Pero, realmente al ver los ejemplos me di cuenta que no era precisamente lo que 
 
 Bueno, después de su hora tratando de leer documentaciones, me indigné y le pregunté a chat GPT cual seria mi mejor orden de ataque, y me dijo algo como “deja de darte tantas vueltas y ocupa millis de manera manual”.
 
-Así que eso tendré que intentar organizar.
+Así que tendré que intentar organizarme para hacer esa parte manual.
