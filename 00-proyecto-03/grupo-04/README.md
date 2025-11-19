@@ -261,7 +261,7 @@ public:
 ```
 
 - Tercero, cuando logramos que arduino leyera los valores de presión del sensor, comenzamos a realizar la conexión entre arduino y p5.js.
-- El sketch fue con ayuda de la librería de Gohai
+- El sketch fue con ayuda de la librería de Gohai:  [p5.webserial](https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
   
 ```p5.js
 const BAUDRATE = 9600;  //velocidad del puerto
@@ -407,7 +407,7 @@ IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un form
 
 - `p5.js` lee cada línea y actualiza las variables.
 - `p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
-- Para que arduino envíe los datos correctos a p5 se debe utilizar el siguiente formato:
+- Para que arduino envíe los datos correctos a p5.js se debe utilizar el siguiente formato:
 
 ```cpp
 #include "SensorFuerza.h"
@@ -438,7 +438,7 @@ void loop() {
 }
 ```
 
-- lo que se imprime se ve así en el Serial Monitor:
+- Lo que se imprime en el Serial Monitor se ve así:
 
 ```cpp
 12,30
@@ -446,6 +446,75 @@ void loop() {
 20,50
 ...
 ```
+
+- Ahora viene la estructura del sketch de `p5.js`, una carpeta. Esta debe contener:
+
+```
+1. index.html
+2. sketch.js
+3. demás archivos que queremos utilizar, como audio, imágenes, etc.
+```
+
+Recuerda: la librería a utilizar se pega en el html del sketch de p5.js
+
+### Botón para conectar el Arduino desde el navegador
+
+Chrome y Edge exigen que el usuario haga click para acceder al puerto. Es por eso que se "dibujará" un botón para conectarlo manualmente.
+
+```cpp
+connectBtn = createButton('Conectar Arduino');
+connectBtn.mousePressed(() => port.open(9600));
+```
+
+### Lectura Serial en p5
+
+Para que `p5.js` lea los valores de la consola de Arduino.
+
+```cpp
+let line = port.readUntil("\n");
+  while (line && line.length > 0) {
+    line = trim(line);
+```
+
+### Para mostrar imágenes en p5.js
+
+1. Primero se define la imagen.
+2. Se crea function `preload ()` para cargar esta imagen para que sea dibujada en el sketch.
+3. Se llama la imagen ya definida y con su nombre tal cual como se subió en la carpeta del proyecto de p5.js para que se dibuje correctamente en el sketch.
+
+```cpp
+let img;
+function preload() {
+  img = loadImage("imagen.png");
+}
+```
+
+4. Para mostrar la imagen la pantalla:
+
+```cpp
+imageMode(CENTER); // (CORNER) para ajustarla desde la esquina del sketch
+image(img, posX, posY, 120, 120); // posición de la imagen y tamaño
+```
+
+### Posición de los sensores de fuerza
+
+```cpp
+let posX = map(sensorX, 0, 1023, 0, width); //para el movimiento de izquierda a derecha
+let posY = map(sensorY, 0, 1023, height, 0); //para el movimiento de arriba a abajo
+```
+
+Para que funcione correctamente, debemos tener en cuenta que:
+
+- Arduino debe mandar los datos consistentes en el mismo formato.
+- p5.js deber leer las líneas completas de datos con `readUntil("\n")`
+- Chrome y Edge obligan a usar un botón para abrir el puerto y permitir la conexión.
+- NO ABRIR `Serial Monitor` de arduino mientras p5.js lo usa. Esto interrumpe la conexión.
+- Usar servidor local, como vs code con liver server para visualizar el html.
+- Cerrar ventanas p5.js repetidas, sólo accede a un puerto.
+
+### Resultado
+
+INSERTAR IMAGENES
 
 ---
 
