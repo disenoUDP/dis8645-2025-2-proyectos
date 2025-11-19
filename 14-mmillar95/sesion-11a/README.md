@@ -60,6 +60,10 @@ Garra
 
 ### Ontología orientada a objetos / tecnología orientada a objetos
 
+Según Gemini: La Ontología Orientada a Objetos (OOO) es una corriente dentro de la filosofía contemporánea, específicamente dentro del Realismo Especulativo.
+
+El principal exponente de esta corriente es el filósofo estadounidense Graham Harman. Su trabajo busca desplazar la centralidad que la filosofía tradicional le ha dado a la conciencia humana (correlacionismo).
+
 
 
 
