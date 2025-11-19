@@ -16,11 +16,16 @@
 
 Actuadores:
   * Motor vibrador PWM Switch DC: actuador que generará la vibración/temblor. (https://afel.cl/products/motor-vibrador-pwm-switch-dc) **Nos enteramos después que este modelo viene con módulo mosfet incluído**
+
+![Motor vibrador](./imagenes/motorVibrador.jpg)
   
   * Módulo Mosfet IRF520: Módulo de potencia para encender y apagar el motor y controlar su intensidad (PWM). (https://afel.cl/products/modulo-mosfet-irf520)
 
 Sensores:
 * Sensor Ultrasonico HC-SR04: para medir la distancia y detectar cuándo alguien se acerca o se aleja. (https://afel.cl/products/sensor-de-ultrasonico-hc-sr04)
+
+![Ultrasónico](./imagenes/sensorultrasonico.jpg)
+
 > Para carcasa, un material ligero y resonante amplificará el efecto de la vibración.
 
 La idea es que la máquina siempre tenga una tensión de fondo, así que al inicio solo tendrá una vibración mínima y constante (un valor bajo de PWM) para simular esa calma que nunca es total en un cuerpo ansioso. En el momento en que alguien se acerca (y el sensor ultrasónico lo detecta), la máquina entra inmediatamente en un estado de inquietud creciente: la vibración no debe subir de forma lineal, sino con picos erráticos y acelerados, como si estuviera tiritando más y más a medida que la persona se acerca. Si la persona llega a la máxima proximidad, la máquina tiene que ir al pico de pánico y disparar la vibración a su máximo (PWM 255). Luego, la clave es cuando la persona se aleja, la vibración no debe detenerse de golpe, sino que tiene que ir disminuyendo de manera lenta y prolongada, mostrando que el cuerpo no se relaja al instante y que la tensión residual permanece por un tiempo, incluso cuando el "peligro" ya pasó.
@@ -40,11 +45,19 @@ Sensor:
 
 * Sensor Ultrasónico (HC-SR04): medir la distancia y reaccionar a la presencia de algo cercano. (https://afel.cl/products/sensor-de-ultrasonico-hc-sr04)
 
+![Ultrasónico](./imagenes/sensorultrasonico.jpg)
+
 Actuadores:
 
 * Micro Servomotor SG90: para el movimiento sigiloso de ocultamiento y el movimiento tímido en anonimato. (https://afel.cl/products/micro-servomotor-sg90)
+
+![sermovotor](./imagenes/servomotor.jpg)
+
 * Diodo Led (Rojo o color deseado): Para emitir esa luz tenue y tímida cuando está sola. Usar función analogWrite (PWM) para controlar brillo y simular el disfrute del anonimato. (https://afel.cl/products/kit-50-diodos-leds-de-5mm-ultrabrillantes) **TERMINAMOS CAMBIANDOLO EL DIODO LED POR DIODO RGB.**
-* Diodo Led RGB 5mm: para alternar entre colores alegres (simulación) y el apagado/colores oscuros (vulnerabilidad). (https://afel.cl/products/diodo-led-rgb-5mm)E
+* Diodo Led RGB 5mm: para alternar entre colores alegres (simulación) y el apagado/colores oscuros (vulnerabilidad). (https://afel.cl/products/diodo-led-rgb-5mm)
+
+![LED](./imagenes/led.jpg)
+
 * Resistencia de 220 para proteger el LED. (https://afel.cl/products/kit-600-resistencias-1-4w-30-valores)
 
 > Para el LED RGB (enlace 1.1), necesitamos tres resistencias de 220 (una para cada color: Rojo, Verde, Azul) para conectarlo de forma segura a la placa Arduino. 
