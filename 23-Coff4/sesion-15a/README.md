@@ -131,6 +131,11 @@ if (d < 20) {
 }
 ```
 
+![Ultrasonico conectado](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Ultra.png)
+
+![Ambas variantes funcionan](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/23-Coff4/sesion-15a/imagenes/Funcionando.png)
+
+
 ---
 
 Ok...Por razones de fuerza mayor terminamos juntandonos después de clases para seguir con el proyecto en llamadas de discord
