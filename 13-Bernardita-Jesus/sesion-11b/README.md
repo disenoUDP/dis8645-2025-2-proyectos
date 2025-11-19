@@ -6,11 +6,19 @@ Viernes 24 de octubre, 2025
 
 ### Cosas que hablamos en la mañana
 
-- 
+- Hablamos de las ideas de máquinas que tenía para el proyecto 03, las cuales eran Máquinas de lenguaje, Máquinas de felicidad y Máquinas transductoras.
 
-- 
+### Objetos y metáforas
 
-Nunca había pensado de dónde venía lo de buscarle un significado al arte, aunque ya conocía la crisis de la mímesis y desde dónde parten las vanguardias artísticas. Y es cierto que parten desde la representación, y es posible que por eso busquemos darle significados y metáforas que muchas veces no están, no tienen sentido o no dejan espacio para la interpretación. Muy interesante todo ese tema de lo que son y no son objetos, y trabajar en el lenguaje que explica las cosas.
+Existen dos maneras de explicar qué son las cosas/objetos, desde lo material, lo tangible, lo sensible, y desde lo social, cómo se relacionan en su contexto.
+
+En términos más generales, la OOO es una teoría de dos tipos de objetos (reales y sensoriales) y dos tipos de cualidades (reales y sensoriales). Los objetos y cualidades reales no son directamente accesibles al pensamiento, la percepción, el uso práctico ni la relación causal, y deben abordarse mediante métodos más alusivos. Los objetos y cualidades sensoriales, por el contrario, existen solo para alguna otra entidad, humana o no. Cada tipo de objeto mantiene relaciones complejas con cada una de las dos formas de cualidades, lo que da lugar a cuatro tensiones básicas, cuyo análisis constituye el núcleo del método orientado a objetos en todos los campos, no solo en la literatura.
+
+> Fuente [Ontología Orientada a Objetos](https://oxfordre.com/literature/oso/viewentry/10.1093$002facrefore$002f9780190201098.001.0001$002facrefore-9780190201098-e-997;jsessionid=A3458F5B91C48A20EDFA7771AAD7B420), Graham Harman
+
+Nunca había pensado de dónde venía lo de buscarle un significado al arte, aunque ya conocía la crisis de la mímesis y desde dónde parten las vanguardias artísticas. Y es cierto que parten desde la representación, y es posible que por eso busquemos darle significados y metáforas que muchas veces no están, no tienen sentido o no dejan espacio para la interpretación. 
+
+Muy interesante todo ese tema de lo que son y no son objetos, y trabajar en el lenguaje que explica las cosas.
 
 ### Referentes
 
@@ -32,11 +40,15 @@ Nunca había pensado de dónde venía lo de buscarle un significado al arte, aun
 
 - [Laura Nieves](https://www.launieves.com/)
 
+- [Graham Harman](https://es.wikipedia.org/wiki/Graham_Harman)
+
 ### Palabras importantes
 
-[Mímesis:](https://es.wikipedia.org/wiki/M%C3%ADmesis) es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
+[transducción](https://es.wikipedia.org/wiki/Transducci%C3%B3n#): La transducción, por definición, es la transformación de un tipo de señal o energía en otra de distinta naturaleza. Más específicamente, transducción es un término que se utiliza en diversos campos.
 
-[Vanguardias artísticas:](https://es.wikipedia.org/wiki/Vanguardismo) Alude también al conjunto de movimientos artísticos y literarios que se formaron a comienzos del siglo XX en Occidente que rompieron con la tradición académica y buscaron la innovación.
+[Mímesis:](https://es.wikipedia.org/wiki/M%C3%ADmesis): es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
+
+[Vanguardias artísticas](https://es.wikipedia.org/wiki/Vanguardismo): Alude también al conjunto de movimientos artísticos y literarios que se formaron a comienzos del siglo XX en Occidente que rompieron con la tradición académica y buscaron la innovación.
 
 ## Encargo-17: Claudia González Godoy
 
