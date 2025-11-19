@@ -90,6 +90,8 @@ Timothy Morton
 
 Para la 17ª Bienal de Artes Mediales propone una instalación inmersiva que integra tejido, luz, sonido, video y sensores, una experiencia inmersiva y sensorial que reacciona a la presencia del público con un Sensor de Presencia, que denota un intercambio simbiótico que sostiene la vida, además de tener destellos con sus luces LED entre sus tejidos o raíces, y luces en sus obras de acrílico.
 
+![foto instalación](./imagenes/yto.jpeg)
+
 Habla del bosque esclerófilo, las raíces y las micorrizas, todo en base a investigaciones científicas sobre la sensibilidad vegetal y cómo se va entrelazando con arte, ciencia y tecnología desde las prácticas en artes mediales y ecología en América Latina.
 
 Yto problematiza la visión antropocénica de la naturaleza y el conflicto medioambiental global de los bosques esclerófilos. Estos son únicos en el mundo y están brutalmente amenazados por la minería, la expansión inmobiliaria y el cambio climático. Además, yo creo que esto es una problemática socioambiental, una problemática que trasciende y se refleja en nuestra manera de relacionarnos y comunicarnos con los espacios y las personas.
