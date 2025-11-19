@@ -20,7 +20,7 @@ La plantilla permitió que todos tuviéramos una referencia concreta, facilitand
 
 ### Fushion 360
 
-Para hacer la pieza del molde de jorge hice lo siguiente 
+Para hacer la pieza del molde de jorge hice lo siguiente: 
 
 1. Creé dos esferas, una ubicada más arriba y otra más abajo.  
 
@@ -36,6 +36,13 @@ Para hacer la pieza del molde de jorge hice lo siguiente
 
 ![modelado fusion 360](./imagenes/empalme.png)
 
-5. Seleccioné **la arista que se formó entre las dos esferas** y apliqué el fillet, lo que redondeó y suavizó la unión, creando una conexión continua entre ambas formas.
+5. Seleccioné la arista que se formó entre las dos esferas y apliqué el fillet, lo que redondeó y suavizó la unión, creando una conexión continua entre ambas formas. Para lograr la forma de la cabeza de Jorge, repetí los mismos pasos al modelar las orejas.**
 
 ![modelado fusion 360](./imagenes/jorge.png)
+
+6. Se exportó el modelo en formato OBJ para poder prepararlo para impresión.
+
+
+
+
+
