@@ -4,7 +4,7 @@
 
 `Logros en clases:`
 
- - Bajarle el brillo a la pantalla, esta puede llegar a los 255, lo dejamos en 50.
+ - Bajarle el brillo a la pantalla, esta puede llegar a los 255, lo dejamos en 50. [cómoControlarPantalla](https://youtu.be/gJm11ME-Un8?si=l8t98nTPs5sbG4RD)
  - Botón que va al pin 3 que va eliminando más pixeles.
  - Elegir canción sin ter problemas de derecho de autor. [darker-waves](https://opengameart.org/content/darker-waves)
  - Que vuelva al inicio del juego a los 15 segundos después de jugar con el botón del pin 3.
