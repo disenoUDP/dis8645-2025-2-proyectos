@@ -40,7 +40,11 @@ Pero el juego está diseñado para que el personaje se escape justo cuando está
 La interacción crea una especie de competencia emocional entre el usuario y la máquina.
 
 `METÁFORA:`
-- La máquina es una representación tecnológica del logro frustrado: esa sensación cotidiana en la que la promesa del éxito se rompe por un detalle mínimo. Al mismo tiempo, habla de la experiencia humana de perseguir algo que siempre se escapa: expectativas, logros, reconocimiento o metas personales y emocionales que parecen estar al alcance… pero nunca del todo. En ese juego constante entre deseo y evasión, la máquina encarna la relación desigual entre la intención humana y la respuesta arbitraria de un sistema. Una máquina que te hace sentir el delicado filo entre querer algo… y perderlo por un gesto mínimo.
+- La máquina es una traducción tecnológica de ese logro que siempre parece estar a punto de alcanzarse, pero que se escurre por un detalle absurdo. Representa esa experiencia humana en la que todo está listo para que algo resulte bien, pero un gesto mínimo rompe la promesa del éxito.
+
+En el juego, atrapar al personaje es totalmente posible, pero la dificultad surge del propio sistema, que sabotea suavemente al jugador con controles que funcionan al revés. Esa desorientación provoca una frustración cómica, una especie de torpeza inevitable que pone al jugador en el límite entre el control y el caos.
+
+La máquina encarna ese desajuste permanente: el cuerpo quiere avanzar hacia un objetivo claro, pero la interfaz responde de forma caprichosa. En ese choque entre intención y mecanismo aparece el humor, la autoconciencia y la sensación de estar participando en un pequeño teatro donde el esfuerzo, por más sincero que sea, nunca se alinea del todo con el resultado. Es un recordatorio lúdico de cómo incluso nuestras metas más simples pueden torcerse por detalles ridículos… y aun así seguimos intentándolo.
 
 ### Que utiliza:
 Sensor de fuerza
@@ -66,25 +70,13 @@ En resumen, el sensor de fuerza utiliza la relación lineal entre la fuerza apli
 - Resistencia 10kΩ extremo 2 -> GND
 
 `BILL OF MATERIAL`
-
-| Marca    | Nombre en página web                          | Materiales        | Cantidad | Precio   | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Links |
-|----------|------------------------------------------------|-------------------|----------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| Afel     | Sensor de Fuerza / Presión FSR402              | Sensor de fuerza  | 2        | $7.500   | - Rendimento: Circuito Infinito / abierto (sin presión, 100kΩ ligera presión) a 200Ω (presión máx).  
-- Rango de fuerza: 0 a 20 lb (0 a 100 Newtons) que se aplica de manera uniforme sobre el área de superficie de 0,125 pulgadas cuadradas.  
-- Fuente de alimentación: Cualquiera este sensor utiliza menos de 1 mA de corriente (depende de las resistencias de pull-up / down utilizadas y voltaje de alimentación). | https://afel.cl/products/sensor-de-fuerza-presion-fsr402?variant=45125253169304&country=CLP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_org&utm_term=&utm_campaign=p-+Smart+Shopping&utm_source=adwords&utm_medium=ppc&hsa_acc=1808722794&hsa_cam=18405560573&hsa_grp=&hsa_ad=&hsa_src=&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjzrpCkBhA3EiwAUaBUdV-Mubd3XP5liuktsAks9c00Whain1PvZ6wDWwBeaaBRRY4OkTFboCDnEQAvD_BwE |
-| Arduino  | Arduino UNO R4 WiFi                            | Arduino           | 1        | $38.990  | El Arduino UNO R4 WiFi combina la potencia de procesamiento y los nuevos y emocionantes periféricos del microcontrolador RA4M1 de Renesas con la potencia de conectividad inalámbrica del ESP32-S3 de Espressif. Además de esto, el UNO R4 WiFi ofrece una matriz LED 12×8 integrada, conector Qwicc, VRTC y pin OFF, que cubre todas las necesidades potenciales que los creadores tendrán para su próximo proyecto. | https://arduino.cl/producto/arduino-uno-r4-wifi/?srsltid=AfmBOoo62QpUUNDMPTe_9rBbQ5jmJMG6rwsG4MTKelnH8mpRtnHcyVfI |
-| Afel     | Kit 600 Resistencias 1/4W - 30 Valores         | Resistencias      | 2        | $4.990   | - Bajo valor (Ω): 10, 22, 47, 100, 150, 200, 220, 270, 330, 470, 510, 680  
-- Medio valor (KΩ): 1, 2, 2.2, 3.3, 4.7, 5.1, 6.8, 10, 20, 47, 51, 68  
-- Alto valor (KΩ/MΩ): 100K, 220K, 300K, 470K, 680K, 1M | https://afel.cl/products/kit-600-resistencias-1-4w-30-valores |
-| Afel     | Pack 20 Cables de Conexión Macho Hembra        | Cables            | 1 pack   | $1.000   | - Longitud: 20 cm  
-- Tipo de conector: Jumper plano  
-- Calibre del cable: 26 AWG  
-- Corriente máxima: 1 A  
-- Voltaje máximo: 300 V  
-- Aislante: PVC  
-- Compatible con protoboard estándar y módulos de desarrollo | https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra |
-| **TOTAL** |                                                |                   |          | **$52.480** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |        |
-
+| Marca   | Nombre en página web                       | Materiales       | Cantidad | Precio   | Descripción                                                                                                                              | Link |
+|---------|---------------------------------------------|------------------|----------|----------|------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Afel    | Sensor de Fuerza / Presión FSR402           | Sensor de fuerza | 2        | $7.500   | Rango 0–20 lb, resistencia variable 100kΩ–200Ω, consumo <1mA según resistencias usadas.                                                 | https://afel.cl/products/sensor-de-fuerza-presion-fsr402 |
+| Arduino | Arduino UNO R4 WiFi                         | Arduino          | 1        | $38.990  | Microcontrolador RA4M1, conectividad ESP32-S3, matriz LED 12×8, conector Qwicc, VRTC, pin OFF.                                         | https://arduino.cl/producto/arduino-uno-r4-wifi |
+| Afel    | Kit 600 Resistencias 1/4W - 30 Valores      | Resistencias     | 2        | $4.990   | Resistencias variados valores: 10Ω–1MΩ.                                                                                                 | https://afel.cl/products/kit-600-resistencias-1-4w-30-valores |
+| Afel    | Pack 20 Cables de Conexión Macho Hembra     | Cables           | 1 pack   | $1.000   | Cables jumper 20 cm, 26 AWG, hasta 1A, 300V, PVC, compatibles con protoboard.                                                            | https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra |
+| **TOTAL** |                                             |                  |          | **$52.480** |                                                                                                                                          |      |
 
 `DIAGRAMA DE FLUJO`
 
@@ -124,8 +116,81 @@ flowchart TB
 
 ### Seudocódigo
 ```
+INICIAR variables:
+    estado = "espera"
+    puntaje = 0
+    objetivo = posición_inicial
+
+MIENTRAS el sistema esté encendido:
+
+    leer gestos y distancia del usuario
+
+    SI estado == "espera" Y el usuario se acerca:
+        mostrar_mensaje("¿Vienes a perder?")
+        estado = "invitación"
+
+    SI estado == "invitación" Y el usuario hace el gesto de empezar:
+        calibrar_controles()
+        estado = "jugando"
+
+    SI estado == "jugando":
+        mover_cursor_segun_gestos()
+        mover_objetivo_con_su_logica()
+
+        SI el usuario está muy cerca de atrapar:
+            decidir_si_trollear()
+
+        SI el jugador atrapa el objetivo:
+            SI hay_trolleo:
+                hacer_glitch_y_huir()
+                burlarse_del_usuario()
+            SINO:
+                sumar_puntos()
+                mostrar_feedback_positivo()
+
+                SI puntaje alcanza el mínimo para ganar:
+                    estado = "victoria"
+
+    SI estado == "victoria":
+        SI hay_trolleo:
+            hacer_glitch_y_huir()
+            mostrar_mensaje("¿Pensaste que te dejaría ganar?")
+            estado = "jugando"
+        SINO:
+            celebrar()
+            reiniciar_juego()
+
+    esperar_pequeño_momento()
 ```
 ### Comportamiento: qué hace, cómo lo hace y que sentimientos provoca
+`QUÉ HACE`
+
+La máquina propone un juego aparentemente simple: atrapar al personaje que el usuario eligió al inicio de la experiencia. Para lograrlo, el usuario debe presionar los sensores de fuerza, presentados como botones, que funcionan como controles del movimiento. Sin embargo, el personaje tiene un comportamiento evasivo: justo cuando el jugador está a punto de alcanzarlo, este se escapa, cambiando de dirección o moviéndose de forma inesperada.
+
+El sistema mantiene siempre viva la ilusión de que “ahora sí”, pero nunca termina de conceder el éxito.
+
+`CÓMO LO HACE`
+
+La máquina responde directamente a la interacción física del usuario.
+Los sensores de fuerza traducen la presión en movimientos, pero los controles están dispuestos de manera intencionalmente incómoda o invertida, obligando al usuario a adaptar su cuerpo a una lógica que contradice sus reflejos naturales.
+Al mismo tiempo, el personaje del juego está programado para detectar la proximidad del jugador y evadirlo con una ligera anticipación, como si tuviera voluntad propia.
+Esta combinación —controles contraintuitivos + personaje que huye— genera una interacción asimétrica, casi caprichosa, como si la máquina estuviera jugando a confundirte.
+
+`QUÉ SENTIMIENTOS PROVOCA`
+
+El comportamiento de la máquina provoca una mezcla de emociones:
+
+Frustración cómica: el usuario siente que está a punto de lograrlo, pero el sistema siempre se adelanta por un instante, generando risas nerviosas, incredulidad o molestia juguetona.
+
+Competencia emocional: la experiencia se siente como una batalla amistosa entre el jugador y la máquina, donde ambos parecen intentar “ganar”.
+
+Curiosidad: al no entender completamente las reglas, el usuario quiere seguir intentando, explorando cuánta fuerza aplicar, cómo presionar o cómo anticipar el movimiento del personaje.
+
+Autoconciencia del cuerpo: al tener controles invertidos, el jugador toma conciencia de sus propios gestos, de su dificultad para coordinarse y de lo absurdo de la situación.
+
+Sensación de meta inalcanzable: el logro siempre parece cerca, nunca imposible, pero jamás asegurado, creando una tensión lúdica entre perseverancia y rendición.
+
+En conjunto, la máquina no solo responde: interpreta, descoloca y se burla suavemente, convirtiendo la interacción en una experiencia emocional, física y humorística.
 ---
 El lunes 17-11-2025 logramos que el punto subiera y bajara con los siguientes códigos 
 
@@ -245,3 +310,17 @@ void loop() {
     delay(50);
 }
 ```
+### Bocetos
+El lunes y martes me dediqué a crear los personajes de este juego, quería que tuvieran una estética dirigida a los videojuegos de arcade. Tomé la decisión de hacer pixelart, esto lo hice usando la pagina https://www.pixilart.com/
+
+Lo que empezó como una experimentación con al interfaz de la web, haciendo a aarón como si fuera un personaje de videojuego, pero agregandole alas, terminó dando paso a la creación de los demás personaje que finalmente se componen de todo el equipo docente. Después de crear los personajes, me dediqué a animar cada uno de estos y a crear el vuelo aleatorio que haría cada uno, además animé como se veria la selección de personajes. A continuación dejo fotos del proceso.
+
+![aarón](./aaró_volando-gif-drawing (1).gif)
+
+![misaa](./imagenes/misa_volando.gif)
+
+![mateo](./imagenes/mateovolando.gif)
+
+![janis](.//imagenes/janis.png)
+
+![todes](./imagenes/Todos.gif)
