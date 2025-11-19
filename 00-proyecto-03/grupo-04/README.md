@@ -131,6 +131,114 @@ flowchart TB
 
 ## Etapas del código
 
+- Primero partimos haciendo un código en Arduino Ide, el cual lee los valores de presión de los sensores, para que después mande los datos a P5.js
+
+```cpp
+
+```
+
+este sketch fue hecho con ayuda de la librería de Gohai
+//se encuentra en ek siguiente link //https://editor.p5js.org/valentina.chavez1/sketches/_DhKZKhwd
+//conexión de datos de arduino hacia p5 utilizando un sensor de fuerza
+//este sensor lee parametros como izquierda-derecha, arriba-abajo
+//proyecto de juego realizado para el taller de diseño de maquinas computacionales 
+//proyecto examen taller vertical noviembre-diciembre 2025
+//por Valentina Chavez 
+
+```p5.js
+const BAUDRATE = 9600;  //velocidad del puerto
+let port;               //variable del puerto
+let connectBtn;         //boton
+
+let sensorX = 0;        //izquierda-derecha
+let sensorY = 0;        //arriba-abajo
+
+// 0 = esperamos X, 1 = esperamos Y
+let lecturaEstado = 0;
+
+//imagenes 
+let img; //imagen en png de la red atrapa mosquitos
+let backImg; //imagen de misaa
+
+//aqui es donde se cargan las imagenes y todos los recursos que utilizaremos
+function preload() {
+  img = loadImage("atrapar.png");
+  backImg = loadImage("misaa.png");
+  
+}
+
+//configuracion del lienzo
+function setup() {
+  createCanvas(1920, 1080); //tamaño del lienzo
+  background(20); //color de fondo
+
+  port = createSerial(); //creamos el puerto serial para la conexión
+  port.bufferSize(1024); //buffer que nos permitirá leer con una velocidad adecuada los datos que entrega arduino
+
+  //botón para conectar el arduino
+  connectBtn = createButton('Conectar Arduino'); //texto para el boton
+  connectBtn.position(10, 10); //posición del boton
+  connectBtn.mousePressed(connectBtnClick); //al hacer clic se activa
+}
+
+function draw() {
+  background(200);
+  
+  image(backImg, 400, 400, 200, 200); //aqui se llama a la imagen para que se pueda dibujar 
+
+  
+  //lee los valores de arduino en el formato correspondiente a p5
+  let line = port.readUntil("\n"); 
+  while (line && line.length > 0) {
+    line = trim(line);
+
+    // si la línea no es solo números (tiene letras, comas, etc.), la ignoramos
+    if (/^\d+$/.test(line)) {
+      let v = int(line);
+
+      if (lecturaEstado === 0) {
+        sensorX = v;
+        lecturaEstado = 1; // la próxima numérica será Y
+      } else {
+        sensorY = v;
+        lecturaEstado = 0; // volvemos a esperar X
+      }
+    }
+
+    // leer siguiente línea del buffer (los datos)
+    line = port.readUntil("\n"); //salto de linea 
+  }
+
+  // Mapear a la pantalla
+  let posX = map(sensorX, 0, 1023, 0, width);
+  let posY = map(sensorY, 0, 1023, height, 0); // invertido
+
+  let imgSize = 120; // tamaño de la imagen
+  imageMode(CENTER); //posicion de la imagen al centro, (CORNER) tambien funciona
+  image(img, posX, posY, imgSize, imgSize); //posicion y tamaño de la imagen
+  
+  // tamaño, color y texto de los valores que recibe el sensor en p5, esto puede modificarse para agregar las vidas y el conteo de puntos.
+  fill(180);
+  textSize(14);
+  text(`X: ${sensorX}`, 10, height - 30);
+  text(`Y: ${sensorY}`, 10, height - 10);
+  
+  //agregamos la otra imagen, en este caso la de misaa
+  let misaaSize = 220; // tamaño de la imagen (puedes cambiarlo)
+  imageMode(CENTER);
+  image(backImg);
+}
+
+//funcion para que el boton de conectar el arduino a p5 funcione al hacer clic y lea la placa
+function connectBtnClick() {
+  if (!port.opened()) {
+    port.open(BAUDRATE);
+  } else {
+    port.close();
+  }
+}
+```
+
 ## Etapas de prototipo
 
 ## Fotografías del proyecto terminado
