@@ -102,3 +102,7 @@ delay(4000);
 
 ```
 
+A, también cambie el nombre del archivo a exactamente 0001.mp3 que puede haber ayudado.
+
+De esta manera quedó el WEBO_0_4_0 que estará subido en el repositorio.
+
