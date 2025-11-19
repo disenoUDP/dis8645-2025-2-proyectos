@@ -45,7 +45,7 @@ Si se inicia una nueva acción, la anterior se desactiva automáticamente, garan
 
 5. Finalmente, vuelve a su estado de reposo, lista para reiniciar la experiencia.
 
-## bocetos 
+## bocetos hechos con gemini
 ![reposo](./imagenes/reposo.png)
 
 ![activo](./imagenes/activo.png)
