@@ -48,3 +48,37 @@ La máquina no busca ser útil, sino sensible. Exagera la relación entre el cue
 El objetivo del proyecto es explorar la idea de afectividad en los objetos tecnológicos y cuestionar los límites entre lo vivo y lo mecánico. ¿Puede una máquina sentir? ¿O simplemente imitar nuestras formas de sentir? A través de su diseño táctil y sus respuestas lumínicas, la máquina sentimental busca generar una experiencia empática y poética entre el espectador y el objeto, donde la interacción se vuelve una forma de comunicación emocional. Funcionamiento
 
 El proyecto propone la creación de una máquina sentimental, un artefacto interactivo capaz de reaccionar sensiblemente al entorno especialmente al ruido, la voz o el tacto y de expresar esas emociones a través de visuales luminosos y patrones en movimiento.
+
+## Investigación de sensores 
+
+### Sensor de Fuerza / Presión FSR402
+
+```cpp
+const int Sensor_Fuerza = A0;  // Pin del sensor de fuerza 
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(Sensor_Fuerza, INPUT);
+}
+
+void loop() {
+    int valorFuerza = analogRead(Sensor_Fuerza);  // Leer el valor del sensor
+    Serial.print("Sensor de Fuerza: ");
+    Serial.println(valorFuerza);
+    
+    delay(500);  
+}
+```
+
+![Sensor de fuerza](./imagenes/sensorFuerza.png)
+
+### Sensor de capacitivo
+
+Recuerdo que en un curso de profundizacion de tecnologias interactivas vimos este tema, sobre hilo conductivo y como la energia del cuerpo de puede utilizar para encender un led 
+
+![Sensor de capacitivo](./imagenes/sensorCapacitivo.png)
+
+Video de referencia: [Sensor Capacitivo](https://www.youtube.com/watch?v=MK8pjkNvcKo)
+
+
+
