@@ -4,7 +4,7 @@
 
 `Logros en clases:`
 
- - Bajarle el brillo a la pantalla, esta podia llegar a los 255, lo dejamos en 50.
+ - Bajarle el brillo a la pantalla, esta puede llegar a los 255, lo dejamos en 50.
  - Botón que va al pin 3 que va eliminando más pixeles.
  - Elegir canción sin ter problemas de derecho de autor.
  - Que vuelva al inicio del juego a los 15 segundos después de jugar con el botón del pin 3.
@@ -302,7 +302,7 @@ void loop(){
 }
 ```
 ### BOM
-|---|---|---|---|
+
 |Componente|Cantidad|Valor|Link|
 |---|---|---|---|
 |Botones|5|-|[boton-tactil-tapa](https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor?_pos=1&_sid=433c4d5a9&_ss=r)|
@@ -316,11 +316,15 @@ void loop(){
 
 ### Registro
 
+![IMG18](./imagenes/imagen18.jpg)
+
+![IMG19](./imagenes/imagen19.jpg)
+
 `¡No olvidar! `
 
-- Botón al pin 3 hará que se vaya eliminando poco a poco cada pixel del cuadrado y al esperar 15 segundos se vuelve al cuadrado con el primer pixel corrido.
+- Botón al pin 3 hará que se vaya eliminando poco a poco cada pixel del cuadrado y al esperar 15 segundos, se vuelve al cuadrado con el primer pixel corrido.
 - Botón que acelera el tiempo de la música. 
 - Botón  de inicio.
 - Botón inútil
-- Boton que cambia el pixel de color.
+- Botón que cambia el pixel de color.
   
