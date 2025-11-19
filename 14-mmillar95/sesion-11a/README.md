@@ -78,8 +78,8 @@ La Tecnología Orientada a Objetos (TOO) es un enfoque de la ingeniería de soft
 
 ### Referentes Proyecto 03
 
-![elemploUno](./imagenes/elemploUno.png)
-![elemploDos](./imagenes/elemploDos.png)
+![ejemploUno](./imagenes/elemploUno.png)
+![ejemploDos](./imagenes/elemploDos.png)
 
 
 
