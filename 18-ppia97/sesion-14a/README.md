@@ -16,6 +16,10 @@
  * También estuvimos buscando ideas de carcasa, ya que queremos continuar con la idea de dos gatitos en cajas, pero no sabemos como realizarlo.
 Vimos estos ejemplos en internet:
 
+![Pagina del libro](./imagenes/gato.png)
+
 (https://www.etsy.com/es/listing/1606510392/modelo-3d-de-gato-chibi-archivo-stl)  
+
+![Pagina del libro](./imagenes/gato2.png)
 
 (https://cults3d.com/es/modelo-3d/casa/cat-in-a-pot-3d-model-to-print)
