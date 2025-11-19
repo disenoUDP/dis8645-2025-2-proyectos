@@ -17,3 +17,9 @@ Además, nos decidimos por un referente para el baile del pollito. Existe el ave
 Aquí estarían los bocetos para lo que sería lo que definimos bien:
 
 ![bocetos](./imagenes/bocetos-frames.jpeg)
+
+Terminé de hacer los frames que decidimos, de acuerdo a lo boceteado anteriormente.
+
+![durmiendo](./imagenes/durmiendo.png)
+![saltitos](./imagenes/saltitos.gif)
+![hablando](./imagenes/hablando.gif)
