@@ -46,26 +46,40 @@ Elemplos:
 
 #### Ideas
 
-Vestibles
-
-Mascota 
-
-Asistente experimental
-
-Objetos contemplativo
-
-Music Player
-
-Garra
+- Vestibles
+- Mascota 
+- Asistente experimental
+- Objetos contemplativo
+- Music Player
 
 ### Ontología orientada a objetos / tecnología orientada a objetos
+
+` Ontología orientada a objetos `
 
 Según Gemini: La Ontología Orientada a Objetos (OOO) es una corriente dentro de la filosofía contemporánea, específicamente dentro del Realismo Especulativo.
 
 El principal exponente de esta corriente es el filósofo estadounidense Graham Harman. Su trabajo busca desplazar la centralidad que la filosofía tradicional le ha dado a la conciencia humana (correlacionismo).
 
+` Tecnología Orientada a Objetos (TOO) `
 
+La Tecnología Orientada a Objetos (TOO) es un enfoque de la ingeniería de software que busca organizar el desarrollo de sistemas informáticos alrededor de la idea de objetos que combinan datos y comportamiento.
 
+### Manifiesto
+
+ ` ¿Que es un manifiesto? `
+
+ Un manifiesto es una declaración escrita de las intenciones, motivos o puntos de vista de su emisor, ya sea un individuo, un grupo, un partido político o un gobierno.
+ 
+ - Sus ideas principales
+- Sus intenciones
+- Sus valores
+- Sus posiciones frente a un problema o tema
+- Lo que propone cambiar o defender
+
+### Referentes Proyecto 03
+
+![elemploUno](./imagenes/elemploUno.png)
+![elemploDos](./imagenes/elemploDos.png)
 
 
 
