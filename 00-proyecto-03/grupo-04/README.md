@@ -12,101 +12,83 @@ INTEGRANTES
 
 ## Presentación Textual
 
-"ECOS DE GESTOS"
-
-El proyecto consiste en un objeto inerte que responde al contacto directo mediante las manos, dependiendo de la intensidad de fuerza, la acción con la cual se manipule el objeto, como respuesta de este tacto, en la pantalla que esta en frente de la persona, la grafica que se proyecta (describir la grafica) cambia justo con sonidos (describir sonidos), los cuales en conjunto generan un momento en el cual el usuario queda inmerso en el proyecto por un momento (definir cuanto tiempo).
-
-`MANIFIESTO`
-
-La máquina sentimental es un organismo artificial que responde al tacto humano como si tuviera emociones propias. Representa el intento de traducir afectos en datos; de convertir gestos en lenguaje digital.
-
-Su cuerpo, hecho de una materialidad blanda y orgánica, invita al acercamiento, pero también despierta la curiosidad por lo desconocido que habita en lo artificial.
-
-Esa mezcla de suavidad y extrañeza genera un momento de duda: el usuario no sabe si enfrentarse a un objeto inerte o a una presencia viva. En ese instante, la tecnología deja de ser solo herramienta y se vuelve territorio sensible, un espacio de descubrimiento donde lo mecánico parece respirar.
-
-La máquina no busca imitar lo humano, sino evocar emociones a través de la interacción.
-
-Cada gesto (presionar) es un lenguaje que el cuerpo humano ofrece y la máquina interpreta, devolviendo una respuesta sonora y visual que traduce ese impulso en un paisaje emocional.
-
-```
-// REVISIÓN 
-decisiones para no marearse con las posibilidades 
-FALTA CONTEXTO, EJEMPLO: CUANDO QUIERO DEPRIMIRME
-SUPER ESPECÍFICO
-MUY EXPLÍCITO
-QUE ES EL TRIUNFO DE ESTE PROYECTO
-DEFINIR BIEN
-INFINITO A UN ESPECTRO ACOTADO
-EJ: QUE ES LA CALMA
-ESPECULAR, MÁQUINA IMAGINATIVA
-```
-
-DEFINIR 4 PARÁMETROS
-- presionar suave
-- presionar intermedio
-- presionar medio tirao pa fuerte
-- presionar muy fuerte
-
-DEFINIR 4 COLORES PARA GRÁFICAS (UNA GRÁFICA REACTIVA A LOS 4 PARÁMETROS)
-- MAGENTA
-- TURQUESA
-- VERDE FLUOR
-- AZUL FLUOR
-
-DEFINIR LA EMOCIÓN/LA METÁFORA
-- CURIOSIDAD
-- CALMA = DESESTRÉS
+## Metáfora
 
 ## Inputs y Outputs
 
+---
+
 ## Planificación
 
-"CARTA GANTT"
+Como grupo planificamos que haremos en cada semana del trabajo mediante una carta gantt, vimos el presupuesto de los materiales que necesitabamos (algunos ya estaban, pero decidimos dejarlos) y por último, hicimos un diagrama de flujo del proyecto en [mermaid](https://mermaid.js.org/)
 
-"DIAGRAMA DE FLUJO"
+### Carta Gantt
 
-"PRESUPUESTO"
+### Diagrama de Flujo
 
-"BOCETOS FÍSICOS"
+```mermaid
+flowchart TB
+    n1["Pantalla prendida con algún texto (presionar para empezar)"] --> n2["Título: *Atrápame si puedes* y personajes en la parte de abajo"]
+    n2 --> n3["Empieza el juego y aparecen los personajes"]
+    n3 --> n4["seleccionar el personaje (instrucción de controles o personaje en aleatorio)"]
+    n4 --> n12["en un tiempo de 1 min 30s se debe atrapar el personaje 3 veces"]
+    n12 --> n14["lo atrapaste?"]
+    n14 --> n15["si"] & n16["no"]
+    n15 --> n17["ganaste"]
+    n16 --> n18["perdiste"]
+    n17 --> n19@{ label: "<span style=\"color:\">Vuelve al inicio (*presiona para comenzar*)</span>" }
+    n18 --> n19
+
+    n19@{ shape: rect}
+     n1:::Rose
+     n2:::Aqua
+     n3:::Lime
+     n4:::Sunset
+     n12:::Rose
+     n14:::Lime
+     n15:::YellowSoft
+     n16:::Rose
+     n17:::Lime
+     n18:::Lavender
+     n19:::Aqua
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
+    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+```
+
+### Presupuesto
+
+![Presupuesto](./imagenes/presupuesto.png)
+
+---
 
 ## Proceso y bocetos
 
-- Partimos con la idea de tomar una acción que normalmente se realiza de manera delicada y precisa, y ejecutarla de forma brusca o exageradamente rápida. La propuesta es elegir tareas cotidianas que suelen requerir cuidado, paciencia o detalle, y realizarlas de una manera totalmente opuesta: absurda, brusca o ridículamente distinta. Como si alguien intentara tejer a toda velocidad o lavarse los dientes con un objeto completamente inadecuado.
+- Primero, teníamos esta idea de máquina sentimental, donde decidimos como grupo cambiar la propuesta ya que no nos llamaba la atención y no estabamos satisfechas con el proyecto
+  - El proyecto consiste en un objeto inerte que responde al contacto directo mediante las manos, dependiendo de la intensidad de fuerza, la acción con la cual se manipule el objeto, como respuesta de este tacto, en la pantalla que esta en frente de la persona, la grafica que se proyecta (describir la gráfica) cambia justo con sonidos (describir sonidos), los cuales en conjunto generan un momento en el cual el usuario queda inmerso en el proyecto por un momento (definir cuanto tiempo).
 
-`Idea 1: Máquina ...`
+### Ideas nuevas para proyecto
 
-Una máquina que reacciona al contacto cuando la tocas suavemente, se altera o colapsa, pero si la presionas con fuerza, se calma.
+- Segundo, trabajamos el fin de semana para llegar con nuevas propuestas el día domingo 16 y definir con cual nos quedaremos.
 
-`Idea 2: Radio fantasma`
+`PROPUESTAS:`
 
-Una radio que no sintoniza estaciones reales, sino que genera un collage emocional de sonidos del entorno. Reproduce sonidos distorsionados o samples según el tono predominante. LEDs muestran visualmente las “emociones” del entorno. una radio que no comunica información, sino estados de ánimo.
+- **Marea:** es una máquina sentimental creada para ir en contra del ritmo con el que el mundo insiste en arrastrarnos. Vivimos dentro de un movimiento constante: ruido, velocidad, exigencias que no dan espacio para sentir nada con honestidad. Esta máquina nace justamente para suspender ese flujo, para ofrecer un minuto seguro donde la persona pueda bajar la intensidad, respirar y encontrarse consigo misma sin presión.
+- **La** **Máquina** **que** **Se** **Ofende** **Fácilmente:** una máquina cuyo “carácter” es extremadamente sensible. Si te acercas demasiado o la tocas con brusquedad, se “ofende”, apaga sus luces y muestra mensajes pasivo-agresivos del estilo “Ah, ok… veo que no te importo”.
+  - Lejos: te “mira” con curiosidad (luces suaves, postura tranquila).
+  - Normal: si te acercas con calma, la máquina se anima (cambia color, vibra levemente).
+  - Ofendida: si detecta un movimiento brusco o toque fuerte, se cierra emocionalmente (luces apagadas, pantalla mostrando mensajes dramáticos). Luego de unos segundos, vuelve lentamente a su estado normal.
+- **La** **Máquina** **sentimental** **que** **no** **quiere** **jugar** **contigo:** es un personaje que invita entusiastamente a jugar, pero cuando tomas su “control” activa un error intencional y se retracta. Utiliza un sensor ultrasónico para detectar cercanía y un sensor FSR en el control para identificar cuándo alguien lo toma y así gatillar la broma. Cuando la persona se aleja, el personaje vuelve a su actitud amistosa y reinicia el ciclo.
 
-`Idea 3: Máquina de resonancia sentimental`
+`PROPUESTA ELEGIDA`
 
-Usa un sensor biométrico (pulso o temperatura de la piel) para generar sonido y visuales reactivos.
-- Si el usuario está calmado, emite un sonido suave.
-- Si está nervioso, la frecuencia sube y los LEDs titilan.
+"BOCETOS FÍSICOS" ✅
 
-`Idea 4: Caja de memoria sonora`
-
-Un dispositivo que graba pequeños fragmentos de sonido cada vez que alguien se acerca (sensor de proximidad). Luego los reproduce al azar con distorsiones suaves. Cuando alguien toca o se acerca a la caja, emite esta "melodia" creada de fragmentos de grabaciones. memoria afectiva.
-
-`Idea 5: Máquina que llora`
-
-Un artefacto que “llora” agua (con una pequeña bomba) cuando detecta ciertos sonidos, como gritos o altos volúmenes. convierte el ruido del mundo en lágrimas.
-
-### Ideas para proyecto
-
-Una maquina que reacciona cuando le aplicas una fuerza ¿cuál es la reacción? ¿qué hace cuando le aplicas mucha fuerza? ¿qué hace cuando le aplicas una menor fuerza?
-
-- Punching bag, le pegas y se calma.
-- Sensores de fuerza.
-- Fluido no newtoniano.
-- Reacción de fluidos con la presión.
-- Cómo medir el impacto/velocidad de la fuerza.
-- Sensores FSR de presión. Resistencia que cambia de valor cuando se le aplica la fuerza. Sensor muy sensible, ya que es poco preciso.
-- Ver temas contingentes. que para acceder a este vivienda tengas que tener x horas de trabajo o x horas de algo.
-- Materialidad, basándose en la naturaleza de la materia. Liquidps, etc.
+---
 
 ## Etapas del código
 
