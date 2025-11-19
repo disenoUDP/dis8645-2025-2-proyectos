@@ -292,6 +292,22 @@ public:
 #endif
 ```
 
+### Conexiones
+
+|Conexión|Pin|
+|---|---|
+|FSR-1 extremo 1|-> 5V|
+|FSR-1 extremo 2|-> A0|
+|FSR-2 extremo 2|-> 5V|
+|FSR-2 extremo 2|-> A1|
+|Resistencia1 10kΩ extremo 1|-> A0|
+|Resistencia1 10kΩ extremo 2|-> GND|
+|Resistencia2 10kΩ extremo 1|-> A0|
+|Resistencia2 10kΩ extremo 2|-> GND|
+
+Preguntar si está bien!!
+![esquematico](./imagenes/esquematico.png)
+
 - Tercero, cuando logramos que arduino leyera los valores de presión del sensor, comenzamos a realizar la conexión entre arduino y p5.js.
 - El sketch fue con ayuda de la librería de Gohai:  [p5.webserial](https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
   
