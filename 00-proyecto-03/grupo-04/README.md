@@ -134,11 +134,41 @@ flowchart TB
   - Ofendida: si detecta un movimiento brusco o toque fuerte, se cierra emocionalmente (luces apagadas, pantalla mostrando mensajes dramáticos). Luego de unos segundos, vuelve lentamente a su estado normal.
 - **La** **Máquina** **sentimental** **que** **no** **quiere** **jugar** **contigo:** es un personaje que invita entusiastamente a jugar, pero cuando tomas su “control” activa un error intencional y se retracta. Utiliza un sensor ultrasónico para detectar cercanía y un sensor FSR en el control para identificar cuándo alguien lo toma y así gatillar la broma. Cuando la persona se aleja, el personaje vuelve a su actitud amistosa y reinicia el ciclo.
 
-`PROPUESTA ELEGIDA`
+### `PROPUESTA ELEGIDA`
 
 - Máquina sentimental "Atrápame si puedes"
-  
-"BOCETOS FÍSICOS" ✅
+
+`PROPUESTA VISUAL`
+
+- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
+- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
+- Tipografía: pixel-retro
+- Máquina física: control retro hecho con impresión 3D
+- Cursor: red atrapa hadas hecho con pixel art
+- Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
+
+![Hadas](./imagenes/haditas.gif)
+
+![choose aaron](./imagenes/chooseAaron.gif)
+
+![choose misaa](./imagenes/chooseMisa.gif)
+
+![choose mateo](./imagenes/chooseMateo.gif)
+
+![choose janis](./imagenes/chooseJanis.gif)
+
+|Hada|Volando|Estático|
+|---|---|---|
+|![aaron](./imagenes/aaron.png)|![aaron](./imagenes/aaronVolando.gif)|![aaron](./imagenes/aaronEstatico.gif)|
+|![misa](./imagenes/misa.png)|![misa](./imagenes/misaVolando.gif)|![misa](./imagenes/misaEstatico.gif)|
+|![mateo](./imagenes/mateo.png)|![mateo](./imagenes/mateoVolando.gif)|![mateo](./imagenes/mateoEstatico.gif)|
+|![janis](./imagenes/janis.png)|![janis](./imagenes/janisVolando.gif)|![janis](./imagenes/janisEstatica.gif)|
+
+|Paisaje|Inicio|
+|---|---|
+|![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
+|insertarimagen|![inicio](./imagenes/inicio2.gif)|
+|insertarimagen|![inicio](./imagenes/inicio3.gif)|
 
 ---
 
