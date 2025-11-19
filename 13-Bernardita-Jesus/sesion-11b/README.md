@@ -46,7 +46,7 @@ Muy interesante todo ese tema de lo que son y no son objetos, y trabajar en el l
 
 [transducción](https://es.wikipedia.org/wiki/Transducci%C3%B3n#): La transducción, por definición, es la transformación de un tipo de señal o energía en otra de distinta naturaleza. Más específicamente, transducción es un término que se utiliza en diversos campos.
 
-[Mímesis:](https://es.wikipedia.org/wiki/M%C3%ADmesis): es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
+[Mímesis](https://es.wikipedia.org/wiki/M%C3%ADmesis): es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
 
 [Vanguardias artísticas](https://es.wikipedia.org/wiki/Vanguardismo): Alude también al conjunto de movimientos artísticos y literarios que se formaron a comienzos del siglo XX en Occidente que rompieron con la tradición académica y buscaron la innovación.
 
