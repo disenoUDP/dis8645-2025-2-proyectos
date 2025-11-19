@@ -41,7 +41,11 @@ Luchando contra el sueño, prefiero guardar energías para poder prestar atenci�
 
 los planes no salieron tan bien y me encuentro rellenando mi bitácora a pocas horas de que la evalúen... vamos con fé de que al menos no tendré 0 de puntaje en esta ocasión
 
-para esta sesión hay encargo, que corresponde al nº 17, dice así: *"cada persona debe subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra."*
+para esta sesión hay encargos, el primero corresponde al nº 17, dice así: *"cada persona debe subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra."*
 
 ## Claudia González Godoy
+
+segundo encargo de esta sesión, nº18, que dice así: *"cada persona debe subir taxonomía detallada de sensores, actuadores, software y hardware utilizado en 1 obra exhibida en la Bienal de Artes Mediales 2025, citando correctamente a las fuentes."*
+
+
 
