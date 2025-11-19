@@ -14,6 +14,8 @@ Martes 04 de noviembre, 2025
 
 ---
 
+### Fundamentos del aprendizaje automático
+
 ml5.js
 
 Admega3283 microcontrolador que se puede programar.
@@ -32,11 +34,15 @@ GAN, cuando una foto creada con una IA confunde a la misma IA, por Ian Goodfello
 
 TPU, Unidades de procesamiento Tensorial.
 
-Mateo nos mostró los avances de su proyecto de título.
+---
 
-dataset de montones de Letras en afiches políticos, hizo su propia ia que genera imagenes con imagenes que el va metiendo, y se forMA COMO UN FLUJO generativo de creacion de letras.
+### Mateo nos mostró los avances de su proyecto de título
 
-Google Collab es un préstamo de computadora.
+Es un dataset compuesto por montones de letras tomadas de afiches políticos chilenos. 
+
+Programó todo un sistema para organizar tanto los afiches como las letras. Con eso entrenó su propia IA, que genera imágenes a partir del material que él va incorporando, formando un flujo generativo de creación tipográfica.
+
+Google Colab funciona como un préstamo de computadora.
 
 ---
 
