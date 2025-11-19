@@ -311,14 +311,55 @@ void loop() {
 ```
 ---
 
-### Proceso Actualizado
+## Proceso proyecto Actualizado
 
 - Como grupo decidimos cambiar el sensor de gestualidad por los sensores de fuerza / presión que habíamos comprado, ya que el sensor de gestualidad estaba muy díficil y no pudimos hacerlo funcionar, no leía los gestos de la mano.
 - También decidimos que usaremos p5.js para hacer el juego y poder conectarlo con arduino.
 
 ### Presentación Textual Actualizado
 
+`"Atrápame si puedes"` máquina interactiva que funciona con dos sensores de fuerza/presión. El usuario presiona los sensores para controlar una red "atrapahadas". El objetivo del juego es atrapar a las hadas.
+
+En el juego, atrapar al personaje es totalmente posible, pero la dificultad surge del propio sistema; que sabotea al jugador con controles que funcionan al revés. La desorientación provoca una frustración cómica que pone al jugador en el límite entre el control y el caos.
+
+La máquina representa el desajuste: el usuario quiere atrapar un objetivo claro, pero la interfaz responde de forma particular. Aparece el humor, la frustración y el esfuerzo por alcanzar una meta, donde puede torcerse por detalles ridículos y aun así seguimos intentándolo.
+
 ### Metáfora Actualizada
+
+- La máquina es una representación tecnológica del logro frustrado, esa sensación que parece estar a punto de alcanzarse, pero que se rompe por un detalle absurdo. Representa esa experiencia humana de perseguir algo que siempre se escapa (movimiento involuntario, un error, un control invertido). Una máquina que te hace sentir querer algo y perderlo por un gesto mínimo.
+
+`Sentimientos`
+
+- Sensación de descontrol o confusión
+- Frustración cómica
+- Producto del control invertido, genera: sorpresa, desorientación.
+- El juego provoca risa, molestia, esfuerzo y competencia.
+
+### Inputs y outputs
+
+`Inputs (entradas)`
+
+La máquina recibe la presión aplicada por el usuario sobre los dos sensores de fuerza. Cada sensor entrega un valor analógico que indica intensidad de la presión, interpretándose como comandos de movimiento para la red atrapahadas. El sistema también recibe la intención de dirección del usuario, que se traduce en patrones de presión en dos diferentes direcciones.
+
+1. Presión del usuario sobre los sensores FSR
+   - El jugador presiona los sensores de fuerza (botones) para mover al personaje.
+   - La cantidad de fuerza aplicada se traduce en velocidad o dirección.
+   - Selección inicial del personaje
+   - Antes de jugar, el usuario elige qué personaje quiere intentar atrapar.
+
+La máquina toma como input la descoordinación, el error o la insistencia del jugador, todo eso afecta en cómo la red "atrapahadas" se mueve.
+
+`Outputs (salidas)`
+
+La máquina genera movimientos invertidos o desviados de la red según los valores recibidos, entregando desplazamientos que no coinciden con la dirección esperada por el usuario. También produce evasiones automáticas del personaje cuando detecta una presión que coincide con un intento de atrape. El resultado final son respuestas erróneas, escapes programados y un control que no deja precisión del usuario.
+
+2. Movimiento del personaje en pantalla
+   - El personaje se escapa cuando el jugador está cerca.
+
+3. Movimiento de la red atrapahadas en pantalla
+   - Red que se maneja mediante los sensores de fuerza.
+
+4. Cambios en dirección, velocidad o animaciones del personaje.
 
 ---
 
