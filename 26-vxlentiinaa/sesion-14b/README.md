@@ -206,7 +206,7 @@ Una vez elegido, en este caso usaré OSC ya que es especial para animaciones gen
   
 Aquí es donde el DAT lee el sensor y sus valores para luego jugar con los parámetros de las visuales.
 
-insertar imagen
+![touch designer](./imagenes/touchdesignerConArduino.png)
 
 ### Asignación de entradas de Arduino a elementos visuales de Touchdesigner
 
@@ -301,9 +301,11 @@ movimiento ondulante (wave)
 | SDA            | SDA (A4 en UNO  |
 | SCL            | SCL (A5 en UNO  |
 
-Fotos del sensor
+![sensor 1](./imagenes/sensorDeGestos.jpeg)
 
-`Código básico para sensor`
+![sensor 2](./imagenes/sensorDeGestos2.png)
+
+### Código básico para sensor
 
 ```cpp
 #include <Wire.h>
