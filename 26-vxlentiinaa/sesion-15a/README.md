@@ -784,4 +784,66 @@ flowchart TB
 
 ### Presupuesto Actualizado
 
+![presupuesto actualizado](./imagenes/presupuesto.png)
+
 ### Bocetos Físicos Actualizado
+
+### Aarón
+
+![aaron](./imagenes/aaron.png)
+
+![aaron estatico](./imagenes/aaronEstatico.gif)
+
+![aaron volando](./imagenes/aaronVolando.gif)
+
+---
+
+### Misaaa
+
+![misa](./imagenes/misa.png)
+
+![misa estatico](./imagenes/misaEstatico.gif)
+
+![misa volando](./imagenes/misaVolando.gif)
+
+---
+
+### Janis
+
+![janis](./imagenes/janis.png)
+
+![janis estatico](./imagenes/janisEstatica.gif)
+
+![janis volando](./imagenes/janisVolando.gif)
+
+---
+
+### Mateo
+
+![mateo](./imagenes/aaron.png)
+
+![mateo estatico](./imagenes/mateoEstatico.gif)
+
+![mateo volando](./imagenes/mateoVolando.gif)
+
+---
+
+### Inicio juego y hadas
+
+![inicio 1](./imagenes/inicio1.gif)
+
+![inicio 2](./imagenes/inicio2.gif)
+
+![haditas](./imagenes/haditas.gif)
+
+---
+
+### Choose your character
+
+![choose aaron](./imagenes/chooseAaron.gif)
+
+![choose misa](./imagenes/chooseMisa.gif)
+
+![choose janis](./imagenes/chooseJanis.gif)
+
+![choose mateo](./imagenes/chooseMateo.gif)
