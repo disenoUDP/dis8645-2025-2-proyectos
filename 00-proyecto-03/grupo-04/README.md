@@ -55,6 +55,17 @@ La máquina genera movimientos invertidos o desviados de la red según los valor
 
 4. Cambios en dirección, velocidad o animaciones del personaje.
 
+### Bill of materials
+
+|Nombre componente|Características|Cantidad|Especificaciones|
+|---|---|---|---|
+|Sensor de fuerza|FSR402|2|una resistencia que cambia su valor (en ohmios Ω) dependiendo de la cantidad que se presiona.|
+|Arduino Uno|R4 minima o |1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
+|Pantalla Dell|14 pulgadas|1|pantalla de vale ruz|
+|Carcasa|Impresión 3D|1|Filamento: |
+|Plinto| | | |
+|Cables| | | |
+
 ---
 
 ## Planificación
@@ -62,6 +73,10 @@ La máquina genera movimientos invertidos o desviados de la red según los valor
 Como grupo planificamos que haremos en cada semana del trabajo mediante una carta gantt, vimos el presupuesto de los materiales que necesitabamos (algunos ya estaban, pero decidimos dejarlos) y por último, hicimos un diagrama de flujo del proyecto en [mermaid](https://mermaid.js.org/)
 
 ### Carta Gantt
+
+### Presupuesto
+
+![Presupuesto](./imagenes/presupuesto.png)
 
 ### Diagrama de Flujo
 
@@ -99,10 +114,6 @@ flowchart TB
     classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
 ```
 
-### Presupuesto
-
-![Presupuesto](./imagenes/presupuesto.png)
-
 ---
 
 ## Proceso y bocetos
@@ -125,26 +136,133 @@ flowchart TB
 
 `PROPUESTA ELEGIDA`
 
+- Máquina sentimental "Atrápame si puedes"
 "BOCETOS FÍSICOS" ✅
 
 ---
 
 ## Etapas del código
 
-- Primero partimos haciendo un código en Arduino Ide, el cual lee los valores de presión de los sensores, para que después mande los datos a P5.js
+- Primero, hicimos un pseudocódigo de lo que queríamos que hiciera el sensor de fuerza.
+
+`PSEUDOCÓDIGO`
 
 ```cpp
+Iniciar variables:
+    estados del sensor = presion / sin presion
+    objetivo = posicion inicial
 
+Cuando el arduino esté encendido:
+    
+    Usuario presionar los sensores y el arduino leerá los datos de los sensores
+
+    SI hay presion == sensor 1 leido
+        mostrar_mensaje: Valor
+
+    NO hay presion == sensor 1 leido
+        mostrar_mensaje: Valor
+
+    SI hay presion == sensor 2 leido
+        mostrar_mensaje: Valor
+
+    NO hay presion == sensor 2 leido
+        mostrar_mensaje: Valor
+
+Arduino lee los valores
+    Mandar datos a p5.js
+    enviar valores a p5.js
+
+enviar valor ejeX.valorCrudo
+luego enviar ejeY.valorCrudo
 ```
 
-este sketch fue hecho con ayuda de la librería de Gohai
-//se encuentra en ek siguiente link //https://editor.p5js.org/valentina.chavez1/sketches/_DhKZKhwd
-//conexión de datos de arduino hacia p5 utilizando un sensor de fuerza
-//este sensor lee parametros como izquierda-derecha, arriba-abajo
-//proyecto de juego realizado para el taller de diseño de maquinas computacionales 
-//proyecto examen taller vertical noviembre-diciembre 2025
-//por Valentina Chavez 
+- Segundo, partimos haciendo un código en Arduino Ide, el cual lee los valores de presión de los sensores, para que después mande los datos a P5.js (Nos ayudó Aarón a ordenar el código)
 
+### `AtrapameSiPuedes.ino`
+
+```cpp
+// incluir 1 clase para recibir datos de sensores
+// incluir 1 clase para emitir datos segun eso
+
+#include "SensorFuerza.h" // incluye las clases SensorFuerza y Puntito
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+// Puntito puntito;
+
+void setup() {
+  Serial.begin(9600);
+  ejeX.configurar(A0);   // se asigna un sensor al pinA0
+  ejeY.configurar(A1);   // se asigna un sensor al pinA1
+}
+
+void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
+  ejeX.leer();
+  ejeY.leer();
+
+  Serial.println(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
+  Serial.println(ejeY.valorCrudo);
+
+  Serial.print("valorX");
+  Serial.print(",");
+  Serial.println("valorY");
+
+  delay(40);
+  // enviar valores a p5
+  // enviar valor ejeX.valorCrudo
+  // luego enviar ejeY.valorCrudo
+  // Serial.write(ejeX.valorCrudo, ejeY.valorCrudo);
+}
+```
+
+### `SensorFuerza.cpp`
+
+```cpp
+#include "SensorFuerza.h"
+// incluye el .h de SensorFuerza
+
+SensorFuerza::SensorFuerza() {} //constructor
+
+SensorFuerza::~SensorFuerza() {} // destructor
+
+void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
+  SensorFuerza::patita = nuevaPatita;
+  pinMode(SensorFuerza::patita, INPUT);  // pin donde se encuentra el sensor
+}
+
+void SensorFuerza::leer() {   // funcion para leer el sensor
+  SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
+                                                                // y cada vez que se llama .leer, se actualiza el valor
+}
+```
+
+### `SensorFuerza.h`
+
+```
+#ifndef SENSOR_FUERZA_H // si no esta Sensor fuerza definido
+#define SENSOR_FUERZA_H // aqui lo definimos 
+
+#include <Arduino.h>  // incluimos las funciones basicas de arduino
+
+class SensorFuerza {     // definimos la clase sensor fuerza
+public:
+  SensorFuerza();  // constructor
+  ~SensorFuerza(); // destructor
+
+  void configurar(int nuevaPatita); // guarda en que pin se encuentra el sensor
+  void leer();  // declara la funcion para leer el sensor
+
+  int patita;       // guarda el numero del pin (A0,A1)
+  int valorCrudo;   // guarda el numero del sensor, entre 0 a 1023 (segun presion)
+  int valorMapeado; 
+};
+
+#endif
+```
+
+- Tercero, cuando logramos que arduino leyera los valores de presión del sensor, comenzamos a realizar la conexión entre arduino y p5.js.
+- El sketch fue con ayuda de la librería de Gohai
+  
 ```p5.js
 const BAUDRATE = 9600;  //velocidad del puerto
 let port;               //variable del puerto
@@ -238,6 +356,98 @@ function connectBtnClick() {
   }
 }
 ```
+
+### ¿Cómo conectamos Arduino con P5.js?
+
+- Primero, vimos estos videos para entender la conexión entre Arduino y p5.js  [
+Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y) y [p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch](https://www.youtube.com/watch?v=feL_-clJQMs&t=1142s) 
+
+- Luego, debemos probar la conexión serial. Pero antes, hay que descargar un programa intermediario que hace que pueda leer el puerto serial desde una página web, que por motivos de seguridad están bloqueados. Este es el link de descarga: (https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2).
+
+`P5.serialcontrol`
+
+- Esta aplicación ejecuta p5.serialserver, que permite la conectividad entre dispositivos serie locales y aplicaciones web mediante la biblioteca p5.serialport de p5.js.
+- Nos dimos cuenta que esta aplicación no funcionaba, no encontraba el puerto serial, por lo que no se podía hacer la conexión.
+
+INSERTAR IMAGEN
+
+- Le pedimos ayuda a Aarón con respecto a la aplicación, nos recomendó usar otra biblioteca para poder conectar Arduino con p5.js
+
+### `p5.webserial.js de Gohai`
+
+(https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
+
+Esta es una biblioteca para p5.js que añade compatibilidad para interactuar con dispositivos serie mediante la API Web Serial, que actualmente está compatible con Chrome y Edge.
+
+### ¿Cómo hacer la conexión?
+
+- Primero hay que descargar este archivo:(https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js) o pegarlo en la head del html, debajo de la línea que carga p5 en p5.js.
+
+```cpp
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
+
+- Segundo crear una variable global y asignarle un nuevo puerto de serie dentro de la configuración.
+
+```cpp
+let port;
+
+function setup() {
+  port = createSerial();
+  // ...
+```
+
+IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un formato recomendado es 123,456\n (dos valores separados por una coma y un salto de línea).
+
+- p5.js escucha el puerto usando la librería:
+
+```cpp
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
+
+- `p5.js` lee cada línea y actualiza las variables.
+- `p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
+- Para que arduino envíe los datos correctos a p5 se debe utilizar el siguiente formato:
+
+```cpp
+#include "SensorFuerza.h"
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+
+void setup() {
+  Serial.begin(9600); //puerto serial, debe coincidir con el de p5
+  ejeX.configurar(A0); //pin que lee los datod del eje x
+  ejeY.configurar(A1); //pin que lee los datos del eje y 
+}
+
+void loop() {
+  ejeX.leer();
+  ejeY.leer();
+
+//valores crudos del sensor 
+  int x = ejeX.valorCrudo;
+  int y = ejeY.valorCrudo;
+
+//lee los valores en la consola
+  Serial.print(x);
+  Serial.print(",");
+  Serial.println(y);
+
+  delay(40);
+}
+```
+
+- lo que se imprime se ve así en el Serial Monitor:
+
+```cpp
+12,30
+14,45
+20,50
+...
+```
+
+---
 
 ## Etapas de prototipo
 
