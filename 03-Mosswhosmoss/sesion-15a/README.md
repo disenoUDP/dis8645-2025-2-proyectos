@@ -18,6 +18,7 @@ Logre que mostrara "hello world!", ahora me puse a jugar y dice "change da world
 
 Le agregue imagenes, todo funciona!!!!!!
 
+El seba logro hacer funcionar el codigo de el reproductor mp3, yo como una vil rata solo pase el codigo a las clases, debido a que era un gran logro decidi que WEBO_0_4_0 pasara a la version 0_4_2 porque era un gran logro.
 
 Intente hacer el temporizador, no entendi nada, nuevamente las matematicas y los numeros mis mayores haters 
 
