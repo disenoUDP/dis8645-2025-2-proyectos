@@ -2,7 +2,7 @@
 
 ## martes 21 de octubre
 
-### esta es mi redención de la bitácora, esta vez si la haré a conciencia y con constancia
+### vamos... esta vez intentaré tener una mejor constancia documentando mi proceso en la bitácora
 
 ![aceptacion](./imagenes/aceptacion.jpg)
 
@@ -14,11 +14,32 @@
 
 🕹️ hablamos sobre lo que se viene: la tercera evaluación antes del examen y las posibilidades que traerá diseño abierto
 
+🕹️ la tercera entrega será el 21 de noviembre (sesión 15b), donde se evaluará un primer avance significativo del proyecto 03
+
 🕹️ discutimos sobre cómo podemos organizarnos para los nuevos grupos de la tercera evaluación y qué podemos hacer
 
 ### inspiración para siguiente proyecto
 
-acá agregar los links del discord
+algunos links de la sesión de hoy... pretendo ordenarlos mejor y documentar más sobre la información que se encuentra en ellos
+
+créditos a Camila Parada, ya que saqué los links desde su repositorio :-)
+
+📎 http://uselesspress.org/things/call-to-wait/
+
+📎 https://bogost.com/writing/blog/latour_litanizer/
+
+📎 https://www.lukedubois.com/
+
+📎 https://www.lukedubois.com/projects-3/learningmachines
+
+📎 https://yeseul.com/
+
+📎 https://sfpc.study/ (https://sfpc.io/)
+
+📎 https://yeseul.com/Slow-Dimming-Study-Rice-Dimmer
+
+📎 https://vimeo.com/114414122
+
 
 ## segundo bloque de clases
 
@@ -26,6 +47,6 @@ acá agregar los links del discord
 
 🕹️ "Caminar es un objeto", eposición de Gabriela Pérez
 
-🕹️ Juan Downey
+🕹️ Juan Downey --> investigar más sobre este gran ser humano chileno
 
 agregar más links de lo último que vimos
