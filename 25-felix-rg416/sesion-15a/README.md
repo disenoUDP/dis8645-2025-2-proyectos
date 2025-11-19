@@ -57,8 +57,16 @@ Estuve tratrando de hacer el código de los rangos en clases, pero no funcionó.
 
 [Codigo de rangos en clases](./manivelaFinalMentira/)
 
+No identifica los pasos cuando corresponde, no identifica el rango ni las vueltas.
+
 Modifiqué el código de MCIelectronics para que funcione con rangos.
 
 [Encoder con rangos sin clases](./encoderConRangos/)
+
+En ese código, entrega todo lo que le pido (pasos, vueltas y rangos).
+
+Funciona perfecto, pero no está en clases. No sé si eso realmente importa, pero me gustaría que estuviera en clases para que sea un poco más ordenado.
+
+Tal vez no aporte ni quite.
 
 Traté de poner notas para que se entienda mejor.
