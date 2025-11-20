@@ -15,37 +15,39 @@ El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra am
 
 ### Metafora
 
-- Profundizar.
-- 
+La Responsabilidad, La libertad humana (de intervenir o abandonar) queda atrapada y anulada por la respuesta mecánica e inmutable (el bucle de apego) que esa misma libertad puso en marcha.
+
+En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecanica, generando pena y culpa, ante lo que seria la recreacion de un mono que imita ser uno verdadero. Esta respuesta mecanica deja a la persona en un bucle de apego constante que terminara siempre en tragedia.
+
+En varios casos, cuando se genera un vinculo afectivo con un animal, la union emocional es tan fuerte, que cuando hay un cambio en esta relacion, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir mas, en este caso jorge. 
+
 ### carta gantt 
 
 | Tareas / Sesión                                       | 14a | 14b | 15a | 15b | 16a | 16b | 17a | 17b |
 |---------------------------------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Definir Proyecto                                        |     |     |     |     |     |     |     |     |
-| Redacción narrativa proyecto                            |     |     |     |     |     |     |     |     |
-| Mapa de comportamiento (flowchart emocional)            |     |     |     |     |     |     |     |     |
-| Investigación de sensores y actuadores necesarios       |     |     |     |     |     |     |     |     |
-| Pruebas de sensores (ultrasonido / presión)             |     |     |     |     |     |     |     |     |
-| Pruebas de motores/servos                               |     |     |     |     |     |     |     |     |
-| Módulo MP3 y audios                                     |     |     |     |     |     |     |     |     |
-| Definición de interacciones físicas (cómo abraza / fuerza) |  |     |     |     |     |     |     |     |
-| Diseño de prototipo (bocetos + ergonomía)              |     |     |     |     |     |     |     |     |
-| Elección y compra de materiales (felpa, relleno)    |     |     |     |     |     |     |     |     |
-| Prototipado para distribución interna  | |     |     |     |     |     |     |     |
-| Integración de sensores con arduino                 |     |     |     |     |     |     |     |     |
-| Modelado 3D – esqueleto y funcionamiento interno        |     |     |     |     |     |     |     |     |
-| Modelado 3D para molde / forma exterior de la tela      |     |     |     |     |     |     |     |     |
-| Programación base del comportamiento  | | | | | | | | |
-| Desarrollo adicional de código / ajustes                |     |     |     |     |     |     |     |     |
-| Montaje interno versión 1 (cables, servos, sensor)      |     |     |     |     |     |     |     |     |
-| Prototipado parte exterior (forro de Jorge)             |     |     |     |     |     |     |     |     |
-| Costura / carcasa                             |     |     |     |     |     |     |     |     |
-| Pruebas de interacción real con usuario                 |     |     |     |     |     |     |     |     |
-| Ajustes de comportamiento (tolerancia, intensidad, frases) | | | | | | | | |
-| Confección prototipo final         |     |     |     |     |     |     |     |     |
-| Montaje final completo                                  |     |     |     |     |     |     |     |     |
-| Documentación Proyecto                                   |     |     |     |     |     |     |     |     |
-| Redacción README                                         |     |     |     |     |     |     |     |     |
+| Definir Proyecto                                        |  x  |  x  |     |     |     |     |     |     |
+| Redacción narrativa proyecto                            |  x  |     |     |     |     |     |     |     |
+| Mapa de comportamiento (flowchart emocional)            |  x  |     |     |     |     |     |     |     |
+| Pruebas de sensores (ultrasonido / presión)             |     |     |  x  |  x  |     |     |     |     |
+| Pruebas de motores/servos                               |     |     |  x  |  x  |     |     |     |     |
+| Módulo MP3 y audios                                     |     |     |  x  |  x  |     |     |     |     |
+| Definición de interacciones físicas (cómo abraza / fuerza) | x | x  |     |     |     |     |     |     |
+| Diseño de prototipo (bocetos + ergonomía)              |  x  |  x  |  x   |     |     |     |     |     |
+| Prototipado para distribución interna                  |     |     |  x  |  x  |     |     |     |     |
+| Integración de sensores con arduino                     |    |     |  x  |  x  |     |     |     |     |
+| Modelado 3D                                             |     |  x  |  x  |  x  |  x  |  x  |  x  |     |
+| Pseudocódigo                                            |  x  |  x  |     |     |     |     |     |     |
+| Desarrollo de código                                    |     |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
+| Montaje interno versión 1 (cables, servos, sensor)      |     |     |  x  |  x  |     |     |     |     |
+| Prototipado parte exterior (patrones de Jorge)          |     |     |  x  |  x  |  x  |  x  |     |     |
+| Elección y compra de materiales (felpa, relleno)        |     |     |     |     |  x  |  x  |     |     |
+| Costura / carcasa                                       |     |     |     |  x  |  x  |  x  |  x  |  x  |
+| Pruebas de interacción real con usuario                 |     |     |     |  x  |  x  |  x  |  x  |  x  |
+| Ajustes de comportamiento (tolerancia, intensidad, frases) |     |     |  x  |  x  |  x   |  x  |  x  |  x  |
+| Confección prototipo final                              |     |     |     |     |  x  |  x  |  x  |  x  |
+| Montaje final                                           |     |     |     |     |     |     |     |     |
+| Documentación Proyecto                                  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
+| Redacción README                                        |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
 
 
 ### Bill of Materials 
@@ -109,4 +111,17 @@ Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot
 
 ### Prototipado
 
-agregar fotos, procesos, etc.
+![planimetría de la vértebra](./imagenes/planim.png)
+
+![foto de la vértebra](./imagenes/vertebra.png)
+
+![gif de la probeta 1](./imagenes/vertebra-probeta1.gif)
+
+![gif probeta 1 otra prueba](./imagenes/vertebra-probeta1b.gif)
+
+![vértebra v2](./imagenes/vertebra-v2.png)
+
+![probeta de la vertebra-v2](./imagenes/vertebra-v2-ver.gif)
+
+
+
