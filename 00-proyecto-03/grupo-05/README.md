@@ -187,7 +187,9 @@ Antes de hacer funcionar el aparato hay que corroborar que este se encuentre con
 
 ### ⋅⋯⋯⋅ Contexto de uso ⋅⋯⋯⋅
 
-Esta máquina está para ser pensada como un "Artículo de broma". 
+El artefacto no ha sido planificado para utilizarlo en un entorno preciso (o situación en particular), sin embargo, al momento de ahondar y reflexionar sobre el contexto en el que podría funcionar serán en espacios libres de formalidad en los que se pueda presentar como una *sorpresa* sin generar efectos adversos en los usuarios. Por ejemplo, emociones como la ira, tristeza, entre otros.
+
+Si bien la intención principal es ocasionar decepción, no es con intenciones malintencionadas ni perversas, puesto que se explora lo *irónico* y chistoso ante la experiencia: ir creando e incrementado una expectativa ante el misterio de la funcionalidad de la máquina cuyo desenlace se activa tras el intercambio entre esfuerzo físico para liberar humo.
 
 ***
 
