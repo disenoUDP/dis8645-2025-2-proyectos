@@ -58,6 +58,12 @@ Yo estuve ordenando los componentes para que queden bien distribuidos y funcione
 
 **Millis**
 
+¿Por qué usar millis para el temporizador?
+
+Con delay, el Arduino se detiene por completo. Se congelan los sensores, la pantalla, los motores y nada avanza, porque el flujo queda en pausa esperando.
+
+En cambio, con millis, el sistema funciona de manera asíncrona. Permite ejecutar múltiples acciones al mismo tiempo y seguir actualizando la pantalla, los motores y los sensores sin bloquear el resto del comportamiento.
+
 **Que el temporizador se detenga cuando el valor de segundos llegue a 0**
 
 Teníamos la variable de segundos definida en el setup.
