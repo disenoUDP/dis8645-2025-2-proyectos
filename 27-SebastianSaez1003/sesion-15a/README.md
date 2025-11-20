@@ -104,3 +104,38 @@ delay(4000);
 A, también cambie el nombre del archivo a exactamente 0001.mp3 que puede haber ayudado.
 
 De esta manera quedó el WEBO_0_4_0 que estará subido en el repositorio, que fue actualizado desde la última versión que me había pasado el Morgan que seria el WEBO_0_3_5.
+
+Bueno, como para dejar cerrado el dia de trabajo en el LID con Camila, Morgan y Josefa de mi grupo nos pusimos a declarar que es lo que podría estar faltando respecto a los componentes para el viernes, quedamos con la siguiente lista:
+
+Display:
+1. Confirmar que la mascota virtual y un texto puedan coexistir, sino lloramos.
+2. Confirmar que el temporizador puede ser traído desde el archivo del botón, para usarlo como un texto que salga en el display
+3. Confirmar que no nos está usando toda la ram los bitmaps
+
+LED:
+1. Confirmar que los leds no pierden potencia por estar el mismo pin, sino vamos a tener que usar varios pines
+
+Motor:
+1. Definir el peso que va a ser puesto al motor
+2. Acordarse que solo se active cuando hayan pasado 30 segundos aprox
+
+Botón:
+1. Ver soldar y/o hacerle una base
+2. Millis (Examen)
+3. Hacer que el temporizador para cuando llegue a 0
+4. Ver que si se mantiene presionado, que no sume infinitamente 5s.
+
+Sensor SD:
+1. Hacer que unas variables si funcionen en el .h en vez del cpp
+
+Sensor Tilt
+1. Pasar codigo que funcionaba e integrarlo a las clases
+2. Hacer que en el .ino este sea un IF de todo lo demás, si no esta inclinado, recién podría ocurrir todo lo demás
+
+Bitmaps
+1. Pasarlos a bitmaps, asegurarse que sean chicos, pa que no ocupen a pantalla entera
+
+Y también establecimos algunas de las interacciones definitivas para seguir el chiste de nuestra máquina, entre ellos se encuentran:
+ 
+- El movimiento del motor debería ser aleatorio, esto es inconveniente, refiriéndonos a que el momento en el que se active el motor debería ser dentro de algún rango de tiempo que el usuario no conoce, para que no pueda estar absolutamente preparado para que ocurra, como idea vamos a hacer un funcionamiento random desde 10 hasta 45 segundos desde la última activación del motor para que se pueda volver a activar.
+
