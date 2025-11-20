@@ -98,7 +98,6 @@ Los componentes definidos para nuestra máquina son los siguientes:
 3. Suelta vapor al alcanzar suficiente cantidad de vueltas.
 4. Se reinicia
 
-
 #### E) Motor vibrador
 1. Asociar a valores de pasos determinados alcanzados por manivela
 2. En un punto medio de progreso (60%) se activa y aumenta su intensidad a medida que avanza
@@ -122,7 +121,13 @@ Los componentes definidos para nuestra máquina son los siguientes:
 
 ### ⋅⋯⋯⋅ Diagrama de flujo ⋅⋯⋯⋅
 
-Texto
+``` mermaid
+flowchart TD
+        A(["Start"])
+        A --> B{"Decision"}
+        B --> C["Option A"]
+        B --> D["Option B"]
+```
 
 ### ⋅⋯⋯⋅ Bill of Materials ⋅⋯⋯⋅
 
