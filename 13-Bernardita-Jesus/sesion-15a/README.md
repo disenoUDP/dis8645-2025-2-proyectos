@@ -120,6 +120,31 @@ Se agregan 5 s cuando el botón se presiona por primera vez
 
 No vuelve a sumar hasta que el botón se suelte y se presione nuevamente
 
+**Según ChatGPT, el código deberíamos hacerlo así:**
+
+```cpp
+int boton = 2;
+int segundos = 0;
+
+bool estadoActual = LOW;
+bool estadoAnterior = LOW;
+
+void setup() {
+  pinMode(boton, INPUT_PULLUP); 
+}
+
+void loop() {
+  estadoActual = digitalRead(boton);
+
+  // Detección de flanco: pasa de HIGH a LOW (botón presionado)
+  if (estadoActual == LOW && estadoAnterior == HIGH) {
+    segundos += 5;        // Suma 5 s UNA sola vez
+  }
+
+  estadoAnterior = estadoActual; 
+}
+```
+
 ### Palabras importantes
 
 [Alginato](https://es.wikipedia.org/wiki/Alginato): El alginato es un polímero glicosídico constituido por los monosacáridos D-manurónico y L-gulurónico y es extraído de las algas pardas pertenecientes a la clase filogénica Phaeophyceae. En odontología, forma parte de la masa utilizada para obtener impresiones de los dientes y de los tejidos blandos adyacentes. Esta masa está compuesta de alginato y sales de calcio que, tras su preparación, ofrece un tiempo de trabajo entre 3 a 6 minutos. 
