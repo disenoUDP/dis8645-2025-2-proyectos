@@ -105,3 +105,12 @@ delay(4000);
 La unica diferencia hasta el mmomento entre funcionamiento fuerte y debil es el "player.play" que la configuracion numerica definiria el audio a sonar.
 
 Luego de hacer esta explicacion se hicieron unas minimas correcciones (mostradas en la difinicion) que nos llevo a la version 0_4_3
+
+El seba hizo la versión 0_4_4 y la 0_4_5
+
+Descubrimos que ninguna de estas versiones funcionan correctamente por el reproductor SD
+
+ahora dia jueves 20 a las 17 hrs, no logramos solucionarlo correctamente.
+
+
+
