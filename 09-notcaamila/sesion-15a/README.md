@@ -10,6 +10,13 @@ Estoy enfocándome en desarrollar la carcasa de nuestro proyecto. Hoy modelé en
 
 A partir de lo anterior modelé una carcasa específicamente para el display, ya que mi proceso para llegar a la carcasa final parte desde modelar parte por parte los lugares donde irán los componentes del proyecto. Hice dos versiones de la carcasa, ya que para la primera no consideré el relieve de los pines del display. 
 
+![fotografía case V1](./imagenes/displaycaseV1.JPG)
+
+En la imagen se puede ver que los pines impiden que el display entre por completo al case. En base a este error desarrollé un nuevo modelado.
+
+![fotografía case V2](./imagenes/displaycaseV2_1.jpg)
+
+![fotografía case V2](./imagenes/displaycaseV2_2.jpg) 
 
 
 ### labores como integrante del grupo 0
