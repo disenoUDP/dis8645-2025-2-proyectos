@@ -66,7 +66,7 @@ Aunque funcionan por separado, comparten una lógica emocional:
 
 Durante el proyecto, utilizamos una planificación modular por etapas. Aunque la Carta Gantt fue diseñada inicialmente, el cronograma fue ajustándose, ya que algunas decisiones técnicas (como el cambio de motor y uso de MOSFET) surgieron en etapas avanzadas.
 
-![cartagantt](./imagenes/cartagantt.jpg)
+![cartagantt](./imagenes/cartagantt.jpeg)
 
 ### Etapas de trabajo
 
