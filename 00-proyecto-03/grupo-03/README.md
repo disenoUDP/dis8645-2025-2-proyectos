@@ -107,17 +107,17 @@ Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot
 
 ### Prototipado
 
-![planimetría de la vértebra](./imagenes/planim.png)
+![planimetría de la vértebra](./imagen/planim.png)
 
-![foto de la vértebra](./imagenes/vertebra.png)
+![foto de la vértebra](./imagen/vertebra.png)
 
-![gif de la probeta 1](./imagenes/vertebra-probeta1.gif)
+![gif de la probeta 1](./imagen/vertebra-probeta1.gif)
 
-![gif probeta 1 otra prueba](./imagenes/vertebra-probeta1b.gif)
+![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
 
-![vértebra v2](./imagenes/vertebra-v2.png)
+![vértebra v2](./imagen/vertebra-v2.png)
 
-![probeta de la vertebra-v2](./imagenes/vertebra-v2-ver.gif)
+![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
 
 ### Contexto de uso 
 
