@@ -6,25 +6,30 @@ Viernes 07 de noviembre, 2025
 
 ### Cosas que hablamos en la mañana
 
-- 
+- hablamos de como estuvo nuetransemana, si se nos ocurrieron nuevas cosas para el proyecto, ya que ya comenzamos un poco de muestras ideas para el proyecto 03, y a recomitar materiales.
 
 ## Proyecto-03
 
-Hablamos nuevamente sobre nuestras ideas y quizás estaban siendo demasiado complejas. Tenemos que tener cuidado con no humanizar la máquina, es decir, no darle acciones o simbologías demasiado humanas, como el latido de un corazón o la necesidad de comer… todo lo que nos hace humanos. Aunque, en mi opinión, eso igual puede ser una decisión intencional del proyecto.
+Hablamos nuevamente sobre nuestras ideas y quizás estaban siendo demasiado complejas. Tenemos que tener cuidado con no humanizar la máquina, es decir, no darle acciones o simbologías demasiado humanas, como el latido de un corazón o la necesidad de comer… todo lo que nos hace humanos.
+
+Aunque, en mi opinión, eso igual puede ser una decisión intencional del proyecto.
 
 Estábamos pensando que era buena idea hacer que la máquina se meciera y se tambaleara, generando una interacción incómoda. A partir de eso, modificar la forma hacia algo parecido a un huevo frágil, para que su movimiento resulte inconveniente.
 
 Un objeto e interacción cotidiana convertida en una tortuosa acción inconveniente.
 
-Para avanzar, tuvimos que cotizar materiales y componentes, que se van a comprar durante la semana, y también desarrollamos un seudocódigo.
+Para avanzar, tuvimos que revisar qué materiales necesitamos para nuestro proyecto, sensores y actuadores, y cotizar materiales y componentes que se van a comprar durante la semana. También desarrollamos un pseudocódigo.
 
 ---
 
-### Referentes
+### Referencias
 
--
+- [Game Boy](https://es.wikipedia.org/wiki/Game_Boy)
 
--
+- [Tamagotchi](https://es.wikipedia.org/wiki/Tamagotchi)
+
+- Mascota virtual hasbro littlest pet shop
 
 ### Palabras importantes
 
+[Pseudocódigo](https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo):En ciencias de la computación, y análisis numérico, el pseudocódigo (o lenguaje de descripción algorítmico) es una descripción de bajo nivel compacta e informal del principio operativo de un programa informático u otro algoritmo.
