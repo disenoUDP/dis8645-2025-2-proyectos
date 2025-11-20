@@ -68,3 +68,4 @@ void loop() {
 - rango 2: motor vibra de forma intermitente, se enciende 1 segundo y se apaga 1 segundo    
 - rango 3: motor vibra de forma continua y se detiene cuando llega al último nivel que sería el clímax en el que se expulsa el humo 
 - esto se puede ver en el monitor serial, esto me puede mostrar en qué rango está y ver que se activa
+- descubrí que al conectar el motor al pin de 3.3v tiene una diferencia notoria de vibración con el de 5v, no sé si habrá una forma mediante el arduino de darle más voltaje en un momento determinado después de pasar un rango, que es lo que se quería lograr inicialmente
