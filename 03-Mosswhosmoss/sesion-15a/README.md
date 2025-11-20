@@ -106,11 +106,50 @@ La unica diferencia hasta el mmomento entre funcionamiento fuerte y debil es el 
 
 Luego de hacer esta explicacion se hicieron unas minimas correcciones (mostradas en la difinicion) que nos llevo a la version 0_4_3
 
+## Error :-(
+
 El seba hizo la versión 0_4_4 y la 0_4_5
 
 Descubrimos que ninguna de estas versiones funcionan correctamente por el reproductor SD
 
 ahora dia jueves 20 a las 17 hrs, no logramos solucionarlo correctamente.
 
+a las 17:10  sospechamos que rompimos el arduino 
+
+vamos a probar con otro para confirmar que sea el código y no el arduino
+
+el error que nos sale al cargar el sketch es el **LIBUSB_ERROR_TIMEOUT**
+
+En base a lo que investigue del error se supone que pasa cuando esta funcionando otro sketch al enviar el nuevo, y el sketch corriendo produce un gran volumen de serial output y eso causaria que no se puedise enviar el nuevo sketch.
+
+para solucionarlo hay que reiniciar el arduino.
+
+Al volver a cargar el sketch sigue con el error
+
+Ahora vamos a probar en otro arduino 
+
+y rezar para que funcione.
+
+Luego de probar en el otro arduino, nos dio otro error y es que falla la comunicación serial
+
+![imagen error nuevo](./imagenes/errorSerial.jpg)
+
+El error se soluciono porque soy tonto y elimine el if que iniciaba el funcionamiento del reproductor :b 
+```cpp
+  //if (!player.begin(dfSerial)) {
+    // esto que esta comentado se elimina en la proxima version 
+    //(no es necesario tenerlo y nos complica el funcionamiento completo del WEBO)
+    //si no funciona te saldra este mensaje
+  // Serial.println("Unable to begin. Check:");
+  // while (true);
+ }
+```
+
+y para que funcionara tenia que eliminar solo esto
+```cpp
+ Serial.println("Unable to begin. Check:");
+ while (true);
+```
+Ahora tenemos que ver que falla del reproductor al integrarlo al codigo madre.
 
 
