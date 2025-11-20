@@ -6,6 +6,10 @@
 
 Estoy enfocándome en desarrollar la carcasa de nuestro proyecto. Hoy modelé en 3D el display LCD Nokia 5110 para poder construir la carcasa alrededor. 
 
+![fotografía modelado](./imagenes/nokiadisplay.png)
+
+A partir de lo anterior modelé una carcasa específicamente para el display, ya que mi proceso para llegar a la carcasa final parte desde modelar parte por parte los lugares donde irán los componentes del proyecto. Hice dos versiones de la carcasa, ya que para la primera no consideré el relieve de los pines del display. 
+
 
 
 ### labores como integrante del grupo 0
