@@ -152,4 +152,23 @@ y para que funcionara tenia que eliminar solo esto
 ```
 Ahora tenemos que ver que falla del reproductor al integrarlo al codigo madre.
 
+Lo hice funcionar por un milisegundo, no lo alcance a grabar :-(((((
+
+Lo que hice en el código fue mover el Serial.println("DFPlayer online"); en el if statement
+```cpp
+  // esta funcion if esta para verificar en el monitor serial si el reproductor funciona o no
+  if (!player.begin(dfSerial)) {
+
+    //si funciona saldra este mensaje
+  Serial.println("DFPlayer online!");
+
+  }
+```
+Despues de que funciono por un rato dejo de funcionar el temporizador .-. y nuevamente dejo de funcionar el audio
+
+Le paso el mando nuevamente al seba, no se que hice :-(
+
+
+
+
 
