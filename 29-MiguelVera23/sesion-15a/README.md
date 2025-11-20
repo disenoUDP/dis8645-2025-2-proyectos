@@ -14,6 +14,10 @@ En este punto lo más importante es manejar la manivela, desde ahí solo restar�
 - Circuito del dispositivo (construcción)
 
 
-## Código conjunto (básico)
+### Código conjunto (básico)
 Revisar venduHumoFull.ino
+
+### Código audio
+- Revisar audioHumo4. ino
+En esta versión se reproduce audio 
 
