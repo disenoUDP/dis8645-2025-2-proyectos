@@ -19,5 +19,11 @@ Revisar venduHumoFull.ino
 
 ### Código audio
 - Revisar audioHumo4. ino
-En esta versión se reproduce audio 
+En esta versión se reproduce audio
+
+## Código mata-Arduino
+En este punto el código del audio funcionó pero, en palabras de mi compañero Sebastián, mató al arduino. Está en un estado en el que mi computador apenas lo detecta y da problemas de funcionamiento fuera del código. 
+
+### Código audio ahora si
+Revisar audiohumo5.ino. Funciona con los audios cruzados pero no importa realmente. Es necesario probar con el encoder ya que las funciones estáticas no son lo mismo. Usaré el código de Felix para derivar una función booliana que se active al sumar vueltas. Esta función alternará brevemente para activar audio. La idea es que reciba un dato a la vez para que no se superpongan los audios. La lógica de los rangos funciona bien y solo es necesario traerla de un código a otro. Idealmente fusionaré el código de audio con el de encoder para mañana.
 
