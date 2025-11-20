@@ -10,7 +10,7 @@
 
 - logré hacer que vibrara mediante el uso del siguiente código que encontré en una página [caferobot](https://thecaferobot.com/learn/interfacing-a-vibration-motor-module-with-arduino/)
 
-````cpp
+```cpp
     /*
   modified on Sep 8, 2020
   Modified by MohammedDamirchi from Arduino Examples
@@ -31,6 +31,7 @@ void loop() {
   delay(1000);
  
 }
+```
 
 - este código hace que el motor vibre y se apague constantemente como high y low, cada 1 segundo aprox se emite una vibración
 - necesito ver si puede vibrar más fuerte o si está en su límite, desconozco esto
