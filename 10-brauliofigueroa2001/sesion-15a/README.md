@@ -44,6 +44,17 @@ void loop() {
 
 - se soldó el módulo vibrador al vibrador del joystick, reemplazando el vibrador pequeño que tenía el módulo por el del joystick para tener un vibrador más potente
 
+![vibradorproceso](./imagenes/vibradorproceso.jpg)
+
+- se pelaron los cables para poder soldar hacia el módulo vibrador
+
+![modulosoldado](./imagenes/modulosoldado.jpg)
+
+![arduinoymodulo](./imagenes/arduinoymodulo.jpg)
+
+- se conectó el módulo al arduino y funcionó con el nuevo vibrador
+
+
 
 
 
