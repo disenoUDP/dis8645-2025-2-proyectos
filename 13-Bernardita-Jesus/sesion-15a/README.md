@@ -110,8 +110,6 @@ void loop() {
 }
 ```
 
-**Ver soldar y/o hacerle una base**
-
 **Ver que si se mantiene presionado, no sume infinitamente 5 s**
 
 Me imagino que, para evitar que sume infinitamente, el botón tiene que sumar solo cuando pasa de no estar presionado a estar presionado. O sea, agrega 5 s en el primer contacto y no vuelve a sumar hasta que se suelte y se presione nuevamente.
@@ -144,6 +142,8 @@ void loop() {
   estadoAnterior = estadoActual; 
 }
 ```
+
+**Ver soldar y/o hacerle una base**
 
 ### Palabras importantes
 
