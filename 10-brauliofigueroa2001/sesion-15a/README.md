@@ -67,4 +67,4 @@ void loop() {
 - rango 1: motor vibra de forma intermitente, se enciende 2 segundos y se apaga 2 segundos
 - rango 2: motor vibra de forma intermitente, se enciende 1 segundo y se apaga 1 segundo    
 - rango 3: motor vibra de forma continua y se detiene cuando llega al último nivel que sería el clímax en el que se expulsa el humo 
-- esto se puede ver en el monitor serial
+- esto se puede ver en el monitor serial, esto me puede mostrar en qué rango está y ver que se activa
