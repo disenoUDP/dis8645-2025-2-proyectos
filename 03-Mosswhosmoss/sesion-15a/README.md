@@ -168,7 +168,7 @@ Despues de que funciono por un rato dejo de funcionar el temporizador .-. y nuev
 
 Le paso el mando nuevamente al seba, no se que hice :-(
 
-Lo rehice de la versión 4_6 y lo volvo a fiuncionar YUPIIIIII
+Lo rehice de la versión 4_6 y lo volvo a funcionar YUPIIIIII
 
 Sospechamos que el audio se corta por el delay de 1000 milisegundos
 
@@ -178,3 +178,4 @@ Logré agregar el sensor tilt al código madre yupiiii
 
 faltaria hacer un if statement que resulte con la activación del audio del reproductor
 
+Confirmamos que el audio se cortaba con el delay
