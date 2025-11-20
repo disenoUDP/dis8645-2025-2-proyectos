@@ -95,3 +95,24 @@ En teoria, debería estar usando distintas partes del display pero no lo puedo c
 Respecto a lo que sería limpiar la pantalla con clrScr(); (o display.clearDisplay(); en este caso) según este tutorial, efectivamente quedarían sobrepuestas los textos o imágenes que queremos mostrar en la página si no se limpia la pantalla.
 “El primer paso se hace con la función display.clearDisplay() que no admite ningún parámetro. Si no haces esto, no borrarás la pantalla y escribirás sobre lo que ya esté dibujado.”
 <https://content.instructables.com/F4E/BMCW/JTMSUBU6/F4EBMCWJTMSUBU6.pdf>
+
+### RAM de bitmaps
+
+Una parte importante de nuestro proyecto es asegurarnos de que no se nos acabe la RAM. Vamos a utilizar varias imágenes en bitmap, y eso puede afectar el uso de la RAM del Arduino, por lo que hay que estar seguros de que no esté en el límite.
+Al parecer Arduino IDE dice cuanta RAM estás ocupando como porcentaje, pero al parecer no es una manera confiable de revisarlo, ya que no considera las imágenes o cualquier string que se esté utilizando.
+
+<https://forum.arduino.cc/t/is-ide-memory-usage-reliable/1190621/6>
+
+“The percentage report simply tells you what it knows at compile-time. For memory, that's Global and static variables only.
+'String' class objects use memory space that's allocated at run-time. The compiler has no way of knowing how much that is.”
+
+
+Encontré una biblioteca de Arduino que te permite saber cuanta RAM estás utilizando y además utilizar menos. Se utiliza la función “freememory()” y debería devolver la RAM que está disponible.
+<https://github.com/mpflaga/Arduino-MemoryFree>
+Se ocupa la función F() para guardarlo en la memoria Flash. Al parecer hay una diferencia entre la RAM y Flash que aún no consigo entender.
+
+
+En resumen, según lo que entendí, para evitar que se ocupe demasiada RAM mientras utilizamos los bitmaps hay que guardarlos en Flash.
+
+
+
