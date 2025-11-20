@@ -15,9 +15,7 @@ El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra am
 
 ### Metafora
 
-La Responsabilidad, La libertad humana (de intervenir o abandonar) queda atrapada y anulada por la respuesta mecánica e inmutable (el bucle de apego) que esa misma libertad puso en marcha.
-
-En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecanica, generando pena y culpa, ante lo que seria la recreacion de un mono que imita ser uno verdadero. Esta respuesta mecanica deja a la persona en un bucle de apego constante que terminara siempre en tragedia.
+En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecanica, generando pena, culpa y un posible intento de manipulacion, ante lo que seria la recreacion de un mono que imita ser uno verdadero. Esta respuesta mecanica deja a la persona en un bucle de apego constante que terminara siempre en tragedia sin importar que tanto cariño se le pueda dar
 
 En varios casos, cuando se genera un vinculo afectivo con un animal, la union emocional es tan fuerte, que cuando hay un cambio en esta relacion, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir mas, en este caso jorge. 
 
@@ -52,17 +50,15 @@ En varios casos, cuando se genera un vinculo afectivo con un animal, la union em
 
 ### Bill of Materials 
 
-| Componente            | Cantidad |
-|-----------------------|----------|
-| Parlante              | 1        | 
-| Cable H-H             | varios   | 
-| Servo motor           | 2        | 
-| Sensor ultrasónico    | 1        |
-| Módulo MP3            | 1        | 
-| Botón de arcade falso | 1        |
-| Sensor de presión     | 1        | 
-| Motor DC              | 1        | 
-| Mosfet                | 1        | 
+| Componente            | Cantidad | Valores  | Links                    | Valor                                       |        | 
+|-----------------------|----------|----------|--------------------------|---------------------------------------------|--------|
+| Parlante              | 1        |    3w    |https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r|$3.000| 
+| Servo motor           | 2        |   SG90   |https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r|      |
+| Sensor ultrasónico    | 1        |    5V    |https://afel.cl/products/sensor-de-ultrasonico-hc-sr04|
+| Módulo MP3            | 1        |3.2 a 5 v |https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r|  
+| Sensor de presión     | 1        |  FSR402  |https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r| 
+| Motor DC              | 1        |    5v    |https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for|
+| Mosfet                | 1        |  BS170   |https://a.aliexpress.com/_mt52yRB|
 
 ---
 
@@ -123,5 +119,18 @@ Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot
 
 ![probeta de la vertebra-v2](./imagenes/vertebra-v2-ver.gif)
 
+### Contexto de uso 
 
+Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
 
+### Instrucciones de uso:
+
+- El usuario se acerca a Jorge (rango: 10 a 45 cm).
+- Jorge detecta al usuario.
+. Se reproduce uno de los 3 audios preparados invitando al usuario a acercarse.
+- El usuario se aproxima y extiende su brazo a una distancia de entre 3 y 7 cm frente a Jorge.
+- En ese momento, Jorge cierra sus brazos y abraza al usuario.
+- La persona puede forzar su liberación del abrazo en cualquier momento.
+- Tras esto, el usuario decide si volver a ofrecer su brazo o esperar un minuto (tiempo estimado entre frases) sin entrar al rango de 3 a 7 cm.
+- Alternativamente, al ser invitado, el usuario puede optar por no acercarse y observar las etapas de Jorge desde la distancia.
+- Al finalizar, Jorge vuelve a su posición original; el usuario puede reiniciar el ciclo o alejarse para salir del rango de detección.
