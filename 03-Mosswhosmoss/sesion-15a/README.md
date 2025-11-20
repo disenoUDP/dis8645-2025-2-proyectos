@@ -4,7 +4,7 @@
 
 Se logro, la pantalla pantallea resulta que solde dos pines juntos
 
-![imagen pin soldado incorrectamente](./imagenes/)
+![imagen pin soldado incorrectamente](./imagenes/pinMalSoldado.jpg)
 
 El seba lo logro, yo ya estaba perdiendo la cordura 
 
