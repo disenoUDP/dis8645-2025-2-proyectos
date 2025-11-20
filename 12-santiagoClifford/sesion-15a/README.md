@@ -66,3 +66,18 @@ Claudia ha participado en múltiples eventos nacionales e internacionales, entre
 cita de <https://15.bienaldeartesmediales.cl/participantes/claudia-gonzalez>
 
 en lo personal, entiendo la obra de Claudia(entendiendo al artista como una obra en sí) como una intersección entre el arte, la naturaleza y la electrónica. Y el entender como se relacionan estos fenómenos, y a su vez, ver como estos mismos son afectados entre sí. Estudiar la obra de Claudia "CGG" me inspira a valorar la naturaleza(específicamente la de Chile), y a intentar encontrar dimensiones dignas de ser exploradas y estudiadas dentro de esta. Lo puedo comparar con ese tatuaje que te hiciste en la media, cuyo significado era inexistente hasta que empezó a ser parte de tu vida, y ahora sientes que te lo tatuaste por esas razones, que no existían en el momento cuando te hiciste el tatuaje. Estudiar la naturaleza es hermoso porque siempre estuvo ahi, quizás de no ser por ella no estarías aquí, pero no le das importancia hasta que decides ponerle antención, y preguntarte sobre su existencia y función.
+
+
+### avance lindo
+
+![circuito motor dc unidireccional](./imagenes/circuito-unidireccion.jpg)
+
+para controlar el motor DC, se necesita un proceso más simple que solo conectarlo al arduino. En caso de hacer eso, puede estropear el microcontrolador.
+
+con el circuito de la imagen puedo controlar el prendido y apagado del motor. Pero solo en una dirección.
+
+![circuito motor dc bidireccional](./imagenes/circuito-bidireccion.jpg)
+
+con este nuevo circuito, puedo controlar tanto la aceleración como la dirección del motor.
+
+ambos códigos y cirucitos fueron sacados de [este tutorial](https://programarfacil.com/electronica/motor-dc)
