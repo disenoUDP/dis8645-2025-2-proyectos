@@ -62,3 +62,64 @@ Aunque funcionan por separado, comparten una lógica emocional:
 > No conversan entre sí, pero **se afectan emocionalmente**, igual que las personas.
 
 
+## Planificación y proceso previo 𓏲 ๋࣭ ࣪ ˖🎐
+
+Durante el proyecto, utilizamos una planificación modular por etapas. Aunque la Carta Gantt fue diseñada inicialmente, el cronograma fue ajustándose, ya que algunas decisiones técnicas (como el cambio de motor y uso de MOSFET) surgieron en etapas avanzadas.
+
+### Etapas de trabajo
+
+**1. Exploración conceptual**
+- Investigación sobre emociones y cómo se manifiestan físicamente.
+- Selección de Ansiedad y Vergüenza como emociones principales.
+- Primeras ideas sobre cómo traducirlas en gestos mecánicos (temblor, giro, luz).
+
+**2. Definición de componentes y posibles comportamientos**
+- Búsqueda de actuadores que representaran físicamente cada emoción.
+- Vergüenza → servomotor (giro evasivo) y LED que se apaga.
+- Ansiedad → motor vibrador (luego reemplazado por motor N20 con MOSFET) y LED con pulso irregular.
+
+**3. Primer prototipo técnico**
+- Pruebas individuales de cada componente: sensor ultrasónico, servo, LED, motor vibrador.
+- Primera programación básica de reacción a distancia.
+- Problemas con la intensidad del motor vibrador → se detecta que no es suficiente.
+
+**4. Redefinición técnica y compra de componentes**
+- Se decide reemplazar el motor vibrador por un **micromotor N20** más potente.
+- Se integra **MOSFET IRF520** (o equivalente) para controlar el motor con PWM.
+- Ajustes en el diseño del código y reorganización del circuito.
+
+**5. Integración de comportamientos emocionales**
+- Ansiedad: implementación de vibración basal y vibración errática según cercanía.
+- Vergüenza: programar apagado de color y giro evasivo.
+- Se incorpora “residuo emocional”: tiempo de espera antes de calmarse.
+
+**6. Montaje físico**
+- Impresión 3D de piezas y pruebas de ensamblaje (cabeza de gatito para el ultrasónico).
+- Consideración de caja como escondite emocional.
+- Problemas iniciales con medidas y material (resina vs filamento).
+
+**7. Pruebas de interacción y ajustes**
+- Ajustes manuales de ángulos del servo.
+- Ajuste de distancias mínimas y máximas para que cada máquina reaccione como se espera.
+- Verificación de respuesta emocional (tiempo de reacción, intensidad, latencia).
+
+**8. Documentación y preparación de entrega**
+- Organización de bitácoras individuales.
+- Redacción del informe final (este documento).
+- Preparación de exposición.
+
+
+──── ୨୧ ────
+
+
+### Decisiones clave que modificaron el proyecto
+
+| Problema | Cambio realizado |
+|----------|------------------|
+| Motor vibrador no tenía fuerza | Se reemplaza por motor N20 + MOSFET |
+| Biblioteca NewPing incompatibilidad | Se decide usar lógica estándar de duración de pulso |
+| Carcasa en resina rígida sin movilidad | Se decide pasar a impresión en filamento |
+| Intensidad de gir muy brusca | Se ajusta PWM y delay para suavizar la respuesta |
+
+
+
