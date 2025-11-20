@@ -124,4 +124,110 @@ Durante el proyecto, utilizamos una planificación modular por etapas. Aunque la
 | Intensidad de gir muy brusca | Se ajusta PWM y delay para suavizar la respuesta |
 
 
+──── ୨୧ ────
+
+
+## Pseudocódigo Explicado ₊˚⊹ᰔ
+
+### Componentes utilizados 
+
+| Máquina   | Componentes principales | Función emocional                         |
+|-----------|------------------------|-------------------------------------------|
+| Ansiedad  | Sensor ultrasónico, motor DC N20 con MOSFET, LED RGB | Detecta cercanía, vibra, simula ritmo cardíaco |
+| Vergüenza | Sensor ultrasónico, servomotor SG90, LED RGB | Detecta observación, se gira y apaga |
+
+
+
+### Pseudocódigo — Máquina Ansiedad ⚡︎
+
+```plaintext
+INICIO
+
+Definir pinSensorTrig = 2
+Definir pinSensorEcho = 3
+Definir pinLED = 9
+Definir pinMotor = 5
+
+Configurar pines como entrada o salida
+
+Mientras la máquina está encendida:
+
+  Leer distancia usando sensor ultrasónico
+
+  Si distancia < 30 cm:
+      // Ansiedad activa
+      Aumentar PWM del motor (vibración fuerte)
+      Aumentar velocidad de parpadeo del LED
+      Guardar último tiempo en que se detectó presencia
+  
+  Sino si distancia >= 30 cm Y (tiempo desde la última detección < tiempo de residuo):
+      // Ansiedad residual
+      Mantener vibración leve (PWM medio-bajo)
+      LED parpadea lento
+  
+  Sino:
+      // Estado basal
+      Vibración muy leve
+      LED mantiene pulso lento
+
+Fin
+
+```
+
+
+### Pseudocódigo — Máquina Vergüenza ⚡︎
+
+```plaintext
+INICIO
+
+Definir pinSensorTrig = 2
+Definir pinSensorEcho = 3
+Definir pinServo = 6
+Definir pinLED = 9
+
+Configurar pines
+
+Mientras la máquina está encendida:
+
+  Leer distancia desde sensor ultrasónico
+
+  Si distancia < 30 cm:
+      // Se siente observada → se esconde
+      Apagar LED
+      Servo gira a posición de ocultamiento (ej. 120°)
+      Guardar último tiempo de detección
+  
+  Sino si distancia >= 30 cm Y (tiempo desde la última detección < tiempo de recuperación):
+      // Sigue escondida aunque ya no la miren
+      Mantener LED apagado
+      Mantener servo girado
+  
+  Sino:
+      // Nadie la observa → tímida pero presente
+      Encender LED con brillo suave
+      Servo vuelve lentamente a posición inicial (ej. 0°)
+
+Fin
+```
+
+────୨ৎ────
+
+
+### Explicación del comportamiento emocional 𓏲 ๋࣭ ࣪ ˖🎐
+
+| Estado del entorno | Máquina Ansiedad | Máquina Vergüenza |
+|--------------------|------------------|-------------------|
+| No hay nadie cerca | Vibra muy poco, LED lento (estado basal) | Luz tenue, servo centrado |
+| Persona se acerca  | Vibra fuerte y LED acelera (alerta) | Apaga LED y se gira para esconderse |
+| Persona se aleja   | Disminuye vibración lentamente (residuo emocional) | Espera antes de volver a mostrarse (recuperación emocional) |
+
+
+
+### Idea central ๋ ࣭ ⭑
+
+> Estas máquinas no cambian de estado inmediatamente.  
+> Imitan el comportamiento emocional humano:  
+> **las emociones tienen latencia, residuo y recuperación.**
+
+
 
