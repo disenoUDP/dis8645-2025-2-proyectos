@@ -82,7 +82,7 @@ if (segundos > 0) {
 
 Vi este video pero me confundí más [Arduino desde cero en Español - Capítulo 77 - Timer Interrupts ](https://youtu.be/kI-jT-y1SKQ?si=ZphJria6euax7LPc)
 
-Vi este video y ya no me queda claro si con lo de delay está bien detener el conteo, porque delay detiene otras funciones, y por eso se utilizan millis.
+Vi este otro video y ya no me queda claro si con lo de delay está bien detener el conteo, porque delay detiene otras funciones, y por eso se utilizan millis.
 
 [¿Qué temporizador es mejor en Arduino? ¿Delay o Millis?](https://youtu.be/TVYFfhDKLK8?si=F9Vvom811NlrsgsQ)
 
