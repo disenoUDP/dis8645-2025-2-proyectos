@@ -8,7 +8,7 @@ Se logro, la pantalla pantallea resulta que solde dos pines juntos
 
 El seba lo logro, yo ya estaba perdiendo la cordura 
 
-![imagen pantalla pantalleando](./imagenes/)
+![imagen pantalla pantalleando](./imagenes/displayFuncionando.jpg)
 
 Ahora empezare a hacer el codigo para integrar a ava (nuestra asistente virtual) que viene incluida en W.E.B.O.
 
