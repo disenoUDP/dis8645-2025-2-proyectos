@@ -54,6 +54,35 @@ Yo estuve ordenando los componentes para que queden bien distribuidos y funcione
 
 - Botones
 
+### Investigacion botones
+
+1. Ver soldar y/o hacerle una base
+
+2. Millis (Examen)
+
+**Que el temporizador se detenga cuando el valor de segundos llegue a 0**
+
+Teníamos la variable de segundos definida en el setup.
+
+En el loop estábamos descontando con la línea segundos -= 1, y el delay(1000) hacía que ese ciclo corriera cada segundo.
+
+Para que el temporizador no siguiera bajando a valores negativos, necesitamos agregar una condición que evalúe si segundos > 0.
+
+Solo mientras quede tiempo se ejecuta el descuento; cuando llega a 0, el decremento se detiene y el temporizador queda fijo.
+
+Esa verificación es lo que evita que el conteo siga corriendo en negativo.
+
+```cpp
+
+if (segundos > 0) {
+  segundos -= 1
+  delay(1000)
+}
+```
+
+5. Ver que si se mantiene presionado, que no sume infinitamente 5s.
+
+
 ### Palabras importantes
 
 alginato
