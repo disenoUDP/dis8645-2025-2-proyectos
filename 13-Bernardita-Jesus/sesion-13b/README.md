@@ -6,6 +6,8 @@ Viernes 07 de noviembre, 2025
 
 ### Cosas que hablamos en la mañana
 
+- 
+
 ## Proyecto-03
 
 Hablamos nuevamente sobre nuestras ideas y quizás estaban siendo demasiado complejas. Tenemos que tener cuidado con no humanizar la máquina, es decir, no darle acciones o simbologías demasiado humanas, como el latido de un corazón o la necesidad de comer… todo lo que nos hace humanos. Aunque, en mi opinión, eso igual puede ser una decisión intencional del proyecto.
