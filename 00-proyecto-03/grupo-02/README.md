@@ -349,6 +349,105 @@ flowchart TD
 > Este total corresponde únicamente al gasto real del grupo.  
 > Muchos componentes fueron aportados por el laboratorio o ya estaban en posesión del equipo.
 
+──── ୨୧ ────
+
+## Instrucciones de uso ૮₍ ´ ꒳ `₎ა
+
+Las máquinas están diseñadas para interactuar **entre ellas**, como dos gatitos hermanos que reaccionan a la presencia del otro. No requieren intervención humana más allá de colocarlas correctamente.
+
+## Preparación inicial
+
+1. Conecta ambas máquinas a su fuente de alimentación (USB o 5V).
+2. Enciéndelas simultáneamente.
+3. Ubícalas **una frente a la otra**, a una distancia aproximada de **20–40 cm**.
+4. Ajusta su posición hasta que **sus sensores ultrasónicos se apunten directamente**, como si “se miraran”.
+
+
+## Máquina Ansiedad — Comportamiento ≽^- ˕ -^≼
+
+1. **Cuando la máquina Vergüenza se acerca**, la Ansiedad lo interpreta como una activación emocional.  
+   - Aumenta su vibración.  
+   - El LED acelera su ritmo.  
+
+2. **Si la máquina Vergüenza se esconde o gira**, la Ansiedad incrementa su estado nervioso.  
+   Reacciona con:  
+   - Vibración más intensa,  
+   - Cambios rápidos en el LED,  
+   - Un “temblor” que tarda en calmarse.
+
+3. **Cuando Vergüenza se aleja**, la Ansiedad no se calma de inmediato:  
+   - Mantiene vibraciones residuales.  
+   - Su LED sigue agitado unos segundos.
+
+---
+
+## Máquina Vergüenza — Comportamiento ≽^- ˕ -^≼
+
+1. **Cuando la máquina Ansiedad se acerca**, Vergüenza reacciona como un gatito tímido:  
+   - Se apaga el LED.  
+   - El servo gira de forma abrupta para “esconderse”.
+
+2. **Si Ansiedad está muy agitada**, Vergüenza se retrae aún más.  
+   - Mantiene el servo en posición de ocultamiento.  
+   - No vuelve a mostrarse hasta que la otra máquina se calme.
+
+3. **Cuando Ansiedad reduce su vibración**, Vergüenza entra en un periodo de “recuperación”:  
+   - No enciende su LED inmediatamente  
+   - No vuelve a girar a su posición original enseguida  
+   - Espera unos segundos antes de mostrar señales de calma
+
+
+## Observación de la interacción ૮₍´˶• . • ⑅ ₎ა
+
+- Las máquinas funcionan como “cuerpos emocionales”: **no responden al humano**, sino **a la presencia del otro**.  
+- Puedes acercar o alejar una de la otra **como si fueran dos gatitos interactuando**.  
+- No necesitan fuerza manual ni intervención directa: su lenguaje es gestual y sutil.
+
+
+## Recomendaciones ‼
+
+- Evita que los sensores ultrasónicos queden muy desalineados.  
+- No manipular manualmente el servo o motor.  
+- Mantener sobre una superficie estable.  
+- Las máquinas no deben tener obstáculos entre ellas.
+
+
+──── ୨୧ ────
+
+## Contexto de uso ๋ ࣭ ⭑
+
+Las máquinas fueron diseñadas como **dos criaturas emocionales**, inspiradas en el comportamiento de dos gatitos hermanos. No buscan resolver problemas prácticos ni cumplir funciones utilitarias: su propósito es **mostrar un vínculo emocional** construido únicamente a través de gestos mecánicos y distancia.
+
+
+## Relación entre las máquinas ๋ ࣭ ⭑
+
+Cada máquina encarna una emoción distinta:
+
+- **Ansiedad:** se activa, tiembla, reacciona de manera intensa.
+- **Vergüenza:** se esconde, se repliega, evita la mirada directa.
+
+Aunque son diferentes, están conectadas por un mismo lenguaje corporal:  
+**la distancia**.
+
+Ambas dependen de la presencia de la otra para expresar su comportamiento.  
+Sin la otra máquina, quedan en estado neutro, casi “sin identidad emocional”.
+
+
+## Cómo se da la interacción ๋ ࣭ ⭑
+
+Las máquinas deben estar **una frente a la otra**, como dos animales reconociéndose.  
+Su “mirada” no es visual, sino digital: los sensores ultrasónicos detectan la proximidad y, a partir de eso, cada máquina interpreta la presencia de su compañera.
+
+- Cuando **Ansiedad** se acerca con energía, provoca que **Vergüenza** se retraiga.  
+- Cuando **Vergüenza** se esconde, Ansiedad se inquieta más.  
+- Si Ansiedad se calma, Vergüenza lentamente vuelve a mostrarse.  
+
+Este intercambio genera un pequeño ecosistema emocional:  
+una relación donde **una afecta directamente el estado corporal de la otra**.
+
+
+> El proyecto no busca imitar la vida, sino capturar un fragmento sencillo de ella:
+> la manera en que dos seres pueden alterarse mutuamente, incluso sin tocarse.
 
 
 
