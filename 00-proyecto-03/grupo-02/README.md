@@ -230,4 +230,63 @@ Fin
 > **las emociones tienen latencia, residuo y recuperación.**
 
 
+────୨ৎ────
+
+
+
+## Diagrama de Flujo — Máquina Ansiedad ⚡︎
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Leer distancia del sensor]
+
+    B --> C{Distancia < 30cm?}
+
+    C -- Si --> D[Ansiedad activa]
+    D --> E[Vibración fuerte]
+    E --> F[LED rápido]
+    F --> G[Guardar tiempo de detección]
+    G --> B
+
+    C -- No --> H{Dentro del tiempo residual?}
+
+    H -- Si --> I[Ansiedad residual]
+    I --> J[Vibración leve]
+    J --> K[LED lento]
+    K --> B
+
+    H -- No --> L[Estado basal]
+    L --> M[Vibración mínima]
+    M --> N[LED suave]
+    N --> B
+```
+
+
+## Diagrama de Flujo — Máquina Vergüenza ⚡︎
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Leer distancia del sensor]
+
+    B --> C{Distancia < 30cm?}
+
+    C -- Si --> D[Se activa vergüenza]
+    D --> E[Apagar LED]
+    E --> F[Girar servo para esconderse]
+    F --> G[Guardar tiempo de detección]
+    G --> B
+
+    C -- No --> H{Dentro tiempo de recuperación?}
+
+    H -- Si --> I[Mantener escondida]
+    I --> J[LED apagado]
+    J --> K[Servo en posición oculta]
+    K --> B
+
+    H -- No --> L[Estado normal]
+    L --> M[Encender LED suave]
+    M --> N[Servo vuelve al inicio]
+    N --> B
+
+```
 
