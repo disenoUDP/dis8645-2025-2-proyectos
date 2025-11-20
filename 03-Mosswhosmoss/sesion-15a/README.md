@@ -132,7 +132,7 @@ y rezar para que funcione.
 
 Luego de probar en el otro arduino, nos dio otro error y es que falla la comunicación serial
 
-![imagen error nuevo](./imagenes/errorSerial.jpg)
+![imagen error nuevo](./imagenes/errorSerial.png)
 
 El error se soluciono porque soy tonto y elimine el if que iniciaba el funcionamiento del reproductor :b 
 ```cpp
