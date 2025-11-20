@@ -449,5 +449,130 @@ una relación donde **una afecta directamente el estado corporal de la otra**.
 > El proyecto no busca imitar la vida, sino capturar un fragmento sencillo de ella:
 > la manera en que dos seres pueden alterarse mutuamente, incluso sin tocarse.
 
+──── ୨୧ ────
+
+## Desarrollo del circuito ⊹ ࣪ ˖
+
+Cada máquina utiliza un Arduino como controlador principal y un conjunto reducido de componentes que permiten traducir la proximidad en un gesto emocional. Aunque ambas comparten la misma estructura básica, cada una expresa su emoción con mecanismos diferentes.
 
 
+## Estructura general del sistema ⊹ ࣪ ˖
+
+Cada máquina incluye:
+
+- 1 Arduino UNO R4 MINIMA
+- 1 Sensor ultrasónico HC-SR04  
+- 1 elemento actuador (motor o servo)  
+- 1 LED RGB  
+- Resistencias y cables de conexión  
+
+Ambas máquinas funcionan de manera independiente, pero se comunican al *leer la distancia de la otra*.  
+No existe comunicación digital entre ellas: **su interacción nace únicamente de la lectura del espacio compartido**.
+
+
+## Circuito Máquina Ansiedad ⊹ ࣪ ˖
+
+La máquina Ansiedad utiliza:
+
+- **Motor DC N20** como actuador principal  
+- **Módulo MOSFET** para controlar la potencia del motor  
+- **LED RGB** que simula un “latido acelerado”  
+- **Sensor HC-SR04** para medir cercanía de la otra máquina  
+
+### Conexiones principales ⊹ ࣪ ˖
+
+#### Sensor ultrasónico
+- VCC → 5V  
+- GND → GND  
+- TRIG → Pin digital 9  
+- ECHO → Pin digital 10  
+
+#### Motor N20 + MOSFET
+- Motor → Terminales OUT del MOSFET  
+- MOSFET IN → Pin PWM 5  
+- MOSFET VCC → 5V  
+- MOSFET GND → GND  
+
+El MOSFET permite regular la intensidad de vibración según la distancia detectada.
+
+#### LED RGB
+- R → Pin PWM 3  
+- G → Pin PWM 6  
+- B → Pin PWM 11  
+- Cada canal con resistencia de 220–330Ω
+
+
+## Circuito Máquina Vergüenza ⊹ ࣪ ˖
+
+La máquina Vergüenza utiliza:
+
+- **Servo SG90** como actuador principal  
+- **LED RGB** que se apaga cuando se siente observada  
+- **Sensor HC-SR04** como “mirada” digital  
+
+### Conexiones principales ⊹ ࣪ ˖
+
+#### Sensor ultrasónico
+- VCC → 5V  
+- GND → GND  
+- TRIG → Pin digital 8  
+- ECHO → Pin digital 7  
+
+#### Servomotor SG90
+- Señal → Pin 5  
+- VCC → 5V  
+- GND → GND  
+
+El servo gira entre dos posiciones:
+- “Normal”: LED encendido suave  
+- “Oculta”: LED apagado, servo girado  
+
+#### LED RGB
+- R → Pin PWM 3  
+- G → Pin PWM 6  
+- B → Pin PWM 11  
+- Cada canal con resistencia 220–330Ω
+
+────୨ৎ────
+
+
+## Referencias ๋ ࣭ ⭑
+
+- Clase y material entregado por el taller.  
+- Documentación oficial del sensor ultrasónico HC-SR04.  
+- Ejemplos de uso de servomotores con Arduino.  
+  
+
+## Links de compra ๋ ࣭ ⭑
+
+A continuación se incluyen los enlaces de compra mencionados en el proceso del taller y presentes en los documentos del proyecto.
+
+### Módulo MOSFET 15A / 400W PWM  
+https://afel.cl/products/modulo-mosfet-15a-400w-pwm
+
+### Motor vibrador 
+https://afel.cl/products/motor-vibrador-pwm-switch-dc
+
+### Cables HH
+https://afel.cl/products/pack-20-cables-de-conexion-hembra-hembra?_pos=2&_sid=79ff9b6a9&_ss=r
+
+### Sensores ultrasónicos HC-SR04  
+https://afel.cl/products/sensor-de-ultrasonico-hc-sr04
+
+### LED RGB 5mm  
+https://afel.cl/products/diodo-led-rgb-5mm
+
+
+## Código fuente completo ๋ ࣭ ⭑
+
+A continuación se deja un espacio para incluir los códigos completos de ambas máquinas.
+
+## Código Máquina Ansiedad
+```cpp
+// Aquí pegar el código completo
+```
+
+## Código Máquina Vergüenza
+```cpp
+// Aquí pegar el código completo
+```
