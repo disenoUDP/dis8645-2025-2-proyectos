@@ -290,3 +290,65 @@ flowchart TD
 
 ```
 
+────୨ৎ────
+
+## Bill of Materials (BOM) ๋ ࣭ ⭑
+
+## Máquina Ansiedad — Componentes ⋆ 𐙚 ̊.
+
+| Componente | Cantidad | Uso técnico | Rol emocional |
+|-----------|----------|-------------|----------------|
+| Arduino UNO / Nano | 1 | Microcontrolador principal | Gestiona los estados de ansiedad |
+| Sensor ultrasónico HC-SR04 | 1 | Detección de distancia | Detecta cercanía como “alerta” |
+| Motor DC N20 | 1 | Genera vibración | Representa temblor/agitamiento |
+| Módulo MOSFET | 1 | Control de potencia del motor mediante PWM | Intensidad del “temblor emocional” |
+| LED RGB | 1 | Señal luminosa | Representa latido ansioso |
+| Resistencias 220–330Ω | 2–3 | Protegen el LED | — |
+| Cables MM - MH | varios | Conexión | — |
+| Protoboard | 1 | Ensamble | — |
+
+
+
+## Máquina Vergüenza — Componentes ⋆ 𐙚 ̊.
+
+| Componente | Cantidad | Uso técnico | Rol emocional |
+|-----------|----------|-------------|----------------|
+| Arduino UNO / Nano | 1 | Microcontrolador | Controla estados de vergüenza |
+| Sensor ultrasónico HC-SR04 | 1 | Detecta presencia | “Se siente observada” |
+| Servo SG90 | 1 | Movimiento rotacional | Se gira para esconderse |
+| LED RGB | 1 | Iluminación | Se apaga en vergüenza |
+| Resistencias | varias | Protegen LEDs | — |
+| Cables MM - MH | varios | Conexión | — |
+| Protoboard | 1 | Ensamble | — |
+
+
+
+## Tabla de costos del proyecto ༘⋆
+
+
+| Componente                          | Cantidad | Precio unitario | Subtotal | Nota |
+|-------------------------------------|----------|------------------|----------|------|
+| Módulo MOSFET                       | 1        | $1.200           | $1.200   | Comprado |
+| Sensor ultrasónico HC-SR04         | 2        | $1.500           | $3.000   | Comprado |
+| Motor vibrador (no usado)          | 1        | $2.000           | $2.000   | Comprado pero no utilizado |
+| Micro motor N20 DC                 | 1        | $0               | $0       | Pedido al laboratorio |
+| LED RGB (pack de 15)               | 15       | $100             | $1.500   | Comprado (pack completo) |
+| Cables hembra–hembra (set)         | 1        | $1.000           | $1.000   | Comprado |
+| Arduino UNO                         | 2        | $0               | $0       | Ya los tenían |
+| Protoboard                          | 1        | $0               | $0       | Ya la tenían |
+| Cable USB                           | 1        | $0               | $0       | Ya lo tenían |
+| Servo SG90                          | 1        | $0               | $0       | Laboratorio |
+| Resistencias                        | varias   | $0               | $0       | Laboratorio |
+| Material de impresión 3D           | —        | $0               | $0       | Laboratorio |
+| Silicona y fijación                 | —        | $0               | $0       | Ya lo tenían |
+
+
+
+## **Total gastado realmente:** **$8.700**
+
+> Este total corresponde únicamente al gasto real del grupo.  
+> Muchos componentes fueron aportados por el laboratorio o ya estaban en posesión del equipo.
+
+
+
+
