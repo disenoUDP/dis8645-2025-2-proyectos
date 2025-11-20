@@ -29,6 +29,18 @@
 Su cuerpo, hecho de una materialidad blanda y orgánica, invita al acercamiento, pero también refleja la vulnerabilidad que implica ser tocado. En este sentido, la máquina no solo reacciona: siente y expresa a través de gráficas y sonidos.
 Cada acción del usuario (apretar, estirar o acariciar) se convierte en una metáfora de distintos estados emocionales
 
+`MANIFIESTO`
+
+La máquina sentimental es un organismo artificial que responde al tacto humano como si tuviera emociones propias. Representa el intento de traducir afectos en datos; de convertir gestos en lenguaje digital.
+
+Su cuerpo, hecho de una materialidad blanda y orgánica, invita al acercamiento, pero también despierta la curiosidad por lo desconocido que habita en lo artificial.
+
+Esa mezcla de suavidad y extrañeza genera un momento de duda: el usuario no sabe si enfrentarse a un objeto inerte o a una presencia viva. En ese instante, la tecnología deja de ser solo herramienta y se vuelve territorio sensible, un espacio de descubrimiento donde lo mecánico parece respirar.
+
+La máquina no busca imitar lo humano, sino evocar emociones a través de la interacción.
+
+Cada gesto (apretar, estirar o acariciar) es un lenguaje que el cuerpo humano ofrece y la máquina interpreta, devolviendo una respuesta sonora y visual que traduce ese impulso en un paisaje emocional.
+
 `PARA EL MONTAJE`
 
 - proyección dentro de un marco de fotos, pintura que se mueve.
@@ -137,7 +149,11 @@ void setColor(int r, int g, int b) {
 
 ### Bocetos y propuestas
 
-subir imágenes
+![boceto 1](./imagenes/boceto1.jpeg)
+
+![boceto 2](./imagenes/boceto2.jpeg)
+
+![boceto 3](./imagenes/boceto3.jpeg)
 
 ### Ejemplos de módulos de tejidos
 
@@ -145,9 +161,13 @@ subir imágenes
 
 `IDEAS DE MÓDULOS`
 
-subir imágenes
+![referente 1](./imagenes/referente1.jpeg)
 
-<https://pin.it/7jbuxfWtN>
+![referente 2](./imagenes/referente2.jpeg)
+
+![referente 3](./imagenes/referente3.jpeg)
+
+### <https://pin.it/7jbuxfWtN>
 
 --- 
 
@@ -241,3 +261,10 @@ void draw() {
 - <https://www.fillipstudios.com/projects/tactile-orchestra>
 - <https://vimeo.com/145796518?from=outro-embed>
 - <https://www.youtube.com/watch?v=sVvUY3gBx9I>
+- <https://pin.it/2Ct9hggSm>
+- <https://pin.it/1LFInJLGF>
+- <https://pin.it/3ZUArFUul>
+- <https://pin.it/3jPCgxaNF>
+- <https://pin.it/51k1bTnDj>
+- <https://pin.it/M9rvnl11x>
+- 
