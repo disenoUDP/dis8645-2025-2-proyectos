@@ -168,7 +168,9 @@ Despues de que funciono por un rato dejo de funcionar el temporizador .-. y nuev
 
 Le paso el mando nuevamente al seba, no se que hice :-(
 
+Lo rehice de la versión 4_6 y lo volvo a fiuncionar YUPIIIIII
 
+Ahora incluire el sensor Tilt 
 
 
 
