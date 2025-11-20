@@ -56,9 +56,7 @@ Yo estuve ordenando los componentes para que queden bien distribuidos y funcione
 
 ### Investigacion botones
 
-1. Ver soldar y/o hacerle una base
-
-2. Millis (Examen)
+**Millis**
 
 **Que el temporizador se detenga cuando el valor de segundos llegue a 0**
 
@@ -84,7 +82,7 @@ Vi este video  [Arduino desde cero en Español - Capítulo 77 - Timer Interrupts
 
 Vi este otro video [¿Qué temporizador es mejor en Arduino? ¿Delay o Millis?](https://youtu.be/TVYFfhDKLK8?si=F9Vvom811NlrsgsQ) y ya no me queda claro si con lo de delay está bien detener el conteo, porque delay detiene otras funciones, y por eso se utilizan millis.
 
-**Según ChatGPT, si ocupo millis() debería hacer esto:**
+**Según ChatGPT, si ocupo millis debería hacer esto:**
 
 millis() va contando el tiempo sin detener el programa.
 
@@ -112,9 +110,10 @@ void loop() {
 }
 ```
 
-5. Ver que si se mantiene presionado, que no sume infinitamente 5s.
+**Ver soldar y/o hacerle una base**
 
+**Ver que si se mantiene presionado, que no sume infinitamente 5s**
 
 ### Palabras importantes
 
-alginato
+[Alginato](https://es.wikipedia.org/wiki/Alginato): El alginato es un polímero glicosídico constituido por los monosacáridos D-manurónico y L-gulurónico y es extraído de las algas pardas pertenecientes a la clase filogénica Phaeophyceae. En odontología, forma parte de la masa utilizada para obtener impresiones de los dientes y de los tejidos blandos adyacentes. Esta masa está compuesta de alginato y sales de calcio que, tras su preparación, ofrece un tiempo de trabajo entre 3 a 6 minutos. 
