@@ -53,14 +53,12 @@ void loop() {
 	// reacciona solo a 1 cambio de estado para evitar un doble conteo
 	if (currentStateCLK != lastStateCLK && currentStateCLK == 1) {
 
-		// si el estado DT es diferente al estado del CLK
-		// entonces el encoder de rotación tiene un CCW y esto significa que
-		// está en sentido antihorario CCW es decir Esta decrementando
+		// lee el estado del DT para determinar la direccion
+		// dependiendo de si es si va en sentido horario o antihorario
 		if (digitalRead(DT) != currentStateCLK) {
 			step++;
 			currentDir = "CW";
 		} else {
-			// } CW sentido Horario así que incrementa
 			step--;
 			currentDir = "CCW";
 		}
