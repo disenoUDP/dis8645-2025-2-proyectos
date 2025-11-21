@@ -32,9 +32,9 @@ Pero, Ava se aburre simplemente realizando la cuenta regresiva del temporizador,
 
 ### Sentimiento
 
-El sentimiento central del proyecto es la frustración.
+El sentimiento central del proyecto es **la frustración.**
 
-Esto se evidencia durante toda la interacción que tenga el usuario con WEBO, porque desde el momento que se enciende, no sólo activa un temporizador, lo hace responsable de Ava, lo que implica estar pendiente, observando y ansioso de que se pueda caer.
+Esto se evidencia durante toda la interacción que tenga el usuario con WEBO, porque desde el momento que se enciende, no sólo activa un temporizador, lo hace responsable de Ava, lo que implica **estar pendiente, observando y ansioso de que se pueda caer.**
 
 En cambio en un temporizador común, el usuario activa el conteo y confía en no tener que estar pendiente del paso del tiempo ya que le avisará a uno en el momento justo.
 
@@ -42,7 +42,7 @@ Con WEBO esa lógica no funciona porque también pone en juego la capacidad de e
 
 Esto surge porque la alarma se convierte en una acusación de que el usuario falló , ya no se trata de que pasen los 5 segundos, sino que no ocurra otra caída.
 
-WEBO transforma una acción simple en una experiencia molesta, mostrando cómo la frustración puede hacer que un objeto útil se vuelva una carga.
+WEBO transforma una acción simple en una experiencia molesta, mostrando cómo la frustración puede hacer que un **objeto útil se vuelva una carga.**
 
 ## Inputs y Outputs
 
@@ -160,10 +160,10 @@ Gasto real del equipo – 6.400
 
 ## Prototipo
 
-Para el prototipo planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
+Para el prototipo planteamos una carcasa con **morfología ovoide**, generada a partir de un volumen continuo y sin aristas para favorecer el **movimiento pendular**. En la base incorporamos un corte leve que actúa como punto de **apoyo inestable**, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
 
-En la superficie frontal se integrará la pantalla que muestra a Ava, funcionando como interfaz visual principal. A un costado se ubicará el botón destinado a sumar tiempo al temporizador, considerando ergonomía mínima y acceso directo.
+En la superficie frontal se integrará la **pantalla que muestra a Ava**, funcionando como interfaz visual principal. A un costado se ubicará el **botón destinado a sumar tiempo al temporizador**, considerando ergonomía mínima y acceso directo.
 
-En la parte superior se incorporará una serie de aberturas pequeñas, dimensionadas para que el sonido del speaker salga con claridad sin interferir con la estructura interna ni comprometer la rigidez de la carcasa.
+En la parte superior se incorporará una serie de **aberturas pequeñas, dimensionadas para que el sonido del speaker** salga con claridad sin interferir con la estructura interna ni comprometer la rigidez de la carcasa.
 
 ## Bibliografía
