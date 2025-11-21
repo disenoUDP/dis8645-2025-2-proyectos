@@ -79,6 +79,7 @@ void loop() {
 - velocidad 2 o intermedia: 3 segundos encendido y 0,5 segundos apagado
 - velocidad 3 o final: motor activado todo el tiempo hasta que se apague
 - esto lo hice a través del siguiente código que se basa en un loop en el cuál muestro las velocidades
+- el código lo saqué de un video de youtube y lo fui modificando respecto a lo que necesitaba, [videocodigo](https://www.youtube.com/watch?v=t6191Z2oxMQ)
 
 ```cpp
 #define vibrador 2
