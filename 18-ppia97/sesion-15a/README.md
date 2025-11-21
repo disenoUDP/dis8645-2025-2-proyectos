@@ -21,3 +21,9 @@ Una compañera nos ayudó a imprimir con filamento, ya que la que teniamos pesab
 ![clase](./imagenes/19.3.jpg)
 ![clase](./imagenes/19.4.jpg)
 
+
+
+![clase](./imagenes/19.1.jpg)
+![clase](./imagenes/19.2.jpg)
+![clase](./imagenes/19.3.jpg)
+![clase](./imagenes/19.4.jpg)
