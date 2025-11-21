@@ -106,6 +106,7 @@ flowchart TB
     classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
+--- 
 
 ### Pseudocódigo
 
@@ -152,8 +153,6 @@ flowchart TB
 ![molde](./imagen/patronaje.png)
 
 ![patronaje](./imagen/patrones.png)
-
-
 
 ---
 
