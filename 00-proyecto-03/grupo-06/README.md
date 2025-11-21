@@ -160,4 +160,10 @@ Gasto real del equipo – 6.400
 
 ## Prototipo
 
+Para el prototipo planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
+
+En la superficie frontal se integrará la pantalla que muestra a Ava, funcionando como interfaz visual principal. A un costado se ubicará el botón destinado a sumar tiempo al temporizador, considerando ergonomía mínima y acceso directo.
+
+En la parte superior se incorporará una serie de aberturas pequeñas, dimensionadas para que el sonido del speaker salga con claridad sin interferir con la estructura interna ni comprometer la rigidez de la carcasa.
+
 ## Bibliografía
