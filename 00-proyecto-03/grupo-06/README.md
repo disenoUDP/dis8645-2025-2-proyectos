@@ -158,6 +158,228 @@ Gasto real del equipo – 6.400
 
 ## Código
 
+Para empezar con el pseudocódigo lo dimos todo, escribiendo todos los sensores que íbamos a utilizar,  como también un archivo de créditos y archivo para establecer el cableado.
+
+Este pseudocódigo se puede encontrar en el WEBO_EMPOLLANDO
+
+(ver de incluir un pesado del código, foto o lo que corresponda)
+
+
+A continuación se realizó una prueba de cada uno de los componentes:
+
+Empezando por el sensor tilt, el cual era relativamente simple de utilizar ya que solo necesitaba alimentación de 5V, conexión a ground y un pin hacia el arduino donde se pueda recibir el estado de si está inclinado o no.
+
+ ``` cpp
+
+// establecer el pin que será conectado
+// el sensor para obtener su dato
+int pinSensor = 8;
+// crear una variable booleana para establecer
+// si hay inclinación o no presente
+bool parado;
+
+
+// lo que es necesario para los funcionamientos en void loop
+void setup()
+{
+// establecer que el pin llamado pinSensor va a ser un input
+  pinMode(pinSensor,INPUT);
+// comenzar la comunicación serial
+  Serial.begin(9600);
+}
+
+
+// aqui ocurre todos los funcionamientos del código
+void loop()
+{
+  // si se recibe una señal desde el pinSensor
+  if(digitalRead(pinSensor))
+  {
+    // significa que esta de lado
+    parado = false;
+     }
+      else {
+      // sino significa que está parado
+      parado = true;
+       }
+
+
+// si es que está parado
+if (parado){
+  Serial.println("estoy hacia arriba");
+  Serial.println(parado);
+  delay(1000);
+}
+// si es que no está parado
+else if (!parado){
+  Serial.println("estoy de lado");
+  Serial.println(parado);
+  delay(1000);
+  }
+}
+
+
+ ```
+
+El siguiente componente fue el motor, el cual necesitaba un circuito pwm para su uso correcto, después conectarlo a la alimentación y con un pin se enviará una señal que realizará su giro.
+
+ ``` cpp
+
+// pin al que será conectado el motor para ser controlado
+int motorPin = 9;
+
+
+void setup() {
+  //establecer que el pin que va a mandar una señal
+  // será el que fue declarado antes
+  pinMode(motorPin, OUTPUT);
+}
+
+
+void loop() {
+  // manda una señal de encendido
+  digitalWrite(motorPin, HIGH);  
+  // cada 2 segundos
+  delay(2000);                  
+
+
+  //apaga la señal
+  digitalWrite(motorPin, LOW);  
+  // cada 2 segundos
+  delay(2000);                  
+}
+
+ ```
+
+Después fue el display, que causó unos problemas iniciales debido a la manera en la que estaba soldada a unos pines, pero luego funcionó de la manera correcta, teniendo en cuenta que para todos los pines, excepto los de alimentación, eran necesarias resistencias de 10k ohm, donde pudimos hacer display del ejemplo de la biblioteca de adafruit.
+
+ ``` cpp
+
+#ifndef ACTUADOR_DISPLAY_H
+#define ACTUADOR_DISPLAY_H
+
+
+// INCLUIR BIBLIOTECAS DE USO PARA SENSOR/ACTUADOR
+
+
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_PCD8544.h>
+#include <Arduino.h>
+
+
+// CREAR LA CLASE DE NUESTRO SENSOR/ACTUADOR
+  class ActuadorDisplay {
+  public:
+  ActuadorDisplay();
+
+
+
+
+
+
+   // especificar todos los voids que serán utilizados en el archivo.cpp
+      void configuracionDisplay();
+     
+      void funcionaDisplay();
+
+
+
+
+   // si es que se necesitas especificar variables, deberían ir aqui
+   // ya sean bool int, ect.
+
+
+   
+  // Declarar objeto "LCD" para el software SPI
+     Adafruit_PCD8544 display = Adafruit_PCD8544(8, 7, 6, 5, 4);
+
+
+  // Definir la variable de "rotatetext" en "1" que hace que la pantalla muestre el texto en un ángulo de 90° a la derecha
+     int rotatetext = 1;
+
+
+   int waoses = 10;
+
+
+ ```
+
+El botón fue lo que seguía, que realmente como era probablemente el componente más simple, fue integrado directamente en el código principal donde se le aplicó alimentación y 
+se le asignó un pin específico para que el arduino recibiera la señal.
+
+ ``` cpp
+
+#ifndef SENSOR_BOTON_H
+#define SENSOR_BOTON_H
+
+
+// INCLUIR BIBLIOTECAS DE USO PARA SENSOR/ACTUADOR
+ #include <arduino.h>
+
+
+// CREAR LA CLASE DE NUESTRO SENSOR/ACTUADOR
+  class SensorBoton {
+  public:
+  SensorBoton();
+// especificar todos los voids que seran utilizados en el archivo.cpp
+  void configuracionBoton();
+  void funcionaBoton();
+
+
+// si es que se necesitas especificar variables, deberian ir aqui
+// ya sean bool int, ect.
+
+
+  bool estadoBoton = false;
+
+
+  int botonPin = 11;
+
+
+  int segundos = 0;
+
+
+  int minutos = 0;
+
+ ```
+
+Lo último fue el reproductor mp3 que nos causó la mayor cantidad de problemas, eventualmente funcionando al ser conectado en los pines 2 y 3 del arduino, teniendo los archivos de sonido en un formato específico de 0001.mo3 haber formateado la tarjeta SD montoneras de veces, pero con el siguiente codigo funciono:
+
+ ``` cpp
+ 
+#include <SoftwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+
+SoftwareSerial dfSerial(2, 3); // RX, TX
+DFRobotDFPlayerMini player;
+
+void setup() {
+  Serial.begin(115200);
+  dfSerial.begin(9600);
+
+  Serial.println("Initializing DFPlayer...");
+
+  if (!player.begin(dfSerial)) {
+    Serial.println("Unable to begin. Check:");
+    Serial.println("1. Wiring");
+    Serial.println("2. SD card FAT32");
+    Serial.println("3. Voltage divider on RX");
+    while (true);
+  }
+
+  Serial.println("DFPlayer online!");
+  player.volume(3);
+}
+
+void loop() {
+player.play(1);
+delay(4000);
+
+}
+
+ ```
+
+
 ## Prototipo
 
 Para el prototipo planteamos una carcasa con **morfología ovoide**, generada a partir de un volumen continuo y sin aristas para favorecer el **movimiento pendular**. En la base incorporamos un corte leve que actúa como punto de **apoyo inestable**, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
