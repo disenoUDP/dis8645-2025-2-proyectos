@@ -195,9 +195,8 @@ Si bien la intención principal es ocasionar decepción, no es con intenciones m
 
 ## Desarrollo circuito
 
-![humo](./imagenes/humidificador-1.gif)
+![humo](./imagenes/gifs-avances-1.gif)
 
-![motor](./imagenes/motor-xbox-2.gif)
 
 
 ### ⋅⋯⋯⋅ Construcción ⋅⋯⋯⋅
