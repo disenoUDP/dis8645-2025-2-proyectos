@@ -98,7 +98,6 @@ Los componentes definidos para nuestra máquina son los siguientes:
 3. Suelta vapor al alcanzar suficiente cantidad de vueltas.
 4. Se reinicia
 
-
 #### E) Motor vibrador
 1. Asociar a valores de pasos determinados alcanzados por manivela
 2. En un punto medio de progreso (60%) se activa y aumenta su intensidad a medida que avanza
@@ -122,7 +121,29 @@ Los componentes definidos para nuestra máquina son los siguientes:
 
 ### ⋅⋯⋯⋅ Diagrama de flujo ⋅⋯⋯⋅
 
-Texto
+``` mermaid
+flowchart TB
+    A["La persona está<br>frente a la máquina"] --> B["Ve la manivela"]
+    B --> C["La gira 1 vez en <br>sentido horario"] & n1["La gira en <br>sentido antihorario"]
+    C --> n2["Se evidencia una barra de progreso (y de niveles)"]
+    n2 --> n4["Se gira en la misma dirección hasta alcanzar el siguiente nivel"]
+    n4 --> n5["Se rellena 1 nivel más de la barra de progreso"] & n7["Estímulos"]
+    n7 --> n8["Se encienden luces de la barra de progreso"] & n9["Se emite un sonido"] & n10["La máquina se pone a vibrar/temblar"]
+    n5 --> n11["Tras haber llenado la barra de progreso se exageran los estímulos"]
+    n5 -.-> n19["Se repite el proceso"]
+    n11 --> n12["Se abre una compuerta"] & n13["Las luces se encienden y se apagan"] & n14["Al seguir girando la manivela ocurre el show final"]
+    n14 --> n15["Se libera el humo durante un tiempo"] & n16["Suena un sonido chistoso"]
+    n15 --> n17["Tras ello se reincia la máquina"]
+    n16 --> n17
+    n1 --> n18["No pasa nada"]
+    n5 <--> n4
+    n17 -.-> C
+    n19 -.-> n4
+    A@{ shape: rect}
+    B@{ shape: rect}
+    n1@{ shape: rect}
+    style A stroke-width:2px,stroke-dasharray: 0
+```
 
 ### ⋅⋯⋯⋅ Bill of Materials ⋅⋯⋯⋅
 
@@ -166,13 +187,17 @@ Antes de hacer funcionar el aparato hay que corroborar que este se encuentre con
 
 ### ⋅⋯⋯⋅ Contexto de uso ⋅⋯⋯⋅
 
-Esta máquina está para ser pensada como un "Artículo de broma". 
+El artefacto no ha sido planificado para utilizarlo en un entorno preciso (o situación en particular), sin embargo, al momento de ahondar y reflexionar sobre el contexto en el que podría funcionar serán en espacios libres de formalidad en los que se pueda presentar como una *sorpresa* sin generar efectos adversos en los usuarios. Por ejemplo, emociones como la ira, tristeza, entre otros.
+
+Si bien la intención principal es ocasionar decepción, no es con intenciones malintencionadas ni perversas, puesto que se explora lo *irónico* y chistoso ante la experiencia: ir creando e incrementado una expectativa ante el misterio de la funcionalidad de la máquina cuyo desenlace se activa tras el intercambio entre esfuerzo físico para liberar humo.
 
 ***
 
 ## Desarrollo circuito
 
-Texto
+![humo](./imagenes/gifs-avances-1.gif)
+
+
 
 ### ⋅⋯⋯⋅ Construcción ⋅⋯⋯⋅
 

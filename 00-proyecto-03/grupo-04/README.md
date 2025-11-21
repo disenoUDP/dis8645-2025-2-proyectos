@@ -12,9 +12,59 @@ INTEGRANTES
 
 ## Presentación Textual
 
+`"Atrápame si puedes"` máquina interactiva que funciona con dos sensores de fuerza/presión. El usuario presiona los sensores para controlar una red "atrapahadas". El objetivo del juego es atrapar a las hadas.
+
+En el juego, atrapar al personaje es totalmente posible, pero la dificultad surge del propio sistema; que sabotea al jugador con controles que funcionan al revés. La desorientación provoca una frustración cómica que pone al jugador en el límite entre el control y el caos.
+
+La máquina representa el desajuste: el usuario quiere atrapar un objetivo claro, pero la interfaz responde de forma particular. Aparece el humor, la frustración y el esfuerzo por alcanzar una meta, donde puede torcerse por detalles ridículos y aun así seguimos intentándolo.
+
 ## Metáfora
 
+- La máquina es una representación tecnológica del logro frustrado, esa sensación que parece estar a punto de alcanzarse, pero que se rompe por un detalle absurdo. Representa esa experiencia humana de perseguir algo que siempre se escapa (movimiento involuntario, un error, un control invertido). Una máquina que te hace sentir querer algo y perderlo por un gesto mínimo.
+
+`Sentimientos`
+
+- Sensación de descontrol o confusión
+- Frustración cómica
+- Producto del control invertido, genera: sorpresa, desorientación.
+- El juego provoca risa, molestia, esfuerzo y competencia.
+
 ## Inputs y Outputs
+
+`Inputs (entradas)`
+
+La máquina recibe la presión aplicada por el usuario sobre los dos sensores de fuerza. Cada sensor entrega un valor analógico que indica intensidad de la presión, interpretándose como comandos de movimiento para la red atrapahadas. El sistema también recibe la intención de dirección del usuario, que se traduce en patrones de presión en dos diferentes direcciones.
+
+1. Presión del usuario sobre los sensores FSR
+   - El jugador presiona los sensores de fuerza (botones) para mover al personaje.
+   - La cantidad de fuerza aplicada se traduce en velocidad o dirección.
+   - Selección inicial del personaje
+   - Antes de jugar, el usuario elige qué personaje quiere intentar atrapar.
+
+La máquina toma como input la descoordinación, el error o la insistencia del jugador, todo eso afecta en cómo la red "atrapahadas" se mueve.
+
+`Outputs (salidas)`
+
+La máquina genera movimientos invertidos o desviados de la red según los valores recibidos, entregando desplazamientos que no coinciden con la dirección esperada por el usuario. También produce evasiones automáticas del personaje cuando detecta una presión que coincide con un intento de atrape. El resultado final son respuestas erróneas, escapes programados y un control que no deja precisión del usuario.
+
+2. Movimiento del personaje en pantalla
+   - El personaje se escapa cuando el jugador está cerca.
+
+3. Movimiento de la red atrapahadas en pantalla
+   - Red que se maneja mediante los sensores de fuerza.
+
+4. Cambios en dirección, velocidad o animaciones del personaje.
+
+### Bill of materials
+
+|Nombre componente|Características|Cantidad|Especificaciones|
+|---|---|---|---|
+|Sensor de fuerza|FSR402|2|una resistencia que cambia su valor (en ohmios Ω) dependiendo de la cantidad que se presiona.|
+|Arduino Uno|R4 minima o |1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
+|Pantalla Dell|14 pulgadas|1|pantalla de vale ruz|
+|Carcasa|Impresión 3D|1|Filamento: PLA|
+|Plinto| | | |
+|Cables| | | |
 
 ---
 
@@ -23,6 +73,12 @@ INTEGRANTES
 Como grupo planificamos que haremos en cada semana del trabajo mediante una carta gantt, vimos el presupuesto de los materiales que necesitabamos (algunos ya estaban, pero decidimos dejarlos) y por último, hicimos un diagrama de flujo del proyecto en [mermaid](https://mermaid.js.org/)
 
 ### Carta Gantt
+
+![carta gantt](./imagenes/cartaGantt.png)
+
+### Presupuesto
+
+![Presupuesto](./imagenes/presupuesto.png)
 
 ### Diagrama de Flujo
 
@@ -60,10 +116,6 @@ flowchart TB
     classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
 ```
 
-### Presupuesto
-
-![Presupuesto](./imagenes/presupuesto.png)
-
 ---
 
 ## Proceso y bocetos
@@ -84,15 +136,447 @@ flowchart TB
   - Ofendida: si detecta un movimiento brusco o toque fuerte, se cierra emocionalmente (luces apagadas, pantalla mostrando mensajes dramáticos). Luego de unos segundos, vuelve lentamente a su estado normal.
 - **La** **Máquina** **sentimental** **que** **no** **quiere** **jugar** **contigo:** es un personaje que invita entusiastamente a jugar, pero cuando tomas su “control” activa un error intencional y se retracta. Utiliza un sensor ultrasónico para detectar cercanía y un sensor FSR en el control para identificar cuándo alguien lo toma y así gatillar la broma. Cuando la persona se aleja, el personaje vuelve a su actitud amistosa y reinicia el ciclo.
 
-`PROPUESTA ELEGIDA`
+### `PROPUESTA ELEGIDA`
 
-"BOCETOS FÍSICOS" ✅
+- Máquina sentimental "Atrápame si puedes"
+
+`PROPUESTA VISUAL`
+
+- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
+- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
+- Tipografía: pixel-retro
+- Máquina física: control retro hecho con impresión 3D
+- Cursor: red atrapa hadas hecho con pixel art
+- Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
+
+![Hadas](./imagenes/haditas.gif)
+
+![choose aaron](./imagenes/chooseAaron.gif)
+
+![choose misaa](./imagenes/chooseMisa.gif)
+
+![choose mateo](./imagenes/chooseMateo.gif)
+
+![choose janis](./imagenes/chooseJanis.gif)
+
+|Hada|Volando|Estático|
+|---|---|---|
+|![aaron](./imagenes/aaron.png)|![aaron](./imagenes/aaronVolando.gif)|![aaron](./imagenes/aaronEstatico.gif)|
+|![misa](./imagenes/misa.png)|![misa](./imagenes/misaVolando.gif)|![misa](./imagenes/misaEstatico.gif)|
+|![mateo](./imagenes/mateo.png)|![mateo](./imagenes/mateoVolando.gif)|![mateo](./imagenes/mateoEstatico.gif)|
+|![janis](./imagenes/janis.png)|![janis](./imagenes/janisVolando.gif)|![janis](./imagenes/janisEstatica.gif)|
+
+|Paisaje|Inicio|
+|---|---|
+|![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
+|![bosque2](./imagenes/bosque2.jpeg)|![inicio](./imagenes/inicio2.gif)|
+|![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
+|![red 1](./imagenes/redAtrapaHadas.png)|![red 2](./imagenes/redAtrapaHadas2.png)|
 
 ---
 
 ## Etapas del código
 
+- Primero, hicimos un pseudocódigo de lo que queríamos que hiciera el sensor de fuerza.
+
+`PSEUDOCÓDIGO`
+
+```cpp
+Iniciar variables:
+    estados del sensor = presion / sin presion
+    objetivo = posicion inicial
+
+Cuando el arduino esté encendido:
+    
+    Usuario presionar los sensores y el arduino leerá los datos de los sensores
+
+    SI hay presion == sensor 1 leido
+        mostrar_mensaje: Valor
+
+    NO hay presion == sensor 1 leido
+        mostrar_mensaje: Valor
+
+    SI hay presion == sensor 2 leido
+        mostrar_mensaje: Valor
+
+    NO hay presion == sensor 2 leido
+        mostrar_mensaje: Valor
+
+Arduino lee los valores
+    Mandar datos a p5.js
+    enviar valores a p5.js
+
+enviar valor ejeX.valorCrudo
+luego enviar ejeY.valorCrudo
+```
+
+- Segundo, partimos haciendo un código en Arduino Ide, el cual lee los valores de presión de los sensores, para que después mande los datos a P5.js (Nos ayudó Aarón a ordenar el código)
+
+### `AtrapameSiPuedes.ino`
+
+```cpp
+// incluir 1 clase para recibir datos de sensores
+// incluir 1 clase para emitir datos segun eso
+
+#include "SensorFuerza.h" // incluye las clases SensorFuerza
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+// Puntito puntito;
+
+void setup() {
+  Serial.begin(9600);
+  ejeX.configurar(A0);   // se asigna un sensor al pinA0
+  ejeY.configurar(A1);   // se asigna un sensor al pinA1
+}
+
+void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
+  ejeX.leer();
+  ejeY.leer();
+
+  Serial.println(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
+  Serial.println(ejeY.valorCrudo);  // manda al serial monitor el valor crudo del sensor Y
+
+  Serial.print("valorX");
+  Serial.print(",");
+  Serial.println("valorY");
+
+  delay(40);
+  // enviar valores a p5
+  // enviar valor ejeX.valorCrudo
+  // luego enviar ejeY.valorCrudo
+  // Serial.write(ejeX.valorCrudo, ejeY.valorCrudo);
+}
+```
+
+### `SensorFuerza.cpp`
+
+```cpp
+#include "SensorFuerza.h"
+// incluye el .h de SensorFuerza
+
+SensorFuerza::SensorFuerza() {} //constructor
+
+SensorFuerza::~SensorFuerza() {} // destructor
+
+void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
+  SensorFuerza::patita = nuevaPatita;
+  pinMode(SensorFuerza::patita, INPUT);  // pin donde se encuentra el sensor
+}
+
+void SensorFuerza::leer() {   // funcion para leer el sensor
+  SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
+// y cada vez que se llama .leer, se actualiza el valor
+}
+```
+
+### `SensorFuerza.h`
+
+```
+#ifndef SENSOR_FUERZA_H // si no esta Sensor fuerza definido
+#define SENSOR_FUERZA_H // aqui lo definimos 
+
+#include <Arduino.h>  // incluimos las funciones basicas de arduino
+
+class SensorFuerza {     // definimos la clase sensor fuerza
+public:
+  SensorFuerza();  // constructor
+  ~SensorFuerza(); // destructor
+
+  void configurar(int nuevaPatita); // guarda en que pin se encuentra el sensor
+  void leer();  // declara la funcion para leer el sensor
+
+  int patita;       // guarda el numero del pin (A0,A1)
+  int valorCrudo;   // guarda el numero del sensor, entre 0 a 1023 (segun presion)
+  int valorMapeado; 
+};
+
+#endif
+```
+
+### Conexiones
+
+|Conexión|Pin|
+|---|---|
+|FSR-1 extremo 1|-> 5V|
+|FSR-1 extremo 2|-> A0|
+|FSR-2 extremo 2|-> 5V|
+|FSR-2 extremo 2|-> A1|
+|Resistencia1 10kΩ extremo 1|-> A0|
+|Resistencia1 10kΩ extremo 2|-> GND|
+|Resistencia2 10kΩ extremo 1|-> A0|
+|Resistencia2 10kΩ extremo 2|-> GND|
+
+Preguntar si está bien!!
+![esquematico](./imagenes/esquematico.png)
+
+- Tercero, cuando logramos que arduino leyera los valores de presión del sensor, comenzamos a realizar la conexión entre arduino y p5.js.
+- El sketch fue con ayuda de la librería de Gohai:  [p5.webserial](https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
+  
+```p5.js
+const BAUDRATE = 9600;  //velocidad del puerto
+let port;               //variable del puerto
+let connectBtn;         //boton
+
+let sensorX = 0;        //izquierda-derecha
+let sensorY = 0;        //arriba-abajo
+
+// 0 = esperamos X, 1 = esperamos Y
+let lecturaEstado = 0;
+
+//imagenes 
+let img; //imagen en png de la red atrapa mosquitos
+let backImg; //imagen de misaa
+
+//aqui es donde se cargan las imagenes y todos los recursos que utilizaremos
+function preload() {
+  img = loadImage("atrapar.png");
+  backImg = loadImage("misaa.png");
+  
+}
+
+//configuracion del lienzo
+function setup() {
+  createCanvas(1920, 1080); //tamaño del lienzo
+  background(20); //color de fondo
+
+  port = createSerial(); //creamos el puerto serial para la conexión
+  port.bufferSize(1024); //buffer que nos permitirá leer con una velocidad adecuada los datos que entrega arduino
+
+  //botón para conectar el arduino
+  connectBtn = createButton('Conectar Arduino'); //texto para el boton
+  connectBtn.position(10, 10); //posición del boton
+  connectBtn.mousePressed(connectBtnClick); //al hacer clic se activa
+}
+
+function draw() {
+  background(200);
+  
+  image(backImg, 400, 400, 200, 200); //aqui se llama a la imagen para que se pueda dibujar 
+
+  
+  //lee los valores de arduino en el formato correspondiente a p5
+  let line = port.readUntil("\n"); 
+  while (line && line.length > 0) {
+    line = trim(line);
+
+    // si la línea no es solo números (tiene letras, comas, etc.), la ignoramos
+    if (/^\d+$/.test(line)) {
+      let v = int(line);
+
+      if (lecturaEstado === 0) {
+        sensorX = v;
+        lecturaEstado = 1; // la próxima numérica será Y
+      } else {
+        sensorY = v;
+        lecturaEstado = 0; // volvemos a esperar X
+      }
+    }
+
+    // leer siguiente línea del buffer (los datos)
+    line = port.readUntil("\n"); //salto de linea 
+  }
+
+  // Mapear a la pantalla
+  let posX = map(sensorX, 0, 1023, 0, width);
+  let posY = map(sensorY, 0, 1023, height, 0); // invertido
+
+  let imgSize = 120; // tamaño de la imagen
+  imageMode(CENTER); //posicion de la imagen al centro, (CORNER) tambien funciona
+  image(img, posX, posY, imgSize, imgSize); //posicion y tamaño de la imagen
+  
+  // tamaño, color y texto de los valores que recibe el sensor en p5, esto puede modificarse para agregar las vidas y el conteo de puntos.
+  fill(180);
+  textSize(14);
+  text(`X: ${sensorX}`, 10, height - 30);
+  text(`Y: ${sensorY}`, 10, height - 10);
+  
+  //agregamos la otra imagen, en este caso la de misaa
+  let misaaSize = 220; // tamaño de la imagen (puedes cambiarlo)
+  imageMode(CENTER);
+  image(backImg);
+}
+
+//funcion para que el boton de conectar el arduino a p5 funcione al hacer clic y lea la placa
+function connectBtnClick() {
+  if (!port.opened()) {
+    port.open(BAUDRATE);
+  } else {
+    port.close();
+  }
+}
+```
+
+### ¿Cómo conectamos Arduino con P5.js?
+
+- Primero, vimos estos videos para entender la conexión entre Arduino y p5.js  [
+Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y) y [p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch](https://www.youtube.com/watch?v=feL_-clJQMs&t=1142s) 
+
+- Luego, debemos probar la conexión serial. Pero antes, hay que descargar un programa intermediario que hace que pueda leer el puerto serial desde una página web, que por motivos de seguridad están bloqueados. Este es el link de descarga: (https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2).
+
+`P5.serialcontrol`
+
+- Esta aplicación ejecuta p5.serialserver, que permite la conectividad entre dispositivos serie locales y aplicaciones web mediante la biblioteca p5.serialport de p5.js.
+- Nos dimos cuenta que esta aplicación no funcionaba, no encontraba el puerto serial, por lo que no se podía hacer la conexión.
+
+![p5 Serial Control](./imagenes/p5SerialControl.png)
+
+- Le pedimos ayuda a Aarón con respecto a la aplicación, nos recomendó usar otra biblioteca para poder conectar Arduino con p5.js
+
+### `p5.webserial.js de Gohai`
+
+(https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started)
+
+Esta es una biblioteca para p5.js que añade compatibilidad para interactuar con dispositivos serie mediante la API Web Serial, que actualmente está compatible con Chrome y Edge.
+
+### ¿Cómo hacer la conexión?
+
+- Primero hay que descargar este archivo:(https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js) o pegarlo en la head del html, debajo de la línea que carga p5 en p5.js.
+
+```cpp
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
+
+- Segundo crear una variable global y asignarle un nuevo puerto de serie dentro de la configuración.
+
+```cpp
+let port;
+
+function setup() {
+  port = createSerial();
+  // ...
+```
+
+IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un formato recomendado es 123,456\n (dos valores separados por una coma y un salto de línea).
+
+- p5.js escucha el puerto usando la librería:
+
+```cpp
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
+
+- `p5.js` lee cada línea y actualiza las variables.
+- `p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
+- Para que arduino envíe los datos correctos a p5.js se debe utilizar el siguiente formato:
+
+```cpp
+#include "SensorFuerza.h"
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+
+void setup() {
+  Serial.begin(9600); //puerto serial, debe coincidir con el de p5
+  ejeX.configurar(A0); //pin que lee los datod del eje x
+  ejeY.configurar(A1); //pin que lee los datos del eje y 
+}
+
+void loop() {
+  ejeX.leer();
+  ejeY.leer();
+
+//valores crudos del sensor 
+  int x = ejeX.valorCrudo;
+  int y = ejeY.valorCrudo;
+
+//lee los valores en la consola
+  Serial.print(x);
+  Serial.print(",");
+  Serial.println(y);
+
+  delay(40);
+}
+```
+
+- Lo que se imprime en el Serial Monitor se ve así:
+
+```cpp
+12,30
+14,45
+20,50
+...
+```
+
+- Ahora viene la estructura del sketch de `p5.js`, una carpeta. Esta debe contener:
+
+```
+1. index.html
+2. sketch.js
+3. demás archivos que queremos utilizar, como audio, imágenes, etc.
+```
+
+Recuerda: la librería a utilizar se pega en el html del sketch de p5.js
+
+### Botón para conectar el Arduino desde el navegador
+
+Chrome y Edge exigen que el usuario haga click para acceder al puerto. Es por eso que se "dibujará" un botón para conectarlo manualmente.
+
+```cpp
+connectBtn = createButton('Conectar Arduino');
+connectBtn.mousePressed(() => port.open(9600));
+```
+
+### Lectura Serial en p5
+
+Para que `p5.js` lea los valores de la consola de Arduino.
+
+```cpp
+let line = port.readUntil("\n");
+  while (line && line.length > 0) {
+    line = trim(line);
+```
+
+### Para mostrar imágenes en p5.js
+
+1. Primero se define la imagen.
+2. Se crea function `preload ()` para cargar esta imagen para que sea dibujada en el sketch.
+3. Se llama la imagen ya definida y con su nombre tal cual como se subió en la carpeta del proyecto de p5.js para que se dibuje correctamente en el sketch.
+
+```cpp
+let img;
+function preload() {
+  img = loadImage("imagen.png");
+}
+```
+
+4. Para mostrar la imagen la pantalla:
+
+```cpp
+imageMode(CENTER); // (CORNER) para ajustarla desde la esquina del sketch
+image(img, posX, posY, 120, 120); // posición de la imagen y tamaño
+```
+
+### Posición de los sensores de fuerza
+
+```cpp
+let posX = map(sensorX, 0, 1023, 0, width); //para el movimiento de izquierda a derecha
+let posY = map(sensorY, 0, 1023, height, 0); //para el movimiento de arriba a abajo
+```
+
+Para que funcione correctamente, debemos tener en cuenta que:
+
+- Arduino debe mandar los datos consistentes en el mismo formato.
+- p5.js deber leer las líneas completas de datos con `readUntil("\n")`
+- Chrome y Edge obligan a usar un botón para abrir el puerto y permitir la conexión.
+- NO ABRIR `Serial Monitor` de arduino mientras p5.js lo usa. Esto interrumpe la conexión.
+- Usar servidor local, como vs code con liver server para visualizar el html.
+- Cerrar ventanas p5.js repetidas, sólo accede a un puerto.
+
+### Resultado
+
+![resultado](./imagenes/p5Resultado.png)
+
+---
+
 ## Etapas de prototipo
+
+- Control: Para este videojuego decidimos diseñar un control físico intencionalmente incómodo, tomando como referencia la estética pixelada del juego. 
+- Aunque a primera vista recuerda a un control tradicional, su construcción a partir de pequeños módulos cuadrados (imitando un objeto pixelado) genera una interacción torpe, rígida y poco ergonómica. 
+- Los 2 botones principales son difíciles de presionar y algunos no cumplen ninguna función, la forma rígida obliga a agarrarlo de manera poco natural. Además, el peso exagerado provoca cansancio, añadiendo una capa física al desafío del juego.
+
+![control 1](./imagenes/controlRemoto1.png)
+
+![control 2](./imagenes/controlRemoto2.png)
 
 ## Fotografías del proyecto terminado
 
