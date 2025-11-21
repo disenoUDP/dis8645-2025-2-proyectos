@@ -46,13 +46,11 @@ Muy interesante todo ese tema de lo que son y no son objetos, y trabajar en el l
 
 [transducción](https://es.wikipedia.org/wiki/Transducci%C3%B3n#): La transducción, por definición, es la transformación de un tipo de señal o energía en otra de distinta naturaleza. Más específicamente, transducción es un término que se utiliza en diversos campos.
 
-[Mímesis:](https://es.wikipedia.org/wiki/M%C3%ADmesis): es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
+[Mímesis](https://es.wikipedia.org/wiki/M%C3%ADmesis): es un concepto estético, utilizado en la crítica literaria y la filosofía. Tiene una amplia gama de significados, incluyendo imitatio, imitación, similitud no sensible,  receptividad, representación, mimetismo, acto de expresión, acto de semejanza y presentación de sí.
 
 [Vanguardias artísticas](https://es.wikipedia.org/wiki/Vanguardismo): Alude también al conjunto de movimientos artísticos y literarios que se formaron a comienzos del siglo XX en Occidente que rompieron con la tradición académica y buscaron la innovación.
 
 ## Encargo-17: Claudia González Godoy
-
-Cada persona debe subir una investigación detallada de la obra artística de Claudia González Godoy, con énfasis en su investigación sobre ríos, incluyendo información sobre premios, exposiciones, colaboradores, estudios y referencias en su obra.
 
 > Fuente https://www.claudiagonzalez.cl/
 
@@ -91,6 +89,8 @@ Yto Aranda dice: "del bit al barro, de la pantalla a la tierra húmeda, de la lu
 Timothy Morton
 
 Para la 17ª Bienal de Artes Mediales propone una instalación inmersiva que integra tejido, luz, sonido, video y sensores, una experiencia inmersiva y sensorial que reacciona a la presencia del público con un Sensor de Presencia, que denota un intercambio simbiótico que sostiene la vida, además de tener destellos con sus luces LED entre sus tejidos o raíces, y luces en sus obras de acrílico.
+
+![foto instalación](./imagenes/yto.jpeg)
 
 Habla del bosque esclerófilo, las raíces y las micorrizas, todo en base a investigaciones científicas sobre la sensibilidad vegetal y cómo se va entrelazando con arte, ciencia y tecnología desde las prácticas en artes mediales y ecología en América Latina.
 
