@@ -424,7 +424,7 @@ void setup () {
   actuadorDisplay.configuracionDisplay();
   sensorBoton.configuracionBoton();
   sensorSD.configuracionSD();
-  // actuadorMotor.configuracionMotor();
+  actuadorMotor.configuracionMotor();
 }
 
 void loop() {
