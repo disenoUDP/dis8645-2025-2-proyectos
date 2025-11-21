@@ -215,7 +215,7 @@ Si bien la intención principal es ocasionar decepción, no es con intenciones m
 
 ### ⋅⋯⋯⋅ Código ⋅⋯⋯⋅
 
-[Carpeta con los códigos]()
+[Carpeta con los códigos](https://github.com/Camila-Parada/dis8645-2025-2-proyectos/tree/main/00-proyecto-03/grupo-05/codigos-v1)
 
 ***
 /
