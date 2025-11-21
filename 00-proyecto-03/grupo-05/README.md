@@ -48,7 +48,7 @@ Para poder trabajar en el proyecto de forma más estratégica y ordenada es que 
 
 ### ⋅⋯⋯⋅ Carta Gant ⋅⋯⋯⋅
 
-Documento que expone el cronograma semanal y las etapas de trabajo a la que se asigna cada semana.
+Documento que expone el cronograma del proyecto y las etapas de trabajo a la que se asigna cada semana.
 
 ![carta-gantt](./imagenes/carta-gantt.png)
 
@@ -67,57 +67,61 @@ Los componentes definidos para nuestra máquina son los siguientes:
 #### A) Manivela/encoder
 1. Definir valores que indiquen que se dió una vuelta.
 2. Vueltas de manivela alimentan un contador.
-3. Vueltas horarias suman y antihorarias restan.
+3. Vueltas horarias suman y antihorarias no hacen nada.
 4. Establecer hitos (cantidad de vueltas) que activan actuadores e indican progreso.
 5. Cantidad suficiente de vueltas de la manivela activan el humo.
 6. Ejemplo: 15%, 30%, 60%, 80%, 100%. Porcentaje de avance de giros necesarios para llegar a climax.
+7. Traducir los porcentajes en cantidad de vueltas.
+8. Definir los niveles: nivel 0 - 1 vuelta, nivel 1 - 6 vueltas, etc.
+9. Se reinicia.
 
 
 #### B) MP3 y parlante
 1. Ligar a número de vueltas de la palanca.
 2. Asociar volumen o audio variable según cantidad de vueltas.
-3. Establecer audio cuando se complete la interacción. Enuncia salida del humo.
+3. Establecer audio cuando se complete la interacción. "Enuncia" salida del humo.
 4. Establecer instancia en la que suena cada audio. En este caso cuando se pasa por el punto superior de la manivela suena el audio (0,5 seg).
-5. Audio cambia dependiendo del paso en el que se encuantra
-6. Siempre se reproduce el audio correspondiente al estado de avance actual. Si se gira la manivela de manera antihoraria se regresa al sonido anterior.
-7. Al llegar al climax se reproduce audio distinto más largo (5 seg mínimo)
-8. Se reinicia
+5. Audio cambia dependiendo del paso en el que se encuantra.
+6. Siempre se reproduce el audio correspondiente al estado de avance actual.
+7. Al llegar al climax se reproduce audio distinto más largo (5 seg mínimo).
+8. Se reinicia.
 
 #### C) Luces LEDs
-1. Instalar todas las led en fuente de energía
-2. Establecer cuando se enciende cada led y cuánto se mantiene encendida
-3. Establecer pasos según valores de manivela
-4. Se prende una luz al alcanzar el paso siguiente
-5. Al llegar al final las luces titilan 
-6. Interacción inicia con una luz prendida
-7. Vuelve a una luz prendida al completar interacción
+1. Instalar todas las led en un pin.
+2. Establecer cuando se enciende cada led y cuánto se mantiene encendida.
+3. Establecer pasos según valores de manivela.
+4. Se prende una luz al alcanzar el paso siguiente.
+5. Al llegar al final las luces titilan.
+6. Interacción inicia con una vuelta que se produce que una luz se encienda.
+7. Se reinicia.
 
 #### D) Humidificador
-1. Asociar a último paso (100%)
-2. Definir cantidad de vapor/tiempo de activación
-3. Suelta vapor al alcanzar suficiente cantidad de vueltas.
-4. Se reinicia
+1. Asociar a último paso (100%, vueltas completas).
+2. Definir cantidad de tiempo de activación.
+3. Suelta vapor modificado al alcanzar suficiente cantidad de vueltas.
+4. Se reinicia.
 
 #### E) Motor vibrador
-1. Asociar a valores de pasos determinados alcanzados por manivela
-2. En un punto medio de progreso (60%) se activa y aumenta su intensidad a medida que avanza
-3. Se desactiva nuevamente al completar la interacción
+1. Asociar a valores de pasos determinados alcanzados por manivela.
+2. En un punto medio de progreso se activa y aumenta su intensidad a medida que se acerca el final.
+3. Se desactiva nuevamente al completar la interacción completa.
 4. Se reinicia
 
 #### F) Servomotor/compuerta
-1. Asociar a bomba de agua y completar los giros de manivela.
-2. Abre una compuerta para dejar salir el humo
-3. Queda abierta brevemente y se vuelve a cerrar
-4. Se resetea
+1. Asociar al humidificador y completar los giros de manivela.
+2. Abre una compuerta para dejar salir el humo.
+3. Queda abierta brevemente y se vuelve a cerrar.
+4. Se resetea.
 
 
 #### Requisitos de código
 
-- Valores de la manivela (almacenados en int) dictan lo que ocurre con los actuadores. Se ordenan con rangos de valor según avance.
-- Giros horarios suman, giros antihorarios restan.
-- Sonidos se activan y se reproducen
-- Luces se activan y se mantienen activados
-- Humidificador suelta humo de manera rápida y certera
+- Valores de la manivela (almacenados en int) dictan lo que ocurre con los actuadores. Se ordenan con "rangos de valor" según avance.
+- Giros horarios suman, giros antihorarios no hacen nada (neutros).
+- Sonidos se activan y se reproducen.
+- Luces se activan y se mantienen activados hasta el "gran final".
+- Motor vibra a la mitad del progreso hasta el gran final.
+- Humidificador suelta humo de manera rápida y certera por un tiempo determinado.
 
 ### ⋅⋯⋯⋅ Diagrama de flujo ⋅⋯⋯⋅
 
@@ -155,6 +159,7 @@ flowchart TB
 | Encoder rotatorio KY-040 360 grados | Sensor | 1 | 5V | $2.000  | https://afel.cl/products/encoder-rotatorio-ky-040-360-grados |
 | Modulo reproductor MP3 | Actuador | 1 | 3.2 a 5V | $2.990 | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini |
 | Motor vibrador PWM Switch DC | Actuador | 1 | 3 a 5.3 VDC | $2.000 | https://afel.cl/products/motor-vibrador-pwm-switch-dc |
+| Motor de vibración mando de Xbox 360 | Actuador | 1 | 5V | Reutilizado | https://es.aliexpress.com/item/1005002777653182.html |
 | Mini humidificador USB tipo C de 5V | Actuador | 1 | 5V | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
 | Micro Servomotor SG90 | Actuador | 1 |  3 a 7.2 V | $1.990 | https://afel.cl/products/micro-servomotor-sg90 |
 | Mini Parlante Altavoz de 3w | Salida audio | 1 | 3 VDC | $3.000 | https://afel.cl/products/mini-parlante-altavoz-de-3w |
