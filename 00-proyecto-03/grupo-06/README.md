@@ -32,9 +32,7 @@ Está pensado para una persona que necesita temporizar intervalos cortos o varia
 
 WEBO funciona gracias a Ava, el ave del paraíso en su interior, ella se encargará de recordar el tiempo en el que debería sonar la alarma que es manejada por el temporizador.
 
-Pero, Ava se aburre simplemente realizando la cuenta regresiva del temporizador, así que cada cierto tiempo, se pondrá a bailar, haciendo piruetas de una manera tan intensa que…
-
-WEBO se puede caer de lado, esto es muy malo, porque Ava detesta estar en esa posición, por lo que hará sonar una alarma de alto volumen, para avisarle al usuario que algo malo ocurrió.
+Pero, Ava se aburre simplemente realizando la cuenta regresiva del temporizador, así que cada cierto tiempo, se pondrá a bailar, haciendo piruetas de una manera tan intensa que… WEBO se puede caer de lado, esto es muy malo, porque Ava detesta estar en esa posición, por lo que hará sonar una alarma de alto volumen, para avisarle al usuario que algo malo ocurrió.
 
 ### Sentimiento
 
