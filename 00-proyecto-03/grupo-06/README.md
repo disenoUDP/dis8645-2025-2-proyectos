@@ -34,6 +34,8 @@ He aquí el segundo objeto, una gallina, que realmente es un temporizador de la 
 
 Hasta ahí quedan las similitudes a primera vista, mientras que sus diferencias son bastante aparentes, la gallina tiene pensamientos, puede cometer errores, es un ser vivo.
 
+Como chiste queremos traer precisamente esas características no precisas de la gallina hacia el temporizador, algo que necesita funcionalidad sin interrupción ni fallos.
+
 ### Descripción general
 
 “Weona Entidad de Balance Ovoide”
