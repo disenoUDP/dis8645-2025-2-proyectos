@@ -568,6 +568,11 @@ Para que funcione correctamente, debemos tener en cuenta que:
 
 ## Etapas de prototipo
 
+- Control: Para este videojuego decidimos diseñar un control físico intencionalmente incómodo, tomando como referencia la estética pixelada del juego. 
+- Aunque a primera vista recuerda a un control tradicional, su construcción a partir de pequeños módulos cuadrados (imitando un objeto pixelado) genera una interacción torpe, rígida y poco ergonómica. 
+- Los 2 botones principales son difíciles de presionar y algunos no cumplen ninguna función, la forma rígida obliga a agarrarlo de manera poco natural. Además, el peso exagerado provoca cansancio, añadiendo una capa física al desafío del juego.
+
+
 ## Fotografías del proyecto terminado
 
 ## Roles de equipo
