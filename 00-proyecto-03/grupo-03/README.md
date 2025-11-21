@@ -134,6 +134,11 @@ flowchart TB
 
 ---
 
+
+### Bocetos
+
+![bocetos de jorge](./imagen/ilustracion.jpg)
+
 ### Prototipado
 
 ![foto de la vértebra](./imagen/vertebra.png)
