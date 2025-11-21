@@ -214,6 +214,8 @@ else if (!parado){
 
 ```
 
+![interiortilt](./imagenes/interior-sensor-tilt.jpg)
+
 El siguiente componente fue el motor, el cual necesitaba un circuito pwm para su uso correcto, después conectarlo a la alimentación y con un pin se enviará una señal que realizará su giro.
 
  ```
