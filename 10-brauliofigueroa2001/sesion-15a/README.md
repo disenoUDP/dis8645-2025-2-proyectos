@@ -52,7 +52,7 @@ void loop() {
 
 ![arduinoymodulo](./imagenes/arduinoymodulo.jpg)
 
-- se conectó el módulo al arduino y funcionó con el nuevo vibrador
+- se conectó el módulo al arduino y funcionó con el nuevo vibrador, ahora vibra notoriamente más fuerte
 
 
 
