@@ -147,13 +147,18 @@ flowchart TB
 
 ![brazos](./imagen/piezasbrazo.png)
 
+![funcionamiento brazo](./imagen/mecanismobrazo.gif)
+
 ![molde](./imagen/patronaje.png)
 
 ![patronaje](./imagen/patrones.png)
 
+
+
 ---
 
 ### Contexto de uso 
+
 
 Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
 
