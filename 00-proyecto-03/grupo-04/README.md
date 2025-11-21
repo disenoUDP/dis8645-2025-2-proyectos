@@ -62,7 +62,7 @@ La máquina genera movimientos invertidos o desviados de la red según los valor
 |Sensor de fuerza|FSR402|2|una resistencia que cambia su valor (en ohmios Ω) dependiendo de la cantidad que se presiona.|
 |Arduino Uno|R4 minima o |1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
 |Pantalla Dell|14 pulgadas|1|pantalla de vale ruz|
-|Carcasa|Impresión 3D|1|Filamento: |
+|Carcasa|Impresión 3D|1|Filamento: PLA|
 |Plinto| | | |
 |Cables| | | |
 
