@@ -2,12 +2,13 @@
 
 ## Integrantes del equipo
 
-- [Braulio Figueroa](https://github.com/brauliofigueroa2001) - Investigador y redactor
-- [Camila Parada](https://github.com/Camila-Parada) - Diseño gráfico y registro
-- [Félix Rodríguez](https://github.com/felix-rg416) - Modelado e impresión 3D
-- [Miguel Vera](https://github.com/MiguelVera23) - Códigos y circuito
+- [Braulio Figueroa](https://github.com/brauliofigueroa2001) - Códigos, circuito, soldador
+- [Camila Parada](https://github.com/Camila-Parada) - Diseño gráfico, escritora, redactor
+- [Félix Rodríguez](https://github.com/felix-rg416) - Código, circuito, carcasa, soldador
+- [Miguel Vera](https://github.com/MiguelVera23) - Códigos, circuito, escritor, creativo
 
 ***
+
 ## Introducción
 
 Para la última etapa del año es que se enfocó en la producción de una “máquina sentimental”. 
