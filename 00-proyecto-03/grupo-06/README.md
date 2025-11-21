@@ -366,4 +366,10 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 
 ![foto carcasa etapa inicial 2](./imagenes/explosionada.png)
 
+## Gráfica
+
+![avecita1](./imagenes/grafica1.jpeg)
+
+![avecita2](./imagenes/grafica2.jpeg)
+
 ## Bibliografía
