@@ -74,6 +74,8 @@ Como grupo planificamos que haremos en cada semana del trabajo mediante una cart
 
 ### Carta Gantt
 
+![carta gantt](./imagenes/cartaGantt.png)
+
 ### Presupuesto
 
 ![Presupuesto](./imagenes/presupuesto.png)
