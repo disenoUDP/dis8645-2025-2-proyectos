@@ -366,6 +366,12 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 
 ![foto carcasa etapa inicial 2](./imagenes/explosionada.png)
 
+![material1](./imagenes/EMC4.jpg)
+![material2](./imagenes/EMC5.jpg)
+![material3](./imagenes/EMC12.jpg)
+![material4](./imagenes/EMC13.jpg)
+![material5](./imagenes/EMC15.jpg)
+
 ## Gráfica Ava
 
 ![avecita2](./imagenes/AVA-BOCETOS.png)
