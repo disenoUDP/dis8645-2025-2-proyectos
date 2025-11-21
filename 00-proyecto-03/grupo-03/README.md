@@ -156,6 +156,10 @@ flowchart TB
 
 ![patronaje](./imagen/patrones.png)
 
+![patronaje](./imagen/patrones.png)
+
+![patronaje](./imagen/jorge.jpg)
+
 ---
 
 ### Contexto de uso 
