@@ -10,17 +10,17 @@
 
 --- 
 
-### Presentacion textual
+### Presentación textual
 
 El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
 
 ---
 
-### Metafora
+### Metáfora
 
-En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecanica, generando pena, culpa y un posible intento de manipulacion, ante lo que seria la recreacion de un mono que imita ser uno verdadero. Esta respuesta mecanica deja a la persona en un bucle de apego constante que terminara siempre en tragedia sin importar que tanto cariño se le pueda dar
+En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecánica, generando pena, culpa y un posible intento de manipulación, ante lo que seria la recreación de un mono que imita ser uno verdadero. Esta respuesta mecánica deja a la persona en un bucle de apego constante que terminará siempre en tragedia sin importar que tanto cariño se le pueda dar.
 
-En varios casos, cuando se genera un vinculo afectivo con un animal, la union emocional es tan fuerte, que cuando hay un cambio en esta relacion, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir mas, en este caso jorge. 
+En varios casos, cuando se genera un vínculo afectivo con un animal, la unión emocional es tan fuerte, que cuando hay un cambio en esta relación, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir más, en este caso jorge. 
 
 En este caso Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
 
@@ -145,11 +145,6 @@ flowchart TB
 
 ```
 
-### Código
-
-
----
-
 ### Bocetos
 
 ![bocetos de jorge](./imagen/Ilustracion.jpg)
@@ -191,12 +186,12 @@ Esta maquina esta pensada para generar incomodidad en el usuario a traves de est
 
 ### Instrucciones de uso:
 
-- El usuario se acerca a Jorge (rango: 10 a 45 cm).
-- Jorge detecta al usuario.
-. Se reproduce uno de los 3 audios preparados invitando al usuario a acercarse.
-- El usuario se aproxima y extiende su brazo a una distancia de entre 3 y 7 cm frente a Jorge.
+- Le usuarie se acerca a Jorge (rango: 10 a 45 cm).
+- Jorge detecta al usuarie.
+. Se reproduce uno de los 3 audios preparados invitando a le usuarie a acercarse.
+- Le usuarie se aproxima y extiende su brazo a una distancia de entre 3 y 7cm frente a Jorge.
 - En ese momento, Jorge cierra sus brazos y abraza al usuario.
 - La persona puede forzar su liberación del abrazo en cualquier momento.
-- Tras esto, el usuario decide si volver a ofrecer su brazo o esperar un minuto (tiempo estimado entre frases) sin entrar al rango de 3 a 7 cm.
+- Tras esto, el usuario decide si volver a ofrecer su brazo o esperar un minuto (tiempo estimado entre frases) sin entrar al rango de 3 a 7cm.
 - Alternativamente, al ser invitado, el usuario puede optar por no acercarse y observar las etapas de Jorge desde la distancia.
 - Al finalizar, Jorge vuelve a su posición original; el usuario puede reiniciar el ciclo o alejarse para salir del rango de detección.
