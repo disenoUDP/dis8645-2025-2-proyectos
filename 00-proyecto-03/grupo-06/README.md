@@ -18,10 +18,6 @@
 
 ## Presentación textual
 
-AGREGAR SENTIMIENTO Y METÁFORA
-
-AGREGAR CONTEXTO DE USO, TEMPORIZADOR DE LAS DE 5 SEGUNDOS
-
 ### Descripción general
 
 “Weona Entidad de Balance Ovoide”
