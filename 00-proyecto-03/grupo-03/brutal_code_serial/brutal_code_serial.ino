@@ -97,6 +97,7 @@ void loop() {
   switch (estadoActual) {
 
     case CALMAO:
+    // este caso, es el estado base del mono, el "standby"
       Serial.println("ESTADO: CALMAO");
       //Rango de la distancia minima y maxima del estado "Calmao"
       if (sustancia < 20 && sustancia > 0) {
@@ -110,6 +111,7 @@ void loop() {
       break;
 
     case PIDE_AMOR:
+    //este caso, corresponde a cuando el mono busca obtener la atención del usuarie
       Serial.println("ESTADO: PIDE_AMOR");
 
       if (hayBrazo) {
@@ -130,6 +132,7 @@ void loop() {
       break;
 
     case PATALETA_LEVE:
+    //este caso, corresponde a cuando el mono empieza a sentirse frustrado y a llorar
       Serial.println("ESTADO: PATALETA_LEVE");
 
       if (hayBrazo) {
@@ -149,6 +152,7 @@ void loop() {
       break;
 
     case PATALETA_BRIGIDA:
+    //esta caso, corresponde a cuando el mono comienza a desesperarse por obtener lo que quiere
       Serial.println("ESTADO: PATALETA_BRIGIDA");
 
       {
@@ -176,10 +180,11 @@ void loop() {
       break;
 
     case AUTODESTRUCCION:
+    //este caso, corresponde a cuando, por el bien del mono, un ente externo acabará con su existencia
       {
         Serial.println("ESTADO: AUTODESTRUCCION");
         unsigned long tiempoAutodestruccion = millis() - tiempoInicioEstado;
-
+       
         if (hayBrazo) {
           Serial.println("ke ricooo grax");
           Serial.println("-el mono se ha calmado-");
@@ -192,7 +197,7 @@ void loop() {
           break;
         }
 
-        // SECUENCIA DE AUTODESTRUCCIÓN
+        //secuencia autodestrucción
         if (tiempoAutodestruccion < 5000) {
           motoLumbar.write(90);
           Serial.println("posición aflijido");
@@ -202,7 +207,6 @@ void loop() {
         } else if (tiempoAutodestruccion < 15000) {
           //secuencia autodestruccion
           Serial.println("chillidos y gritos desesperados");
-          //linea de texto que no aparece en la secuencia
           Serial.println("PORFAVOR, RASCALE LA WATITA AL MONO");
           Serial.println("...");
           Serial.println("...");
@@ -237,7 +241,7 @@ void loop() {
       break;
   }
 
-  delay(500);  // Pequeña pausa para no saturar el Serial
+  delay(500);
 }
 
 void dePresion() {
@@ -271,7 +275,7 @@ void sonic() {
 
   duracion = pulseIn(pinEkeko, HIGH, 30000);
 
-//pasar el valor del pin a cm
+  //pasar el valor del pin a cm
   if (duracion == 0) {
     sustancia = 400;
   } else {
