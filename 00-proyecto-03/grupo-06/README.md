@@ -166,7 +166,7 @@ A continuación se realizó una prueba de cada uno de los componentes:
 
 Empezando por el sensor tilt, el cual era relativamente simple de utilizar ya que solo necesitaba alimentación de 5V, conexión a ground y un pin hacia el arduino donde se pueda recibir el estado de si está inclinado o no.
 
- ```
+ ```cpp
 
 // establecer el pin que será conectado
 // el sensor para obtener su dato
@@ -218,7 +218,7 @@ else if (!parado){
 
 El siguiente componente fue el motor, el cual necesitaba un circuito pwm para su uso correcto, después conectarlo a la alimentación y con un pin se enviará una señal que realizará su giro.
 
- ```
+ ```cpp
 // pin al que será conectado el motor para ser controlado
 int motorPin = 9;
 
@@ -244,7 +244,7 @@ void loop() {
 
 Después fue el display, que causó unos problemas iniciales debido a la manera en la que estaba soldada a unos pines, pero luego funcionó de la manera correcta, teniendo en cuenta que para todos los pines, excepto los de alimentación, eran necesarias resistencias de 10k ohm, donde pudimos hacer display del ejemplo de la biblioteca de adafruit.
 
- ```
+ ```cpp
 
 #ifndef ACTUADOR_DISPLAY_H
 #define ACTUADOR_DISPLAY_H
@@ -282,7 +282,7 @@ Después fue el display, que causó unos problemas iniciales debido a la manera 
 El botón fue lo que seguía, que realmente como era probablemente el componente más simple, fue integrado directamente en el código principal donde se le aplicó alimentación y 
 se le asignó un pin específico para que el arduino recibiera la señal.
 
-```
+```cpp
 
 #ifndef SENSOR_BOTON_H
 #define SENSOR_BOTON_H
@@ -314,7 +314,7 @@ se le asignó un pin específico para que el arduino recibiera la señal.
 
 Lo último fue el reproductor mp3 que nos causó la mayor cantidad de problemas, eventualmente funcionando al ser conectado en los pines 2 y 3 del arduino, teniendo los archivos de sonido en un formato específico de 0001.mo3 haber formateado la tarjeta SD montoneras de veces, pero con el siguiente codigo funciono:
 
- ```
+ ```cpp
 
 #include <SoftwareSerial.h>
 #include <DFRobotDFPlayerMini.h>
