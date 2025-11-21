@@ -146,7 +146,6 @@ flowchart TB
 
 ![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
 
-![](./imagen/vertebra-v2-ver.gif)
 
 
 
