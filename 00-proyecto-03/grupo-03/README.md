@@ -61,13 +61,14 @@ En este caso Jorge es un robot cuya único sentido en la "vida" es ser amado. Al
 | Componente            | Cantidad | Valores  | Links                    | Valor                                       |        | 
 |-----------------------|----------|----------|--------------------------|---------------------------------------------|--------|
 | Parlante              | 1        |    3w    |https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r|$3.000| 
-| Servo motor           | 2        |   SG90   |https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r|      |
-| Sensor ultrasónico    | 1        |    5V    |https://afel.cl/products/sensor-de-ultrasonico-hc-sr04|
-| Módulo MP3            | 1        |3.2 a 5 v |https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r|  
-| Sensor de presión     | 1        |  FSR402  |https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r| 
-| Motor DC              | 1        |    5v    |https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for|
-| Mosfet                | 1        |  BS170   |https://a.aliexpress.com/_mt52yRB|
-| Chips L293D           | 1        |4.5V a 7V |https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy|                                               
+| Servo motor           | 2        |   SG90   |https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r|$1.900|
+| Sensor ultrasónico    | 1        |    5V    |https://afel.cl/products/sensor-de-ultrasonico-hc-sr04|$1.500|
+| Módulo MP3            | 1        |3.2 a 5 v |https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r|$2.990|
+| Sensor de presión     | 1        |  FSR402  |https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r|$7.500|
+| Motor DC              | 1        |    5v    |https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for|$500|
+| Mosfet                | 1        |  BS170   |https://a.aliexpress.com/_mt52yRB|$694|
+| Chips L293D           | 1        |4.5V a 7V |https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy|$1.000|
+
 ---
 
 ### Mapa de flujo:
@@ -106,52 +107,87 @@ flowchart TB
     classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
+--- 
 
 ### Pseudocódigo
 
-´´´cpp 
+```cpp
 
 //mono está calmao
+
 //el sensor ultrasónico está sensando
+
 //si no se detecta presencia, se mantiene calmao
+
 //si una persona está a menos de 20cm del mono, pide amor
-//pide amor: audio, una voz que dice "dame un abrazo"
-//si se detecta un objeto a menos de 10cm, los brazos se cierran(moviendo servo01 90°)
+
+//pide amor: audio, una voz que dice "rascame la watita"
+
+//si el sensor de presión sensa algo(moviendo el motor dc por 4 segundos)
+
 //si no se detecta un objeto comienza la pataletaLeve
+
 //pataletaLeve: audio llorar
-//si el sensor ultrasónico detecta un objeto a menos de 5cm se interrumpe la pataleta(en teoría este objeto es un brazo)
-//si pasan 10 segundos de pataletaLeve, sin que el ultrasónico detecte algo a menos de 5cm, comienza la pataleta brígida
-//pataletaBrigida: audio, servo01 y servo02 se giran 20° y -20° repetidamente
-//si se detecta un objeto a menos de 5cm se interrumpe la pataleta
-//si pasan 10 segundos de pataletaBrigida, sin que el ultrasónico detecte un objeto a menos de 5cm, comienza la autodestrucción
-//autodestrucción: reproducción de audio, el servo02 gira 120°, el servo03 gira 90 grados lentamente. Luego el servo02 vuelve a 0° lentamente, y luego a 120° velozmente.
-//si el ultrasónico detecta un objeto a menos de 5cm se interrumpe la autoDestrucción. Toda esta secuencia dura en total 15 segundos, luego el servo02 se queda en 120° durante 20segundos y luevo vuelve a 0°
 
-´´´
+//si el sensor de presión sensa algo, se detiene la pataleta, y se gira el motor dc por 4 segundos
 
+//si pasan 10 segundos de pataletaLeve, sin que se detecte presión, comienza la pataleta brígida
+
+//pataletaBrigida: audio, servo01 se giran 20° y -20° repetidamente
+
+//si el sensor de presión sensa algo, se detiene la pataleta, y se gira el motor dc por 4 segundos
+
+//si pasan 10 segundos de pataletaBrigida, sin que sense presión comienza la autodestrucción
+
+//autodestrucción: reproducción de audio, el servo02 gira 120°, el servo gira 90 grados lentamente. Luego el servo02 vuelve a 0° lentamente, y luego a 120° velozmente.
+
+//si se sensa presión, se interrumpe la autoDestrucción. Toda esta secuencia dura en total 15 segundos, luego el servo02 se queda en 120° durante 20segundos y luevo vuelve a 0°
+
+```
 
 ### Código
+
+
+---
+
+### Bocetos
+
+![bocetos de jorge](./imagen/Ilustracion.jpg)
 
 ---
 
 ### Prototipado
 
+Para el prototipo realizamos el prototipado de la columna y los brazos, probando cómo podrían moverse y sostenerse. También hicimos pruebas de impresión 3D para revisar las piezas y sus uniones. Además, armamos un primer prototipo del sistema de la espalda y los brazos para evaluar su funcionamiento general. Finalmente, realizamos el molde para la tela del forro, aplicando cinta sobre la forma para obtener las piezas base del patrón.
+
 ![foto de la vértebra](./imagen/vertebra.png)
 
-![gif de la probeta 1](./imagen/vertebra-probeta1.gif)
-
-![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
+![gif de la probeta 1](./imagen/vertebra-probeta1.gif) ![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
 
 ![vértebra v2](./imagen/vertebra-v2.png)
 
 ![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
 
+![brazos](./imagen/piezasbrazo.png)
 
+![funcionamiento brazo](./imagen/mecanismobrazo.gif)
 
+![molde](./imagen/patronaje.png)
+
+![patronaje](./imagen/patrones.png)
+
+![patronaje](./imagen/patrones.png)
+
+![patronaje](./imagen/jorge.jpg)
+
+---
 
 ### Contexto de uso 
 
+
 Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
+
+---
 
 ### Instrucciones de uso:
 
