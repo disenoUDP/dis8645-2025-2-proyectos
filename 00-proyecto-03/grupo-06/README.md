@@ -156,9 +156,9 @@ flowchart TD
 | Diodo Rectificador 1N4007         | 1        | $100   | https://www.electroardu.cl/diodo-rectificador-1n4007                    |
 | MOSFET BS170 tipo N TO92          | 1        | $200   | https://depaquete.cl/index.php                                          |
 
-**Total - 21.876**
+**Presupuesto estimado total – 21.876**
 
-Total - 6.400 (lo que gastamos nosotros)
+Gasto real del equipo – 6.400
 
 ## Código
 
