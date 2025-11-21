@@ -9,6 +9,7 @@ int vueltas;
 int rango;
 String currentDir = "";
 unsigned long lastButtonPress = 0;
+const int humo = 8;
 
 void setup() {
 
@@ -16,6 +17,8 @@ void setup() {
 	pinMode(CLK, INPUT);
 	pinMode(DT, INPUT);
 	pinMode(SW, INPUT_PULLUP);
+
+	pinMode(humo, HIGH);
 
 	// ajusta el Monitor Serial
 	Serial.begin(9600);
@@ -26,7 +29,7 @@ void setup() {
 
 void loop() {
 
-// --- CALCULO DE VUELTAS ---
+	// --- CALCULO DE VUELTAS ---
 	// Lee el estado actual del CLK
 	currentStateCLK = digitalRead(CLK);
 	// si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -50,7 +53,7 @@ void loop() {
 			vueltas++;
 		}
 
-// --- CALCULO DE RANGOS ---
+		// --- CALCULO DE RANGOS ---
 		if (vueltas >= 0 && vueltas <= 1) {
 			rango = 0;
 		} else if (vueltas >= 2 && vueltas <= 8) {
@@ -65,8 +68,13 @@ void loop() {
 			rango = 5;
 		}
 
-		Serial.print("Direction: ");
-		Serial.println(currentDir);
+// // control de humificador
+// 		if (rango == 2) {
+// 			digitalWrite(humo, LOW);
+// 		}
+
+		// Serial.print("Direction: ");
+		// Serial.println(currentDir);
 		Serial.print(" | Step: ");
 		Serial.println(step);
 		Serial.print(" | Vueltas ");
