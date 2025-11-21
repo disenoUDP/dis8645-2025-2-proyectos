@@ -203,17 +203,16 @@ Si bien la intención principal es ocasionar decepción, no es con intenciones m
 
 ## Desarrollo circuito
 
-![humo](./imagenes/gifs-avances-1.gif)
-
 
 
 ### ⋅⋯⋯⋅ Construcción ⋅⋯⋯⋅
 
-Texto
+![humo](./imagenes/gifs-avances-1.gif)
+![humo](./imagenes/gifs-avances-2.gif)
 
 ### ⋅⋯⋯⋅ Código ⋅⋯⋯⋅
 
-Texto
+[Carpeta con los códigos]()
 
 ***
 /
