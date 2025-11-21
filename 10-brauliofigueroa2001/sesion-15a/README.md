@@ -125,6 +125,8 @@ void loop() {
 
 - no sé si está excesivamente largo o tiene cosas de más, intenté dejar un HIGH y LOW de cada velocidad, esto hacía que el loop fuera mucho más corto y que la velocidad 2 fuera casi imperceptible dentro de este
 - la misión ahora es poder seleccionar cada velocidad por medio de un botón o un potenciómetro, esto posteriormente se uniría al código del encoder en donde la idea sería que al pasar cierto número de vueltas y rango, se active la velocidad 1, luego otro rango velocidad 2 y en el último rango casi al final la velocidad 3 que se apagaría al completar todo el rango de vueltas del encoder, que es en donde saldría el humo y se prenderían luces aleatorias para hacerte saber que llegaste al final
+- debo tener una especie de parámetro que permita ligar por ejemplo: velocidad 1 y que sepa cuál es y cuántos segundos dura y se apaga el motor
+- como especies de categorías por velocidades, clasificarlas y poder invocarlas
   
 
   
