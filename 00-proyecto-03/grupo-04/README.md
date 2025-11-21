@@ -572,6 +572,9 @@ Para que funcione correctamente, debemos tener en cuenta que:
 - Aunque a primera vista recuerda a un control tradicional, su construcción a partir de pequeños módulos cuadrados (imitando un objeto pixelado) genera una interacción torpe, rígida y poco ergonómica. 
 - Los 2 botones principales son difíciles de presionar y algunos no cumplen ninguna función, la forma rígida obliga a agarrarlo de manera poco natural. Además, el peso exagerado provoca cansancio, añadiendo una capa física al desafío del juego.
 
+![control 1](./imagenes/controlRemoto1.png)
+
+![control 2](./imagenes/controlRemoto2.png)
 
 ## Fotografías del proyecto terminado
 
