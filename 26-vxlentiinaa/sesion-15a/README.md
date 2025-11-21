@@ -831,60 +831,127 @@ flowchart TB
 
 ### Aarón
 
-![aaron](./imagenes/aaron.png)
-
-![aaron estatico](./imagenes/aaronEstatico.gif)
-
-![aaron volando](./imagenes/aaronVolando.gif)
+|imagen|estático|volando|
+|---|---|---|
+|![aaron](./imagenes/aaron.png)|![aaron estatico](./imagenes/aaronEstatico.gif)|![aaron volando](./imagenes/aaronVolando.gif)|
 
 ---
 
 ### Misaaa
 
-![misa](./imagenes/misa.png)
-
-![misa estatico](./imagenes/misaEstatico.gif)
-
-![misa volando](./imagenes/misaVolando.gif)
+|imagen|estático|volando|
+|---|---|---|
+|![misa](./imagenes/misa.png)|![misa estatico](./imagenes/misaEstatico.gif)|![misa volando](./imagenes/misaVolando.gif)|
 
 ---
 
 ### Janis
 
-![janis](./imagenes/janis.png)
-
-![janis estatico](./imagenes/janisEstatica.gif)
-
-![janis volando](./imagenes/janisVolando.gif)
+|imagen|estático|volando|
+|---|---|---|
+|![janis](./imagenes/janis.png)|![janis estatico](./imagenes/janisEstatica.gif)|![janis volando](./imagenes/janisVolando.gif)|
 
 ---
 
 ### Mateo
 
-![mateo](./imagenes/mateo.png)
-
-![mateo estatico](./imagenes/mateoEstatico.gif)
-
-![mateo volando](./imagenes/mateoVolando.gif)
+|imagen|estático|volando|
+|---|---|---|
+|![mateo](./imagenes/mateo.png)|![mateo estatico](./imagenes/mateoEstatico.gif)|![mateo volando](./imagenes/mateoVolando.gif)|
 
 ---
 
 ### Inicio juego y hadas
 
-![inicio 1](./imagenes/inicio1.gif)
-
-![inicio 2](./imagenes/inicio2.gif)
-
-![haditas](./imagenes/haditas.gif)
+|inicio|inicio|volando|
+|---|---|---|
+|![inicio 1](./imagenes/inicio1.gif)|![inicio 2](./imagenes/inicio2.gif)|![haditas](./imagenes/haditas.gif)|
 
 ---
 
 ### Choose your character
 
-![choose aaron](./imagenes/chooseAaron.gif)
+|choose your character|
+|----|
+|![choose aaron](./imagenes/chooseAaron.gif)|
+|![choose misa](./imagenes/chooseMisa.gif)|
+|![choose janis](./imagenes/chooseJanis.gif)|
+|![choose mateo](./imagenes/chooseMateo.gif)|
 
-![choose misa](./imagenes/chooseMisa.gif)
+---
 
-![choose janis](./imagenes/chooseJanis.gif)
+### Código oara dibujar directamente en p5.js
 
-![choose mateo](./imagenes/chooseMateo.gif)
+```p5.js
+let colors = {};   // Se inicializan vacío
+let sprite4;       // Se declara antes, pero se llena en setup()
+
+function setup() {
+  createCanvas(370, 330);
+  noStroke();
+
+  // Definición de colores
+  colors = {
+    0: color(0, 0, 0, 0),        // transparente
+    1: color(0),                 // negro
+    2: color(255,224,189),       // piel
+    3: color(200),               // gris polera
+    4: color(130,200,255),       // celeste alas
+    5: color(40,90,200),         // azul pantalón
+    6: color(255,120,180),       // rosa
+    7: color(255,255,255),       // blanco
+    8: color(220),               // gris claro
+    9: color(180,230,255)       // celeste claro
+  };
+
+  // Se inicia el sprite
+  sprite4 = [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,1,1,1,2,2,2,2,2,1,1,1,6,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,1,1,2,2,2,2,2,2,1,1,6,6,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,2,2,2,2,2,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,1,1,2,2,1,1,2,2,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,6,6,2,2,2,2,6,6,2,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,6,6,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,9,9,9,9,9,4,4,4,4,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,4,4,4,4,9,9,9,9,0],
+    [0,9,9,9,9,9,9,9,4,4,4,4,1,1,1,1,3,3,7,7,7,7,3,3,1,1,1,1,4,4,4,4,4,9,7,9,9],
+    [9,7,9,9,9,9,4,4,4,4,4,4,1,1,1,3,8,3,7,7,7,7,3,8,3,1,1,4,4,4,4,4,9,7,9,9,9],
+    [9,9,7,9,9,9,4,4,4,4,4,4,4,1,3,8,8,3,7,7,7,7,3,8,8,3,1,1,4,4,4,4,7,9,9,9,9],
+    [0,9,9,7,9,9,4,4,4,4,4,4,1,3,8,8,8,3,7,7,7,7,3,8,8,8,3,1,4,4,4,4,9,9,9,9,0],
+    [0,9,9,9,9,9,9,9,4,4,4,4,3,8,8,8,8,3,7,7,7,7,3,8,8,8,8,3,4,4,4,9,9,9,9,9,0],
+    [0,0,0,0,0,9,9,9,9,9,9,4,3,8,8,8,8,3,3,7,7,3,3,8,8,8,8,3,4,4,9,9,9,9,9,0,0],
+    [0,0,0,0,0,0,9,9,9,9,7,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,0,0,0,0],
+    [0,0,0,0,0,0,0,0,9,9,9,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,9,9,9,9,0,0,0,0,0],
+    [0,0,0,0,0,9,9,9,9,9,9,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,0,0,0,0],
+    [0,0,0,9,9,9,9,9,9,9,4,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,9,0,0,0],
+    [0,0,9,9,9,9,9,7,9,9,9,9,3,3,3,3,3,3,3,7,7,3,3,3,3,3,3,3,4,4,9,9,9,9,0,0,0],
+    [0,0,9,9,9,9,7,9,9,9,9,7,2,2,2,5,5,5,5,5,5,5,5,5,5,2,2,2,9,9,9,9,9,0,0,0,0],
+    [0,0,9,9,9,7,9,9,9,9,9,7,2,2,2,5,5,5,5,5,5,5,5,5,5,2,2,2,9,9,9,9,0,0,0,0,0],
+    [0,0,0,9,7,9,9,9,9,9,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,9,9,9,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,0,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,1,1,1,1,1,0,1,1,1,1,7,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    
+  ];
+}
+
+function draw() {
+  background(0);
+  let pixelSize = 10;
+
+  for (let y = 0; y < sprite4.length; y++) {
+    for (let x = 0; x < sprite4[y].length; x++) {
+      fill(colors[sprite4[y][x]]);
+      rect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+    }
+  }
+}
+```
