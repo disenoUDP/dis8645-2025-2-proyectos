@@ -9,15 +9,22 @@
 - [Francisco Stephens González](https://github.com/FranUDP) 
 
 --- 
+
 ### Presentacion textual
 
 El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
+
+---
 
 ### Metafora
 
 En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecanica, generando pena, culpa y un posible intento de manipulacion, ante lo que seria la recreacion de un mono que imita ser uno verdadero. Esta respuesta mecanica deja a la persona en un bucle de apego constante que terminara siempre en tragedia sin importar que tanto cariño se le pueda dar
 
 En varios casos, cuando se genera un vinculo afectivo con un animal, la union emocional es tan fuerte, que cuando hay un cambio en esta relacion, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir mas, en este caso jorge. 
+
+En este caso Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
+
+---
 
 ### carta gantt 
 
@@ -47,6 +54,7 @@ En varios casos, cuando se genera un vinculo afectivo con un animal, la union em
 | Documentación Proyecto                                  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
 | Redacción README                                        |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
 
+--- 
 
 ### Bill of Materials 
 
@@ -59,7 +67,7 @@ En varios casos, cuando se genera un vinculo afectivo con un animal, la union em
 | Sensor de presión     | 1        |  FSR402  |https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r| 
 | Motor DC              | 1        |    5v    |https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for|
 | Mosfet                | 1        |  BS170   |https://a.aliexpress.com/_mt52yRB|
-
+| Chips L293D           | 1        |4.5V a 7V |https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy|                                               
 ---
 
 ### Mapa de flujo:
@@ -99,15 +107,34 @@ flowchart TB
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
 
-Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
-
 ### Pseudocódigo
+
+´´´cpp 
+
+//mono está calmao
+//el sensor ultrasónico está sensando
+//si no se detecta presencia, se mantiene calmao
+//si una persona está a menos de 20cm del mono, pide amor
+//pide amor: audio, una voz que dice "dame un abrazo"
+//si se detecta un objeto a menos de 10cm, los brazos se cierran(moviendo servo01 90°)
+//si no se detecta un objeto comienza la pataletaLeve
+//pataletaLeve: audio llorar
+//si el sensor ultrasónico detecta un objeto a menos de 5cm se interrumpe la pataleta(en teoría este objeto es un brazo)
+//si pasan 10 segundos de pataletaLeve, sin que el ultrasónico detecte algo a menos de 5cm, comienza la pataleta brígida
+//pataletaBrigida: audio, servo01 y servo02 se giran 20° y -20° repetidamente
+//si se detecta un objeto a menos de 5cm se interrumpe la pataleta
+//si pasan 10 segundos de pataletaBrigida, sin que el ultrasónico detecte un objeto a menos de 5cm, comienza la autodestrucción
+//autodestrucción: reproducción de audio, el servo02 gira 120°, el servo03 gira 90 grados lentamente. Luego el servo02 vuelve a 0° lentamente, y luego a 120° velozmente.
+//si el ultrasónico detecta un objeto a menos de 5cm se interrumpe la autoDestrucción. Toda esta secuencia dura en total 15 segundos, luego el servo02 se queda en 120° durante 20segundos y luevo vuelve a 0°
+
+´´´
+
 
 ### Código
 
-### Prototipado
+---
 
-![planimetría de la vértebra](./imagen/planim.png)
+### Prototipado
 
 ![foto de la vértebra](./imagen/vertebra.png)
 
@@ -118,6 +145,10 @@ Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot
 ![vértebra v2](./imagen/vertebra-v2.png)
 
 ![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
+
+![](./imagen/vertebra-v2-ver.gif)
+
+
 
 ### Contexto de uso 
 
