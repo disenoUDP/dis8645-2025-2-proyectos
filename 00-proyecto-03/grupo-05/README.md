@@ -123,7 +123,7 @@ Los componentes definidos para nuestra máquina son los siguientes:
 
 ``` mermaid
 flowchart TB
-    A["La persona está<br>frente a la máquina"] --> B["Ve la manivela"]
+    A(["La persona está<br>frente a la máquina"]) --> B["Ve la manivela"]
     B --> C["La gira 1 vez en <br>sentido horario"] & n1["La gira en <br>sentido antihorario"]
     C --> n2["Se evidencia una barra de progreso (y de niveles)"]
     n2 --> n4["Se gira en la misma dirección hasta alcanzar el siguiente nivel"]
@@ -139,7 +139,7 @@ flowchart TB
     n5 <--> n4
     n17 -.-> C
     n19 -.-> n4
-    A@{ shape: rect}
+
     B@{ shape: rect}
     n1@{ shape: rect}
     style A stroke-width:2px,stroke-dasharray: 0
