@@ -24,3 +24,10 @@
 - Idea de piezas para el amrado de la cajita de cada gatito, que contiene los componentes en su interior:
 
 ![piezas](./imagenes/piezascaja.png)
+
+- Pieza nuevamente imprea pero en filamento + piezas de la caja en corte láser:
+
+![armado](./imagenes/armado2.jpg)
+
+- Se modificó el tema del motor y lo estamso probando!
+

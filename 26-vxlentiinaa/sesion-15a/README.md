@@ -311,14 +311,55 @@ void loop() {
 ```
 ---
 
-### Proceso Actualizado
+## Proceso proyecto Actualizado
 
 - Como grupo decidimos cambiar el sensor de gestualidad por los sensores de fuerza / presión que habíamos comprado, ya que el sensor de gestualidad estaba muy díficil y no pudimos hacerlo funcionar, no leía los gestos de la mano.
 - También decidimos que usaremos p5.js para hacer el juego y poder conectarlo con arduino.
 
 ### Presentación Textual Actualizado
 
+`"Atrápame si puedes"` máquina interactiva que funciona con dos sensores de fuerza/presión. El usuario presiona los sensores para controlar una red "atrapahadas". El objetivo del juego es atrapar a las hadas.
+
+En el juego, atrapar al personaje es totalmente posible, pero la dificultad surge del propio sistema; que sabotea al jugador con controles que funcionan al revés. La desorientación provoca una frustración cómica que pone al jugador en el límite entre el control y el caos.
+
+La máquina representa el desajuste: el usuario quiere atrapar un objetivo claro, pero la interfaz responde de forma particular. Aparece el humor, la frustración y el esfuerzo por alcanzar una meta, donde puede torcerse por detalles ridículos y aun así seguimos intentándolo.
+
 ### Metáfora Actualizada
+
+- La máquina es una representación tecnológica del logro frustrado, esa sensación que parece estar a punto de alcanzarse, pero que se rompe por un detalle absurdo. Representa esa experiencia humana de perseguir algo que siempre se escapa (movimiento involuntario, un error, un control invertido). Una máquina que te hace sentir querer algo y perderlo por un gesto mínimo.
+
+`Sentimientos`
+
+- Sensación de descontrol o confusión
+- Frustración cómica
+- Producto del control invertido, genera: sorpresa, desorientación.
+- El juego provoca risa, molestia, esfuerzo y competencia.
+
+### Inputs y outputs
+
+`Inputs (entradas)`
+
+La máquina recibe la presión aplicada por el usuario sobre los dos sensores de fuerza. Cada sensor entrega un valor analógico que indica intensidad de la presión, interpretándose como comandos de movimiento para la red atrapahadas. El sistema también recibe la intención de dirección del usuario, que se traduce en patrones de presión en dos diferentes direcciones.
+
+1. Presión del usuario sobre los sensores FSR
+   - El jugador presiona los sensores de fuerza (botones) para mover al personaje.
+   - La cantidad de fuerza aplicada se traduce en velocidad o dirección.
+   - Selección inicial del personaje
+   - Antes de jugar, el usuario elige qué personaje quiere intentar atrapar.
+
+La máquina toma como input la descoordinación, el error o la insistencia del jugador, todo eso afecta en cómo la red "atrapahadas" se mueve.
+
+`Outputs (salidas)`
+
+La máquina genera movimientos invertidos o desviados de la red según los valores recibidos, entregando desplazamientos que no coinciden con la dirección esperada por el usuario. También produce evasiones automáticas del personaje cuando detecta una presión que coincide con un intento de atrape. El resultado final son respuestas erróneas, escapes programados y un control que no deja precisión del usuario.
+
+2. Movimiento del personaje en pantalla
+   - El personaje se escapa cuando el jugador está cerca.
+
+3. Movimiento de la red atrapahadas en pantalla
+   - Red que se maneja mediante los sensores de fuerza.
+
+4. Cambios en dirección, velocidad o animaciones del personaje.
 
 ---
 
@@ -531,6 +572,195 @@ void loop() {
 }
 ```
 
+### Códigos de arduino
+
+- Aarón nos ayudó a ordenar el código que teníamos, luego separamos las clases de los sensores.
+- Comentamos el código y agregamos unos `Serial.print` para luego mandar los datos a p5.js
+
+`AtrapameSiPuedes.ino`
+
+```cpp
+// incluir 1 clase para recibir datos de sensores
+// incluir 1 clase para emitir datos segun eso
+
+#include "SensorFuerza.h" // incluye las clases SensorFuerza y Puntito
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+// Puntito puntito;
+
+void setup() {
+  Serial.begin(9600);
+  ejeX.configurar(A0);   // se asigna un sensor al pinA0
+  ejeY.configurar(A1);   // se asigna un sensor al pinA1
+}
+
+void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
+  ejeX.leer();
+  ejeY.leer();
+
+  Serial.println(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
+  Serial.println(ejeY.valorCrudo);
+
+  Serial.print("valorX");
+  Serial.print(",");
+  Serial.println("valorY");
+
+  delay(40);
+  // enviar valores a p5
+  // enviar valor ejeX.valorCrudo
+  // luego enviar ejeY.valorCrudo
+  // Serial.write(ejeX.valorCrudo, ejeY.valorCrudo);
+}
+```
+
+`SensorFuerza.h`
+
+```cpp
+#ifndef SENSOR_FUERZA_H // si no esta Sensor fuerza definido
+#define SENSOR_FUERZA_H // aqui lo definimos 
+
+#include <Arduino.h>  // incluimos las funciones basicas de arduino
+
+class SensorFuerza {     // definimos la clase sensor fuerza
+public:
+  SensorFuerza();  // constructor
+  ~SensorFuerza(); // destructor
+
+  void configurar(int nuevaPatita); // guarda en que pin se encuentra el sensor
+  void leer();  // declara la funcion para leer el sensor
+
+  int patita;       // guarda el numero del pin (A0,A1)
+  int valorCrudo;   // guarda el numero del sensor, entre 0 a 1023 (segun presion)
+  int valorMapeado; 
+};
+
+#endif
+```
+
+`SensorFuerza.cpp`
+
+```cpp
+#include "SensorFuerza.h"
+// incluye el .h de SensorFuerza
+
+SensorFuerza::SensorFuerza() {} //constructor
+
+SensorFuerza::~SensorFuerza() {} // destructor
+
+void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
+  SensorFuerza::patita = nuevaPatita;
+  pinMode(SensorFuerza::patita, INPUT);  // pin donde se encuentra el sensor
+}
+
+void SensorFuerza::leer() {   // funcion para leer el sensor
+  SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
+                                                                // y cada vez que se llama .leer, se actualiza el valor
+}
+```
+### Códigos de p5.js
+
+- Con Valentina Chavez y Yamna Carrión, logramos conectar arduino con p5.js
+- Este código no es el oficial, pero con este empezamos
+
+```p5.js
+//sketch realizado con ayuda de la librería de Gohai
+//conexión de datos de arduino hacia p5 utilizando un sensor de fuerza
+//este sensor lee parametros como izquierda-derecha, arriba-abajo
+
+const BAUDRATE = 9600;  //velocidad del puerto
+let port;               //variable del puerto
+let connectBtn;         //boton
+
+let sensorX = 0;        //izquierda-derecha
+let sensorY = 0;        //arriba-abajo
+
+// 0 = esperamos X, 1 = esperamos Y
+let lecturaEstado = 0;
+
+//imagenes 
+let img; //imagen en png de la red atrapa mosquitos
+let backImg; //imagen de misaa
+
+//aqui es donde se cargan las imagenes y todos los recursos que utilizaremos
+function preload() {
+  img = loadImage("redAtrapaHadas.png");
+  backImg = loadImage("janisEstatica.gif");
+  
+}
+
+//configuracion del lienzo
+function setup() {
+  createCanvas(1920, 1080); //tamaño del lienzo
+  background(20); //color de fondo
+
+  port = createSerial(); //creamos el puerto serial para la conexión
+  port.bufferSize(1024); //buffer que nos permitirá leer con una velocidad adecuada los datos que entrega arduino
+
+  //botón para conectar el arduino
+  connectBtn = createButton('Conectar Arduino'); //texto para el boton
+  connectBtn.position(10, 10); //posición del boton
+  connectBtn.mousePressed(connectBtnClick); //al hacer clic se activa
+}
+
+function draw() {
+  background(200);
+  
+  image(backImg, 400, 400, 200, 200); //aqui se llama a la imagen para que se pueda dibujar 
+
+  
+  //lee los valores de arduino en el formato correspondiente a p5
+  let line = port.readUntil("\n"); 
+  while (line && line.length > 0) {
+    line = trim(line);
+
+    // si la línea no es solo números (tiene letras, comas, etc.), la ignoramos
+    if (/^\d+$/.test(line)) {
+      let v = int(line);
+
+      if (lecturaEstado === 0) {
+        sensorX = v;
+        lecturaEstado = 1; // la próxima numérica será Y
+      } else {
+        sensorY = v;
+        lecturaEstado = 0; // volvemos a esperar X
+      }
+    }
+
+    // leer siguiente línea del buffer (los datos)
+    line = port.readUntil("\n"); //salto de linea 
+  }
+
+  // Mapear a la pantalla
+  let posX = map(sensorX, 0, 1023, 0, width);
+  let posY = map(sensorY, 0, 1023, height, 0); // invertido
+
+  let imgSize = 120; // tamaño de la imagen
+  imageMode(CENTER); //posicion de la imagen al centro, (CORNER) tambien funciona
+  image(img, posX, posY, imgSize, imgSize); //posicion y tamaño de la imagen
+  
+  // tamaño, color y texto de los valores que recibe el sensor en p5, esto puede modificarse para agregar las vidas y el conteo de puntos.
+  fill(180);
+  textSize(14);
+  text(`X: ${sensorX}`, 10, height - 30);
+  text(`Y: ${sensorY}`, 10, height - 10);
+  
+  //agregamos la otra imagen, en este caso la de janis
+  let janisEstaticaSize = 220; // tamaño de la imagen (puedes cambiarlo)
+  imageMode(CENTER);
+  image(backImg);
+}
+
+//funcion para que el boton de conectar el arduino a p5 funcione al hacer clic y lea la placa
+function connectBtnClick() {
+  if (!port.opened()) {
+    port.open(BAUDRATE);
+  } else {
+    port.close();
+  }
+}
+```
+
 ---
 
 ### Conexiones Actualizado
@@ -595,4 +825,133 @@ flowchart TB
 
 ### Presupuesto Actualizado
 
+![presupuesto actualizado](./imagenes/presupuesto.png)
+
 ### Bocetos Físicos Actualizado
+
+### Aarón
+
+|imagen|estático|volando|
+|---|---|---|
+|![aaron](./imagenes/aaron.png)|![aaron estatico](./imagenes/aaronEstatico.gif)|![aaron volando](./imagenes/aaronVolando.gif)|
+
+---
+
+### Misaaa
+
+|imagen|estático|volando|
+|---|---|---|
+|![misa](./imagenes/misa.png)|![misa estatico](./imagenes/misaEstatico.gif)|![misa volando](./imagenes/misaVolando.gif)|
+
+---
+
+### Janis
+
+|imagen|estático|volando|
+|---|---|---|
+|![janis](./imagenes/janis.png)|![janis estatico](./imagenes/janisEstatica.gif)|![janis volando](./imagenes/janisVolando.gif)|
+
+---
+
+### Mateo
+
+|imagen|estático|volando|
+|---|---|---|
+|![mateo](./imagenes/mateo.png)|![mateo estatico](./imagenes/mateoEstatico.gif)|![mateo volando](./imagenes/mateoVolando.gif)|
+
+---
+
+### Inicio juego y hadas
+
+|inicio|inicio|volando|
+|---|---|---|
+|![inicio 1](./imagenes/inicio1.gif)|![inicio 2](./imagenes/inicio2.gif)|![haditas](./imagenes/haditas.gif)|
+
+---
+
+### Choose your character
+
+|choose your character|
+|----|
+|![choose aaron](./imagenes/chooseAaron.gif)|
+|![choose misa](./imagenes/chooseMisa.gif)|
+|![choose janis](./imagenes/chooseJanis.gif)|
+|![choose mateo](./imagenes/chooseMateo.gif)|
+
+---
+
+### Código oara dibujar directamente en p5.js
+
+```p5.js
+let colors = {};   // Se inicializan vacío
+let sprite4;       // Se declara antes, pero se llena en setup()
+
+function setup() {
+  createCanvas(370, 330);
+  noStroke();
+
+  // Definición de colores
+  colors = {
+    0: color(0, 0, 0, 0),        // transparente
+    1: color(0),                 // negro
+    2: color(255,224,189),       // piel
+    3: color(200),               // gris polera
+    4: color(130,200,255),       // celeste alas
+    5: color(40,90,200),         // azul pantalón
+    6: color(255,120,180),       // rosa
+    7: color(255,255,255),       // blanco
+    8: color(220),               // gris claro
+    9: color(180,230,255)       // celeste claro
+  };
+
+  // Se inicia el sprite
+  sprite4 = [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,1,1,1,2,2,2,2,2,1,1,1,6,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,1,1,2,2,2,2,2,2,1,1,6,6,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,2,2,2,2,2,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,1,1,2,2,1,1,2,2,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,6,6,2,2,2,2,6,6,2,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,6,6,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+    [0,0,0,9,9,9,9,9,4,4,4,4,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,4,4,4,4,9,9,9,9,0],
+    [0,9,9,9,9,9,9,9,4,4,4,4,1,1,1,1,3,3,7,7,7,7,3,3,1,1,1,1,4,4,4,4,4,9,7,9,9],
+    [9,7,9,9,9,9,4,4,4,4,4,4,1,1,1,3,8,3,7,7,7,7,3,8,3,1,1,4,4,4,4,4,9,7,9,9,9],
+    [9,9,7,9,9,9,4,4,4,4,4,4,4,1,3,8,8,3,7,7,7,7,3,8,8,3,1,1,4,4,4,4,7,9,9,9,9],
+    [0,9,9,7,9,9,4,4,4,4,4,4,1,3,8,8,8,3,7,7,7,7,3,8,8,8,3,1,4,4,4,4,9,9,9,9,0],
+    [0,9,9,9,9,9,9,9,4,4,4,4,3,8,8,8,8,3,7,7,7,7,3,8,8,8,8,3,4,4,4,9,9,9,9,9,0],
+    [0,0,0,0,0,9,9,9,9,9,9,4,3,8,8,8,8,3,3,7,7,3,3,8,8,8,8,3,4,4,9,9,9,9,9,0,0],
+    [0,0,0,0,0,0,9,9,9,9,7,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,0,0,0,0],
+    [0,0,0,0,0,0,0,0,9,9,9,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,9,9,9,9,0,0,0,0,0],
+    [0,0,0,0,0,9,9,9,9,9,9,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,0,0,0,0],
+    [0,0,0,9,9,9,9,9,9,9,4,4,3,8,3,8,8,8,3,7,7,3,8,8,8,3,8,3,4,9,9,9,9,9,0,0,0],
+    [0,0,9,9,9,9,9,7,9,9,9,9,3,3,3,3,3,3,3,7,7,3,3,3,3,3,3,3,4,4,9,9,9,9,0,0,0],
+    [0,0,9,9,9,9,7,9,9,9,9,7,2,2,2,5,5,5,5,5,5,5,5,5,5,2,2,2,9,9,9,9,9,0,0,0,0],
+    [0,0,9,9,9,7,9,9,9,9,9,7,2,2,2,5,5,5,5,5,5,5,5,5,5,2,2,2,9,9,9,9,0,0,0,0,0],
+    [0,0,0,9,7,9,9,9,9,9,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,9,9,9,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,0,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,1,1,1,1,1,0,1,1,1,1,7,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    
+  ];
+}
+
+function draw() {
+  background(0);
+  let pixelSize = 10;
+
+  for (let y = 0; y < sprite4.length; y++) {
+    for (let x = 0; x < sprite4[y].length; x++) {
+      fill(colors[sprite4[y][x]]);
+      rect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+    }
+  }
+}
+```

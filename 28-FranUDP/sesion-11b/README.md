@@ -60,15 +60,54 @@ Serie de obras que inició el 2016, son una crítica al impacto que ha tenido el
 
 -----------------------------------------------------------------------------------------------------------
 ## Encargo 18 <!-- subir taxonomía detallada de sensores, actuadores, software y hardware utilizado en 1 obra exhibida en la Bienal de Artes Mediales 2025, citando correctamente a las fuentes. -->
-### [~~~ desde la raíz ~~~]() 
+### [Taxonomia: ~~~ desde la raíz ~~~](https://17.bienaldeartesmediales.cl/obra/desde-la-raiz-una-aproximacion-al-bosque-esclerofilo/) 
+
+En la obra de [Yto Aranda](https://17.bienaldeartesmediales.cl/participante/yto-aranda/) se emplearon los siguientes componentes electrónicos y materiales:
+
+#### hardware
+
+* Microcontroladores: Se utilizan arduinos para procesar los inputs de los sensores y outputs que dirigen los varios actuadores.
+
+* PSU: Fuentes de 5V para alimentar los componentes electrónicos.
+
+* Partes de las pinturas electrónicas: Están construidas con marcos de madera, bastidores y capas de palicarbonato.
+
+#### Sensores
+
+* Sensores Táctiles: Integrados en los módulos textiles con forma de ramas y raices, para que la obra responda al toque del usuario
+
+* Sensor de Presencia: Para detectar la proximidad de los usuarios y activar secuencias de sonidos.
+
+#### Actuadores 
+
+* LEDs: Integradas en los tejidos de las raíces y las pinturas.
+
+* Parlantes:  Reproduce sonidos ambientales (aves, insectos, agua, etc).
+
+* Videos: Se proyectan videos en loop con imagenes de flora y fauna del bosque.
+
+* Olor: La obra tiene un difusor que emite aromas del bosque.
+
+#### Software
+
+* C++/Arduino: Se desarrolló un software que sincronisa las entradas de los sensores con las salidas de luz y sonido.
+
+#### Estructura
+
+* Tejidos: La estructura principal está hecha a partir de fibras naturales de sisal, trabajadas a crochet para dar forma a las raices.
+
+* Soportes: Se utilizaron estructuras de madera y metal para sostener los tejidos y componentes de las pinturas.
+
+---
+#### Fuentes citadas:
+
+*   [17ª Bienal de Artes Mediales, Ficha de la obra](https://17.bienaldeartesmediales.cl/obra/desde-la-raiz-una-aproximacion-al-bosque-esclerofilo/)
+
+*   [17ª Bienal de Artes Mediales, Ficha del participante](https://17.bienaldeartesmediales.cl/participante/yto-aranda/)
+
+*   [Santiago Cultura, Artículo sobre la exposición](https://www.santiagocultura.cl/events/yto-aranda-presenta-%e2%88%bc%e2%88%bc%e2%88%bcdesde-la-raiz%e2%88%bc%e2%88%bc%e2%88%bc-en-la-17a-bienal-de-artes-mediales/)
+
+*   [Sitio web de Yto Aranda, Página del proyecto](https://yto.cl/desdelaraiz/)
 
 
-
-
-
-
-
-
-https://www.santiagocultura.cl/events/yto-aranda-presenta-%e2%88%bc%e2%88%bc%e2%88%bcdesde-la-raiz%e2%88%bc%e2%88%bc%e2%88%bc-en-la-17a-bienal-de-artes-mediales/
-
-https://17.bienaldeartesmediales.cl/obra/desde-la-raiz-una-aproximacion-al-bosque-esclerofilo/
+*   [Sitio web de Yto Aranda, bitácora](https://yto.cl/raiz/)
