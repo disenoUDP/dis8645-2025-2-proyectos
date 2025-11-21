@@ -211,6 +211,8 @@ Si bien la intención principal es ocasionar decepción, no es con intenciones m
 ![humo](./imagenes/gifs-avances-1.gif)
 ![humo](./imagenes/gifs-avances-2.gif)
 
+![humo](./imagenes/carcasa-v1.png)
+
 ### ⋅⋯⋯⋅ Código ⋅⋯⋯⋅
 
 [Carpeta con los códigos]()
