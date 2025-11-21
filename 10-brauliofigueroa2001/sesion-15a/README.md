@@ -69,3 +69,61 @@ void loop() {
 - rango 3: motor vibra de forma continua y se detiene cuando llega al último nivel que sería el clímax en el que se expulsa el humo 
 - esto se puede ver en el monitor serial, esto me puede mostrar en qué rango está y ver que se activa
 - descubrí que al conectar el motor al pin de 3.3v tiene una diferencia notoria de vibración con el de 5v, no sé si habrá una forma mediante el arduino de darle más voltaje en un momento determinado después de pasar un rango, que es lo que se quería lograr inicialmente
+
+#### avance nocturno madrugada del 21 de noviembre
+
+- venía pensando en la micro mientras llegaba a mi casa, que quizá una forma de mostrar una especie de selector de velocidades por mientras podría ser un botón, al apretarlo comienza velocidad 1, apreto otra vez velocidad 2 y por último al apretar otra vez, velocidad 3.
+- estaba probando a ver cuáles podían ser las respectivas velocidades, cuánto tiempo estaba en pausa el motor y cuánto tiempo estaba activo
+- definí 3 velocidades a través de un loop
+- velocidad 1 o de inicio: 2 segundos encendido y 2 segundos apagado
+- velocidad 2 o intermedia: 3 segundos encendido y 0,5 segundos apagado
+- velocidad 3 o final: motor activado todo el tiempo hasta que se apague
+- esto lo hice a través del siguiente código que se basa en un loop en el cuál muestro las velocidades
+
+```cpp
+#define vibrador 2
+void setup() {
+pinMode(vibrador, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(vibrador, HIGH);
+  delay(2000);
+  digitalWrite(vibrador, LOW);
+  delay(2000);
+  digitalWrite(vibrador, HIGH);
+  delay(2000);
+  digitalWrite(vibrador, LOW);
+  delay(2000);
+  digitalWrite(vibrador, HIGH);
+  delay(2000);
+  digitalWrite(vibrador, LOW);
+  delay(2000);
+  digitalWrite(vibrador, HIGH);
+  delay(3000);
+  digitalWrite(vibrador, LOW);
+  delay(500);
+  digitalWrite(vibrador, HIGH);
+  delay(3000);
+  digitalWrite(vibrador, LOW);
+  delay(500);
+  digitalWrite(vibrador, HIGH);
+  delay(3000);
+  digitalWrite(vibrador, LOW);
+  delay(500);
+  digitalWrite(vibrador, HIGH);
+  delay(3000);
+  digitalWrite(vibrador, LOW);
+  delay(0);
+  digitalWrite(vibrador, HIGH);
+  delay(3000);
+  digitalWrite(vibrador, LOW);
+  delay(0);
+}
+```
+
+- no sé si está excesivamente largo o tiene cosas de más, intenté dejar un HIGH y LOW de cada velocidad, esto hacía que el loop fuera mucho más corto y que la velocidad 2 fuera casi imperceptible dentro de este
+- la misión ahora es poder seleccionar cada velocidad por medio de un botón o un potenciómetro, esto posteriormente se uniría al código del encoder en donde la idea sería que al pasar cierto número de vueltas y rango, se active la velocidad 1, luego otro rango velocidad 2 y en el último rango casi al final la velocidad 3 que se apagaría al completar todo el rango de vueltas del encoder, que es en donde saldría el humo y se prenderían luces aleatorias para hacerte saber que llegaste al final
+  
+
+  
