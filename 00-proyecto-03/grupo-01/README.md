@@ -37,7 +37,7 @@ Los **cuatro botones adicionales** no tiene etiquetas ni indicaciones: el jugado
 - **Botón velocidad música**
 Además, el **botón integrado en el joystick activa un modo disco como sorpresa extra.**
 Ninguno de estos botones restaura la figura; todos están diseñados para intensificar la sensación de pérdida de control.
-Si el jugador deja de interactuar durante unos segundos, la matriz regresa por sí sola a su forma original. Así, el dispositivo refuerza su idea central: intervenir produce caos, soltar permite que el orden vuelva por sí mismo.**
+Si el jugador deja de interactuar durante unos segundos, la matriz regresa por sí sola a su forma original. Así, el dispositivo refuerza su idea central: intervenir produce caos, **soltar permite que el orden vuelva por sí mismo.**
 - Contexto de uso:
 
 0aTAo es un juego donde las personas pueden acercarse, tocar botones y mover un joystick para intentar arreglar una figura de luces que se va desordenando. Está pensado para espacios de exhibición o juegos experimentales en los que el usuario descubre que mientras más intenta controlar la figura más caos genera y que solo al dejar de intervenir, el sistema vuelve solo a la perfección inicial. Busca generar una experiencia lúdica y reflexiva sobre el control, la frustración y la idea de soltar.
