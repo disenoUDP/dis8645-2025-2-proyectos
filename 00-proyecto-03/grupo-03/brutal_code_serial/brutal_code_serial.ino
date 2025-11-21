@@ -9,7 +9,7 @@ proyecto "Jorgito tiene Apego Ansioso"*/
 #include <MFRC522.h>
 #include <Servo.h>
 
-//estados
+//estados posibles
 enum Estado { CALMAO,
               PIDE_AMOR,
               PATALETA_LEVE,
@@ -20,9 +20,12 @@ Estado estadoActual = CALMAO;
 unsigned long tiempoInicioEstado = 0;
 
 //sonico
+//Pin Trigger
 int pinTrix = 8;
+//Pin Echo
 int pinEkeko = 9;
 float duracion;
+//Sustancia = Distancia
 float sustancia;
 
 //variables sensor presion
@@ -49,7 +52,9 @@ SoftwareSerial softSerial(10, 11);
 //instancia mp3
 DFRobotDFPlayerMini myDFPlayer;
 
+//Servo motor que actua con la columna
 Servo motoLumbar;
+//Servo que acciona la rotacion
 Servo motoRotor;
 
 void setup() {
@@ -93,7 +98,7 @@ void loop() {
 
     case CALMAO:
       Serial.println("ESTADO: CALMAO");
-
+      //Rango de la distancia minima y maxima del estado "Calmao"
       if (sustancia < 20 && sustancia > 0) {
 
         //emular audio
@@ -115,7 +120,7 @@ void loop() {
         estadoActual = CALMAO;
         Serial.println("ESTADO: CALMAO");
       }
-
+      //Si detecta una persona y pasan mas de 9 segundos se iniciara el estado "Pataleta leve"
       if (!hayBrazo && millis() - tiempoInicioEstado > 9000) {
         estadoActual = PATALETA_LEVE;
         tiempoInicioEstado = millis();
@@ -197,6 +202,7 @@ void loop() {
         } else if (tiempoAutodestruccion < 15000) {
           //secuencia autodestruccion
           Serial.println("chillidos y gritos desesperados");
+          //linea de texto que no aparece en la secuencia
           Serial.println("PORFAVOR, RASCALE LA WATITA AL MONO");
           Serial.println("...");
           Serial.println("...");
@@ -235,16 +241,21 @@ void loop() {
 }
 
 void dePresion() {
+  //asignar el valor del pin del sensor de presion, a la variable valorDePresion
   valorDePresion = analogRead(pinDePresion);
+  //si valorDePresion es mayor a presionMinimaAceptable, hayBrazo es true
   hayBrazo = (valorDePresion > presionMinimaAceptable);
 }
 
 //motor dc
 void motoMoto() {
+  //asignar velocidad
   analogWrite(able, 100);
+  //prender direccion1, apagar direccion2
   digitalWrite(input1, HIGH);
   digitalWrite(input2, LOW);
   delay(5000);
+  //apagar ambas direcciones
   digitalWrite(input1, LOW);
   digitalWrite(input2, LOW);
 }
@@ -253,19 +264,21 @@ void motoMoto() {
 void sonic() {
   digitalWrite(pinTrix, LOW);
   delayMicroseconds(2);
+  //enviar un pulso ultrasonico
   digitalWrite(pinTrix, HIGH);
   delayMicroseconds(10);
   digitalWrite(pinTrix, LOW);
 
   duracion = pulseIn(pinEkeko, HIGH, 30000);
 
+//pasar el valor del pin a cm
   if (duracion == 0) {
     sustancia = 400;
   } else {
     sustancia = (duracion * 0.0343) / 2;
   }
 
-  //rango sensor ultrasonico
+  //rango sensor ultrasonico, si esta fuera de rango, se toma como 400
   if (sustancia > 400 || sustancia <= 0) {
     sustancia = 400;
   }
