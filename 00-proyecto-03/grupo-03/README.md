@@ -129,7 +129,6 @@ flowchart TB
 
 ´´´
 
-
 ### Código
 
 ---
@@ -146,12 +145,19 @@ flowchart TB
 
 ![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
 
+![brazos](./imagen/piezasbrazo.png)
 
+![molde](./imagen/patronaje.png)
 
+![patronaje](./imagen/patrones.png)
+
+---
 
 ### Contexto de uso 
 
 Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
+
+---
 
 ### Instrucciones de uso:
 
