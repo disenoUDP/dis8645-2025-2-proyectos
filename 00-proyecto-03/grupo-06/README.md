@@ -18,6 +18,22 @@
 
 ## Presentación textual
 
+### Metáfora
+
+La principal metáfora que se desarrolló con este proyecto es la inconveniencia de algo conveniente.
+
+Un temporizador eficiente y adecuado como el que se encuentra en un teléfono móvil tiene ciertas características que se toman por sentado.
+
+- Se pueden configurar desde 3 medidas de tiempo, segundos, minutos y horas, siendo tan exactas como el usuario estime necesario.
+
+- Se puede cambiar el audio y el volumen con el que será reproducido una vez termine el ciclo del temporizador.
+
+Pero, ¿qué ocurriría si todo esto que esta interfaz e interacción se sintiese que no es dependiente de una fría y calculadora computadora, sino que de un ser vivo?
+
+He aquí el segundo objeto, una gallina, que realmente es un temporizador de la naturaleza, ya que cuando sale el sol, está cacarea, anunciando un nuevo día.
+
+Hasta ahí quedan las similitudes a primera vista, mientras que sus diferencias son bastante aparentes, la gallina tiene pensamientos, puede cometer errores, es un ser vivo.
+
 ### Descripción general
 
 “Weona Entidad de Balance Ovoide”
