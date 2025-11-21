@@ -134,18 +134,15 @@ flowchart TB
 
 ---
 
-
 ### Bocetos
 
-![bocetos de jorge](./imagen/ilustracion.jpg)
+![bocetos de jorge](./imagen/Ilustracion.jpg)
 
 ### Prototipado
 
 ![foto de la vértebra](./imagen/vertebra.png)
 
-![gif de la probeta 1](./imagen/vertebra-probeta1.gif)
-
-![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
+![gif de la probeta 1](./imagen/vertebra-probeta1.gif) ![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
 
 ![vértebra v2](./imagen/vertebra-v2.png)
 
