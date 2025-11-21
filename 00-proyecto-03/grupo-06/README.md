@@ -391,6 +391,8 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 
 ![foto carcasa etapa inicial 2](./imagenes/explosionada.png)
 
+![foto carcasa etapa inicial 2](./imagenes/tme-sesion14b.png)
+
 ![material1](./imagenes/EMC4.jpg)
 ![material2](./imagenes/EMC5.jpg)
 ![material3](./imagenes/EMC12.jpg)
@@ -398,6 +400,8 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 ![material5](./imagenes/EMC15.jpg)
 
 ## Gráfica Ava
+
+![avecita2](./imagenes/pajaro.jpeg)
 
 ![avecita2](./imagenes/AVA-BOCETOS.png)
 
