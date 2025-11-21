@@ -12,7 +12,7 @@
 
 - Angela O'Ryan / [Hiinalia](https://github.com/Hiinalia)
 
-- Camila Delgado / [Notcaamila](https://github.com/notcaamila)
+- Camila Delgado / [notcaamila](https://github.com/notcaamila)
 
 - Josefa Quape / [Joquape](https://github.com/Joquape)
 
@@ -89,7 +89,6 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Documentación fotográfica y audiovisual    |      ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |
 | Documentación en GitHub                    |      ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |
 
-
 ## Diagrama de Flujo
 
 ``` mermaid
@@ -140,17 +139,17 @@ flowchart TD
 
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
-| Módulo sensor de inclinación tilt | 1        | $1496  | https://altronics.cl/switch-inclinacion-sw520                           |
-| Módulo reproductor MP3            | 1        | $2990  | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini           |
-| Pantalla display LCD Nokia 5110   | 1        | $5000  | https://afel.cl/products/pantalla-display-lcd-nokia-5110                |
-| Mini parlante altavoz 3w          | 1        | $3000  | https://afel.cl/products/mini-parlante-altavoz-de-3w                    |
-| Botón táctil 12x12x7.3            | 1        | $100   | https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor        |
-| Motor DC alta velocidad           | 1        | $500   | https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for |
-| Cables dupont                     |          | $2500  | https://afel.cl/products/pack-60-cables-de-conexion                     |
-| Cables dupont entrada salida      |          | $1000  | https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra        |
-| Resistencia 10k                   | 7        | $4990  | https://afel.cl/products/kit-600-resistencias-1-4w-30-valores           |
-| Diodo Rectificador 1N4007         | 1        | $100   | https://www.electroardu.cl/diodo-rectificador-1n4007                    |
-| MOSFET BS170 tipo N TO92          | 1        | $200   | https://depaquete.cl/index.php                                          |
+| Módulo sensor de inclinación tilt | 1        | $1496  | <https://altronics.cl/switch-inclinacion-sw520>                           |
+| Módulo reproductor MP3            | 1        | $2990  | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
+| Pantalla display LCD Nokia 5110   | 1        | $5000  | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
+| Mini parlante altavoz 3w          | 1        | $3000  | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
+| Botón táctil 12x12x7.3            | 1        | $100   | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor>        |
+| Motor DC alta velocidad           | 1        | $500   | <https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for> |
+| Cables dupont                     |          | $2500  | <https://afel.cl/products/pack-60-cables-de-conexion>                     |
+| Cables dupont entrada salida      |          | $1000  | <https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra>        |
+| Resistencia 10k                   | 7        | $4990  | <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores>           |
+| Diodo Rectificador 1N4007         | 1        | $100   | <https://www.electroardu.cl/diodo-rectificador-1n4007>                    |
+| MOSFET BS170 tipo N TO92          | 1        | $200   | <https://depaquete.cl/index.php>                                          |
 
 **Presupuesto estimado total – 21.876**
 
@@ -163,7 +162,6 @@ Para empezar con el pseudocódigo lo dimos todo, escribiendo todos los sensores 
 Este pseudocódigo se puede encontrar en el WEBO_EMPOLLANDO
 
 (ver de incluir un pesado del código, foto o lo que corresponda)
-
 
 A continuación se realizó una prueba de cada uno de los componentes:
 
@@ -304,7 +302,7 @@ Después fue el display, que causó unos problemas iniciales debido a la manera 
 
  ```
 
-El botón fue lo que seguía, que realmente como era probablemente el componente más simple, fue integrado directamente en el código principal donde se le aplicó alimentación y 
+El botón fue lo que seguía, que realmente como era probablemente el componente más simple, fue integrado directamente en el código principal donde se le aplicó alimentación y
 se le asignó un pin específico para que el arduino recibiera la señal.
 
  ``` cpp
@@ -379,7 +377,6 @@ delay(4000);
 
  ```
 
-
 ## Prototipo
 
 Para el prototipo planteamos una carcasa con **morfología ovoide**, generada a partir de un volumen continuo y sin aristas para favorecer el **movimiento pendular**. En la base incorporamos un corte leve que actúa como punto de **apoyo inestable**, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
@@ -387,5 +384,25 @@ Para el prototipo planteamos una carcasa con **morfología ovoide**, generada a 
 En la superficie frontal se integrará la **pantalla que muestra a Ava**, funcionando como interfaz visual principal. A un costado se ubicará el **botón destinado a sumar tiempo al temporizador**, considerando ergonomía mínima y acceso directo.
 
 En la parte superior se incorporará una serie de **aberturas pequeñas, dimensionadas para que el sonido del speaker** salga con claridad sin interferir con la estructura interna ni comprometer la rigidez de la carcasa.
+
+## Carcasa en etapa *Caja de Cereal*
+
+![foto carcasa etapa inicial](./imagenes/webito.png)
+
+![foto carcasa etapa inicial 2](./imagenes/explosionada.png)
+
+![material1](./imagenes/EMC4.jpg)
+![material2](./imagenes/EMC5.jpg)
+![material3](./imagenes/EMC12.jpg)
+![material4](./imagenes/EMC13.jpg)
+![material5](./imagenes/EMC15.jpg)
+
+## Gráfica Ava
+
+![avecita2](./imagenes/AVA-BOCETOS.png)
+
+![avecita1](./imagenes/grafica1.jpeg)
+
+![avecita2](./imagenes/grafica2.jpeg)
 
 ## Bibliografía
