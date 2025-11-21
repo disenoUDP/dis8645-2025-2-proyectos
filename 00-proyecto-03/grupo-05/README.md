@@ -181,13 +181,16 @@ Antes de hacer funcionar el aparato hay que corroborar que este se encuentre con
 
 1. Ponerse frente a la máquina y sujetar la manibela.
 2. Girar la manivela en sentido horario.
-3. Ver cómo las luces se encienden y escuchar el sonido que indica haber avanzado 1 nivel.
-4. Seguir girando de forma continua hasta avanzar al siguiente nivel.
-5. Tras a la mitad de todos los niveles, la máquina comienza a vibrar y emitir sonidos distontos.
-6. Seguir girando la manivela sin parar, independiente de las cosas que ocurran.
-7. Girar hasta que se rellene la barra de progreso y se habra la compuerta secreta.
-8. Admirar el humo que emana.
-9. Comenzar todo otra vez.
+3. Ver cómo se enciende la primera luz.
+4. Continuar girando la manivela.
+5. Ver cómo las luces se encienden y escuchar el sonido que indica haber avanzado 1 nivel.
+6. Seguir girando de forma continua hasta avanzar al siguiente nivel.
+7. Tras haber completado la mitad de la barra de progreso (leds), la máquina comienza a vibrar y emitir sonidos.
+8. Seguir girando la manivela sin parar, independiente de las cosas que ocurran.
+9. Girar hasta que se rellene toda la barra y se abra la compuerta secreta.
+10. Contemplar el gran show final de la máquina (juego de luces, sonidos, vibración).
+11. Admirar el humo que emana.
+12. Comenzar todo otra vez.
 
 
 ### ⋅⋯⋯⋅ Contexto de uso ⋅⋯⋯⋅
