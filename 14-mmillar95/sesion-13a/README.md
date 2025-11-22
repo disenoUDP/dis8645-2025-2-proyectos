@@ -30,14 +30,23 @@ La inteligencia artificial (IA) funciona imitando ciertas capacidades humanas co
 - le entrega valores númericos, que se modifican según como entrenamos esta imágen
 
 ### ¿Cómo funciona la IA generativa?
+
 - el uso del captcha para asociar palabras a imágenes.
 - **TPU** (Tensor Processing Unit): es un chip especial creado por Google para que las inteligencias artificiales aprendan y trabajen más rápido. Muchos de los macbook actuales vienen con tpu.
 - **CPU**: el cerebro normal del computador, hace de todo, pero más lento en tareas de IA.
 - **GPU**: muy buena para cálculos en paralelo, como los de videojuegos o redes neuronales.
 - **TPU**: una “GPU especializada” diseñada exclusivamente para IA.
 - **RNN** (Red Nuronal Recurrente): es un tipo de inteligencia artificial que sirve para trabajar con información que viene en secuencia. Como trabaja con datos, siempre se puede equivocar ya que juega con probabilidades.
-- 
+
 Información sacada de [05-sofiacartes](https://github.com/mmillar95/dis8645-2025-2-proyectos/edit/main/05-sofiacartes/sesion-13a/README.md)
+
+### CAPTCHA
+
+(Completely Automated Public Turing test to tell Computers and Humans Apart: test de Turing público y automático para distinguir a los ordenadores de los humanos) 
+
+La prueba de un CAPTCHA consta de dos partes simples: una secuencia de letras o números generada aleatoriamente que aparece como una imagen distorsionada y un cuadro de texto. 
+
+![captcha](./imagenes/captcha.png)
 
 ### Google Colaboratory
 
