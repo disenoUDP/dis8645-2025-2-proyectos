@@ -48,6 +48,28 @@ La prueba de un CAPTCHA consta de dos partes simples: una secuencia de letras o 
 
 ![captcha](./imagenes/captcha.png)
 
+## Diagrama de cómo funciona CAPTCHAT 
+
+```mermaid
+
+flowchart TB
+A["Usuario intenta acceder a un formulario o página"] --> B["Servidor muestra un CAPTCHA"]
+B --> C["Usuario resuelve el desafío: texto, imágenes, checkbox, etc."]
+C --> D(["¿Respuesta válida y comportamiento humano?"])
+D -- Sí --> E["Servidor genera un token de verificación"]
+E --> F["Se permite el acceso o se procesa el formulario"]
+D -- No --> G["Se bloquea el intento o se pide un nuevo CAPTCHA"]
+
+style A stroke:#00C853,fill:transparent
+style B stroke:#00C853
+style C stroke:#00C853
+style D stroke:#00C853
+style E stroke:#00C853
+style F stroke:#00C853
+style G stroke:#D50000
+
+```
+
 ### Google Colaboratory
 
 Google Colaboratory es un servicio que te permite usar un computador en la nube, aprovechando servidores de Google desde cualquier lugar del mundo. Cualquier persona con una cuenta de Google puede acceder a este entorno, que actualmente es muy utilizado para trabajar con Inteligencia Artificial. Además, ofrece acceso a GPU y TPU, lo que permite ejecutar modelos avanzados incluso si tu propio equipo no cuenta con este tipo de hardware.
@@ -66,12 +88,24 @@ Instalación:
 
 ### Ideas para el Proyecto 03 (Grupo 04)
 
-- Maquina que siente diferente: le pegas y se calma
-- Maquina que cambia una grafica segun la intensidad con la cual la tratas
-- Experimentar con materialidades
-- Hilo conductor, ver si funciona
-- Graficas
-- Sensor de fuerza
-- Sensor touch
+- Máquina que siente diferente: le pegas y se calma.
+- Máquina que cambia una gráfica según la intensidad con la cual la tratas.
+- Experimentar con materialidades.
+- Hilo conductor, ver si funciona.
+- Graficas.
+- Sensor de fuerza.
+- Sensor touch.
 - Reacción de fluidos con la presión.
 - Cómo medir el impacto/velocidad de la fuerza.
+
+### Materiales 
+
+Lista de materiales para comprar/recolectar y poder definir nuestro proyecto
+
+- Sensor de fuerza.
+- Hilo conductor.
+- Lana, tela, algodon, etc.
+- Arduino Wifi (nos presto la Janis<3)
+- Sensor Touch
+
+
