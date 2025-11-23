@@ -135,7 +135,6 @@ Este módulo utiliza el circuito integrado TTP223B que es un sensor touch capaci
 - Dimensiones: 24 x 24 x 7.2 mm
 - Peso: 2 g
 
-![sensor touch](./imagenes/touch.png)
 
 ```cpp
 
@@ -159,6 +158,7 @@ void loop() {
 
 ```
 
+![sensor touch](./imagenes/touch.png)
 
 
 
