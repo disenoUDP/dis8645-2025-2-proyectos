@@ -4,7 +4,7 @@
 
 ### vamos... esta vez intentaré tener una mejor constancia documentando mi proceso en la bitácora
 
-![aceptacion](./imagenes/aceptacion.jpg)
+![aceptacion](./imagenes/aceptacion.png)
 
 ## primer bloque de clases
 
