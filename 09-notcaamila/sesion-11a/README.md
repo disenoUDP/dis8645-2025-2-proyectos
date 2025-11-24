@@ -46,6 +46,12 @@ Matías tomó el mando en este bloque y nos habló sobre la *programación orien
 
 ### [Caminar es un objeto](https://revistaentorno.cl/caminar-es-un-objeto/), exposición de Gabriela Pérez, 2015.
 
+![Fotografía 1](./imagenes/caminar1.jpg)
+
+![Fotografía 2](./imagenes/caminar2.jpg)
+
+![Fotografía 3](./imagenes/caminar3.jpg)
+
 La obra se basa en la representación de un recorrido de cuatro horas alrededor de la Plaza de Armas de Santiago de Chile y un recorrido por el Cerro Santa Lucia, a través de un GPS Arduino y representaciones escultóricas en módulos de cartón de 3 centímetros cuadrados. Esto cambia tanto la forma de crear una determinada representación como también de intervenir el espacio, desde el caminar, hasta cuando llega su representación en museos. Esto supone un volver al museo, pero asociado a un camino. La idea de red, empieza a emerger, y la escultura no se queda anclada solo en el lugar de su montaje. Finalmente surge la pregunta ¿Cuándo empieza y cuando termina una obra? ¿Cuál es el frame de una instalación?
 
 🕹️ Juan Downey --> investigar más sobre este gran ser humano chileno
