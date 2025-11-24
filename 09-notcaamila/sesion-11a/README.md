@@ -56,10 +56,19 @@ La obra se basa en la representación de un recorrido de cuatro horas alrededor 
 
 ### [Juan Downey](https://historia-arte.com/artistas/juan-downey), 1940 - 1993.
 
+![Juan Downey](./imagenes/juandowney.jpg)
+
 Juan Downey Alvarado fue un artista chileno que trabajó en diferentes formatos, destacando sobre todo en videoarte, del que fue un pionero. Nacido en Santiago de Chile, Downey estudió arquitectura y durante esa época se fue a Europa y a Norteamérica a completar su formación. Viajó en Barcelona y después en París (ahí conocería a Roberto Matta, otro artista chileno) y más tarde en Washington D. C. y Nueva York donde decidió quedarse a vivir, al parecer por amor.
 
 Juan Downey hacía *arte interactivo*, mezclando escultura con video, mierdas electrónicas y otras tecnologías. Hoy eso puede parecer lo más habitual del mundo, pero en los años 60 y 70 utilizar el vídeo como medio artístico (y político) era la hostia de innovador. Y lo era: experimental y emocionante. Lo que hoy es un aburrimiento mil veces visto antes era un soplo de aire fresco, más aún viniendo de un artista de origen sudamericano. Downey se juntó con la gentuza de Radical Software y Raindance collective.
 
 Pero además de videoarte, Juan Downey trabajó la *performance*, la instalación, la fotografía, la pintura y el dibujo. De hecho sus dibujos acompañaron a casi todas sus obras, que nos hablan de política, historia del arte, *lo occidental* y *lo latinoamericano*.
 
-agregar más links de lo último que vimos
+### [Awareness of love](https://www.d21virtual.cl/2022/03/23/comunicado-awareness-of-love-del-artista-juan-downey/)
+
+![obra1](./imagenes/obra1.jpg)
+
+### [Video / Space / Time](https://proyectoidis.org/juan-downey/)
+
+![obra2](./imagenes/obra2.jpg)
+
