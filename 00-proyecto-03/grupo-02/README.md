@@ -145,7 +145,7 @@ INICIO
 
 Definir pinSensorTrig = 2
 Definir pinSensorEcho = 3
-Definir pinLED = 9
+Definir pinLED = R = 9 ; B = 11
 Definir pinMotor = 5
 
 Configurar pines como entrada o salida
@@ -183,7 +183,7 @@ INICIO
 Definir pinSensorTrig = 2
 Definir pinSensorEcho = 3
 Definir pinServo = 6
-Definir pinLED = 9
+Definir pinLED = G = 10 ; B = 11
 
 Configurar pines
 
@@ -484,8 +484,8 @@ La máquina Ansiedad utiliza:
 #### Sensor ultrasónico
 - VCC → 5V  
 - GND → GND  
-- TRIG → Pin digital 9  
-- ECHO → Pin digital 10  
+- TRIG → Pin digital 2
+- ECHO → Pin digital 3 
 
 #### Motor N20 + MOSFET
 - Motor → Terminales OUT del MOSFET  
@@ -496,8 +496,8 @@ La máquina Ansiedad utiliza:
 El MOSFET permite regular la intensidad de vibración según la distancia detectada.
 
 #### LED RGB
-- R → Pin PWM 3  
-- G → Pin PWM 6  
+- R → Pin PWM 9  
+- G → Pin PWM 10
 - B → Pin PWM 11  
 - Cada canal con resistencia de 220–330Ω
 
@@ -515,11 +515,11 @@ La máquina Vergüenza utiliza:
 #### Sensor ultrasónico
 - VCC → 5V  
 - GND → GND  
-- TRIG → Pin digital 8  
-- ECHO → Pin digital 7  
+- TRIG → Pin digital 2  
+- ECHO → Pin digital 3 
 
 #### Servomotor SG90
-- Señal → Pin 5  
+- Señal → Pin 6 
 - VCC → 5V  
 - GND → GND  
 
@@ -528,8 +528,8 @@ El servo gira entre dos posiciones:
 - “Oculta”: LED apagado, servo girado  
 
 #### LED RGB
-- R → Pin PWM 3  
-- G → Pin PWM 6  
+- R → Pin PWM 9 
+- G → Pin PWM 10
 - B → Pin PWM 11  
 - Cada canal con resistencia 220–330Ω
 
