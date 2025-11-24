@@ -67,3 +67,43 @@ los objetos elegidos son:
 
 2. ⁠Junto al grupo, hacer una lluvia de ideas de máquinas sentimentales (máquinas que trabajan con emociones/sensaciones/afectos específicos), y decidir entre ustedes las más interesantes. No pensar en sensores o actuadores específicos aún.
 
+## lluvia de ideas
+
+"se caracteriza por una preocupación constante por la cercanía emocional con los demás, el miedo al abandono y una necesidad excesiva de validación emocional."
+
+- profundamente influenciado por el entorno.
+
+- "slicione slap bracelet"
+- crianza respetuosa
+- "poner límites"
+- te invita, y es una trampa
+
+![it's a trap](/12-santiagoClifford/sesion-13b/imagenes/itsAtrap.jpeg)
+
+![juego de carreras](/12-santiagoClifford/sesion-13b/imagenes/carToy.jpg)
+
+![krusty muñeco malvado](/12-santiagoClifford/sesion-13b/imagenes/krusty.jpg)
+
+### idea din0
+
+#### apego ansioso
+
+máquina de abrazos, se muestra amable al inicio, una vez te abraza, se niega a soltarte y se aferra a ti.
+
+### idea clifford1one
+
+#### austeridad(?)
+
+una experiencia donde se le pide al objeto usuario que se despoje de todas sus pertenencias, y que una báscula pese las cosas que dejó.
+
+### idea franUDP
+
+#### confusión, "dislexia"
+
+una interfaz donde la persona controla un computador a través de su interacción con el entorno(espacio físico).
+
+### idea jotín
+
+#### incomodidad frente al conflicto
+
+casco que detecta al tono de la voz(tranquilo, agresivo, compasivo, etc.). Muestra de manera visual, el tono con el que se está hablando. Funciona como un "medidor de temperatura" en la habitación, referente a si el ambiente está tenso, tranquilo, etc.
