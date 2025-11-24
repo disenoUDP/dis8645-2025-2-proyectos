@@ -154,3 +154,5 @@ void loop() {
 ### Palabras importantes
 
 [Alginato](https://es.wikipedia.org/wiki/Alginato): El alginato es un polímero glicosídico constituido por los monosacáridos D-manurónico y L-gulurónico y es extraído de las algas pardas pertenecientes a la clase filogénica Phaeophyceae. En odontología, forma parte de la masa utilizada para obtener impresiones de los dientes y de los tejidos blandos adyacentes. Esta masa está compuesta de alginato y sales de calcio que, tras su preparación, ofrece un tiempo de trabajo entre 3 a 6 minutos. 
+
+https://www.avesdelparaiso.org/wp-content/uploads/aves-del-paraiso-pennant-macho-333x360.png

@@ -12,11 +12,29 @@
 
 - Angela O'Ryan / [Hiinalia](https://github.com/Hiinalia)
 
-- Camila Delgado / [Notcaamila](https://github.com/notcaamila)
+- Camila Delgado / [notcaamila](https://github.com/notcaamila)
 
 - Josefa Quape / [Joquape](https://github.com/Joquape)
 
 ## Presentación textual
+
+### Metáfora
+
+La principal metáfora que se desarrolló con este proyecto es la inconveniencia de algo conveniente.
+
+Un temporizador eficiente y adecuado como el que se encuentra en un teléfono móvil tiene ciertas características que se toman por sentado.
+
+- Se pueden configurar desde 3 medidas de tiempo, segundos, minutos y horas, siendo tan exactas como el usuario estime necesario.
+
+- Se puede cambiar el audio y el volumen con el que será reproducido una vez termine el ciclo del temporizador.
+
+Pero, ¿qué ocurriría si todo esto que esta interfaz e interacción se sintiese que no es dependiente de una fría y calculadora computadora, sino que de un ser vivo?
+
+He aquí el segundo objeto, una gallina, que realmente es un temporizador de la naturaleza, ya que cuando sale el sol, está cacarea, anunciando un nuevo día.
+
+Hasta ahí quedan las similitudes a primera vista, mientras que sus diferencias son bastante aparentes, la gallina tiene pensamientos, puede cometer errores, es un ser vivo.
+
+Como chiste queremos traer precisamente esas características no precisas de la gallina hacia el temporizador, algo que necesita funcionalidad sin interrupción ni fallos.
 
 ### Descripción general
 
@@ -89,7 +107,6 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Documentación fotográfica y audiovisual    |      ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |
 | Documentación en GitHub                    |      ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |       ✅️      |
 
-
 ## Diagrama de Flujo
 
 ``` mermaid
@@ -140,23 +157,308 @@ flowchart TD
 
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
-| Módulo sensor de inclinación tilt | 1        | $1496  | https://altronics.cl/switch-inclinacion-sw520                           |
-| Módulo reproductor MP3            | 1        | $2990  | https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini           |
-| Pantalla display LCD Nokia 5110   | 1        | $5000  | https://afel.cl/products/pantalla-display-lcd-nokia-5110                |
-| Mini parlante altavoz 3w          | 1        | $3000  | https://afel.cl/products/mini-parlante-altavoz-de-3w                    |
-| Botón táctil 12x12x7.3            | 1        | $100   | https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor        |
-| Motor DC alta velocidad           | 1        | $500   | https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for |
-| Cables dupont                     |          | $2500  | https://afel.cl/products/pack-60-cables-de-conexion                     |
-| Cables dupont entrada salida      |          | $1000  | https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra        |
-| Resistencia 10k                   | 7        | $4990  | https://afel.cl/products/kit-600-resistencias-1-4w-30-valores           |
-| Diodo Rectificador 1N4007         | 1        | $100   | https://www.electroardu.cl/diodo-rectificador-1n4007                    |
-| MOSFET BS170 tipo N TO92          | 1        | $200   | https://depaquete.cl/index.php                                          |
+| Módulo sensor de inclinación tilt | 1        | $1496  | <https://altronics.cl/switch-inclinacion-sw520>                           |
+| Módulo reproductor MP3            | 1        | $2990  | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
+| Pantalla display LCD Nokia 5110   | 1        | $5000  | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
+| Mini parlante altavoz 3w          | 1        | $3000  | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
+| Botón táctil 12x12x7.3            | 1        | $100   | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor>        |
+| Motor DC alta velocidad           | 1        | $500   | <https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for> |
+| Cables dupont                     |          | $2500  | <https://afel.cl/products/pack-60-cables-de-conexion>                     |
+| Cables dupont entrada salida      |          | $1000  | <https://afel.cl/products/pack-20-cables-de-conexion-macho-hembra>        |
+| Resistencia 10k                   | 7        | $4990  | <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores>           |
+| Diodo Rectificador 1N4007         | 1        | $100   | <https://www.electroardu.cl/diodo-rectificador-1n4007>                    |
+| MOSFET BS170 tipo N TO92          | 1        | $200   | <https://depaquete.cl/index.php>                                          |
 
 **Presupuesto estimado total – 21.876**
 
 Gasto real del equipo – 6.400
 
 ## Código
+
+Para empezar con el pseudocódigo lo dimos todo, escribiendo todos los sensores que íbamos a utilizar,  como también un archivo de créditos y archivo para establecer el cableado.
+
+Este pseudocódigo se puede encontrar en el WEBO_EMPOLLANDO
+
+(ver de incluir un pesado del código, foto o lo que corresponda)
+
+A continuación se realizó una prueba de cada uno de los componentes:
+
+Empezando por el sensor tilt, el cual era relativamente simple de utilizar ya que solo necesitaba alimentación de 5V, conexión a ground y un pin hacia el arduino donde se pueda recibir el estado de si está inclinado o no.
+
+ ``` cpp
+
+// establecer el pin que será conectado
+// el sensor para obtener su dato
+int pinSensor = 8;
+// crear una variable booleana para establecer
+// si hay inclinación o no presente
+bool parado;
+
+
+// lo que es necesario para los funcionamientos en void loop
+void setup()
+{
+// establecer que el pin llamado pinSensor va a ser un input
+  pinMode(pinSensor,INPUT);
+// comenzar la comunicación serial
+  Serial.begin(9600);
+}
+
+
+// aqui ocurre todos los funcionamientos del código
+void loop()
+{
+  // si se recibe una señal desde el pinSensor
+  if(digitalRead(pinSensor))
+  {
+    // significa que esta de lado
+    parado = false;
+     }
+      else {
+      // sino significa que está parado
+      parado = true;
+       }
+
+
+// si es que está parado
+if (parado){
+  Serial.println("estoy hacia arriba");
+  Serial.println(parado);
+  delay(1000);
+}
+// si es que no está parado
+else if (!parado){
+  Serial.println("estoy de lado");
+  Serial.println(parado);
+  delay(1000);
+  }
+}
+
+
+ ```
+
+El siguiente componente fue el motor, el cual necesitaba un circuito pwm para su uso correcto, después conectarlo a la alimentación y con un pin se enviará una señal que realizará su giro.
+
+ ``` cpp
+
+// pin al que será conectado el motor para ser controlado
+int motorPin = 9;
+
+
+void setup() {
+  //establecer que el pin que va a mandar una señal
+  // será el que fue declarado antes
+  pinMode(motorPin, OUTPUT);
+}
+
+
+void loop() {
+  // manda una señal de encendido
+  digitalWrite(motorPin, HIGH);  
+  // cada 2 segundos
+  delay(2000);                  
+
+
+  //apaga la señal
+  digitalWrite(motorPin, LOW);  
+  // cada 2 segundos
+  delay(2000);                  
+}
+
+ ```
+
+Después fue el display, que causó unos problemas iniciales debido a la manera en la que estaba soldada a unos pines, pero luego funcionó de la manera correcta, teniendo en cuenta que para todos los pines, excepto los de alimentación, eran necesarias resistencias de 10k ohm, donde pudimos hacer display del ejemplo de la biblioteca de adafruit.
+
+ ``` cpp
+
+#ifndef ACTUADOR_DISPLAY_H
+#define ACTUADOR_DISPLAY_H
+
+
+// INCLUIR BIBLIOTECAS DE USO PARA SENSOR/ACTUADOR
+
+
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_PCD8544.h>
+#include <Arduino.h>
+
+
+// CREAR LA CLASE DE NUESTRO SENSOR/ACTUADOR
+  class ActuadorDisplay {
+  public:
+  ActuadorDisplay();
+
+
+
+
+
+
+   // especificar todos los voids que serán utilizados en el archivo.cpp
+      void configuracionDisplay();
+     
+      void funcionaDisplay();
+
+
+
+
+   // si es que se necesitas especificar variables, deberían ir aqui
+   // ya sean bool int, ect.
+
+
+   
+  // Declarar objeto "LCD" para el software SPI
+     Adafruit_PCD8544 display = Adafruit_PCD8544(8, 7, 6, 5, 4);
+
+
+  // Definir la variable de "rotatetext" en "1" que hace que la pantalla muestre el texto en un ángulo de 90° a la derecha
+     int rotatetext = 1;
+
+
+   int waoses = 10;
+
+
+ ```
+
+El botón fue lo que seguía, que realmente como era probablemente el componente más simple, fue integrado directamente en el código principal donde se le aplicó alimentación y
+se le asignó un pin específico para que el arduino recibiera la señal.
+
+ ``` cpp
+
+#ifndef SENSOR_BOTON_H
+#define SENSOR_BOTON_H
+
+
+// INCLUIR BIBLIOTECAS DE USO PARA SENSOR/ACTUADOR
+ #include <arduino.h>
+
+
+// CREAR LA CLASE DE NUESTRO SENSOR/ACTUADOR
+  class SensorBoton {
+  public:
+  SensorBoton();
+// especificar todos los voids que seran utilizados en el archivo.cpp
+  void configuracionBoton();
+  void funcionaBoton();
+
+
+// si es que se necesitas especificar variables, deberian ir aqui
+// ya sean bool int, ect.
+
+
+  bool estadoBoton = false;
+
+
+  int botonPin = 11;
+
+
+  int segundos = 0;
+
+
+  int minutos = 0;
+
+ ```
+
+Lo último fue el reproductor mp3 que nos causó la mayor cantidad de problemas, eventualmente funcionando al ser conectado en los pines 2 y 3 del arduino, teniendo los archivos de sonido en un formato específico de 0001.mo3 haber formateado la tarjeta SD montoneras de veces, pero con el siguiente codigo funciono:
+
+ ``` cpp
+ 
+#include <SoftwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+
+SoftwareSerial dfSerial(2, 3); // RX, TX
+DFRobotDFPlayerMini player;
+
+void setup() {
+  Serial.begin(115200);
+  dfSerial.begin(9600);
+
+  Serial.println("Initializing DFPlayer...");
+
+  if (!player.begin(dfSerial)) {
+    Serial.println("Unable to begin. Check:");
+    Serial.println("1. Wiring");
+    Serial.println("2. SD card FAT32");
+    Serial.println("3. Voltage divider on RX");
+    while (true);
+  }
+
+  Serial.println("DFPlayer online!");
+  player.volume(3);
+}
+
+void loop() {
+player.play(1);
+delay(4000);
+
+}
+
+ ```
+Con estos funcionamientos de los componentes individualmente, se podrá explicar cómo se llevaron a cabo la aplicación de estos en nuestro archivo con clases, donde se puede observar una interacción muy cercana a la que será la interacción real del proyecto final, con unos ciertos inconvenientes que no se pudieron solucionar.
+
+A continuación se demostrará el archivo.ino, explicando su flujo:
+
+``` cpp
+
+//WEBO
+// Toma mango
+// Aqui pasaran todas las interacciones entre todos los componentes
+
+#include "ActuadorDisplay.h"
+#include "ActuadorLED.h"
+#include "ActuadorMotor.h"
+#include "SensorBoton.h"
+#include "SensorTilt.h"
+#include "SensorSD.h"
+
+// sensor y actuador correspondientes
+ ActuadorDisplay actuadorDisplay;
+ ActuadorLED actuadorLED;
+ ActuadorMotor actuadorMotor;
+ SensorBoton sensorBoton;
+ SensorTilt sensorTilt;
+ SensorSD sensorSD;
+
+void setup () {
+  sensorTilt.configuracionTilt();
+  actuadorDisplay.configuracionDisplay();
+  sensorBoton.configuracionBoton();
+  sensorSD.configuracionSD();
+  actuadorMotor.configuracionMotor();
+}
+
+void loop() {
+  // tiene que funcionar el sensor tilt, de eso depende el estado de la maquina
+  sensorTilt.funcionaTilt();
+  // que el temporizador y el aumento de la cantidad de segundos funcione
+  sensorBoton.funcionaBoton();
+  // si es que el valor de "caido" es falso, osea que esta parado
+  if(sensorTilt.caido == false){  
+  // asegurarme que el valor de waoses sean los segundos del boton
+  // por si cambia segun el boton ha sido presionado, el display tambien recibira el cambio
+  actuadorDisplay.waoses = sensorBoton.segundos;
+  // mostrar la pantalla de Ava que hace la cuenta regresiva
+  actuadorDisplay.cuentaDisplay(); 
+  // que funcione el motor, ya que no esta establecida la manera de saber 
+  // si han pasado 30 segundos aun, este se activara cada 10 segundos constantemente
+  actuadorMotor.funcionaMotor();
+  // si el temporizador mostrado por Ava llega a un numero menor a 1
+  if (actuadorDisplay.waoses < 1){
+  // sonara la alarma despacio, para no molestar al usuario
+  sensorSD.funcionaSDAlarmaDebil();
+        }
+    }
+
+else {
+  // como aqui esta inclinado, empezara a sonar la alarma fuerte
+  // no se porque para todo al reproducir un archivo de audio
+  sensorSD.funcionaSDAlarmaFuerte();
+  
+}
+
+}
+
+```
 
 ## Prototipo
 
@@ -166,4 +468,80 @@ En la superficie frontal se integrará la **pantalla que muestra a Ava**, funcio
 
 En la parte superior se incorporará una serie de **aberturas pequeñas, dimensionadas para que el sonido del speaker** salga con claridad sin interferir con la estructura interna ni comprometer la rigidez de la carcasa.
 
+## Carcasa en etapa *Caja de Cereal*
+
+![foto carcasa etapa inicial](./imagenes/webito.png)
+
+![foto carcasa etapa inicial 2](./imagenes/explosionada.png)
+
+![foto carcasa etapa inicial 2](./imagenes/tme-sesion14b.png)
+
+![material1](./imagenes/EMC4.jpg)
+![material2](./imagenes/EMC5.jpg)
+![material3](./imagenes/EMC12.jpg)
+![material4](./imagenes/EMC13.jpg)
+![material5](./imagenes/EMC15.jpg)
+
+## Gráfica Ava
+
+![avecita2](./imagenes/pajaro.jpeg)
+
+![avecita2](./imagenes/AVA-BOCETOS.png)
+
+![avecita1](./imagenes/grafica1.jpeg)
+
+![avecita2](./imagenes/grafica2.jpeg)
+
 ## Bibliografía
+
+https://www.flyrobo.in/blog/countdown-timer-arduino?srsltid=AfmBOoqsjQ5Jys_Vykrd6liBXKexQhSGXNF0SoEkk03kzSeWN1_7u8m5
+
+https://arduino.stackexchange.com/questions/66626/arduino-timer-with-increase-time-button
+
+https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial
+
+https://www.instructables.com/Getting-Started-With-NOKIA-5110-LCD-Screen-Using-A
+
+https://github.com/platisd/nokia-5110-lcd-library/tree/master
+
+https://github.com/gavinlyonsrepo/NOKIA5110_TEXT
+
+https://github.com/RalphBacon/Nokia-5110-TFT
+
+https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/tree/master
+
+https://github.com/baghayi/Nokia_5110/tree/master
+
+https://electronoobs.com/eng_arduino_tut53.php
+
+https://randomnerdtutorials.com/complete-guide-for-nokia-5110-lcd-with-arduino
+
+https://www.luisllamas.es/en/connect-arduino-nokia-5110-lcd-display/#adafruit-nokia-5110-lcd-library
+
+https://learn.adafruit.com/nokia-5110-3310-monochrome-lcd/testing
+
+https://www.instructables.com/Nokia-5110-graphics-tutorial
+
+https://learn.sparkfun.com/tutorials/graphic-lcd-hookup-guide
+
+https://www.circuits-diy.com/interface-nokia-5110-graphic-lcd-display-with-arduino
+
+https://tutorial45.com/arduino-count-up-timer-using-the-nokia
+
+https://forum.arduino.cc/t/arduino-nokia-5110-text-display-once/261824
+
+https://www.avrfreaks.net/s/topic/a5C3l000000Uc4iEAC/t160152
+
+https://forum.arduino.cc/t/nokia-5110-lcd-display-not-displaying-anything/1065701
+
+https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino
+
+https://forum.arduino.cc/t/simple-countdown-timer/662809/4
+
+https://docs.arduino.cc/built-in-examples/digital/Button/
+
+https://www.youtube.com/watch?v=XrJ_zLWFGFw
+
+https://docs.arduino.cc/tutorials/generic/multiple-blinks/
+
+https://github.com/arkhipenko/TaskScheduler/blob/master/examples/Scheduler_example01/Scheduler_example01.ino

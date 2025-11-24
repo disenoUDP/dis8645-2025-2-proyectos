@@ -17,3 +17,7 @@
 ## Conexión física
 
 - Ambas placas deben compartir **GND común** para que la comunicación funcione correctamente.
+
+![clase](./imagenes/a1.jpg)
+![clase](./imagenes/a2.jpg)
+![clase](./imagenes/a3.jpg)
