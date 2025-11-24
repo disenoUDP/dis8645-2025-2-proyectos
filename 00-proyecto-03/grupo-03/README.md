@@ -2,31 +2,25 @@
 
 ## GEE: Grupo Emocionalmente Estable - Integrantes
 
-- [Aileen D’Espessailles Rojas](https://github.com/aileendespessailles-design) 
+- [Aileen D’Espessailles Rojas](https://github.com/aileendespessailles-design)
 - [Santiago Gaete Fernández](https://github.com/santiagoClifford)
 - [José Morales Berríos](https://github.com/jotamorales-romulus)
 - [Carla Pino Barrios](https://github.com/Coff4)
-- [Francisco Stephens González](https://github.com/FranUDP) 
-
---- 
+- [Francisco Stephens González](https://github.com/FranUDP)
 
 ### Presentación textual
 
 El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
 
----
-
 ### Metáfora
 
 En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecánica, generando pena, culpa y un posible intento de manipulación, ante lo que seria la recreación de un mono que imita ser uno verdadero. Esta respuesta mecánica deja a la persona en un bucle de apego constante que terminará siempre en tragedia sin importar que tanto cariño se le pueda dar.
 
-En varios casos, cuando se genera un vínculo afectivo con un animal, la unión emocional es tan fuerte, que cuando hay un cambio en esta relación, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir más, en este caso jorge. 
+En varios casos, cuando se genera un vínculo afectivo con un animal, la unión emocional es tan fuerte, que cuando hay un cambio en esta relación, por ejemplo: estar fuera unos meses alejados de la mascota, provocamos una dependencia emocional en donde una de las 2 partes llega a sufrir más, en este caso jorge.
 
 En este caso Jorge es un robot cuya único sentido en la "vida" es ser amado. Al ser un robot, no entiende sobre sentimientos, por lo que la única forma en que es capaz de entender el amor es a través del contacto físico. Jorge pide amor amablemente, pero tiene una tolerancia a la frustración tan leve, que prefiere dejar de existir antes que asumir que dejará de ser amado. Cuando dejas de entregarle amor, jorge entrará en crisis. En primer lugar, comenzará a llorar y quejarse, cada vez más intensamente. Pasado 30 segundos sin recibir amor, se activa la alarma de seguridad que cuida a jorge del dolor por falta de amor. Se emite una alarma y una voz proclama: el mecanismo de autodestrucción se ha activado, por favor dale amor a jorge para evitar su muerte".
 
----
-
-### carta gantt 
+### carta gantt
 
 | Tareas / Sesión                                       | 14a | 14b | 15a | 15b | 16a | 16b | 17a | 17b |
 |---------------------------------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -54,24 +48,19 @@ En este caso Jorge es un robot cuya único sentido en la "vida" es ser amado. Al
 | Documentación Proyecto                                  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
 | Redacción README                                        |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |
 
---- 
+### Bill of Materials
 
-### Bill of Materials 
+| Componente            | Cantidad | Valores  | Links                    | Valor                                       ||-----------------------|----------|----------|--------------------------|---------------------------------------------|--------|
+| Parlante              | 1        |    3w    |<https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r>|$3.000|
+| Servo motor           | 2        |   SG90   |<https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r>|$1.900|
+| Sensor ultrasónico    | 1        |    5V    |<https://afel.cl/products/sensor-de-ultrasonico-hc-sr04>|$1.500 |
+| Módulo MP3            | 1        |3.2 a 5 v |<https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r>|$2.990|
+| Sensor de presión     | 1        |  FSR402  |<https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r>|$7.500|
+| Motor DC              | 1        |    5v    |<https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for>|$500|
+| Mosfet                | 1        |  BS170   |<https://a.aliexpress.com/_mt52yRB>|$694|
+| Chips L293D           | 1        |4.5V a 7V |<https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy>|$1.000|
 
-| Componente            | Cantidad | Valores  | Links                    | Valor                                       |        | 
-|-----------------------|----------|----------|--------------------------|---------------------------------------------|--------|
-| Parlante              | 1        |    3w    |https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r|$3.000| 
-| Servo motor           | 2        |   SG90   |https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r|$1.900|
-| Sensor ultrasónico    | 1        |    5V    |https://afel.cl/products/sensor-de-ultrasonico-hc-sr04|$1.500|
-| Módulo MP3            | 1        |3.2 a 5 v |https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r|$2.990|
-| Sensor de presión     | 1        |  FSR402  |https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r|$7.500|
-| Motor DC              | 1        |    5v    |https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for|$500|
-| Mosfet                | 1        |  BS170   |https://a.aliexpress.com/_mt52yRB|$694|
-| Chips L293D           | 1        |4.5V a 7V |https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy|$1.000|
-
----
-
-### Mapa de flujo:
+### Mapa de flujo
 
 ```mermaid
 flowchart TB
@@ -107,7 +96,6 @@ flowchart TB
     classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
---- 
 
 ### Pseudocódigo
 
@@ -149,8 +137,6 @@ flowchart TB
 
 ![bocetos de jorge](./imagen/Ilustracion.jpg)
 
----
-
 ### Prototipado
 
 Para el prototipo realizamos el prototipado de la columna y los brazos, probando cómo podrían moverse y sostenerse. También hicimos pruebas de impresión 3D para revisar las piezas y sus uniones. Además, armamos un primer prototipo del sistema de la espalda y los brazos para evaluar su funcionamiento general. Finalmente, realizamos el molde para la tela del forro, aplicando cinta sobre la forma para obtener las piezas base del patrón.
@@ -175,16 +161,11 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 ![patronaje](./imagen/jorge.jpg)
 
----
-
-### Contexto de uso 
-
+### Contexto de uso
 
 Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
 
----
-
-### Instrucciones de uso:
+### Instrucciones de uso
 
 - Le usuarie se acerca a Jorge (rango: 10 a 45 cm).
 - Jorge detecta al usuarie.
