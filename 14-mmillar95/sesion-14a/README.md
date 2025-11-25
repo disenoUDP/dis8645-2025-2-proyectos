@@ -117,4 +117,48 @@ void setColor(int r, int g, int b) {
 
 Video de explicación: [ARDUINO - Sensor de Fuerza Resistivo FSR 402: Conexión Paso a Paso](https://www.youtube.com/watch?v=U-N7nR5EEHs&t=5s)
 
+### Sensor Capacitivo Touch TTP223B
+
+La Janis nos recomendó investigar este sensor, ya que ella lo tenía en la sala, al igual que el Arduino Wifi. Probamos el sensor, pero descubrimos que es demasiado sensible y solo tiene dos estados: detectado y no detectado; nosotras queríamos un sensor con más estados para poder diferenciar entre rangos, como un potenciómetro. Para esto vamos a investigar y comprar el sensor de fuerza que va desde los valores 0 hasta 1023.
+
+#### Investigación del sensor
+
+Este módulo utiliza el circuito integrado TTP223B que es un sensor touch capacitivo. En su estado normal la salida del módulo se encuentra en cero lógico y baja consumo de corriente, cuando un dedo toca la posición correspondiente la salido del módulo se activa en uno lógico, sino se toca el modulo en 13 segundos vuelve a modo de bajo consumo.
+
+#### Características:
+
+- Voltaje de entrada: 2 ~ 5.5 VCD
+- Salida alta: 0.8 VCD
+- Salida baja: 0.3 VCD
+- Tiempo de respuesta: 60 ms
+- Tiempo de respuesta modo ahorro: 220 ms
+- Dimensiones: 24 x 24 x 7.2 mm
+- Peso: 2 g
+
+
+```cpp
+
+const int pinSensor = 2; // Pin digital al que está conectado la salida del sensor
+
+void setup() {
+  // Configura el pin del sensor como entrada
+  pinMode(pinSensor, INPUT);
+  Serial.begin(9600); // Inicia la comunicación serial
+}
+
+void loop() {
+  // Lee el estado del sensor (HIGH o LOW)
+  int estadoSensor = digitalRead(pinSensor);
+
+  // Si el sensor está siendo tocado (estado HIGH)
+  if (estadoSensor == HIGH) {
+    Serial.println("¡Sensor tocado!");
+  }
+}
+
+```
+
+![sensor touch](./imagenes/touch.png)
+
+
 

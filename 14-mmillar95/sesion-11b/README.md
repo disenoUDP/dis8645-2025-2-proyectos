@@ -81,7 +81,7 @@ Fuente: [Ministerio de las Culturas, las Artes y el Patrimonio](https://www.cult
 
 "cada persona debe subir taxonomía detallada de sensores, actuadores, software y hardware utilizado en 1 obra exhibida en la Bienal de Artes Mediales 2025, citando correctamente a las fuentes."
 
-![bienalArtes](./imagenes/bienalArtes.png)
+![bienalArtes](./imagenes/bienalArtes02.png)
 
 ` Qué es la Bienal `
 

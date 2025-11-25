@@ -70,7 +70,9 @@ void loop() {
 }
 ```
 
+
 ![Sensor de fuerza](./imagenes/sensorFuerza.png)
+
 
 ### Sensor de capacitivo
 
