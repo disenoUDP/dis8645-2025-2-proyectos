@@ -476,6 +476,8 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 
 ![foto carcasa etapa inicial 2](./imagenes/tme-sesion14b.png)
 
+![desbalance](./imagenes/desbalance.gif)
+
 ![material1](./imagenes/EMC4.jpg)
 ![material2](./imagenes/EMC5.jpg)
 ![material3](./imagenes/EMC12.jpg)
@@ -485,6 +487,8 @@ En la parte superior se incorporará una serie de **aberturas pequeñas, dimensi
 ## Gráfica Ava
 
 ![avecita2](./imagenes/pajaro.jpeg)
+
+![avegirando](./imagenes/avedelparaiso.gif)
 
 ![avecita2](./imagenes/AVA-BOCETOS.png)
 
