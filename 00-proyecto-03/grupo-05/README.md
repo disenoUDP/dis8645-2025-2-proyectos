@@ -47,7 +47,7 @@ La emoción resultante (variante según la persona) no será devastadora, puesto
 
 Para poder trabajar en el proyecto de forma más estratégica y ordenada es que se denomina esta sección en la que existen una serie de pasos previos para planificar, redefinir y hacer converger las ideas de nuestro equipo.
 
-### ⋅⋯⋯⋅ Carta Gant ⋅⋯⋯⋅
+### ⋅⋯⋯⋅ Carta Gantt ⋅⋯⋯⋅
 
 Documento que expone el cronograma del proyecto y las etapas de trabajo a la que se asigna cada semana.
 
