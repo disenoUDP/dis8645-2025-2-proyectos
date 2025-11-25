@@ -186,6 +186,7 @@ void loop() {
         unsigned long tiempoAutodestruccion = millis() - tiempoInicioEstado;
        
         if (hayBrazo) {
+        
           Serial.println("ke ricooo grax");
           Serial.println("-el mono se ha calmado-");
 
