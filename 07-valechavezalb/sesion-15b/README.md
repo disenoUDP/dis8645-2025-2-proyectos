@@ -10,9 +10,9 @@ Viernes 21 de noviembre de 2025
 
 ### 📌 Figuras literarias 
 
-| Figura literaria | significados |
+| Figura literaria | Significados |
 |----------|---------------------------------------|
-| Metáfora| omparación implícita entre dos cosas |
+| Metáfora| Comparación implícita entre dos cosas |
 | Comparación| Relación explícita usando “como”, “parece”, “igual que” |
 | Personificación | Atribuir cualidades humanas a objetos o animales |
 | Hipérbole | Exageración intencional para enfatizar una idea |
