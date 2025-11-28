@@ -34,3 +34,17 @@ Una regla de oro del diseño reza que el buen diseño es invisible. Y no le falt
 Las máquinas producidas en este taller no responden al "buen" diseño, sino que buscan deliberadamente tropezarse con nosotros. No interrumpiendo, sino que llevándonos de paseo, reemplazando los mensajes directos y secos por bailes metafóricos, gracias a la referencia a figuras literarias. Valiéndose de oxímoros, paradojas, alegorías, ironías y recursos narrativos, los proyectos se proponen develar los procesos de diseño evidenciando las profundas capas que componen la maquinaria digital y computacional que nos rodea. Porque las reglas de oro son útiles, pero no absolutas. A veces, para que un proceso de aprendizaje sea fértil, no solo hay que pensar fuera de la caja. Hay que volver a observarla, arrojarla, aplastarla, apilarla, desarmarla. Hacer un origami. Convertirla en una nave espacial.
 
 Parafraseando a Mark Fisher, a algunos creadores les gustaría que el Diseño fuera como una hamburguesa, una herramienta utilitaria de satisfacción inmediata y carente de resistencias. En este curso, fabricamos máquinas indigestibles, porque entendemos al diseño no como un manual, sino como una (lenta) forma de conocimiento.
+
+## Figuras literarias por grupo
+
+Grupo 01: Aporía 
+
+Grupo 02: Personificación, prosopopeya
+
+Grupo 03: Oxímoron, paradoja
+
+Grupo 04: Mito de sísifo, castigo de Tántalo
+
+Grupo 05: Anticlímax
+
+Grupo 06: Paradoja
