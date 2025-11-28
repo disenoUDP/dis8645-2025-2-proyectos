@@ -22,3 +22,15 @@ calendario
 | [16b](./00-docentes/sesion-16b/) | 11-28 vier  | / exámenes, no hay ev. taller                        |
 | [17a](./00-docentes/sesion-17a/) | 12-02 mar   | / semana talleres                                    |
 | [17b](./00-docentes/sesion-17b/) | 12-05 vier  | / semana talleres                                    |
+
+## Texto Diseño Abierto
+
+Máquinas literarias
+
+Cuando las máquinas no son hamburguesas
+
+Una regla de oro del diseño reza que el buen diseño es invisible. Y no le falta razón: en la emergencia constante del día a día, necesitamos que los objetos no se nos pongan en el camino. Que no interrumpan nuestros procesos productivos. Pero, además del gesto de diseñar ¿qué más estamos invisibilizando? ¿qué otros aspectos estamos velando al producir aparatajes que se ocultan?
+
+Las máquinas producidas en este taller no responden al "buen" diseño, sino que buscan deliberadamente tropezarse con nosotros. No interrumpiendo, sino que llevándonos de paseo, reemplazando los mensajes directos y secos por bailes metafóricos, gracias a la referencia a figuras literarias. Valiéndose de oxímoros, paradojas, alegorías, ironías y recursos narrativos, los proyectos se proponen develar los procesos de diseño evidenciando las profundas capas que componen la maquinaria digital y computacional que nos rodea. Porque las reglas de oro son útiles, pero no absolutas. A veces, para que un proceso de aprendizaje sea fértil, no solo hay que pensar fuera de la caja. Hay que volver a observarla, arrojarla, aplastarla, apilarla, desarmarla. Hacer un origami. Convertirla en una nave espacial.
+
+Parafraseando a Mark Fisher, a algunos creadores les gustaría que el Diseño fuera como una hamburguesa, una herramienta utilitaria de satisfacción inmediata y carente de resistencias. En este curso, fabricamos máquinas indigestibles, porque entendemos al diseño no como un manual, sino como una (lenta) forma de conocimiento.
