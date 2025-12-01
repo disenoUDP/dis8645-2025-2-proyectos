@@ -61,3 +61,27 @@ void loop() {
 }
 ```
 
+### El problema del DFPlayer
+En el proceso de ordenar el código, hacer clases y ver cómo funciona todo en conjunto, salió un elemento incordial: el DFPlayer. Los otros componentes si bien no colaboran (algunos si) permiten el funcionamiento de los demás. Pero el reproductor por otro lado no funciona y bloquea a los demás. Lo peor es que las condiciones para que funcione son totalmente arbitrarias. Los mínimos cambios hacen que el resto de elementos se desactiven, los valores no se leen como deben y lo peor es que de ninguna manera se reproduce el audio. La mejor opción es omitir el reproductor por el momento para poder seguir avanzando y evitar un aneurisma. 
+
+### Otros problemas
+En este momento estamos con otro problema que afecta la manivela y las leds.
+- Leds no se prenden como deberían (dependiendo del rango).
+- La manivela tira error si no está en una posición determinada.
+
+### Solucionado (algo)
+**El orden de los valores que se equiparan en el archivo.ino es crucial.** El que manda va al final.
+```cpp
+leds.nivelLuz = audio.fase = encoder.rango;
+```
+
+### FUNCIONOOOOO
+En la última versión subida máquinaAsombrosa_encoderLedsMp3.ino funciona todo (lo listado) a la par como debería. Hay unos puntos que afinar pero es el avance que necesitábamos para empezar con lo último. Todo gracias al ***todopoderoso***, ***magnánimo*** y ***bondadoso*** Sebastián Saez. El cambio que hizo la diferencia fue el siguiente:
+
+```cpp
+  if (encoder.vueltaActual != encoder.vueltaAnterior){
+    audio.reproducirAudioPorfase();
+    encoder.vueltaAnterior++;
+  }
+```
+Esta simple (n't) función deriva de la línea de código que añade vueltas al contador. La lógica es que cuando la vuelta actual es distinta a la vuelta anterior, se activa la pista adecuada según el rango presente (constantemente detectado). Para que ocurra una vez esta deferencia de valores se corrige sumando a la vuelta anterior.
