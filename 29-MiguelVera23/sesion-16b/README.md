@@ -85,3 +85,10 @@ En la última versión subida máquinaAsombrosa_encoderLedsMp3.ino funciona todo
   }
 ```
 Esta simple (n't) función deriva de la línea de código que añade vueltas al contador. La lógica es que cuando la vuelta actual es distinta a la vuelta anterior, se activa la pista adecuada según el rango presente (constantemente detectado). Para que ocurra una vez esta deferencia de valores se corrige sumando a la vuelta anterior.
+
+## Pendientes (LUNES)
+- Hay que revisar los audios que utilizamos y ver si son adecuados. El último debe ser especial y el resto debe evocar que la máquina está siendo afectada por ti.
+- Necesitamos programar un final para toda la interacción que resetee el contador tras soltar el humo.
+- Hay que añadir el código del vibrador (refinado por el Braulio) y el código (pin) del humidificador.
+- Hay que armar la estructura con las led extra y la carcasa (último).
+- Esto podría significar una reorganización de componentes o extensión de cables.
