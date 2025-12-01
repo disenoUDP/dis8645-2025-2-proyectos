@@ -18,4 +18,10 @@ Asi que mi gran manera de solucionarlo fue cambiar exclusivamente el reproductor
 
 De esta manera funciono super bien, aun se demoraba un poco en reaccionar pero era mas que todo por los delays, pero el hecho que no se bloqueara era magnifico.
 
+## Dia 1 de Diciembre en el LID
 
+Hoy fui al Lid par trabajar productivamente, donde lo primero que hice fue ayudar al grupo 5 ya que me habian pedido ayuda con escrbir su codigo a clases donde Miguel Vera me mostro lo que llevaban avazado hasta el momento, y para no repetirlo que ha documentado que fue muchisimas locuras y batallas, sobretodo con el infame dfplayer mini, se puede encontrar todo en el siguiente link de su repositorio: https://github.com/disenoUdp/dis8645-2025-2-proyectos/tree/main/29-MiguelVera23/sesion-16b 
+
+Despues nos pusimos a hablar con Morgan y la Bernardita del proyecto, donde Morgan se puso a hacer locuras de como desasernos de los delays lo cual logro, eso es bueo, aunque es una tremenda lata tener que escribir tantos distintos valores para los delays, pero bueno.
+
+Yo despues de terminar mi monento de ayuda con el grupo 5 me puse a empezar a crear los nuevos voids que van a ser ocupados para el display primero partiendo por ese que deberia estar para comenzar la interaccion donde AVA estaria dormida y para comerzar todo se requiera presionar el boton. 
