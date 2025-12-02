@@ -7,3 +7,5 @@ La pantalla de inicio debería tener a la AVA durmiendo, texto encima de la AVA,
 Esto funciona por ahora, se bloquea al llegar a 0 y dejarlo sin usar por unos segundos, pero el botón, los cambios de segundos están todo bien que es bacan.
 
 Todos estos últimos cambios fueron realizados con el motor //comentado, ya que sus delays eran bien fuertes, pero ahora los intentare cambiar.
+
+Me hice caleta de distintos problemas, porque por incluso intentando el pasar el motor a 2 distintos void, uno para que se apagara y uno para que se prendiera, solo uno se activaba directamente, no dejaba pasar ni un milisegundo y el siguiente ya estaría activado, osea que se quedaba apagado constantemente en este caso puro porque estaba segundo en orden.
