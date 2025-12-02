@@ -1,1 +1,5 @@
 # sesion-16b
+
+28-11-2025
+
+SEMANA DE EXÁMENES
