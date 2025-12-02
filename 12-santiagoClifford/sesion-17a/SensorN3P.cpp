@@ -10,7 +10,7 @@ void SensorN3P::seteoN3P() {
 
 void SensorN3P::alarma1() {
   player.volume(20);
-  player.play(int random(0,2));
+  player.play(int audiosFase1[random(0,3)]);
   delay(500);
   Serial.println("rascame la watita xfis :p");
 }
