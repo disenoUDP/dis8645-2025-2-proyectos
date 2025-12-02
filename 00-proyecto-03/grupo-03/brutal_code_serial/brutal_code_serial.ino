@@ -8,6 +8,9 @@ proyecto "Jorgito tiene Apego Ansioso"*/
 #include <SPI.h>
 #include <MFRC522.h>
 #include <Servo.h>
+#include <SoftwareSerial.h>
+SoftwareSerial softSerial(10,11);
+#define FPSerial softSerial;
 
 //estados posibles
 enum Estado { CALMAO,
@@ -42,7 +45,7 @@ int input2 = 6;
 
 //configuracion de comunicación serial del modulo mp3
 #if (defined(ARDUINO_AVR_UNO) || defined(ESP8266))
-#include <SoftwareSerial.h>
+// #include <SoftwareSerial.h>
 SoftwareSerial softSerial(10, 11);
 #define FPSerial softSerial
 #else
@@ -52,13 +55,21 @@ SoftwareSerial softSerial(10, 11);
 //instancia mp3
 DFRobotDFPlayerMini myDFPlayer;
 
+const int nroFolder=2;
+const int nroFile=1;
+
 //Servo motor que actua con la columna
 Servo motoLumbar;
 //Servo que acciona la rotacion
 Servo motoRotor;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
+  FPSerial.begin(9600);
+
+  myDFPlayer.setTimeOut(500);
+  Serial.println("folder2-file1");
+
   hayBrazo = false;
 
   //inicialización audio
@@ -104,6 +115,9 @@ void loop() {
 
         //emular audio
         Serial.println("rascame la watita xfis :p");
+
+        myDFPlayer.playFolder(02, 001);
+
 
         estadoActual = PIDE_AMOR;
         tiempoInicioEstado = millis();
@@ -290,3 +304,7 @@ void sonic() {
 
   delay(50);
 }
+
+// void skiper(){
+// myDFPlayer.playFolder(02, 001);
+// }
