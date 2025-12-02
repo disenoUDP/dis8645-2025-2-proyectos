@@ -2,3 +2,12 @@
 
 ## Versión funcional de código
 Este código (máquinaAsombrosa_sinFinalNiHumo.ino) hace todo como debe, las cosas funcionan en paralelo y tiene una manera rudimentaria de reiniciarse al llegar al final. Al llegar al rango 6 ocurre todo lo que debe y hace que el valor de vuelta sea 0. Así se reinicia el contador y los rangos, efectivamente desactivando todo (como corresponde en el rango 0). El problema es que en el "final de luces" del rango 6 tenemos delay que entorpece este reseteo y hace que sea manual. Las luces no se detienen como deberían ya que no tienen un fuinal delimitado. En este punto debe ocurrir el final de luces, soltar el humo y volver a rango 0. Para esto se nos ocurre una solución que usamos en otro lado: millis. Para controlar el motor los usamos y en este caso reducirían la activación de estos actuadores a un tiempo determinado para que se apaguen y reinicien. Con Braulio (y posiblemente Sebastián) dedicaremos este día para dejar lo más resuelto este aspecto y el código en general.
+
+### Pendientes actuales (martes)
+- Resolver código del humidificador.
+- Que suene el último audio y que se desactive la manivela mientras se reproduce.
+- Resolver leds que quedan encendidos al resetear cuenta. Podría ayudar el correr algunas interacciones entre rango dejando fiesta en el rango 5 y leds apagadas en el rango 6.
+- Producir carcasa y ordenar componentes de manera real.
+- Solucionar velocidad de la manivela. Por ahora el usuario tiene la opción de girar la manivela muy rápido, quitándole tiempo al audio para reproducirse.
+- Añadir vueltas (12 a 30). LISTO
+  
