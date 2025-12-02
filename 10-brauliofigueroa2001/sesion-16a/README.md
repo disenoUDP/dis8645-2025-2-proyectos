@@ -16,4 +16,6 @@
 - tenemos la hipótesis de que el arduino y encoder al estar tanto tiempo funcionando, esto pudiera afectar el funcionamiento del encoder y la lectura de rangos
 - otros factores a considerar: quizá comprar otro encoder por si se dañó el actual o algo similar
 - traspasar el circuito a otra proto para tenerlo todo unificado
-- antes de traspasar el circuito a otra proto, probaría mañana a ver si influye el paso del tiempo
+- antes de traspasar el circuito a otra proto, probaría mañana a ver si influye el paso del tiempo-
+- probé a las 19:45 aprox si funcionaba otra vez el arduino y el encoder, ahora funciona y suma hasta el rango 5, al llegar al 5 deja de sumar y no llega al 6, al menos ahora suma, hace un rato no sumaba ni en el rango 2
+- tengo la teoría de que el delay bugea el sonido y la lectura de vueltas del encoder
