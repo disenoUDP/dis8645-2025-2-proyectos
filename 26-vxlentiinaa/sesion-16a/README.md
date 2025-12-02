@@ -1,1 +1,5 @@
 # sesion-16a
+
+25-11-2025
+
+SEMANA DE EXÁMENES
