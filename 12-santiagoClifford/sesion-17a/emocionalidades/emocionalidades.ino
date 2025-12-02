@@ -1,24 +1,17 @@
-#include "SensorN3P.h"
-
-const int f1a0 = 0;
-const int f1a1 = 1;
-const int f1a2 = 2;
-
-const int f2a0 = 0;
-const int f2a1 = 1;
-const int f2a2 = 2;
+#include "ActuadorN3P.h"
 
 
-int audiosFase1[] = {f1a1, f1a2, f1a3};
-int audiosFase2[] = {f2a0, f2a1, f1a3};
+// declarar instancia de clase ActuadorN3P
+ActuadorN3P n3p;
 
+void setup() {
+  n3p.configurar();
+}
 
- SensorN3P sensorN3p;
-
- void setup(){
-  sensorN3p.seteoN3P();
- }
-
- void loop(){
-    sensorN3p.alarma1();
- }
+void loop() {
+  // n3p.emitirAlarma(0);
+  // n3p.emitirAlarma(1);
+  // n3p.emitirAlarma(2);
+  // n3p.emitirAlarma(3);
+  // n3p.emitirAlarma(4);
+}
