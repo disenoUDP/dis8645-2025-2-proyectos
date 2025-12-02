@@ -25,3 +25,50 @@ Hoy fui al Lid par trabajar productivamente, donde lo primero que hice fue ayuda
 Despues nos pusimos a hablar con Morgan y la Bernardita del proyecto, donde Morgan se puso a hacer locuras de como desasernos de los delays lo cual logro, eso es bueo, aunque es una tremenda lata tener que escribir tantos distintos valores para los delays, pero bueno.
 
 Yo despues de terminar mi monento de ayuda con el grupo 5 me puse a empezar a crear los nuevos voids que van a ser ocupados para el display primero partiendo por ese que deberia estar para comenzar la interaccion donde AVA estaria dormida y para comerzar todo se requiera presionar el boton. 
+
+Solo acabe agregando a la AVA dormida, debido a lo que del botón solo tendría sentido que lo agregara si es que funciona para empezar, me parece que es debido a los múltiples delays que no permiten que se registre el presionado del botón.
+
+Como Morgan se acabó volviendo loco integrar los millis yo tomaré el relevo e intentaré aplicarlos.
+
+Me guíe a partir del siguiente link:  
+
+https://forum.arduino.cc/t/using-millis-for-timing-a-beginners-guide/483573
+
+Intentando aplicarlos al temporizador presente en el archivo del botón creando un intervalo de 1000 milisegundos, para poder contar los segundos que pasaban donde llegue a lo siguiente :
+
+``` cpp
+// si es que hay más de 0 segundos en el temporizador 
+  // el tiempo actual del temporizador menos el nuevo tiempo del temporizador
+  // equivale a un número menor al intervalo segundo, osea a menos de 1000
+  if (segundos > 0 && tiempoActualTemporizador - tiempoNuevoTemporizador >= intervaloSegundo){
+  // los segundos disminuyen en 1
+  segundos -= 1;
+  // enviar al monitor Serial la cantidad de segundos actuales
+  Serial.println(segundos);
+  // enviar al monitor Serial si es que el botón está siendo presionado
+  Serial.println(estadoBoton);
+  // se actualiza el temporizador para poder realizar la comparación con el intervalo de segundos
+  tiempoNuevoTemporizador = tiempoActualTemporizador;
+  }
+```
+Esto funcionó joya, destrabar el problema que presentaba el botón en si, que le costaba mucho el aumentar los segundos, pero como no existen delays, el feedback que se recibe al interactuar con el botón se siente casi instantáneo.
+
+Otro problema que pude identificar en las pruebas que hizo Morgan con el intentar integrar los millis en el archivo del display, que dijo que no se mostraba bien los números correspondientes al timer, le faltaba solo una linea para poder limpiar la pantalla, como se puede observar en este extracto:
+
+``` cpp
+
+// IMAGEN
+	// colocar la posición: x, y, establecer cuál es el bitmap que será utilizado, ancho del bitmap, alto del bitmap, color del bitmap
+	// en este caso el estado neutral de Ava
+	display.clearDisplay(); ←- ESTE DE AQUÍ
+	display.drawBitmap(0, 0,bitmap_AVA, 48, 48, BLACK);
+	// establecer las coordenadas de el siguiente texto
+	display.setCursor(56, 16);
+	// el texto corresponda al int "waoses"
+	display.print(waoses);
+	// hacer que estos datos previos se carguen al display
+	display.display();
+
+```
+
+Con estos cambios, oficialmente pasamos a la version del WEBO_0_6_5
