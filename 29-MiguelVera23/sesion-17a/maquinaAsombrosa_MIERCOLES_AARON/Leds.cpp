@@ -1,9 +1,8 @@
 #include "Leds.h"
 
-//declara la existencia de la clase para usarla
 Leds::Leds() {}
-//necesario para que sepa de dónde saca las funciones
-void Leds::prepararLeds() {
+
+void Leds::preparar() {
 	Serial.begin(9600);
 	pinMode(led1, OUTPUT);
 	pinMode(led2, OUTPUT);
@@ -12,8 +11,7 @@ void Leds::prepararLeds() {
 	pinMode(led5, OUTPUT);
 }
 
-
-void Leds::usarLeds() {
+void Leds::usar() {
 	if (nivelLuz == 1) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, LOW);

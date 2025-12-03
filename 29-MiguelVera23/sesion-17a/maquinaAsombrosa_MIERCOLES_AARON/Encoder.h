@@ -1,12 +1,13 @@
 #ifndef ENCODER_H
 #define ENCODER_H
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 class Encoder {
 public:
+  // constructor
   Encoder();
-  //establece las funciones que van a realizar los componentes
+
   void preparar();
   void leer();
 

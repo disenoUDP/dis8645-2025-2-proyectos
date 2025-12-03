@@ -6,7 +6,7 @@ DFRobotDFPlayerMini myDFPlayer;
 
 Audio::Audio() {}
 
-void Audio::prepararAudio() {
+void Audio::preparar() {
   Serial.begin(115200);
   mySoftwareSerial.begin(9600);  // DFPlayer default baud
 
@@ -40,7 +40,7 @@ void Audio::reproducirAudioPorfase() {
     Serial.println("fase 5");
   } else if (fase == 6) {
     myDFPlayer.play(6);
-   // delay(4000);
+    // delay(4000);
     Serial.println("fase 6");
     Serial.println("REINICIO");
   } else {

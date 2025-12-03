@@ -1,22 +1,29 @@
-//base de funcionamiento para clases
 #ifndef VIBRADOR_H
 #define VIBRADOR_H
+
 #include "Arduino.h"
-//declara una vez la clase Vibrador
+
 class Vibrador {
 public:
-  //declara la existencia de la clase Vibrador
+  // constructor
   Vibrador();
-  //declara los voids que hacen funcionar los componentes en el principal
-  void prepararVibrador();
-  void usarVibrador();
+
+  void preparar();
+  void usar();
   void velocidadVibrador(int pausaHIGH, int pausaLOW);
 
-  // definir constantes vibrador
+  // variable para conexion
   const int patitaVibrador = 12;
-  unsigned long momentoPasado = 0;  // unsigned long significa que parte desde el 0 hacia el positivo, no usamos negativos
+
+  // unsigned hace que el numero vaya desde 0
+  // long significa que tiene mas resolucion que un int
+  // variable para almacenar tiempo en ms
+  unsigned long momentoPasado = 0;
+
+  // variable para definir estado
   bool estado = HIGH;
-  int intervalo = 0;  // aquí cambiamos el valor el encoder
+
+  // TODO: cambiamos el valor el encoder
+  int intervalo = 0;
 };
-//termina la definición de Vibrador
 #endif

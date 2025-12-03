@@ -2,12 +2,12 @@
 
 Vibrador::Vibrador() {}
 
-void Vibrador::prepararVibrador() {
+void Vibrador::preparar() {
   // hacer que esa patita sea salida
   pinMode(patitaVibrador, OUTPUT);
 }
 
-void Vibrador::usarVibrador() {
+void Vibrador::usar() {
   if (intervalo == 2) {  // acá se define qué velocidad responde (1, 2 o 3) según el rango en el que esté el intervalo
     velocidadVibrador(2000, 2000);
   } else if (intervalo == 3) {  // si en otro caso intervalo es 1, reproduce velocidad 2

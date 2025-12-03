@@ -17,36 +17,35 @@ Vibrador vibrador;
 Humo humo;
 
 void setup() {
-  audio.prepararAudio();
+  audio.preparar();
   encoder.preparar();
 
-  leds.prepararLeds();
-  vibrador.prepararVibrador();
-  humo.prepararHumo();
+  leds.preparar();
+  vibrador.preparar();
+  humo.preparar();
 }
 
 void loop() {
   encoder.leer();
-  //hace que nivelLuz valga lo mismo que rango
-  //sirve para activar las leds
+  // hace que nivelLuz valga lo mismo que rango
+  // sirve para activar las leds
 
-  //el valor que manda va al final
-  //en este caso encoder.rango es el que cambia al resto
+  // el valor que manda va al final
+  // en este caso encoder.rango es el que cambia al resto
   leds.nivelLuz = audio.fase = vibrador.intervalo = humo.punto = encoder.rango;
 
-  //Esta función activa el audio solo cuando se añade una vuelta
-  //Se activa solo cuando vueltaActual y vueltaAnterior son diferentes
-  //la gracia es que inmediatamente cuando son diferentes suma a vueltaAnterior para que queden iguales
-  //de esta manera solo suena una vez y no se interrumpe
+  // Esta función activa el audio solo cuando se añade una vuelta
+  // Se activa solo cuando vueltaActual y vueltaAnterior son diferentes
+  // la gracia es que inmediatamente cuando son diferentes suma a vueltaAnterior para que queden iguales
+  // de esta manera solo suena una vez y no se interrumpe
   if (encoder.vueltaActual != encoder.vueltaAnterior) {
     audio.reproducirAudioPorfase();
     encoder.vueltaAnterior++;
   }
 
-  leds.usarLeds();
+  leds.usar();
 
-
-  //vibrador llama a velocidadVibrador para controlar velocidad
-  vibrador.usarVibrador();
-  humo.usarHumo();
+  // vibrador llama a velocidadVibrador para controlar velocidad
+  vibrador.usar();
+  humo.usar();
 }
