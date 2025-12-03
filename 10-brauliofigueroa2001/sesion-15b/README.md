@@ -117,9 +117,15 @@ void velocidad(int pausaHIGH, int pausaLOW) {
 - la activación del motor alterna entre HIGH y LOW
 - no olvidar cambiar el pin IN al 12 o 13 del arduino porque el pin 2 está ocupado por los otros componentes
 
-#### explicación de lo que pudimos resolver cambiando de delay a millis en el motor, hallazgos, errores
+#### explicación de lo que pudimos resolver cambiando de delay a millis en el motor, hallazgos, errores, 3 de diciembre
 
 - primero lo que hicimos fue definir un int hacia una patita del vibrador
 - definimos unsigned long momentoPasado= 0, esto define que el momento pasado parte desde 0 y nunca será números negativos, parte desde positivo, por eso es unsigned
 - luego definimos un bool de estado HIGH, esto define un estado de inicio del módulo, en este caso parte en HIGH
-- 
+- establecimos un int de encoder ya que la activación del motor se guía por los rangos del encoder
+- en void loop establecimos las 3 diferentes velocidades las cuáles responden cuando se encuentren en su respectivo rango del encoder
+- establecemos un int para pausa HIGH(activo) y pausa LOW (apagado)
+- establecemos un parámetro en el cuál, al estar en uno de los dos estados y la diferencia entre momento actual y momento anterior sea mayor a ese estado(HIGH/LOW), cambia al estado contrario
+- esto lo hacemos utilizando millis, los milisegundos corren continuamente estableciendo un momento actual y un momento pasado, la única parte en donde el momento actual y el pasado son iguales, es cuando cambia de estado, una vez cambia de estado el momento actual se adelanta al momento pasado
+- mientras esté en un ESTADO y la diferencia entre momento pasado y momento actual no sea mayor a la duración de una de las pausas(HIGH,LOW), no cambiará
+- si está en un estado y la diferencia entre momento pasado y momento actual es MAYOR a la duración de la pausa, cambia de ESTADO
