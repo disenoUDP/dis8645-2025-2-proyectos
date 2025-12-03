@@ -179,4 +179,8 @@ flowchart TB
 
 ---
 
+## Fotografías del proyecto terminado
 
+## Roles de equipo
+
+## Bibliografía
