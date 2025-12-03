@@ -116,3 +116,10 @@ void velocidad(int pausaHIGH, int pausaLOW) {
 - pudimos establecer las 3 velocidades las cuáles son reproducidas según el valor que tenga el encoder
 - la activación del motor alterna entre HIGH y LOW
 - no olvidar cambiar el pin IN al 12 o 13 del arduino porque el pin 2 está ocupado por los otros componentes
+
+#### explicación de lo que pudimos resolver cambiando de delay a millis en el motor, hallazgos, errores
+
+- primero lo que hicimos fue definir un int hacia una patita del vibrador
+- definimos unsigned long momentoPasado= 0, esto define que el momento pasado parte desde 0 y nunca será números negativos, parte desde positivo, por eso es unsigned
+- luego definimos un bool de estado HIGH, esto define un estado de inicio del módulo, en este caso parte en HIGH
+- 
