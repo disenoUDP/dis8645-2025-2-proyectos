@@ -4,8 +4,16 @@
 ActuadorN3P::ActuadorN3P() {}
 
 void ActuadorN3P::configurar() {
-  Serial.begin(115200);
-  ActuadorN3P::modulito.begin(9600);
+
+    mp3Serial.begin(9600);
+
+    if (!modulito.begin(mp3Serial)) {
+        Serial.println("Error iniciando DFPlayer");
+    } else {
+        Serial.println("DFPlayer listo!");
+    }
+
+    
 }
 
 void ActuadorN3P::emitirAlarma(int estado, int distancia) {
@@ -31,7 +39,7 @@ void ActuadorN3P::emitirAlarma(int estado, int distancia) {
   }
 
   ActuadorN3P::modulito.volume(20);
-  ActuadorN3P::modulito.play(int audiosFase1[random(0, 3)]);
+  ActuadorN3P::modulito.play();
   delay(500);
   Serial.println("rascame la watita xfis :p");
 }
