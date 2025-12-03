@@ -47,6 +47,14 @@ cosas para ver con seba
 ```
 - tenemos la teoría de que este delay irrumpe en el funcionamiento del encoder y de la reproducción de sonido en el rango 6, por eso se debe bugear todo
 - no sé si el utilizar millis tal como fue utilizado en vibrador.h y vibrador.cpp podría arreglar este problema
-- 
+
+
+
+#### miércoles 3 diciembre
+
+
+- el código del humo y el high low de la celebración de luces tienen delay
+- cómo traspasar a millis estas 2 secciones y probar
+- ambos utilizan high y low en intervalos cortos, sólo encendido y apagado, varían en los tiempos que está encendido y apagado cada uno pero no es como en el motor en donde teníamos 3 velocidades distintas para cada high y low
 
 
