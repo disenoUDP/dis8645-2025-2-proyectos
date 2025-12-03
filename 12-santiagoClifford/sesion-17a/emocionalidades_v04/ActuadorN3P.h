@@ -5,20 +5,6 @@
 #include <SoftwareSerial.h>
 #include <DFRobotDFPlayerMini.h>
 
-// estados
-// 0 - calmao
-// 1 - pideAmor
-// 2 - pataletaLeve
-// 3 - pataletaBrigida
-// 4 - autodestruccion
-
-// archivos de audio
-// 0 - no hay
-// 1 - hay 3
-// 2 - hay 3
-// 3 - hay 3
-// 4 - hay 1, es largo
-
 // const int f1a0 = 0;
 // const int f1a1 = 1;
 // const int f1a2 = 2;

@@ -11,9 +11,5 @@ void setup() {
 }
 
 void loop() {
-  // n3p.emitirAlarma(0);
-  // n3p.emitirAlarma(1);
-  // n3p.emitirAlarma(2);
-  // n3p.emitirAlarma(3);
-  // n3p.emitirAlarma(4);
+// if()){}
 }
