@@ -15,8 +15,8 @@
 ### Patronaje
 
 - Compré la felpa necesaria para cubrir la carcasa. Aileen había sacado previamente el molde de la cabeza.  
-- Trajo una versión inicial de la funda: estéticamente funcionaba, pero junto a la nariz + ultrasonido se veía desproporcionado. Esto lo corregimos agrandando las plantillas en 2 cm.
-- 
+- Aileen Trajo una versión inicial de la funda: estéticamente funcionaba, pero junto a la nariz + ultrasonido se veía desproporcionado. Esto lo corregimos agrandando las plantillas en 2 cm.
+- Durante e
 ### Pendientes
 
 - Coser la funda de la carcasa y finalizar a Jorgito.
