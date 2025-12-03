@@ -13,3 +13,6 @@ Este código (máquinaAsombrosa_sinFinalNiHumo.ino) hace todo como debe, las cos
 
 ### Reiniciar los rangos
 Para poder darle término a la interacción necesitamos una función que reinicie los rangos (y por consecuencia los componentes) para que quede disponible de nuevo. Lo difícil es hacer que se reinicie exactamente cuando queramos: después del último audio y la activación del humo. Para esto lo asociamos a la vuelta siguiente al rango 6, un teórico rango 7. De esta manera se puede reiniciar manualmente de manera separada al final. Lo que nos queda por hacer es que el audio y el humo puedan ocurrir sin que se interrumpa por este reinicio. Una opción es usar un delay (para no añadir mas millis) y ordenar las líneas para que la jerarquía nos juegue a favor.
+
+### Tema de audio
+Por ahora suenan los archivos mp3 que corresponden en cada fase pero no completos. El 1,4 y 6 se cortan antes de lo debido la mayoría del tiempo. Si mal no recuerdo el 1 y el 4 son un poco más largos que el 2 y el 3. El 6 es evidentemente más largo ya que es el último y acompaña al humo pero no es ideal que se interrumpan por el encoder (asumo).
