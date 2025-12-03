@@ -10,4 +10,25 @@ Este código (máquinaAsombrosa_sinFinalNiHumo.ino) hace todo como debe, las cos
 - Producir carcasa y ordenar componentes de manera real.
 - Solucionar velocidad de la manivela. Por ahora el usuario tiene la opción de girar la manivela muy rápido, quitándole tiempo al audio para reproducirse.
 - Añadir vueltas (12 a 30). LISTO
-  
+
+### Reiniciar los rangos
+Para poder darle término a la interacción necesitamos una función que reinicie los rangos (y por consecuencia los componentes) para que quede disponible de nuevo. Lo difícil es hacer que se reinicie exactamente cuando queramos: después del último audio y la activación del humo. Para esto lo asociamos a la vuelta siguiente al rango 6, un teórico rango 7. De esta manera se puede reiniciar manualmente de manera separada al final. Lo que nos queda por hacer es que el audio y el humo puedan ocurrir sin que se interrumpa por este reinicio. Una opción es usar un delay (para no añadir mas millis) y ordenar las líneas para que la jerarquía nos juegue a favor.
+
+### Tema de audio
+Por ahora suenan los archivos mp3 que corresponden en cada fase pero no completos. El 1,4 y 6 se cortan antes de lo debido la mayoría del tiempo. Si mal no recuerdo el 1 y el 4 son un poco más largos que el 2 y el 3. El 6 es evidentemente más largo ya que es el último y acompaña al humo pero no es ideal que se interrumpan por el encoder (asumo).
+
+Un cable. La razón por la que no se reproducían los audios es porque el cable de energía estaba malo. Ahora que lo cambiamos se escuchan enteros y hasta más fuerte. Lo descubrimos al hacer varias pruebas sin cambiar el código y tener resultados distintos. Lo único que resta ahora que estabilizamos el audio es hacer que el del rango 6 se reproduzca como es debido y ajustar algunos que se cambiaron.
+
+### Humo 
+Para el humidificador hicimos un código muy sencillo y lo añadimos a las clases. En este punto tenemos todos los componentes unidos y funcionando como deben pero hacen falta límites. Para el humo haremos una función que limite la activación/desactivación para que ocurra una vez. Para esto podríamos asociarlo a una vuelta específica en vez de un rango y limitarlo con millis. 
+
+## Gráfica de la máquina
+- Elementos brillantes
+- Colores llamativos
+- Estética de casino (elegante pero de mal gusto)
+- Simbología de suerte/fortuna
+- Tematicas específicas
+Podríamos usar aluminio calentado con pistola de calor
+
+## Iteración del código más avanzada
+En la versión maquinaAsombrosa_MIERCOLEStodoBien.ino está todo correcto y funcionando. Al llegar al rango 6 se reproduce un audio y se suelta el humo **una vez**. Después de eso se resetea el contador y todo puede ocurrir de nuevo. Ahora solo queda afinar cosas como que el audio sea el correcto y que los cables no se suelten (VCC).
