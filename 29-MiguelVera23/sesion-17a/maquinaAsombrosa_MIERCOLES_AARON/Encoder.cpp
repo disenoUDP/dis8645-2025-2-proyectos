@@ -6,12 +6,12 @@ void Encoder::preparar() {
 	Serial.begin(9600);
 
 	// define los pines del encoder como entradas
-	pinMode(CLK, INPUT);
-	pinMode(DT, INPUT);
-	pinMode(SW, INPUT_PULLUP);
+	pinMode(patitaCLK, INPUT);
+	pinMode(patitaDT, INPUT);
+	pinMode(patitaSW, INPUT_PULLUP);
 
 	// lee el estado inicial del CLK
-	lastStateCLK = digitalRead(CLK);
+	estadoAnteriorClock = digitalRead(patitaCLK);
 }
 
 
@@ -23,23 +23,23 @@ void Encoder::leer() {
 	// --- CALCULO DE VUELTAS ---
 
 	// Lee el estado actual del CLK
-	currentStateCLK = digitalRead(CLK);
+	estadoActualClock = digitalRead(patitaCLK);
 
 	// si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
 	// reacciona solo a 1 cambio de estado para evitar un doble conteo
-	if (currentStateCLK != lastStateCLK && currentStateCLK == 1) {
+	if (estadoActualClock != estadoAnteriorClock && estadoActualClock == 1) {
 
 		// lee el estado del DT para determinar la direccion
 		// dependiendo de si es si va en sentido horario o antihorario
-		if (digitalRead(DT) != currentStateCLK) {
-			step++;
-			currentDir = "CW";
+		if (digitalRead(patitaDT) != estadoActualClock) {
+			paso++;
+			direccionActual = "CW";
 		} else {
-			step--;
-			currentDir = "CCW";
+			paso--;
+			direccionActual = "CCW";
 		}
 
-		if (step % 20 == 0) {
+		if (paso % 20 == 0) {
 			vueltas++;
 			//al completar una vuelta se alimenta la función vuelta actual
 			//al aumentar se reproduce audio
@@ -63,17 +63,15 @@ void Encoder::leer() {
 			rango = 6;
 			//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
 			Serial.println("PERAME PORFAVOR");
-			//step = 0;	
+
 			//tiempoNuevoEncoder = tiempoActualEncoder;
-
-
-			
+		
 			
 		}
 
 		// --- IMPRESION EN EL MONITOR SERIAL ---
-		Serial.print(" | Step: ");
-		Serial.println(step);
+		Serial.print(" | paso: ");
+		Serial.println(paso);
 		Serial.print(" | Vueltas ");
 		Serial.println(vueltas);
 		Serial.print(" | Rango ");
@@ -81,9 +79,9 @@ void Encoder::leer() {
 	}
 
 	// guardar el ultimo estado de CLK
-	lastStateCLK = currentStateCLK;
+	estadoAnteriorClock = estadoActualClock;
 	// lee el estado del boton
-	int btnState = digitalRead(SW);
+	int btnState = digitalRead(patitaSW);
 
 	//si nosotros detectamos una senal baja, presionamos el boton
 	if (btnState == LOW) {
@@ -99,7 +97,7 @@ void Encoder::leer() {
 //función que reinicia la cuenta de todos los valores del encoder al pasar por el rango 6
 if (vueltas > 15){
 	//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
-    step = reiniciarTodo;
+    paso = reiniciarTodo;
     rango = reiniciarTodo;
 		vueltas = reiniciarTodo;
 	//	tiempoNuevoEncoder = tiempoActualEncoder;

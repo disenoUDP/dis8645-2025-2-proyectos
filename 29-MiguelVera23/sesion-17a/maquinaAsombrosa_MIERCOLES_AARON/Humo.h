@@ -8,6 +8,7 @@ class Humo {
 public:
   // constructor
   Humo();
+  
   void preparar();
   void usar();
 

@@ -1,15 +1,15 @@
 // incluye todos los archivos de los componentes
 
-
 // archivos de sensores
 #include "Encoder.h"
 
 // archivos de actuadores
-#include "Leds.h"
 #include "Audio.h"
-#include "Vibrador.h"
+#include "Leds.h"
 #include "Humo.h"
+#include "Vibrador.h"
 
+// declarar instancias de las clases
 Encoder encoder;
 Leds leds;
 Audio audio;
@@ -17,18 +17,21 @@ Vibrador vibrador;
 Humo humo;
 
 void setup() {
-  audio.preparar();
+
+  // preparar sensores
   encoder.preparar();
 
+  // preparar actuadores
+  audio.preparar();
+  humo.preparar();
   leds.preparar();
   vibrador.preparar();
-  humo.preparar();
 }
 
 void loop() {
+
+  // leer valor del sensor
   encoder.leer();
-  // hace que nivelLuz valga lo mismo que rango
-  // sirve para activar las leds
 
   // el valor que manda va al final
   // en este caso encoder.rango es el que cambia al resto
