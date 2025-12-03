@@ -55,16 +55,21 @@ La máquina genera movimientos invertidos o desviados de la red según los valor
 
 4. Cambios en dirección, velocidad o animaciones del personaje.
 
+---
+
 ### Bill of materials
 
-|Nombre componente|Características|Cantidad|Especificaciones|
-|---|---|---|---|
-|Sensor de fuerza|FSR402|2|una resistencia que cambia su valor (en ohmios Ω) dependiendo de la cantidad que se presiona.|
-|Arduino Uno|R4 minima o |1|Arduino UNO R4 Minima está armado con un potente microcontrolador de 32 bits|
-|Pantalla Dell|14 pulgadas|1|pantalla de vale ruz|
-|Carcasa|Impresión 3D|1|Filamento: PLA|
-|Plinto| | | |
-|Cables| | | |
+|Componenetes|Cantidad|Unidad|OBS|Valor|
+|---|---|---|---|---|
+|Sensor de fuerza|2|FSR402|Conexión a pin A0 / A1|$7.500|
+|Sensor Acelerómetro|1|GY-291 ADXL345 - 3 ejes|Conexión SCL a A5 / Conexión SDA a A4|$3.800|
+|Arduino Uno|1|R4 minima|Conexión directa a corriente|$24.990|
+|Resistencias|2|120 Ohms|Conexión para sensores|estaban en el lab|
+|Mini Protoboard|2|85 puntos|Conexión VCC GND directa al arduino|$1.990|
+|Pantalla|1|14 pulgadas|Conexión a computador|$139.990|
+|Carcasa|3|Filamento:PLA|Impresión 3D|Impresión en el Lab|
+|Plinto|1|15mm|Terciado|-|
+|Cables|20 aprox.|macho-macho|-|$1.000|
 
 ---
 
