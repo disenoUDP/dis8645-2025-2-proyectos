@@ -16,3 +16,5 @@ Para poder darle término a la interacción necesitamos una función que reinici
 
 ### Tema de audio
 Por ahora suenan los archivos mp3 que corresponden en cada fase pero no completos. El 1,4 y 6 se cortan antes de lo debido la mayoría del tiempo. Si mal no recuerdo el 1 y el 4 son un poco más largos que el 2 y el 3. El 6 es evidentemente más largo ya que es el último y acompaña al humo pero no es ideal que se interrumpan por el encoder (asumo).
+
+Un cable. La razón por la que no se reproducían los audios es porque el cable de energía estaba malo. Ahora que lo cambiamos se escuchan enteros y hasta más fuerte. Lo descubrimos al hacer varias pruebas sin cambiar el código y tener resultados distintos. Lo único que resta ahora que estabilizamos el audio es hacer que el del rango 6 se reproduzca como es debido y ajustar algunos que se cambiaron.
