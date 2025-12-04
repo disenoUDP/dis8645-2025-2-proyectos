@@ -2,8 +2,14 @@
 
 Leds::Leds() {}
 
-void Leds::preparar() {
-	Serial.begin(9600);
+void Leds::preparar(bool modo) {
+
+	Leds::emitirSerial = modo;
+
+	if (Leds::emitirSerial) {
+		Serial.begin(9600);
+	}
+
 	pinMode(led1, OUTPUT);
 	pinMode(led2, OUTPUT);
 	pinMode(led3, OUTPUT);
@@ -11,44 +17,38 @@ void Leds::preparar() {
 	pinMode(led5, OUTPUT);
 }
 
+void Leds::actualizar(int rangoEncoder) {
+	Leds::nivelLuz = rangoEncoder;
+}
+
+
 void Leds::usar() {
+
 	if (nivelLuz == 1) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, LOW);
 		digitalWrite(led3, LOW);
 		digitalWrite(led4, LOW);
 		digitalWrite(led5, LOW);
-	}
-
-	if (nivelLuz == 2) {
+	} else if (nivelLuz == 2) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, HIGH);
 		digitalWrite(led3, LOW);
 		digitalWrite(led4, LOW);
 		digitalWrite(led5, LOW);
-	}
-	if (nivelLuz == 3) {
+	} else if (nivelLuz == 3) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, HIGH);
 		digitalWrite(led3, HIGH);
 		digitalWrite(led4, LOW);
 		digitalWrite(led5, LOW);
-	}
-	if (nivelLuz == 4) {
+	} else if (nivelLuz == 4) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, HIGH);
 		digitalWrite(led3, HIGH);
 		digitalWrite(led4, HIGH);
 		digitalWrite(led5, LOW);
-	}
-	//if (nivelLuz == 5) {
-	//	digitalWrite(led1, HIGH);
-	//digitalWrite(led2, HIGH);
-	//digitalWrite(led3, HIGH);
-	//digitalWrite(led4, HIGH);
-	//digitalWrite(led5, HIGH);
-	//}
-	if (nivelLuz == 5) {
+	} else if (nivelLuz == 5) {
 		digitalWrite(led1, HIGH);
 		digitalWrite(led2, HIGH);
 		digitalWrite(led3, HIGH);
@@ -61,10 +61,7 @@ void Leds::usar() {
 		//digitalWrite(led4, HIGH);
 		//digitalWrite(led5, LOW);
 		//delay(300);
-	}
-
-
-	if (nivelLuz == 6) {
+	} else if (nivelLuz == 6) {
 		digitalWrite(led1, LOW);
 		digitalWrite(led2, LOW);
 		digitalWrite(led3, LOW);
@@ -72,6 +69,7 @@ void Leds::usar() {
 		digitalWrite(led5, LOW);
 	}
 }
+
 //if (nivelLuz == 5){
 //digitalWrite(led1, HIGH);
 //digitalWrite(led2, LOW);

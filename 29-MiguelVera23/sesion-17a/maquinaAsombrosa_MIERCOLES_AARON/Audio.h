@@ -13,17 +13,21 @@ public:
   Audio();
 
   // funciones
-  // tipo void, no retornan nada
-  void preparar();
-  // void usar();
+  void preparar(bool modo);
+  void actualizar(int rangoEncoder);
   void reproducirAudioPorfase();
 
-  int RX = 0;
-  int TX = 1;
+  // variable para controlar modo de prueba
+  bool emitirSerial;
 
-  // Variables originales
+  // constantes para conexiones
+  const int patitaRX = 0;
+  const int patitaTX = 1;
+
+  // variables
   bool reproducirAudio = false;
   bool vueltaEncoder = true;
   int fase = 0;
+  int faseAnterior = 0;
 };
 #endif

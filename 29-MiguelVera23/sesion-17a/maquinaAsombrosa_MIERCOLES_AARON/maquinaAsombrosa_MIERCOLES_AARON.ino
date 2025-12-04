@@ -1,5 +1,3 @@
-// incluye todos los archivos de los componentes
-
 // archivos de sensores
 #include "Encoder.h"
 
@@ -18,14 +16,19 @@ Humo humo;
 
 void setup() {
 
+  // las funciones preparar()
+  // necesitan un boolean
+  // true: emiten info por puerto serial
+  // false: no emiten, funcionan en silencio
+
   // preparar sensores
-  encoder.preparar();
+  encoder.preparar(false);
 
   // preparar actuadores
-  audio.preparar();
-  humo.preparar();
-  leds.preparar();
-  vibrador.preparar();
+  audio.preparar(true);
+  humo.preparar(false);
+  leds.preparar(false);
+  vibrador.preparar(false);
 }
 
 void loop() {
@@ -33,9 +36,17 @@ void loop() {
   // leer valor del sensor
   encoder.leer();
 
+  // propagar el rango del sensores encoder
+  // a los actuadores
+  audio.actualizar(encoder.rango);
+  humo.actualizar(encoder.rango);
+  leds.actualizar(encoder.rango);
+  vibrador.actualizar(encoder.rango);
+
+
   // el valor que manda va al final
   // en este caso encoder.rango es el que cambia al resto
-  leds.nivelLuz = audio.fase = vibrador.intervalo = humo.punto = encoder.rango;
+  // leds.nivelLuz = audio.fase = vibrador.intervalo = humo.punto = encoder.rango;
 
   // Esta función activa el audio solo cuando se añade una vuelta
   // Se activa solo cuando vueltaActual y vueltaAnterior son diferentes

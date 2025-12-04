@@ -4,10 +4,15 @@
 #include "Arduino.h"
 class Leds {
 public:
+  // constructor
   Leds();
-  //declara los voids que hacen funcionar los componentes en el principal
-  void preparar();
+
+  void preparar(bool modo);
+  void actualizar(int rangoEncoder);
   void usar();
+
+  // variable para controlar modo de prueba
+  bool emitirSerial;
 
   // Entradas de los leds
   int led1 = 4;

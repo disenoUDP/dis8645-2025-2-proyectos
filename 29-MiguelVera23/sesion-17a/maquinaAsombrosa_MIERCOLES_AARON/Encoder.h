@@ -9,8 +9,11 @@ public:
   Encoder();
   
   // funciones
-  void preparar();
+  void preparar(bool modo);
   void leer();
+  
+  // variable para controlar modo de prueba
+  bool emitirSerial;
 
   // constantes para conexiones
   const int patitaCLK = 9;
