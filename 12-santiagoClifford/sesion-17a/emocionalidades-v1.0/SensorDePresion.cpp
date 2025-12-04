@@ -19,7 +19,7 @@ int presionMinimaAceptable = 50;
 }
 
 // aqui ocurre el loop
-void Presion::funcionaPresion(){
+void SensorDePresion::funcionaDePresion(){
 
   //asignar el valor del pin del sensor de presion, a la variable valorDePresion
   valorDePresion = analogRead(pinDePresion);

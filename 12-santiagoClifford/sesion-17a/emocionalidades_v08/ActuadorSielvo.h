@@ -2,6 +2,7 @@
 #define ACTUADOR_SIELVO_H
 
 #include <Arduino.h>
+#include <Servo.h>
 
 class ActuadorSielvo {
 public:
@@ -14,8 +15,8 @@ public:
   ActuadorSielvo();
 
   //servo
-  motoLumbar.attach(pinSielvoLumbar);  // attaches the servo on pin 9 to the servo object
-  motoRotor.attach(pinSielvoRotor);
+  sielvoLumbar.attach(pinSielvoLumbar);  // attaches the servo on pin 9 to the servo object
+  sielvoRotor.attach(pinSielvoRotor);
 };
 
 #endif
