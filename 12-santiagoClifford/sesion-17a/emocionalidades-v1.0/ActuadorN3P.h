@@ -24,7 +24,7 @@ public:
 
   void configurar();
 
-  void emitirAlarma(int estado, int distancia);
+  void emitirAlarma();
 
   SoftwareSerial mp3Serial = SoftwareSerial(10, 11);
   DFRobotDFPlayerMini modulito;
