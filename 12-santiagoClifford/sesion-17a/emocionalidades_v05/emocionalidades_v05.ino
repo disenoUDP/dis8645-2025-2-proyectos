@@ -11,5 +11,10 @@ void setup() {
 }
 
 void loop() {
-// if()){}
+// llamar a SonicFunacionar(sensor ultrasonico esta "buscando" una presencia a menos de 40cm)
+// si el bool "cariñoPotencial" pasa ser positivo, llamar a sensor MotorMarvel, y SensorDePresion
+// MotorMarvel esta activo hasta que, en SensorDePresion la bool afirmateCabrito
+// 
+// llamar a sesnsor presión
+}
 }
