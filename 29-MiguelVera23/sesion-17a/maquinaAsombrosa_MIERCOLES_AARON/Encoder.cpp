@@ -1,8 +1,13 @@
 #include "Encoder.h"
 
+// constructor
 Encoder::Encoder() {}
 
-void Encoder::preparar() {
+void Encoder::preparar(bool modo) {
+
+  Encoder::emitirSerial = modo;
+
+	// prender el puerto serial
 	Serial.begin(9600);
 
 	// define los pines del encoder como entradas
@@ -41,8 +46,8 @@ void Encoder::leer() {
 
 		if (paso % 20 == 0) {
 			vueltas++;
-			//al completar una vuelta se alimenta la función vuelta actual
-			//al aumentar se reproduce audio
+			// al completar una vuelta se alimenta la función vuelta actual
+			// al aumentar se reproduce audio
 			vueltaActual++;
 		}
 
@@ -62,20 +67,20 @@ void Encoder::leer() {
 		} else if (vueltas >= 15) {
 			rango = 6;
 			//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
-			Serial.println("PERAME PORFAVOR");
+			// Serial.println("PERAME PORFAVOR");
 
 			//tiempoNuevoEncoder = tiempoActualEncoder;
-		
-			
 		}
 
 		// --- IMPRESION EN EL MONITOR SERIAL ---
-		Serial.print(" | paso: ");
-		Serial.println(paso);
-		Serial.print(" | Vueltas ");
-		Serial.println(vueltas);
-		Serial.print(" | Rango ");
-		Serial.println(rango);
+		if (emitirSerial) {
+			Serial.print(" | paso: ");
+			Serial.println(paso);
+			Serial.print(" | Vueltas ");
+			Serial.println(vueltas);
+			Serial.print(" | Rango ");
+			Serial.println(rango);
+		}
 	}
 
 	// guardar el ultimo estado de CLK
@@ -94,17 +99,18 @@ void Encoder::leer() {
 		lastButtonPress = millis();
 	}
 
-//función que reinicia la cuenta de todos los valores del encoder al pasar por el rango 6
-if (vueltas > 15){
-	//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
-    paso = reiniciarTodo;
-    rango = reiniciarTodo;
+	// función que reinicia la cuenta de
+	// todos los valores del encoder al pasar por el rango 6
+	if (vueltas > 15) {
+		//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
+		paso = reiniciarTodo;
+		rango = reiniciarTodo;
 		vueltas = reiniciarTodo;
-	//	tiempoNuevoEncoder = tiempoActualEncoder;
-  //}
-}
+		//	tiempoNuevoEncoder = tiempoActualEncoder;
+		//}
+	}
 
 
-	// Ponga un ligero retardo para ayudar a eliminar el rebote de la //lectura
+	// Ponga un ligero delay para ayudar a eliminar el rebote de la //lectura
 	delay(1);
 }

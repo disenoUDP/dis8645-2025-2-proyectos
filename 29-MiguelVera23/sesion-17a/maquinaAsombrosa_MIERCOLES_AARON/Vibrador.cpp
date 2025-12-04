@@ -2,9 +2,16 @@
 
 Vibrador::Vibrador() {}
 
-void Vibrador::preparar() {
+void Vibrador::preparar(bool modo) {
+
+  Vibrador::emitirSerial = modo;
+
   // hacer que esa patita sea salida
   pinMode(patitaVibrador, OUTPUT);
+}
+
+void Vibrador::actualizar(int rangoEncoder) {
+  Vibrador::intervalo = rangoEncoder;
 }
 
 void Vibrador::usar() {
@@ -21,6 +28,7 @@ void Vibrador::usar() {
 }
 
 void Vibrador::velocidadVibrador(int pausaHIGH, int pausaLOW) {
+
 
   // grabar en memoria cuantos milisegundos han transcurrido
   // desde que prendio el arduino

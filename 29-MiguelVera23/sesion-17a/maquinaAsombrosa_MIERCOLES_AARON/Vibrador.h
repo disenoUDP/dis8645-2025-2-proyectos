@@ -8,9 +8,13 @@ public:
   // constructor
   Vibrador();
 
-  void preparar();
+  void preparar(bool modo);
+  void actualizar(int rangoEncoder);
   void usar();
   void velocidadVibrador(int pausaHIGH, int pausaLOW);
+
+  // variable para controlar modo de prueba
+  bool emitirSerial;
 
   // variable para conexion
   const int patitaVibrador = 12;
@@ -23,7 +27,6 @@ public:
   // variable para definir estado
   bool estado = HIGH;
 
-  // TODO: cambiamos el valor el encoder
   int intervalo = 0;
 };
 #endif

@@ -2,9 +2,19 @@
 
 Humo::Humo() {}
 
-void Humo::preparar() {
-  Serial.begin(9600);
+void Humo::preparar(bool modo) {
+
+  Humo::emitirSerial = modo;
+
+  if (Humo::emitirSerial) {
+    Serial.begin(9600);
+  }
+
   pinMode(humo, OUTPUT);
+}
+
+void Humo::actualizar(int rangoEncoder) {
+  Humo::punto = rangoEncoder;
 }
 
 void Humo::usar() {
