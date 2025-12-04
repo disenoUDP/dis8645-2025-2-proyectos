@@ -1,6 +1,6 @@
 //Yiop
 // incluye el archivo.h
-#include "Presion.h"
+#include "SensorDePresion.h"
 
 // hacer que la clase claseee
 Presion::Presion(){}
@@ -15,7 +15,6 @@ bool hayBrazo;
 int presionMinimaAceptable = 50;
 //int presionDolorosa = 230;
  pinMode(pinDePresion, INPUT);
-
 }
 
 // aqui ocurre el loop
@@ -25,6 +24,4 @@ void Presion::funcionaPresion(){
   valorDePresion = analogRead(pinDePresion);
   //si valorDePresion es mayor a presionMinimaAceptable, hayBrazo es true
   hayBrazo = (valorDePresion > presionMinimaAceptable);
-
-
 }

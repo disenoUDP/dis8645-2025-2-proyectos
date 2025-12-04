@@ -12,7 +12,6 @@ void setup() {
 
 void loop() {
 
-
 // llamar a SonicFuncionar(sensor ultrasonico esta "buscando" una presencia a menos de 40cm)
 // si hay presencia a menos de 40cm, el bool "cariñoPotencial" = true, 
 // if(cariñoPotencial==true){ ESTADO = 1.PEDIR_AMOR}
@@ -25,7 +24,6 @@ void loop() {
 // if(seMarcho==true){ESTADO = 2. PATALETA_LEVE} 
 // si SensarTacto activa la bool watitaRascada -> ESTADO = 0.CALMAO
 //if(watitaRascada==true){ESTADO = 0.CALMAO}
-
 
 // si pasan 6 segundos desde que se activo la bool seMarcho, ESTADO = 3. PATALETA_BRIGIDA
 // si SensarTacto activa la bool watitaRascada -> ESTADO = 0. CALMAO
