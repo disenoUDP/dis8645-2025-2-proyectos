@@ -59,4 +59,30 @@ A PARTIR DE LA RONDA 5, FALLÓ TODO RONDA 5,6 Y 7, LUEGO DE REINICIARLO VOLVIÓ 
 
 - preguntas, observaciones,: ¿ por qué el audio 3 es el que presenta mayor efectividad?
 - el audio de la fase 1 es el mismo que el de la fase 6
+
+ANÁLISIS CÓDIGO MIÉRCOLESTODO BIEN ESTADÍSTICAS DE AUDIOS
+
+- ronda 1: audio fase 1: bien. fase 2: bien, fase: 3 bien. fase 4: bien. fase 5: bien. fase 6: se cortó.
+  
+- ronda 2: audio fase 1: bien, fase 2: bien, fase 3: bien, fase 4: se cortó,bien. fase 5: bien,bien. fase 6: bien
+  
+- ronda 3: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien. fase 5: bien,bien. fase6: bien
+
+- ronda 4: audio fase 1: bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien audio fase 5:bien,bien. fase 6: bien
+ 
+- ronda 5: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien.fase 5: bien,bien,bien.fase 6:bien
+ 
+- ronda 6: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien. audio fase3: bien,bien,bien. audio fase 4: bien,bien. fase 5: bien. fase 6: bien
+ 
+- ronda 7: audio fase 1: bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien.fase 5: bien. fase 6: bien
+  
+- ronda 8: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien, fase 5: bien,bien, fase 6: bien
+  
+- ronda 9: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien. fase 3: bien,bien,bien. fase 4: bien,bien,bien fase 5: bien,bien. fase 6:bien
+  
+- ronda 10: audio fase 1: bien,bien,bien. fase 2: bien,bien,bien.fase 3: bien,bien,bien. fase 4: bien,bien. fase 5: bien. fase 6: bien
+
+
+
+
   
