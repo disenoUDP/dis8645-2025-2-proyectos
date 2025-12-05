@@ -79,3 +79,65 @@ https://docs.arduino.cc/built-in-examples/digital/Debounce/
 Que es algo que permite percibir el cambio de estado en un botón, para que por ejemplo si se mantiene presionado no se registren continuamente nuevas presiones del botón.
 
 Quiero dejar claro que esto si lo quiero aplicar al sensor de inclinación pero NO al botón, porque siento que la interacción va a ser un poco más amable si es que el usuario se le permite mantener presionado el botón para poder aumentar el tiempo del temporizador.
+
+Bueno con todo eso mas o menos comprendido lo intente implementar por mi cuenta al codigo principal, fallando brutalmente, bueno no brutalmente pero ya me empecé a enredar con muchas cosas, también por el hecho de haber intentado ayudar a tantos grupos ya estoy medio fundido, así que le explique directamente a don chatGPT, con lo que me ayudó a llegar a lo siguiente.
+
+``` cpp
+
+#include "SensorTilt.h"
+
+SensorTilt::SensorTilt() {}
+
+void SensorTilt::configuracionTilt() {
+	//Aca definimos el pin del sensor como entrada
+	//Habilitamos el pull-up interno para el pin del sensor
+	pinMode(tiltPin, INPUT);
+	digitalWrite(tiltPin, HIGH);
+}
+
+void SensorTilt::funcionaTilt() {
+    // Read the tilt sensor.
+    // With pull-up enabled:
+    // - LOW  = sensor CLOSED  → tilted
+    // - HIGH = sensor OPEN    → upright
+    int lecturaActual = digitalRead(tiltPin);
+
+    // ----------------------------
+    // CASE 1: SENSOR IS TILTED NOW
+    // ----------------------------
+    if (lecturaActual == HIGH) {
+
+        // If this is the *first* moment we detect tilt,
+        // record the time when tilt began.
+        if (!enProcesoDeCaida) {
+            enProcesoDeCaida = true;
+            tiempoInicioCaida = millis();
+        }
+
+        // Check how long it has been tilted.
+        if (millis() - tiempoInicioCaida >= tiempoNecesarioCaido) {
+            // It remained tilted long enough → confirm "caido"
+            if (!caido) {
+                Serial.println("esta caido");
+            }
+            caido = true;
+        }
+    }
+
+    // --------------------------------
+    // CASE 2: SENSOR IS NOT TILTED NOW
+    // --------------------------------
+    else {
+        // Reset the “fall in progress” flag every time sensor goes upright
+        enProcesoDeCaida = false;
+
+        // Immediately mark as upright
+        if (caido) {
+            Serial.println("esta parado");
+        }
+        caido = false;
+    }
+}
+
+```
+
