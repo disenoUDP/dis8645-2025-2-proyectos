@@ -70,4 +70,9 @@ Con este funcionamiento del los motores con millis se cambio la version del WEBO
 
 Lo siguiente que intente fue el pasar la mayor cantidad de los componentes a su uso con los millis correctos, donde pude realizar el traspaso del display, específicamente donde AVA estaría “hablando” durante la cuenta regresiva eso salio bien despues de unos cuantos intentos, pero cuando intente hacer lo mismo con el reproductor de audio este trababa todo el proyecto, estoy bastante seguro que el reproductor con los millis es el problema porque varias versiones anteriores no se trababan, esto lo voy a tratar de resolver, pero por ahora subire la version del WEBO_0_7_1.
 
+Ahora quiero que se detecte mi sensor tilt solamente cuando esté en inclinado por una cantidad de tiempo que yo quiero establecer, ya que el sensor puede cambiar de estado con un movimiento muy pequeño, y no quiero esto, solo si esta caido por digamos que más de 1 segundo es que debería empezar a reclamar, sino seria terrible el solo agarrarlo y que empiece a chillar.
+
+Buscando por internet como se llamaria lo que quería hacer me encontré con un **debounce** para un botón:  
+
+https://docs.arduino.cc/built-in-examples/digital/Debounce/  
 
