@@ -8,11 +8,14 @@
 - [Carla Pino Barrios](https://github.com/Coff4)
 - [Francisco Stephens González](https://github.com/FranUDP)
 
+### ¿Qué es un abrazo? 
+Un abrazo es un gesto simple en apariencia, pero cargado de significado. No solo implica rodear a otra persona con los brazos, sino también ofrecer contención, afecto y una forma de conexión que no necesita palabras. Para este proyecto tomamos el abrazo como punto de partida porque nos permite explorar cómo una acción simple puede convertirse en un significante emocional, capaz de transmitir cercanía, apoyo o incluso protección dependiendo del contexto. Y es justamente desde esa idea de conexión donde aparece Jorge, quien se convierte en la figura central para entender cómo este gesto se transforma cuando pasa del plano humano al objeto. A través de él buscamos observar qué ocurre cuando el abrazo se materializa, se interpreta o incluso se distorsiona dentro de nuestra propuesta.
+
 ### Presentación textual
 
-El dispositivo, un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
+Jorge es un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
 
-### Metáfora
+###  figura literaria 
 
 En este proyecto queremos transmitir como la responsabilidad humana puede ponerse en disposicion de una respuesta mecánica, generando pena, culpa y un posible intento de manipulación, ante lo que seria la recreación de un mono que imita ser uno verdadero. Esta respuesta mecánica deja a la persona en un bucle de apego constante que terminará siempre en tragedia sin importar que tanto cariño se le pueda dar.
 
