@@ -14,3 +14,11 @@
 
 - Josefa Quape / [Joquape](https://github.com/Joquape)
 
+## Proyecto 03 
+
+### **¿Qué es W.E.B.O?**
+
+W.E.B.O la Entidad de Balance Ovoide, la paradoja del temporizador que no temporiza.
+
+Esta idea se desarrolló a partir de volver lo conveniente inconveniente, pero primero 
+
