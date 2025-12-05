@@ -66,4 +66,8 @@ Que básicamente es un interruptor para cambiar entre estos 2 estados, donde me 
 
 También debía hacer que el nuevo tiempo del temporizador de un estado, actualizará el del siguiente, de esa manera podían funcionar de la manera que tenía pensada tal cual.
 
-Con este funcionamiento del los motores con millis se cambio la version del WEBO al WEBO_0_7_0
+Con este funcionamiento del los motores con millis se cambio la version del WEBO al WEBO_0_7_0.
+
+Lo siguiente que intente fue el pasar la mayor cantidad de los componentes a su uso con los millis correctos, donde pude realizar el traspaso del display, específicamente donde AVA estaría “hablando” durante la cuenta regresiva eso salio bien despues de unos cuantos intentos, pero cuando intente hacer lo mismo con el reproductor de audio este trababa todo el proyecto, estoy bastante seguro que el reproductor con los millis es el problema porque varias versiones anteriores no se trababan, esto lo voy a tratar de resolver, pero por ahora subire la version del WEBO_0_7_1.
+
+
