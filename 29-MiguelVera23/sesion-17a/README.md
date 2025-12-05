@@ -32,3 +32,25 @@ Podríamos usar aluminio calentado con pistola de calor
 
 ## Iteración del código más avanzada
 En la versión maquinaAsombrosa_MIERCOLEStodoBien.ino está todo correcto y funcionando. Al llegar al rango 6 se reproduce un audio y se suelta el humo **una vez**. Después de eso se resetea el contador y todo puede ocurrir de nuevo. Ahora solo queda afinar cosas como que el audio sea el correcto y que los cables no se suelten (VCC).
+
+### Número/audio actual
+1. Piso viejo
+2. Pistón
+3. Aldeano
+4. Corneta
+5. Ak 47
+6. Cadena
+
+## QUE OCURRE Y CUANDO (RANGOS)
+0. Todo apagado.
+1. 1 luz encendida, audio 1 se reproduce (*por la cantidad de vueltas que tenga el rango).
+2. 2 luces encendidas, audio 2 se reproduce (*), motor en velocidad 1.
+3. 3 luces encendidas, audio 3 se reproduce (*), motor en velocidad 2.
+4. 4 luces encendidas, audio 4 se reproduce (*), motor en velocidad 3.
+5. 5 luces encendidas, audio 5 se reproduce (*), motor se apaga.
+6. Luces se apagan, audio 6 se reproduce (1 vez), sale humo por 3/4 segundos (1 vez).
+7. Una vuelta más reinicia el contador
+Hicimos 10 pruebas del circuito (del audio específicamente) girando la manivela sucesivamente sin reiniciar el arduino y el índice de éxito fue de casi 100%. Los resultados están en el repositorio de Braulio.
+
+### Centrum para cables
+Nuestras conexiones son demasiado débiles. En este punto comprobamos la funcionalidad del código y descubrimos que la fuente de casi todos nuestros problemas son cables sueltos. Sebastián nos recomendó usar cables más rígidos y trenzables que no fallan. Empezando el proceso de soldar descubrimos la fragilidad de nuestras conexiones por lo que esta técnica podría no ser la mejor. El tema con los cables más rígidos es que si bien no fallan duran menos y se "consumen" pero los normales duran más aunque se sueltan.
