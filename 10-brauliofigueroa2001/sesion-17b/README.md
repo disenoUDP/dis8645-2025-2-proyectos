@@ -23,4 +23,9 @@ NOVEDADES 5 PM
 
 - ACABO DE PROBAR EL MÓDULO DEL HUMO CON EL REPUESTO CAMBIADO, AL CÓDIGO PRINCIPAL Y SALE HUMO EN LA FASE 6!!!
 - ahora conectaré el módulo mp3 soldado
+- pin 2 y 3 son rx y tx, no se por que estaban conectados ahi, en el código están declarados en 0 y 1
+
+novedades 6 pm
+
+- conectamos el módulo mp3 soldado respectivamente y el encoder dejó de sumar vueltas, se paralizaron todos los sensores y actuadores
 
