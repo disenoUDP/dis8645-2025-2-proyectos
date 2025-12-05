@@ -76,3 +76,6 @@ Buscando por internet como se llamaria lo que quería hacer me encontré con un 
 
 https://docs.arduino.cc/built-in-examples/digital/Debounce/  
 
+Que es algo que permite percibir el cambio de estado en un botón, para que por ejemplo si se mantiene presionado no se registren continuamente nuevas presiones del botón.
+
+Quiero dejar claro que esto si lo quiero aplicar al sensor de inclinación pero NO al botón, porque siento que la interacción va a ser un poco más amable si es que el usuario se le permite mantener presionado el botón para poder aumentar el tiempo del temporizador.
