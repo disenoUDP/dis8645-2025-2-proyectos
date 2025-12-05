@@ -14,63 +14,46 @@ INTEGRANTES
 
 <!-- QUÉ -->
 
-`Atrápame si puedes` es un juego interactivo diseñado para frustrar al usuario. El controlador del juego es contraintuitivo, no tiene un manual claro ni lineal, y requiere mucha destreza de parte del usuario para lograr tareas que parecen simples, llegando a hacerle dudar si vale la pena seguir intentando ganar. Los personajes del juego consisten en el equipo docente de este curso, que funcionan como parodia de la poca proporcionalidad en la academia entre esfuerzo y resultados.
+`Atrápame si puedes` es un juego interactivo diseñado para frustrar al usuario. El controlador del juego es contraintuitivo, no tiene un manual claro ni lineal, y requiere mucha destreza de parte del usuario para lograr tareas que parecen simples. Esto llega a hacerle dudar si vale la pena seguir intentando ganar. Los personajes del juego consisten en el equipo docente de este curso, funcionando como una parodia de la poca proporcionalidad que existe en la academia entre esfuerzo y resultados.
 
 <!-- PARA QUIÉN / DÓNDE / CUÁNDO -->
 
-`Atrápame si puedes` es un juego de 1 persona a la vez, dura 15 minutos, y es una instalacion tipo tótem. FALTA. QUIZAS AQUI EXPLICAR LA METAFORA / FIGURA LITERARIA / EXPLICAR LO QUE LE PASA AL USUARIO, LO QUE LE PASA A LA AUDIENCIA.
+Este es un juego para 1 persona a la vez, dura 30 segundos la interacción, y es una instalación tipo tótem. Existen dos tipos de interacción: la del usuario y la del espectador, y la relación entre ambas estructura la experiencia. Aquí aparece la metáfora central del proyecto, inspirada en figuras como el mito de Sísifo y el castigo de Tántalo: el jugador vive un “casi logro” constante, donde cada intento parece acercarlo, pero nunca del todo; mientras que la audiencia observa este esfuerzo repetitivo que roza lo absurdo, generando una mezcla de tensión y humor. Esta doble lectura sostiene el sentido del juego, donde lo frustrante se vuelve cómico cuando es compartido.
 
 <!-- HISTORIA DEL JUEGO -->
 
-El juego consiste en una pantalla con animaciones que muestra el estado actual del sistema, y dos controladores para ser usados simultáneamente por una persona. El objetivo del juego es atrapar hadas, lo que se dificulta por los controles: el jugador descubre progresivamente cómo usar sus manos dentro del juego. Esta dificultad genera una frustración cómica para espectadores, haciendo que el jugador en vez de controlar, genere caos.
+El juego consiste en una pantalla con animaciones que muestran el estado actual del sistema, y dos controladores que deben usarse simultáneamente. El objetivo es atrapar hadas, lo que se dificulta por los controles: el jugador descubre progresivamente cómo usar sus manos dentro del juego, y esa torpeza inicial genera una frustración cómica para los espectadores, haciendo que el jugador, en vez de controlar, genere caos. Cuando por fin atrapa un hada, aparece un mensaje de felicitación, pero también un recordatorio frustrante: después de todo el esfuerzo de atrapar una, aún quedan unas 444 hadas por atrapar para lograr un minúsculo bono en la nota de un examen.
 
-Cuando el jugador por fin atrapa un hada, aparece un mensaje de felicitación, pero a la vez un recordatorio frustrante, de que solamente tras hacer el esfuerzo de atrapar a 444 hadas, lograrás un minúsculo bono en la nota de un examen.
+<!-- INSTRUCCIONES DE USO -->
 
-<!-- INSTRUCCIONES -->
+El jugador presiona los sensores para controlar una red atrapahadas y capturar a las hadas, que representan a los docentes. Para concretar la captura, debe aplicar la presión adecuada con ambas manos y, al alcanzar el objetivo, mover el mando arriba y abajo con un gesto rápido que activa el acelerómetro. Esta secuencia de acciones contribuye a la sensación de “casi” y esfuerzo repetitivo que estructura toda la experiencia.
 
-El jugador presiona los sensores para controlar una red atrapahadas y capturar a las hadas, que representan a los docentes. Para concretar la captura, debe aplicar la presión adecuada con ambas manos y, al alcanzar el objetivo, mover el mando arriba y abajo con un gesto rápido que activa el acelerómetro.
 
-<!-- POR QUÉ HICIMOS ESTO -->
+<!-- POR QUÉ HICIMOS ESTO  -->
 
-La máquina refleja un desajuste constante: el jugador persigue un objetivo claro, pero la interfaz responde de manera inesperada. Entre humor, frustración y esfuerzo, el juego muestra cómo pequeños detalles pueden complicar incluso las metas más simples, y aun así seguimos intentando.
+Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situacional de la vida lo que para muchas personas podría ser algo frustrante. Para nosotros es un símbolo de humor, frustración y esfuerzo. El juego muestra cómo pequeños detalles pueden complicar incluso las metas más simples, y aun así seguimos intentando. Y eso no tiene nada de malo: frustrarse, ¿para qué?, si se puede pasar bien incluso en esas situaciones. No queremos confundir al usuario de manera errónea; solo buscamos generar un sentimiento ridículo, no tomarse las cosas tan personales cuando a veces simplemente buscamos pasar el tiempo y ver que no son tan trágicas como parecen. La forma en que entendemos este proyecto se basa en mirar el esfuerzo y el fracaso como algo ligero, exagerado y humorístico, donde la experiencia pertenece totalmente a quien la vive y no pretende ser más que eso un juego que hace visible lo absurdo.
 
-CRITERIOS de diseño / VALORES / PRINCIPIOS DE TU PRACTICA
 
-ridículo
-
-barato pero parecer fino
-
-frustrante
-
-como estan viendo cosas ridiculas, por favor volver a revisar la stupidhackathon.com
-
----
 
 ## Inputs y Outputs
 
 `Inputs (entradas)`
 
-La máquina recibe la presión aplicada por el usuario sobre los dos sensores de fuerza. Cada sensor entrega un valor analógico que indica intensidad de la presión, interpretándose como comandos de movimiento para la red atrapahadas. El sistema también recibe la intención de dirección del usuario, que se traduce en patrones de presión en dos diferentes direcciones.
+- Inicio del usuario: Presionar para comenzar
+- Selección: Elegir un personaje (hada) con el mando
+- Interacción física: Aplicar presión en los sensores
+- Movimiento: Activar el acelerómetro moviéndose
+- Intento: Acción de atrapar durante el tiempo límite
 
-1. Presión del usuario sobre los sensores FSR
-   - El jugador presiona los sensores de fuerza (botones) para mover al personaje.
-   - La cantidad de fuerza aplicada se traduce en velocidad o dirección.
-   - Selección inicial del personaje
-   - Antes de jugar, el usuario elige qué personaje quiere intentar atrapar.
-
-La máquina toma como input la descoordinación, el error o la insistencia del jugador, todo eso afecta en cómo la red "atrapahadas" se mueve.
 
 `Outputs (salidas)`
 
-La máquina genera movimientos invertidos o desviados de la red según los valores recibidos, entregando desplazamientos que no coinciden con la dirección esperada por el usuario. También produce evasiones automáticas del personaje cuando detecta una presión que coincide con un intento de atrape. El resultado final son respuestas erróneas, escapes programados y un control que no deja precisión del usuario.
-
-2. Movimiento del personaje en pantalla
-   - El personaje se escapa cuando el jugador está cerca.
-
-3. Movimiento de la red atrapahadas en pantalla
-   - Red que se maneja mediante los sensores de fuerza.
-
-4. Cambios en dirección, velocidad o animaciones del personaje.
+- Pantalla inicial: Nombre del juego
+- Pantalla de selección: Opciones de hadas
+- Inicio del juego: Instrucciones y activación del tiempo
+- Feedback del resultado:
+- Si atrapa: mensaje de éxito
+- Si no atrapa: mensaje de derrota
 
 ---
 
@@ -105,37 +88,46 @@ Como grupo planificamos que haremos en cada semana del trabajo mediante una cart
 ### Diagrama de Flujo
 
 ```mermaid
+---
+config:
+  theme: redux
+---
 flowchart TB
-    n1["Pantalla prendida con algún texto (presionar para empezar)"] --> n2["Título: *Atrápame si puedes* y personajes en la parte de abajo"]
-    n2 --> n3["Empieza el juego y aparecen los personajes"]
-    n3 --> n4["seleccionar el personaje (instrucción de controles o personaje en aleatorio)"]
-    n4 --> n12["en un tiempo de 1 min 30s se debe atrapar el personaje 3 veces"]
-    n12 --> n14["lo atrapaste?"]
-    n14 --> n15["si"] & n16["no"]
-    n15 --> n17["ganaste"]
-    n16 --> n18["perdiste"]
-    n17 --> n19@{ label: "<span style=\"color:\">Vuelve al inicio (*presiona para comenzar*)</span>" }
-    n18 --> n19
+    A(["Pantalla prendida con nombre del juego:
+Atrápame si puedes"]) --> B["Presionar"]
+    B --> C["La pantalla proyecta la selección de personaje (hada)"]
+    C --> D["selección (Elegir con mando X  seleccionar mando Y)"]
+    D --> E(["Inicio del juego:objetivo atrapar el hada para obtener una recompensa"])
+    E --> F["Corre el tiempo límite 30 segundos"]
+    F --> G["¿Lo atrapaste?"]
+    G --> H["Si"] & I["No"]
+    H --> J["Aparece en pantalla: Juego terminado...Lograste atrapar: 1/444"]
+    I --> K["Aparece en pantalla: Oh nooo ¡El tiempo voló más rápido que tú!"]
+    J --> M["Vuelve al inicio: atrapame si puedes"]
+    K --> M
 
-    n19@{ shape: rect}
-     n1:::Rose
-     n2:::Aqua
-     n3:::Lime
-     n4:::Sunset
-     n12:::Rose
-     n14:::Lime
-     n15:::YellowSoft
-     n16:::Rose
-     n17:::Lime
-     n18:::Lavender
-     n19:::Aqua
-    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
-    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
-    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
-    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF8D9, color:#7A6720
-    classDef Lavender stroke-width:1px, stroke-dasharray:none, stroke:#7C5CFF, fill:#EFEAFF, color:#3D2D7A
+    C@{ shape: rect}
+    D@{ shape: diam}
+
+    A:::Sunset
+    B:::Lime
+    C:::Sky
+    D:::YellowSoft
+    E:::Rose
+    F:::Aqua
+    G:::Sunset
+    H:::Lime
+    I:::Sky
+    J:::Rose
+    K:::Aqua
+    M:::Sunset
+
+classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF9D9, color:#7A6720
+classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A                           
 ```
 
 ---
