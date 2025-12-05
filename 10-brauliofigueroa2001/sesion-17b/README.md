@@ -17,4 +17,10 @@ novedades 4 pm
 - cambiamos la pieza por otro repuesto que teníamos y ahora sale más humo, creo que era porque la pieza anterior quedaba suelta y perdía contacto
 - ahora debo probar el mp3 soldado y que el módulo tire humo cuando corresponde
 - me apareció un error en los COM y no he podido hacer funcionar nada
+- se arregló el error, reinicie el pc , me apareció COM5 y pude compilar y echar andar el código
+
+NOVEDADES 5 PM
+
+- ACABO DE PROBAR EL MÓDULO DEL HUMO CON EL REPUESTO CAMBIADO, AL CÓDIGO PRINCIPAL Y SALE HUMO EN LA FASE 6!!!
+- ahora conectaré el módulo mp3 soldado
 
