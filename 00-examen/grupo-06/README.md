@@ -42,3 +42,25 @@ WEBO funciona gracias a Ava, el ave del paraíso en su interior, ella se encarga
 
 Pero, Ava se aburre simplemente realizando la cuenta regresiva del temporizador, así que cada cierto tiempo, se pondrá a bailar, haciendo piruetas de una manera tan intensa que… WEBO se puede caer de lado, esto es muy malo, porque Ava detesta estar en esa posición, por lo que hará sonar una alarma de alto volumen, para avisarle al usuario que algo malo ocurrió.
 
+#### Pero ¿por qué un ave del paraíso? 
+
+La gallina, que realmente es un temporizador de la naturaleza, ya que cuando sale el sol, está cacarea, anunciando un nuevo día.
+
+Como chiste queremos traer precisamente esas características no precisas de la gallina hacia el temporizador, algo que necesita funcionalidad sin interrupción ni fallos.
+
+El ave del paraíso aparece entonces como nuestra asistente que disfruta de bailar y que no le gusta temporizar, a diferencia de la gallina.
+
+### **Sentimiento**
+
+Entonces el sentimiento central del proyecto es **la frustración.**
+
+Esto se evidencia durante toda la interacción que tenga el usuario con WEBO, porque desde el momento que se enciende, no sólo activa un temporizador, lo hace responsable de Ava, lo que implica **estar pendiente, observando y ansioso de que se pueda caer.**
+
+En cambio en un temporizador común, el usuario activa el conteo y confía en no tener que estar pendiente del paso del tiempo ya que le avisará a uno en el momento justo.
+
+Con WEBO esa lógica no funciona porque también pone en juego la capacidad de estar atento. Hace que el usuario esté consciente del tiempo al punto de la frustración.
+
+Esto surge porque la alarma se convierte en una acusación de que el usuario falló , ya no se trata de que pasen los 5 segundos, sino que no ocurra otra caída.
+
+WEBO transforma una acción simple en una experiencia molesta, mostrando cómo la frustración puede hacer que un **objeto útil se vuelva una carga.**
+
