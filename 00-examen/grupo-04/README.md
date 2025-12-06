@@ -171,6 +171,7 @@ classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEF
 
 ---
 
+
 ## Fotografías del proyecto terminado
 
 ## Roles de equipo
