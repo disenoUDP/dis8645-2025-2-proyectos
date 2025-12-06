@@ -125,35 +125,35 @@ INSERTAR IMAGENES DE EXPRESIONES DE AVA
 ![sticker Ava](./imagenes/setStickers.png)
 
 ## **Bibliografía**
-Platis, D. (s/f). nokia-5110-lcd-library: Arduino library for driving the Nokia 5110 LCD.
-Last Minute Engineers. (2018, noviembre 11). Interface Nokia 5110 Graphic LCD Display with arduino. Last Minute Engineers. https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/
-Kadluczka, P. (s/f). ArduinoDigitalClock: Digital clock for Arduino with Nokia 5110 LCD Display.
-» M. A. S. (2016, diciembre 9). How to Use NOKIA 5110 LCD Screen With Arduino. Instructables. https://www.instructables.com/Getting-Started-With-NOKIA-5110-LCD-Screen-Using-A/ 
-Bartnik, N. (2020, abril 3). Arduino count up timer using the Nokia 5110 LCD. Tutorial45. https://tutorial45.com/arduino-count-up-timer-using-the-nokia/
-Sensor de inclinación (Tilt Switch) – Prometec. (s/f). Prometec.net. Recuperado el 6 de diciembre de 2025, de https://www.prometec.net/tilt-switch/
-Tilt sensor. (s/f). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/tutorials/generic/tilt-sensor/ 
-Llamas, L. (2015, agosto 2). Measure tilt with Arduino and SW-520d tilt sensor. Luis Llamas. https://www.luisllamas.es/en/measure-tilt-arduino-tilt-sensor-sw-520d/ 
-Ramos, S. (s/f). Tilt sensor with Arduino easy tutorial. Arduino Intro. Recuperado el 6 de diciembre de 2025, de https://arduinointro.com/articles/projects/tilt-sensor-with-arduino-easy-tutorial
-Prueba_pantalla_clases_webo - wokwi ESP32, STM32, Arduino simulator. (s/f). Wokwi.com. Recuperado el 6 de diciembre de 2025, de https://wokwi.com/projects/447534178975226881 
-Baghayi, H. (s/f). Nokia_5110: Nokia 5110 LCD driver for Arduino :D.
-Liontron Systems. (s/f). NOKIA5110_TEXT: ASCII text Library for the Nokia 5110 LCD ( PCD8544 controller) for the Arduino microcontroller eco-system. Nine ASCII text fonts of various sizes . Designed to be light weight, low memory footprint. Tested on Arduino , STM32 and ESP-X.
-Bacon, R. (s/f). Nokia-5110-TFT: Connect your Arduino to the ubiquitous Nokia 5110 TFT. 
-Adafruit-PCD8544-Nokia-5110-LCD-library: Arduino driver for PC8544, most commonly found in small Nokia 5110’s. (s/f). 
-NOKIA 5110 LCD display with arduino. (s/f). Electronoobs.com. Recuperado el 6 de diciembre de 2025, de https://electronoobs.com/eng_arduino_tut53.php 
-Santos, R. (2015, septiembre 29). Complete guide for Nokia 5110 LCD with Arduino. Random Nerd Tutorials. https://randomnerdtutorials.com/complete-guide-for-nokia-5110-lcd-with-arduino/
-Ada, Lady. (2012, diciembre 17). Nokia 5110/3310 monochrome LCD. Adafruit.com; Adafruit. https://learn.adafruit.com/nokia-5110-3310-monochrome-lcd/testing
-» M. A. S. (2015, mayo 17). Nokia 5110 graphics tutorial. Instructables. https://www.instructables.com/Nokia-5110-graphics-tutorial/ 
-Graphic LCD hookup guide. (s/f). Sparkfun.com. Recuperado el 6 de diciembre de 2025, de https://learn.sparkfun.com/tutorials/graphic-lcd-hookup-guide 
-Nawazi, F. (2023, julio 4). Interface Nokia 5110 Graphic LCD display with Arduino. Circuits DIY. https://www.circuits-diy.com/interface-nokia-5110-graphic-lcd-display-with-arduino/ 
-Arduino Nokia 5110 text display once. (2014, octubre 7). Arduino Forum. https://forum.arduino.cc/t/arduino-nokia-5110-text-display-once/261824 
-AVR freaks. (s/f). Avrfreaks.net. Recuperado el 6 de diciembre de 2025, de https://www.avrfreaks.net/s/topic/a5C3l000000Uc4iEAC/t160152
-Nokia 5110 LCD Display not displaying anything. (2022, diciembre 15). Arduino Forum. https://forum.arduino.cc/t/nokia-5110-lcd-display-not-displaying-anything/1065701/3
-Build your countdown timer using Arduino. (s/f). Flyrobo.In. Recuperado el 6 de diciembre de 2025, de https://www.flyrobo.in/blog/countdown-timer-arduino?srsltid=AfmBOoqsjQ5Jys_Vykrd6liBXKexQhSGXNF0SoEkk03kzSeWN1_7u8m5 
- (S/f). Stackexchange.com. Recuperado el 6 de diciembre de 2025, de https://arduino.stackexchange.com/questions/66626/arduino-timer-with-increase-time-button 
-Cortés, A. (2021, febrero 18). Proyecto 21 - Sensor de inclinación SW-520D. Acortes Software; Andrés Cortés. https://acortes.co/proyecto-21-sensor-de-inclinacion-sw-520d/ 
-Science Buddies [@Science.Buddies]. (s/f). Control a DC motor with arduino (lesson #16) [[Object Object]]. Youtube. Recuperado el 6 de diciembre de 2025, de https://www.youtube.com/watch?v=XrJ_zLWFGFw 
-No title. (s/f). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/tutorials/generic/multiple-blinks/ 
-Arkhipenko, A. (s/f). examples/Scheduler_example01/Scheduler_example01.ino at master · arkhipenko/TaskScheduler. 
-(S/f). Github.com. Recuperado el 6 de diciembre de 2025, de https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino 
+- Platis, D. (s/f). nokia-5110-lcd-library: Arduino library for driving the Nokia 5110 LCD.
+- Last Minute Engineers. (2018, noviembre 11). Interface Nokia 5110 Graphic LCD Display with arduino. Last Minute Engineers. https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/
+- Kadluczka, P. (s/f). ArduinoDigitalClock: Digital clock for Arduino with Nokia 5110 LCD Display.
+- » M. A. S. (2016, diciembre 9). How to Use NOKIA 5110 LCD Screen With Arduino. Instructables. https://www.instructables.com/Getting-Started-With-NOKIA-5110-LCD-Screen-Using-A/ 
+- Bartnik, N. (2020, abril 3). Arduino count up timer using the Nokia 5110 LCD. Tutorial45. https://tutorial45.com/arduino-count-up-timer-using-the-nokia/
+- Sensor de inclinación (Tilt Switch) – Prometec. (s/f). Prometec.net. Recuperado el 6 de diciembre de 2025, de https://www.prometec.net/tilt-switch/
+- Tilt sensor. (s/f). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/tutorials/generic/tilt-sensor/ 
+- Llamas, L. (2015, agosto 2). Measure tilt with Arduino and SW-520d tilt sensor. Luis Llamas. https://www.luisllamas.es/en/measure-tilt-arduino-tilt-sensor-sw-520d/ 
+- Ramos, S. (s/f). Tilt sensor with Arduino easy tutorial. Arduino Intro. Recuperado el 6 de diciembre de 2025, de https://arduinointro.com/articles/projects/tilt-sensor-with-arduino-easy-tutorial
+- Prueba_pantalla_clases_webo - wokwi ESP32, STM32, Arduino simulator. (s/f). Wokwi.com. Recuperado el 6 de diciembre de 2025, de https://wokwi.com/projects/447534178975226881 
+- Baghayi, H. (s/f). Nokia_5110: Nokia 5110 LCD driver for Arduino :D.
+- Liontron Systems. (s/f). NOKIA5110_TEXT: ASCII text Library for the Nokia 5110 LCD ( PCD8544 controller) for the Arduino microcontroller eco-system. Nine ASCII text fonts of various sizes . Designed to be light weight, low memory footprint. Tested on Arduino , STM32 and ESP-X.
+- Bacon, R. (s/f). Nokia-5110-TFT: Connect your Arduino to the ubiquitous Nokia 5110 TFT. 
+- Adafruit-PCD8544-Nokia-5110-LCD-library: Arduino driver for PC8544, most commonly found in small Nokia 5110’s. (s/f). 
+- NOKIA 5110 LCD display with arduino. (s/f). Electronoobs.com. Recuperado el 6 de diciembre de 2025, de https://electronoobs.com/eng_arduino_tut53.php 
+- Santos, R. (2015, septiembre 29). Complete guide for Nokia 5110 LCD with Arduino. Random Nerd Tutorials. https://randomnerdtutorials.com/complete-guide-for-nokia-5110-lcd-with-arduino/
+- Ada, Lady. (2012, diciembre 17). Nokia 5110/3310 monochrome LCD. Adafruit.com; Adafruit. https://learn.adafruit.com/nokia-5110-3310-monochrome-lcd/testing
+- » M. A. S. (2015, mayo 17). Nokia 5110 graphics tutorial. Instructables. https://www.instructables.com/Nokia-5110-graphics-tutorial/ 
+- Graphic LCD hookup guide. (s/f). Sparkfun.com. Recuperado el 6 de diciembre de 2025, de https://learn.sparkfun.com/tutorials/graphic-lcd-hookup-guide 
+- Nawazi, F. (2023, julio 4). Interface Nokia 5110 Graphic LCD display with Arduino. Circuits DIY. https://www.circuits-diy.com/interface-nokia-5110-graphic-lcd-display-with-arduino/ 
+- Arduino Nokia 5110 text display once. (2014, octubre 7). Arduino Forum. https://forum.arduino.cc/t/arduino-nokia-5110-text-display-once/261824 
+- AVR freaks. (s/f). Avrfreaks.net. Recuperado el 6 de diciembre de 2025, de https://www.avrfreaks.net/s/topic/a5C3l000000Uc4iEAC/t160152
+- Nokia 5110 LCD Display not displaying anything. (2022, diciembre 15). Arduino Forum. https://forum.arduino.cc/t/nokia-5110-lcd-display-not-displaying-anything/1065701/3
+- Build your countdown timer using Arduino. (s/f). Flyrobo.In. Recuperado el 6 de diciembre de 2025, de https://www.flyrobo.in/blog/countdown-timer-arduino?srsltid=AfmBOoqsjQ5Jys_Vykrd6liBXKexQhSGXNF0SoEkk03kzSeWN1_7u8m5 
+- (S/f). Stackexchange.com. Recuperado el 6 de diciembre de 2025, de https://arduino.stackexchange.com/questions/66626/arduino-timer-with-increase-time-button 
+- Cortés, A. (2021, febrero 18). Proyecto 21 - Sensor de inclinación SW-520D. Acortes Software; Andrés Cortés. https://acortes.co/proyecto-21-sensor-de-inclinacion-sw-520d/ 
+- Science Buddies [@Science.Buddies]. (s/f). Control a DC motor with arduino (lesson #16) [[Object Object]]. Youtube. Recuperado el 6 de diciembre de 2025, de https://www.youtube.com/watch?v=XrJ_zLWFGFw 
+- No title. (s/f). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/tutorials/generic/multiple-blinks/ 
+- Arkhipenko, A. (s/f). examples/Scheduler_example01/Scheduler_example01.ino at master · arkhipenko/TaskScheduler. 
+- (S/f). Github.com. Recuperado el 6 de diciembre de 2025, de https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino 
 Simple countdown timer. (2020, junio 28). Arduino Forum. https://forum.arduino.cc/t/simple-countdown-timer/662809/4 
 No title. (s/f-b). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/built-in-examples/digital/Button/ 
