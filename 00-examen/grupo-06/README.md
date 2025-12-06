@@ -103,7 +103,7 @@ Gasto real del equipo – 6.400
 
 INSERTAR IMAGENES DE BOCETOS Y GIF DE AVE DEL PARAISO BAILANDO
 
-Cada cuadro de expresiones de Ava dentro del monitor está ilustrado en la página web http://piskelapp.com, y convertido a bitmap con https://javl.github.io/image2cpp/ para poder utilizarlo en la pantalla del arduino.
+Cada cuadro de expresiones de Ava dentro del monitor está ilustrado en la página web [piskelapp](http://piskelapp.com), y convertido a bitmap con [image2cpp](https://javl.github.io/image2cpp/) para poder utilizarlo en la pantalla del arduino.
 
 Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, hablar, saltar, y finalmente girar. Todo esto pasa según como esté posicionado WEBO.
 
