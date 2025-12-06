@@ -61,15 +61,15 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 
 ### **Instrucciones de uso**
 
-Usuario ve a WEBO.
-Necesita temporizar algo.
-Presiona el botón .
-Despierta a Ava .
-Vuelve a presionar el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
-Si Ava empieza a girar **evita** que se caiga o ladee. 
-Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó.
-Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
-Repetir el proceso cada vez que quieras temporizar.
+- Usuario ve a WEBO.
+- Necesita temporizar algo.
+- Presiona el botón .
+- Despierta a Ava .
+- Vuelve a presionar el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
+- Si Ava empieza a girar **evita** que se caiga o ladee. 
+- Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó.
+- Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
+- Repetir el proceso cada vez que quieras temporizar.
 
 ### **Bill of Materials**
 
