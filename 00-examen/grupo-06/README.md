@@ -155,5 +155,5 @@ INSERTAR IMAGENES DE EXPRESIONES DE AVA
 - No title. (s/f). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/tutorials/generic/multiple-blinks/ 
 - Arkhipenko, A. (s/f). examples/Scheduler_example01/Scheduler_example01.ino at master · arkhipenko/TaskScheduler. 
 - (S/f). Github.com. Recuperado el 6 de diciembre de 2025, de https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino 
-Simple countdown timer. (2020, junio 28). Arduino Forum. https://forum.arduino.cc/t/simple-countdown-timer/662809/4 
-No title. (s/f-b). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/built-in-examples/digital/Button/ 
+- Simple countdown timer. (2020, junio 28). Arduino Forum. https://forum.arduino.cc/t/simple-countdown-timer/662809/4 
+- No title. (s/f-b). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/built-in-examples/digital/Button/ 
