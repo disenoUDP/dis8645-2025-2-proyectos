@@ -262,31 +262,15 @@ Algunas de estas fueron:
 
 ### Proceso: dificultades, conexiones, desafíos
 
-<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300">
-
-<img src="./imagenes/IMG1.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMG2.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMG3.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMG4.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMG5.jpg" alt="conexion" width="300">
-
-<img src="./imagenes/IMG6.jpg" alt="conexion" width="300">
+|||
+|--|--|
+|<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300"> |
+|<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300"> | <img src="./imagenes/IMG1.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IMG2.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG3.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IMG4.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG5.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IMG6.jpg" alt="conexion" width="300"> | |
 
 ## Etapas del código
 
