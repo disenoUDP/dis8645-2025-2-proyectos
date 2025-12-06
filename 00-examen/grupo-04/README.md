@@ -79,10 +79,12 @@ Como grupo planificamos que haremos en cada semana del trabajo mediante una cart
 
 ### Carta Gantt
 
+<img src="./imagenes/cartaGantt.png" alt="carta gantt" width="900">
 <!-- ![carta gantt](./imagenes/cartaGantt.png)-->
 
 ### Presupuesto
 
+<img src="./imagenes/presupuesto.png" alt="presupuesto" width="900">
 <!-- ![Presupuesto](./imagenes/presupuesto.png)-->
 
 ### Diagrama de Flujo
@@ -169,7 +171,19 @@ classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEF
 |![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
 |![red 1](./imagenes/redAtrapaHadas.png)|![red 2](./imagenes/redAtrapaHadas2.png)|
 
----
+## Procesos y bocetos
+
+- Máquina sentimental "Atrápame si puedes"
+
+`PROPUESTA VISUAL`
+
+- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
+- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
+- Tipografía: pixel-retro
+- Máquina física: control retro hecho con impresión 3D
+- Cursor: red atrapa hadas hecho con pixel art
+- Hadas: inspiradas en los profes y ayudantes, hechos con pixel
+
 
 
 ## Fotografías del proyecto terminado
