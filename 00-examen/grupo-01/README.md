@@ -159,13 +159,13 @@ Cuando se aprieta el botón "velocidad música", este comienza a reproducirse m�
 
 ### Bocetos de planificación
 
-![boceto](./imagenes/Boceto01.jpg)
+<img src="./imagenes/Boceto01.jpg" alt="boceto" width="300">
 
-![boceto](./imagenes/Boceto02.jpg)
+<img src="./imagenes/Boceto02.jpg" alt="boceto" width="300">
 
-![boceto](./imagenes/Boceto03.jpg)
+<img src="./imagenes/Boceto03.jpg" alt="boceto" width="300">
 
-![boceto](./imagenes/Boceto04.jpg)
+<img src="./imagenes/Boceto04.jpg" alt="boceto" width="300">
 
 ### Pseudocódigo Principal (Arduino 1)
 
@@ -265,31 +265,31 @@ Algunas de estas fueron:
 
 ### Proceso: dificultades, conexiones, desafíos
 
-![conexion](./imagenes/IMGProceso01.jpg)
+<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso02.jpg)
+<img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso03.jpg)
+<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso04.jpg)
+<img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso05.jpg)
+<img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso06.jpg)
+<img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300">
 
-![proceso](./imagenes/IMGProceso09.gif)
+<img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300">
 
-![IMG1](./imagenes/IMG1.jpg)
+<img src="./imagenes/IMG1.jpg" alt="conexion" width="300">
 
-![IMG2](./imagenes/IMG2.jpg)
+<img src="./imagenes/IMG2.jpg" alt="conexion" width="300">
 
-![IMG3](./imagenes/IMG3.jpg)
+<img src="./imagenes/IMG3.jpg" alt="conexion" width="300">
 
-![IMG4](./imagenes/IMG4.jpg)
+<img src="./imagenes/IMG4.jpg" alt="conexion" width="300">
 
-![IMG5](./imagenes/IMG5.jpg)
+<img src="./imagenes/IMG5.jpg" alt="conexion" width="300">
 
-![IMG6](./imagenes/poryectoFuncionando.gif)
+<img src="./imagenes/IMG6.jpg" alt="conexion" width="300">
 
 ## Etapas del código
 
