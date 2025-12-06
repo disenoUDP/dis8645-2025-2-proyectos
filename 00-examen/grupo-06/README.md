@@ -75,7 +75,6 @@ Repetir el proceso cada vez que quieras temporizar.
 
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
-
 | Módulo sensor de inclinación tilt | 1        | $1496  | <https://altronics.cl/switch-inclinacion-sw520>                           |
 | Módulo reproductor MP3            | 1        | $2990  | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
 | Pantalla display LCD Nokia 5110   | 1        | $5000  | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
