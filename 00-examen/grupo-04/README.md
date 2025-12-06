@@ -68,7 +68,7 @@ Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situ
 |Mini Protoboard|2|85 puntos|Conexión VCC GND directa al arduino|$1.990|
 |Pantalla|1|14 pulgadas|Conexión a computador|$139.990|
 |Carcasa|3|Filamento:PLA|Impresión 3D|Impresión en el Lab|
-|Plinto|1|Filamento:PLA|Impresión 3D|-|
+|Plinto|1|Filamento:PLA|Impresión 3D|Impresión en el Lab|
 |Cables|20 aprox.|macho-macho|-|$1.000|
 
 ---
