@@ -772,7 +772,7 @@ Links:
 
 Carta Gant: 
 
-<img src="./imagenes/cartaGant.png" alt="cartaGant" width="300">
+<img src="./imagenes/cartaGant.png" alt="cartaGant" width="600">
 
 ## Registro proyecto 03
 
