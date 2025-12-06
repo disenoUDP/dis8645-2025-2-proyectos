@@ -1,1 +1,0 @@
-// aqui estaran las instrucciones de ensamblado y de conexion de cables
