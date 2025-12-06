@@ -90,7 +90,7 @@ flowchart TD
 
     C --> D{¿Distancia menor al umbral?}
 
-    D -- Sí --> E[Activar Gato 1:<br>vibración + LED parpadeo]
+    D -- Sí --> E[Activar Gato 1:<br>vibración]
     E --> F[Esperar breve delay emocional]
     F --> G[Activar Gato 2]
     G --> H[Activar Gato 3]
@@ -139,8 +139,6 @@ flowchart TD
 | Motor vibrador  joystick | 4 | $0 | $0 |
 | Sensor ultrasónico HC-SR04 | 1 | $0 | $0 |
 | Protoboard | 1 | $0 | $0 |
-| Resistencias 220Ω | 10 | $0 | $0 |
-| LEDs de color | 10 | $0 | $0 |
 | Cables Dupont | 1 pack | $0 | $0 |
 | Cartón pluma / MDF | 1 | $3.000 | $3.000 |
 | Módulo MOSFET 15A 400W PWM | 5 | $1.200 | $4.800 |
@@ -162,10 +160,7 @@ https://afel.cl/products/pack-20-cables-de-conexion-hembra-hembra?_pos=2&_sid=79
 ### Sensores ultrasónicos HC-SR04  
 https://afel.cl/products/sensor-de-ultrasonico-hc-sr04 
 
-### LED RGB 5mm  
-https://afel.cl/products/diodo-led-rgb-5mm 
-
-> Los motores N20 ya estaban en posesión del grupo, por lo que no los compramos.
+> Los motores ya estaban en posesión del grupo, por lo que no los compramos.
 
 
 ──── ୨୧ ────
@@ -173,8 +168,6 @@ https://afel.cl/products/diodo-led-rgb-5mm
 ## Gatitos Ansiedad — Comportamiento ≽^- ˕ -^≼
 **Cuando el “metro” se acerca**, el primer gatito es el que detecta el estímulo:
 - Comienza a vibrar de forma notoria.
-- Su LED empieza a parpadear, mostrando el aumento de tensión.
-
 
 **Cuando el primer gatito se activa**, los demás comienzan a contagiarse emocionalmente:
 - El segundo gatito vibra poco después.
@@ -183,13 +176,10 @@ https://afel.cl/products/diodo-led-rgb-5mm
 
 
 **Si el metro está muy cerca o la presencia es intensa**, la escena completa entra en un estado de ansiedad elevada:
-- Los cuatro gatitos vibran con mayor intensidad.
-- Los LEDs mantienen un parpadeo irregular, más rápido.
-
+- Los cuatro gatitos vibran con mayor intensidad. 
 
 **Cuando el estímulo se aleja**, los gatitos entran en un periodo de “desactivación emocional”:
 - La vibración disminuye gradualmente.
-- El LED tarda unos segundos en volver a un parpadeo lento o apagarse.
 - No vuelven al reposo inmediatamente, dejando un pequeño “residuo emocional”.
 ──── ୨୧ ────
 
@@ -269,23 +259,6 @@ Esto permite activar cada motor de forma independiente y en secuencia (efecto �
 
 ---
 
-### D) Conexión de los LEDs
-
-- Ánodo (pierna larga) → **Pin digital del Arduino**  
-- Cátodo (pierna corta) → **Resistencia 220Ω** → GND  
-
-[Foto conexión de los LED]
-
-| LED | Pin Arduino |
-|------|-------------|
-| **LED Gato 1** | D2 |
-| **LED Gato 2** | D4 |
-| **LED Gato 3** | D7 |
-| **LED Gato 4** | D12 |
-| **LED Gato 5** | D13 |
-
----
-
 ### E) Resumen Visual
 
 
@@ -296,7 +269,6 @@ Esto permite activar cada motor de forma independiente y en secuencia (efecto �
 - El **Arduino interpreta esa información** y activa el primer gatito.
 - Cada MOSFET controla de forma independiente la vibración de cada motor.
 - La secuencia de activación crea el **efecto emocional de contagio**.
-- Los LEDs refuerzan visualmente el nivel de ansiedad en cada gato.
 
 ### G) Seguridad Mínima 
 
