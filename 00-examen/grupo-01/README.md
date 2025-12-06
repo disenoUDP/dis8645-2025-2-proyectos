@@ -788,19 +788,9 @@ Links:
 
 Carta Gant: 
 
-![cartaGant](./imagenes/cartaGant.png)
+<img src="./imagenes/cartaGant.png" alt="cartaGant" width="300">
 
 ## Registro proyecto 03
-
-### Bocetos de planificación
-
-![boceto](./imagenes/Boceto01.jpg)
-
-![boceto](./imagenes/Boceto02.jpg)
-
-![boceto](./imagenes/Boceto03.jpg)
-
-![boceto](./imagenes/Boceto04.jpg)
 
 ### Fotografías y videos del proyecto funcionando
 
