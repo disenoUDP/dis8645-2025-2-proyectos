@@ -35,14 +35,11 @@ Al presionar el **botón de inicio**, el cuadrado perfecto de la matriz se desar
 
 Los **cuatro botones adicionales** no tiene etiquetas ni indicaciones: el jugador deberá descubrir su función al probarlos. Cada uno activa una reacción inesperada distinta:
 
-- **Botón glotón**.
-- **Botón cambio de color**.
-- **Botón inútil**.
-- **Botón velocidad música**
-Además, el **botón integrado en el joystick activa un modo disco como sorpresa extra.**
-Ninguno de estos botones restaura la figura; todos están diseñados para intensificar la sensación de pérdida de control.
-Si el jugador deja de interactuar durante unos segundos, la matriz regresa por sí sola a su forma original. Así, el dispositivo refuerza su idea central: intervenir produce caos, **soltar permite que el orden vuelva por sí mismo.**
-
+- **Botón glotón** se come (elimina) pixeles del cuadrado.
+- **Botón color** cambia el color del pixel escapado y lo mueve a un lugar random de la pantalla.
+- **Botón caos** desarma todos los pixeles del cuadrado.
+- **Botón inútil**
+  
 Contexto de uso:
 
 0aTAo es un juego donde las personas pueden acercarse, tocar botones y mover un joystick para intentar arreglar una figura de luces que se va desordenando. Está pensado para espacios de exhibición o juegos experimentales en los que el usuario descubre que mientras más intenta controlar la figura más caos genera y que solo al dejar de intervenir, el sistema vuelve solo a la perfección inicial. Busca generar una experiencia lúdica y reflexiva sobre el control, la frustración y la idea de soltar.
@@ -100,8 +97,8 @@ flowchart TB
 - Palanca Joystick.
 - Botón Joystick - modo disco.
 - Botón glotón. 
-- Botón velocidad música.
 - Botón cambio color pixel.
+- Botón caos.
 - Botón inútil.
 
 #### Output
@@ -134,7 +131,7 @@ flowchart TB
 - **Botón del joystick - modo disco:** Desarma todo; se reparten los píxeles por toda la pantalla mientras parpadean en colores. Para desactivar esta función hay que volver a apretar el botón. 
 - **Botón 1 - Inútil:** No hace nada (distracción, no está conectado).
 - **Botón 2 - Cambio color:** Se cambia el color del LED que no está en su lugar hasta 5 veces. 
-- **Botón 3 - Velocidad música:** Cada clic aumenta la velocidad del audio (hasta 3 veces).
+- **Botón 3 - Caos:** Desarma todos los pixeles del cuadrado.
 - **Botón 4 - Glotón:** Se come 9 píxeles aleatoriamente copn cada click; cuando se presiona una décima vez, vuelve al cuadrado imperfecto. 
 
 #### Reacciones pantalla LED 
