@@ -215,3 +215,6 @@ void SensorSD::funcionaSDAlarmaDebil() {
 }
 
 ```
+Tambien escuche por ahi que Misaa recomendó a otro grupo investigar sobre el busy pin del dfplayer para que no se reproduzca una y otra vez el mismo audio, donde encontré el siguiente link que tratare de implementar después:
+
+https://arduino.stackexchange.com/questions/91599/i-need-help-on-how-to-use-busy-pin-in-df-player-to-arduino
