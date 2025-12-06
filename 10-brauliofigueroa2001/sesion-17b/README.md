@@ -29,3 +29,13 @@ novedades 6 pm
 
 - conectamos el módulo mp3 soldado respectivamente y el encoder dejó de sumar vueltas, se paralizaron todos los sensores y actuadores
 
+novedades 18:44 pm
+
+- LO ÚNICO QUE SE CAMBIÓ FUE LA CONEXIÓN DEL PIN RX CONECTADO A TX Y TX CONECTADO A RX, ESTO HIZO QUE FUNCIONARAN LOS AUDIOS COMPLETOS
+- EN RANGO 5 SUENA EL SONIDO QUE DEBERÍA ESTAR EN RANGO 6, APARTE DE ESO NINGÚN OTRO ERROR
+- probamos 2 rondas, todos los audios sonaron por completo, necesitamos tener registro
+- hay registro
+- acabo de dar vuelta los audios, en donde sonaba el 5 puse el 6 y viceversa, ahora suenan todos en el orden correcto
+
+- PINOUT ENCODER: CABLE CAFE GND, CABLE ROJO VCC, CABLE GRIS SW pin 11, CABLE AZUL DT PIN 10, CABLE MORADO PIN 9 CLOCK
+
