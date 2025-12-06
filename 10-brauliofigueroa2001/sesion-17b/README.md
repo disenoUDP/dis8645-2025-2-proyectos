@@ -39,3 +39,5 @@ novedades 18:44 pm
 
 - PINOUT ENCODER: CABLE CAFE GND, CABLE ROJO VCC, CABLE GRIS SW pin 11, CABLE AZUL DT PIN 10, CABLE MORADO PIN 9 CLOCK
 
+- en la linea if step % 30 == 0) si cambio este 30 por un número más grande, haremos que necesite más steps para completar una vuelta, esto sirve para que al momento de girar la manivela no saltemos tan rápido de estados, ya que, la manivela es más fácil de girar y manipular que un encoder. Sería un problema que el usuario podría girar muy rápido y pasar de fases de forma que parezcan casi imperceptibles.
+
