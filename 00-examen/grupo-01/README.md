@@ -277,10 +277,6 @@ Algunas de estas fueron:
 
 ![proceso](./imagenes/IMGProceso06.jpg)
 
-![proceso](./imagenes/IIMGProceso08(1).jpeg)
-
-![proceso](./imagenes/IMGProceso08.jpeg)
-
 ![proceso](./imagenes/IMGProceso09.gif)
 
 ![IMG1](./imagenes/IMG1.jpg)
