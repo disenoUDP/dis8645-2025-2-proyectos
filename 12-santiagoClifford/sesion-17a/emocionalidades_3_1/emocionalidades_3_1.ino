@@ -77,8 +77,7 @@ void loop() {
     if (hedgehog.carinoPotencial) {
       estadoActual = 1;
     }
-  }
-  if (estadoActual == 1) {
+  } else if (estadoActual == 1) {
     Serial.println("ESTADO: 1_PEDIR_AMOR");
 
 
@@ -92,6 +91,7 @@ void loop() {
 
     // si sensor de presion detecta presion, abrazar = true
     depresion.funcionaDePresion();
+    Serial.println(depresion.valorDePresion);
     if (depresion.watitaRascada == true) {
       motoMoto.abrazar();
       estadoActual = 0;
