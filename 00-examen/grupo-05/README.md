@@ -358,10 +358,15 @@ if (vueltas > 15){
 ![componentes en paralelo](./imagenes/gif-avances.gif)
 
 ![led 1](./imagenes/led_roja.gif)
+
 ![led 2](./imagenes/led_azul.gif)
+
 ![led 3](./imagenes/led_verde.gif)
+
 ![led 4](./imagenes/led_amarilla.gif)
+
 ![led 5](./imagenes/led_blanca.gif)
+
 ### Forma y carcasa
 ![render preliminar](./imagenes/render_carcasa.jpeg)
 
