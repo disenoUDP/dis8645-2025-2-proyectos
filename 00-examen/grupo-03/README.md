@@ -156,10 +156,11 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 --- 
 
+### Prototipo Final
+
 
 
 ### Bibliografía
 
-----
-
-### Bibliografía 
+- Psychological Science. (s.f.). Harlow’s classic studies revealed the importance of maternal contact. https://www.psychologicalscience.org/publications/observer/obsonline/harlows-classic-studies-revealed-the-importance-of-maternal-contact.html
+---
