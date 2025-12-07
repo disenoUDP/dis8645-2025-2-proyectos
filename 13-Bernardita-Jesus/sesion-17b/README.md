@@ -4,7 +4,7 @@
 
 ### Desarrollo de la carcasa
 
-#### Referentes y formas
+#### Referentes y definición formal
 
 Primero levantamos referentes; teníamos claro que queríamos inspirarnos en la estética del Tamagotchi y más Game & Watch y Game Boy, mezclado con la lógica de un temporizador.
 
@@ -14,7 +14,7 @@ Pero necesitábamos que fuera un objeto que pudiera caerse, y de ahí nace esta 
 
 insertar foto de modelaod de huevo*
 
-#### funciones 
+#### Mecánica y estructura general
 
 Luego desarrollamos el sistema mecánico para las primeras pruebas: un soporte para el motor y un módulo de contrapeso que extiende la masa hacia un costado, generando el desequilibrio característico.
 
@@ -25,6 +25,8 @@ Después subdividimos el cuerpo en tres secciones principales, las cuales son en
 Continuamos con el diseño de los calces internos para la pantalla sin afectar la forma continua.
 
 Adjuntar foto de las tres secciones al lado de la pantalla.
+
+#### Integración electrónica y ajustes volumétricos
 
 Optamos por integrar una power bank dentro de la carcasa para evitar cables externos, lo que nos obligó a reescalar el modelo varias veces para que todo cupiera bien.
 
@@ -38,8 +40,10 @@ Finalmente incorporamos el speaker en la parte superior y el botón en la parte 
 
 insertar foto del modelado final*
 
+#### Capa externa de alginato
+
 Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. Para esto realizamos un modelado exterior e interior, y a presión se fue incorporando el alginato.
 
 insertar foto de los moldes con el algintano*
 
-agregar a referentes: game boy, mgame and watch, tamagochi, video de modelaod huevo, 
+agregar a referentes: game boy, mgame and watch, tamagochi, video de modelado huevo, 
