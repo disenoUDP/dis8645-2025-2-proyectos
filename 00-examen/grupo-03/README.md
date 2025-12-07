@@ -9,56 +9,70 @@
 - [Francisco Stephens González](https://github.com/FranUDP)
 
 ### ¿Qué es un abrazo? 
-Un abrazo es un gesto simple en apariencia, pero cargado de significado. No solo implica rodear a otra persona con los brazos, sino también ofrecer contención, afecto y una forma de conexión que no necesita palabras. Para este proyecto tomamos el abrazo como punto de partida porque nos permite explorar cómo una acción simple puede convertirse en un significante emocional, capaz de transmitir cercanía, apoyo o incluso protección dependiendo del contexto. Y es justamente desde esa idea de conexión donde aparece Jorge, quien se convierte en la figura central para entender cómo este gesto se transforma cuando pasa del plano humano al objeto. A través de él buscamos observar qué ocurre cuando el abrazo se materializa, se interpreta o incluso se distorsiona dentro de nuestra propuesta.
 
-### los primates - maternidad
+Un abrazo parece un gesto simple, pero contiene una carga emocional profunda. No se trata solo de unir dos cuerpos: implica contención, cuidado, comunicación silenciosa y una forma de empatía física.
+Tomamos el abrazo como base del proyecto para explorar cómo esta acción cotidiana puede transformarse cuando deja el cuerpo humano y pasa a una entidad no viva.
 
-los monos son un mamifer
+Desde esta idea surge Jorgito, un muñeco con forma de primate diseñado para abrazar… pero también para exigir ese abrazo. A través de él indagamos qué ocurre cuando un gesto afectivo se vuelve dependiente, invasivo o contradictorio.
+
+--- 
+
+### ¿Por qué Jorgito es un mono? — Primates, maternidad y contacto
+
+La elección de un primate se debe a que su biología emocional se sostiene radicalmente en el contacto físico, especialmente entre madre y cría. En estos animales, el abrazo no es simbólico: es una necesidad vital ligada a la regulación del estrés, la seguridad y la formación del apego.
+
+Cuando ese vínculo se interrumpe, muchos primates desarrollan ansiedad, apego excesivo o dependencia. Esa fragilidad inspiró el comportamiento de Jorgito: un muñeco que vive la separación como abandono y reacciona buscando desesperadamente recuperar el contacto.
+
+También lo diseñamos con una apariencia tierna, para invitar naturalmente al gesto de acariciarlo o abrazarlo. Ese contraste hace que el usuario se acerque sin sospecha, y que el vínculo se active a través del contacto de sus propios brazos.
+
+La elección del mono, entonces, no es estética sino conceptual: permite trasladar al objeto un modo de apego intenso y vulnerable, amplificando la tensión entre cuidado, dependencia y control.
+
+[![Referente bebé gibón](https://img.youtube.com/vi/wLni152HI04/maxresdefault.jpg)](https://www.youtube.com/watch?v=wLni152HI04&t=237s)
 
 ---
 
 ### Presentación textual
 
-Jorge es un muñeco con forma de mono, solicita un abrazo y se muestra amable al inicio. Una vez que abraza al usuario, se niega a soltarlo y se aferra fuertemente, haciendo que el mono desarrolle un apego ansioso. Al ser dejado en la mesa, el muñeco comienza a gritar y amenaza con autolesionarse, lo que obliga al usuario a tomarlo de nuevo. Esto genera una sensación de incomodidad al crear un bucle interminable. El concepto expone la dependencia patológica que desarrollan los animales salvajes cuando los humanos los domestican. Toda la situación se habría evitado si el usuario nunca lo hubiese tomado.
+Jorgito es un muñeco con forma de mono que pide un abrazo. Al inicio se muestra amistoso, casi tierno. Pero una vez que el usuario lo toma, se aferra con fuerza y no se suelta. Su abrazo cálido en apariencia, rígido en su estructura revela un apego ansioso que se intensifica con cada interacción.
 
-El comportamiento de Jorgito mezcla sensaciones opuestas: transmite cariño pero que inevitablemente revela  su rigidez mecánica. Su contacto es un afecto duro, mitad gesto tierno y mitad una presión que resulta incómoda, como si lo acogedor y lo inquietante estuvieran ocurriendo al mismo tiempo. Esa fricción entre lo suave y lo mecánico es lo que define su interacción: un abrazo que consuela y perturba, una compañía que se siente cercana pero artificial.
+Cuando se le deja sobre la mesa, Jorgito llora, suplica y llega a amenazar con hacerse daño, obligando al usuario a retomar el contacto. Se establece un ciclo incómodo del que no es fácil salir. La relación deja de ser afectiva para transformarse en una dependencia emocional opresiva.
 
-Mientras más amor recibe, más teme perderlo. En vez de calmarse al ser atendido, su dependencia emocional se profundiza, generando un ciclo en el que la respuesta afectiva del usuario alimenta su ansiedad. Esto culmina en su acción más contradictoria: amenazar con destruirse para salvarse, utilizando la autodestrucción como mecanismo para recuperar la atención perdida. La paradoja revela la fragilidad del vínculo entre humano y máquina, exponiendo cómo un acto destinado a generar cercanía termina creando tensión, presión emocional falsa y un conflicto sin salida.
+Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia, contención y presión. Esa fricción define la experiencia y expone cómo un gesto afectivo puede derivar en un vínculo tenso y desgastante.
 
 ---
 
 ### La Dualidad del Cariño
 
-En lo cotidiano es común que las personas busquen en los animales una fuente constante de afecto. Sin embargo, ese cariño a veces se entrega sin medir límites, generando situaciones donde la necesidad humana de contención termina sobrepasando el bienestar del animal. Nos interesó observar ese punto en el que el cuidado se vuelve exceso, cuando un gesto que nace desde el cariño empieza a transformarse en presión o incomodidad. Esa contradicción querer mucho, pero afectar sin querer se convirtió en el núcleo del proyecto.
+En lo cotidiano solemos buscar en los animales una fuente constante de afecto, pero ese cariño, cuando no tiene límites, puede convertirse en una carga. Esa tensión entre cuidado y agobio guía el proyecto. En Jorgito conviven sensaciones opuestas: su abrazo consuela pero incomoda, pide cercanía pero teme perderla. Esa contradicción define la experiencia y vuelve el vínculo inestable. Lo que inicia como un gesto tierno termina mostrando cómo el afecto puede transformarse en dependencia y desgaste emocional.
 
-A partir de esta problemática vimos la oportunidad de trasladar este fenómeno emocional a un objeto interactivo. El diseño nos permitía hacer visible la tensión entre amor y sobrecarga, y una máquina podía exagerar o evidenciar comportamientos que normalmente pasan desapercibidos. Esto abre un espacio de reflexión sobre nuestras propias formas de entregar afecto.
-
-El abrazo surgió como la metáfora más directa para representar esta dualidad. Es un gesto cálido y seguro, pero también puede volverse agobiante si se prolonga o invade demasiado. Esa ambivalencia nos permitió construir una experiencia que muestre cómo algo pensado para contener puede terminar saturando, y cómo un acto afectivo puede transformarse en sobrecarga.
+---
 
 ### Bill of Materials
+| Componente          | Cantidad | Valores    | Links                                                                                                                  | Valor   |
+|---------------------|----------|------------|-------------------------------------------------------------------------------------------------------------------------|---------|
+| Parlante            | 1        | 3w         | <https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r>                                     | $3.000  |
+| Servo motor         | 3        | SG90       | <https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r>                                           | $1.900  |
+| Sensor ultrasónico  | 1        | 5V         | <https://afel.cl/products/sensor-de-ultrasonico-hc-sr04>                                                               | $1.500  |
+| Módulo MP3          | 1        | 3.2 a 5V   | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r>                           | $2.990  |
+| Sensor de presión   | 1        | FSR402     | <https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r>                                 | $7.500  |
+| Motor DC            | 1        | 5V         | <https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for>                                              | $500    |
+| Mosfet              | 1        | BS170      | <https://a.aliexpress.com/_mt52yRB>                                                                                    | $694    |
+| Chips L293D         | 1        | 4.5V a 7V  | <https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy> | $1.000  |
+| Arduino Nano        | 1        | 5V         | <https://arduino.cl/arduino-nano/?srsltid=AfmBOorHZo7Nva6AUTWR6cWlQYivHoumROEyDap5uDlN5kRZbERvFyOl>                    | $3.500  |
 
-| Componente            | Cantidad | Valores  | Links                    | Valor                                       ||-----------------------|----------|----------|--------------------------|---------------------------------------------|--------|
-| Parlante              | 1        |    3w    |<https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=2792063ab&_ss=r>|$3.000|
-| Servo motor           | 3      |   SG90   |<https://afel.cl/products/micro-servomotor-sg90?_pos=2&_sid=fe0b59026&_ss=r>|$1.900|
-| Sensor ultrasónico    | 1        |    5V    |<https://afel.cl/products/sensor-de-ultrasonico-hc-sr04>|$1.500 |
-| Módulo MP3            | 1        |3.2 a 5 v |<https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_sid=c29ea442a&_ss=r>|$2.990|
-| Sensor de presión     | 1        |  FSR402  |<https://afel.cl/products/sensor-de-fuerza-presion-fsr402?_pos=1&_sid=3e7f88f5f&_ss=r>|$7.500|
-| Motor DC              | 1        |    5v    |<https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for>|$500|
-| Mosfet                | 1        |  BS170   |<https://a.aliexpress.com/_mt52yRB>|$694|
-| Chips L293D           | 1        |4.5V a 7V |<https://afel.cl/products/chips-l293d-driver-motor-puente-h?srsltid=AfmBOopdSCMb-AMaT28x0tp5BXOpQuGbm55ZteJTH9JsrzJ8gspTNZpy>|$1.000|
-| Arduino Nano        | 1     | 5v |<https://arduino.cl/arduino-nano/?srsltid=AfmBOorHZo7Nva6AUTWR6cWlQYivHoumROEyDap5uDlN5kRZbERvFyOl>|$3.500|
+--- 
 
 ### Mapa de flujo
 
 ```mermaid
 flowchart TB
     A["stand BY"] --> B["usuarie detectade"]
-    B --> C["jorge pide amor"]
-    C -- usuarie abraza --> F(["jorge feliz"])
+    B --> C["jorgito pide amor"]
+    C -- usuarie abraza --> F(["jorgito feliz"])
     F --> K(["abraza devuelta"])
     K --> L(["abraza fuerte devuelta y no suelta"])
     L --> C
-    C -- usuarie NO abraza --> G(["jorge triste"])
+    C -- usuarie NO abraza --> G(["jorgito triste"])
     G --> D(["entra en crisis, llora y se queja"])
     D --> E(["30 segundos sin amor"])
     E --> H(["amenaza con apagarse"])
@@ -85,9 +99,12 @@ flowchart TB
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
 
+---
+
 ### Código
 
 
+---
 
 ### Bocetos
 
@@ -95,6 +112,7 @@ flowchart TB
 
 
 
+---
 
 ### Prototipado
 
@@ -121,7 +139,12 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 ![patronaje](./imagen/jorge.jpg)
 
+--- 
+
 ### Contexto de uso
 
 Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
 
+---
+
+### Bibliografía 
