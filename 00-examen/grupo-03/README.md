@@ -45,6 +45,8 @@ Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia,
 
 En lo cotidiano solemos buscar en los animales una fuente constante de afecto, pero ese cariño, cuando no tiene límites, puede convertirse en una carga. Esa tensión entre cuidado y agobio guía el proyecto. En Jorgito conviven sensaciones opuestas: su abrazo consuela pero incomoda, pide cercanía pero teme perderla. Esa contradicción define la experiencia y vuelve el vínculo inestable. Lo que inicia como un gesto tierno termina mostrando cómo el afecto puede transformarse en dependencia y desgaste emocional.
 
+![Tensión emocional](./imagen/jorgito-llorando.jpg)
+
 ---
 
 ### Bill of Materials
