@@ -58,12 +58,15 @@ Lo que el sistema produce como resultado:
 
 ### Primera fase del proyecto — Entrega anterior.
 En la primera etapa del proyecto definimos la emoción que iba a representar nuestras máquinas (ansiedad) y exploramos cómo podría expresarse mediante movimientos y luz, además de descartar la idea de dos máquinas distintas con distintas emociones. Probamos distintos componentes, hicimos los primeros prototipos y descubrimos varias limitaciones que nos obligaron a ajustar ideas y cambiar algunos elementos del diseño. Aunque muchas cosas fueron cambiando después, esta fase inicial fue clave para entender la dirección del proyecto y construir las bases de lo que desarrollamos más adelante.
-[Fotos primera entrega, gatitos en caja y todo lo referente a eso]
+
+![imagen01](./imagenes/imagen01.jpeg)
 
 ### Fase actual — Toma de decisiones, desarrollo y montaje.
 En la fase actual, tomamos decisiones en base al proyecto anterior, como orientar el proyecto a 4 máquinas más pequeñas y simples que compartirán comportamiento en un determinado escenario (decidimos ocupar el metro), además de ya darle un sentido mucho más específico al querer representar una emoción en un entorno cotidiano, que muchos de nosotros vivimos diariamente.
 
 ### Planificación.
+
+![cartagantt](./imagenes/cartagantt.jpeg)
 
 ⋆ 𐙚 ̊. Día 1 — Planificación y Cotización.
 Trabajo teórico, sin hardware.
@@ -274,7 +277,6 @@ Debes unir todos los GND:
 | **TRIG** | Pin digital **D8** |
 | **ECHO** | Pin digital **D9** |
 
-[Foto de la conexión de sensor HC]
 
 ---
 
@@ -293,7 +295,6 @@ Esto permite activar cada motor de forma independiente y en secuencia (efecto �
    - Motor **–** → **OUT–** del MOSFET  
    *(El MOSFET abre/cierra el camino negativo del motor.)*
 
-[Foto conexión del motor]
 
 3. **Señal de control (PWM)**
    - Pin SIGNAL del MOSFET → Pin PWM del Arduino  
@@ -400,11 +401,17 @@ REPETIR indefinidamente
 
 Para carcasa, tenemos 4 gatitos modelados en 3D impresos en PLA blanco, los cuales dentro llevarán cada uno su motor correspondiente. 
 
-[Fotos modelado gatitos + gatitos finales]
+![imagen02](./imagenes/imagen02.jpg)
+
+![imagen03](./imagenes/imagen03.jpg)
 
 Además, un modelo de metro que también fue impreso y dentro lleva el sensor ultrasónico. Usamos como base el modelo de [https://cults3d.com/es/modelo-3d/artilugios/metro] que fue modificado por nosotras para que pudiera abrirse en dos piezas y llevara los componentes por dentro. 
 
-[fotos modelado metro + metro final]
+![imagen04](./imagenes/imagen04.jpg)
+
+
+### ¿Cómo se conecta por dentro? ⋆˙⟡
+![TALLER2025](./imagenes/TALLER2025.jpg)
 
 ### Código explicado
 
