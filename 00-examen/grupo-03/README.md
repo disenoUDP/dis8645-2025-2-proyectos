@@ -128,43 +128,38 @@ Inputs y outputs
 
 ---
 
-### Bocetos
+### Boceto
 
-![bocetos de jorge](./imagen/Ilustracion.jpg)
+![bocetos de jorge](./imagen/Ilustración.jpg)
 
 
 
 ---
 
-### Prototipado
+### Procesos 
 
 Para el prototipo realizamos el prototipado de la columna y los brazos, probando cómo podrían moverse y sostenerse. También hicimos pruebas de impresión 3D para revisar las piezas y sus uniones. Además, armamos un primer prototipo del sistema de la espalda y los brazos para evaluar su funcionamiento general. Finalmente, realizamos el molde para la tela del forro, aplicando cinta sobre la forma para obtener las piezas base del patrón.
 
+![foto de la vértebra](./imagenes/vertebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
 
-![foto de la vértebra](./imagen/vertebra.png)
 
-![gif de la probeta 1](./imagen/vertebra-probeta1.gif) ![gif probeta 1 otra prueba](./imagen/vertebra-probeta1b.gif)
+![prueba brazo](./imagenes/pruebabrazo.gif) ![prueba vertebras](./imagenes/pruebavertebras.gif)
 
-![vértebra v2](./imagen/vertebra-v2.png)
+![foto de Jorgito](./imagenes/fotomontajejorgito.jpg)
 
-![probeta de la vertebra-v2](./imagen/vertebra-v2-ver.gif)
+![molde](./imagenes/patronaje.png)
 
-![brazos](./imagen/piezasbrazo.png)
+![patrones](./imagenes/patrones.png)
 
-![funcionamiento brazo](./imagen/mecanismobrazo.gif)
+![confección y cambio de jorgito](./imagenes/evoluciónjorgito.jpg)
 
-![molde](./imagen/patronaje.png)
-
-![patronaje](./imagen/patrones.png)
-
-![patronaje](./imagen/patrones.png)
-
-![patronaje](./imagenes/jorge.jpg)
 
 --- 
 
 
 
----
+### Bibliografía
+
+----
 
 ### Bibliografía 
