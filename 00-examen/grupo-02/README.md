@@ -21,6 +21,37 @@ Más que una máquina funcional, lo que construimos es una pequeña metáfora f�
 > Es un estado de **anticipación y alerta constante**. No siempre ocurre algo, pero el cuerpo actúa como si algo estuviera por pasar. Se manifiesta en forma de tensión, latido rápido, vibración o inquietud permanente. No descansa del todo.
 Esta emoción casi nunca se explica hablando; se expresa **con gestos, posturas y reacciones corporales**. Por eso, nuestras máquinas **no hablan, se comportan.**
 
+## INPUT (Entradas del sistema). ☘︎ ݁˖
+
+Las señales o datos que el sistema recibe para funcionar:
+
+- **Distancia del sensor ultrasónico HC-SR04**  
+  - Mide la presencia del objeto (metro) frente a la maqueta.  
+  - Es el dato principal que activa o desactiva la secuencia emocional de los gatos.
+
+- **Alimentación eléctrica del sistema**
+  - Arduino (USB o 5V)
+  - Fuente externa de 5V para los motores vibradores y sus MOSFETs.
+
+
+## OUTPUT (Salidas del sistema). ☘︎ ݁˖
+
+Lo que el sistema produce como resultado:
+
+- **Vibración de los 4 motores (PWM)**
+  - Representa la respuesta emocional del conjunto de gatos.
+  - La intensidad es fija (PWM 180), pero los gatos se activan por etapas.
+
+- **Secuencia emocional progresiva**
+  - 0s → se activa Gato 1  
+  - 3s → se activa Gato 2  
+  - 6s → se activa Gato 3  
+  - 9s → se activa Gato 4  
+  - Todos vibran con la misma fuerza.
+
+- **Retorno a la calma**
+  - Si el objeto ya no está a ≤ 2 cm, los motores se apagan y el sistema vuelve a reposo.
+
 ──── ୨୧ ────
 
 ## Planificación y proceso previo 𓏲 ๋࣭ ࣪ ˖🎐
@@ -520,3 +551,27 @@ void loop() {
 }
 
 ```
+
+──── ୨୧ ────
+
+## Bibliografía 𓏲 ๋࣭ ࣪ ˖🎐
+
+
+Arduino. (s.f.). *analogWrite() — Analog & PWM Output.* Arduino Documentation.  
+https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/?utm_source
+
+Arduino. (s.f.). *pulseIn() — Pulse duration measurement.* Arduino Documentation.  
+https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/?utm_source
+
+Arduino. (s.f.). *pinMode() — Set pin behavior.* Arduino Documentation.  
+https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/?utm_source
+
+Random Nerd Tutorials. (2019). *Complete Guide for Ultrasonic Sensor HC-SR04.*  
+https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/?utm_source
+
+DroneBot Workshop. (2020). *Using Transistors & MOSFETs with Arduino (Control Motors).*  
+https://dronebotworkshop.com/transistors-mosfets/?utm_source
+
+DeepBlue Embedded. (2022). *Arduino Vibration Motor Tutorial — Code & Circuit.*  
+https://deepbluembedded.com/arduino-vibration-motor-code-circuit/?utm_source
+
