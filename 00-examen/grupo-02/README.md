@@ -121,27 +121,35 @@ Meta del día: proyecto listo para entrega.
 
 ```mermaid
 flowchart TD
-    A[Inicio] --> B[Encender Arduino]
-    B --> C[Esperar lectura del sensor HC-SR04]
+    %% === ESTILOS GENERALES ===
+    classDef inicio fill:#d1ffd6,stroke:#0f7b33,stroke-width:2px,color:#0a3e1a
+    classDef proceso fill:#d6e8ff,stroke:#1e4fa3,stroke-width:2px,color:#0a1f46
+    classDef decision fill:#ffe9d1,stroke:#c76a00,stroke-width:2px,color:#4a2600
+    classDef reposo fill:#ffe3f3,stroke:#b30059,stroke-width:2px,color:#4d0026
+    classDef final fill:#fff7b3,stroke:#b59a00,stroke-width:2px,color:#4d4400
 
-    C --> D{¿Distancia menor al umbral?}
+    A[Inicio]:::inicio --> B[Encender Arduino]:::proceso
+    B --> C[Esperar lectura del sensor HC-SR04]:::proceso
 
-    D -- Sí --> E[Activar Gato 1:<br>vibración]
-    E --> F[Esperar breve delay emocional]
-    F --> G[Activar Gato 2]
-    G --> H[Activar Gato 3]
-    H --> I[Activar Gato 4]
+    C --> D{¿Distancia menor al umbral?}:::decision
 
-    D -- No --> J[Mantener todos los gatitos en reposo]
+    D -- Sí --> E[Activar Gato 1<br>Vibración inicial]:::proceso
+    E --> F[Esperar 3 segundos]:::proceso
+    F --> G[Activar Gato 2]:::proceso
+    G --> H[Activar Gato 3]:::proceso
+    H --> I[Activar Gato 4]:::proceso
 
-    I --> K[Escena completa activa]
+    D -- No --> J[Mantener todos los gatitos en reposo]:::reposo
+
+    I --> K[Escena completa activa]:::final
     J --> C
-    K --> L{¿Estímulo sigue presente?}
+    K --> L{¿Estímulo sigue presente?}:::decision
 
     L -- Sí --> C
-    L -- No --> M[Desactivar vibración gradualmente]
+    L -- No --> M[Desactivar vibración y volver a reposo]:::reposo
 
     M --> C
+
 ```
 
 ###  ¿Qué representa este diagrama?
@@ -556,22 +564,46 @@ void loop() {
 
 ## Bibliografía 𓏲 ๋࣭ ࣪ ˖🎐
 
+### Referentes Conceptuales
 
-Arduino. (s.f.). *analogWrite() — Analog & PWM Output.* Arduino Documentation.  
-https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/?utm_source
+Kuramoto, Y. (1984). *Chemical oscillations, waves, and turbulence*. Springer.
+https://es.wikipedia.org/wiki/Modelo_de_Kuramoto 
 
-Arduino. (s.f.). *pulseIn() — Pulse duration measurement.* Arduino Documentation.  
-https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/?utm_source
+Damasio, A. (2006). *El error de Descartes: La razón, la emoción y el cerebro humano*. Crítica.  
+Artículo de apoyo: Calcedo, A. (2020). *La teoría del marcador somático de Antonio Damasio*. Recuperado de  
+https://www.alfredocalcedo.net/post/la-teoria-del-marcador-somatico-de-antonio-damasio
 
-Arduino. (s.f.). *pinMode() — Set pin behavior.* Arduino Documentation.  
-https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/?utm_source
+Mitchell, M. (2009). *Complexity: A guided tour*. Oxford University Press.  
+Recurso asociado: *Emergent Behavior — ScienceDirect Topics*. Recuperado de  
+https://www-sciencedirect-com.translate.goog/topics/computer-science/emergent-behavior?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wa
 
-Random Nerd Tutorials. (2019). *Complete Guide for Ultrasonic Sensor HC-SR04.*  
-https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/?utm_source
 
-DroneBot Workshop. (2020). *Using Transistors & MOSFETs with Arduino (Control Motors).*  
-https://dronebotworkshop.com/transistors-mosfets/?utm_source
+### Documentación Técnica Oficial (Arduino)
 
-DeepBlue Embedded. (2022). *Arduino Vibration Motor Tutorial — Code & Circuit.*  
-https://deepbluembedded.com/arduino-vibration-motor-code-circuit/?utm_source
+Arduino. (s.f.). *analogWrite() — PWM*. Recuperado de  
+https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/
 
+Arduino. (s.f.). *pulseIn() — lectura de pulsos*. Recuperado de  
+https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/
+
+Arduino. (s.f.). *pinMode() — configuración de pines*. Recuperado de  
+https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/
+
+
+### Sensores
+
+Santos, R., & Santos, S. (2019). *Complete Guide for Ultrasonic Sensor HC-SR04*. Random Nerd Tutorials.  
+Recuperado de  
+https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
+
+
+### MOSFET y Control de Motores
+
+DroneBot Workshop. (2020). *Using Transistors & MOSFETs with Arduino*. Recuperado de  
+https://dronebotworkshop.com/transistors-mosfets/
+
+
+### Motores Vibradores
+
+DeepBlue Embedded. (2021). *Arduino Vibration Motor Code & Circuit*. Recuperado de  
+https://deepbluembedded.com/arduino-vibration-motor-code-circuit/
