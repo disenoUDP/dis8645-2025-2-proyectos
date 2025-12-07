@@ -7,6 +7,18 @@
 - [José Morales Berríos](https://github.com/jotamorales-romulus)
 - [Carla Pino Barrios](https://github.com/Coff4)
 - [Francisco Stephens González](https://github.com/FranUDP)
+  
+---
+
+### Presentación textual
+
+Jorgito es un muñeco con forma de mono que pide un abrazo. Al inicio se muestra amistoso, casi tierno. Pero una vez que el usuario lo toma, se aferra con fuerza y no se suelta. Su abrazo cálido en apariencia, rígido en su estructura revela un apego ansioso que se intensifica con cada interacción.
+
+Cuando se le deja sobre la mesa, Jorgito llora, suplica y llega a amenazar con hacerse daño, obligando al usuario a retomar el contacto. Se establece un ciclo incómodo del que no es fácil salir. La relación deja de ser afectiva para transformarse en una dependencia emocional opresiva.
+
+Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia, contención y presión. Esa fricción define la experiencia y expone cómo un gesto afectivo puede derivar en un vínculo tenso y desgastante.
+
+---
 
 ### ¿Qué es un abrazo? 
 
@@ -14,6 +26,8 @@ Un abrazo parece un gesto simple, pero contiene una carga emocional profunda. No
 Tomamos el abrazo como base del proyecto para explorar cómo esta acción cotidiana puede transformarse cuando deja el cuerpo humano y pasa a una entidad no viva.
 
 Desde esta idea surge Jorgito, un muñeco con forma de primate diseñado para abrazar… pero también para exigir ese abrazo. A través de él indagamos qué ocurre cuando un gesto afectivo se vuelve dependiente, invasivo o contradictorio.
+
+Con este proyecto buscamos evidenciar qué ocurre cuando un gesto afectivo pierde equilibrio y deja de ser voluntario. Nos interesa que el usuario experimente la incomodidad de un cariño que se vuelve exigencia, mostrando cómo un vínculo puede transformarse en dependencia cuando una de las partes no puede regularlo.
 
 --- 
 
@@ -28,16 +42,6 @@ También lo diseñamos con una apariencia tierna, para invitar naturalmente al g
 La elección del mono, entonces, no es estética sino conceptual: permite trasladar al objeto un modo de apego intenso y vulnerable, amplificando la tensión entre cuidado, dependencia y control.
 
 [![Referente bebé gibón](https://img.youtube.com/vi/wLni152HI04/maxresdefault.jpg)](https://www.youtube.com/watch?v=wLni152HI04&t=237s)
-
----
-
-### Presentación textual
-
-Jorgito es un muñeco con forma de mono que pide un abrazo. Al inicio se muestra amistoso, casi tierno. Pero una vez que el usuario lo toma, se aferra con fuerza y no se suelta. Su abrazo cálido en apariencia, rígido en su estructura revela un apego ansioso que se intensifica con cada interacción.
-
-Cuando se le deja sobre la mesa, Jorgito llora, suplica y llega a amenazar con hacerse daño, obligando al usuario a retomar el contacto. Se establece un ciclo incómodo del que no es fácil salir. La relación deja de ser afectiva para transformarse en una dependencia emocional opresiva.
-
-Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia, contención y presión. Esa fricción define la experiencia y expone cómo un gesto afectivo puede derivar en un vínculo tenso y desgastante.
 
 ---
 
