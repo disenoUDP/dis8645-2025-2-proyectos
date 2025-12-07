@@ -30,10 +30,12 @@ Adjuntar foto de las tres secciones al lado de la pantalla.
 
 Optamos por integrar una power bank dentro de la carcasa para evitar cables externos, lo que nos obligó a reescalar el modelo varias veces para que todo cupiera bien.
 
-<img width="1524" height="491" alt="modelado-escalado" src="https://github.com/user-attachments/assets/1c56afb0-d9aa-4f1b-8e5d-b390d497b794" />
-
 Además diseñamos un sistema de plataforma para encajar el Arduino con la power bank, el sensor y la protoboard.
 
+<img width="1524" height="491" alt="modelado-escalado" src="https://github.com/user-attachments/assets/1c56afb0-d9aa-4f1b-8e5d-b390d497b794" />
+
+foto de escalar
+ 
 insertar foto de la plataforma*
 
 Finalmente incorporamos el speaker en la parte superior y el botón en la parte frontal.
