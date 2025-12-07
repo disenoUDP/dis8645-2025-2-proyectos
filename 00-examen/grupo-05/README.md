@@ -1,9 +1,9 @@
 
 # grupo-05
 
-## La máquina asombrosa
+## La máquina asombrosa 🎰
 ### Integrantes
-- Braulio Figueroa
+- Braulio Figueroa 
 - Camila Parada
 - Félix Rodriguez
 - Miguel Vera
@@ -144,7 +144,7 @@ Los asociamos a 5 pines y unimos a tierra y 5v en una protoboard. Usamos 5 color
 - Azul - 1k
 - Rojo - 1k
 
-Cada led se prende en su rango correspondiente y al llegar al último se apagan todas.
+Cada led se prende en su rango correspondiente y al llegar al último se apagan todas. 
 
 ```cpp
 void Leds::usarLeds() {
@@ -355,21 +355,18 @@ if (vueltas > 15){
 ## Construcción
 ![humo](./imagenes/esquematico-visual.png)
 
+### Inicial y separado
 ![componentes en paralelo](./imagenes/gif-avances.gif)
 
-![led 1](./imagenes/led_roja.gif)
+![motor funcionando](./imagenes/MOTORGIFFINAL.gif)
+### En paralelo
+![humo instalado funcionando](./imagenes/humogif.gif)
 
-![led 2](./imagenes/led_azul.gif)
+![1er conjunto de cosas funcionando](./imagenes/MOTORLEDSFINAL.gif)
 
-![led 3](./imagenes/led_verde.gif)
-
-![led 4](./imagenes/led_amarilla.gif)
-
-![led 5](./imagenes/led_blanca.gif)
-
+### Montado
 ### Forma y carcasa
 ![render preliminar](./imagenes/render_carcasa.jpeg)
-
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornala con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
 
