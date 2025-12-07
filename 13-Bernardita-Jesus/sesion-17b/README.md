@@ -14,6 +14,7 @@ Primero levantamos referentes; teníamos claro que queríamos inspirarnos en la 
 Pero necesitábamos que fuera un objeto que pudiera caerse, y de ahí nace esta forma medio absurda: un “huevo” frágil, inestable y de forma continua, diseñado para caer. El primer modelado fue la carcasa ovoide, con la base levemente aplanada para darle un punto de apoyo.
 
 <img width="1253" height="299" alt="Captura de pantalla 2025-12-07 142648" src="https://github.com/user-attachments/assets/ba706ad7-1876-4db0-bc32-b8e9c34dd4ba" />
+
 > foto de modelaod de huevo
 
 #### Mecánica y estructura general
