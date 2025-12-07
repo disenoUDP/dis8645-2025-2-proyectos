@@ -13,12 +13,17 @@
 
 // este codigo funciona en base a 5 estados, del 0-4
 
-// estados
-// 0 - calmao
-// 1 - pideAmor
-// 2 - pataletaLeve
-// 3 - pataletaBrigida
-// 4 - autodestruccion
+// parte en estado 0
+// estados 0, 1, 2, 3 pueden avanzar al siguiente
+// estados 2, 3, 4 pueden volver al 0
+// estado 4 tras terminar vuelve al 0
+
+// ESTADOS
+// 0_CALMAO: sensor ultrasonico
+// 1_PEDIR_AMOR: sensor de presion
+// 2_PATALETA_LEVE: mp3
+// 3_PATALETA_BRIGIDA: servo columna, mp3
+// 4_AUTODESTRUCCION: servo rotacion, servo columna, mp3, motorDC
 
 // archivos de audio por estado
 // 0 - no hay

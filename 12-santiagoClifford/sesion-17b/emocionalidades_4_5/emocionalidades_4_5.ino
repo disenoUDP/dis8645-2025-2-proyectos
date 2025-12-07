@@ -64,6 +64,8 @@ void loop() {
   // si sensor de presion detecta presion, abrazar = true
   depresion.funcionaDePresion();
   hedgehog.funcionaSonic();
+  motoMoto.Setear();
+  motoMoto.actualizarAbrazo();
 
   //estadoAnterior = estadoActual;
   // actualizar lecturas de sensores
@@ -101,13 +103,19 @@ void loop() {
 
       // Serial.println(depresion.valorDePresion);
       if (depresion.watitaRascada == true) {
-        Serial.print("WATOM");
-        motoMoto.abrazar();
+        Serial.println("WATOM");
+motoMoto.activarAbrazo();//resetea el timer
+        // motoMoto.abrazar();
 
         Serial.println("transicion -> estado 0_CALMAO (por presion)");
         // hedgehog.carinoPotencial=false;
         // estadoAnterior = estadoActual;
+    
+
         estadoActual = 0;
+        // motoMoto.abrazando=false;
+        // motoMoto.abrazar();
+
         // enEstado1 = false;
       }
     }
@@ -148,7 +156,7 @@ void loop() {
       if (depresion.watitaRascada == true) {
         motoMoto.abrazar();
         Serial.print("WATOM");
-        
+
 
         Serial.println("transicion -> estado 0_CALMAO (por presion)");
         // hedgehog.carinoPotencial=false;
@@ -171,13 +179,15 @@ void loop() {
       n3p.emitirAlarmaEstado4();
       if (depresion.watitaRascada == true) {
         Serial.print("WATOM");
-        motoMoto.abrazar();
+        if (motoMoto.abrazando == true) {
+          motoMoto.abrazar();
 
-        Serial.println("transicion -> estado 0_CALMAO (por presion)");
-        // hedgehog.carinoPotencial=false;
-        // estadoAnterior = estadoActual;
-        estadoActual = 0;
-        // enEstado1 = false;
+          Serial.println("transicion -> estado 0_CALMAO (por presion)");
+          // hedgehog.carinoPotencial=false;
+          // estadoAnterior = estadoActual;
+          estadoActual = 0;
+          // enEstado1 = false;
+        }
       }
     }
   }
