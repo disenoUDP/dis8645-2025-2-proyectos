@@ -12,7 +12,8 @@ insertar foto de referentes*
 
 Pero necesitábamos que fuera un objeto que pudiera caerse, y de ahí nace esta forma medio absurda: un “huevo” frágil, inestable y de forma continua, diseñado para caer. El primer modelado fue la carcasa ovoide, con la base levemente aplanada para darle un punto de apoyo.
 
-insertar foto de modelaod de huevo*
+<img width="1253" height="299" alt="Captura de pantalla 2025-12-07 142648" src="https://github.com/user-attachments/assets/ba706ad7-1876-4db0-bc32-b8e9c34dd4ba" />
+foto de modelaod de huevo*
 
 #### Mecánica y estructura general
 
@@ -24,7 +25,11 @@ Después subdividimos el cuerpo en tres secciones principales, las cuales son en
 
 Continuamos con el diseño de los calces internos para la pantalla sin afectar la forma continua.
 
-Adjuntar foto de las tres secciones al lado de la pantalla.
+<img width="1202" height="749" alt="Captura de pantalla 2025-12-07 142400" src="https://github.com/user-attachments/assets/4af1e046-506b-4e57-a785-6e9c3667d755" />
+
+<img width="1107" height="733" alt="Captura de pantalla 2025-12-07 142925" src="https://github.com/user-attachments/assets/68d2e721-2656-4437-bb45-c5fe14e1fbf4" />
+
+foto de las tres secciones al lado de la pantalla.
 
 #### Integración electrónica y ajustes volumétricos
 
