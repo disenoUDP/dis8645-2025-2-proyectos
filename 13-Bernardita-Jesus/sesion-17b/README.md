@@ -8,7 +8,8 @@
 
 Primero levantamos referentes; teníamos claro que queríamos inspirarnos en la estética del Tamagotchi y más Game & Watch y Game Boy, mezclado con la lógica de un temporizador.
 
-insertar foto de referentes*
+![fotos-referentes](https://github.com/user-attachments/assets/51f0a886-b769-408e-baa0-4fcd91c94465)
+foto de referentes*
 
 Pero necesitábamos que fuera un objeto que pudiera caerse, y de ahí nace esta forma medio absurda: un “huevo” frágil, inestable y de forma continua, diseñado para caer. El primer modelado fue la carcasa ovoide, con la base levemente aplanada para darle un punto de apoyo.
 
