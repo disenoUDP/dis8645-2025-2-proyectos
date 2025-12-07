@@ -6,7 +6,6 @@
 - Braulio Figueroa
 - Camila Parada
 - Félix Rodriguez
-- Camila Parada
 - Miguel Vera
 
 ### La consigna
@@ -368,9 +367,11 @@ if (vueltas > 15){
 
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornala con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
+
 ![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
+
 ![luces instaladas en carcasa](./imagenes/Luces_instaladas.gif)
 
 ## Contexto y oportunidad de diseño
@@ -388,13 +389,7 @@ La máquina asombrosa aprovecha elementos gráficos y morfologicos del mundo de 
 | Mini humidificador USB tipo C de 5V | Actuador | 1 | 5V | $ 5.900 | https://www.tienda8.cl/mas-productos/humidificador-aire-domestico-generador-de-niebla-usb-5v-diy |
 | Micro Servomotor SG90 | Actuador | 1 |  3 a 7.2 V | $1.990 | https://afel.cl/products/micro-servomotor-sg90 |
 | Mini Parlante Altavoz de 3w | Salida audio | 1 | 3 VDC | $3.000 | https://afel.cl/products/mini-parlante-altavoz-de-3w |
-| Pack Led 10mm (5) | Actuador | Varios | Blanca - 2k, Naranjo - 330, Verde - 330, Azul - 1k, Rojo - 1k | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
-
-- Blanco - 2k
-- Naranjo - 330
-- Verde - 330
-- Azul - 1k
-- Rojo - 1k
+| Pack Led 10mm (5) | Actuador | Varios | Blanca2k Naranjo330 Verde330 Azul1k Rojo1k | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
 
 
 
