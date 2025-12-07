@@ -55,7 +55,7 @@ Como parte final del proyecto quisimos agregar una cobertura externa de alginato
 
 insertar foto de los moldes con el algintano*
 
-agregar a referentes: game boy, mgame and watch, tamagochi, video de modelado huevo, 
+agregar a referentes a la bibliografia
 
 https://es.wikipedia.org/wiki/Game_Boy
 
