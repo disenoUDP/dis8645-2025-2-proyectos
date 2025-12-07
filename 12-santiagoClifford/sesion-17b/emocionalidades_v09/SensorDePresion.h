@@ -1,0 +1,26 @@
+#ifndef SENSOR_DE_PRESION_H
+#define SENSOR_DE_PRESION_H
+
+// incluir biblliotecas
+#include "Arduino.h"
+
+// crear la clase
+class SensorDePresion{
+public:
+SensorDePresion();
+
+//crear los voids
+void configurarDePresion();
+
+void funcionaDePresion();
+
+// todo lo que vaya empezado con letras azules
+// que no sean voids, irian aqui
+
+const int pinDePresion = A0;
+int valorDePresion = 0;
+bool hayBrazo;
+int presionMinimaAceptable = 50;
+};
+
+#endif

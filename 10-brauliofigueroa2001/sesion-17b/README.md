@@ -41,3 +41,9 @@ novedades 18:44 pm
 
 - en la linea if step % 30 == 0) si cambio este 30 por un número más grande, haremos que necesite más steps para completar una vuelta, esto sirve para que al momento de girar la manivela no saltemos tan rápido de estados, ya que, la manivela es más fácil de girar y manipular que un encoder. Sería un problema que el usuario podría girar muy rápido y pasar de fases de forma que parezcan casi imperceptibles.
 
+AVANCES 7 DE DICIEMBRE
+
+- dividir la sección de construcción de la máquina según estados de avance. ejemplo (estado de avance inicial): motor inicial, leds inicial, humo inicial, mp3 inicial, encoder inicial
+
+  - después ir avanzando mostrando los componentes juntos
+
