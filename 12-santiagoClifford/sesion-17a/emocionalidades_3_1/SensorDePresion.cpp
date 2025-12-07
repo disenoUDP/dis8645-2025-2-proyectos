@@ -20,5 +20,5 @@ void SensorDePresion::funcionaDePresion() {
   //si valorDePresion es mayor a presionMinimaAceptable, hayBrazo es true
   if (SensorDePresion::valorDePresion > SensorDePresion::presionMinimaAceptable) {
     watitaRascada= true;
-  }
+  }else{watitaRascada=false;}
 }
