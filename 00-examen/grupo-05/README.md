@@ -28,15 +28,18 @@ La máquina asombrosa tiene una apariencia similar a una máquina tragamonedas q
 La interacción funciona de la siguiente manera:
 1. El usuario ve la máquina y se acerca.
 2. El usuario ve una manivela y la gira para ver que pasa.
-3. Al girarla más de una vez se enciende una luz (de 5) y cada vuelta empieza a sonar. Esto inmediatamente busca limitar la interacción y declarar que la meta es encender las 5 luces.
+3. Al girarla más de una vez se enciende una luz (1 de 5) y cada vuelta empieza a sonar. Esto inmediatamente busca limitar la interacción y declarar que la meta es encender las 5 luces.
 4. Si gira un poco más se encenderá otra luz, confirmando la secuencialidad de cada activación. El sonido de cada vuelta cambiará y la máquina empezará a vibrar suavemente.
 5. Al sumar vueltas se prenderá una 3ra luz, el sonido cambiará de nuevo y la vibración será más intensa.
 6. Un poco más y habrán 4 luces encendidas, se activará un 4to sonido mecánico y la vibración será constante. Solo falta una luz y todo el esfuerzo girando la manivela se verá recompensado.
 7. Con las últimas vueltas restantes se prenden todas las luces, el sonido cambia de nuevo y el motor se detiene, las preparaciones están listas.
-8. Nuevamente guíado por la creatividad y buscando una recompensa por su esfuerzo, el usuario da una vuelta más. Esta vuelta desactiva (consume) las luces y hace sonar una corneta en celebración a la vez que suelta una humilde cantidad de humo.
+8. Nuevamente guíado por la curiosidad y buscando una recompensa por su esfuerzo, el usuario dará una vuelta más. Esta vuelta desactiva las luces y hace sonar una corneta en celebración a la vez que suelta una humilde cantidad de humo.
 9. La máquina queda desactivada hasta que un nuevo usuario gire la manivela y reinicie la interacción.
 
 La experiencia que proponemos es bastante simple en esencia y está construido con una estructura similar a un chiste con la preparación y el remate. Su duración es de poco más de un minuto y si logra hacer que alguién llegue al "gran final" ya cumplió su cometido. La gracia es que aunque el usuario esperaba algo y no lo consiguió, ***la máquina nunca prometió nada***. Y aunque sea corta, la interacción usa el anticlimax para enseñar a medir nuestras expectativas.
+
+## Contexto y oportunidad de diseño
+La máquina asombrosa aprovecha elementos gráficos y morfologicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas. 
 ## Planificación
 Los componentes definidos para nuestra máquina son los siguientes:
 
@@ -50,7 +53,7 @@ Los componentes definidos para nuestra máquina son los siguientes:
 #### Encoder 🕹️
 Este componente es el más importante en la máquina ya que dicta que ocurre con los demás y comunica a los actuadores con el usuario. El encoder funciona contando pasos al girar una perilla y pasar por mellas. Puede girar hacia ambos lados sin límites pero nosotros solo usaremos una dirección. Para ordenar cuando se activa cada cosa necesitamos que cierta cantidad de pasos (20) signifiquen una vuelta, que cada cantidad de vueltas se ordenen en respectivos rangos y que haya un contador que recuerde estos 3 valores. Con este propósito usamos una función que añade una vuelta cada vez que se pasa por un paso múltiplo de 20 y categorizamos la cantidad de vueltas. 
 
-![gifs del encoder](./imagenes/Avances2.gif)
+![gifs del encoder](./imagenes/avances2.gif)
 #### Step a vueltas
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -352,22 +355,46 @@ if (vueltas > 15){
   //}
 }
 ```
-## Construcción
+## Construcción Actuadores
 ![humo](./imagenes/esquematicoVisual.png)
 
-### Inicial
+![componentes en paralelo](./imagenes/avances1.gif)
+
+### Leds
+![primeras leds armadas en una proto](./imagenes/procesoArmadoLeds0.jpg)
+
+![planificación en placa para posterior montaje](./imagenes/procesoArmadoLeds2.jpg)
+
+![leds listas](./imagenes/procesoArmadoLeds3.jpg)
+
 ![líneas de leds funcionan](./imagenes/ledsFuncionan.gif)
 
+### Motor
+![primer motor soldado al módulo](./imagenes/procesoArmadoMotor.jpg)
 
-![componentes en paralelo](./imagenes/Avances.gif)
+![motor funcionando](./imagenes/motor.gif)
 
-![motor funcionando](./imagenes/motorFinal.gif)
+### Mp3
+![DFPlayer soldado en placa](./imagenes/procesoArmadoMp3-1.jpg)
+
+### Humidificador
+![primera conexión del humidificador](./imagenes/procesoArmadoHumo1.JPG)
+
+
 ### En paralelo
 ![humo instalado funcionando](./imagenes/humo.gif)
 
-![1er conjunto de cosas funcionando](./imagenes/motorLedsFinal.gif)
+![1er conjunto de cosas funcionando](./imagenes/motorLeds.gif)
+
+![todos los componentes juntos y soldados](./imagenes/circuitoSoldado.jpg)
+
+![componentes juntos en una proto con etiqueta](./imagenes/circuitoEnProto.jpg)
 
 ### Montado
+
+https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
+
+
 ### Forma y carcasa
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
@@ -379,8 +406,6 @@ Las luces led de cada color hacen llamativa la máquina y muestran en tiempo rea
 
 ![luces instaladas en carcasa](./imagenes/lucesInstaladas.gif)
 
-## Contexto y oportunidad de diseño
-La máquina asombrosa aprovecha elementos gráficos y morfologicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas. 
 ### Bill of materials
 | Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
 |-------------|------|-----|------------|--------|------|
