@@ -33,7 +33,8 @@ El jugador presiona los sensores para controlar una red atrapahadas y capturar a
 Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situacional de la vida lo que para muchas personas podría ser algo frustrante. Para nosotros es un símbolo de humor, frustración y esfuerzo. El juego muestra cómo pequeños detalles pueden complicar incluso las metas más simples, y aun así seguimos intentando. Y eso no tiene nada de malo: frustrarse, ¿para qué?, si se puede pasar bien incluso en esas situaciones. No queremos confundir al usuario de manera errónea; solo buscamos generar un sentimiento ridículo, no tomarse las cosas tan personales cuando a veces simplemente buscamos pasar el tiempo y ver que no son tan trágicas como parecen. La forma en que entendemos este proyecto se basa en mirar el esfuerzo y el fracaso como algo ligero, exagerado y humorístico, donde la experiencia pertenece totalmente a quien la vive y no pretende ser más que eso un juego que hace visible lo absurdo.
 
 Contexto de uso
- - fjfj
+
+ -Àtrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
 
 ---
 
@@ -98,7 +99,7 @@ Como grupo planificamos que haremos en cada semana del trabajo mediante una cart
 ```mermaid
 ---
 config:
-  theme: redux
+  layout: dagre
 ---
 flowchart TB
     A(["Pantalla prendida con nombre del juego:
@@ -109,34 +110,48 @@ Atrápame si puedes"]) --> B["Presionar"]
     E --> F["Corre el tiempo límite 30 segundos"]
     F --> G["¿Lo atrapaste?"]
     G --> H["Si"] & I["No"]
-    H --> J["Aparece en pantalla: Juego terminado...Lograste atrapar: 1/444"]
-    I --> K["Aparece en pantalla: Oh nooo ¡El tiempo voló más rápido que tú!"]
-    J --> M["Vuelve al inicio: atrapame si puedes"]
-    K --> M
+    H --> J["Aparece en pantalla: ***Atrapaste 1 de 444 hadas***"]
+    J --> K["Delay: 5 segundos"]
+    K --> L["Aparecen volando las 444 hadas"]
+    L --> M["Finaliza la interración con el acelerómetro"]
+    I --> N["Aparece en pantalla: ***Oh No! el tiempo voló más rápido que tú***"]
+    N --> O["Presiona para volver a intentar"]
+    O --> P["Aparece la pantalla de juego"]
+    P --> Q["¿Lo atrapaste?"]
+    Q --> A
+    M --> R["REINICIO ***Pantalla prendida con nombre del juego:
+Atrápame si puedes***"]
+
 
     C@{ shape: rect}
     D@{ shape: diam}
-
-    A:::Sunset
-    B:::Lime
-    C:::Sky
-    D:::YellowSoft
-    E:::Rose
-    F:::Aqua
-    G:::Sunset
-    H:::Lime
-    I:::Sky
-    J:::Rose
-    K:::Aqua
-    M:::Sunset
-
-classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
-classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF9D9, color:#7A6720
-classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
-classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A                           
+     A:::Sunset
+     B:::Lime
+     C:::Sky
+     D:::YellowSoft
+     E:::Rose
+     F:::Aqua
+     G:::Sunset
+     H:::Lime
+     I:::Sky
+     J:::Rose
+     K:::Aqua
+     L:::YellowSoft
+     M:::Sunset
+     N:::Lime
+     O:::Sky
+     P:::Sunset
+     Q:::YellowSoft
+     R:::Lime
+    classDef Sunset stroke-width:1px, stroke-dasharray:none, stroke:#FF7A00, fill:#FFEBD6, color:#A94500
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef YellowSoft stroke-width:1px, stroke-dasharray:none, stroke:#E6C84C, fill:#FFF9D9, color:#7A6720
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Lime stroke-width:1px, stroke-dasharray:none, stroke:#A8E400, fill:#F5FFD9, color:#5A7A00
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A                        
 ```
+
+LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA DE FLUJO](https://www.mermaidchart.com/play?utm_source=mermaid_live_editor&utm_medium=toggle#pako:eNqlVMluG0cQ_ZUKDQSyIAK0xE1zcDKcRaJEkVp8sGHm0Jopki3NdI97mrIVwx_jD8hJN18MhD-W6iZnIWMYUAJeWNt79aqq53MjkjE2nEaz2ZyKSIoZnztTAZCwR7nUDsRsrnAqbHiWyI_RgikNbwYmB8Ddez9tXDKhWZIwyBSKmMcMCAeETG8VQowJ3C1xLgnV1Wr1NWMpQs4hW2KM-bTxx0toNl_DwAApzLkUTJF3jT-wMY9iI4KveOQjRppRk5BjglHEV0-CqCBDlRPAHcLegsXsZQnkWSCfgGoFe0GCc65suykTsYS3UACaNjbOdxWMb2ECo3ooOGXV9MnbO9T8QQLTimVUTRHTBPWtGMhbjQIVLAUDhZFMMxQ5M_LXyIFFDgnYk4rmRsWaY5pJSFZ_pVwjHLWot_mSOsrLfkJbdUJVf38fFcy5xt_KjBObcUoZN5yc8CsM6f9YlgmnNuGMnC41ihFRi3LUDuzv77sFKrwyM26321ZXTqES5cyinBOKj3Q6DnT-3ey5zRlVTAIeZGJHnLC8wi0LRrbgggpCLljC_7Qb50KjUmy9QrM6GhWLaGtq9ZSiVpW0oa0f_0TaZAFj-Utt2NTQ6gnS1dcczK1y6u3DEkGvvtXVji3wpHay6yVT9QPteN0j0VSHPLEVl7VWktpB01TtDZXplzb96id7vbIZ7tq4sMY1pV8Hw_HQG06MuP_zLgu15mffz--fIV-wDB1zvfrL5jlU3pizdOMF13Gcm6XIUW8cA3KMeIob0zPx-8eN5ZP1DhP6ttzIWVERkPNa5kVFSKb7Yck25skuwek2wXCL4Gwb63wba_Qj-otdgvE2wWSL4HI3--pHmNdbEBGdfO7jDNaFkNPh3mPzI4_1wnmVfTooPPQg6JOr6E0JKbBwOy_CsOe2Wgcw40lirGDgdw9ow4lUzgv3uN1ptXaZ7h-fT3PUa_s9r6AJDoNBGJY06-AOTSX8-WxB1-u3vUpUeOwfl2w9t9s73BVlFvtfhtc57vUrHj8MOiVPPzg8POru8JjNPZ_H7Qft2pI6xFTp6bhmgzs85jKfz9PuBr5X6vEDmly_tqV-0HMbX_4B_NGFGQ)
 
 ---
 
