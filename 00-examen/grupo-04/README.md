@@ -1,4 +1,4 @@
-# grupo-04 - Cachureos
+# grupo-04 - Las Ratas Ciegas de Shrek
 
 INTEGRANTES
 - Yamna Carrión / [yamna-bit](https://github.com/yamna-bit)
@@ -10,7 +10,7 @@ INTEGRANTES
 
 ---
 
-## Presentación textual
+## Presentación textual - Máquinas Literarias
 
 <!-- QUÉ -->
 
@@ -32,9 +32,9 @@ El jugador presiona los sensores para controlar una red atrapahadas y capturar a
 
 Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situacional de la vida lo que para muchas personas podría ser algo frustrante. Para nosotros es un símbolo de humor, frustración y esfuerzo. El juego muestra cómo pequeños detalles pueden complicar incluso las metas más simples, y aun así seguimos intentando. Y eso no tiene nada de malo: frustrarse, ¿para qué?, si se puede pasar bien incluso en esas situaciones. No queremos confundir al usuario de manera errónea; solo buscamos generar un sentimiento ridículo, no tomarse las cosas tan personales cuando a veces simplemente buscamos pasar el tiempo y ver que no son tan trágicas como parecen. La forma en que entendemos este proyecto se basa en mirar el esfuerzo y el fracaso como algo ligero, exagerado y humorístico, donde la experiencia pertenece totalmente a quien la vive y no pretende ser más que eso un juego que hace visible lo absurdo.
 
-Contexto de uso
+Contexto de uso:
 
- -Àtrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
+- `Atrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
 
 ---
 
@@ -60,7 +60,7 @@ Contexto de uso
 
 ---
 
-### Bill of materials
+## Bill of materials
 
 |Componenetes|Cantidad|Unidad|OBS|Valor|
 |---|---|---|---|---|
@@ -155,7 +155,7 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 ---
 
-### `PROPUESTA ELEGIDA`
+## `PROPUESTA ELEGIDA`
 
 - Máquina sentimental "Atrápame si puedes"
 
@@ -168,51 +168,56 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 - Cursor: red atrapa hadas hecho con pixel art
 - Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
 
-![Hadas](./imagenes/haditas.gif)
+<img src="./imagenesProceso/atrapameSIPuedes01.gif" alt="proceso01" width="300"> <img src="./imagenesProceso/eligeTuHada01.gif" alt="eligetuhada01" width="300"> 
 
-![choose aaron](./imagenes/chooseAaron.gif)
+<img src="./imagenesProceso/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenesProceso/ohNo.gif" alt="proceso03" width="300"> 
 
-![choose misaa](./imagenes/chooseMisa.gif)
+<img src="./imagenesProceso/fondo.gif" alt="fondo" width="300"> <img src="./imagenesProceso/pantallaFinal.gif" alt="pantalla" width="300">
 
-![choose mateo](./imagenes/chooseMateo.gif)
+<!-- ![Hadas](./imagenes/haditas.gif) --> <!-- ![choose aaron](./imagenes/chooseAaron.gif) -->
+<img src="./imagenes/haditas.gif" alt="hadas" width="400">
 
-![choose janis](./imagenes/chooseJanis.gif)
+<!-- ![choose aaron](./imagenes/chooseAaron.gif) --> <!-- ![choose misaa](./imagenes/chooseMisa.gif) -->
+<img src="./imagenes/chooseAaron.gif" alt="aaron" width="400"> <img src="./imagenes/chooseMisa.gif" alt="misa" width="400">
+
+<!-- ![choose mateo](./imagenes/chooseMateo.gif) --> <!-- ![choose janis](./imagenes/chooseJanis.gif) -->
+<img src="./imagenes/chooseMateo.gif" alt="mateo" width="400"> <img src="./imagenes/chooseJanis.gif" alt="janis" width="400">
 
 |Hada|Volando|Estático|
 |---|---|---|
-|![aaron](./imagenes/aaron.png)|![aaron](./imagenes/aaronVolando.gif)|![aaron](./imagenes/aaronEstatico.gif)|
-|![misa](./imagenes/misa.png)|![misa](./imagenes/misaVolando.gif)|![misa](./imagenes/misaEstatico.gif)|
-|![mateo](./imagenes/mateo.png)|![mateo](./imagenes/mateoVolando.gif)|![mateo](./imagenes/mateoEstatico.gif)|
-|![janis](./imagenes/janis.png)|![janis](./imagenes/janisVolando.gif)|![janis](./imagenes/janisEstatica.gif)|
+|<img src="./imagenes/aaron.png" alt="aaron" width="350">|<img src="./imagenes/aaronVolando.gif" alt="aaron" width="300">|<img src="./imagenes/aaronEstatico.gif" alt="aaron" width="300">|
+|<img src="./imagenes/misa.png" alt="misa" width="350">|<img src="./imagenes/misaVolando.gif" alt="misa" width="300">|<img src="./imagenes/misaEstatico.gif" alt="misa" width="300">|
+|<img src="./imagenes/mateo.png" alt="mateo" width="350">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="300">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="300">|
+|<img src="./imagenes/janis.png" alt="janis" width="350">|<img src="./imagenes/janisVolando.gif" alt="janis" width="300">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="300">|
 
 |Paisaje|Inicio|
 |---|---|
-|![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
-|![bosque2](./imagenes/bosque2.jpeg)|![inicio](./imagenes/inicio2.gif)|
-|![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
-|![red 1](./imagenes/redAtrapaHadas.png)|![red 2](./imagenes/redAtrapaHadas2.png)|
+|<img src="./imagenes/bosque.gif" alt="bosque" width="300">|<img src="./imagenes/inicio1.gif" alt="inicio" width="300">|
+|<img src="./imagenes/bosque2.jpeg" alt="bosque" width="300">|<img src="./imagenes/inicio2.gif" alt="inicio" width="300">|
+|<img src="./imagenes/bosque3.gif" alt="bosque" width="300">|<img src="./imagenes/inicio3.gif" alt="inicio" width="300">|
+|<img src="./imagenes/redAtrapaHadas.png" alt="red" width="300">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="300">|
 
 ## Procesos y bocetos
 
 `Dificultades y desafíos`
 
--fhf
+1. Teníamos una de máquina literaria, donde decidimos como grupo cambiar la propuesta ya que no nos llamaba la atención y no estabamos satisfechas con el  antiguo proyecto. El proyecto consistía en un objeto que responde al contacto directo mediante las manos, dependiendo de la intensidad de fuerza; como respuesta de este tacto, se proyectaba una gráfica distinta.
+2. Otras de las dificultades fue conectar p5.js con el arduino. Aquí vimos un tutorial en youtube y utilizamos una librería en específica: [p5.webserial.js](https://github.com/gohai/p5.webserial)
+3. Conectar el sensor acelerómetro de 3 ejes, con p5.js. Antes de esto, en Arduino IDE, cuando pasabamos el código de acelerómetro a clases, este ya no leía los valores.
+4. Desde p5.js fue dificil agregarle una función al sensor Y, ya sea como botón y para desplazamiento.
+5. Decisión de las impresiones en 3d, la dificultad de ver como ibamos a tapar el navegador de chrome y el mando para los sensores Y.
 
-- Máquina sentimental "Atrápame si puedes"
+<img src="./imagenesProceso/proceso03.png" alt="red" width="300"> <img src="./imagenesProceso/proceso08.png" alt="red" width="300">
 
-`PROPUESTA VISUAL`
-
-- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
-- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
-- Tipografía: pixel-retro
-- Máquina física: control retro hecho con impresión 3D
-- Cursor: red atrapa hadas hecho con pixel art
-- Hadas: inspiradas en los profes y ayudantes, hechos con pixel
-
-
+<img src="./imagenesProceso/proceso07.png" alt="red" width="300">
 
 ### Proceso y diseño de carcasa 
 
+<img src="./imagenesProceso/proceso01.png" alt="red" width="300"> <img src="./imagenesProceso/proceso02.png" alt="red" width="300">
+
+<img src="./imagenesProceso/proceso04.png" alt="red" width="300"> <img src="./imagenesProceso/proceso05.png" alt="red" width="300"> 
+
+<img src="./imagenesProceso/proceso06.png" alt="red" width="300"> 
 
 ### Código y pseudocódigo
 
