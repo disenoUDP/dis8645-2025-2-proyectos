@@ -12,7 +12,7 @@
 
 ### Presentación textual
 
-Jorgito es un muñeco con forma de mono que pide un abrazo. Al inicio se muestra amistoso, casi tierno. Pero una vez que el usuario lo toma, se aferra con fuerza y no se suelta. Su abrazo cálido en apariencia, rígido en su estructura revela un apego ansioso que se intensifica con cada interacción.
+Jorgito es un muñeco con forma de mono que pide un abrazo. Al inicio se muestra amistoso, casi tierno. Pero, una vez que el usuario lo toma, se aferra con fuerza y no se suelta. Su abrazo cálido en apariencia, rígido en su estructura, revela un apego ansioso que se intensifica con cada interacción.
 
 Cuando se le deja sobre la mesa, Jorgito llora, suplica y llega a amenazar con hacerse daño, obligando al usuario a retomar el contacto. Se establece un ciclo incómodo del que no es fácil salir. La relación deja de ser afectiva para transformarse en una dependencia emocional opresiva.
 
@@ -25,7 +25,7 @@ Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia,
 Un abrazo parece un gesto simple, pero contiene una carga emocional profunda. No se trata solo de unir dos cuerpos: implica contención, cuidado, comunicación silenciosa y una forma de empatía física.
 Tomamos el abrazo como base del proyecto para explorar cómo esta acción cotidiana puede transformarse cuando deja el cuerpo humano y pasa a una entidad no viva.
 
-Desde esta idea surge Jorgito, un muñeco con forma de primate diseñado para abrazar… pero también para exigir ese abrazo. A través de él indagamos qué ocurre cuando un gesto afectivo se vuelve dependiente, invasivo o contradictorio.
+Desde esta idea surge Jorgito, un muñeco con forma de primate diseñado para abrazar… pero también para exigir ese abrazo. A través de él, indagamos qué ocurre cuando un gesto afectivo se vuelve dependiente, invasivo o contradictorio.
 
 Con este proyecto buscamos evidenciar qué ocurre cuando un gesto afectivo pierde equilibrio y deja de ser voluntario. Nos interesa que el usuario experimente la incomodidad de un cariño que se vuelve exigencia, mostrando cómo un vínculo puede transformarse en dependencia cuando una de las partes no puede regularlo.
 
@@ -37,9 +37,9 @@ La elección de un primate se debe a que su biología emocional se sostiene radi
 
 Cuando ese vínculo se interrumpe, muchos primates desarrollan ansiedad, apego excesivo o dependencia. Esa fragilidad inspiró el comportamiento de Jorgito: un muñeco que vive la separación como abandono y reacciona buscando desesperadamente recuperar el contacto.
 
-También lo diseñamos con una apariencia tierna, para invitar naturalmente al gesto de acariciarlo o abrazarlo. Ese contraste hace que el usuario se acerque sin sospecha, y que el vínculo se active a través del contacto de sus propios brazos.
+También lo diseñamos con una apariencia tierna, para invitar naturalmente al gesto de acariciarlo o abrazarlo. Ese contraste hace que el usuario se acerque sin sospecha y que el vínculo se active a través del contacto de sus propios brazos.
 
-La elección del mono, entonces, no es estética sino conceptual: permite trasladar al objeto un modo de apego intenso y vulnerable, amplificando la tensión entre cuidado, dependencia y control.
+La elección del mono, entonces, no es estética, sino conceptual: permite trasladar al objeto un modo de apego intenso y vulnerable, amplificando la tensión entre cuidado, dependencia y control.
 
 [![Referente bebé gibón](https://img.youtube.com/vi/wLni152HI04/maxresdefault.jpg)](https://www.youtube.com/watch?v=wLni152HI04&t=237s)
 
@@ -47,15 +47,17 @@ La elección del mono, entonces, no es estética sino conceptual: permite trasla
 
 ### La Dualidad del Cariño
 
-En lo cotidiano solemos buscar en los animales una fuente constante de afecto, pero ese cariño, cuando no tiene límites, puede convertirse en una carga. Esa tensión entre cuidado y agobio guía el proyecto. En Jorgito conviven sensaciones opuestas: su abrazo consuela pero incomoda, pide cercanía pero teme perderla. Esa contradicción define la experiencia y vuelve el vínculo inestable. Lo que inicia como un gesto tierno termina mostrando cómo el afecto puede transformarse en dependencia y desgaste emocional.
+En lo cotidiano solemos buscar en los animales una fuente constante de afecto, pero ese cariño, cuando no tiene límites, puede convertirse en una carga. Esa tensión entre cuidado y agobio guía el proyecto. En Jorgito conviven sensaciones opuestas: su abrazo consuela, pero incomoda; pide cercanía, pero teme perderla. Esa contradicción define la experiencia y vuelve el vínculo inestable. Lo que inicia como un gesto tierno termina mostrando cómo el afecto puede transformarse en dependencia y desgaste emocional.
 
 ![Tensión emocional](./imagenes/jorgito-llorando.jpg)
+
+Pobre monito Jorgito ilustrado
 
 ---
 
 ### Contexto de uso
 
-Esta maquina esta pensada para generar incomodidad en el usuario a traves de estimulos programados para exponer una problematica.
+Esta máquina está pensada para generar incomodidad en el usuario a través de estímulos programados para exponer una problemática.
 
 ---
 
@@ -116,10 +118,18 @@ flowchart TB
 
 ### Inputs y outputs
 
+Inputs:
+
+- Sensor ultrasónico HC-SR04
+- Sensor de presión FSR402
 
 
-Inputs y outputs
+Outputs:
 
+- Mini Parlante Altavoz de 3w
+- Motor DC Miniatura 3-6V – Alta Velocidad 15000 RPM
+- Servo SG90 (3 unidades)
+- Módulo MP3 DFPlayer Mini
 
 --- 
 
@@ -142,27 +152,53 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 ![foto de la vértebra](./imagenes/vertebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
 
+Recopilación de funcionamiento de vértebras, brazos y columna.
+
 ![prueba brazo](./imagenes/pruebabrazo.gif) ![prueba vertebras](./imagenes/pruebavertebras.gif)
 
+Pruebas del funcionamiento de los brazos y vértebras.
+
 ![foto de Jorgito](./imagenes/fotomontajejorgito.jpg)
+Boceto de modelo 3D de Jorgito.
 
 ![molde](./imagenes/patronaje.png)
+Molde en diferentes vistas del patronaje.
 
 ![patrones](./imagenes/patrones.png)
 
-- Para definir la forma de Jorgito, revisamos distintos modelos de peluches disponibles en el mercado, poniendo especial atención en aquellos cuyos brazos invitan naturalmente al abrazo
+- Para definir la forma de Jorgito, revisamos distintos modelos de peluches disponibles en el mercado, poniendo especial atención en aquellos cuyos brazos invitan naturalmente al abrazo.
 
 ![confección y cambio de jorgito](./imagenes/evoluciónjorgito.jpg)
 
-- 
+Evolución de Jorgito a lo largo del proyecto.
 
 --- 
+
+### Desafíos 
+
+- Para comenzar, nuestro grupo pasó por bastantes ideas y diferentes modelos. Incluso estuvo en discusión sobre qué animal sería.
+
+- La idea inicial de un robot dando un abrazo fue modificada para que fuera más compleja. La idea inicial fue inspirada por un trabajo subido a internet.
+
+- Otro problema era cómo debería ser presentado ante el público, dependiendo de los componentes, sus pesos y la interacción.
+
+- Al no tener los materiales necesarios, tuvimos que idear una segunda opción para la base de Jorgito.
+
+- Tuvimos dificultades para la fabricación de los moldes al ser muy pequeños o no parecidos a un mono.
+
+- Sobre todo, hubo problemas con el código, el traspaso del código a clases y con los componentes.
+
+- La disposición de los componentes y su tamaño nos hizo pensar en diferentes opciones en cómo encajar cada pieza para que quede bien con los movimientos.
+
+- Al momento de soldar, hubo uno que otro problema con el cableado.
+
+
 
 ### Prototipo Final
 
 
-
 ### Bibliografía
 
+- Instructables. (2017, 4 octubre). Hugbot - a Soft Robot Who Gives Small Hugs. Instructables. https://www.instructables.com/Hugbot-A-Soft-Robot-Who-Gives-Small-Hugs/
 - Psychological Science. (s.f.). Harlow’s classic studies revealed the importance of maternal contact. https://www.psychologicalscience.org/publications/observer/obsonline/harlows-classic-studies-revealed-the-importance-of-maternal-contact.html
 ---
