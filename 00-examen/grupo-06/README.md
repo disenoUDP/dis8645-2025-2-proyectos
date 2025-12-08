@@ -142,7 +142,7 @@ Primero levantamos referentes: queríamos apoyarnos en la estética retro-portá
 
 Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), tomando en cuenta esa interpretación asociada al acto de “cuidar”.
 
-![fotos-referentes](https://github.com/user-attachments/assets/51f0a886-b769-408e-baa0-4fcd91c94465)
+![imagen referentes](imagenes/modelado-)
 
 > Foto Game Boy, Game & Watch y Tamagotchi
 
