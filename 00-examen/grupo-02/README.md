@@ -401,8 +401,21 @@ Además, un modelo de metro que también fue impreso y dentro lleva el sensor ul
 ![imagen04](./imagenes/imagen04.jpg)
 
 
+──── ୨୧ ────
+
+
 ### ¿Cómo se conecta por dentro? ⋆˙⟡
 ![TALLER2025](./imagenes/TALLER2025.jpg)
+
+
+
+## Prototipo Final 𓏲 ๋࣭ ࣪ ˖🎐
+![FINAL01](./imagenes/FINAL01.jpg)
+
+![FINAL02](./imagenes/FINAL02.jpg)
+
+──── ୨୧ ────
+
 
 ### Código explicado
 
