@@ -143,7 +143,8 @@ Primero levantamos referentes: queríamos apoyarnos en la estética retro-portá
 Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), tomando en cuenta esa interpretación asociada al acto de “cuidar”.
 
 ![fotos-referentes](https://github.com/user-attachments/assets/51f0a886-b769-408e-baa0-4fcd91c94465)
-> foto de referentes
+
+> Foto Game Boy, Game & Watch y Tamagotchi
 
 luego definimos que queriamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
 
