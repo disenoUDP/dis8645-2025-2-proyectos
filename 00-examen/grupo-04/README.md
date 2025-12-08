@@ -34,7 +34,7 @@ Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situ
 
 Contexto de uso:
 
- -Àtrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
+- `Atrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
 
 ---
 
@@ -168,22 +168,25 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 - Cursor: red atrapa hadas hecho con pixel art
 - Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
 
-![Hadas](./imagenes/haditas.gif)
+<img src="./imagenesProceso/atrapameSIPuedes01.gif" alt="proceso01" width="300"> <img src="./imagenesProceso/eligeTuHada01.gif" alt="eligetuhada01" width="300"> 
 
-![choose aaron](./imagenes/chooseAaron.gif)
+<img src="./imagenesProceso/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenesProceso/ohNo.gif" alt="proceso03" width="300"> 
 
-![choose misaa](./imagenes/chooseMisa.gif)
+<!-- ![Hadas](./imagenes/haditas.gif) --> <!-- ![choose aaron](./imagenes/chooseAaron.gif) -->
+<img src="./imagenes/haditas.gif" alt="hadas" width="400">
 
-![choose mateo](./imagenes/chooseMateo.gif)
+<!-- ![choose aaron](./imagenes/chooseAaron.gif) --> <!-- ![choose misaa](./imagenes/chooseMisa.gif) -->
+<img src="./imagenes/chooseAaron.gif" alt="aaron" width="400"> <img src="./imagenes/chooseMisa.gif" alt="misa" width="400">
 
-![choose janis](./imagenes/chooseJanis.gif)
+<!-- ![choose mateo](./imagenes/chooseMateo.gif) --> <!-- ![choose janis](./imagenes/chooseJanis.gif) -->
+<img src="./imagenes/chooseMateo.gif" alt="mateo" width="400"> <img src="./imagenes/chooseJanis.gif" alt="janis" width="400">
 
 |Hada|Volando|Estático|
 |---|---|---|
-|![aaron](./imagenes/aaron.png)|![aaron](./imagenes/aaronVolando.gif)|![aaron](./imagenes/aaronEstatico.gif)|
-|![misa](./imagenes/misa.png)|![misa](./imagenes/misaVolando.gif)|![misa](./imagenes/misaEstatico.gif)|
-|![mateo](./imagenes/mateo.png)|![mateo](./imagenes/mateoVolando.gif)|![mateo](./imagenes/mateoEstatico.gif)|
-|![janis](./imagenes/janis.png)|![janis](./imagenes/janisVolando.gif)|![janis](./imagenes/janisEstatica.gif)|
+|<img src="./imagenes/aaron.png" alt="aaron" width="350">|<img src="./imagenes/aaronVolando.gif" alt="aaron" width="300">|<img src="./imagenes/aaronEstatico.gif" alt="aaron" width="300">|
+|<img src="./imagenes/misa.png" alt="misa" width="350">|<img src="./imagenes/misaVolando.gif" alt="misa" width="300">|<img src="./imagenes/misaEstatico.gif" alt="misa" width="300">|
+|<img src="./imagenes/mateo.png" alt="mateo" width="350">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="300">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="300">|
+|<img src="./imagenes/janis.png" alt="janis" width="350">|<img src="./imagenes/janisVolando.gif" alt="janis" width="300">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="300">|
 
 |Paisaje|Inicio|
 |---|---|
@@ -191,10 +194,6 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 |<img src="./imagenes/bosque2.jpeg" alt="bosque" width="300">|<img src="./imagenes/inicio2.gif" alt="inicio" width="300">|
 |<img src="./imagenes/bosque3.gif" alt="bosque" width="300">|<img src="./imagenes/inicio3.gif" alt="inicio" width="300">|
 |<img src="./imagenes/redAtrapaHadas.png" alt="red" width="300">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="300">|
-
-<img src="./imagenesProceso/atrapameSIPuedes01.gif" alt="proceso01" width="300"> <img src="./imagenesProceso/eligeTuHada01.gif" alt="eligetuhada01" width="300"> 
-<img src="./imagenesProceso/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenesProceso/ohNo.gif" alt="proceso03" width="300"> 
-
 
 ## Procesos y bocetos
 
@@ -206,8 +205,17 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 4. Desde p5.js fue dificil agregarle una función al sensor Y, ya sea como botón y para desplazamiento.
 5. Decisión de las impresiones en 3d, la dificultad de ver como ibamos a tapar el navegador de chrome y el mando para los sensores Y.
 
+<img src="./imagenesProceso/proceso03.png" alt="red" width="300"> <img src="./imagenesProceso/proceso08.png" alt="red" width="300">
+
+<img src="./imagenesProceso/proceso07.png" alt="red" width="300">
+
 ### Proceso y diseño de carcasa 
 
+<img src="./imagenesProceso/proceso01.png" alt="red" width="300"> <img src="./imagenesProceso/proceso02.png" alt="red" width="300">
+
+<img src="./imagenesProceso/proceso04.png" alt="red" width="300"> <img src="./imagenesProceso/proceso05.png" alt="red" width="300"> 
+
+<img src="./imagenesProceso/proceso06.png" alt="red" width="300"> 
 
 ### Código y pseudocódigo
 
