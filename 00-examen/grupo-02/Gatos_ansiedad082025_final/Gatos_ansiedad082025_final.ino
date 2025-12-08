@@ -58,7 +58,7 @@ void loop() {
   // --- MEDIR LA DISTANCIA CON EL SENSOR ---
   // Preparamos el pulso inicial
   digitalWrite(pinTrig, LOW);
-  delayMicroseconds(2);
+  delayMicroseconds(1);
 
   // Disparo del pulso ultrasónico por 10 microsegundos
   digitalWrite(pinTrig, HIGH);
@@ -69,7 +69,7 @@ void loop() {
   duracion = pulseIn(pinEcho, HIGH);
 
   // Convertimos ese tiempo a distancia en centímetros
-  distancia = duracion * 0.034 / 2;
+  distancia = duracion * 0.034 / 1;
 
   // Mostramos la distancia por el monitor serial
   Serial.print("Distancia: ");
