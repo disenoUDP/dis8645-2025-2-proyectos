@@ -28,12 +28,14 @@ El juego consiste en una pantalla con animaciones que muestran el estado actual 
 
 El jugador presiona los sensores para controlar una red atrapahadas y capturar a las hadas, que representan a los docentes. Para concretar la captura, debe aplicar la presión adecuada con ambas manos y, al alcanzar el objetivo, mover el mando arriba y abajo con un gesto rápido que activa el acelerómetro. Esta secuencia de acciones contribuye a la sensación de “casi” y esfuerzo repetitivo que estructura toda la experiencia.
 
-
 <!-- POR QUÉ HICIMOS ESTO  -->
 
 Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situacional de la vida lo que para muchas personas podría ser algo frustrante. Para nosotros es un símbolo de humor, frustración y esfuerzo. El juego muestra cómo pequeños detalles pueden complicar incluso las metas más simples, y aun así seguimos intentando. Y eso no tiene nada de malo: frustrarse, ¿para qué?, si se puede pasar bien incluso en esas situaciones. No queremos confundir al usuario de manera errónea; solo buscamos generar un sentimiento ridículo, no tomarse las cosas tan personales cuando a veces simplemente buscamos pasar el tiempo y ver que no son tan trágicas como parecen. La forma en que entendemos este proyecto se basa en mirar el esfuerzo y el fracaso como algo ligero, exagerado y humorístico, donde la experiencia pertenece totalmente a quien la vive y no pretende ser más que eso un juego que hace visible lo absurdo.
 
+Contexto de uso
+ - fjfj
 
+---
 
 ## Inputs y Outputs
 
@@ -70,6 +72,10 @@ Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situ
 |Carcasa|3|Filamento:PLA|Impresión 3D|Impresión en el Lab|
 |Plinto|1|Filamento:PLA|Impresión 3D|Impresión en el Lab|
 |Cables|20 aprox.|macho-macho|-|$1.000|
+
+## Específicaciones de sensores
+
+- 
 
 ---
 
@@ -173,6 +179,10 @@ classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEF
 
 ## Procesos y bocetos
 
+`Dificultades y desafíos`
+
+-fhf
+
 - Máquina sentimental "Atrápame si puedes"
 
 `PROPUESTA VISUAL`
@@ -186,8 +196,84 @@ classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEF
 
 
 
+### Proceso y diseño de carcasa 
+
+
+### Código y pseudocódigo
+
+`PSEUDOCÓDIGO`
+
+Comenzamos realizando un pseudocódigo para crear un puente entre la idea y el código real.
+
+```cpp
+INICIAR variables:
+    estado = "espera"
+    puntaje = 0
+    objetivo = posición_inicial
+
+MIENTRAS el sistema esté encendido:
+
+    lee presión y los ejes x, y, z de los mandos en interacción
+
+    SI estado == "espera" Y el usuario se acerca:
+        mostrar_mensaje("atrapame si puedes")
+        estado = "invitación"
+
+    SI estado == "invitación" Y el usuario toma los mandos:
+        calibrar_controles()
+        estado = "jugando"
+
+    SI estado == "jugando":
+        mover_cursor_según_Fuerza()
+        mover_para_atrapar_mover_rapidamente()
+
+    SI el jugador atrapa el objetivo:
+            SI aparece un mensaje de supuesto logro porque aún falta 443 más:
+              Opciones: salir o reintentar()
+
+    Si se acabo el tiempo se perdió
+                Mostrar mensaje de juego perdido()
+                Esperar inactividad por 10 seg.()
+                Vuelve a la pantalla principal
+```
+
+- Luego hicimos el código real, donde separamos el archivo principal (.ino) en clases (.cpp / .h)
+
+`ARCHIVO PRINCIPAL`
+
+`.CPP`
+
+`.H`
+
 ## Fotografías del proyecto terminado
 
 ## Roles de equipo
 
+- Yamna Carrión: Aporte principal haciendo, revisando y probando código. Ayudó también a ordenar Github.
+- Valentina Chavéz: Aporte principal haciendo, revisando y probando código.
+- Antonia Fuentealba: Aporte principal en diseño de gráficas y gifs.
+- Sofía Peréz: Aporte principal en diseño de gráficas y gifs.
+- Millaray Millar: Aporte principal como diseñadora y reina del modelado de nuestro prototipo. 
+- Valentina Ruz: Aporte principal haciendo, revisando y probando código. Ayudó también a ordenar Github.
+
 ## Bibliografía
+
+- Afel. (2025). Sensor acelerómetro GY-291 ADXL345 — 3 ejes. <https://afel.cl/products/sensor-acelerometro-gy-291-adxl345-3-ejes?_pos=1&_sid=bb8703111&_ss=r>
+- Afel. (s. f.). Sensor de fuerza / presión FSR402 [Producto]. <https://afel.cl/products/sensor-de-fuerza-presion-fsr402>
+- Arduino.cl. (s. f.). Arduino UNO R4 Mínima. <https://arduino.cl/producto/arduino-uno-r4-minima/?srsltid=AfmBOoqBSLqpGT9CRKFQ4IaCLlnrIhTwcVLylGSazEoFdSGtGAhj6uXa>
+- YouTube. (s. f.). Título del video [Video]. YouTube. <https://www.youtube.com/watch?v=E2_42DkFT4s>
+- Pablo Eduardo J.C. (2025,08.06). Tutorial ADXL345 Sensor [Carpeta compartida]. Google Drive. <https://drive.google.com/drive/folders/1cRIQMYCmu9xg-Co9eqxS3qml1jfeBnEv>
+- Pixilart Inc. (2025). Pixilart – free online drawing editor and social platform for everyone. <https://www.pixilart.com/>
+- Gohai. (n.d.). p5.webserial.js: A library for p5.js which adds support for interacting with Serial devices, using the Web Serial API [Source code]. GitHub. <https://github.com/gohai/p5.webserial>
+- p5.webserial.js. (n.d.). p5.webserial.js — A library for p5.js that adds support for interacting with Serial devices using the Web Serial API [Source code]. GitHub. <https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started>
+- Whimsical. (n.d.). Workspace board [Carpeta en línea]. <https://whimsical.com/Ca7qiC4VpqiA7dYewVCkAC>
+- p5.js. (n.d.). p5.js – friendly tool for learning to code and make art. <https://p5js.org/>
+- Epidemic Sound. (s. f.). Royalty-free music for video games [Página web]. Recuperado de <https://www.epidemicsound.com/game-development/music-for-video-games/>
+- Ye Yuan, I. (2018, November 6). Tutorial: Serial communication with Arduino and p5.js [Blog post]. Medium. <https://medium.com/@yyyyyyyuan/tutorial-serial-communication-with-arduino-and-p5-js-cd39b3ac10ce>
+- YouTube. (n.d.). Connecting p5 & Arduino through the serial port [Video]. YouTube. <https://www.youtube.com/watch?v=MtO1nDoM41Y>
+- Ridler, A. (2019). Bloemenveiling [Trabajo artístico]. <https://annaridler.com/bloemenveiling>
+- YouTube. (s. f.). [p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch] [Video]. YouTube. <https://www.youtube.com/watch?v=feL_-clJQMs>
+`Referentes`
+- Minecraft. (n.d.). Minecraft official site [Sitio web]. <https://www.minecraft.net/es-es>
+- Inspiración en juegos 8-bits
+  
