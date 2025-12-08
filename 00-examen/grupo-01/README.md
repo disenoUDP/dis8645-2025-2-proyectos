@@ -14,20 +14,23 @@ Nombre de grupo: **Los 404**
 
 ### Roles del equipo:
 
-- **Sofia Cartes:** Aporte principal de ordenar Github, Revisar, probar y hacer código pantalla neopixel.
-- **Catalina Catalán:** Aporte principal haciendo código del módulo reproductor MP3 y pantalla LCD. Ayudó también a ordenar Github.
-- **Nicolas Miranda:**  Aporte principal haciendo código pantalla neopixel, revisando y probando código. Ayudó también a ordenar Github.
+- **Sofia Cartes:** Aporte principal de ordenar Github, Revisar, probar y hacer código pantalla neopixel. Desarrollo y diseño de fanzine. 
+- **Catalina Catalán:** Aporte principal haciendo código pantalla LCD, modelado y diseño en Autocad de la carcasa, conexiones generales pantala. Ayudó también a ordenar Github.
+- **Nicolas Miranda:**  Aporte principal haciendo código pantalla neopixel, revisando y probando código; código del módulo reproductor MP3; conexiones generales proyecto final. Ayudó también a ordenar Github.
 - **Vania Paredes:** Aporte principal haciendo código pantalla neopixel, revisando y probando código. Ayudó también a ordenar Github.
 
-Cada integrante del grupo participó activamente ayudando en los roles del otro. Proceso colaborativo. Además, en conjunto se decidió el diseño de la carcasa. 
+Cada integrante del grupo participó activamente ayudando en los roles del otro. Proceso colaborativo. En conjunto se realizó la unión de todos los componentes para el resultado final. 
 
 ## 0aTAo 
 
 0aTAo (cero atao) es una experiencia interactiva que explora la **frustración**, la **paciencia** y la imposibilidad de controlar lo imperfecto. El juego parece invitar a reparar una figura simple, pero rápidamente demuestra que cada intento de arreglarla solo la desordena más.
 
-El dispositivo utiliza una matriz de 8×8 píxeles, un joystick y cinco botones. La pantalla LCD muestra “VEN, ACÉRCATE Y JUEGA”, mientras que la matriz neopixel presenta un cuadrado perfectamente formado. Al iniciar el juego, un píxel se desplaza y la figura pierde su estabilidad. Desde ahí, cada acción del usuario busca corregir el error que genera nuevas distorsiones.
+El dispositivo utiliza una matriz de 8×8 píxeles, un joystick y cinco botones. La pantalla LCD muestra “VEN, ACÉRCATE Y JUEGA” (intervenida con caracteres), mientras que la matriz neopixel presenta un cuadrado cerrado. Al iniciar del juego, un píxel se desplaza y la figura pierde su estabilidad (queda abierta con un pixel corrido). Desde ahí, cada acción del usuario busca corregir el error que genera nuevas distorsiones.
 
-Lo interesante es que, cuando el jugador deja de intervenir, la figura vuelve a su estado perfecto. Esta dinámica refuerza la *metáfora* del proyecto: **cuanto más intentamos controlar y corregir, más se desordena todo; pero al soltar y dejar de forzar la perfección, el equilibrio reaparece por sí solo.**
+Lo interesante es que, cuando el jugador deja de intervenir, la figura vuelve a su estado perfecto. Esta dinámica refuerza la *figura literaria* del proyecto: 
+
+- **Aporía mecánica: la paradoja de un artefacto humano que se desordena con el control y recupera su equilibrio solo cuando renunciamos a dirigirlo.**
+- cuanto más intentamos controlar y corregir, más se desordena todo; pero al soltar y dejar de forzar la perfección, el equilibrio reaparece por sí solo.
 
 Instrucciones de uso:
 
@@ -43,6 +46,9 @@ Los **cuatro botones adicionales** no tiene etiquetas ni indicaciones: el jugado
 Contexto de uso:
 
 0aTAo es un juego donde las personas pueden acercarse, tocar botones y mover un joystick para intentar arreglar una figura de luces que se va desordenando. Está pensado para espacios de exhibición o juegos experimentales en los que el usuario descubre que mientras más intenta controlar la figura más caos genera y que solo al dejar de intervenir, el sistema vuelve solo a la perfección inicial. Busca generar una experiencia lúdica y reflexiva sobre el control, la frustración y la idea de soltar.
+
+`PONER FASES DE USO COMO ESTAN EN LOS OTROS GITHUBS!!!!
+`+ PONER FOTOS DE REFERENCIA EN EL DIAGRAMA !!!!
 
 ### Diagrama de flujo
 
@@ -109,6 +115,8 @@ flowchart TB
 
 #### BOM
 
+`AÑADIR LOS PRECIOS Y LOS LINKS DE COMPRA !!
+
 | Componentes | Cantidad | Unidad          | OBS | precios
 |---------|----------------------------------|------------------|------------------|---|
 | Mini Protoboard | 3 | 400 puntos | Conexión VCC GND directa al arduino | . |
@@ -138,6 +146,8 @@ flowchart TB
 
 Pantalla LED 8x8 píxeles: Al principio muestra una figura perfectamente formada: Un cuadrado. Al apretar el botón de inicio, un píxel se mueve, y la figura deja de ser perfecta. Dependiendo del botón que se apriete, los píxeles seguirán cambiando y modificándose. 
 
+` PONER FOTOS DE ESQUEMA DE LO QUE HACE LA PANTALLA 
+
 #### Reacciones pantalla LCD 
 
 - Al principio (sin tener ninguna interacción) muestra el mensaje: **"VEN, ACÉRCATE Y JUEGA"**. Es lo que invita a la persona a interactuar con la máquina.
@@ -145,14 +155,14 @@ Pantalla LED 8x8 píxeles: Al principio muestra una figura perfectamente formada
 - A medida que se interactúa con distintos controles como el mando de joystick o los botones (del 1 al 4: inútil, música, glotón, cambio color), las respuestas cambian aleatoriamente entre estas frases: **"No debiste hacer eso", "Upps, pésima idea", "No lo hagas más"**. 
 - Si se activa el modo disco (botón joystick), la pantalla muestra **"NO ES MOMENTO DE DIVERTIRSE"**.
 
+` PONER FOTOS DE ESQUEMA DE LO QUE HACE LA PANTALLA 
+
 #### Audio
 
-El audio que se reproduce durante todo momento (haya o no hay interacción) es: 
+El audio que se reproduce durante cuando se inicia el juego es: 
 
 - **Darker Waves - Zander Noriega** [darker-waves](https://opengameart.org/content/darker-waves)
 - Licencia CC-BY 3.0 "puedes usar la obra libremente incluso comercialmente, SIEMPRE que des creditos al autor"
-
-Cuando se aprieta el botón "velocidad música", este comienza a reproducirse más rápido. Si se aprieta el modo disco, la canción cambia (solo mientras esté en modo disco; después vuelve a su reproducción normal).
 
 ### Bocetos de planificación
 
@@ -259,6 +269,12 @@ Algunas de estas fueron:
 - Hacer que los mensajes de la pantalla LCD cambien en base al funcionamiento de los botones.
 - Conectar y hacer funcionar el módulo MP3, eso incluyendo principalmente que la tarjeta SD no era leída correctamente por el módulo.
 - Cambio de pines para integrar todo a un solo Arduino.
+- Cambios en base a correciones previas como cambio de botones o funciones generales. 
+- Carcasa, calce de piezas, errores en corte laser.
+- Conexiones de todo (unir proyecto) a la carcasa.
+- Botones no caen bien en el acrilico (no pulsan).
+- Lograr que todo funcione una vez unido a la carcasa.
+- Entre otras. 
 
 ### Proceso: dificultades, conexiones, desafíos
 
@@ -273,6 +289,8 @@ Algunas de estas fueron:
 | <img src="./imagenes/IMG6.jpg" alt="conexion" width="300"> | |
 
 ## Etapas del código
+
+`Cambiar todo totodooooo !!!!!!!1`
 
 - *ETAPAS DE PROCESO DE CÓDIGO ARRIBA EN FILES CON FECHA DE MODIFICACIONES.*
 
@@ -762,6 +780,8 @@ void loop() {
 
 ### Referentes de carcasa
 
+Primera fase: Segunda fase: 
+
 - La idea es utilizar corte láser y acrílico como materialidad principal. 
  
 
@@ -777,6 +797,8 @@ Carta Gant:
 ## Registro proyecto 03
 
 ### Fotografías y videos del proyecto funcionando
+
+### Interior máquina 
 
 
 ## Bibliografía 
