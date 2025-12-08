@@ -93,7 +93,32 @@ Gasto real del equipo – 6.400
 
 ### **Diagrama de flujo**
 
+``` mermaid
+---
+config:
+  layout: fixed
+---
+flowchart TB
+    A["W.E.B.O."] --> B("¿Necesitas temporizar algo?")
+    B -- Sí --> C{"Presionar botón"}
+    B L_B_D_0@-- No --> D["No hace nada"]
+    C --> E["Despierta Ava"]
+    E -- Para temporizar --> F{"presionar botón nuevamente"}
+    F -- La cuenta regresiva comienza a partir de los 5 seg --> G["Ava se aburre"]
+    G -- Sí --> H["Comienza a bailar/girar"]
+    G -- No --> I["Se queda en su posición"]
+    I --> G
+    H --> J{"¿Ava se inclino?"}
+    J -- Sí --> K{"Suena alarma avisando que se cayo"}
+    J -- No --> L["No suena nada"]
+    K -- Vigila que Ava no se caiga --> M["Termina el temporizador"]
+    M -- Suena la alarma Real --> N{"Presionar botón para desactivar la alarma"}
+    N --> B
+    D --> A
 
+
+    L_B_D_0@{ curve: linear }
+```
 
 ### **Fabricación**
 
