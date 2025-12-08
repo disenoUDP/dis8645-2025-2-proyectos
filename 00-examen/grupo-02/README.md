@@ -355,45 +355,36 @@ Esto permite activar cada motor de forma independiente y en secuencia (efecto �
 ```cpp
 INICIAR sistema
 
-DEFINIR:
-    - Sensor ultrasónico: mide distancia frente al prototipo
-    - 4 gatos vibradores, cada uno con salida PWM independiente
+DECLARAR:
+    - Sensor ultrasónico (pines TRIG y ECHO)
+    - 4 motores (gato1, gato2, gato3, gato4), controlados por PWM
     - Intensidad fija de vibración = 180
-    - Distancia de activación = 2 cm
-    - Tiempo entre sumas de gatos = 3 segundos
+    - Distancia de activación = 20 cm
 
-APAGAR todos los gatos al iniciar
+CONFIGURAR pines del sensor y de los motores como salida/entrada
+
+APAGAR los 4 motores al iniciar el sistema
 
 
-BUCLE PRINCIPAL (repetir siempre):
-    
-    LEER distancia desde sensor ultrasónico
+BUCLE PRINCIPAL (se repite constantemente):
 
-    SI distancia es válida Y es menor o igual a 2 cm:
-        
-        SI todavía no estamos en modo activado:
-            Entrar en modo activado
-            Registrar tiempo de inicio
-            Activar primer gato (Gato 1)
-        
-        CALCULAR cuánto tiempo ha pasado desde que se activó el primero
-        
-        SEGÚN el tiempo transcurrido:
-            - 0 a 3 segundos     → activar 1 gato
-            - 3 a 6 segundos     → activar 2 gatos
-            - 6 a 9 segundos     → activar 3 gatos
-            - 9 segundos o más   → activar 4 gatos
-        
-        TODOS los gatos activos vibran con la misma intensidad (180)
-    
-    SINO (si la distancia es mayor a 2 cm):
-        
-        Salir del modo activado
-        Apagar los 4 gatos al instante
-        Reiniciar el contador de gatos activos
+    MEDIR distancia usando el sensor ultrasónico
 
+    SI la distancia es válida Y menor que el umbral (20 cm):
+        
+        // Algo está cerca → activar ansiedad
+        ENCENDER los 4 motores con intensidad 180
+
+    SINO:
+        
+        // No hay nada cerca → calma total
+        APAGAR los 4 motores
+
+
+ESPERAR un instante corto para estabilizar la lectura (≈60 ms)
 
 REPETIR indefinidamente
+
 ```
 
 
@@ -416,153 +407,105 @@ Además, un modelo de metro que también fue impreso y dentro lleva el sensor ul
 ### Código explicado
 
 ```cpp
+
 // ---------------------------------------------
 // Proyecto: Gatitos en Ansiedad
 // Versión: Arduino UNO R4 
-// Descripción:
-// Este código controla 4 gatitos que “sienten” ansiedad
-// cuando el metro se acerca. Se activa por un sensor
-// ultrasónico, vibra con motores controlados por MOSFET
+// Descripción general:
+// Este programa controla 4 pequeños motores que representan 
+// a gatitos que “sienten ansiedad”. Cuando el sensor ultrasónico 
+// detecta que algo (como un metro acercándose) está cerca, 
+// los gatitos vibran con una intensidad definida. Si no hay nada 
+// cerca, permanecen tranquilos. 
 // ---------------------------------------------
 
-// ----------- PINES ---------------
+// ----------- PINES DE LOS MOTORES ------------
+// Cada pin controla un motor mediante PWM 
 int gato1 = 3;
 int gato2 = 5;
 int gato3 = 6;
 int gato4 = 10;
 
-// --------------------------------------------------------------
-//  Pines del sensor ultrasónico HC-SR04 
-// --------------------------------------------------------------
+// ----------- PINES DEL SENSOR ULTRASÓNICO -----------
+// pinTrig envía el pulso
+// pinEcho recibe el eco
 int pinTrig = 8;
 int pinEcho = 9;
 
-// --------------------------------------------------------------
-//  Intensidad de vibración (0 a 255)
-// --------------------------------------------------------------
+// Intensidad de vibración para todos los gatitos
+// (valor PWM entre 0 y 255)
 int intensidadGato = 180;
 
-// --------------------------------------------------------------
-//  Umbral de distancia para activar la escena
-//  Cuando algo está a 2 cm o menos → comienza la cadena
-// --------------------------------------------------------------
-int distanciaActivacion = 2;
+// Distancia mínima (en cm) para activar los motores
+int distanciaUmbral = 20;
 
-// --------------------------------------------------------------
-//  Tiempo entre cada gato sumado (3 segundos = 3000 ms)
-// --------------------------------------------------------------
-unsigned long tiempoEntreGatos = 3000;
+// Variables donde guardamos la duración del eco y la distancia calculada
+long duracion;
+int distancia;
 
-// --------------------------------------------------------------
-//  Variables de control de la secuencia
-// --------------------------------------------------------------
-bool secuenciaActiva = false;
-unsigned long momentoInicioSecuencia = 0;
-int gatosEncendidos = 0;   // 0→ninguno, 1→gato1, 2→gato2, etc.
+void setup() {
+  Serial.begin(9600);  // Activamos el monitor serial para ver datos en pantalla
 
-// --------------------------------------------------------------
-//  Esta función mide la distancia real del sensor ultrasónico
-//  Se devuelve en centímetros
-// --------------------------------------------------------------
-long medirDistancia() {
+  // Configuramos los pines del sensor
+  pinMode(pinTrig, OUTPUT);
+  pinMode(pinEcho, INPUT);
 
-  // Limpia el TRIG
-  digitalWrite(pinTrig, LOW);
-  delayMicroseconds(2);
+  // Configuramos los pines de los motores como salida
+  pinMode(gato1, OUTPUT);
+  pinMode(gato2, OUTPUT);
+  pinMode(gato3, OUTPUT);
+  pinMode(gato4, OUTPUT);
 
-  // Envía un pulso de 10 microsegundos
-  digitalWrite(pinTrig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(pinTrig, LOW);
-
-  // Lee el pulso de retorno
-  long duracion = pulseIn(pinEcho, HIGH, 30000);  
-  // 30000 µs = evita lecturas falsas o ruido
-
-  // Si no llega nada válido → distancia imposible (999 cm)
-  if (duracion == 0) {
-    return 999;
-  }
-
-  // Conversión a centímetros
-  long distancia = duracion * 0.034 / 2;
-
-  return distancia;
-}
-
-// --------------------------------------------------------------
-//  Esta función apaga TODOS los gatos al mismo tiempo
-// --------------------------------------------------------------
-void apagarTodosLosGatos() {
+  // Dejamos todos los motores apagados al iniciar
   analogWrite(gato1, 0);
   analogWrite(gato2, 0);
   analogWrite(gato3, 0);
   analogWrite(gato4, 0);
 }
 
-
-// --------------------------------------------------------------
-//  CONFIGURACIÓN INICIAL: aquí se deja todo listo antes de arrancar
-// --------------------------------------------------------------
-void setup() {
-  pinMode(gato1, OUTPUT);
-  pinMode(gato2, OUTPUT);
-  pinMode(gato3, OUTPUT);
-  pinMode(gato4, OUTPUT);
-
-  pinMode(pinTrig, OUTPUT);
-  pinMode(pinEcho, INPUT);
-
-  apagarTodosLosGatos(); // Seguridad total al iniciar
-}
-
-
-// --------------------------------------------------------------
-//  LOOP PRINCIPAL: aquí se ejecuta todo el tiempo la lógica
-// --------------------------------------------------------------
 void loop() {
 
-  // Leer distancia actual
-  long distancia = medirDistancia();
+  // --- MEDIR LA DISTANCIA CON EL SENSOR ---
+  // Preparamos el pulso inicial
+  digitalWrite(pinTrig, LOW);
+  delayMicroseconds(2);
 
-  // ----------- CASO 1: NO HAY ESTÍMULO (distancia mayor a 2 cm) ----------
-  if (distancia > distanciaActivacion) {
+  // Disparo del pulso ultrasónico por 10 microsegundos
+  digitalWrite(pinTrig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(pinTrig, LOW);
 
-    // Si la secuencia estaba activa, se detiene todo
-    if (secuenciaActiva == true) {
-      secuenciaActiva = false;
-      gatosEncendidos = 0;
-      apagarTodosLosGatos();
-    }
+  // Medimos cuánto tiempo tarda en regresar el eco
+  duracion = pulseIn(pinEcho, HIGH);
 
-    return;  // No seguimos con la secuencia
+  // Convertimos ese tiempo a distancia en centímetros
+  distancia = duracion * 0.034 / 2;
+
+  // Mostramos la distancia por el monitor serial
+  Serial.print("Distancia: ");
+  Serial.println(distancia);
+
+  // --- ACTIVAR O DESACTIVAR MOTORES SEGÚN DISTANCIA ---
+  if (distancia > 0 && distancia < distanciaUmbral) {
+
+    // Si algo está cerca del sensor:
+    // Encendemos los 4 motores con la intensidad definida
+    analogWrite(gato1, intensidadGato);
+    analogWrite(gato2, intensidadGato);
+    analogWrite(gato3, intensidadGato);
+    analogWrite(gato4, intensidadGato);
+
+  } else {
+    // Si no hay nada cerca:
+    // Apagamos completamente todos los motores
+    analogWrite(gato1, 0);
+    analogWrite(gato2, 0);
+    analogWrite(gato3, 0);
+    analogWrite(gato4, 0);
   }
 
-  // ----------- CASO 2: SE DETECTA ALGO A 2 cm O MENOS -----------
-  if (distancia <= distanciaActivacion) {
-
-    // Si la secuencia recién empieza
-    if (secuenciaActiva == false) {
-      secuenciaActiva = true;
-      momentoInicioSecuencia = millis();
-      gatosEncendidos = 0;  
-    }
-
-    // Tiempo transcurrido desde que se activó el primer gato
-    unsigned long tiempoPasado = millis() - momentoInicioSecuencia;
-
-    // Activación en cadena cada 3 segundos
-    if (tiempoPasado >= 0 && gatosEncendidos < 1) gatosEncendidos = 1;
-    if (tiempoPasado >= tiempoEntreGatos && gatosEncendidos < 2) gatosEncendidos = 2;
-    if (tiempoPasado >= tiempoEntreGatos * 2 && gatosEncendidos < 3) gatosEncendidos = 3;
-    if (tiempoPasado >= tiempoEntreGatos * 3 && gatosEncendidos < 4) gatosEncendidos = 4;
-
-    // Encender los gatos según el contador
-    if (gatosEncendidos >= 1) analogWrite(gato1, intensidadGato);
-    if (gatosEncendidos >= 2) analogWrite(gato2, intensidadGato);
-    if (gatosEncendidos >= 3) analogWrite(gato3, intensidadGato);
-    if (gatosEncendidos >= 4) analogWrite(gato4, intensidadGato);
-  }
+  // Pequeño retardo para estabilizar la lectura
+  delay(60);
 }
 
 ```
