@@ -50,7 +50,7 @@ Los componentes definidos para nuestra máquina son los siguientes:
 #### Encoder 🕹️
 Este componente es el más importante en la máquina ya que dicta que ocurre con los demás y comunica a los actuadores con el usuario. El encoder funciona contando pasos al girar una perilla y pasar por mellas. Puede girar hacia ambos lados sin límites pero nosotros solo usaremos una dirección. Para ordenar cuando se activa cada cosa necesitamos que cierta cantidad de pasos (20) signifiquen una vuelta, que cada cantidad de vueltas se ordenen en respectivos rangos y que haya un contador que recuerde estos 3 valores. Con este propósito usamos una función que añade una vuelta cada vez que se pasa por un paso múltiplo de 20 y categorizamos la cantidad de vueltas. 
 
-![gifs del encoder](./imagenes/gifs-avances-2.gif)
+![gifs del encoder](./imagenes/Avances2.gif)
 #### Step a vueltas
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -208,7 +208,7 @@ void Vibrador::velocidadVibrador(int pausaHIGH, int pausaLOW)
 Como el resto de componentes, asociamos el vibrador a rangos del encoder. De esta manera definimos 3 cantidades de tiempo de *encendido* y *apagado* del motor que se diferencian entre sí y se repiten hasta cambiar de rango.
 
 ### Carta Gantt
-![carta-gantt](./imagenes/carta-gantt.png)
+![carta gantt](./imagenes/cartaGantt.png)
 ### Mapa de flujo
 ``` mermaid
 flowchart TB
@@ -353,20 +353,23 @@ if (vueltas > 15){
 }
 ```
 ## Construcción
-![humo](./imagenes/esquematico-visual.png)
+![humo](./imagenes/esquematicoVisual.png)
 
-### Inicial y separado
-![componentes en paralelo](./imagenes/gif-avances.gif)
+### Inicial
+![líneas de leds funcionan](./imagenes/ledsFuncionan.gif)
 
-![motor funcionando](./imagenes/MOTORGIFFINAL.gif)
+
+![componentes en paralelo](./imagenes/Avances.gif)
+
+![motor funcionando](./imagenes/motorFinal.gif)
 ### En paralelo
-![humo instalado funcionando](./imagenes/humogif.gif)
+![humo instalado funcionando](./imagenes/humo.gif)
 
-![1er conjunto de cosas funcionando](./imagenes/MOTORLEDSFINAL.gif)
+![1er conjunto de cosas funcionando](./imagenes/motorLedsFinal.gif)
 
 ### Montado
 ### Forma y carcasa
-![render preliminar](./imagenes/render_carcasa.jpeg)
+![render preliminar](./imagenes/renderCarcasa.jpeg)
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornala con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
 
@@ -374,7 +377,7 @@ La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
-![luces instaladas en carcasa](./imagenes/Luces_instaladas.gif)
+![luces instaladas en carcasa](./imagenes/lucesInstaladas.gif)
 
 ## Contexto y oportunidad de diseño
 La máquina asombrosa aprovecha elementos gráficos y morfologicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas. 
