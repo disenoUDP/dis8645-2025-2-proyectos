@@ -180,9 +180,19 @@ Además diseñamos un sistema de plataforma para encajar el Arduino con la power
 
 ### Ajustes y Prototipado Final
 
-Tuvimos que corregir varias cosas a medida que fuimos haciendo los testeos. Incorporamos el speaker en la parte superior con un encaje vertical y unas pequeñas perforaciones para dejar salir el sonido. 
+Tuvimos que corregir varias cosas a medida que fuimos haciendo los testeos. Incorporamos el speaker en la parte superior con un encaje vertical y unas pequeñas perforaciones para dejar salir el sonido.
 
-Además agregamos el botón, que concentra la interacción principal, en la parte frontal.
+Agregamos el botón, que concentra la interacción principal, en la parte frontal.
+
+![render](imagenes/WEBO-ENTERO.png)
+
+![render](imagenes/DESPIECE.png)
+
+Además incorporamos su frase descriptiva junto a la ilustración de Ava en la pieza posterior y en el interior de la plataforma con los componentes.
+
+![render](imagenes/CARCASAS.png)
+
+![render](imagenes/PLATAFORMA.png)
 
 Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que finalmente pegamos con silicona.
 
