@@ -138,7 +138,9 @@ INSERTAR IMAGENES DE EXPRESIONES DE AVA
 
 #### Referentes y definición formal
 
-Primero levantamos referentes, queríamos apoyarnos en la estética retro-portátil del Tamagotchi, Game & Watch y Game Boy, luego  definimos que la pieza necesitaba una función más profunda, combinando con la lógica operativa de un temporizador, retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), considerando también esa lectura extendida asociada a “cuidar”.
+Primero levantamos referentes: queríamos apoyarnos en la estética retro-portátil del Tamagotchi, Game & Watch y Game Boy. Luego decidimos que el proyecto necesitaba una utilidad más concreta, por lo que incorporamos la lógica operativa de un temporizador. 
+
+Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), tomando en cuenta esa interpretación asociada al acto de “cuidar”.
 
 ![fotos-referentes](https://github.com/user-attachments/assets/51f0a886-b769-408e-baa0-4fcd91c94465)
 > foto de referentes
