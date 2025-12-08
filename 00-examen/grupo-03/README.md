@@ -142,7 +142,6 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 ![foto de la vértebra](./imagenes/vertebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
 
-
 ![prueba brazo](./imagenes/pruebabrazo.gif) ![prueba vertebras](./imagenes/pruebavertebras.gif)
 
 ![foto de Jorgito](./imagenes/fotomontajejorgito.jpg)
@@ -151,8 +150,11 @@ Para el prototipo realizamos el prototipado de la columna y los brazos, probando
 
 ![patrones](./imagenes/patrones.png)
 
+- Para definir la forma de Jorgito, revisamos distintos modelos de peluches disponibles en el mercado, poniendo especial atención en aquellos cuyos brazos invitan naturalmente al abrazo
+
 ![confección y cambio de jorgito](./imagenes/evoluciónjorgito.jpg)
 
+- 
 
 --- 
 
