@@ -194,7 +194,9 @@ Además incorporamos su frase descriptiva junto a la ilustración de Ava en la p
 
 ![render](imagenes/PLATAFORMA.png)
 
-Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que finalmente pegamos con silicona.
+Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. 
+
+Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que finalmente pegamos con silicona.
 
 ![render](imagenes/alginato.jpeg)
 
