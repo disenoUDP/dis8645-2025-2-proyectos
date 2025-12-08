@@ -356,6 +356,9 @@ if (vueltas > 15){
 ![humo](./imagenes/esquematicoVisual.png)
 
 ### Inicial
+![líneas de leds funcionan](./imagenes/ledsFuncionan.gif)
+
+
 ![componentes en paralelo](./imagenes/Avances.gif)
 
 ![motor funcionando](./imagenes/motorFinal.gif)
