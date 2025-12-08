@@ -47,3 +47,13 @@ AVANCES 7 DE DICIEMBRE
 
   - después ir avanzando mostrando los componentes juntos
 
+ avances 8 de diciembre
+
+ - para la presentación en la sección construcción
+- yo creo que es buena idea ir seccionando el proceso de cada actuador, ej: proceso leds y fotos/videos, proceso motor y fotos/videos, proceso humo y fotos/videos, proceso mp3 y fotos/videos, proceso encoder y fotos/videos
+- después de haber mostrado todo el proceso por separado, mostrar gifs de todo funcionando en conjunto
+
+- la otra opción es subir según estado de avance, por ejemplo, estado inicial: leds,motor,humo,mp3,encoder y después subir todo en paralelo funcionando
+
+- se vería algo así como   leds: foto1, foto2, foto3, video    motor: foto 1, foto 2, video, y así con los demás
+
