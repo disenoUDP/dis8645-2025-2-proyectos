@@ -390,7 +390,7 @@ if (vueltas > 15){
 ### Motor
 ![primer motor soldado al módulo](./imagenes/procesoArmadoMotor.jpg)
 
-***vibrador de joystick soldado a un módulo vibrador, autoría propia, 2025***
+***vibrador de joystick de xbox 360 soldado a un módulo vibrador, autoría propia, 2025***
 
 ![motor funcionando](./imagenes/motor.gif)
 
