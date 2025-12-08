@@ -242,6 +242,9 @@ flowchart TB
     n1@{ shape: rect}
     style A stroke-width:2px,stroke-dasharray: 0
 ```
+
+***diagrama de flujo hecho en mermaid, autoría propia, 2025***
+
 ### Pseudocódigo
 #### A) Manivela/encoder 🕹️
 1. Definir cuantos pasos del encoder hacen una vuelta.
