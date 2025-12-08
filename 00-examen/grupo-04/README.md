@@ -172,6 +172,8 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 <img src="./imagenesProceso/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenesProceso/ohNo.gif" alt="proceso03" width="300"> 
 
+<img src="./imagenesProceso/fondo.gif" alt="fondo" width="300"> <img src="./imagenesProceso/pantallaFinal.gif" alt="pantalla" width="300">
+
 <!-- ![Hadas](./imagenes/haditas.gif) --> <!-- ![choose aaron](./imagenes/chooseAaron.gif) -->
 <img src="./imagenes/haditas.gif" alt="hadas" width="400">
 
