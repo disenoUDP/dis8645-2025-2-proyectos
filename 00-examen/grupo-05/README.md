@@ -50,7 +50,7 @@ Los componentes definidos para nuestra máquina son los siguientes:
 #### Encoder 🕹️
 Este componente es el más importante en la máquina ya que dicta que ocurre con los demás y comunica a los actuadores con el usuario. El encoder funciona contando pasos al girar una perilla y pasar por mellas. Puede girar hacia ambos lados sin límites pero nosotros solo usaremos una dirección. Para ordenar cuando se activa cada cosa necesitamos que cierta cantidad de pasos (20) signifiquen una vuelta, que cada cantidad de vueltas se ordenen en respectivos rangos y que haya un contador que recuerde estos 3 valores. Con este propósito usamos una función que añade una vuelta cada vez que se pasa por un paso múltiplo de 20 y categorizamos la cantidad de vueltas. 
 
-![gifs del encoder](./imagenes/gifsAvances2.gif)
+![gifs del encoder](./imagenes/Avances2.gif)
 #### Step a vueltas
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -208,7 +208,7 @@ void Vibrador::velocidadVibrador(int pausaHIGH, int pausaLOW)
 Como el resto de componentes, asociamos el vibrador a rangos del encoder. De esta manera definimos 3 cantidades de tiempo de *encendido* y *apagado* del motor que se diferencian entre sí y se repiten hasta cambiar de rango.
 
 ### Carta Gantt
-![carta-gantt](./imagenes/cartaGantt.png)
+![carta gantt](./imagenes/cartaGantt.png)
 ### Mapa de flujo
 ``` mermaid
 flowchart TB
@@ -356,11 +356,11 @@ if (vueltas > 15){
 ![humo](./imagenes/esquematicoVisual.png)
 
 ### Inicial
-![componentes en paralelo](./imagenes/gifAvances.gif)
+![componentes en paralelo](./imagenes/Avances.gif)
 
 ![motor funcionando](./imagenes/motorFinal.gif)
 ### En paralelo
-![humo instalado funcionando](./imagenes/humoGif.gif)
+![humo instalado funcionando](./imagenes/humo.gif)
 
 ![1er conjunto de cosas funcionando](./imagenes/motorLedsFinal.gif)
 
