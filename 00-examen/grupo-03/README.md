@@ -203,16 +203,16 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
 
- ![Intento de la implementación de la bocina](./imagenes/bocina.png)
+ ![Intento de la implementación de la bocina](./imagenes/bocina.jpg)
 
  De las primeras veces intentando que la bocina funcione 
 
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
-  ![Soldadura](./imagenes/soldadura.png)
+  ![Soldadura](./imagenes/soldadura.jpg)
   Proceso de soldadura con diferentes integrantes del equipo.
 
- ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.png) 
+ ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.jpg) 
 
 Visualización de la placa siendo soldada.
 
