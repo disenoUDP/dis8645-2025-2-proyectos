@@ -138,11 +138,11 @@ Outputs:
 
 ---
 
-### Boceto
+### Bocetos
 
-![bocetos de jorge](./imagen/Ilustración.jpg)
+![lluvia de ideas al inicio del proyecto](./imagenes/lluviadeideas.jpg)
 
-
+![bocetos de jorge](./imagenes/Ilustración.jpg)
 
 ---
 
@@ -198,12 +198,11 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
-  ![Soldadura](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/soldadura.JPG)
-
+  ![Soldadura](./imagenes/soldadura.jpg)
   Proceso de soldadura con diferentes integrantes del equipo
 
 
- ![Placa siendo soldada](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Placa.JPG)
+ ![Proyecto siendo arreglado em protoboard ](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Placa.JPG)
 
 Visualización de la placa siendo soldada
 
