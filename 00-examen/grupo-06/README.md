@@ -1,6 +1,6 @@
-# **Grupo 06 Waos**
+# Grupo 06 Waos
 
-## **Integrantes**
+## Integrantes
 
 - Bernardita Jesús / [Bernardita-Jesus](https://github.com/Bernardita-Jesus)
 
@@ -14,15 +14,15 @@
 
 - Josefa Quape / [Joquape](https://github.com/Joquape)
 
-## **Examen** 
+## Examen 
 
-### **¿Qué es W.E.B.O?**
+### ¿Qué es W.E.B.O
 
 W.E.B.O la Entidad de Balance Ovoide, la paradoja del temporizador que no temporiza.
 
 Esta idea se desarrolló a partir de volver inconveniente lo conveniente.
 
-### **¿Qué es un temporizador?**
+### ¿Qué es un temporizador
 
 Es un dispositivo que permite medir el tiempo.
 
@@ -36,7 +36,7 @@ Un temporizador adecuado como el que se encuentra en un teléfono móvil, tiene 
 
 W.E.B.O es la respuesta a esta interrogante.
 
-### **¿Cómo funciona W.E.B.O?**
+### ¿Cómo funciona W.E.B.O
 
 Está pensado para una persona que necesita temporizar intervalos desde 5 segundos en adelante, según la demanda de su actividad.
 
@@ -45,7 +45,7 @@ Ella es la encargada de alertar el fin del temporizador, pero esto presenta cier
 
 Ava se aburre simplemente realizando la cuenta regresiva del temporizador, así que cada cierto tiempo, se pondrá a bailar, haciendo piruetas de una manera tan intensa que… WEBO se puede caer de lado(apoyo visual para mostrar lo que sucede), esto es muy malo, porque Ava detesta estar en esa posición, por lo que hará sonar una alarma de alto volumen, para avisarle al usuario que algo malo ocurrió.
 
-### **Sentimiento**
+### Sentimiento
 
 Entonces el sentimiento central del proyecto es **la frustración.**
 
@@ -59,9 +59,10 @@ Esto surge porque la alarma se convierte en una acusación de que el usuario fal
 
 WEBO transforma una acción simple en una experiencia molesta, mostrando cómo la frustración puede hacer que un **objeto útil se vuelva una carga**.
 
-### **Instrucciones de uso**
+### Instrucciones de uso
 
 - Usuario ve a WEBO.
+
 ![usuario ve a WEBO](./imagenes/sebaViendoWEBO.jpeg)
 
 Acá se puede ver al usuario mirando a W.E.B.O.
@@ -69,22 +70,28 @@ Acá se puede ver al usuario mirando a W.E.B.O.
 ---
 
 - Necesita temporizar algo.
+
 ![usuario ve que debe temporizar](./imagenes/sebaViendoHora.jpeg)
 
 El usuario necesita temporizar algo
 
 ---
 - Presiona el botón.
+
 ![usuario presiona botón](./imagenes/sebaPresionandoBoton.jpeg)
+
 Para activar a Ava el usuario presiona el botón
+
 ---
 - Despierta a Ava.
+
 ![GIF Ava durmiendo y despertando](./imagenes/AVADESPIERTA.gif)
 
 Muestra de la animación que ocurrirá al activar a Ava
 
 ---
 - Mantener presionado el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
+
 ![usuario mantiene presionado el botón](./imagenes/sebaPresionandoBoton.jpeg)
 
 Para activar el temporizador el usuario sigue presionando el botón
@@ -112,7 +119,7 @@ Imagen Ava molesta
 
 ---
 
-### **Bill of Materials**
+### Bill of Materials
 
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
@@ -137,7 +144,7 @@ Imagen Ava molesta
 
 **Presupuesto estimado total – $56.426** 
 
-### **Diagrama de flujo**
+### Diagrama de flujo esperado
 
 ``` mermaid
 ---
@@ -166,9 +173,9 @@ flowchart TB
     L_B_D_0@{ curve: linear }
 ```
 
-### **Fabricación**
+### Fabricación
 
-#### **Interfaz**
+#### Interfaz
 
 ![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
 
@@ -186,7 +193,7 @@ Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, habl
 
 ![Ava girando](./imagenes/AVAGIRANDO.gif) ![Ava saltando](./imagenes/AVASALTANDO.gif) ![Ava hablando](./imagenes/AVAHABLANDO.gif)
 
-### **Carcasa**
+### Carcasa
 
 #### Referentes y definición formal
 
@@ -254,7 +261,7 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 
 ![render](imagenes/alginato.jpeg)
 
-#### **Código**
+#### Código
 
 #### Sensores y actuadores
 
@@ -345,7 +352,7 @@ void loop() {
 
 ```
 
-#### **Complicaciones,  problemas y hallazgos**
+#### Complicaciones,  problemas y hallazgos
 
 El primer gran inconveniente que encontramos fue el reproductor mp3 mini, que a nivel de curso nos falló en numerosas ocasiones.
 
