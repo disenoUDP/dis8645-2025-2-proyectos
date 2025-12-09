@@ -206,6 +206,35 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 
 #### **Código**
 
+#### Sensores y actuadores
+
+Antes de iniciar con el código de W.E.B.O. se definen los sensores y actuadores por ocupar.
+
+**Input**
+Botón / Pulsador
+Sensor de inclinación o tilt 
+
+**Output**
+Modulo reproductor MP3 DFPlayer mini
+Motor DC alta velocidad
+Display nokia 5110
+Mini parlante altavoz
+
+Luego de definir esto, partimos con las clases para tener un archivo más ordenado por la cantidad de parámetros a ocupar.
+
+Al tener todo delimitado, desarrollamos el código por elemento y su respectiva clase.
+
+Pero nos enfocaremos en los problemas y complicaciones que se nos presentaron el el desarrollo técnico de este proyecto. 
+
+#### **Complicaciones y problemas**
+
+El primer gran problema al que nos enfrentamos fue el reproductor mp3 mini, que a nivel de curso nos fallo en inumerables ocaciones.
+
+Tambien para pasar de la función “delay()” a “millis()” fue de las mayores complicaciones, ya que, millis() es una función compleja de comprender y usar (y la mayoría de los ejemplos utilizan delay), en este proyecto se nos hacía imposible utilizar delay debido a la cantidad de distintos elementos que requieren y dependen de una función que mida el tiempo
+
+Para explicar:
+Delay detiene el funcionamiento completo de arduino, en cambio millis mide el tiempo a partir de cuando se prende.
+
 
 
 ### **Extras**
