@@ -61,6 +61,18 @@ Esta máquina está pensada para generar incomodidad en el usuario a través de 
 
 ---
 
+### Instrucciones de uso
+
+1. Posiciónate frente de Jorgito, hasta que escuches que te habla.
+
+2. Decide si quieres darle amor a Jorgito. Si quieres darle amor, presiona su corazón.
+
+3. Puedes permanecer así el tiempo que desees. Ten en cuenta que a Jorgito no le gustará si dejas de darle amor.
+
+4. Vive las consecuencias de tus actos…
+
+---
+
 ### Bill of Materials
 | Componente          | Cantidad | Valores    | Links                                                                                                                  | Valor   |
 |---------------------|----------|------------|-------------------------------------------------------------------------------------------------------------------------|---------|
@@ -112,9 +124,7 @@ flowchart TB
     classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
 ```
-
 ---
-
 
 ### Inputs y outputs
 
@@ -122,7 +132,6 @@ Inputs:
 
 - Sensor ultrasónico HC-SR04
 - Sensor de presión FSR402
-
 
 Outputs:
 
@@ -138,11 +147,13 @@ Outputs:
 
 ---
 
-### Boceto
+### Bocetos
 
-![bocetos de jorge](./imagen/Ilustración.jpg)
+- Al inicio del proyecto como grupo nos reunimos
 
+![lluvia de ideas al inicio del proyecto](./imagenes/lluviadeideas.jpg)
 
+![bocetos de jorge](./imagenes/Ilustración.jpg)
 
 ---
 
@@ -190,9 +201,20 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - La disposición de los componentes y su tamaño nos hizo pensar en diferentes opciones en cómo encajar cada pieza para que quede bien con los movimientos.
 
+- De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
+
+ ![Intento de la implementación de la bocina](./imagenes/bocina.jpg)
+
+ De las primeras veces intentando que la bocina funcione 
+
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
+  ![Soldadura](./imagenes/soldadura.jpg)
+  Proceso de soldadura con diferentes integrantes del equipo.
 
+ ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.jpg) 
+
+Visualización de la placa siendo soldada.
 
 ### Prototipo Final
 

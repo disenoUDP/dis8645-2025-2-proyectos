@@ -4,7 +4,7 @@
 
 - Bernardita Jesús / [Bernardita-Jesus](https://github.com/Bernardita-Jesus)
 
-- Sebastian Saez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
+- Sebastián Sáez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
 
 - Morgan Aravena / [Mosswhosmoss](https://github.com/Mosswhosmoss)
 
@@ -130,13 +130,21 @@ flowchart TB
 
 #### **Interface**
 
-INSERTAR IMAGENES DE BOCETOS Y GIF DE AVE DEL PARAISO BAILANDO
+![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
+
+![Ave del paraíso 2](./imagenes/AVEDELPARAISO-2.gif)
+
+Ava está basada en el ave del paraíso, o más especificamente Ptiloris Victoriae. Es un ave nativa de Australia muy común de encontrar. Tiene un baile de cortejo muy peculiar, del cual nos basamos para hacer el tutú de Ava y sus giros.
+
+![Bocetos Ava](./imagenes/AVA-BOCETOS.png)
 
 Cada cuadro de expresiones de Ava dentro del monitor está ilustrado en la página web [piskelapp](http://piskelapp.com), y convertido a bitmap con [image2cpp](https://javl.github.io/image2cpp/) para poder utilizarlo en la pantalla del arduino.
 
 Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, hablar, saltar, y finalmente girar. Todo esto pasa según como esté posicionado WEBO.
 
-INSERTAR IMAGENES DE EXPRESIONES DE AVA
+![Expresiones Ava](./imagenes/AVAEXPRESIONES.jpg)
+
+![Ava girando](./imagenes/AVAGIRANDO.gif) ![Ava saltando](./imagenes/AVASALTANDO.gif) ![Ava hablando](./imagenes/AVAHABLANDO.gif)
 
 ### **Carcasa**
 
@@ -205,6 +213,35 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 ![render](imagenes/alginato.jpeg)
 
 #### **Código**
+
+#### Sensores y actuadores
+
+Antes de iniciar con el código de W.E.B.O. se definen los sensores y actuadores por ocupar.
+
+**Input**
+Botón / Pulsador
+Sensor de inclinación o tilt 
+
+**Output**
+Modulo reproductor MP3 DFPlayer mini
+Motor DC alta velocidad
+Display nokia 5110
+Mini parlante altavoz
+
+Luego de definir esto, partimos con las clases para tener un archivo más ordenado por la cantidad de parámetros a ocupar.
+
+Al tener todo delimitado, desarrollamos el código por elemento y su respectiva clase.
+
+Pero nos enfocaremos en los problemas y complicaciones que se nos presentaron el el desarrollo técnico de este proyecto. 
+
+#### **Complicaciones y problemas**
+
+El primer gran problema al que nos enfrentamos fue el reproductor mp3 mini, que a nivel de curso nos fallo en inumerables ocaciones.
+
+Tambien para pasar de la función “delay()” a “millis()” fue de las mayores complicaciones, ya que, millis() es una función compleja de comprender y usar (y la mayoría de los ejemplos utilizan delay), en este proyecto se nos hacía imposible utilizar delay debido a la cantidad de distintos elementos que requieren y dependen de una función que mida el tiempo
+
+Para explicar:
+Delay detiene el funcionamiento completo de arduino, en cambio millis mide el tiempo a partir de cuando se prende.
 
 
 
