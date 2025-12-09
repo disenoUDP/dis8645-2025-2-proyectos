@@ -370,7 +370,7 @@ if (sustancia < 30 && sustancia > 0) {
 
 ### Bocetos
 
-- Este es un recopilatorio de las diferentes visiones y versiones de como queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
+Este es un recopilatorio de las diferentes visiones y versiones de como queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
 
 ![referentes utilizados para la creación de jorgito](./imagenes/referentes.jpg)
 
@@ -438,6 +438,9 @@ Evolución de Jorgito a lo largo del proyecto.
   Proceso de soldadura con diferentes integrantes del equipo.
 
  ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.jpg) 
+
+- Modelo final del mecanismo: esto contiene todo lo que hace funcionar a Jorgito.
+
 
 Visualización de la placa siendo soldada.
 
