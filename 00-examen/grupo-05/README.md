@@ -465,4 +465,45 @@ Las luces led de cada color hacen llamativa la máquina y muestran en tiempo rea
 | Pack Led 10mm (5) | Actuador | Varios | Blanca2k Naranjo330 Verde330 Azul1k Rojo1k | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
 
 
+### Bibliografía
+
+- 00-proyecto-02/grupo-02 - MiguelVera23. GitHub <https://github.com/MiguelVera23/dis8645-2025-02-procesos/tree/main/00-proyecto-02/grupo-02>
+
+- 3 easy ways to drive vibration motor with Arduino. Ineedmotors.com <https://blog.ineedmotors.com/drive-vibration-motor-arduino-3-easy-safe-methods-guide/>
+
+- Anyone know the max voltage for xbox one controllers' vibration motors?. reddit.com <https://www.reddit.com/r/diyelectronics/comments/lbaagm/anyone_know_the_max_voltage_for_xbox_one/>
+
+- Aprende a encender y apagar un LED en Arduino. MECABOT <https://mecabot-ula.org/tutoriales/arduino/practica1-encender-y-apagar-con-arduino/>
+
+- Arduino Vibration Motor Code, Circuit, control (tutorial). DeepBlue <https://deepbluembedded.com/arduino-vibration-motor-code-circuit/>
+
+- Código contador de vueltas - felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-2-proyectos/blob/main/25-felix-rg416/sesion-14a/contadorVueltas/contadorVueltas.ino>
+
+- Código de Encoder en base a MCIelectronics.ino - felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-2-proyectos/blob/main/25-felix-rg416/sesion-14a/encoderMCIelectronics/encoderMCIelectronics.ino>
+
+- Cómo configurar un módulo de motor de vibración con Arduino. thecaferobot.com <https://thecaferobot.com/learn/interfacing-a-vibration-motor-module-with-arduino/>
+
+- Datasheet ky 040 rotary encoder sensor module. datasheethub.com <https://www.datasheethub.com/ky-040-rotary-encoder-sensor-module/>
+
+- Fading a LED. docs.rduino.cc <https://docs.arduino.cc/built-in-examples/basics/Fade/>
+
+- How to use a vibration motor with Arduino. HiBit. <https://www.hibit.dev/posts/180/how-to-use-a-vibration-motor-with-arduino>
+
+- Object sound effects. Epidemicsound.com <https://www.epidemicsound.com/sound-effects/categories/objects/>
+
+- The uncomfortable <https://www.theuncomfortable.com/>
+
+- Tutorial de Arduino en Español - Módulo Motor de vibración de teléfono móvil. Youtube <https://www.youtube.com/watch?v=t6191Z2oxMQ>
+
+- Two Ways to Reset Arduino in Software. Instructables.com
+ <https://www.instructables.com/two-ways-to-reset-arduino-in-software/>
+
+- Sesión 05a felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-02-procesos/tree/main/25-felix-rg416/sesion-05a>
+
+- Sesión 09b felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-02-procesos/tree/main/25-felix-rg416/sesion-09b/grupo-06-montoyamoraga>
+
+- Smart Humidifier (make Your Room Comfortable). instrructables.com <https://www.instructables.com/Smart-Humidifier-make-Your-Room-Comfortable/>
+
+
+
 
