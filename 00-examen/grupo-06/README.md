@@ -76,9 +76,9 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
 | Módulo sensor de inclinación tilt | 1        | $1496  | <https://altronics.cl/switch-inclinacion-sw520>                           |
-| Módulo reproductor MP3            | 1        | $2990  | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
-| Pantalla display LCD Nokia 5110   | 1        | $5000  | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
-| Mini parlante altavoz 3w          | 1        | $3000  | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
+| Módulo reproductor MP3            | 1        | $2.990 | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
+| Pantalla display LCD Nokia 5110   | 1        | $5.000 | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
+| Mini parlante altavoz 3w          | 1        | $3.000 | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
 | Botón táctil 12x12x7.3            | 1        | $100   | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor>        |
 | Motor DC alta velocidad           | 1        | $500   | <https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for> |
 | Cables dupont                     |          | $2500  | <https://afel.cl/products/pack-60-cables-de-conexion>                     |
@@ -86,6 +86,8 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Resistencia 10k                   | 8        | $4990  | <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores>           |
 | Diodo Rectificador 1N4007         | 1        | $100   | <https://www.electroardu.cl/diodo-rectificador-1n4007>                    |
 | MOSFET BS170 tipo N TO92          | 1        | $200   | <https://depaquete.cl/index.php>                                          |
+| Tornillos 3m                      | 4        | $1.190 | <https://share.google/XGNMh6Vrv71Q1XYIs>                                  |
+| Filamento PLA                     | 317 g    | $12.390| <https://share.google/eetowUUCaC65zfTWi>                                  |
 
 **Presupuesto estimado total – 21.876**
 
