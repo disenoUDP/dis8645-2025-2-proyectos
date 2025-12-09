@@ -234,7 +234,7 @@ Mini parlante altavoz
 Luego de definir esto hablaremos de nuestro archivo .ino 
 
 ```cpp
-// Aqui pasaran todas las interacciones entre todos los componentes
+// Aquí pasan todas las interacciones entre todos los componentes
 
 #include "ActuadorDisplay.h"
 #include "ActuadorMotor.h"
@@ -258,10 +258,10 @@ void setup() {
 }
 
 void loop() {
-  // Constantemente funciona el sensor de inclinacion, de esto dependen casi todas las siguientes interacciones
+  // Constantemente funciona el sensor de inclinación, de esto dependen casi todas las siguientes interacciones
   sensorTilt.funcionaTilt();
 
-  // El boton controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto segun los segundos actuales
+  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
   sensorBoton.funcionaBoton();
 
   // El display muestra a AVA celebrando, siempre y cuando el temporizador termina correctamente con 0 segundos
@@ -271,34 +271,34 @@ void loop() {
   // Cuando no esta caido, osea:
 
   //----------------------------------
-  //-------- WEBO ESTA PARADO --------
+  //-------- WEBO ESTÁ PARADO --------
   //----------------------------------
 
-  // Si es que el sensor de inclinacion esta hacia arriba, osea no inclinado
+  // Si es que el sensor de inclinación está hacia arriba, osea no inclinado
   if (!sensorTilt.caido) {
     // El display muestra el tiempo restante en segundos, con AVA realizando al cuent regresiva
     actuadorDisplay.cuentaDisplay();
     // Que el motor se active y se desactive en intervalos establecidos
     actuadorMotor.funcionaMotor();
-    // cuando el motor se activa y esta girando, AVA tambien gira
+    // cuando el motor se activa y está girando, AVA también gira
     actuadorDisplay.girandoDisplay();
-    // Si es que el temporizador se cumple correctamente sonara la alarma debil
+    // Si es que el temporizador se cumple correctamente sonará la alarma débil
     sensorSD.funcionaSDAlarmaDebil();
-    // Siempre y cuando el temporizador sea menor a 1 segundo y recien se va a empezar la interaccion, o despues de la celebracion de AVA, ya que se cansa y se queda dormida
+    // Siempre y cuando el temporizador sea menor a 1 segundo y recién se va a empezar la interacción, o después de la celebración de AVA, ya que se cansa y se queda dormida
   actuadorDisplay.duermeDisplay();
 
-  // El boton controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto segun los segundos actuales
+  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
   sensorBoton.funcionaBoton();
   }
 
-  // Cuando esta inclinado, osea:
+  // Cuando está inclinado, osea:
 
   //----------------------------------
   //-------- WEBO ESTA CAIDO ---------
   //----------------------------------
 
   else {
-    // suena la pataleta y AVA esta enojada porque se cayo
+    // suena la pataleta y AVA está enojada porque se cayo
     sensorSD.funcionaSDAlarmaFuerte();
     actuadorDisplay.caidaDisplay();
   }
@@ -328,7 +328,7 @@ Conseguimos solucionar millis con margen de error.
 
 La interacción adecuada entre todos los Sensores y Actuadores.
 
-Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiendo al estado de temporizando, que era la comunicación entre el botón y el sensor de inclinación o tilt.
+Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiendo al estado de temporizador, que era la comunicación entre el botón y el sensor de inclinación o tilt.
 
 ### Extras
 
