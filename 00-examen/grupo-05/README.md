@@ -3,10 +3,10 @@
 
 ## La máquina asombrosa 🎰
 ### Integrantes
-- Braulio Figueroa 
-- Camila Parada
-- Félix Rodriguez
-- Miguel Vera
+- [Braulio Figueroa](https://github.com/brauliofigueroa2001) 
+- [Camila Parada](https://github.com/Camila-Parada)
+- [Félix Rodríguez](https://github.com/felix-rg416)
+- [Miguel Vera](https://github.com/MiguelVera23)
 
 ### La consigna
 Para el proyecto 3 y posterior examen se nos encomendó hacer una máquina sentimental que hiciera representación de una figura literaria.
