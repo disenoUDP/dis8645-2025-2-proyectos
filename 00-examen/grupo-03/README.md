@@ -384,7 +384,7 @@ Este es un recopilatorio de las diferentes visiones y versiones de comó quería
 
 Para el prototipo realizamos el prototipado de la columna y los brazos, probando cómo podrían moverse y sostenerse. También hicimos pruebas de impresión 3D para revisar las piezas y sus uniones. Además, armamos un primer prototipo del sistema de la espalda y los brazos para evaluar su funcionamiento general. Finalmente, realizamos el molde para la tela del forro, aplicando cinta sobre la forma para obtener las piezas base del patrón.
 
-![foto de la vértebra](./imagenes/vértebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
+![foto de la vértebra](./imagenes/vertebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
 
 Recopilación de funcionamiento de vértebras, brazos y columna.
 
