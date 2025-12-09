@@ -167,7 +167,6 @@ void loop() {
     }
   } else if (estadoActual != estadoAnterior && estadoActual == 4) {
     Serial.println("ESTADO: 4_AUTODESTRUCCION");
-    inicioEstado4 = millis();
 
     if (millis() - inicioEstado4 >= duracionEstado4) {
 
