@@ -1,16 +1,25 @@
 #include "ActuadorSielvo.h"
 
-
+// 3 servos, 2 para columna, y 1 pa rotación
 
 ActuadorSielvo::ActuadorSielvo() {
 
 }
 
 void ActuadorSielvo::SetearSielvo(){
-    Servo sielvoLumbar;
+    Servo sielvoLumbarA;
+    Servo sielvoLumbarZ;
+
   Servo sielvoRotor;
-sielvoLumbar.attach(pinSielvoLumbar);
+
+sielvoLumbar.attach(pinSielvoLumbarA);
+sielvoLumbar.attach(pinSielvoLumbarZ);
+
 sielvoRotor.attach(pinSielvoRotor);
+
+sielvoLumbarA.write(0);
+sielvoLumbarZ.write(180);
+
 
 }
 
