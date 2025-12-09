@@ -63,11 +63,16 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 
 - Usuario ve a WEBO.
 ![usuario ve a WEBO](./imagenes/sebaViendoWEBO.jpeg)
+
 Acá se puede ver al usuario mirando a W.E.B.O.
+
 ---
+
 - Necesita temporizar algo.
 ![usuario ve que debe temporizar](./imagenes/sebaViendoHora.jpeg)
+
 El usuario necesita temporizar algo
+
 ---
 - Presiona el botón.
 ![usuario presiona botón](./imagenes/sebaPresionandoBoton.jpeg)
@@ -75,24 +80,37 @@ Para activar a Ava el usuario presiona el botón
 ---
 - Despierta a Ava.
 ![GIF Ava durmiendo y despertando](./imagenes/AVADESPIERTA.gif)
+
+Muestra de la animación que ocurrirá al activar a Ava
+
 ---
 - Mantener presionado el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
 ![usuario mantiene presionado el botón](./imagenes/sebaPresionandoBoton.jpeg)
+
 Para activar el temporizador el usuario sigue presionando el botón
+
 ---
-- Si Ava empieza a girar **evita** que se caiga o ladee.
+- Si Ava empieza a girar evita que se caiga o ladee.
+
 ![Lo que ocurre en el interior](./imagenes/desbalance.gif)
-Lo que ocurrira en el interior
----
+
+Lo que ocurrira en el interior.
+
 ![Lo que ocurre en el display](./imagenes/AVAGIRANDO.gif)
-Ava cuando se ponga a girar
+
+Ava cuando se ponga a girar.
+
 ---
-- Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó.
-- Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
-![usuario presiona botón](./imagenes/AVAINDIGNADA.jpeg)
+- Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó. Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
+
+![Ava Molesta](./imagenes/AVAINDIGNADA.jpg)
+
 Imagen Ava molesta
+
 ---
 - Repetir el proceso cada vez que quieras temporizar.
+
+---
 
 ### **Bill of Materials**
 
