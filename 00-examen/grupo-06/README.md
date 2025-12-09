@@ -76,9 +76,9 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
 | Módulo sensor de inclinación tilt | 1        | $1496  | <https://altronics.cl/switch-inclinacion-sw520>                           |
-| Módulo reproductor MP3            | 1        | $2990  | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
-| Pantalla display LCD Nokia 5110   | 1        | $5000  | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
-| Mini parlante altavoz 3w          | 1        | $3000  | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
+| Módulo reproductor MP3            | 1        | $2.990 | <https://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini>           |
+| Pantalla display LCD Nokia 5110   | 1        | $5.000 | <https://afel.cl/products/pantalla-display-lcd-nokia-5110>                |
+| Mini parlante altavoz 3w          | 1        | $3.000 | <https://afel.cl/products/mini-parlante-altavoz-de-3w>                    |
 | Botón táctil 12x12x7.3            | 1        | $100   | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor>        |
 | Motor DC alta velocidad           | 1        | $500   | <https://afel.cl/products/3v-0-2a-12000rpm-65gcm-mini-micro-dc-motor-for> |
 | Cables dupont                     |          | $2500  | <https://afel.cl/products/pack-60-cables-de-conexion>                     |
@@ -86,10 +86,13 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Resistencia 10k                   | 8        | $4990  | <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores>           |
 | Diodo Rectificador 1N4007         | 1        | $100   | <https://www.electroardu.cl/diodo-rectificador-1n4007>                    |
 | MOSFET BS170 tipo N TO92          | 1        | $200   | <https://depaquete.cl/index.php>                                          |
+| Tornillos 3m                      | 4        | $1.190 | <https://share.google/XGNMh6Vrv71Q1XYIs>                                  |
+| Filamento PLA                     | 317 g    | $12.390| <https://share.google/eetowUUCaC65zfTWi>                                  |
+| Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
+| Alginato                          | 1        | $6.500 | <https://techdent.cl/producto/alginato-chromaprint-coltene-454g/>        |
+| Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
 
-**Presupuesto estimado total – 21.876**
-
-Gasto real del equipo – 6.400
+**Presupuesto estimado total – $52.446** 
 
 ### **Diagrama de flujo**
 
@@ -134,7 +137,7 @@ Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, habl
 
 INSERTAR IMAGENES DE EXPRESIONES DE AVA
 
-### **Desarrollo de la carcasa**
+### **Carcasa**
 
 #### Referentes y definición formal
 
@@ -142,55 +145,63 @@ Primero levantamos referentes: queríamos apoyarnos en la estética retro-portá
 
 Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), tomando en cuenta esa interpretación asociada al acto de “cuidar”.
 
-![imagen referentes](imagenes/modelado-)
+![imagen referentes](imagenes/referentes.jpeg)
 
 > Foto Game Boy, Game & Watch y Tamagotchi
 
-luego definimos que queriamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
+luego definimos que queriamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. 
 
-<img width="1253" height="299" alt="Captura de pantalla 2025-12-07 142648" src="https://github.com/user-attachments/assets/ba706ad7-1876-4db0-bc32-b8e9c34dd4ba" />
+En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
 
-> foto de modelado de huevo
+![captura modelado](imagenes/modelado-huevo.png)
 
 #### Mecánica y estructura general
 
-Luego desarrollamos el sistema mecánico para las primeras pruebas, un soporte para el motor y un módulo de contrapeso que extiende la masa hacia un costado, generando el desequilibrio característico.
+Desarrollamos el sistema mecánico para las primeras pruebas, un soporte para el motor y un módulo encajable de contrapeso que desplaza la masa, incluyendo un conjunto de monedas, hacia un costado, generando el desequilibrio a partir del peso y el giro del motor.
 
-adjuntar foto*
+![captura modelado](imagenes/modelado-peso.png)
 
-adjuntar el video del mecanismo*
+adjuntar el video del mecanismo girando*
 
-Después subdividimos el cuerpo en tres secciones principales, las cuales son encajables, para poder abrir la pieza y acceder a los circuitos de este “temporizador inconveniente”.
+Después subdividimos el cuerpo en tres secciones principales, la cara frontal y la posterior junto a la base, las cuales son encajables, para poder abrir la pieza, armar y acceder a los circuitos de este “temporizador inconveniente”.
 
-Continuamos con el diseño de los calces internos para la pantalla sin afectar la forma continua.
-
-<img width="1202" height="749" alt="Captura de pantalla 2025-12-07 142400" src="https://github.com/user-attachments/assets/4af1e046-506b-4e57-a785-6e9c3667d755" />
-
-<img width="1107" height="733" alt="Captura de pantalla 2025-12-07 142925" src="https://github.com/user-attachments/assets/68d2e721-2656-4437-bb45-c5fe14e1fbf4" />
-> foto de las tres secciones al lado de la pantalla.
+![captura modelado](imagenes/modelado-encajes.png)
 
 #### Integración electrónica y ajustes volumétricos
 
-Optamos por integrar una power bank dentro de la carcasa para evitar cables externos, lo que nos obligó a reescalar el modelo varias veces para que todo cupiera bien.
+Continuamos con el diseño de los calces internos y la fachada externa de la cara frontal para montar la pantalla sin afectar la forma continua. Esta parte fue especialmente difícil debido a la geometría ovoide.
 
-Además diseñamos un sistema de plataforma para encajar el Arduino con la power bank, el sensor y la protoboard.
+![captura modelado](imagenes/modelado-pantalla.png)
 
-<img width="1524" height="491" alt="modelado-escalado" src="https://github.com/user-attachments/assets/1c56afb0-d9aa-4f1b-8e5d-b390d497b794" />
-> foto de escalar
+Optamos por integrar una power bank dentro de la carcasa para evitar cables externos, ya que podían enredarse con la pieza y limitar su movimiento, lo que nos obligó a reescalar el modelo varias veces para que todo quedara bien integrado.
+
+Además diseñamos un sistema de plataforma para encajar el Arduino con la power bank, el sensor y la protoboard con sus respectivas tolerancias.
+
+![captura modelado](imagenes/modelado-escalado.png)
  
-insertar foto de la plataforma*
+![captura modelado](imagenes/modelado-plataforma.png)
 
-Finalmente incorporamos el speaker en la parte superior y el botón en la parte frontal.
+### Ajustes y Prototipado Final
 
-> opinion (Para mí fue todo un reto esta carcasa, ya que nunca había trabajado una forma ovoide, lo que hizo que los encajes fueran mucho más complejos. Mover los objetos y centrar cada componente se volvió un desafío, pero estoy muy feliz con el resultado.)
+Tuvimos que corregir varias cosas a medida que fuimos haciendo los testeos. Incorporamos el speaker en la parte superior con un encaje vertical y unas pequeñas perforaciones para dejar salir el sonido.
 
-insertar foto del modelado final*
+Agregamos el botón, que concentra la interacción principal, en la parte frontal.
 
-#### Capa externa de alginato
+![render](imagenes/WEBO-ENTERO.png)
 
-Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. Para esto realizamos un modelado exterior e interior, y a presión se fue incorporando el alginato.
+![render](imagenes/DESPIECE.png)
 
-insertar foto de los moldes con el algintano*
+Además incorporamos su frase descriptiva junto a la ilustración de Ava en la pieza posterior y en el interior de la plataforma con los componentes.
+
+![render](imagenes/CARCASAS.png)
+
+![render](imagenes/PLATAFORMA.png)
+
+Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. 
+
+Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que finalmente pegamos con silicona.
+
+![render](imagenes/alginato.jpeg)
 
 #### **Código**
 
