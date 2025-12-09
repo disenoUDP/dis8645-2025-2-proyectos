@@ -47,9 +47,6 @@ Contexto de uso:
 
 0aTAo es un juego donde las personas pueden acercarse, tocar botones y mover un joystick para intentar arreglar una figura de luces que se va desordenando. Está pensado para espacios de exhibición o juegos experimentales en los que el usuario descubre que mientras más intenta controlar la figura más caos genera y que solo al dejar de intervenir, el sistema vuelve solo a la perfección inicial. Busca generar una experiencia lúdica y reflexiva sobre el control, la frustración y la idea de soltar.
 
-`PONER FASES DE USO COMO ESTAN EN LOS OTROS GITHUBS!!!!
-`+ PONER FOTOS DE REFERENCIA EN EL DIAGRAMA !!!!
-
 ### Diagrama de flujo
 
 ```mermaid
