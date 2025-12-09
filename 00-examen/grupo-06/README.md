@@ -127,7 +127,7 @@ flowchart TB
 
 ### **Fabricación**
 
-#### **Interface**
+#### **Interfaz**
 
 ![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
 
