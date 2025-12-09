@@ -95,12 +95,12 @@ Como grupo planificamos que haremos en cada semana del trabajo mediante una cart
 
 ### Carta Gantt
 
-<img src="./imagenes/cartaGantt.png" alt="carta gantt" width="900">
+<img src="./imagenes/cartaGantt.png" alt="carta gantt" width="800">
 <!-- ![carta gantt](./imagenes/cartaGantt.png)-->
 
 ### Presupuesto
 
-<img src="./imagenes/presupuesto.png" alt="presupuesto" width="900">
+<img src="./imagenes/presupuesto.png" alt="presupuesto" width="800">
 <!-- ![Presupuesto](./imagenes/presupuesto.png)-->
 
 ### Diagrama de Flujo
@@ -177,11 +177,11 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 - Cursor: red atrapa hadas hecho con pixel art
 - Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
 
-<img src="./imagenesProceso/atrapameSIPuedes01.gif" alt="proceso01" width="300"> <img src="./imagenesProceso/eligeTuHada01.gif" alt="eligetuhada01" width="300"> 
+<img src="./imagenes/atrapameSIPuedes01.gif" alt="proceso01" width="300"> <img src="./imagenes/eligeTuHada01.gif" alt="eligetuhada01" width="300"> 
 
-<img src="./imagenesProceso/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenesProceso/ohNo.gif" alt="proceso03" width="300"> 
+<img src="./imagenes/eligeTuHada02.gif" alt="proceso02" width="300"> <img src="./imagenes/ohNo.gif" alt="proceso03" width="300"> 
 
-<img src="./imagenesProceso/fondo.gif" alt="fondo" width="300"> <img src="./imagenesProceso/pantallaFinal.gif" alt="pantalla" width="300">
+<img src="./imagenes/fondo.gif" alt="fondo" width="300"> <img src="./imagenes/pantallaFinal.gif" alt="pantalla" width="300">
 
 <!-- ![Hadas](./imagenes/haditas.gif) --> <!-- ![choose aaron](./imagenes/chooseAaron.gif) -->
 <img src="./imagenes/haditas.gif" alt="hadas" width="400">
@@ -194,10 +194,10 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 |Hada|Volando|Estático|
 |---|---|---|
-|<img src="./imagenes/aaron.png" alt="aaron" width="350">|<img src="./imagenes/aaronVolando.gif" alt="aaron" width="300">|<img src="./imagenes/aaronEstatico.gif" alt="aaron" width="300">|
-|<img src="./imagenes/misa.png" alt="misa" width="350">|<img src="./imagenes/misaVolando.gif" alt="misa" width="300">|<img src="./imagenes/misaEstatico.gif" alt="misa" width="300">|
-|<img src="./imagenes/mateo.png" alt="mateo" width="350">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="300">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="300">|
-|<img src="./imagenes/janis.png" alt="janis" width="350">|<img src="./imagenes/janisVolando.gif" alt="janis" width="300">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="300">|
+|<img src="./imagenes/aaron.png" alt="aaron" width="250">|<img src="./imagenes/aaronVolando.gif" alt="aaron" width="200">|<img src="./imagenes/aaronEstatico.gif" alt="aaron" width="200">|
+|<img src="./imagenes/misa.png" alt="misa" width="250">|<img src="./imagenes/misaVolando.gif" alt="misa" width="200">|<img src="./imagenes/misaEstatico.gif" alt="misa" width="200">|
+|<img src="./imagenes/mateo.png" alt="mateo" width="250">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="200">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="200">|
+|<img src="./imagenes/janis.png" alt="janis" width="250">|<img src="./imagenes/janisVolando.gif" alt="janis" width="200">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="200">|
 
 ## Procesos y bocetos
 
@@ -211,10 +211,10 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 |Proceso|Proceso|Proceso|
 |---|---|---|
-|<img src="./imagenes/bosque.gif" alt="bosque" width="300">|<img src="./imagenes/inicio1.gif" alt="inicio" width="300">|<img src="./imagenes/inicio2.gif" alt="inicio" width="300">|
-|<img src="./imagenes/bosque2.jpeg" alt="bosque" width="300">|<img src="./imagenes/inicio3.gif" alt="inicio" width="300">|<img src="./imagenes/bosque3.gif" alt="bosque" width="300">|
-|<img src="./imagenes/redAtrapaHadas.png" alt="red" width="300">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="300">|<img src="./imagenesProceso/proceso03.png" alt="red" width="300">|
-|<img src="./imagenesProceso/proceso08.png" alt="red" width="300">|<img src="./imagenesProceso/proceso07.png" alt="red" width="300">|
+|<img src="./imagenes/bosque.gif" alt="bosque" width="200">|<img src="./imagenes/inicio1.gif" alt="inicio" width="200">|<img src="./imagenes/inicio2.gif" alt="inicio" width="200">|
+|<img src="./imagenes/bosque2.jpeg" alt="bosque" width="200">|<img src="./imagenes/inicio3.gif" alt="inicio" width="200">|<img src="./imagenes/bosque3.gif" alt="bosque" width="200">|
+|<img src="./imagenes/redAtrapaHadas.png" alt="red" width="200">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="200">|<img src="./imagenesProceso/proceso03.png" alt="red" width="200">|
+|<img src="./imagenesProceso/proceso08.png" alt="red" width="200">|<img src="./imagenesProceso/proceso07.png" alt="red" width="200">|
 
 ### Proceso y diseño de carcasa 
 
@@ -1103,7 +1103,7 @@ Para que funcione correctamente, debemos tener en cuenta que:
 
 **Resultado**
 
-<img src="./imagenes/p5Resultado.png" alt="p5.js" width="400">
+<img src="./imagenes/p5Resultado.png" alt="p5.js" width="400"> <img src="./imagenes/p5ResultadoFinal.png" alt="p5.js" width="400">
 
 ## Fotografías del proyecto terminado
 
