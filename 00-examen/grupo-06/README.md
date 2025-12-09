@@ -158,7 +158,7 @@ Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y
 
 > Foto Game Boy, Game & Watch y Tamagotchi
 
-luego definimos que queriamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. 
+Luego, después de al Seba le llegará la iluminación divina al ver la botella Misa caerse y balancearse. Definimos que queríamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular.
 
 En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
 
