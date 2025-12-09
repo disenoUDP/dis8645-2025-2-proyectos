@@ -89,11 +89,10 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Tornillos 3m                      | 4        | $1.190 | <https://share.google/XGNMh6Vrv71Q1XYIs>                                  |
 | Filamento PLA                     | 317 g    | $12.390| <https://share.google/eetowUUCaC65zfTWi>                                  |
 | Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
+| Alginato                          | 1        | $6.500 | <https://techdent.cl/producto/alginato-chromaprint-coltene-454g/>        |
 | Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
 
 **Presupuesto estimado total – $52.446** 
-
-Gasto real del equipo – 6.400
 
 ### **Diagrama de flujo**
 
