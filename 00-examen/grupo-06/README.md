@@ -91,7 +91,7 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
 | Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
 
-**Presupuesto estimado total – 21.876**
+**Presupuesto estimado total – $52.446** 
 
 Gasto real del equipo – 6.400
 
