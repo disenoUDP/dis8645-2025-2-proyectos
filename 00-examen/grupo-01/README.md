@@ -683,14 +683,17 @@ void loop() {
 ### Referentes de carcasa
 
 Primera fase: 
-
+|||
+|--|--|
 |<img src="./imagenes/RefAcrilico.JPG" alt="conexion" width="300"> | <img src="./imagenes/RefArcade01.JPG" alt="conexion" width="300">|
 |<img src="./imagenes/RefArcade02.JPG" alt="conexion" width="300"> |<img src="./imagenes/RefArcade03.JPG" alt="conexion" width="300"> |
 
 Segunda fase: 
 
 - La idea es utilizar corte láser y acrílico como materialidad principal.
-  
+
+|||
+|--|--|
 |<img src="./imagenes/Neon-Fluorescent Acrylic Organizer_Pencil Case.jpeg" alt="conexion" width="300"> | <img src="./imagenes/Play Plax, 1970.jpeg" alt="conexion" width="300"> | 
 
 
