@@ -201,6 +201,8 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 |<img src="./imagenes/mateo.png" alt="mateo" width="250">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="200">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="200">|
 |<img src="./imagenes/janis.png" alt="janis" width="250">|<img src="./imagenes/janisVolando.gif" alt="janis" width="200">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="200">|
 
+---
+
 ## Procesos y bocetos
 
 `Dificultades y desafíos`
@@ -218,6 +220,8 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 |<img src="./imagenes/redAtrapaHadas.png" alt="red" width="200">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="200">|<img src="./imagenesProceso/proceso03.png" alt="red" width="200">|
 |<img src="./imagenesProceso/proceso08.png" alt="red" width="200">|<img src="./imagenesProceso/proceso07.png" alt="red" width="200">|<img src="./imagenesProceso/proceso09.png" alt="red" width="200">
 
+LINK DE VIDEOS DE PROCESO EN YOUTUBE: <https://youtube.com/playlist?list=PL3fzND9R5FHDLYDBtv4JIqarJQSRjgctv&si=1Aa0JSF82YntMdhg>
+
 ### Proceso y diseño de carcasa 
 
 - Comenzamos diseñando un mando tipo retro pixel, que contuviera dos botones para los sensores y además unos botones falsos, para confundir al usuario. Esta idea nos gustaba, pero decidimos cambiarla a diseñar un mando con forma de hada, pero nos preguntamos "¿Para qué atrapar el hada, si ya tenemos el hada en nuestras manos?". Así que también fue descartada
@@ -229,7 +233,9 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 <img src="./imagenesProceso/proceso06.png" alt="red" width="300"> 
 
-### Código y pseudocódigo
+---
+
+## Código y pseudocódigo
 
 `PSEUDOCÓDIGO`
 
@@ -1017,6 +1023,8 @@ function connectBtnClick() {
 }
 ```
 
+---
+
 ## ¿Cómo conectamos Arduino con P5.js?
 
 - Primero, vimos estos videos para entender la conexión entre Arduino y p5.js; [
@@ -1110,6 +1118,8 @@ Para que funcione correctamente, debemos tener en cuenta que:
 
 <img src="./imagenes/p5Resultado.png" alt="p5.js" width="400"> <img src="./imagenes/p5ResultadoFinal.png" alt="p5.js" width="400">
 
+---
+
 ## Fotografías del proyecto terminado
 
 <img src="./imagenesProyecto/proyecto01.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto02.JPG" alt="proyecto" width="400">
@@ -1122,6 +1132,8 @@ Para que funcione correctamente, debemos tener en cuenta que:
 
 <img src="./imagenesProyecto/proyecto09.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto10.JPG" alt="proyecto" width="400">
 
+---
+
 ## Roles de equipo
 
 - Yamna Carrión: Aporte principal en ordenar Github e investigar.
@@ -1130,6 +1142,8 @@ Para que funcione correctamente, debemos tener en cuenta que:
 - Sofía Peréz: Aporte principal en diseño de gráficas y gifs.
 - Millaray Millar: Aporte principal como diseñadora y reina del modelado de nuestro prototipo. 
 - Valentina Ruz: Aporte principal haciendo, revisando y probando código. También ordenó Github.
+
+---
 
 ## Bibliografía
 
@@ -1151,4 +1165,3 @@ Para que funcione correctamente, debemos tener en cuenta que:
 `Referentes`
 - Minecraft. (n.d.). Minecraft official site [Sitio web]. <https://www.minecraft.net/es-es>
 - Inspiración en juegos 8-bits
-  
