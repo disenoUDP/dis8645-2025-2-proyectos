@@ -4,7 +4,7 @@
 
 - Bernardita Jesús / [Bernardita-Jesus](https://github.com/Bernardita-Jesus)
 
-- Sebastian Saez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
+- Sebastián Sáez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
 
 - Morgan Aravena / [Mosswhosmoss](https://github.com/Mosswhosmoss)
 
@@ -91,9 +91,10 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
 | Alginato                          | 1        | $6.500 | <https://techdent.cl/producto/alginato-chromaprint-coltene-454g/>         |
 | Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
+| Afiche                            | 7        | $3.900 | <https://www.instagram.com/impresiondigitalr.r/>                                |
 | Monedas de 10                     | 8        | $80    | <https://www.billetesymonedas.cl/Billetes/FamiliaBilletesActuales>        |
 
-**Presupuesto estimado total – $52.526** 
+**Presupuesto estimado total – $56.426** 
 
 ### **Diagrama de flujo**
 
@@ -130,13 +131,21 @@ flowchart TB
 
 #### **Interface**
 
-INSERTAR IMAGENES DE BOCETOS Y GIF DE AVE DEL PARAISO BAILANDO
+![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
+
+![Ave del paraíso 2](./imagenes/AVEDELPARAISO-2.gif)
+
+Ava está basada en el ave del paraíso, o más especificamente Ptiloris Victoriae. Es un ave nativa de Australia muy común de encontrar. Tiene un baile de cortejo muy peculiar, del cual nos basamos para hacer el tutú de Ava y sus giros.
+
+![Bocetos Ava](./imagenes/AVA-BOCETOS.png)
 
 Cada cuadro de expresiones de Ava dentro del monitor está ilustrado en la página web [piskelapp](http://piskelapp.com), y convertido a bitmap con [image2cpp](https://javl.github.io/image2cpp/) para poder utilizarlo en la pantalla del arduino.
 
 Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, hablar, saltar, y finalmente girar. Todo esto pasa según como esté posicionado WEBO.
 
-INSERTAR IMAGENES DE EXPRESIONES DE AVA
+![Expresiones Ava](./imagenes/AVAEXPRESIONES.jpg)
+
+![Ava girando](./imagenes/AVAGIRANDO.gif) ![Ava saltando](./imagenes/AVASALTANDO.gif) ![Ava hablando](./imagenes/AVAHABLANDO.gif)
 
 ### **Carcasa**
 
@@ -150,7 +159,7 @@ Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y
 
 > Foto Game Boy, Game & Watch y Tamagotchi
 
-luego definimos que queriamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular. 
+Luego, después de al Seba le llegará la iluminación divina al ver la botella Misa caerse y balancearse. Definimos que queríamos que fuera un objeto que pudiera caerse, y de ahí planteamos una carcasa con morfología ovoide, generada a partir de un volumen continuo y sin aristas para favorecer el movimiento pendular.
 
 En la base incorporamos un corte leve que actúa como punto de apoyo inestable, permitiendo que el objeto se mantenga de pie solo por un momento antes de perder el equilibrio.
 
@@ -160,9 +169,11 @@ En la base incorporamos un corte leve que actúa como punto de apoyo inestable, 
 
 Desarrollamos el sistema mecánico para las primeras pruebas, un soporte para el motor y un módulo encajable de contrapeso que desplaza la masa, incluyendo un conjunto de monedas, hacia un costado, generando el desequilibrio a partir del peso y el giro del motor.
 
+![desbalance](./imagenes/desbalance.gif)
+
 ![captura modelado](imagenes/modelado-peso.png)
 
-adjuntar el video del mecanismo girando*
+![desbalance](./imagenes/desbalance.gif)
 
 Después subdividimos el cuerpo en tres secciones principales, la cara frontal y la posterior junto a la base, las cuales son encajables, para poder abrir la pieza, armar y acceder a los circuitos de este “temporizador inconveniente”.
 
@@ -206,15 +217,126 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 
 #### **Código**
 
+#### Sensores y actuadores
+
+Antes de iniciar con el código de W.E.B.O. se definen los sensores y actuadores por ocupar.
+
+**Input**
+Botón / Pulsador
+Sensor de inclinación o tilt 
+
+**Output**
+Modulo reproductor MP3 DFPlayer mini
+Motor DC alta velocidad
+Display nokia 5110
+Mini parlante altavoz
+
+Luego de definir esto hablaremos de nuestro archivo .ino 
+
+```cpp
+// Aquí pasan todas las interacciones entre todos los componentes
+
+#include "ActuadorDisplay.h"
+#include "ActuadorMotor.h"
+#include "SensorBoton.h"
+#include "SensorTilt.h"
+#include "SensorSD.h"
+
+// sensor y actuador correspondientes
+ActuadorDisplay actuadorDisplay;
+ActuadorMotor actuadorMotor;
+SensorBoton sensorBoton;
+SensorTilt sensorTilt;
+SensorSD sensorSD;
+
+void setup() {
+  sensorTilt.configuracionTilt();
+  actuadorDisplay.configuracionDisplay();
+  sensorBoton.configuracionBoton();
+  sensorSD.configuracionSD();
+  actuadorMotor.configuracionMotor();
+}
+
+void loop() {
+  // Constantemente funciona el sensor de inclinación, de esto dependen casi todas las siguientes interacciones
+  sensorTilt.funcionaTilt();
+
+  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
+  sensorBoton.funcionaBoton();
+
+  // El display muestra a AVA celebrando, siempre y cuando el temporizador termina correctamente con 0 segundos
+  actuadorDisplay.celebracionDisplay();
 
 
-### **Extras**
+  // Cuando no esta caido, osea:
+
+  //----------------------------------
+  //-------- WEBO ESTÁ PARADO --------
+  //----------------------------------
+
+  // Si es que el sensor de inclinación está hacia arriba, osea no inclinado
+  if (!sensorTilt.caido) {
+    // El display muestra el tiempo restante en segundos, con AVA realizando al cuent regresiva
+    actuadorDisplay.cuentaDisplay();
+    // Que el motor se active y se desactive en intervalos establecidos
+    actuadorMotor.funcionaMotor();
+    // cuando el motor se activa y está girando, AVA también gira
+    actuadorDisplay.girandoDisplay();
+    // Si es que el temporizador se cumple correctamente sonará la alarma débil
+    sensorSD.funcionaSDAlarmaDebil();
+    // Siempre y cuando el temporizador sea menor a 1 segundo y recién se va a empezar la interacción, o después de la celebración de AVA, ya que se cansa y se queda dormida
+  actuadorDisplay.duermeDisplay();
+
+  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
+  sensorBoton.funcionaBoton();
+  }
+
+  // Cuando está inclinado, osea:
+
+  //----------------------------------
+  //-------- WEBO ESTA CAIDO ---------
+  //----------------------------------
+
+  else {
+    // suena la pataleta y AVA está enojada porque se cayo
+    sensorSD.funcionaSDAlarmaFuerte();
+    actuadorDisplay.caidaDisplay();
+  }
+
+
+```
+
+#### **Complicaciones,  problemas y hallazgos**
+
+El primer gran inconveniente que encontramos fue el reproductor mp3 mini, que a nivel de curso nos falló en numerosas ocasiones.
+
+Asimismo, cambiar de la función “delay()” a “millis()” fue una de las mayores dificultades, ya que millis() es una función complicada de entender y utilizar (y la mayoría de los ejemplos de lo que deseábamos hacer emplean delay). En este proyecto, nos resultaba inalcanzable usar delay debido a la cantidad de elementos diversos que necesitan y dependen de una función que mida el tiempo.
+
+Para aclarar:
+
+Delay pone en pausa el funcionamiento total de arduino, mientras que millis contabiliza el tiempo desde que se enciende.
+
+El código se volvió tan denso que al intentar cargar una actualización, el arduino se bloqueaba y mostraba el error 74, específicamente el **LIBUSB_ERROR_TIMEOUT**, llegando al extremo de pensar que habíamos dañado el arduino, lo solucionamos reiniciando el arduino cada vez que subíamos una nueva versión del código.
+
+Problemas con bitmaps, al transferirlo al display, se perdieron algunos píxeles.
+
+Complicaciones con el cableado, nuestra principal inquietud era quedarnos sin pines para todos los elementos.
+
+Por último, nuestro problema final fue que el motor se quemó; no entendíamos por qué no funcionaba y creímos que habíamos cometido un error con el cableado hasta que nos percatamos de que estaba dañado.
+
+Conseguimos solucionar millis con margen de error.
+
+La interacción adecuada entre todos los Sensores y Actuadores.
+
+Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiendo al estado de temporizador, que era la comunicación entre el botón y el sensor de inclinación o tilt.
+
+### Extras
 
 ![Afiche](./imagenes/aficheBonito.png)
 
 ![sticker Ava](./imagenes/setStickers.png)
 
-## **Bibliografía**
+## Bibliografía
 - Platis, D. (s/f). nokia-5110-lcd-library: Arduino library for driving the Nokia 5110 LCD.
 - Last Minute Engineers. (2018, noviembre 11). Interface Nokia 5110 Graphic LCD Display with arduino. Last Minute Engineers. https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/
 - Kadluczka, P. (s/f). ArduinoDigitalClock: Digital clock for Arduino with Nokia 5110 LCD Display.
