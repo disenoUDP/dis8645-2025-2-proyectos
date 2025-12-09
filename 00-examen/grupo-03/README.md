@@ -393,9 +393,11 @@ Recopilación de funcionamiento de vértebras, brazos y columna.
 Pruebas del funcionamiento de los brazos y vértebras.
 
 ![foto de Jorgito](./imagenes/fotomontajejorgito.jpg)
+
 Boceto de modelo 3D de Jorgito.
 
 ![molde](./imagenes/patronaje.png)
+
 Molde en diferentes vistas del patronaje.
 
 ![patrones](./imagenes/patrones.png)
@@ -440,9 +442,10 @@ Evolución de Jorgito a lo largo del proyecto.
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
   ![Soldadura](./imagenes/soldadura.jpg)
+  
   Proceso de soldadura con diferentes integrantes del equipo.
 
- ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.jpg) 
+ ![Proyecto siendo arreglado en protoboard](./imagenes/Placa.jpg) 
 
 
 Visualización de la placa siendo soldada.
