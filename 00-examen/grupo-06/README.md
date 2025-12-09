@@ -108,7 +108,7 @@ flowchart TB
     B -- Sí --> C{"Presionar botón"}
     B L_B_D_0@-- No --> D["No hace nada"]
     C --> E["Despierta Ava"]
-    E -- Para temporizar --> F{"presionar botón nuevamente"}
+    E -- Para temporizar --> F{"Mantener presionado el botón"}
     F -- La cuenta regresiva comienza a partir de los 5 seg --> G["Ava se aburre"]
     G -- Sí --> H["Comienza a bailar/girar"]
     G -- No --> I["Se queda en su posición"]
@@ -126,8 +126,6 @@ flowchart TB
 ```
 
 ### **Fabricación**
-
-
 
 #### **Interface**
 
@@ -369,9 +367,6 @@ Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiend
 - (S/f). Github.com. Recuperado el 6 de diciembre de 2025, de https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino 
 - Simple countdown timer. (2020, junio 28). Arduino Forum. https://forum.arduino.cc/t/simple-countdown-timer/662809/4 
 - No title. (s/f-b). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/built-in-examples/digital/Button/
-
-https://es.wikipedia.org/wiki/Game_Boy
-
-https://es.wikipedia.org/wiki/Game_%26_Watch
-
-https://es.wikipedia.org/wiki/Tamagotchi
+- Colaboradores de Wikipedia. (2025a, agosto 27). Game boy. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Game_Boy
+- Colaboradores de Wikipedia. (2025b, noviembre 8). Game & watch. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Game_%26_Watch 
+- Colaboradores de Wikipedia. (2025c, diciembre 2). Tamagotchi. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Tamagotchi
