@@ -282,11 +282,10 @@ Algunas de estas fueron:
 |--|--|
 |<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300"> |
 |<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300"> |
-| <img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
+| <img src="./imagenes/IIMGProceso05.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300"> | <img src="./imagenes/IMG1.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG2.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG3.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG4.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG5.jpg" alt="conexion" width="300"> |
-| <img src="./imagenes/IMG6.jpg" alt="conexion" width="300"> | |
 
 ## Etapas del código
 
@@ -800,6 +799,10 @@ Carta Gant:
 
 ### Interior máquina 
 
+|||
+|--|--|
+|<img src="./imagenes/interiorCarcasa1.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa2.jpeg" alt="interiorCarcasa" width="300"> |
+|<img src="./imagenes/interiorCarcasa3.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa4.jpeg" alt="interiorCarcasa" width="300"> |
 
 ## Bibliografía 
 
