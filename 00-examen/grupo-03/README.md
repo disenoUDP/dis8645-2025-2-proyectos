@@ -446,7 +446,7 @@ Visualización de la placa siendo soldada.
 
 ### Prototipo Final
 
-![jorgito terminado](./imagenes/prototipo final.png)
+![jorgito terminado](./imagenes/prototipofinal.png)
 
 ### Bibliografía
 
