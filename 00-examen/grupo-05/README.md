@@ -463,7 +463,6 @@ Las luces led de cada color hacen llamativa la máquina y muestran en tiempo rea
 
 ### Apartado gráfico de la máquina
 
-
 ### Montado
 
 ![montadocomponentes](./imagenes/montadoComponentes.jpg)
