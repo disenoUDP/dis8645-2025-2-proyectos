@@ -168,9 +168,9 @@ En la base incorporamos un corte leve que actúa como punto de apoyo inestable, 
 
 Desarrollamos el sistema mecánico para las primeras pruebas, un soporte para el motor y un módulo encajable de contrapeso que desplaza la masa, incluyendo un conjunto de monedas, hacia un costado, generando el desequilibrio a partir del peso y el giro del motor.
 
-![captura modelado](imagenes/modelado-peso.png)
+![desbalance](./imagenes/desbalance.gif)
 
-adjuntar el video del mecanismo girando*
+![captura modelado](imagenes/modelado-peso.png)
 
 Después subdividimos el cuerpo en tres secciones principales, la cara frontal y la posterior junto a la base, las cuales son encajables, para poder abrir la pieza, armar y acceder a los circuitos de este “temporizador inconveniente”.
 
