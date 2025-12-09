@@ -1,5 +1,7 @@
 # grupo-04 - Las Ratas Ciegas de Shrek
 
+### `MÁQUINAS LITERARIAS`
+
 INTEGRANTES
 - Yamna Carrión / [yamna-bit](https://github.com/yamna-bit)
 - Valentina Chávez / [valechavezalb](https://github.com/valechavezalb)
@@ -34,7 +36,7 @@ Diseñamos a partir de lo cómico, ver cómo podíamos convertir en parodia situ
 
 Contexto de uso:
 
-- `Atrápame Si puedes`es un juego interactivo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
+- `Atrápame Si puedes`es un demo, donde las personas deben tomar los mandos y ejercer una presión con los dedos para atrapar el hada. La única manera de terminar el juego, es que no pudiste atrapar el hada en el tiempo establecido y otra manera es hacer la acción de "atrapar" con el mando. Está pensado para espacios de exhibición de juegos experimentales, donde se juega con la tensión y paciencia del usuario
 
 ---
 
@@ -76,7 +78,14 @@ Contexto de uso:
 
 ## Específicaciones de sensores
 
-- 
+- Sensor de presión X: funciona para mover el cursor en el eje X
+- Sensor de presión Y: funciona para mover el cursor en el eje Y y funciona como botón/click
+- Acelerómetro: funciona para darle fin al juego, mediante el eje Y
+
+**Audio**
+- Compramos la subscripción para obtener este audio con derechos de autor:
+  - The Fairy Dance by Bonnie Grace
+  - <https://www.epidemicsound.com/es/music/tracks/9051f76e-fafa-40d7-af4f-f11c3e250371/>
 
 ---
 
@@ -157,14 +166,14 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 ## `PROPUESTA ELEGIDA`
 
-- Máquina sentimental "Atrápame si puedes"
+- Máquina Literaria "Atrápame si puedes"
 
 `PROPUESTA VISUAL`
 
 - Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
 - Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
 - Tipografía: pixel-retro
-- Máquina física: control retro hecho con impresión 3D
+- Máquina física: control retro de la red atrapahadas, hecho con impresión 3D
 - Cursor: red atrapa hadas hecho con pixel art
 - Hadas: inspiradas en los profes y ayudantes, hechos con pixel art
 
@@ -190,26 +199,22 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 |<img src="./imagenes/mateo.png" alt="mateo" width="350">|<img src="./imagenes/mateoVolando.gif" alt="mateo" width="300">|<img src="./imagenes/mateoEstatico.gif" alt="mateo" width="300">|
 |<img src="./imagenes/janis.png" alt="janis" width="350">|<img src="./imagenes/janisVolando.gif" alt="janis" width="300">|<img src="./imagenes/janisEstatica.gif" alt="janis" width="300">|
 
-|Paisaje|Inicio|
-|---|---|
-|<img src="./imagenes/bosque.gif" alt="bosque" width="300">|<img src="./imagenes/inicio1.gif" alt="inicio" width="300">|
-|<img src="./imagenes/bosque2.jpeg" alt="bosque" width="300">|<img src="./imagenes/inicio2.gif" alt="inicio" width="300">|
-|<img src="./imagenes/bosque3.gif" alt="bosque" width="300">|<img src="./imagenes/inicio3.gif" alt="inicio" width="300">|
-|<img src="./imagenes/redAtrapaHadas.png" alt="red" width="300">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="300">|
-
 ## Procesos y bocetos
 
 `Dificultades y desafíos`
 
-1. Teníamos una de máquina literaria, donde decidimos como grupo cambiar la propuesta ya que no nos llamaba la atención y no estabamos satisfechas con el  antiguo proyecto. El proyecto consistía en un objeto que responde al contacto directo mediante las manos, dependiendo de la intensidad de fuerza; como respuesta de este tacto, se proyectaba una gráfica distinta.
+1. Teníamos idea una de máquina literaria, donde decidimos como grupo cambiar la propuesta ya que no nos llamaba la atención y no estabamos satisfechas con el  antiguo proyecto. El proyecto consistía en un objeto que responde al contacto directo mediante las manos, dependiendo de la intensidad de fuerza; como respuesta de este tacto, se proyectaba una gráfica distinta.
 2. Otras de las dificultades fue conectar p5.js con el arduino. Aquí vimos un tutorial en youtube y utilizamos una librería en específica: [p5.webserial.js](https://github.com/gohai/p5.webserial)
 3. Conectar el sensor acelerómetro de 3 ejes, con p5.js. Antes de esto, en Arduino IDE, cuando pasabamos el código de acelerómetro a clases, este ya no leía los valores.
 4. Desde p5.js fue dificil agregarle una función al sensor Y, ya sea como botón y para desplazamiento.
 5. Decisión de las impresiones en 3d, la dificultad de ver como ibamos a tapar el navegador de chrome y el mando para los sensores Y.
 
-<img src="./imagenesProceso/proceso03.png" alt="red" width="300"> <img src="./imagenesProceso/proceso08.png" alt="red" width="300">
-
-<img src="./imagenesProceso/proceso07.png" alt="red" width="300">
+|Proceso|Proceso|Proceso|
+|---|---|---|
+|<img src="./imagenes/bosque.gif" alt="bosque" width="300">|<img src="./imagenes/inicio1.gif" alt="inicio" width="300">|<img src="./imagenes/inicio2.gif" alt="inicio" width="300">|
+|<img src="./imagenes/bosque2.jpeg" alt="bosque" width="300">|<img src="./imagenes/inicio3.gif" alt="inicio" width="300">|<img src="./imagenes/bosque3.gif" alt="bosque" width="300">|
+|<img src="./imagenes/redAtrapaHadas.png" alt="red" width="300">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="300">|<img src="./imagenesProceso/proceso03.png" alt="red" width="300">|
+|<img src="./imagenesProceso/proceso08.png" alt="red" width="300">|<img src="./imagenesProceso/proceso07.png" alt="red" width="300">|
 
 ### Proceso y diseño de carcasa 
 
@@ -257,24 +262,869 @@ MIENTRAS el sistema esté encendido:
                 Vuelve a la pantalla principal
 ```
 
-- Luego hicimos el código real, donde separamos el archivo principal (.ino) en clases (.cpp / .h)
+- Luego hicimos el código real en Arduino IDE, donde separamos el archivo principal (.ino) en clases (.cpp / .h)
 
 `ARCHIVO PRINCIPAL`
 
-`.CPP`
+**grupo-04-2025-AtrapameSiPuedes-Demo.ino**
 
-`.H`
+```cpp
+// incluir 1 clase para recibir datos de sensores
+// incluir 1 clase para emitir datos segun eso
+
+#include "SensorFuerza.h" // incluye las clases SensorFuerza y acelerometro
+#include "Acelerometro.h"
+
+SensorFuerza ejeX;
+SensorFuerza ejeY;
+Acelerometro acelerometro;
+
+void setup() {
+  Serial.begin(9600);
+  ejeX.configurar(A0);   // se asigna un sensor al pinA0
+  ejeY.configurar(A1);   // se asigna un sensor al pinA1
+
+  acelerometro.iniciar();
+}
+
+void loop() {   // se actualiza el valor del sensor del eje X y del eje Y
+  ejeX.leer();
+  ejeY.leer();
+
+  acelerometro.actualizar(); // se actualiza el acelerometro
+
+  float valorYacel = acelerometro.getY();
+
+  Serial.print(ejeX.valorCrudo);  // manda al serial monitor el valor crudo del sensor X
+  Serial.print(", ");
+  Serial.print(ejeY.valorCrudo);  // manda al serial monitor el valor crudo del sensor Y
+  Serial.print(", ");
+  Serial.println(valorYacel);  // manda al serial monitor el valor del eje Y
+
+  Serial.print("valorX");
+  Serial.print(", ");
+  Serial.print("valorY");
+  Serial.print(", ");
+  Serial.println("valorYacel");
+
+  delay(40);
+  // enviar valores a p5
+  // enviar valor ejeX.valorCrudo
+  // luego enviar ejeY.valorCrudo
+  // Serial.write(ejeX.valorCrudo, ejeY.valorCrudo);
+}
+```
+
+`.CPP ACEL`
+
+**Acelerometro.cpp**
+
+```cpp
+#include "Acelerometro.h"
+
+// constructor de variables acel
+Acelerometro::Acelerometro()
+: accel(Adafruit_ADXL345_Unified(12345)),
+  xRaw(0), yRaw(0), zRaw(0),
+  xAbs(0), yAbs(0), zAbs(0),
+  totalMovement(0)
+{}
+
+Acelerometro::~Acelerometro() {}
+
+// imprime informacion tecnica del sensor
+void Acelerometro::displaySensorDetails() {
+  sensor_t sensor;
+  accel.getSensor(&sensor);
+  Serial.println("------------------------------------");
+  Serial.print  ("Sensor:       "); Serial.println(sensor.name);
+  Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
+  Serial.print  ("Unique ID:    "); Serial.println(sensor.sensor_id);
+  Serial.print  ("Max Value:    "); Serial.print(sensor.max_value); Serial.println(" m/s^2");
+  Serial.print  ("Min Value:    "); Serial.print(sensor.min_value); Serial.println(" m/s^2");
+  Serial.print  ("Resolution:   "); Serial.print(sensor.resolution); Serial.println(" m/s^2");
+  Serial.println("------------------------------------");
+  Serial.println("");
+  delay(50);
+}
+
+// muestra la frecuencia de lectura que esta usando ADXL345
+void Acelerometro::displayDataRate() {
+  Serial.print("Data Rate: ");
+  switch (accel.getDataRate()) {
+    case ADXL345_DATARATE_3200_HZ: Serial.print("3200 "); break;
+    case ADXL345_DATARATE_1600_HZ: Serial.print("1600 "); break;
+    case ADXL345_DATARATE_800_HZ:  Serial.print("800 ");  break;
+    case ADXL345_DATARATE_400_HZ:  Serial.print("400 ");  break;
+    case ADXL345_DATARATE_200_HZ:  Serial.print("200 ");  break;
+    case ADXL345_DATARATE_100_HZ:  Serial.print("100 ");  break;
+    case ADXL345_DATARATE_50_HZ:   Serial.print("50 ");   break;
+    case ADXL345_DATARATE_25_HZ:   Serial.print("25 ");   break;
+    case ADXL345_DATARATE_12_5_HZ: Serial.print("12.5 "); break;
+    case ADXL345_DATARATE_6_25HZ:  Serial.print("6.25 "); break;
+    case ADXL345_DATARATE_3_13_HZ: Serial.print("3.13 "); break;
+    case ADXL345_DATARATE_1_56_HZ: Serial.print("1.56 "); break;
+    case ADXL345_DATARATE_0_78_HZ: Serial.print("0.78 "); break;
+    case ADXL345_DATARATE_0_39_HZ: Serial.print("0.39 "); break;
+    case ADXL345_DATARATE_0_20_HZ: Serial.print("0.20 "); break;
+    case ADXL345_DATARATE_0_10_HZ: Serial.print("0.10 "); break;
+    default: Serial.print("???? "); break;
+  }
+  Serial.println(" Hz");
+}
+
+// muestra el rango configurado del sensor
+void Acelerometro::displayRange() {
+  Serial.print("Range: +/- ");
+  switch (accel.getRange()) {
+    case ADXL345_RANGE_16_G: Serial.print("16 "); break;
+    case ADXL345_RANGE_8_G:  Serial.print("8 ");  break;
+    case ADXL345_RANGE_4_G:  Serial.print("4 ");  break;
+    case ADXL345_RANGE_2_G:  Serial.print("2 ");  break;
+    default: Serial.print("?? "); break;
+  }
+  Serial.println(" g");
+}
+
+// verifica que el ADXL345 este conectado
+void Acelerometro::iniciar() {
+  Serial.println("Accelerometer Test\n");
+
+  if (!accel.begin()) {
+    Serial.println("Ooops, no ADXL345 detected ... Check your wiring!");
+    while (1);
+  }
+
+  accel.setRange(ADXL345_RANGE_16_G);
+
+  displaySensorDetails();
+}
+
+// lee los valores x,y,z
+void Acelerometro::actualizar() {
+  sensors_event_t event;
+  accel.getEvent(&event);
+
+// guarda dichos valores
+  xRaw = event.acceleration.x;
+  yRaw = event.acceleration.y;
+  zRaw = event.acceleration.z;
+
+// calcula los valores absolutos
+  xAbs = abs(xRaw);
+  yAbs = abs(yRaw);
+  zAbs = abs(zRaw);
+
+// los suma en un totalMovement
+  totalMovement = xAbs + yAbs + zAbs;
+}
+
+float Acelerometro::getX() { return xAbs; }
+float Acelerometro::getY() { return yAbs; } // valor que quiero que imprima
+float Acelerometro::getZ() { return zAbs; }
+float Acelerometro::getTotal() { return totalMovement; }
+```
+
+`.H ACEL`
+
+**Acelerometro.h**
+
+```cpp
+#ifndef ACELEROMETRO_H
+#define ACELEROMETRO_H
+
+#include <Arduino.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL345_U.h>
+
+class Acelerometro {
+public:
+  Acelerometro();  // constructir
+  ~Acelerometro(); // destructor
+
+  void iniciar();       // equivalente a setup del acelerómetro
+  void actualizar();    // equivalente al loop del acelerómetro
+
+// lee los datos del sensor y luego actualiza
+  float getX();
+  float getY();
+  float getZ();
+  float getTotal();   // suma de los 3 ejes
+
+private:
+  void displaySensorDetails(); // imprime información técnica del sensor
+  void displayDataRate();      // imprime la frecuencia del sensor
+  void displayRange();         // muestra el rango en G configurado
+
+  Adafruit_ADXL345_Unified accel;
+
+// datos crudos del sensor
+  float xRaw, yRaw, zRaw;
+  float xAbs, yAbs, zAbs;
+  float totalMovement;
+};
+
+#endif
+```
+
+`.CPP SENSOR`
+
+**SensorFuerza.cpp**
+
+```cpp
+#include "SensorFuerza.h"
+// incluye el .h de SensorFuerza
+
+SensorFuerza::SensorFuerza() {} //constructor
+
+SensorFuerza::~SensorFuerza() {} // destructor
+
+void SensorFuerza::configurar(int nuevaPatita) { // aqui se configura el sensor
+  SensorFuerza::patita = nuevaPatita;
+  pinMode(SensorFuerza::patita, INPUT);  // pin donde se encuentra el sensor
+}
+
+void SensorFuerza::leer() {   // funcion para leer el sensor
+  SensorFuerza::valorCrudo = analogRead(SensorFuerza::patita);  // guarda el valor de la presion del sensor
+                                                                // y cada vez que se llama .leer, se actualiza el valor
+}
+```
+
+`.H SENSOR`
+
+**SensorFuerza.h**
+
+```cpp
+#ifndef SENSOR_FUERZA_H // si no esta Sensor fuerza definido
+#define SENSOR_FUERZA_H // aqui lo definimos 
+
+#include <Arduino.h>  // incluimos las funciones basicas de arduino
+
+class SensorFuerza {     // definimos la clase sensor fuerza
+public:
+  SensorFuerza();  // constructor
+  ~SensorFuerza(); // destructor
+
+  void configurar(int nuevaPatita); // guarda en que pin se encuentra el sensor
+  void leer();  // declara la funcion para leer el sensor
+
+  int patita;       // guarda el numero del pin (A0,A1)
+  int valorCrudo;   // guarda el numero del sensor, entre 0 a 1023 (segun presion)
+  int valorMapeado; 
+};
+
+#endif
+```
+
+- Luego de tener listo este código en Arduino, comenzamos a realizar el código en p5.js
+
+```cpp
+//este sketch fue hecho con ayuda de la librería de Gohai
+//se encuentra en el siguiente link //https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js
+//conexión de datos de arduino hacia p5 utilizando un sensor de fuerza y un acelerómetro
+//este sensor de fuerza lee parámetros como izquierda-derecha, arriba-abajo
+//proyecto de juego realizado para el taller de diseño de maquinas computacionales de la UDP
+//proyecto examen taller vertical noviembre-diciembre 2025
+//por el grupo "Las Ratas Ciegas de Shrek" compuesto por Yamna Carrión, Valentina Chávez, Antonia Fuentealba, Valentina Ruz y Sofía Pérez
+
+// ---------------------------------------
+// VARIABLES GLOBALES
+// ---------------------------------------
+// ---------------------------------------
+// VARIABLES GLOBALES
+// ---------------------------------------
+
+const BAUDRATE = 9600;
+let port = null;
+let connectBtn;
+
+// Sensores
+let sensorX = 0;
+let sensorY = 0;
+let acelY = 0;
+
+// Click fuerte calibrado
+// fuerte = 1013–1014
+const UMBRAL_CLICK = 850;     
+let prevFSRPressed = false;
+
+// Atrapado por acelerómetro
+const UMBRAL_ATRAPAR = 8;
+
+// Estados del juego
+// inicio → seleccion → juego → final → ganador
+let estado = "inicio";        
+let personajeSeleccionado = null;
+let juegoIniciado = false;
+
+// Timer
+let tiempoRestante = 15;
+let timerInicio = 0;
+let juegoConTimer = false;
+
+// Control general
+let permitirClickInicio = false;
+let sensorActivo = false;
+
+// Imágenes y GIFs
+let atrapaPNG, inicio2PNG, fondoBG, fondoSeleccionGIF, fondoFinal, fondoGanador;
+let persSelectGIF = [];
+let persGameGIF   = [];
+
+// Movimiento del hada
+let charX = 0, charY = 0;
+let charVX = 4, charVY = 3;
+
+// Otros
+let hoverAnim = 0;
+let alphaBlink = 0;
+let fontDoto;
+
+let nombresPersonajes = ["Matías", "Aarón", "Janis", "Mateo"];
+
+// Cursor inicial
+let cursorInicioSet = false;
+let cursorX_manual = null;
+let cursorY_manual = null;
+
+let musicaFondo;
+let musicaIniciada = false;
+
+// ---------------------------------------
+// PRELOAD
+// ---------------------------------------
+function preload() {
+  atrapaPNG = loadImage("atrapar.png");
+  inicio2PNG = loadImage("atrapameInicio.gif");
+  fondoBG = loadImage("fondo.gif");
+  fondoSeleccionGIF = loadImage("fondoSeleccion.gif");
+  fondoFinal = loadImage("fondoFinal.gif");
+  fondoGanador = loadImage("ganaste.gif");
+  fontDoto = loadFont("Doto-Black.ttf");
+  musicaFondo = loadSound ("musicaJuego.mp3");
+}
+
+// ---------------------------------------
+// SETUP
+// ---------------------------------------
+function setup() {
+  createCanvas(1920, 1080);
+
+  // GIFS selección
+  let sel = ["pers1_sel.gif","pers2_sel.gif","pers3_sel.gif","pers4_sel.gif"];
+  for (let i = 0; i < 4; i++) {
+    persSelectGIF[i] = createImg(sel[i]);
+    persSelectGIF[i].size(333, 333);
+    persSelectGIF[i].style("pointer-events","none");
+    persSelectGIF[i].hide();
+  }
+
+  // GIFS juego
+  let game = ["pers1_game.gif","pers2_game.gif","pers3_game.gif","pers4_game.gif"];
+  for (let i = 0; i < 4; i++) {
+    persGameGIF[i] = createImg(game[i]);
+    persGameGIF[i].size(350, 350);
+    persGameGIF[i].style("pointer-events","none");
+    persGameGIF[i].hide();
+  }
+
+  if (typeof createSerial === "function") {
+    port = createSerial();
+    port.bufferSize(1024);
+  }
+
+  // Botón conectar
+  connectBtn = createButton("Conectar");
+  connectBtn.addClass("connect-btn");
+  connectBtn.position(20,20);
+  connectBtn.mousePressed(connectBtnClick);
+}
+
+// ---------------------------------------
+// LOOP PRINCIPAL
+// ---------------------------------------
+function draw() {
+  
+  console.log(estado);
+  
+  
+  imageMode(CORNER);
+  if (estado === "inicio")  {
+    image(inicio2PNG,0,0,width,height);
+  }   
+  else if (estado === "seleccion") {
+     image(fondoSeleccionGIF,0,0,width,height);
+  }
+  else if (estado === "juego") {
+     image(fondoBG,0,0,width,height);
+  }    
+  else if (estado === "final") {
+    image(fondoFinal,0,0,width,height);
+  }     
+  else if (estado === "ganador")  {
+    image(fondoGanador,0,0,width,height);
+  }  
+
+  leerSerial();
+  let click = hayClick();
+
+  // console.log("estado:", estado, "sensorY:", sensorY, "click:", click);
+  
+  if (estado === "inicio") {
+    dibujarPantallaInicio(click);
+  }
+  
+  else if (estado === "seleccion")  {
+    dibujarPantallaSeleccion(click);
+  }
+  else if (estado === "juego") {
+    dibujarPantallaJuego();
+  }     
+  else if (estado === "final") {
+     dibujarPantallaFinal(click);
+  }    
+  else if (estado === "ganador") {
+    dibujarPantallaGanador(click);
+  }   
+}
+
+// ---------------------------------------
+// LECTURA SERIAL
+// ---------------------------------------
+function leerSerial() {
+  if (!port || !port.opened()) return;
+
+  let line = port.readUntil("\n");
+
+  while (line && line.length > 0) {
+    line = trim(line);
+
+    if (line.includes(",")) {
+      let p = line.split(",");
+
+      if (p.length === 3) {
+        let x = float(p[0]);
+        let y = float(p[1]);
+        let a = float(p[2]);
+
+        if (!isNaN(x)) sensorX = x;
+        if (!isNaN(y)) sensorY = y;
+        if (!isNaN(a)) acelY = a;
+
+        sensorActivo = true;
+      }
+    }
+    line = port.readUntil("\n");
+  }
+}
+
+// ---------------------------------------
+// CLICK REAL Y ESTABLE DEL SENSOR Y
+// ---------------------------------------
+function hayClick() {
+
+  // No hay click en juego (ahí Y es movimiento)
+  if (estado === "juego") return false;
+
+  if (!permitirClickInicio) return false;
+
+  // Sensor presionado fuerte según tus valores reales
+  let pressed = sensorY > UMBRAL_CLICK;
+
+  // flanco ascendente
+  let click = pressed && !prevFSRPressed;
+
+  prevFSRPressed = pressed;
+  return click;
+}
+
+// ---------------------------------------
+// PANTALLA: INICIO
+// ---------------------------------------
+function dibujarPantallaInicio(click) {
+
+  alphaBlink = map(sin(millis()*0.008), -1,1,0,255);
+  fill(255,alphaBlink);
+  textFont(fontDoto);
+  textSize(60);
+  textAlign(CENTER,CENTER);
+  text(">Presiona para comenzar<", width/2, height*0.78);
+
+  for (let g of persSelectGIF) g.hide();
+  for (let g of persGameGIF) g.hide();
+
+  if (!cursorInicioSet) {
+    cursorX_manual = width/2;
+    cursorY_manual = height*0.90;
+    cursorInicioSet = true;
+  }
+
+  let cursorX = sensorActivo ?
+    map(sensorX,0,1023,width*0.1,width*0.9) :
+    cursorX_manual;
+
+  let cursorY = cursorY_manual;
+
+  imageMode(CENTER);
+  image(atrapaPNG,cursorX,cursorY,150,150);
+
+  // click → ir a selección
+  if (click) {
+
+    // iniciar musica
+    if (!musicaIniciada) {
+      musicaFondo.loop();        // se mantiene sonando siempre
+      musicaFondo.setVolume(0.6); // volumen moderado
+      musicaIniciada = true;
+    }
+
+    estado = "seleccion";
+    cursorInicioSet = false;
+    prevFSRPressed = true;
+  }
+}
+// ---------------------------------------
+// PANTALLA: SELECCIÓN
+// ---------------------------------------
+function dibujarPantallaSeleccion(click) {
+
+  const yFila = height * 0.55;
+  const personajeW = 333;
+  const personajeH = 333;
+  const espacio = 100;
+  const total = personajeW*4 + espacio*3;
+  const startX = width/2 - total/2;
+
+  let pos = [];
+  for (let i=0;i<4;i++){
+    pos[i] = {
+      x: startX + personajeW/2 + i*(personajeW+espacio),
+      y: yFila
+    };
+  }
+
+  // mostrar personajes
+  for (let i=0;i<4;i++){
+    persSelectGIF[i].show();
+    persSelectGIF[i].position(pos[i].x - personajeW/2, pos[i].y - personajeH/2);
+  }
+
+  // cursor
+  let cursorX = map(sensorX,0,1023,0,width);
+  let cursorY = yFila;
+
+  // encontrar más cercano
+  let seleccionado = 0, mejor = Infinity;
+  for (let i=0;i<4;i++){
+    let dx = cursorX - pos[i].x;
+    let d = dx*dx;
+    if (d < mejor){ mejor=d; seleccionado=i; }
+  }
+
+  hoverAnim = lerp(hoverAnim,1,0.15);
+  let animSize = personajeW + hoverAnim;
+
+  fill(255,60);
+  noStroke();
+  rectMode(CENTER);
+  rect(pos[seleccionado].x,pos[seleccionado].y,animSize,animSize);
+
+  imageMode(CENTER);
+  image(atrapaPNG,cursorX,cursorY,130,130);
+
+  // nombres
+  fill(255);
+  textFont(fontDoto);
+  textSize(55);
+  textAlign(CENTER,TOP);
+
+  for (let i=0;i<4;i++){
+    text(nombresPersonajes[i], pos[i].x, pos[i].y + personajeH/2 + 20);
+  }
+
+  // click → entrar al juego
+  if (click) {
+    personajeSeleccionado = seleccionado;
+    estado = "juego";
+    juegoIniciado = false;
+    prevFSRPressed = true;
+  }
+}
+
+// ---------------------------------------
+// PANTALLA: JUEGO
+// ---------------------------------------
+function dibujarPantallaJuego(){
+
+  for (let g of persSelectGIF) g.hide();
+
+  if (!juegoIniciado){
+
+    juegoIniciado = true;
+    for (let g of persGameGIF) g.hide();
+
+    persGameGIF[personajeSeleccionado].show();
+
+    charX = width/2;
+    charY = height/2;
+
+    charVX = random(-10,10);
+    charVY = random(-8,8);
+    if(abs(charVX)<2) charVX=4;
+    if(abs(charVY)<2) charVY=3;
+
+    juegoConTimer = true;
+    timerInicio = millis();
+
+    // evitar clicks fantasma
+    prevFSRPressed = true;
+  }
+
+  // ATRAPAR hada por acelerómetro
+  if (acelY > UMBRAL_ATRAPAR){
+    estado = "ganador";
+    juegoConTimer = false;
+    persGameGIF[personajeSeleccionado].hide();
+    return;
+  }
+
+  // TIMER
+  if (juegoConTimer){
+    let elapsed = floor((millis()-timerInicio)/1000);
+    tiempoRestante = max(15 - elapsed, 0);
+
+    if (tiempoRestante === 0){
+      estado = "final";
+      juegoConTimer = false;
+      return;
+    }
+  }
+
+  // Movimiento del hada
+  charX += charVX;
+  charY += charVY;
+
+  let m = 130;
+  if (charX<m || charX>width-m) charVX *= -1;
+  if (charY<m || charY>height-m) charVY *= -1;
+
+  persGameGIF[personajeSeleccionado].position(charX-130,charY-130);
+
+  // Cursor libre XY
+  let nx = map(sensorX,0,1023,0,width);
+  let ny = map(sensorY,12,1014,height,0);
+  ny = constrain(ny,0,height);
+
+  imageMode(CENTER);
+  image(atrapaPNG,nx,ny,220,220);
+
+  // timer visual
+  fill(255);
+  textFont(fontDoto);
+  textSize(60);
+  textAlign(CENTER,TOP);
+  text("Tiempo: "+tiempoRestante, width/2,40);
+}
+
+// ---------------------------------------
+// PANTALLA: GANADOR
+// ---------------------------------------
+function dibujarPantallaGanador(click){
+
+  for (let g of persSelectGIF) g.hide();
+  for (let g of persGameGIF) g.hide();
+
+  alphaBlink = map(sin(millis()*0.009), -1,1, 80,255);
+
+  fill(255,alphaBlink);
+  textFont(fontDoto);
+  textAlign(CENTER,CENTER);
+  textSize(55);
+  text(">Presiona para volver a jugar<", width/2, height*0.82);
+
+  if (click){
+    estado = "juego";
+    juegoIniciado = false;
+    tiempoRestante = 15;
+    juegoConTimer = true;
+    timerInicio = millis();
+    prevFSRPressed = true;
+  }
+}
+
+// ---------------------------------------
+// PANTALLA: FINAL (tiempo agotado)
+// ---------------------------------------
+function dibujarPantallaFinal(click){
+
+  for (let g of persSelectGIF) g.hide();
+  for (let g of persGameGIF) g.hide();
+
+  alphaBlink = map(sin(millis()*0.008), -1,1, 60,255);
+
+  fill(255,alphaBlink);
+  textFont(fontDoto);
+  textAlign(CENTER,CENTER);
+  textSize(60);
+  text(">Presiona para volver a jugar<", width/2, height*0.9);
+
+  if (click){
+    estado = "juego";
+    juegoIniciado = false;
+    tiempoRestante = 15;
+    juegoConTimer = true;
+    timerInicio = millis();
+    prevFSRPressed = true;
+  }
+}
+
+// ---------------------------------------
+// BOTÓN CONECTAR
+// ---------------------------------------
+function connectBtnClick() {
+
+  if (!port) {
+    alert("p5.webserial no está cargado.");
+    return;
+  }
+
+  if (!port.opened()) {
+    estado = "inicio";
+    permitirClickInicio = false;
+    prevFSRPressed = false;
+    sensorActivo = false;
+
+    port.open(BAUDRATE);
+    connectBtn.html("Conectando...");
+
+    setTimeout(()=>{
+      permitirClickInicio = true;
+      connectBtn.hide();
+    },1200);
+
+  } else {
+    port.close();
+    connectBtn.show();
+    connectBtn.html("Conectar");
+    permitirClickInicio = false;
+  }
+}
+```
+
+## ¿Cómo conectamos Arduino con P5.js?
+
+- Primero, vimos estos videos para entender la conexión entre Arduino y p5.js  [
+Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y) y [p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch](https://www.youtube.com/watch?v=feL_-clJQMs&t=1142s) 
+- Luego, debíamos probar la conexión serial. Pero antes, había que descargar un programa intermediario que hace que pueda leer el puerto serial desde una página web, que por motivos de seguridad están bloqueados. Este es el link de descarga: <https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2>.
+- Aarón, nos dijo que este link tenía algunos problemas de uso, por lo que nos recomendó usar la libreria de Gohai.
+
+### p5.webserial.js de Gohai
+
+<https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started>
+
+Esta es una biblioteca para p5.js que añade compatibilidad para interactuar con dispositivos serie mediante la API Web Serial, que actualmente está compatible con Chrome y Edge.
+
+**¿Cómo hacer la conexión?**
+
+- Primero hay que descargar este archivo:(https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js) o pegarlo en la head del html, debajo de la línea que carga p5 en p5.js.
+
+```cpp
+<script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+```
+
+- Segundo crear una variable global y asignarle un nuevo puerto de serie dentro de la configuración.
+
+```cpp
+let port;
+
+function setup() {
+  port = createSerial();
+  // ...
+```
+
+IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un formato recomendado es 123,456\n (dos valores separados por una coma y un salto de línea).
+
+- `p5.js` lee cada línea y actualiza las variables.
+- `p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
+- Para que arduino envíe los datos correctos a p5.js. Lo que debe imprimir en el Serial Monitor se ve así:
+
+```cpp
+12, 30, 0.20
+14, 45, 0.25
+20, 50, 0.30
+...
+```
+
+- Ahora viene la estructura del sketch de `p5.js`, una carpeta. Esta debe contener:
+
+```
+1. index.html
+2. sketch.js
+3. demás archivos que queremos utilizar, como audio, imágenes, etc.
+```
+
+Recuerda: la librería a utilizar se pega en el html del sketch de p5.js
+
+### Botón para conectar el Arduino desde el navegador
+
+Chrome y Edge exigen que el usuario haga click para acceder al puerto. Es por eso que se "dibujará" un botón para conectarlo manualmente.
+
+```cpp
+connectBtn = createButton('Conectar Arduino');
+connectBtn.mousePressed(() => port.open(9600));
+```
+
+### Lectura Serial en p5
+
+Para que `p5.js` lea los valores de la consola de Arduino.
+
+```cpp
+let line = port.readUntil("\n");
+  while (line && line.length > 0) {
+    line = trim(line);
+```
+
+### Posición de los sensores de fuerza
+
+```cpp
+let posX = map(sensorX, 0, 1023, 0, width); //para el movimiento de izquierda a derecha
+let posY = map(sensorY, 0, 1023, height, 0); //para el movimiento de arriba a abajo
+```
+
+Para que funcione correctamente, debemos tener en cuenta que:
+
+1. Arduino debe mandar los datos consistentes en el mismo formato.
+2. p5.js deber leer las líneas completas de datos con `readUntil("\n")`
+3. Chrome y Edge obligan a usar un botón para abrir el puerto y permitir la conexión.
+4. NO ABRIR `Serial Monitor` de arduino mientras p5.js lo usa. Esto interrumpe la conexión.
+5. Usar servidor local, como vs code con liver server para visualizar el html.
+6. Cerrar ventanas p5.js repetidas, sólo accede a un puerto.
+
+### Resultado
+
+<img src="./imagenes/p5Resultado.png" alt="p5.js" width="400">
 
 ## Fotografías del proyecto terminado
 
+<img src="./imagenesProyecto/proyecto01.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto02.JPG" alt="proyecto" width="400">
+
+<img src="./imagenesProyecto/proyecto03.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto04.JPG" alt="proyecto" width="400">
+
+<img src="./imagenesProyecto/proyecto05.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto06.JPG" alt="proyecto" width="400">
+
+<img src="./imagenesProyecto/proyecto07.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto08.JPG" alt="proyecto" width="400">
+
+<img src="./imagenesProyecto/proyecto09.JPG" alt="proyecto" width="400"> <img src="./imagenesProyecto/proyecto10.JPG" alt="proyecto" width="400">
+
 ## Roles de equipo
 
-- Yamna Carrión: Aporte principal haciendo, revisando y probando código. Ayudó también a ordenar Github.
+- Yamna Carrión: Aporte principal en ordenar Github e investigar.
 - Valentina Chavéz: Aporte principal haciendo, revisando y probando código.
 - Antonia Fuentealba: Aporte principal en diseño de gráficas y gifs.
 - Sofía Peréz: Aporte principal en diseño de gráficas y gifs.
 - Millaray Millar: Aporte principal como diseñadora y reina del modelado de nuestro prototipo. 
-- Valentina Ruz: Aporte principal haciendo, revisando y probando código. Ayudó también a ordenar Github.
+- Valentina Ruz: Aporte principal haciendo, revisando y probando código. También ordenó Github.
 
 ## Bibliografía
 
