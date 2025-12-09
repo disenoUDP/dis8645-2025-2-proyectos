@@ -9,19 +9,19 @@
 - Miguel Vera
 
 ### La consigna
-Para el proyecto 3 y posterior examen se nos encomendó hacer una máquina sentimental que hiciera representación de una figura literaria. 
-Esta idea es un constructo que combina los conocimientos vistos a lo largo del semestre (referente al desarrollo de mecanismos fabricados con la tecnología de Arduino, actuadores y sensores) en conjunto con rasgos y reacciones psicofisiológicas como lo son las emociones. Esta última se define como “Alteración del ánimo intensa y pasajera (agradable o penosa) que va acompañada de cierta conmoción somática (relacionado con el cuerpo)”. 
-El eje de todo el proyecto se centra conseguir un resultado que involucre al usuario y genere una respuesta en torno a la interacción entre ambas partes (objeto/máquina – emoción; acción – reacción; causa - efecto).
+Para el proyecto 3 y posterior examen se nos encomendó hacer una máquina sentimental que hiciera representación de una figura literaria.
+Esta idea es un constructo que combina los conocimientos vistos a lo largo del semestre (referente al desarrollo de mecanismos fabricados con la tecnología de Arduino, actuadores y sensores) en conjunto con rasgos y reacciones psicofisiológicas como lo son las emociones. Esta última se define como: “Alteración del ánimo intensa y pasajera (agradable o penosa) que va acompañada de cierta conmoción somática (relacionado con el cuerpo)”.
+El eje de todo el proyecto se centra en conseguir un resultado que involucre al usuario y genere una respuesta en torno a la interacción entre ambas partes (objeto/máquina – emoción; acción – reacción; causa – efecto).
 
 ### Anticlimax
-El ***anticlímax*** es una figura retórica que produce una decepción abrupta o un descenso de la seriedad al final de una oración, pasaje o trama, pasando de ideas importantes o tensas a algo trivial, insignificante o cómico. Esencialmente queremos decepcionar al usuario y mientras más expectativa tenga, más se defraudará. Cosas como el nombre o elementos que atraen al usuario buscan aumentar esta expectativa lo más posible antes de dar una sorpresa (que no está a la altura) de manera abrupta.
+El ***anticlímax*** es una figura retórica que produce una decepción abrupta o un descenso de la seriedad al final de una oración, pasaje o trama, pasando de ideas importantes o tensas a algo trivial, insignificante o cómico. Esencialmente queremos decepcionar al usuario, y mientras más expectativa tenga, más se defraudará. Cosas como el nombre o elementos que atraen al usuario buscan aumentar esta expectativa lo más posible antes de dar una sorpresa (que no está a la altura) de manera abrupta.
 
-![cara decepcionada](./imagenes/decepción.webp)
+![cara decepcionada](./imagenes/decepcion.jpg)
 
-***Vender humo*** se refiere a una persona que ofrece algo de escaso o nulo valor haciéndolo pasar por algo de mucho valor (generalmente de mala fé). Para nuestra máquina usaremos esta acepsión y la idea de una literal transacción en la que recibes humo. Todos los aspectos de la máquina asombrosa buscan vender humo al usuario y apoyan a la meta de generar expectativa para luego defraudarla.
+***Vender humo*** se refiere a una persona que ofrece algo de escaso o nulo valor haciéndolo pasar por algo de mucho valor (generalmente de mala fe). Para nuestra máquina usaremos esta acepción y la idea de una literal transacción en la que recibes humo. Todos los aspectos de la máquina asombrosa buscan vender humo al usuario y apoyan la meta de generar expectativa para luego defraudarla.
 
 ### Nuestra máquina y la interacción
-La máquina asombrosa tiene una apariencia similar a una máquina tragamonedas que aunque no tiene ninguna invitación o promesa evidente, te llama a girar su manivela y ver que pasa. Para que la máquina funcione apelamos a la curiosidad de las personas con la intención de que sigan girando la manivela e intenten llegar al término de la interacción. Nuestra manera de alimentar su curiosidad es ir añadiendo estímulos a medida que progresan y dar pistas de que algo viene y se está preparando. 
+La máquina asombrosa tiene una apariencia similar a una máquina tragamonedas que, aunque no tiene ninguna invitación o promesa evidente, te llama a girar su manivela y ver qué pasa. Para que la máquina funcione apelamos a la curiosidad de las personas con la intención de que sigan girando la manivela e intenten llegar al término de la interacción. Nuestra manera de alimentar su curiosidad es ir añadiendo estímulos a medida que progresan y dar pistas de que algo viene y se está preparando.
 
 ![meme_minero](./imagenes/diamantes.png)
 
@@ -36,10 +36,11 @@ La interacción funciona de la siguiente manera:
 8. Nuevamente guíado por la curiosidad y buscando una recompensa por su esfuerzo, el usuario dará una vuelta más. Esta vuelta desactiva las luces y hace sonar una corneta en celebración a la vez que suelta una humilde cantidad de humo.
 9. La máquina queda desactivada hasta que un nuevo usuario gire la manivela y reinicie la interacción.
 
-La experiencia que proponemos es bastante simple en esencia y está construido con una estructura similar a un chiste con la preparación y el remate. Su duración es de poco más de un minuto y si logra hacer que alguién llegue al "gran final" ya cumplió su cometido. La gracia es que aunque el usuario esperaba algo y no lo consiguió, ***la máquina nunca prometió nada***. Y aunque sea corta, la interacción usa el anticlimax para enseñar a medir nuestras expectativas.
+La experiencia que proponemos es bastante simple en esencia y está construida con una estructura similar a un chiste: preparación y remate. Su duración es de poco más de un minuto y, si logra hacer que alguien llegue al "gran final", ya cumplió su cometido. La gracia es que, aunque el usuario esperaba algo y no lo consiguió, ***la máquina nunca prometió nada***. Y aunque sea corta, la interacción usa el anticlímax para enseñar a medir nuestras expectativas.
 
 ## Contexto y oportunidad de diseño
-La máquina asombrosa aprovecha elementos gráficos y morfologicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas. 
+La máquina asombrosa aprovecha elementos gráficos y morfológicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas.
+
 ## Planificación
 Los componentes definidos para nuestra máquina son los siguientes:
 
@@ -54,6 +55,8 @@ Los componentes definidos para nuestra máquina son los siguientes:
 Este componente es el más importante en la máquina ya que dicta que ocurre con los demás y comunica a los actuadores con el usuario. El encoder funciona contando pasos al girar una perilla y pasar por mellas. Puede girar hacia ambos lados sin límites pero nosotros solo usaremos una dirección. Para ordenar cuando se activa cada cosa necesitamos que cierta cantidad de pasos (20) signifiquen una vuelta, que cada cantidad de vueltas se ordenen en respectivos rangos y que haya un contador que recuerde estos 3 valores. Con este propósito usamos una función que añade una vuelta cada vez que se pasa por un paso múltiplo de 20 y categorizamos la cantidad de vueltas. 
 
 ![gifs del encoder](./imagenes/avances2.gif)
+
+***funcionamiento del encoder y sus rangos, autoría propia, 2025***
 #### Step a vueltas
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -177,7 +180,7 @@ void Leds::usarLeds() {
 ```
 
 #### Humidificador 💨
-Este es un caso especial ya que tiene un elemento que se consume: algodón mojado. Una varita del material se presiona junto a un disco metálico que se calienta cuando pasa corriente. Esto resulta en la evaporación del líquido y la salida de vapor. Para controlar esta activación usamos HIGH que activa y LOW que desactiva pero también nos permitimos usar un delay, ya que al ser lo último que ocurre antes de reiniciarse no queda nada que entorpecer. Para que esto sea verdad decidimos usar una booliana tiraHumo que inicia false y se vuelve true en el rango 6. Esta booliana se *"consume"* una vez por ronda, asegurándonos que solo haya una descarga de humo hasta reiniciarse.
+Este es un caso especial ya que tiene un elemento que se consume: algodón mojado. Una varita del material se presiona junto a un disco metálico que se calienta cuando pasa corriente. Esto resulta en la evaporación del líquido y la salida de vapor. Para controlar esta activación usamos HIGH que activa y LOW que desactiva pero también nos permitimos usar un delay, ya que al ser lo último que ocurre antes de reiniciarse no queda nada que entorpecer. Para que esto sea verdad decidimos usar una booliana tiraHumo que inicia false y se vuelve true en el rango 6. Esta booleana se *"consume"* una vez por ronda, asegurándonos que solo haya una descarga de humo hasta reiniciarse.
 ```cpp
 void Humo::usarHumo(){
   if (tiraHumo == false && punto == 6) {
@@ -212,6 +215,9 @@ Como el resto de componentes, asociamos el vibrador a rangos del encoder. De est
 
 ### Carta Gantt
 ![carta gantt](./imagenes/cartaGantt.png)
+
+***planificación semana a semana del proyecto, autoría propia, 2025***
+
 ### Mapa de flujo
 ``` mermaid
 flowchart TB
@@ -236,6 +242,9 @@ flowchart TB
     n1@{ shape: rect}
     style A stroke-width:2px,stroke-dasharray: 0
 ```
+
+***diagrama de flujo hecho en mermaid, autoría propia, 2025***
+
 ### Pseudocódigo
 #### A) Manivela/encoder 🕹️
 1. Definir cuantos pasos del encoder hacen una vuelta.
@@ -325,7 +334,7 @@ void loop() {
 #### Código mata-arduino
 El código del audio funcionaba pero, en palabras de mi compañero Sebastián, mataba al arduino. Estaba en un estado en el que casi no era detectado y daba problemas de funcionamiento fuera del código asi que no sabíamos como arreglarlo. Revisando minuciosamente los anuncios de error al compilar y llendo arreglando errores uno por uno llegamos a una versión que reproducía audio, auqnue con un int que simulaba el encoder.
 #### Audio cruzado
-Este problema siempre estaba presente y hacía que los audio se intercambiaran entre ellos después de desordenarse en la tarjeta SD. Lo solucionamos llamando al archivo que funcionara en vez del que correspondiera dejando casos como el siguiente:
+Este problema siempre estaba presente y hacía que los audios se intercambiaran entre ellos después de desordenarse en la tarjeta SD. Lo solucionamos llamando al archivo que funcionara en vez del que correspondiera dejando casos como el siguiente:
 ```cpp
 void Audio::reproducirAudioPorfase() {
   if (fase == 1) {
@@ -344,7 +353,7 @@ Este problema fue una piedra constante en nuestro zapato que logramos solucionar
 Para completar la interacción y soltar el humo era necesario pasar por todos los rangos anteriores uno por uno. En iteraciones preliminares del código, cuando unimos todo con clases, ocurrió mucho que al llegar a cierto punto la cuenta se detenía. En este caso ocurrió al revés y pensamos que el problema era mecánico pero resulta que un par de delays que usamos para retrasar algunas partes estancaban al resto del código. Al cambiarlos por millis y eliminar los innecesarios, pudimos llegar al último rango. 
 
 #### No se reinicia
-Para que la interacción fuera viable necesitabamos una manera de reiniciar todo de manera automática al terminar con un usuario. Para esto se nos ocurrió que la función que activa el humo también le asignaría un valor de 0 al int rango, trayendo todo lo que significa. Hacer esto simplemente lo estancó en el rango 6 con un par de luces que no se apagaban. Intentamos añadir formas de reinicio al cpp del encoder y descubrimos que el código del humo era muy "superficial" por lo que necesitábamos ir al hueso. Como el encoder podía contar pasos, vueltas y rangos, cada uno dependiente del anterior, decidimos que una vuelta específica (15) reiniciaría los 3 valores que dictan todo. Funcionó perfectamente y ahora funciona constantemente sin nuestra intervención.
+Para que la interacción fuera viable necesitábamos una manera de reiniciar todo de manera automática al terminar con un usuario. Para esto se nos ocurrió que la función que activa el humo también le asignaría un valor de 0 al int rango, trayendo todo lo que significa. Hacer esto simplemente lo estancó en el rango 6 con un par de luces que no se apagaban. Intentamos añadir formas de reinicio al cpp del encoder y descubrimos que el código del humo era muy "superficial" por lo que necesitábamos ir al hueso. Como el encoder podía contar pasos, vueltas y rangos, cada uno dependiente del anterior, decidimos que una vuelta específica (15) reiniciaría los 3 valores que dictan todo. Funcionó perfectamente y ahora opera constantemente sin nuestra intervención.
 ```cpp
 if (vueltas > 15){
 	//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
@@ -358,49 +367,83 @@ if (vueltas > 15){
 ## Construcción Actuadores
 ![humo](./imagenes/esquematicoVisual.png)
 
+***esquemático que muestra la conexión de los componentes, autoría propia, 2025***
+
 ![componentes en paralelo](./imagenes/avances1.gif)
+
+***primeros avances de los actuadores para proyecto 3, autoría propia, 2025***
 
 ### Leds
 ![primeras leds armadas en una proto](./imagenes/procesoArmadoLeds0.jpg)
 
+***primeras pruebas de leds en protobard, autoría propia, 2025***
+
 ![planificación en placa para posterior montaje](./imagenes/procesoArmadoLeds2.jpg)
+
+***planificación de leds en placa perforada, autoría propia, 2025***
 
 ![leds listas](./imagenes/procesoArmadoLeds3.jpg)
 
+***leds puestos en placa perforada, autoría propia, 2025***
+
 ![líneas de leds funcionan](./imagenes/ledsFuncionan.gif)
+
+***leds soldados y funcionando en placa perforada, autoría propia, 2025***
 
 ### Motor
 ![primer motor soldado al módulo](./imagenes/procesoArmadoMotor.jpg)
 
+***vibrador de joystick de xbox 360 soldado a un módulo vibrador, autoría propia, 2025***
+
 ![motor funcionando](./imagenes/motor.gif)
+
+***motor funcionando en circuito, autoría propia, 2025***
 
 ### Mp3
 ![DFPlayer soldado en placa](./imagenes/procesoArmadoMp3-1.jpg)
 
+***módulo DFPlayer mp3 soldado en placa perforada, autoría propia, 2025***
+
 ### Humidificador
 ![primera conexión del humidificador](./imagenes/procesoArmadoHumo1.JPG)
+
+***primera conexión del humidificador, autoría propia, 2025***
 
 
 ### En paralelo
 ![humo instalado funcionando](./imagenes/humo.gif)
 
+***módulo humidificador funcionando, autoría propia, 2025***
+
 ![1er conjunto de cosas funcionando](./imagenes/motorLeds.gif)
+
+***sensor y actuadores funcionando en paralelo, autoría propia, 2025***
 
 ![todos los componentes juntos y soldados](./imagenes/circuitoSoldado.jpg)
 
+***todos los componentes soldados, autoría propia, 2025***
+
 ![componentes juntos en una proto con etiqueta](./imagenes/circuitoEnProto.jpg)
+
+***componentes instalados en protoboard, autoría propia, 2025***
 
 ### Montado
 
 https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
 
+***componentes montados en carcasa funcionando, autoría propia, 2025***
+
 
 ### Forma y carcasa
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
-La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornala con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
+***render preliminar, autoría propia, 2025***
+
+La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornarla con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
 
 ![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
+
+***referente de máquina tragamonedas, Infogate, 2021***
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
