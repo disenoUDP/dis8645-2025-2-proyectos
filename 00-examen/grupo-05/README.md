@@ -412,7 +412,7 @@ if (vueltas > 15){
 ### Motor
 ![primer motor soldado al módulo](./imagenes/procesoArmadoMotor.jpg)
 
-***vibrador de joystick de xbox 360 soldado a un módulo vibrador, autoría propia, 2025***
+***Vibrador de joystick de xbox 360 soldado a un módulo vibrador, autoría propia, 2025***
 
 ![motor funcionando](./imagenes/motor.gif)
 
@@ -446,16 +446,6 @@ if (vueltas > 15){
 
 ***Componentes instalados en protoboard, autoría propia, 2025***
 
-### Montado
-
-![montadocomponentes](./imagenes/montadoComponentes.jpg)
-
-***Vista posterior de cómo se verían los componentes montados en carcasa, autoría propia, 2025***
-
-https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
-
-***Componentes montados en carcasa funcionando, autoría propia, 2025***
-
 ### Forma y carcasa
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
@@ -470,6 +460,23 @@ La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
 ![luces instaladas en carcasa](./imagenes/lucesInstaladas.gif)
+
+### Apartado gráfico de la máquina
+
+
+### Montado
+
+![montadocomponentes](./imagenes/montadoComponentes.jpg)
+
+***Vista posterior de cómo se verían los componentes montados en carcasa, autoría propia, 2025***
+
+https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
+
+***Componentes montados en carcasa funcionando, autoría propia, 2025***
+
+![carcasafinal](./imagenes/finalCarcasa.jpg)
+
+***Carcasa final desarrollada, autoría propia, 2025***
 
 ### Bill of materials
 | Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
