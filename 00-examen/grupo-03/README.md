@@ -61,6 +61,18 @@ Esta máquina está pensada para generar incomodidad en el usuario a través de 
 
 ---
 
+### Instrucciones de uso
+
+1. Posiciónate frente de Jorgito, hasta que escuches que te habla.
+
+2. Decide si quieres darle amor a Jorgito. Si quieres darle amor, presiona su corazón.
+
+3. Puedes permanecer así el tiempo que desees. Ten en cuenta que a Jorgito no le gustará si dejas de darle amor.
+
+4. Vive las consecuencias de tus actos…
+
+---
+
 ### Bill of Materials
 | Componente          | Cantidad | Valores    | Links                                                                                                                  | Valor   |
 |---------------------|----------|------------|-------------------------------------------------------------------------------------------------------------------------|---------|
@@ -198,11 +210,11 @@ Evolución de Jorgito a lo largo del proyecto.
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
   ![Soldadura](./imagenes/soldadura.png)
-  Proceso de soldadura con diferentes integrantes del equipo
+  Proceso de soldadura con diferentes integrantes del equipo.
 
  ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.png) 
 
-Visualización de la placa siendo soldada
+Visualización de la placa siendo soldada.
 
 ### Prototipo Final
 
