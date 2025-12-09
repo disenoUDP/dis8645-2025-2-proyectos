@@ -160,7 +160,6 @@ flowchart TD
 - El **primer gatito** reacciona al sensor.  
 - Los demás se activan después, como si la ansiedad se **contagiara**.  
 - Si el estímulo desaparece, todo el sistema vuelve **gradualmente** a la calma (sin apagarse de golpe).
-- 
 ──── ୨୧ ────
 
 ## Bill of Materials (BOM) ๋ ࣭ ⭑
@@ -248,7 +247,6 @@ El objetivo es que el espectador pueda interpretar la emoción de ansiedad a tra
 
 ## Desarrollo del circuito ⊹ ࣪ ˖
 ###  CIRCUITO COMPLETO
-## Circuito Completo 
 
 ### A) Alimentación General
 
