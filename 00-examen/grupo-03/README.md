@@ -418,7 +418,6 @@ Molde en diferentes vistas del patronaje.
 
 Evolución de Jorgito a lo largo del proyecto.
 
-
 ![modelo mecanismo hecho por francisco ](./imagenes/mecanismofinal.png)
 
 - Modelo final del mecanismo: esto contiene todo lo que hace funcionar a Jorgito.
@@ -447,7 +446,7 @@ Evolución de Jorgito a lo largo del proyecto.
 
 ![Intento de la implementación de la bocina](./imagenes/bocina.jpg)
 
- De las primeras veces intentando que la bocina funcione 
+ De las primeras veces intentando que la bocina funcione.
 
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
@@ -457,12 +456,13 @@ Evolución de Jorgito a lo largo del proyecto.
 
  ![Proyecto siendo arreglado en protoboard](./imagenes/Placa.jpg) 
 
-
 Visualización de la placa siendo soldada.
 
 ### Prototipo Final
 
 ![jorgito terminado](./imagenes/prototipofinal.png)
+
+---
 
 ### Bibliografía
 
