@@ -215,29 +215,98 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 
 ![render](imagenes/alginato.jpeg)
 
-#### Código
+#### **Código**
 
 #### Sensores y actuadores
 
 Antes de iniciar con el código de W.E.B.O. se definen los sensores y actuadores por ocupar.
 
 **Input**
-- Botón / Pulsador
-- Sensor de inclinación o tilt 
+Botón / Pulsador
+Sensor de inclinación o tilt 
 
 **Output**
-- Modulo reproductor MP3 DFPlayer mini
-- Motor DC alta velocidad
-- Display nokia 5110
-- Mini parlante altavoz
+Modulo reproductor MP3 DFPlayer mini
+Motor DC alta velocidad
+Display nokia 5110
+Mini parlante altavoz
 
-Luego de definir esto, partimos con las clases para tener un archivo más ordenado por la cantidad de parámetros a ocupar.
+Luego de definir esto hablaremos de nuestro archivo .ino 
 
-Al tener todo delimitado, desarrollamos el código por elemento y su respectiva clase.
+```cpp
+// Aqui pasaran todas las interacciones entre todos los componentes
 
-Pero nos enfocaremos en los problemas y complicaciones que se nos presentaron el el desarrollo técnico de este proyecto. 
+#include "ActuadorDisplay.h"
+#include "ActuadorMotor.h"
+#include "SensorBoton.h"
+#include "SensorTilt.h"
+#include "SensorSD.h"
 
-#### Complicaciones y problemas
+// sensor y actuador correspondientes
+ActuadorDisplay actuadorDisplay;
+ActuadorMotor actuadorMotor;
+SensorBoton sensorBoton;
+SensorTilt sensorTilt;
+SensorSD sensorSD;
+
+void setup() {
+  sensorTilt.configuracionTilt();
+  actuadorDisplay.configuracionDisplay();
+  sensorBoton.configuracionBoton();
+  sensorSD.configuracionSD();
+  actuadorMotor.configuracionMotor();
+}
+
+void loop() {
+  // Constantemente funciona el sensor de inclinacion, de esto dependen casi todas las siguientes interacciones
+  sensorTilt.funcionaTilt();
+
+  // El boton controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto segun los segundos actuales
+  sensorBoton.funcionaBoton();
+
+  // El display muestra a AVA celebrando, siempre y cuando el temporizador termina correctamente con 0 segundos
+  actuadorDisplay.celebracionDisplay();
+
+
+  // Cuando no esta caido, osea:
+
+  //----------------------------------
+  //-------- WEBO ESTA PARADO --------
+  //----------------------------------
+
+  // Si es que el sensor de inclinacion esta hacia arriba, osea no inclinado
+  if (!sensorTilt.caido) {
+    // El display muestra el tiempo restante en segundos, con AVA realizando al cuent regresiva
+    actuadorDisplay.cuentaDisplay();
+    // Que el motor se active y se desactive en intervalos establecidos
+    actuadorMotor.funcionaMotor();
+    // cuando el motor se activa y esta girando, AVA tambien gira
+    actuadorDisplay.girandoDisplay();
+    // Si es que el temporizador se cumple correctamente sonara la alarma debil
+    sensorSD.funcionaSDAlarmaDebil();
+    // Siempre y cuando el temporizador sea menor a 1 segundo y recien se va a empezar la interaccion, o despues de la celebracion de AVA, ya que se cansa y se queda dormida
+  actuadorDisplay.duermeDisplay();
+
+  // El boton controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto segun los segundos actuales
+  sensorBoton.funcionaBoton();
+  }
+
+  // Cuando esta inclinado, osea:
+
+  //----------------------------------
+  //-------- WEBO ESTA CAIDO ---------
+  //----------------------------------
+
+  else {
+    // suena la pataleta y AVA esta enojada porque se cayo
+    sensorSD.funcionaSDAlarmaFuerte();
+    actuadorDisplay.caidaDisplay();
+  }
+
+
+```
+
+#### **Complicaciones,  problemas y hallazgos**
 
 El primer gran inconveniente que encontramos fue el reproductor mp3 mini, que a nivel de curso nos falló en numerosas ocasiones.
 
@@ -247,21 +316,20 @@ Para aclarar:
 
 Delay pone en pausa el funcionamiento total de arduino, mientras que millis contabiliza el tiempo desde que se enciende.
 
-El código se volvió tan pesado que al intentar cargar una actualización, el arduino se bloqueaba y mostraba el error 74, específicamente el **LIBUSB_ERROR_TIMEOUT**, llegando al extremo de pensar que habíamos dañado el arduino, lo solucionamos reiniciando el arduino cada vez que subíamos una nueva versión del código.
+El código se volvió tan denso que al intentar cargar una actualización, el arduino se bloqueaba y mostraba el error 74, específicamente el **LIBUSB_ERROR_TIMEOUT**, llegando al extremo de pensar que habíamos dañado el arduino, lo solucionamos reiniciando el arduino cada vez que subíamos una nueva versión del código.
 
-Problemas con bitmaps, al transferirlo al display, se perdieron algunos pixeles.
+Problemas con bitmaps, al transferirlo al display, se perdieron algunos píxeles.
 
 Complicaciones con el cableado, nuestra principal inquietud era quedarnos sin pines para todos los elementos.
 
 Por último, nuestro problema final fue que el motor se quemó; no entendíamos por qué no funcionaba y creímos que habíamos cometido un error con el cableado hasta que nos percatamos de que estaba dañado.
 
-#### Asombrosas cosas que alcanzamos
-
-Conseguimos solucionar millis con tiempo de más.
+Conseguimos solucionar millis con margen de error.
 
 La interacción adecuada entre todos los Sensores y Actuadores.
 
-Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiendo al estado de temporizando (hubo muchas iteraciones para poder lograrlo)
+Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiendo al estado de temporizando, que era la comunicación entre el botón y el sensor de inclinación o tilt.
+
 ### Extras
 
 ![Afiche](./imagenes/aficheBonito.png)
