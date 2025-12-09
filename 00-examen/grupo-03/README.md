@@ -140,6 +140,8 @@ Outputs:
 
 ### Bocetos
 
+- Al inicio del proyecto como grupo nos reunimos
+
 ![lluvia de ideas al inicio del proyecto](./imagenes/lluviadeideas.jpg)
 
 ![bocetos de jorge](./imagenes/Ilustración.jpg)
@@ -192,7 +194,7 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
 
- ![Intento de la implementación de la bocina](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Bocina.png)
+ ![Intento de la implementación de la bocina](./imagenes/soldadura.jpg)
 
  De las primeras veces intentando que la bocina funcione 
 
@@ -202,7 +204,7 @@ Evolución de Jorgito a lo largo del proyecto.
   Proceso de soldadura con diferentes integrantes del equipo
 
 
- ![Proyecto siendo arreglado em protoboard ](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Placa.JPG)
+ ![Proyecto siendo arreglado em protoboard](./imagenes/placa.jpg) 
 
 Visualización de la placa siendo soldada
 
