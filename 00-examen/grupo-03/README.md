@@ -194,7 +194,7 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
 
- ![Intento de la implementación de la bocina](./imagenes/soldadura.jpg)
+ ![Intento de la implementación de la bocina](./imagenes/bocina.png)
 
  De las primeras veces intentando que la bocina funcione 
 
