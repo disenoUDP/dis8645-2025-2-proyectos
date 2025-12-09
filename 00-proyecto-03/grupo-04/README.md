@@ -147,8 +147,8 @@ flowchart TB
 
 `PROPUESTA VISUAL`
 
-- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
-- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
+- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Pixilart](https://www.pixilart.com/)
+- Paleta de colores: tonos de celestes, verdes, azules, rosados, amarillos, etcétera
 - Tipografía: pixel-retro
 - Máquina física: control retro hecho con impresión 3D
 - Cursor: red atrapa hadas hecho con pixel art
@@ -175,8 +175,12 @@ flowchart TB
 |---|---|
 |![bosque1](./imagenes/bosque.gif)|![inicio](./imagenes/inicio1.gif)|
 |![bosque2](./imagenes/bosque2.jpeg)|![inicio](./imagenes/inicio2.gif)|
-|![bosque2](./imagenes/bosque3.gif)|![inicio](./imagenes/inicio3.gif)|
+|![bosque2](./imagenes/bosque3.gif)|![eligetuhada](./imagenes/eligetuhada2.0.gif)|
 |![red 1](./imagenes/redAtrapaHadas.png)|![red 2](./imagenes/redAtrapaHadas2.png)|
+
+![atrapamesipuedes](./imagenes/atrapamesipuedes2.0.gif)
+![ohno_final](./imagenes/ohno_final.gif)
+![abecedario](./imagenes/abecedario.png)
 
 ---
 

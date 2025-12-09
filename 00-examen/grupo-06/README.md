@@ -4,7 +4,7 @@
 
 - Bernardita Jesús / [Bernardita-Jesus](https://github.com/Bernardita-Jesus)
 
-- Sebastian Saez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
+- Sebastián Sáez / [SebastianSaez1003](https://github.com/SebastianSaez1003)
 
 - Morgan Aravena / [Mosswhosmoss](https://github.com/Mosswhosmoss)
 
@@ -131,13 +131,21 @@ flowchart TB
 
 #### **Interface**
 
-INSERTAR IMAGENES DE BOCETOS Y GIF DE AVE DEL PARAISO BAILANDO
+![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
+
+![Ave del paraíso 2](./imagenes/AVEDELPARAISO-2.gif)
+
+Ava está basada en el ave del paraíso, o más especificamente Ptiloris Victoriae. Es un ave nativa de Australia muy común de encontrar. Tiene un baile de cortejo muy peculiar, del cual nos basamos para hacer el tutú de Ava y sus giros.
+
+![Bocetos Ava](./imagenes/AVA-BOCETOS.png)
 
 Cada cuadro de expresiones de Ava dentro del monitor está ilustrado en la página web [piskelapp](http://piskelapp.com), y convertido a bitmap con [image2cpp](https://javl.github.io/image2cpp/) para poder utilizarlo en la pantalla del arduino.
 
 Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, hablar, saltar, y finalmente girar. Todo esto pasa según como esté posicionado WEBO.
 
-INSERTAR IMAGENES DE EXPRESIONES DE AVA
+![Expresiones Ava](./imagenes/AVAEXPRESIONES.jpg)
+
+![Ava girando](./imagenes/AVAGIRANDO.gif) ![Ava saltando](./imagenes/AVASALTANDO.gif) ![Ava hablando](./imagenes/AVAHABLANDO.gif)
 
 ### **Carcasa**
 
