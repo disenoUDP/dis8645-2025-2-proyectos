@@ -230,14 +230,17 @@ void Vibrador::usarVibrador() {
 }
 void Vibrador::velocidadVibrador(int pausaHIGH, int pausaLOW)
 ```
+
 Como el resto de componentes, asociamos el vibrador a rangos del encoder. De esta manera definimos 3 cantidades de tiempo de *encendido* y *apagado* del motor que se diferencian entre sí y se repiten hasta cambiar de rango.
 
 ### Carta Gantt
+
 ![carta gantt](./imagenes/cartaGantt.png)
 
 ***Planificación semana a semana del proyecto, autoría propia, 2025***
 
 ### Mapa de flujo
+
 ``` mermaid
 flowchart TB
     A(["La persona está<br>frente a la máquina"]) --> B["Ve la manivela"]
@@ -265,7 +268,9 @@ flowchart TB
 ***Diagrama de flujo hecho en mermaid, autoría propia, 2025***
 
 ### Pseudocódigo
+
 #### A) Manivela/encoder 🕹️
+
 1. Definir cuantos pasos del encoder hacen una vuelta.
 2. Vueltas de encoder alimentan un contador.
 3. La cantidad de vueltas se califican en rangos secuenciales y exclusivos.
@@ -274,7 +279,9 @@ flowchart TB
 6. Ejemplo: 15%, 30%, 60%, 80%, 100%. Porcentaje de avance de giros necesarios para llegar a climax.
 8. Definir los rangos: rango 0 - 1 vuelta, rango 1 2 - 6 vueltas, etc.
 9. Se reinicia al llegar al último rango.
+
 #### B) MP3 y parlante 🔊
+
 1. Ligar a función que suma vueltas al contador.
 2. Elegir audio variable según rango en el que se encuentra.
 3. Elegir audio *especial* que anuncia final de interacción.
@@ -283,7 +290,9 @@ flowchart TB
 6. Siempre se reproduce el audio correspondiente al estado de avance actual.
 7. Al llegar al climax se reproduce audio *especial* una vez. 
 8. Se reinicia junto al resto.
+
 #### C) Luces LEDs 💡
+
 1. Instalar 5 led (o tiras) en sus respectivos pines.
 2. Establecer cuando se enciende cada led y cuánto se mantiene encendida.
 3. Ligar a rangos según valores de manivela. 
@@ -292,17 +301,22 @@ flowchart TB
 6. Se quedan desactivadas hasta reiniciar interacción
 
 #### D) Humidificador 💨
+
 1. Asociar a último rango (100%, vueltas completas).
 2. Definir cantidad de tiempo de activación.
 3. Suelta vapor modificado al alcanzar suficiente cantidad de vueltas.
 4. Ocurre una vez y no puede ocurrir de nuevo en esa vuelta.
 5. Se reinicia.
+
 #### E) Motor vibrador 📳
+
 1. Asociar a rangos de la manivela.
 2. En un punto medio de progreso se activa y aumenta su intensidad a medida avanzan los rangos.
 3. Se desactiva antes de completar la interacción.
 4. Se reinicia junto al resto.
+
 ### Puntos esenciales del código
+
 ```cpp
 //incluye todos los archivos de los componentes
 #include "Encoder.h"
@@ -349,11 +363,17 @@ void loop() {
   humo.usarHumo();
 }
 ```
+
 ### Los Problemas
+
 #### Código mata-arduino
+
 El código del audio funcionaba pero, en palabras de mi compañero Sebastián, mataba al arduino. Estaba en un estado en el que casi no era detectado y daba problemas de funcionamiento fuera del código asi que no sabíamos como arreglarlo. Revisando minuciosamente los anuncios de error al compilar y llendo arreglando errores uno por uno llegamos a una versión que reproducía audio, auqnue con un int que simulaba el encoder.
+
 #### Audio cruzado
+
 Este problema siempre estaba presente y hacía que los audios se intercambiaran entre ellos después de desordenarse en la tarjeta SD. Lo solucionamos llamando al archivo que funcionara en vez del que correspondiera dejando casos como el siguiente:
+
 ```cpp
 void Audio::reproducirAudioPorfase() {
   if (fase == 1) {
@@ -365,14 +385,19 @@ void Audio::reproducirAudioPorfase() {
   }
 }
 ```
+
 #### Reproducción cortada
+
 Este problema fue una piedra constante en nuestro zapato que logramos solucionar hace relativamente poco tiempo. En promedio los audios duran 1 segundo pero por alguna razón algunos eran interrumpidos antes de reproducirse completamente y otros no. Para colmo también ocurría que el encoder dejaba de sumar aún cuando se giraba la manivela. Hicimos varias funciones que intentaban asegurar la reproducción pero lo empeoraron y le quitaron fluidez al código. Finalmente nos dimos cuenta de la causa era que algunos cables se soltaban y afectaban tanto audio como leds y otros componentes.
 
 #### La interacción no llega a término
+
 Para completar la interacción y soltar el humo era necesario pasar por todos los rangos anteriores uno por uno. En iteraciones preliminares del código, cuando unimos todo con clases, ocurrió mucho que al llegar a cierto punto la cuenta se detenía. En este caso ocurrió al revés y pensamos que el problema era mecánico pero resulta que un par de delays que usamos para retrasar algunas partes estancaban al resto del código. Al cambiarlos por millis y eliminar los innecesarios, pudimos llegar al último rango. 
 
 #### No se reinicia
+
 Para que la interacción fuera viable necesitábamos una manera de reiniciar todo de manera automática al terminar con un usuario. Para esto se nos ocurrió que la función que activa el humo también le asignaría un valor de 0 al int rango, trayendo todo lo que significa. Hacer esto simplemente lo estancó en el rango 6 con un par de luces que no se apagaban. Intentamos añadir formas de reinicio al cpp del encoder y descubrimos que el código del humo era muy "superficial" por lo que necesitábamos ir al hueso. Como el encoder podía contar pasos, vueltas y rangos, cada uno dependiente del anterior, decidimos que una vuelta específica (15) reiniciaría los 3 valores que dictan todo. Funcionó perfectamente y ahora opera constantemente sin nuestra intervención.
+
 ```cpp
 if (vueltas > 15){
 	//if (tiempoActualEncoder - tiempoNuevoEncoder >= cantidadDeTiempo){
@@ -383,7 +408,9 @@ if (vueltas > 15){
   //}
 }
 ```
+
 ## Construcción Actuadores
+
 ![humo](./imagenes/esquematicoVisual.png)
 
 ***Esquemático que muestra la conexión de los componentes, autoría propia, 2025***
@@ -393,6 +420,7 @@ if (vueltas > 15){
 ***Primeros avances de los actuadores para proyecto 3, autoría propia, 2025***
 
 ### Leds
+
 ![primeras leds armadas en una proto](./imagenes/procesoArmadoLeds0.jpg)
 
 ***Primeras pruebas de leds en protobard, autoría propia, 2025***
@@ -410,6 +438,7 @@ if (vueltas > 15){
 ***leds soldados y funcionando en placa perforada, autoría propia, 2025***
 
 ### Motor
+
 ![primer motor soldado al módulo](./imagenes/procesoArmadoMotor.jpg)
 
 ***Vibrador de joystick de xbox 360 soldado a un módulo vibrador, autoría propia, 2025***
@@ -419,17 +448,19 @@ if (vueltas > 15){
 ***Motor funcionando en circuito, autoría propia, 2025***
 
 ### Mp3
+
 ![DFPlayer soldado en placa](./imagenes/procesoArmadoMp3-1.jpg)
 
 ***Módulo DFPlayer mp3 soldado en placa perforada, autoría propia, 2025***
 
 ### Humidificador
+
 ![primera conexión del humidificador](./imagenes/procesoArmadoHumo1.JPG)
 
 ***Primera conexión del humidificador, autoría propia, 2025***
 
-
 ### En paralelo
+
 ![humo instalado funcionando](./imagenes/humo.gif)
 
 ***Módulo humidificador funcionando, autoría propia, 2025***
@@ -447,6 +478,7 @@ if (vueltas > 15){
 ***Componentes instalados en protoboard, autoría propia, 2025***
 
 ### Forma y carcasa
+
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
 ***Render preliminar, autoría propia, 2025***
@@ -456,6 +488,24 @@ La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a
 ![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
 ***Referente de máquina tragamonedas, Infogate, 2021***
+
+#### Boceto
+
+En primer lugar, hicimos varios bocetos, recolectamos las medidas generales de todos los componentes que usaríamos para nuestro proyecto.
+
+También vimos cómo se abriría la carcasa para poner los componentes sin tener dificultades.
+
+![Primer boceto, medidas y carcasa](./imagenes/boceto0.jpg)
+
+Vimos cómo se montaría la parte principal de nuestro proyecto, **el humo**.
+
+Lo más importante era hacer que una varilla de algodó, que contiene agua, se mantenga en presión con el humificador, para eso pusimos un resorte para mantenerlo en su lugar.
+
+![Boceto del humificador](./imagenes/boceto1.jpg)
+
+Para las luces hicimos una base para que cada led se mantenga en su lugar
+
+![Boceto para los leds](./imagenes/boceto2.jpg)
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
@@ -478,6 +528,7 @@ https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
 ***Carcasa final desarrollada, autoría propia, 2025***
 
 ### Bill of materials
+
 | Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
 |-------------|------|-----|------------|--------|------|
 | Arduino UNO R4 Mínima | Tarjetas de Desarrollo | 1 | 5V | $24.990 | https://mcielectronics.cl/shop/product/arduino-uno-r4-minima |
@@ -531,7 +582,3 @@ https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
 - Sesión 09b felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-02-procesos/tree/main/25-felix-rg416/sesion-09b/grupo-06-montoyamoraga>
 
 - Smart Humidifier (make Your Room Comfortable). instrructables.com <https://www.instructables.com/Smart-Humidifier-make-Your-Room-Comfortable/>
-
-
-
-
