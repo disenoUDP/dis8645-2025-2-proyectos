@@ -124,8 +124,8 @@ flowchart TB
 | Pantalla LCD Azul| 1  |  | VSS a GND – VDD a 5V – VO al centro del potenciómetro – RS a pin 12 – RW a GND – E a pin 11 – D4 a pin 5 – D5 a pin 4 – D6 a pin 3 – D7 a pin 2 – A a 5V con 200Ω – K a GND – Potenciómetro: 5V / VO / GND |$2.400|<https://afel.cl/products/pantalla-lcd-azul-16x02?_pos=2&_sid=f665c421a&_ss=r>|
 | Resistencia | 4 | 1K |PIN 8 - PIN 9- PIN 4- PIN 3 |kit $4.990| <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=a1ae0dc91&_ss=r>|
 |Matriz LED RGB 8x8|1| |VCC a 5V - GND a GND - DIN a PIN 6 |$9.990|<https://afel.cl/products/matriz-led-rgb-neopixel-8x8-ws2812-cjmcu64?_pos=4&_sid=5c8f94117&_ss=r>|
-|Módulo reproductor MP3|1| | VCC a 5V - Negativo altavoz a STK_2 - Positivo altavoz a STK_1 - TX al RX Arduino - RX al TX Arduino - GND a GND|
-|Tarjeta SD|1| |DFPlayer Mini|$2.990|<http://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_psq=modulo+rep&_ss=e&_v=1.0>|
+|Módulo reproductor MP3|1| | VCC a 5V - Negativo altavoz a STK_2 - Positivo altavoz a STK_1 - TX al RX Arduino - RX al TX Arduino - GND a GND|$2.990|<http://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_psq=modulo+rep&_ss=e&_v=1.0>|
+|Tarjeta SD|1| |DFPlayer Mini|$9.990|<https://www.pcfactory.cl/producto/54503-kingston-memoria-64gb-microsdxc-canvas-select-plus-gen3-100mb-s-a1-card--adapter?origin=PCF>|
 |Speaker|1|3w|VCC a SPK_1 - GND a SPK_2 |$3.000|<https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=f851455c2&_ss=r>|
   
 ### Especificaciones máquina 
@@ -280,7 +280,7 @@ Algunas de estas fueron:
 |--|--|
 |<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300"> |
 |<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300"> |
-| <img src="./imagenes/IIMGProceso05.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
+|<img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300">| <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300"> | <img src="./imagenes/IMG1.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG2.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG3.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG4.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG5.jpg" alt="conexion" width="300"> |
