@@ -56,7 +56,7 @@ Este componente es el más importante en la máquina ya que dicta que ocurre con
 
 ![gifs del encoder](./imagenes/avances2.gif)
 
-***funcionamiento del encoder y sus rangos, autoría propia, 2025***
+***Funcionamiento del encoder y sus rangos, autoría propia, 2025***
 #### Step a vueltas
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
@@ -107,6 +107,11 @@ También extendimos el encoder con una manivela para que fuera más fácil de gi
 
 #### MP3 y parlante 🔊
 El DFPlayer funciona cargando archivos mp3 en una tarjeta SD, controlándolos con funciones de una biblioteca especial del reproductor y reproduciendolos con un parlante unido a pines TX/RX. Para este caso usamos **if/else if** para reproducir un audio distinto dependiendo del rango en el que se encontrara. Esta función es llamada por otra que detecta cuando se añade una vuelta para que solo suene ahí. Para armar el código usamos una función que simulaba el valor del encoder y nos basámos en códigos que usamos anteriormente.
+
+![modulomp3](./imagenes/moduloMp3.jpg)
+
+***Módulo mp3 utilizado, Frugalfreeway, 2025***
+
 ```cpp
 //función que detecta vueltas nuevas y activa la reproducción del audio adecuado
 if (encoder.vueltaActual != encoder.vueltaAnterior) {
@@ -152,6 +157,10 @@ Los asociamos a 5 pines y unimos a tierra y 5v en una protoboard. Usamos 5 color
 
 Cada led se prende en su rango correspondiente y al llegar al último se apagan todas. 
 
+![leds5mm](./imagenes/leds5mm.png)
+
+***leds 5 mm utilizadas, Mechatronicstore, 2025***
+
 ```cpp
 void Leds::usarLeds() {
 	if (nivelLuz == 1) {
@@ -181,6 +190,11 @@ void Leds::usarLeds() {
 
 #### Humidificador 💨
 Este es un caso especial ya que tiene un elemento que se consume: algodón mojado. Una varita del material se presiona junto a un disco metálico que se calienta cuando pasa corriente. Esto resulta en la evaporación del líquido y la salida de vapor. Para controlar esta activación usamos HIGH que activa y LOW que desactiva pero también nos permitimos usar un delay, ya que al ser lo último que ocurre antes de reiniciarse no queda nada que entorpecer. Para que esto sea verdad decidimos usar una booliana tiraHumo que inicia false y se vuelve true en el rango 6. Esta booleana se *"consume"* una vez por ronda, asegurándonos que solo haya una descarga de humo hasta reiniciarse.
+
+![modulohumidificador](./imagenes/ModuloHumidificador.jpg)
+
+***Módulo de humidificador utilizado, Amazon.com, 2025***
+
 ```cpp
 void Humo::usarHumo(){
   if (tiraHumo == false && punto == 6) {
@@ -196,6 +210,11 @@ if (punto == 1){
 ```
 #### Motor vibrador 📳
 Para el motor necesitábamos diferenciar un mínimo de 3 velocidades para demostrar progreso a medida que avanzaba la interacción. Con esta consigna en mente decidimos usar millis que pausarían puntos específicos de activación del motor sin usar delay que entorpecen al resto.
+
+![modulomotor](./imagenes/moduloVibrador.jpg)
+
+***Módulo de vibrador utilizado, Amazon.es, 2025***
+
 ```cpp
 void Vibrador::usarVibrador() {
   if (intervalo == 2) {  // acá se define qué velocidad responde (1, 2 o 3) según el rango en el que esté el intervalo
@@ -216,7 +235,7 @@ Como el resto de componentes, asociamos el vibrador a rangos del encoder. De est
 ### Carta Gantt
 ![carta gantt](./imagenes/cartaGantt.png)
 
-***planificación semana a semana del proyecto, autoría propia, 2025***
+***Planificación semana a semana del proyecto, autoría propia, 2025***
 
 ### Mapa de flujo
 ``` mermaid
@@ -243,7 +262,7 @@ flowchart TB
     style A stroke-width:2px,stroke-dasharray: 0
 ```
 
-***diagrama de flujo hecho en mermaid, autoría propia, 2025***
+***Diagrama de flujo hecho en mermaid, autoría propia, 2025***
 
 ### Pseudocódigo
 #### A) Manivela/encoder 🕹️
@@ -367,20 +386,20 @@ if (vueltas > 15){
 ## Construcción Actuadores
 ![humo](./imagenes/esquematicoVisual.png)
 
-***esquemático que muestra la conexión de los componentes, autoría propia, 2025***
+***Esquemático que muestra la conexión de los componentes, autoría propia, 2025***
 
 ![componentes en paralelo](./imagenes/avances1.gif)
 
-***primeros avances de los actuadores para proyecto 3, autoría propia, 2025***
+***Primeros avances de los actuadores para proyecto 3, autoría propia, 2025***
 
 ### Leds
 ![primeras leds armadas en una proto](./imagenes/procesoArmadoLeds0.jpg)
 
-***primeras pruebas de leds en protobard, autoría propia, 2025***
+***Primeras pruebas de leds en protobard, autoría propia, 2025***
 
 ![planificación en placa para posterior montaje](./imagenes/procesoArmadoLeds2.jpg)
 
-***planificación de leds en placa perforada, autoría propia, 2025***
+***Planificación de leds en placa perforada, autoría propia, 2025***
 
 ![leds listas](./imagenes/procesoArmadoLeds3.jpg)
 
@@ -397,53 +416,56 @@ if (vueltas > 15){
 
 ![motor funcionando](./imagenes/motor.gif)
 
-***motor funcionando en circuito, autoría propia, 2025***
+***Motor funcionando en circuito, autoría propia, 2025***
 
 ### Mp3
 ![DFPlayer soldado en placa](./imagenes/procesoArmadoMp3-1.jpg)
 
-***módulo DFPlayer mp3 soldado en placa perforada, autoría propia, 2025***
+***Módulo DFPlayer mp3 soldado en placa perforada, autoría propia, 2025***
 
 ### Humidificador
 ![primera conexión del humidificador](./imagenes/procesoArmadoHumo1.JPG)
 
-***primera conexión del humidificador, autoría propia, 2025***
+***Primera conexión del humidificador, autoría propia, 2025***
 
 
 ### En paralelo
 ![humo instalado funcionando](./imagenes/humo.gif)
 
-***módulo humidificador funcionando, autoría propia, 2025***
+***Módulo humidificador funcionando, autoría propia, 2025***
 
 ![1er conjunto de cosas funcionando](./imagenes/motorLeds.gif)
 
-***sensor y actuadores funcionando en paralelo, autoría propia, 2025***
+***Sensor y actuadores funcionando en paralelo, autoría propia, 2025***
 
 ![todos los componentes juntos y soldados](./imagenes/circuitoSoldado.jpg)
 
-***todos los componentes soldados, autoría propia, 2025***
+***Todos los componentes soldados, autoría propia, 2025***
 
 ![componentes juntos en una proto con etiqueta](./imagenes/circuitoEnProto.jpg)
 
-***componentes instalados en protoboard, autoría propia, 2025***
+***Componentes instalados en protoboard, autoría propia, 2025***
 
 ### Montado
 
+![montadocomponentes](./imagenes/montadoComponentes.jpg)
+
+***Vista posterior de cómo se verían los componentes montados en carcasa, autoría propia, 2025***
+
 https://github.com/user-attachments/assets/386438e4-af20-4db7-a441-7d1ce585cd18
 
-***componentes montados en carcasa funcionando, autoría propia, 2025***
-
+***Componentes montados en carcasa funcionando, autoría propia, 2025***
 
 ### Forma y carcasa
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
-***render preliminar, autoría propia, 2025***
+***Render preliminar, autoría propia, 2025***
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornarla con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
 
 ![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
-***referente de máquina tragamonedas, Infogate, 2021***
+***Referente de máquina tragamonedas, Infogate, 2021***
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
@@ -463,6 +485,47 @@ Las luces led de cada color hacen llamativa la máquina y muestran en tiempo rea
 | Micro Servomotor SG90 | Actuador | 1 |  3 a 7.2 V | $1.990 | https://afel.cl/products/micro-servomotor-sg90 |
 | Mini Parlante Altavoz de 3w | Salida audio | 1 | 3 VDC | $3.000 | https://afel.cl/products/mini-parlante-altavoz-de-3w |
 | Pack Led 10mm (5) | Actuador | Varios | Blanca2k Naranjo330 Verde330 Azul1k Rojo1k | $3.033 a $3.156 | https://www.electroart.cl/3376/5x-pack-led-10mm |
+
+
+### Bibliografía
+
+- 00-proyecto-02/grupo-02 - MiguelVera23. GitHub <https://github.com/MiguelVera23/dis8645-2025-02-procesos/tree/main/00-proyecto-02/grupo-02>
+
+- 3 easy ways to drive vibration motor with Arduino. Ineedmotors.com <https://blog.ineedmotors.com/drive-vibration-motor-arduino-3-easy-safe-methods-guide/>
+
+- Anyone know the max voltage for xbox one controllers' vibration motors?. reddit.com <https://www.reddit.com/r/diyelectronics/comments/lbaagm/anyone_know_the_max_voltage_for_xbox_one/>
+
+- Aprende a encender y apagar un LED en Arduino. MECABOT <https://mecabot-ula.org/tutoriales/arduino/practica1-encender-y-apagar-con-arduino/>
+
+- Arduino Vibration Motor Code, Circuit, control (tutorial). DeepBlue <https://deepbluembedded.com/arduino-vibration-motor-code-circuit/>
+
+- Código contador de vueltas - felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-2-proyectos/blob/main/25-felix-rg416/sesion-14a/contadorVueltas/contadorVueltas.ino>
+
+- Código de Encoder en base a MCIelectronics.ino - felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-2-proyectos/blob/main/25-felix-rg416/sesion-14a/encoderMCIelectronics/encoderMCIelectronics.ino>
+
+- Cómo configurar un módulo de motor de vibración con Arduino. thecaferobot.com <https://thecaferobot.com/learn/interfacing-a-vibration-motor-module-with-arduino/>
+
+- Datasheet ky 040 rotary encoder sensor module. datasheethub.com <https://www.datasheethub.com/ky-040-rotary-encoder-sensor-module/>
+
+- Fading a LED. docs.rduino.cc <https://docs.arduino.cc/built-in-examples/basics/Fade/>
+
+- How to use a vibration motor with Arduino. HiBit. <https://www.hibit.dev/posts/180/how-to-use-a-vibration-motor-with-arduino>
+
+- Object sound effects. Epidemicsound.com <https://www.epidemicsound.com/sound-effects/categories/objects/>
+
+- The uncomfortable <https://www.theuncomfortable.com/>
+
+- Tutorial de Arduino en Español - Módulo Motor de vibración de teléfono móvil. Youtube <https://www.youtube.com/watch?v=t6191Z2oxMQ>
+
+- Two Ways to Reset Arduino in Software. Instructables.com
+ <https://www.instructables.com/two-ways-to-reset-arduino-in-software/>
+
+- Sesión 05a felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-02-procesos/tree/main/25-felix-rg416/sesion-05a>
+
+- Sesión 09b felix-rg416. GitHub <https://github.com/felix-rg416/dis8645-2025-02-procesos/tree/main/25-felix-rg416/sesion-09b/grupo-06-montoyamoraga>
+
+- Smart Humidifier (make Your Room Comfortable). instrructables.com <https://www.instructables.com/Smart-Humidifier-make-Your-Room-Comfortable/>
+
 
 
 
