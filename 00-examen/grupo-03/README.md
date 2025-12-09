@@ -406,6 +406,11 @@ Molde en diferentes vistas del patronaje.
 
 Evolución de Jorgito a lo largo del proyecto.
 
+
+![modelo mecanismo hecho por francisco ](./imagenes/mecanismofinal.png)
+
+- Modelo final del mecanismo: esto contiene todo lo que hace funcionar a Jorgito.
+
 --- 
 
 ### Desafíos 
@@ -438,8 +443,6 @@ Evolución de Jorgito a lo largo del proyecto.
   Proceso de soldadura con diferentes integrantes del equipo.
 
  ![Proyecto siendo arreglado em protoboard](./imagenes/Placa.jpg) 
-
-- Modelo final del mecanismo: esto contiene todo lo que hace funcionar a Jorgito.
 
 
 Visualización de la placa siendo soldada.
