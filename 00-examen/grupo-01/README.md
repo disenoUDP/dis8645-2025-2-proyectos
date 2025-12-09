@@ -774,13 +774,29 @@ void loop() {
 
 ### Referentes de carcasa
 
-Primera fase: Segunda fase: 
+Primera fase: 
 
-- La idea es utilizar corte láser y acrílico como materialidad principal. 
- 
+|||
+|--|--|
+|<img src="./imagenes/RefAcrilico.JPG" alt="conexion" width="300"> | <img src="./imagenes/RefArcade01.JPG" alt="conexion" width="300">|
+|<img src="./imagenes/RefArcade02.JPG" alt="conexion" width="300"> |<img src="./imagenes/RefArcade03.JPG" alt="conexion" width="300"> |
+
+Segunda fase: 
+
+- La idea es utilizar corte láser y acrílico como materialidad principal.
+  
+ |||
+|--|--|
+|<img src="./imagenes/Neon-Fluorescent Acrylic Organizer_Pencil Case.jpeg" alt="conexion" width="300"> | <img src="./imagenes/Play Plax, 1970.jpeg" alt="conexion" width="300"> | 
+
 
 Links: 
 
+[referente](https://cl.pinterest.com/pin/198088083603835176/feedback/?invite_code=30fd10c56d244c36b8a9a41d281d5832&sender_id=661114557707883264)
+[referente](https://cl.pinterest.com/pin/23643966788418210/feedback/?invite_code=af42162fde36425c8c1192a8112cada6&sender_id=661114557707883264)
+[referente](https://cl.pinterest.com/pin/351912465989238/feedback/?invite_code=c9f2c30c64db4177b9bbfd99e3631143&sender_id=661114557707883264)
+[referente](https://cl.pinterest.com/pin/6896205672491507/)
+[referente](https://cl.pinterest.com/pin/7599893116105926/)
 
 ##  Organización proyecto
 
