@@ -461,6 +461,9 @@ if (vueltas > 15){
 
 ***leds puestos en placa perforada, autoría propia, 2025***
 
+![Leds en PCB](./imagenes/ledsPCB.jpg)
+***Leds soldados en placa perforada, autoría propia, 2025***
+
 ![líneas de leds funcionan](./imagenes/ledsFuncionan.gif)
 
 ***leds soldados y funcionando en placa perforada, autoría propia, 2025***
