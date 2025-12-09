@@ -18,12 +18,16 @@ El ***anticlímax*** es una figura retórica que produce una decepción abrupta 
 
 ![cara decepcionada](./imagenes/decepcion.jpg)
 
+***Persona decepcionada, Reddit, 2023***
+
 ***Vender humo*** se refiere a una persona que ofrece algo de escaso o nulo valor haciéndolo pasar por algo de mucho valor (generalmente de mala fe). Para nuestra máquina usaremos esta acepción y la idea de una literal transacción en la que recibes humo. Todos los aspectos de la máquina asombrosa buscan vender humo al usuario y apoyan la meta de generar expectativa para luego defraudarla.
 
 ### Nuestra máquina y la interacción
 La máquina asombrosa tiene una apariencia similar a una máquina tragamonedas que, aunque no tiene ninguna invitación o promesa evidente, te llama a girar su manivela y ver qué pasa. Para que la máquina funcione apelamos a la curiosidad de las personas con la intención de que sigan girando la manivela e intenten llegar al término de la interacción. Nuestra manera de alimentar su curiosidad es ir añadiendo estímulos a medida que progresan y dar pistas de que algo viene y se está preparando.
 
 ![meme_minero](./imagenes/diamantes.png)
+
+***Meme minero, Reddit, 2024***
 
 La interacción funciona de la siguiente manera:
 1. El usuario ve la máquina y se acerca.
@@ -481,11 +485,9 @@ if (vueltas > 15){
 
 ![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
-***Render preliminar, autoría propia, 2025***
+***Referente de máquina tragamonedas, Infogate, 2021***
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornarla con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
-
-***Referente de máquina tragamonedas, Infogate, 2021***
 
 #### Boceto
 
@@ -495,15 +497,21 @@ También vimos cómo se abriría la carcasa para poner los componentes sin tener
 
 ![Primer boceto, medidas y carcasa](./imagenes/boceto0.jpg)
 
+***Primer boceto, autoría propia, 2025***
+
 Vimos cómo se montaría la parte principal de nuestro proyecto, **el humo**.
 
 Lo más importante era hacer que una varilla de algodó, que contiene agua, se mantenga en presión con el humificador, para eso pusimos un resorte para mantenerlo en su lugar.
 
 ![Boceto del humificador](./imagenes/boceto1.jpg)
 
-Para las luces hicimos una base para que cada led se mantenga en su lugar
+***Boceto humidificador, autoría propia, 2025***
 
-![Boceto para los leds](./imagenes/boceto2.jpg)
+Para las luces hicimos una base para que cada led se mantenga en su lugar.
+
+![Boceto para los leds](./imagenes/boceto2.jpeg)
+
+***Boceto para los leds, autoría propia, 2025***
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
@@ -514,6 +522,28 @@ Las luces led de cada color hacen llamativa la máquina y muestran en tiempo rea
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
 
 ### Apartado gráfico de la máquina
+
+Para el diseño gráfico de la máquina nos inspiramos en las máquinas tragamonedas de los casinos, rescatamos elementos como los colores vibrantes, un diseño extravagante y una tipografía llamativa. Esto fue pensado para hacer la máquina lo más atractiva posible para las personas y que de esta forma les llamara mucho la atención.
+
+![procesografica](./imagenes/procesoGrafica1.jpg)
+
+***Primer boceto de la gráfica, autoría propia, 2025***
+
+![procesoGrafica2](./imagenes/procesoGrafica2.jpg)
+
+***Segundo boceto de la gráfica, autoría propia, 2025***
+
+![procesoGrafica3](./imagenes/procesoGrafica3.jpg)
+
+***Tercer boceto de la gráfica, autoría propia, 2025***
+
+![procesoGrafica4](./imagenes/procesoGrafica4.jpg)
+
+***Cuarto boceto de la gráfica con paleta de colores integrada,autoría propia, 2025***
+
+![procesoGrafica5](./imagenes/procesoGrafica5.jpg)
+
+***Gráfica final desarrollada para la máquina, autoría propia, 2025***
 
 ### Montado
 
