@@ -23,7 +23,7 @@ Su comportamiento contrapone sensaciones: suavidad y dureza, ternura y angustia,
 ### ¿Qué es un abrazo? 
 
 Un abrazo parece un gesto simple, pero contiene una carga emocional profunda. No se trata solo de unir dos cuerpos: implica contención, cuidado, comunicación silenciosa y una forma de empatía física.
-Tomamos el abrazo como base del proyecto para explorar cómo esta acción cotidiana puede transformarse cuando deja el cuerpo humano y pasa a una entidad no viva.
+Tomamos el abrazo cómo base del proyecto para explorar cómo esta acción cotidiana puede transformarse cuando deja el cuerpo humano y pasa a una entidad no viva.
 
 Desde esta idea surge Jorgito, un muñeco con forma de primate diseñado para abrazar… pero también para exigir ese abrazo. A través de él, indagamos qué ocurre cuando un gesto afectivo se vuelve dependiente, invasivo o contradictorio.
 
@@ -370,7 +370,7 @@ if (sustancia < 30 && sustancia > 0) {
 
 ### Bocetos
 
-Este es un recopilatorio de las diferentes visiones y versiones de como queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
+Este es un recopilatorio de las diferentes visiones y versiones de comó queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
 
 ![referentes utilizados para la creación de jorgito](./imagenes/referentes.jpg)
 
@@ -384,11 +384,11 @@ Este es un recopilatorio de las diferentes visiones y versiones de como queríam
 
 Para el prototipo realizamos el prototipado de la columna y los brazos, probando cómo podrían moverse y sostenerse. También hicimos pruebas de impresión 3D para revisar las piezas y sus uniones. Además, armamos un primer prototipo del sistema de la espalda y los brazos para evaluar su funcionamiento general. Finalmente, realizamos el molde para la tela del forro, aplicando cinta sobre la forma para obtener las piezas base del patrón.
 
-![foto de la vértebra](./imagenes/vertebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
+![foto de la vértebra](./imagenes/vértebra.png) ![brazos y columna](./imagenes/brazosycolumnav1.png)
 
 Recopilación de funcionamiento de vértebras, brazos y columna.
 
-![prueba brazo](./imagenes/pruebabrazo.gif) ![prueba vertebras](./imagenes/pruebavertebras.gif)
+![prueba brazo](./imagenes/pruebabrazo.gif) ![prueba vértebras](./imagenes/pruebavertebras.gif)
 
 Pruebas del funcionamiento de los brazos y vértebras.
 
