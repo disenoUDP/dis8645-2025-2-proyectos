@@ -115,20 +115,18 @@ flowchart TB
 
 #### BOM
 
-`AÑADIR LOS PRECIOS Y LOS LINKS DE COMPRA !!
-
-| Componentes | Cantidad | Unidad          | OBS | precios
-|---------|----------------------------------|------------------|------------------|---|
-| Mini Protoboard | 3 | 400 puntos | Conexión VCC GND directa al arduino | . |
-| Arduino UNO | 1 | R4 Minima | Conexión directa a corriente |.|
-| Botones|  5 | HC-SR04 | PIN 8 - PIN 9 - PIN 4 - PIN 3 - PIN 5  - VCC a 5V - GND a GND |.|
-| Joystick| 1 | -| VCC a 5V - GND GND - A0 a VRx - A1 a VRy - PIN 2 a SW |.|
-| Pantalla LCD Azul| 1  |  | VSS a GND – VDD a 5V – VO al centro del potenciómetro – RS a pin 12 – RW a GND – E a pin 11 – D4 a pin 5 – D5 a pin 4 – D6 a pin 3 – D7 a pin 2 – A a 5V con 200Ω – K a GND – Potenciómetro: 5V / VO / GND |.|
-| Resistencia | 4 | 1K |PIN 8 - PIN 9- PIN 4- PIN 3 |.|
-|Matriz LED RGB 8x8|1| |VCC a 5V - GND a GND - DIN a PIN 6 |.|
+| Componentes | Cantidad | Unidad          | OBS | precios| links |
+|---------|----------------------------------|------------------|------------------|---|---|
+| Mini Protoboard | 3 | 400 puntos | Conexión VCC GND directa al arduino | $990 |<https://afel.cl/products/mini-protoboard-170-puntos?_pos=2&_sid=736b22f67&_ss=r>|
+| Arduino UNO | 1 | R4 Minima | Conexión directa a corriente |$24.990|<https://arduino.cl/producto/arduino-uno-r4-minima/?srsltid=AfmBOor5ihhImrR9DyuEKGp_E9JAcANMOeBQJvIVGgssyiaP55zMHOTZ>|
+| Botones|  5 | HC-SR04 | PIN 8 - PIN 9 - PIN 4 - PIN 3 - PIN 5  - VCC a 5V - GND a GND |$100|<https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor?_pos=9&_sid=2dbfd08b0&_ss=r>|
+| Joystick| 1 | -| VCC a 5V - GND GND - A0 a VRx - A1 a VRy - PIN 2 a SW |$1.390|<https://www.mechatronicstore.cl/modulo-joystick-analogo-de-playstation/?srsltid=AfmBOoq1Q_yhEE7T8D8IvMCLuZEt7LON5Bzmf7Ury5uouSIVnNRU33xQQKA>|
+| Pantalla LCD Azul| 1  |  | VSS a GND – VDD a 5V – VO al centro del potenciómetro – RS a pin 12 – RW a GND – E a pin 11 – D4 a pin 5 – D5 a pin 4 – D6 a pin 3 – D7 a pin 2 – A a 5V con 200Ω – K a GND – Potenciómetro: 5V / VO / GND |$2.400|<https://afel.cl/products/pantalla-lcd-azul-16x02?_pos=2&_sid=f665c421a&_ss=r>|
+| Resistencia | 4 | 1K |PIN 8 - PIN 9- PIN 4- PIN 3 |kit $4.990| <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=a1ae0dc91&_ss=r>|
+|Matriz LED RGB 8x8|1| |VCC a 5V - GND a GND - DIN a PIN 6 |$9.990|<https://afel.cl/products/matriz-led-rgb-neopixel-8x8-ws2812-cjmcu64?_pos=4&_sid=5c8f94117&_ss=r>|
 |Módulo reproductor MP3|1| | VCC a 5V - Negativo altavoz a STK_2 - Positivo altavoz a STK_1 - TX al RX Arduino - RX al TX Arduino - GND a GND|
-|Tarjeta SD|1| |DFPlayer Mini|.|
-|Speaker|1|3w|VCC a SPK_1 - GND a SPK_2 |.|
+|Tarjeta SD|1| |DFPlayer Mini|$2.990|<http://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_psq=modulo+rep&_ss=e&_v=1.0>|
+|Speaker|1|3w|VCC a SPK_1 - GND a SPK_2 |$3.000|<https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=f851455c2&_ss=r>|
   
 ### Especificaciones máquina 
 
