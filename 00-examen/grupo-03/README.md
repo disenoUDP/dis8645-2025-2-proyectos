@@ -368,6 +368,16 @@ if (sustancia < 30 && sustancia > 0) {
 
 ---
 
+# Esquemáticos
+
+![Esquemático hecho en kicad por aileen](./imagenes/esquema.jpg)
+
+Conexiones de todo el circuito para el funcionamiento de Jorgito. Primero lo realizamos en una protoboard y luego lo traspasamos a una PCB.
+
+![Esquemático visual guía](./imagenes/Esquemático.png)
+
+--- 
+
 ### Bocetos
 
 Este es un recopilatorio de las diferentes visiones y versiones de comó queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
