@@ -190,9 +190,22 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - La disposición de los componentes y su tamaño nos hizo pensar en diferentes opciones en cómo encajar cada pieza para que quede bien con los movimientos.
 
+- De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
+
+ ![Intento de la implementación de la bocina](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Bocina.png)
+
+ De las primeras veces intentando que la bocina funcione 
+
 - Al momento de soldar, hubo uno que otro problema con el cableado.
 
+  ![Soldadura](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/soldadura.JPG)
 
+  Proceso de soldadura con diferentes integrantes del equipo
+
+
+ ![Placa siendo soldada](https://raw.githubusercontent.com/Coff4/dis8645-2025-2-proyectos/refs/heads/main/00-examen/grupo-03/imagenes/Placa.JPG)
+
+Visualización de la placa siendo soldada
 
 ### Prototipo Final
 
