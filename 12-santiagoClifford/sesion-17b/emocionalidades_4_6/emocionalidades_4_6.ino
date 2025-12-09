@@ -41,13 +41,13 @@ int estadoAnterior = -1;
 // parte en estado 0
 
 unsigned long inicioEstado1 = 0;
-unsigned long duracionEstado1 = 10000;
+unsigned long duracionEstado1 = 6000;
 unsigned long inicioEstado2 = 0;
-unsigned long duracionEstado2 = 20000;
+unsigned long duracionEstado2 = 6000;
 unsigned long inicioEstado3 = 0;
-unsigned long duracionEstado3 = 30000;
+unsigned long duracionEstado3 = 6000;
 unsigned long inicioEstado4 = 0;
-unsigned long duracionEstado4 = 40000;
+unsigned long duracionEstado4 = 6000;
 
 unsigned long momentoCambioEstado = 0;
 
