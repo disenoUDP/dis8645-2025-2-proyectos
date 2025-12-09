@@ -479,13 +479,11 @@ if (vueltas > 15){
 
 ### Forma y carcasa
 
-![render preliminar](./imagenes/renderCarcasa.jpeg)
+![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
 ***Render preliminar, autoría propia, 2025***
 
 La forma de nuestra máquina está basada en una máquina tragamonedas, acorde a nuestra venta de humo. Al usar esta apariencia y adornarla con gráfica correspondiente hacemos que el usuario la asocie a algún tipo de apuesta/recompensa. 
-
-![máquina tragamonedas](./imagenes/tragamonedas.jpeg)
 
 ***Referente de máquina tragamonedas, Infogate, 2021***
 
@@ -510,6 +508,10 @@ Para las luces hicimos una base para que cada led se mantenga en su lugar
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
 ![luces instaladas en carcasa](./imagenes/lucesInstaladas.gif)
+
+#### Modelo 3D
+
+![render preliminar](./imagenes/renderCarcasa.jpeg)
 
 ### Apartado gráfico de la máquina
 
