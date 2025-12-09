@@ -87,6 +87,8 @@ Contexto de uso:
   - The Fairy Dance by Bonnie Grace
   - <https://www.epidemicsound.com/es/music/tracks/9051f76e-fafa-40d7-af4f-f11c3e250371/>
 
+<img src="./imagenes/pinConexionAcel.png" alt="acelerometro" width="300">
+
 ---
 
 ## Planificación
@@ -214,11 +216,14 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 |<img src="./imagenes/bosque.gif" alt="bosque" width="200">|<img src="./imagenes/inicio1.gif" alt="inicio" width="200">|<img src="./imagenes/inicio2.gif" alt="inicio" width="200">|
 |<img src="./imagenes/bosque2.jpeg" alt="bosque" width="200">|<img src="./imagenes/inicio3.gif" alt="inicio" width="200">|<img src="./imagenes/bosque3.gif" alt="bosque" width="200">|
 |<img src="./imagenes/redAtrapaHadas.png" alt="red" width="200">|<img src="./imagenes/redAtrapaHadas2.png" alt="red" width="200">|<img src="./imagenesProceso/proceso03.png" alt="red" width="200">|
-|<img src="./imagenesProceso/proceso08.png" alt="red" width="200">|<img src="./imagenesProceso/proceso07.png" alt="red" width="200">|
+|<img src="./imagenesProceso/proceso08.png" alt="red" width="200">|<img src="./imagenesProceso/proceso07.png" alt="red" width="200">|<img src="./imagenesProceso/proceso09.png" alt="red" width="200">
 
 ### Proceso y diseño de carcasa 
 
-<img src="./imagenesProceso/proceso01.png" alt="red" width="300"> <img src="./imagenesProceso/proceso02.png" alt="red" width="300">
+- Comenzamos diseñando un mando tipo retro pixel, que contuviera dos botones para los sensores y además unos botones falsos, para confundir al usuario. Esta idea nos gustaba, pero decidimos cambiarla a diseñar un mando con forma de hada, pero nos preguntamos "¿Para qué atrapar el hada, si ya tenemos el hada en nuestras manos?". Así que también fue descartada
+- Por último, decidimos diseñar la red atrapahadas como mando, para que tuviera más lógica de "Atrapar el hada"
+
+<img src="./imagenesProceso/proceso02.png" alt="red" width="300"> <img src="./imagenesProceso/proceso01.png" alt="red" width="300"> 
 
 <img src="./imagenesProceso/proceso04.png" alt="red" width="300"> <img src="./imagenesProceso/proceso05.png" alt="red" width="300"> 
 
