@@ -89,10 +89,11 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Tornillos 3m                      | 4        | $1.190 | <https://share.google/XGNMh6Vrv71Q1XYIs>                                  |
 | Filamento PLA                     | 317 g    | $12.390| <https://share.google/eetowUUCaC65zfTWi>                                  |
 | Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
-| Alginato                          | 1        | $6.500 | <https://techdent.cl/producto/alginato-chromaprint-coltene-454g/>        |
+| Alginato                          | 1        | $6.500 | <https://techdent.cl/producto/alginato-chromaprint-coltene-454g/>         |
 | Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
+| Monedas de 10                     | 8        | $80    | <https://www.billetesymonedas.cl/Billetes/FamiliaBilletesActuales>        |
 
-**Presupuesto estimado total – $52.446** 
+**Presupuesto estimado total – $52.526** 
 
 ### **Diagrama de flujo**
 
@@ -141,7 +142,7 @@ INSERTAR IMAGENES DE EXPRESIONES DE AVA
 
 #### Referentes y definición formal
 
-Primero levantamos referentes: queríamos apoyarnos en la estética retro-portátil del Tamagotchi, Game & Watch y Game Boy. Luego decidimos que el proyecto necesitaba una utilidad más concreta, por lo que incorporamos la lógica operativa de un temporizador. 
+Primero levantamos referentes, queríamos apoyarnos en la estética retro-portátil del Tamagotchi, Game & Watch y Game Boy. Luego decidimos que el proyecto necesitaba una utilidad más concreta, por lo que incorporamos la lógica operativa de un temporizador. 
 
 Desde ahí retomamos el cruce semántico entre tamago (たまご, “huevo”) y watch (ウォッチ, “reloj”), tomando en cuenta esa interpretación asociada al acto de “cuidar”.
 
@@ -199,7 +200,7 @@ Además incorporamos su frase descriptiva junto a la ilustración de Ava en la p
 
 Como parte final del proyecto quisimos agregar una cobertura externa de alginato para amortiguar un poco el golpe y darle más dinamismo. 
 
-Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que finalmente pegamos con silicona.
+Para esto realizamos un modelado exterior e interior y, a presión, se fue incorporando el alginato, que pensábamos pegar con silicona, pero finalmente decidimos no utilizarlo por razones funcionales, ya que dificultaba la caída por el peso.
 
 ![render](imagenes/alginato.jpeg)
 
