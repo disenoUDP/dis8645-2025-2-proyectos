@@ -2,18 +2,25 @@
 # grupo-05
 
 ## La máquina asombrosa 🎰
+
 ### Integrantes
-- [Braulio Figueroa](https://github.com/brauliofigueroa2001) 
+
+- [Braulio Figueroa](https://github.com/brauliofigueroa2001)
 - [Camila Parada](https://github.com/Camila-Parada)
 - [Félix Rodríguez](https://github.com/felix-rg416)
 - [Miguel Vera](https://github.com/MiguelVera23)
 
 ### La consigna
+
 Para el proyecto 3 y posterior examen se nos encomendó hacer una máquina sentimental que hiciera representación de una figura literaria.
-Esta idea es un constructo que combina los conocimientos vistos a lo largo del semestre (referente al desarrollo de mecanismos fabricados con la tecnología de Arduino, actuadores y sensores) en conjunto con rasgos y reacciones psicofisiológicas como lo son las emociones. Esta última se define como: “Alteración del ánimo intensa y pasajera (agradable o penosa) que va acompañada de cierta conmoción somática (relacionado con el cuerpo)”.
+
+Esta idea es un constructo que combina los conocimientos vistos a lo largo del semestre (referente al desarrollo de mecanismos fabricados con la tecnología de Arduino, actuadores y sensores) en conjunto con rasgos y reacciones psicofisiológicas como lo son las emociones.
+Esta última se define como: “Alteración del ánimo intensa y pasajera (agradable o penosa) que va acompañada de cierta conmoción somática (relacionado con el cuerpo)”.
+
 El eje de todo el proyecto se centra en conseguir un resultado que involucre al usuario y genere una respuesta en torno a la interacción entre ambas partes (objeto/máquina – emoción; acción – reacción; causa – efecto).
 
 ### Anticlimax
+
 El ***anticlímax*** es una figura retórica que produce una decepción abrupta o un descenso de la seriedad al final de una oración, pasaje o trama, pasando de ideas importantes o tensas a algo trivial, insignificante o cómico. Esencialmente queremos decepcionar al usuario, y mientras más expectativa tenga, más se defraudará. Cosas como el nombre o elementos que atraen al usuario buscan aumentar esta expectativa lo más posible antes de dar una sorpresa (que no está a la altura) de manera abrupta.
 
 ![cara decepcionada](./imagenes/decepcion.jpg)
@@ -23,6 +30,7 @@ El ***anticlímax*** es una figura retórica que produce una decepción abrupta 
 ***Vender humo*** se refiere a una persona que ofrece algo de escaso o nulo valor haciéndolo pasar por algo de mucho valor (generalmente de mala fe). Para nuestra máquina usaremos esta acepción y la idea de una literal transacción en la que recibes humo. Todos los aspectos de la máquina asombrosa buscan vender humo al usuario y apoyan la meta de generar expectativa para luego defraudarla.
 
 ### Nuestra máquina y la interacción
+
 La máquina asombrosa tiene una apariencia similar a una máquina tragamonedas que, aunque no tiene ninguna invitación o promesa evidente, te llama a girar su manivela y ver qué pasa. Para que la máquina funcione apelamos a la curiosidad de las personas con la intención de que sigan girando la manivela e intenten llegar al término de la interacción. Nuestra manera de alimentar su curiosidad es ir añadiendo estímulos a medida que progresan y dar pistas de que algo viene y se está preparando.
 
 ![meme_minero](./imagenes/diamantes.png)
@@ -43,9 +51,11 @@ La interacción funciona de la siguiente manera:
 La experiencia que proponemos es bastante simple en esencia y está construida con una estructura similar a un chiste: preparación y remate. Su duración es de poco más de un minuto y, si logra hacer que alguien llegue al "gran final", ya cumplió su cometido. La gracia es que, aunque el usuario esperaba algo y no lo consiguió, ***la máquina nunca prometió nada***. Y aunque sea corta, la interacción usa el anticlímax para enseñar a medir nuestras expectativas.
 
 ## Contexto y oportunidad de diseño
+
 La máquina asombrosa aprovecha elementos gráficos y morfológicos del mundo de las apuestas para ofrecer una experiencia en base a las expectativas. Nuestro proyecto llama a todo público a que se acerque y experimente un tipo de broma con el propósito de poner a prueba y hacer evidentes sus propias expectativas.
 
 ## Planificación
+
 Los componentes definidos para nuestra máquina son los siguientes:
 
 - A) Manivela/encoder 🕹️
@@ -55,13 +65,17 @@ Los componentes definidos para nuestra máquina son los siguientes:
 - E) Motor vibrador 📳
 
 ### Cómo manejar los componentes
+
 #### Encoder 🕹️
+
 Este componente es el más importante en la máquina ya que dicta que ocurre con los demás y comunica a los actuadores con el usuario. El encoder funciona contando pasos al girar una perilla y pasar por mellas. Puede girar hacia ambos lados sin límites pero nosotros solo usaremos una dirección. Para ordenar cuando se activa cada cosa necesitamos que cierta cantidad de pasos (20) signifiquen una vuelta, que cada cantidad de vueltas se ordenen en respectivos rangos y que haya un contador que recuerde estos 3 valores. Con este propósito usamos una función que añade una vuelta cada vez que se pasa por un paso múltiplo de 20 y categorizamos la cantidad de vueltas. 
 
 ![gifs del encoder](./imagenes/avances2.gif)
 
 ***Funcionamiento del encoder y sus rangos, autoría propia, 2025***
+
 #### Step a vueltas
+
 ```cpp
 // si los ultimos estado actuales del CLK son diferentes entonces ocurrió un pulso
 	// reacciona solo a 1 cambio de estado para evitar un doble conteo
@@ -83,8 +97,10 @@ Este componente es el más importante en la máquina ya que dicta que ocurre con
 			//al aumentar se reproduce audio
 			vueltaActual++;
 		}
-````
+```
+
 #### Vueltas a rangos
+
 ```cpp
 	// --- CALCULO DE RANGOS ---
 		if (vueltas >= 0 && vueltas <= 1) {
@@ -107,9 +123,11 @@ Este componente es el más importante en la máquina ya que dicta que ocurre con
 			//tiempoNuevoEncoder = tiempoActualEncoder;
 		}
 ```
+
 También extendimos el encoder con una manivela para que fuera más fácil de girar y para que las vueltas se demoraran más, dándole tiempo al audio.
 
 #### MP3 y parlante 🔊
+
 El DFPlayer funciona cargando archivos mp3 en una tarjeta SD, controlándolos con funciones de una biblioteca especial del reproductor y reproduciendolos con un parlante unido a pines TX/RX. Para este caso usamos **if/else if** para reproducir un audio distinto dependiendo del rango en el que se encontrara. Esta función es llamada por otra que detecta cuando se añade una vuelta para que solo suene ahí. Para armar el código usamos una función que simulaba el valor del encoder y nos basámos en códigos que usamos anteriormente.
 
 ![modulomp3](./imagenes/moduloMp3.jpg)
@@ -151,8 +169,11 @@ void Audio::reproducirAudioPorfase() {
   }
 }
 ```
+
 #### LEDs 💡
+
 Los asociamos a 5 pines y unimos a tierra y 5v en una protoboard. Usamos 5 colores con valores de resistencia distintos para que la intensidad fuera pareja:
+
 - Blanco - 2k
 - Naranjo - 330
 - Verde - 330
@@ -193,6 +214,7 @@ void Leds::usarLeds() {
 ```
 
 #### Humidificador 💨
+
 Este es un caso especial ya que tiene un elemento que se consume: algodón mojado. Una varita del material se presiona junto a un disco metálico que se calienta cuando pasa corriente. Esto resulta en la evaporación del líquido y la salida de vapor. Para controlar esta activación usamos HIGH que activa y LOW que desactiva pero también nos permitimos usar un delay, ya que al ser lo último que ocurre antes de reiniciarse no queda nada que entorpecer. Para que esto sea verdad decidimos usar una booliana tiraHumo que inicia false y se vuelve true en el rango 6. Esta booleana se *"consume"* una vez por ronda, asegurándonos que solo haya una descarga de humo hasta reiniciarse.
 
 ![modulohumidificador](./imagenes/ModuloHumidificador.jpg)
@@ -212,7 +234,9 @@ if (punto == 1){
 }
 }
 ```
+
 #### Motor vibrador 📳
+
 Para el motor necesitábamos diferenciar un mínimo de 3 velocidades para demostrar progreso a medida que avanzaba la interacción. Con esta consigna en mente decidimos usar millis que pausarían puntos específicos de activación del motor sin usar delay que entorpecen al resto.
 
 ![modulomotor](./imagenes/moduloVibrador.jpg)
@@ -515,11 +539,35 @@ Para las luces hicimos una base para que cada led se mantenga en su lugar.
 
 Las luces led de cada color hacen llamativa la máquina y muestran en tiempo real a dónde va tu esfuerzo, llenando una barra a medida que progresas. Para aprovechar la forma, pusimos las luces en donde iría la pantalla de la tragamonedas, directamente frente al usuario.
 
-![luces instaladas en carcasa](./imagenes/lucesInstaladas.gif)
-
 #### Modelo 3D
 
+La idea de la carcasa era que todos los componentes pudieran entrar de forma ordenada sin interrumpir unos con otros.
+
+![carcasa2](./imagenes/carcasa0.jpg)
+
+***Primeros modelos 3D de la carcasa, autoría propia, 2025***
+
+Para algunos componentes tuvimos que hacer pruebas de calce para asegurarnos que encajen donde deben encajar.
+
+![Primeras pruebas de la carcasa](./imagenes/carcasaTest.jpg)
+
+***Pruebas de calce de componentes, autoría propia, 2025***
+
+La carcasa, finalmente, terminó viéndose así en el modelado:
+
 ![render preliminar](./imagenes/renderCarcasa.jpeg)
+
+***Modelado final de la carcasa, autoría propia, 2025***
+
+Finalmente, imprimimos la carcasa en 3D y le pusimos los componentes.
+
+![Carcasa con componentes](./imagenes/carcasaComponentes.jpg)
+
+***Carcasa con componentes instalados, autoría propia, 2025***
+
+![Carcasa de frente final](./imagenes/carcasaFinal.jpg)
+
+***Carcasa final de frente, autoría propia, 2025***
 
 ### Apartado gráfico de la máquina
 
