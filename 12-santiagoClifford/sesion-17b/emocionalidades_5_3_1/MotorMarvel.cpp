@@ -1,9 +1,9 @@
 #include "MotorMarvel.h"
 
 MotorMarvel::MotorMarvel() {
-  able = 3;
-  in1 = 5;
-  in2 = 6;
+  able = 5;
+  in1 = 4;
+  in2 = 3;
   pinMode(able, OUTPUT);
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
@@ -12,12 +12,12 @@ MotorMarvel::MotorMarvel() {
 void MotorMarvel::Setear() {
 
   //asignar velocidad
-  analogWrite(able, 100);
   abrazando = false;
 
   // que parta apagado
   digitalWrite(in1, LOW);
   digitalWrite(in2, LOW);
+  analogWrite(able, 0);
 }
 
 void MotorMarvel::activarAbrazo() {
@@ -28,14 +28,13 @@ void MotorMarvel::activarAbrazo() {
     digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
 
-   analogWrite(able, 100); // Velocidad (0-255)
+   analogWrite(able, 200); // Velocidad (0-255)
+   Serial.println("abranzaaaandoo");
 }
 
-
 void MotorMarvel::actualizarAbrazo() {
-  if (abrazando == false) {
-    return;
-  }
+  if (abrazando == true) {
+  
 
   // si ya pasó el tiempo , abrazando es false
   if (millis() - inicioAbrazo >= duracionAbrazo) {
@@ -45,8 +44,13 @@ void MotorMarvel::actualizarAbrazo() {
 
     analogWrite(able, 0);
     Serial.println("STOP MOTOR");
+   // inicioAbrazo = millis();
   }
-}
+ return;}
+
+  }
+
+
 
 
 // void MotorMarvel::abrazar() {

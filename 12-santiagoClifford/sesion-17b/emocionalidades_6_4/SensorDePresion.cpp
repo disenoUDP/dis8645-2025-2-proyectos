@@ -11,7 +11,7 @@ void SensorDePresion::configurarDePresion() {
   valorDePresion = 0;
   watitaRascada = false;
   //hay q calibrar la presion/revisar cableado
-  int presionMinimaAceptable = 800;
+  int presionMinimaAceptable = 700;
   pinMode(pinDePresion, INPUT);
 }
 

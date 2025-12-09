@@ -25,11 +25,11 @@ int estadoAnterior = -1;
 
 
 unsigned long inicioEstado1 = 0;
-unsigned long duracionEstado1 = 2000;
+unsigned long duracionEstado1 = 4000;
 unsigned long inicioEstado2 = 0;
-unsigned long duracionEstado2 = 2000;
+unsigned long duracionEstado2 = 4000;
 unsigned long inicioEstado3 = 0;
-unsigned long duracionEstado3 = 2000;
+unsigned long duracionEstado3 = 4000;
 unsigned long inicioEstado4 = 0;
 unsigned long duracionEstado4 = 6000;
 
