@@ -237,7 +237,7 @@ Para aclarar:
 
 Delay pone en pausa el funcionamiento total de arduino, mientras que millis contabiliza el tiempo desde que se enciende.
 
-El código se volvió tan denso que al intentar cargar una actualización, el arduino se bloqueaba y mostraba el error 74, específicamente el **LIBUSB_ERROR_TIMEOUT**, llegando al extremo de pensar que habíamos dañado el arduino, lo solucionamos reiniciando el arduino cada vez que subíamos una nueva versión del código.
+El código se volvió tan pesado que al intentar cargar una actualización, el arduino se bloqueaba y mostraba el error 74, específicamente el **LIBUSB_ERROR_TIMEOUT**, llegando al extremo de pensar que habíamos dañado el arduino, lo solucionamos reiniciando el arduino cada vez que subíamos una nueva versión del código.
 
 Problemas con bitmaps, al transferirlo al display, se perdieron algunos pixeles.
 
