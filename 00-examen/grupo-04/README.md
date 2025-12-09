@@ -1014,26 +1014,26 @@ function connectBtnClick() {
 
 ## ¿Cómo conectamos Arduino con P5.js?
 
-- Primero, vimos estos videos para entender la conexión entre Arduino y p5.js  [
+- Primero, vimos estos videos para entender la conexión entre Arduino y p5.js; [
 Connecting p5 & Arduino through the serial port](https://www.youtube.com/watch?v=MtO1nDoM41Y) y [p5.js and Arduino serial communication - Send a digital sensor to a p5.js sketch](https://www.youtube.com/watch?v=feL_-clJQMs&t=1142s) 
-- Luego, debíamos probar la conexión serial. Pero antes, había que descargar un programa intermediario que hace que pueda leer el puerto serial desde una página web, que por motivos de seguridad están bloqueados. Este es el link de descarga: <https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2>.
-- Aarón, nos dijo que este link tenía algunos problemas de uso, por lo que nos recomendó usar la libreria de Gohai.
 
 ### p5.webserial.js de Gohai
 
+Esta es una biblioteca para p5.js que añade compatibilidad para interactuar con dispositivos serie mediante la API Web Serial, que actualmente está compatible con Chrome y Edge. Aarón nos recomendó usar esta libreria.
+
 <https://github.com/gohai/p5.webserial?tab=readme-ov-file#getting-started>
 
-Esta es una biblioteca para p5.js que añade compatibilidad para interactuar con dispositivos serie mediante la API Web Serial, que actualmente está compatible con Chrome y Edge.
+---
 
 **¿Cómo hacer la conexión?**
 
-- Primero hay que descargar este archivo:(https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js) o pegarlo en la head del html, debajo de la línea que carga p5 en p5.js.
+Primero, hay que descargar este archivo:(https://github.com/gohai/p5.webserial/blob/main/libraries/p5.webserial.js) o pegarlo en el head del html, debajo de la línea que carga p5 en p5.js.
 
 ```cpp
 <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
 ```
 
-- Segundo crear una variable global y asignarle un nuevo puerto de serie dentro de la configuración.
+Segundo, debemos crear una variable global y asignarle un nuevo puerto de serie dentro de la configuración.
 
 ```cpp
 let port;
@@ -1043,11 +1043,13 @@ function setup() {
   // ...
 ```
 
-IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un formato recomendado es 123,456\n (dos valores separados por una coma y un salto de línea).
+**Importante:** Los datos deben ser ordenados para que `p5.js` los entienda. Un formato recomendado es 123,456\n (dos valores separados por una coma y un salto de línea).
 
-- `p5.js` lee cada línea y actualiza las variables.
-- `p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
-- Para que arduino envíe los datos correctos a p5.js. Lo que debe imprimir en el Serial Monitor se ve así:
+`p5.js` lee cada línea y actualiza las variables.
+
+`p5.js` usa esos valores para mover esos gráficos, como una imagen, particulas, formas, etc.
+
+Para que arduino envíe los datos correctos a p5.js. Lo que debe imprimir en el Serial Monitor se ve así:
 
 ```cpp
 12, 30, 0.20
@@ -1056,15 +1058,13 @@ IMPORTANTE: los datos deben ser ordenados para que `p5.js` los entienda. Un form
 ...
 ```
 
-- Ahora viene la estructura del sketch de `p5.js`, una carpeta. Esta debe contener:
+Tercero, viene la estructura del sketch de `p5.js`, una carpeta. Esta debe contener:
 
 ```
 1. index.html
 2. sketch.js
 3. demás archivos que queremos utilizar, como audio, imágenes, etc.
 ```
-
-Recuerda: la librería a utilizar se pega en el html del sketch de p5.js
 
 ### Botón para conectar el Arduino desde el navegador
 
@@ -1075,9 +1075,9 @@ connectBtn = createButton('Conectar Arduino');
 connectBtn.mousePressed(() => port.open(9600));
 ```
 
-### Lectura Serial en p5
+### Lectura Serial en p5.js
 
-Para que `p5.js` lea los valores de la consola de Arduino.
+Para que `p5.js` lea los valores de la consola de Arduino, debemos colocar
 
 ```cpp
 let line = port.readUntil("\n");
@@ -1098,10 +1098,10 @@ Para que funcione correctamente, debemos tener en cuenta que:
 2. p5.js deber leer las líneas completas de datos con `readUntil("\n")`
 3. Chrome y Edge obligan a usar un botón para abrir el puerto y permitir la conexión.
 4. NO ABRIR `Serial Monitor` de arduino mientras p5.js lo usa. Esto interrumpe la conexión.
-5. Usar servidor local, como vs code con liver server para visualizar el html.
+5. Usar servidor local, como code con liver server para visualizar el html.
 6. Cerrar ventanas p5.js repetidas, sólo accede a un puerto.
 
-### Resultado
+**Resultado**
 
 <img src="./imagenes/p5Resultado.png" alt="p5.js" width="400">
 
