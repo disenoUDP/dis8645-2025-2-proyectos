@@ -93,7 +93,7 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
 | Monedas de 10                     | 8        | $80    | <https://www.billetesymonedas.cl/Billetes/FamiliaBilletesActuales>        |
 
-**Presupuesto estimado total – $52.446** 
+**Presupuesto estimado total – $52.526** 
 
 ### **Diagrama de flujo**
 
