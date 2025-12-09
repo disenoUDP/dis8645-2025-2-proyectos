@@ -88,6 +88,8 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 | MOSFET BS170 tipo N TO92          | 1        | $200   | <https://depaquete.cl/index.php>                                          |
 | Tornillos 3m                      | 4        | $1.190 | <https://share.google/XGNMh6Vrv71Q1XYIs>                                  |
 | Filamento PLA                     | 317 g    | $12.390| <https://share.google/eetowUUCaC65zfTWi>                                  |
+| Powerbank                         | 1        | $9.990 | <https://www.sodimac.cl/sodimac-cl/articulo/139873283/Powerbank-de-bolsillo-5.000-MAH/139873284> |
+| Stickers                          | 34       | $17.000| <https://www.instagram.com/rafita.studio/>                                |
 
 **Presupuesto estimado total – 21.876**
 
