@@ -78,8 +78,11 @@ void loop() {
 			rango = 3;
 		} else if (vueltas >= 8 && vueltas <= 9) {
 			rango = 4;
-		} else if (vueltas >= 10) {
+		} else if (vueltas >= 10 && vueltas <= 11) {
 			rango = 5;
+		}
+		else if (vueltas >= 12) {
+			rango = 6;
 		}
 
 		// --- IMPRESION EN EL MONITOR SERIAL ---
@@ -148,5 +151,21 @@ void loop() {
 		digitalWrite(led3, HIGH);
 		digitalWrite(led4, HIGH);
 		digitalWrite(led5, HIGH);
+	}
+
+	if (rango == 6){
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, LOW);
+  digitalWrite(led3, HIGH);
+  digitalWrite(led4, LOW);
+  digitalWrite(led5, HIGH);
+  delay(300);
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, LOW);
+  digitalWrite(led4, HIGH);
+  digitalWrite(led5, LOW);
+  delay(300);
+
 	}
 }

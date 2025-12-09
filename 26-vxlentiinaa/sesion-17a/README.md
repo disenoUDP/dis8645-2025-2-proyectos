@@ -380,3 +380,14 @@ function connectBtnClick() {
   }
 }
 ```
+
+---
+
+### Joystick
+
+Conexiones:
+- GND
+- VCC
+- VRX: Mi eje x (vr significa variable resistor)
+- VRY: mi eje y
+- SW: switch, significa que ahí va a estar la información del botón
