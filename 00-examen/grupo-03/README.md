@@ -223,4 +223,13 @@ Visualización de la placa siendo soldada.
 
 - Instructables. (2017, 4 octubre). Hugbot - a Soft Robot Who Gives Small Hugs. Instructables. https://www.instructables.com/Hugbot-A-Soft-Robot-Who-Gives-Small-Hugs/
 - Psychological Science. (s.f.). Harlow’s classic studies revealed the importance of maternal contact. https://www.psychologicalscience.org/publications/observer/obsonline/harlows-classic-studies-revealed-the-importance-of-maternal-contact.html
+- Adafruit. (s. f.). FSR Tutorial! Instructables. [https://www.instructables.com/FSR-Tutorial/](https://www.instructables.com/FSR-Tutorial/)
+- clifford1one. (s. f.). proceso.md. GitHub. [https://github.com/clifford1one/totemDeEvasion/blob/main/proceso.md](https://github.com/clifford1one/totemDeEvasion/blob/main/proceso.md))
+- Muñoz Jaramillo, D. (s. f.). Motor DC con Arduino y driver L298N o L293D*. ProgramarFácil. [https://programarfacil.com/electronica/motor-dc/](https://programarfacil.com/electronica/motor-dc/) ([Programarfacil Arduino y Home Assistant])
+- Fernando, L. (2024, 3 mayo). Ultrasonic sensor with Arduino – Complete Guide*. Arduino Project Hub. [https://projecthub.arduino.cc/lucasfernando/ultrasonic-sensor-with-arduino-complete-guide-284faf](https://projecthub.arduino.cc/lucasfernando/ultrasonic-sensor-with-arduino-complete-guide-284faf) ([Arduino Project Hub])
+- mybotic. (s. f.). Tutorial of MP3-TF-16P. Instructables. [https://www.instructables.com/Tutorial-of-MP3-TF-16P/](https://www.instructables.com/Tutorial-of-MP3-TF-16P/) 
+- del Valle Hernández, L. (s. f.). Servomotor con Arduino tutorial de programación paso a paso. ProgramarFácil. [https://programarfacil.com/blog/arduino-blog/servomotor-con-arduino/](https://programarfacil.com/blog/arduino-blog/servomotor-con-arduino/) ([Programarfacil Arduino y Home Assistant])
+
+
+
 ---
