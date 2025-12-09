@@ -794,13 +794,18 @@ Carta Gant:
 ## Registro proyecto 03
 
 ### Fotografías y videos del proyecto funcionando
+|||
+|--|--|
+|<img src="./imagenes/Proyectofinalizado.jpeg" alt="interiorCarcasa" width="300">| <img src="./imagenes/Proyectofinalizado4.jpeg" alt="interiorCarcasa" width="300">|
+
 
 ### Interior máquina 
 
 |||
 |--|--|
 |<img src="./imagenes/interiorCarcasa1.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa2.jpeg" alt="interiorCarcasa" width="300"> |
-|<img src="./imagenes/interiorCarcasa3.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa4.jpeg" alt="interiorCarcasa" width="300"> |
+|<img src="./imagenes/interiorCarcasa3.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa4.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa1.jpeg" alt="conexion" width="300">|
+|<img src="./imagenes/interiorCarcasa2.jpeg" alt="conexion" width="300">|<img src="./imagenes/interiorCaraca3.jpeg" alt="conexion" width="300">|
 
 ## Bibliografía 
 
