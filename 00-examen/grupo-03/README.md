@@ -144,12 +144,235 @@ Outputs:
 
 ### Código
 
+A continuación presentaremos fragmentos del código .ino, el cual constituye el núcleo del funcionamiento del sistema, ya que es el encargado de dar vida al proyecto y de coordinar la ejecución  de todos los sensores y actuadores involucrados. A partir de este código principal, se han seleccionado cuidadosamente las secciones más relevantes y representativas, aquellas que resultan esenciales para comprender la lógica de funcionamiento y el comportamiento general del sistema.
+
+- Declaración de estados y duración
+  
+ ```cpp
+int estadoActual = 0;
+
+unsigned long duracionEstado1 = 6000;
+unsigned long duracionEstado2 = 6000;
+unsigned long duracionEstado3 = 6000;
+unsigned long duracionEstado4 = 6000;
+ ```
+- Setup general del sistema
+
+```cpp 
+void setup() {
+  n3p.configurar();
+  depresion.configurarDePresion();
+  motoMoto.Setear();
+  hedgehog.configurarSonic();
+  Serial.begin(9600);
+}
+```
+- Estado 0 → detección de presencia
+  
+```cpp
+if (estadoActual == 0) {
+  if (hedgehog.carinoPotencial) {
+    estadoActual = 1;
+    inicioEstado1 = millis();
+  }
+}
+```
+
+- Ejemplo de un estado
+
+```cpp
+else if (estadoActual == 1) {
+  if (millis() - inicioEstado1 >= duracionEstado1) estadoActual = 2;
+
+  n3p.emitirAlarmaEstado1();
+
+  if (depresion.watitaRascada) {
+    motoMoto.activarAbrazo(2000);
+    estadoActual = 0;
+  }
+}
+```
+--- 
+
+Posteriormente, siguiendo la misma lógica de análisis, se explicarán las partes más destacables del funcionamiento de los sensores y actuadores, detallando su papel dentro del sistema y su contribución al correcto desempeño del proyecto.
+
+- ActuadorN3P.cpp. Inicializa el módulo de audio (DFPlayer Mini)
+  
+```cpp
+void ActuadorN3P::configurar() {
+  mp3Serial.begin(9600);
+  modulito.begin(mp3Serial);
+}
+```
+- Cada estado tiene su propio sonido
+```cpp
+void ActuadorN3P::emitirAlarmaEstado1() {
+  if (!audioReproduciendo) {
+    modulito.volume(9);
+    modulito.playFolder(1, random(1, 3));
+    audioReproduciendo = true;
+  }
+}
+```
+- El módulo detecta cuándo termina el audio
+  
+``` cpp
+if (modulito.available() &&
+    modulito.readType() == DFPlayerPlayFinished) {
+  audioReproduciendo = false;
+}
+```
+--- 
+
+- Servo. Movimientos principales del muñeco
+
+``` cpp
+void ActuadorSielvo::SielvoRotar(){
+  sielvoRotor.write(120);
+}
+
+void ActuadorSielvo::SielvoErguir(){
+  sielvoLumbar.write(0);
+}
+
+void ActuadorSielvo::SielvoAflijir(){
+  sielvoLumbar.write(90);
+}
+```
+- Esta función hace un pequeño movimiento repetitivo para simular tensión o temblor.
+
+```cpp
+void ActuadorSielvo::SielvoTersiana(){
+  sielvoLumbar.write(0);
+  sielvoLumbar.write(30);
+  sielvoLumbar.write(0);
+  sielvoLumbar.write(30);
+}
+```
+---
+
+- Motor DC. Tensiona los brazos.
+
+```cpp
+#include "MotorMarvel.h"
+
+MotorMarvel::MotorMarvel() {
+  able = 3;
+  in1 = 5;
+  in2 = 6;
+  pinMode(able, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+}
+
+void MotorMarvel::Setear() {
+  analogWrite(able, 100);
+  abrazando = false;
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+}
+
+void MotorMarvel::activarAbrazo(unsigned long tiempo) {
+  abrazando = true;
+  duracionAbrazo = tiempo;
+  inicioAbrazo = millis();
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  analogWrite(able, 100);
+}
+
+void MotorMarvel::actualizarAbrazo() {
+  if (!abrazando) return;
+
+  if (millis() - inicioAbrazo >= duracionAbrazo) {
+    abrazando = false;
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, LOW);
+    analogWrite(able, 0);
+  }
+}
+void MotorMarvel::tersiana() {
+  digitalWrite(in1, HIGH);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in2, LOW);
+}
+```
+--- 
+
+- Sensor de presión.
+
+```cpp
+SensorDePresion::SensorDePresion() {}
+
+void SensorDePresion::configurarDePresion() {
+
+  pinDePresion = A0;
+  valorDePresion = 0;
+  watitaRascada = false;
+  //hay q calibrar la presion/revisar cableado
+  int presionMinimaAceptable = 700;
+  pinMode(pinDePresion, INPUT);
+}
+
+void SensorDePresion::funcionaDePresion() {
+  //asignar el valor del pin del sensor de presion, a la variable valorDePresion
+  valorDePresion = analogRead(pinDePresion);
+  // Serial.print(valorDePresion);
+  //si valorDePresion es mayor a presionMinimaAceptable, hayBrazo es true
+  if (valorDePresion > presionMinimaAceptable) {
+    //recibiendo abrazo
+    watitaRascada = true;
+  } else {
+    //si no vuelve a false, llama a ese estado todo el rato
+    watitaRascada = false;
+  }
+}
+```
+---
+
+- Sensor ultrasónico. Configura los pines del sensor ultrasónico y prepara variables básicas.
+  
+```cpp
+pinTrix = 8;     // Trigger
+pinEkeko = 9;    // Echo
+pinMode(pinTrix, OUTPUT);
+pinMode(pinEkeko, INPUT);
+```
+
+- Emisión del pulso. Envía el pulso ultrasónico para medir distancia.
+
+``` cpp
+digitalWrite(pinTrix, LOW);
+delayMicroseconds(2);
+digitalWrite(pinTrix, HIGH);
+delayMicroseconds(10);
+digitalWrite(pinTrix, LOW);
+```
+
+- Cálculo de distancia. Convierte el tiempo de respuesta en centímetros.
+
+``` cpp
+duracion = pulseIn(pinEkeko, HIGH);
+sustancia = duracion / 58;
+```
+- Detección de cercanía. Activa carinoPotencial cuando alguien está cerca (menos de 30 cm).
+
+``` cpp
+if (sustancia < 30 && sustancia > 0) {
+    carinoPotencial = true;
+} else {
+    carinoPotencial = false;
+}
+```
 
 ---
 
 ### Bocetos
 
-- Al inicio del proyecto como grupo nos reunimos
+- Este es un recopilatorio de las diferentes visiones y versiones de como queríamos que fuese nuestro proyecto, incluso integrando su funcionamiento de maneras boceteadas. Todo esto fue tomando rumbo después de basarnos en el video anteriormente presentado.
+
+![referentes utilizados para la creación de jorgito](./imagenes/referentes.jpg)
 
 ![lluvia de ideas al inicio del proyecto](./imagenes/lluviadeideas.jpg)
 
@@ -203,7 +426,9 @@ Evolución de Jorgito a lo largo del proyecto.
 
 - De los problemas más grandes fue la implementación del parlante a todo el ecosistema. Fueron demasiados intentos para conseguirlo.
 
- ![Intento de la implementación de la bocina](./imagenes/bocina.jpg)
+- Hubo varios problemas con los sistemas mecánicos, ya que los servos y motores no tenían suficiente fuerza para articular la estructura. Sin embargo, estos problemas fueron previstos y toda la estructura fue diseñada de forma modular, permitiendo imprimir múltiples iteraciones de engranajes y resortes rápidamente, sin tener que rehacer todo el monito.
+
+![Intento de la implementación de la bocina](./imagenes/bocina.jpg)
 
  De las primeras veces intentando que la bocina funcione 
 
@@ -218,6 +443,7 @@ Visualización de la placa siendo soldada.
 
 ### Prototipo Final
 
+![jorgito terminado](./imagenes/prototipo final.png)
 
 ### Bibliografía
 
