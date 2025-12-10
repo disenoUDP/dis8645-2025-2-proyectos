@@ -47,9 +47,6 @@ Contexto de uso:
 
 0aTAo es un juego donde las personas pueden acercarse, tocar botones y mover un joystick para intentar arreglar una figura de luces que se va desordenando. Está pensado para espacios de exhibición o juegos experimentales en los que el usuario descubre que mientras más intenta controlar la figura más caos genera y que solo al dejar de intervenir, el sistema vuelve solo a la perfección inicial. Busca generar una experiencia lúdica y reflexiva sobre el control, la frustración y la idea de soltar.
 
-`PONER FASES DE USO COMO ESTAN EN LOS OTROS GITHUBS!!!!
-`+ PONER FOTOS DE REFERENCIA EN EL DIAGRAMA !!!!
-
 ### Diagrama de flujo
 
 ```mermaid
@@ -124,8 +121,8 @@ flowchart TB
 | Pantalla LCD Azul| 1  |  | VSS a GND – VDD a 5V – VO al centro del potenciómetro – RS a pin 12 – RW a GND – E a pin 11 – D4 a pin 5 – D5 a pin 4 – D6 a pin 3 – D7 a pin 2 – A a 5V con 200Ω – K a GND – Potenciómetro: 5V / VO / GND |$2.400|<https://afel.cl/products/pantalla-lcd-azul-16x02?_pos=2&_sid=f665c421a&_ss=r>|
 | Resistencia | 4 | 1K |PIN 8 - PIN 9- PIN 4- PIN 3 |kit $4.990| <https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=a1ae0dc91&_ss=r>|
 |Matriz LED RGB 8x8|1| |VCC a 5V - GND a GND - DIN a PIN 6 |$9.990|<https://afel.cl/products/matriz-led-rgb-neopixel-8x8-ws2812-cjmcu64?_pos=4&_sid=5c8f94117&_ss=r>|
-|Módulo reproductor MP3|1| | VCC a 5V - Negativo altavoz a STK_2 - Positivo altavoz a STK_1 - TX al RX Arduino - RX al TX Arduino - GND a GND|
-|Tarjeta SD|1| |DFPlayer Mini|$2.990|<http://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_psq=modulo+rep&_ss=e&_v=1.0>|
+|Módulo reproductor MP3|1| | VCC a 5V - Negativo altavoz a STK_2 - Positivo altavoz a STK_1 - TX al RX Arduino - RX al TX Arduino - GND a GND|$2.990|<http://afel.cl/products/modulo-reproductor-mp3-dfplayer-mini?_pos=1&_psq=modulo+rep&_ss=e&_v=1.0>|
+|Tarjeta SD|1| |DFPlayer Mini|$9.990|<https://www.pcfactory.cl/producto/54503-kingston-memoria-64gb-microsdxc-canvas-select-plus-gen3-100mb-s-a1-card--adapter?origin=PCF>|
 |Speaker|1|3w|VCC a SPK_1 - GND a SPK_2 |$3.000|<https://afel.cl/products/mini-parlante-altavoz-de-3w?_pos=1&_sid=f851455c2&_ss=r>|
   
 ### Especificaciones máquina 
@@ -280,23 +277,23 @@ Algunas de estas fueron:
 |--|--|
 |<img src="./imagenes/IMGProceso01.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso02.jpg" alt="conexion" width="300"> |
 |<img src="./imagenes/IMGProceso03.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso04.jpg" alt="conexion" width="300"> |
-| <img src="./imagenes/IIMGProceso05.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
+|<img src="./imagenes/IMGProceso05.jpg" alt="conexion" width="300">| <img src="./imagenes/IMGProceso06.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMGProceso09.gif" alt="conexion" width="300"> | <img src="./imagenes/IMG1.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG2.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG3.jpg" alt="conexion" width="300"> |
 | <img src="./imagenes/IMG4.jpg" alt="conexion" width="300"> | <img src="./imagenes/IMG5.jpg" alt="conexion" width="300"> |
 
 ## Etapas del código
 
-`Cambiar todo totodooooo !!!!!!!1`
-
 - *ETAPAS DE PROCESO DE CÓDIGO ARRIBA EN FILES CON FECHA DE MODIFICACIONES.*
 
-### 1. Pantalla 8x8
+### ETAPA 1 — Importaciones, pines y configuración inicial
 
-Se parte dibujando un cuadrado hueco en la matriz LED 8x8. El programa guarda una copia del cuadrado perfecto para poder restaurarlo después. Cuando empieza el juego, uno de los LEDs del cuadrado se “rompe” y desaparece, y otro LED aparece afuera como “pixel escapado”, listo para ser movido con el joystick. Si pasan 15 segundos sin actividad, todo vuelve a su estado original.
+Todas las conexiones físicas: qué botones, sensores y LEDs usa el proyecto. También se cargan las librerías y se inicia el objeto NeoPixel que controlará la matriz.
 
 ```cpp
-#include <Adafruit_NeoPixel.h>  // Librería para controlar la matriz LED tipo NeoPixel
+
+#include <Adafruit_NeoPixel.h>   // Librería para controlar la matriz LED tipo NeoPixel
+#include <LiquidCrystal.h>       // Librería para controlar la pantalla LCD
 
 // ===================== CONFIG NEOPIXEL ======================
 // Pin donde está conectada la matriz
@@ -304,27 +301,49 @@ Se parte dibujando un cuadrado hueco en la matriz LED 8x8. El programa guarda un
 // Número total de LEDs (8x8 = 64 LEDs)
 #define NUM_PIXELES 64
 
+// Pines del joystick y su botón
+#define PIN_JOYSTICK_X A0
+#define PIN_JOYSTICK_Y A1
+#define PIN_JOYSTICK_BOTON 8
+
+// Pines de botones adicionales
+#define PIN_BOTON_COMELON 9     // Botón que rompe el cuadrado
+#define PIN_BOTON_CAOS 10        // Botón caos
+#define PIN_COLOR 7             // Cambia color del pixel escapado
+#define PIN_INICIO 6            // Inicia el juego
+
+// Pin que manda una señal tipo pulso al Arduino esclavo (el que reproduce música)
+#define PIN_TRIGGER_MP3 A3      
+
 // Objeto NeoPixel
 Adafruit_NeoPixel matriz = Adafruit_NeoPixel(NUM_PIXELES, PIN_MATRIZ, NEO_GRB + NEO_KHZ800);
+
+```
+
+### ETAPA 2 — Variables del juego + LCD
+
+Guardamos todo el estado del juego: la forma del cuadrado, el pixel escapado, los contadores, los colores y los textos que aparecerán en el LCD.
+
+```cpp
 
 // ===================== VARIABLES PRINCIPALES ======================
 // Figura inicial: un cuadrado formado dentro del margen del 8x8
 bool formaBase[64] = {
-  0, 0, 0, 0, 0, 0, 0, 0,
-  0, 1, 1, 1, 1, 1, 1, 0,
-  0, 1, 0, 0, 0, 0, 1, 0,
-  0, 1, 0, 0, 0, 0, 1, 0,
-  0, 1, 0, 0, 0, 0, 1, 0,
-  0, 1, 0, 0, 0, 0, 1, 0,
-  0, 1, 1, 1, 1, 1, 1, 0,
-  0, 0, 0, 0, 0, 0, 0, 0
+ 0,0,0,0,0,0,0,0,
+ 0,1,1,1,1,1,1,0,
+ 0,1,0,0,0,0,1,0,
+ 0,1,0,0,0,0,1,0,
+ 0,1,0,0,0,0,1,0,
+ 0,1,0,0,0,0,1,0,
+ 0,1,1,1,1,1,1,0,
+ 0,0,0,0,0,0,0,0
 };
 
-bool formaBaseOriginal[64];              // Copia del cuadrado perfecto
-int pixelBloqueado = -1;                 // LED eliminado dentro del cuadrado
-int pixelEscapado = -1;                  // LED que se mueve fuera de su posición original
-uint32_t colorPixelEscapado = 0x00FFFF;  // Color del pixel escapado
-bool modoDisco = false;                  // Si está activo el modo fiesta
+bool formaBaseOriginal[64];   // Copia del cuadrado perfecto
+int pixelBloqueado = -1;      // LED eliminado dentro del cuadrado
+int pixelEscapado = -1;       // LED que se mueve fuera de su posición original
+uint32_t colorPixelEscapado = 0xFF0000;  // Color del pixel escapado
+bool modoDisco = false;        // Si está activo el modo fiesta
 
 // Control del movimiento lento del pixel
 unsigned long tiempoUltimoMovimiento = 0;
@@ -339,45 +358,70 @@ const int maxPixelesRotos = 9;
 unsigned long tiempoUltimaActividad = 0;
 bool juegoIniciado = false;
 
-// ===================== FUNCIONES UTILES ======================
+// ===================== CONFIG LCD ======================
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+#define PIN_BACKLIGHT 5
+
+// Mensajes que se mostrarán en LCD
+String linea1 = "V3N, ACERC4T3";
+String linea2 = "Y JuEG4";
+
+// Sistema de parpadeo del texto
+bool modoParpadeo = false; 
+unsigned long lastBlink = 0;
+unsigned long blinkInterval = 300;
+bool visible = true;
+
+```
+
+#### ETAPA 3 — Funciones útiles (coordenadas, color, dibujo, reparación)
+
+Herramientas base: movernos en la matriz, generar colores, dibujar el cuadrado y restaurarlo.
+
+```cpp
+
+ // ===================== FUNCIONES UTILES ======================
 // Obtienen coordenadas X,Y o índice dentro de 8x8
-int obtenerX(int i) {
-  return i % 8;
-}
-int obtenerY(int i) {
-  return i / 8;
-}
-int obtenerIndice(int x, int y) {
-  return y * 8 + x;
-}
+int obtenerX(int i){ return i % 8; }
+int obtenerY(int i){ return i / 8; }
+int obtenerIndice(int x,int y){ return y * 8 + x; }
 
 // Genera colores random excepto rojo puro
-uint32_t generarColorNoRojo() {
-  while (true) {
-    int r = random(0, 256);
-    int g = random(0, 256);
-    int b = random(0, 256);
+uint32_t generarColorNoRojo(){
+  while(true){
+    int r=random(0,256);
+    int g=random(0,256);
+    int b=random(0,256);
     // Si es rojo intenso, se rechaza
-    if (!(r > 200 && g < 80 && b < 80)) return matriz.Color(r, g, b);
+    if(!(r>200 && g<80 && b<80)) return matriz.Color(r,g,b);
   }
 }
 
 // ===================== DIBUJO NEOPIXEL ======================
 // Dibuja cuadrado normal + pixel escapado o bloqueado
-void dibujarMatrizNormal() {
+void dibujarMatrizNormal(){
   matriz.clear();
-  for (int i = 0; i < 64; i++) {
-    if (formaBase[i] == 1) matriz.setPixelColor(i, matriz.Color(255, 0, 0));  // Rojo para los del cuadrado
+  for(int i=0;i<64;i++){
+    if(formaBase[i]==1) matriz.setPixelColor(i, matriz.Color(255,0,0)); // Rojo para los del cuadrado
   }
-  if (pixelBloqueado >= 0) matriz.setPixelColor(pixelBloqueado, 0);                 // Pixel eliminado
-  if (pixelEscapado >= 0) matriz.setPixelColor(pixelEscapado, colorPixelEscapado);  // Pixel que se mueve
+  if(pixelBloqueado>=0) matriz.setPixelColor(pixelBloqueado, 0);        // Pixel eliminado
+  if(pixelEscapado>=0) matriz.setPixelColor(pixelEscapado, colorPixelEscapado); // Pixel que se mueve
+  matriz.show();
+}
+
+// Modo fiesta: colores locos para todos
+void dibujarMatrizDisco(){
+  for(int i=0;i<64;i++){
+    matriz.setPixelColor(i, generarColorNoRojo());
+  }
+  if(pixelEscapado>=0) matriz.setPixelColor(pixelEscapado, colorPixelEscapado);
   matriz.show();
 }
 
 // ===================== REPARAR CUADRADO ======================
 // Resetea todo y vuelve a cuadrado perfecto
-void repararCuadrado() {
-  for (int i = 0; i < 64; i++) {
+void repararCuadrado(){
+  for(int i=0;i<64;i++){
     formaBase[i] = formaBaseOriginal[i];
   }
   pixelBloqueado = -1;
@@ -387,261 +431,11 @@ void repararCuadrado() {
   dibujarMatrizNormal();
 }
 
-//—--loop—--
-// Guardar copia del cuadrado original
-  for (int i = 0; i < 64; i++) {
-    formaBaseOriginal[i] = formaBase[i];
-  }
-
- // Si pasan 15 segundos sin tocar nada → todo vuelve a su estado inicial
-  if (millis() - tiempoUltimaActividad > 15000) {
-    repararCuadrado();  // Restaurar figura y resetear juego
-    tiempoUltimaActividad = millis();
-  }
-
-```
-
-### 2. Joystick
-
-Controla el movimiento del píxel escapado, pero a propósito se mueve al lado contrario de donde empujas el joystick, se lee con analogRead() en X e Y. También incluye un botón que activa el **Modo Disco**, donde todos los LEDs parpadean con colores aleatorios. Cuando ese modo está activo, se detienen los otros controles.
-
-```cpp
-// Pines del joystick y su botón
-#define PIN_JOYSTICK_X A0
-#define PIN_JOYSTICK_Y A1
-#define PIN_JOYSTICK_BOTON 8
-
-
- // Configurar botones
-  pinMode(PIN_JOYSTICK_BOTON, INPUT_PULLUP);
-
-//—--Loop—-
-// ================== MOVER PIXEL ESCAPADO ==================
-  // Controlado por joystick (dirección invertida)
-  if (pixelEscapado >= 0) {
-    int valorX = analogRead(PIN_JOYSTICK_X);
-    int valorY = analogRead(PIN_JOYSTICK_Y);
-
-    if (millis() - tiempoUltimoMovimiento >= retrasoMovimiento) {
-      int x = obtenerX(pixelEscapado), y = obtenerY(pixelEscapado);
-      int xOriginal = x, yOriginal = y;
-
-      // Movimiento inverso
-      if (valorX > 800 && x > 0) x--;
-      else if (valorX < 200 && x < 7) x++;
-      if (valorY > 800 && y > 0) y--;
-      else if (valorY < 200 && y < 7) y++;
-
-      if (x != xOriginal || y != yOriginal) tiempoUltimaActividad = millis();
-
-      int nueva = obtenerIndice(x, y);
-      if (nueva != pixelBloqueado) pixelEscapado = nueva;
-
-      dibujarMatrizNormal();
-      tiempoUltimoMovimiento = millis();
-    }
-  }
-
-// Modo Disco
-
-// Modo fiesta: colores locos para todos
-void dibujarMatrizDisco() {
-  for (int i = 0; i < 64; i++) {
-    matriz.setPixelColor(i, generarColorNoRojo());
-  }
-  if (pixelEscapado >= 0) matriz.setPixelColor(pixelEscapado, colorPixelEscapado);
-  matriz.show();
-}
-
-//—Loop
-
-// ================== MODO DISCO ==================
-  // Activado con botón del joystick
-  static int ultimo = HIGH;
-  int ahora = digitalRead(PIN_JOYSTICK_BOTON);
-  if (ultimo == HIGH && ahora == LOW) {
-    modoDisco = !modoDisco;
-    tiempoUltimaActividad = millis();
-    if (modoDisco) actualizarLCD("NO ES MOMENTO", "DE DIVERTIRSE", false);
-    delay(200);
-  }
-  ultimo = ahora;
-
-  // Si está modo fiesta activo → dibujar colores locos
-  if (modoDisco) {
-    tiempoUltimaActividad = millis();
-    dibujarMatrizDisco();
-    mostrarLCD();
-    delay(retrasoDisco);
-    return;  // Se salta el resto para no mover el pixel escapado
-  }
-```
-
-### 3. Botones
-
-#### Botón Inicio 
-
-Comienza el juego, rompe un LED del cuadrado y genera un pixel escapado vecino. También envía una señal al segundo Arduino para iniciar la música.
-
-```cpp
-#define PIN_INICIO 6         // Inicia el juego
-
-pinMode(PIN_INICIO, INPUT_PULLUP);
-
-//—Loop
-
-// ================== BOTÓN INICIO ==================
-  // Da inicio al juego y rompe un pixel
-  if (digitalRead(PIN_INICIO) == LOW && !juegoIniciado) {
-    tiempoUltimaActividad = millis();
-    juegoIniciado = true;
-    actualizarLCD("Ahora intenta", "arreglarme", false);
-
-    // Buscar todos los píxeles encendidos del cuadrado
-    int lados[64], total = 0;
-    for (int i = 0; i < 64; i++)
-      if (formaBase[i] == 1) lados[total++] = i;
-
-    // Elegir uno aleatoriamente para romperlo
-    if (total > 0) {
-      int elegido = lados[random(total)];
-      pixelBloqueado = elegido;       // Guardamos cual se rompió
-      formaBase[pixelBloqueado] = 0;  // Apagamos ese pixel dentro del cuadrado
-
-      // Crear pixel escapado en una posición vecina
-      int x = obtenerX(elegido), y = obtenerY(elegido);
-      if (x < 7) pixelEscapado = obtenerIndice(x + 1, y);
-      else if (x > 0) pixelEscapado = obtenerIndice(x - 1, y);
-      else if (y < 7) pixelEscapado = obtenerIndice(x, y + 1);
-      else pixelEscapado = obtenerIndice(x, y - 1);
-
-      dibujarMatrizNormal();
-    }
-
-    // Enviar un pulso al Arduino secundario para que active la música
-    digitalWrite(PIN_TRIGGER_MP3, HIGH);
-    delay(100);  // Duración del pulso
-    digitalWrite(PIN_TRIGGER_MP3, LOW);
-
-    delay(250);
-  }
-
  ```
 
-#### Botón Color
+#### ETAPA 4 — Funciones del LCD
 
-Cambia aleatoriamente el color del pixel escapado (nunca a rojo).
-
-```cpp
-#define PIN_COLOR 7          // Cambia color del pixel escapado
-
-pinMode(PIN_COLOR, INPUT_PULLUP);
-
-//—Loop
-
-// ================== BOTÓN COLOR ==================
-  // Cambia el color del pixel escapado
-  if (pixelEscapado >= 0 && digitalRead(PIN_COLOR) == LOW) {
-    tiempoUltimaActividad = millis();
-    colorPixelEscapado = generarColorNoRojo();
-    actualizarLCD("No debiste", "hacer eso", false);
-    dibujarMatrizNormal();
-    delay(200);
-  }
-
-```
-
-#### Botón Glotón
-
-Rompe otro pixel del cuadrado cada vez que lo presionas. Después de romper 9, hace un reset y vuelve a empezar rompiendo otro pixel.
-
-```cpp
-#define PIN_BOTON_COMELON 9  // Botón que rompe el cuadrado
-
-pinMode(PIN_BOTON_COMELON, INPUT_PULLUP);
-
-//—Loop
-
-// ================== BOTÓN GLOTÓN==================
-  // Rompe otro pixel del cuadrado (botón destructivo)
-  if (digitalRead(PIN_BOTON_COMELON) == LOW) {
-    tiempoUltimaActividad = millis();
-
-    // Mensajes random en el LCD para molestar al jugador
-    int opcion = random(3);
-    if (opcion == 0) actualizarLCD("No debiste", "hacer eso", false);
-    else if (opcion == 1) actualizarLCD("upps, deberias", "pensarlo mejor", false);
-    else actualizarLCD("ese boton no", "es el mejor", false);
-
-    // Buscar pixeles activos dentro del cuadrado
-    int lados[64], total = 0;
-    for (int i = 0; i < 64; i++)
-      if (formaBase[i] == 1) lados[total++] = i;
-
-    // Si aún no se destruyeron 10 pixeles
-    if (pixelesRotos < maxPixelesRotos && total > 0) {
-      int elegido = lados[random(total)];
-      pixelBloqueado = elegido;
-      formaBase[pixelBloqueado] = 0;
-
-      // Crear pixel escapado vecino
-      int x = obtenerX(elegido), y = obtenerY(elegido);
-      if (x < 7) pixelEscapado = obtenerIndice(x + 1, y);
-      else if (x > 0) pixelEscapado = obtenerIndice(x - 1, y);
-      else if (y < 7) pixelEscapado = obtenerIndice(x, y + 1);
-      else if (y > 0) pixelEscapado = obtenerIndice(x, y - 1);
-
-      pixelesRotos++;
-
-      // Si ya se destruyeron muchos pixeles → reinicio troll
-    } else if (pixelesRotos >= maxPixelesRotos) {
-      for (int i = 0; i < 64; i++) formaBase[i] = formaBaseOriginal[i];
-
-      int elegido = random(64);
-      while (formaBase[elegido] == 0) elegido = random(64);
-
-      pixelBloqueado = elegido;
-      formaBase[pixelBloqueado] = 0;
-
-      int x = obtenerX(elegido), y = obtenerY(elegido);
-      if (x < 7) pixelEscapado = obtenerIndice(x + 1, y);
-      else if (x > 0) pixelEscapado = obtenerIndice(x - 1, y);
-      else if (y < 7) pixelEscapado = obtenerIndice(x, y + 1);
-      else if (y > 0) pixelEscapado = obtenerIndice(x, y - 1);
-
-      pixelesRotos = 1;
-    }
-
-    dibujarMatrizNormal();
-    delay(250);
-  }
-
-```
-
-#### Botón Inutil
-
-No hace nada aún, aparte de mostrar mensajes en la pantalla LCD.
-
-```cpp
-#define PIN_BOTON_VEL 10     // Botón inútil
-
-pinMode(PIN_BOTON_VEL, INPUT_PULLUP);
-
-//—Loop
- // ================== BOTÓN VEL ==================
-  // Botón inútil (solo cambia mensaje)
-  if (digitalRead(PIN_BOTON_VEL) == LOW) {
-    tiempoUltimaActividad = millis();
-    int opcion = random(3);
-    if (opcion == 0) actualizarLCD("No debiste", "hacer eso", false);
-    else if (opcion == 1) actualizarLCD("upps, deberias", "pensarlo mejor", false);
-    else actualizarLCD("ese boton no", "es el mejor", false);
-    delay(200);
-  }
-
-```
-### 4. Pantalla LCD
-
+Controla lo que ve el usuario, los mensajes que cambian según las interacciones.
 Muestra mensajes interactivos según las acciones del jugador:
 
 - Antes de iniciar: "VEN, ACERCATE Y JUEGA";
@@ -652,83 +446,370 @@ Muestra mensajes interactivos según las acciones del jugador:
 
 En el código, la funcionalidad de la pantalla está integrada de forma modular junto con el resto de los componentes. Su principal tarea es mostrar mensajes que se activan en respuesta a ciertas acciones del jugador, especialmente al presionar botones específicos. De esta manera, la pantalla no opera aislada, sino que forma parte del flujo general del programa, reaccionando dinámicamente según el comportamiento del usuario y el estado del dispositivo.
 
-Aquí hay algunas secciones específicas acopladas: 
-
 ```cpp
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-#define PIN_BACKLIGHT 5
 
-// Mensajes que se mostrarán en LCD
-String linea1 = "VEN, ACERCATE";
-String linea2 = "Y JUEGA";
+// ===================== FUNCIONES LCD ======================
+void actualizarLCD(String msg1, String msg2, bool parpadeo=false){
+  linea1 = msg1;
+  linea2 = msg2;
+  modoParpadeo = parpadeo;
+  lcd.clear();
+}
 
-// Sistema de parpadeo del texto
-bool modoParpadeo = false;
-unsigned long lastBlink = 0;
-unsigned long blinkInterval = 300;
-bool visible = true;
-
-pinMode(PIN_BACKLIGHT, OUTPUT);
-
-// Encender backlight del LCD
-  analogWrite(PIN_BACKLIGHT, 255);
-
- // Config LCD
-  lcd.begin(16, 2);
-
-  // Mensaje inicial
-  actualizarLCD("VEN, ACERCATE", "Y JUEGA", false);
-  mostrarLCD();
-
-//—Loop
-
-// ================== BOTÓN INICIO ==================
-actualizarLCD("Ahora intenta", "arreglarme", false);
- 
-// ================== BOTÓN COMELON ==================
-
-if (opcion == 0) actualizarLCD("No debiste", "hacer eso", false);
-    else if (opcion == 1) actualizarLCD("upps, deberias", "pensarlo mejor", false);
-    else actualizarLCD("ese boton no", "es el mejor", false);
-
-// ================== BOTÓN COLOR ==================
-
-actualizarLCD("No debiste", "hacer eso", false);
-
-// ================== BOTÓN VEL ==================
-
-if (opcion == 0) actualizarLCD("No debiste", "hacer eso", false);
-    else if (opcion == 1) actualizarLCD("upps, deberias", "pensarlo mejor", false);
-    else actualizarLCD("ese boton no", "es el mejor", false);
-
-// ================== MODO DISCO ==================
-
- if (modoDisco) actualizarLCD("NO ES MOMENTO", "DE DIVERTIRSE", false);
+// Muestra texto normal o parpadeando
+void mostrarLCD(){
+  if(modoParpadeo){
+    if(millis() - lastBlink >= blinkInterval){
+      lastBlink = millis();
+      visible = !visible;
+    }
+    lcd.clear();
+    if(visible){
+      lcd.setCursor(0,0);
+      lcd.print(linea1.substring(0, min(16, (int)linea1.length())));
+      lcd.setCursor(0,1);
+      lcd.print(linea2.substring(0, min(16, (int)linea2.length())));
+    }
+  } else {
+    lcd.setCursor(0,0);
+    lcd.print(linea1.substring(0, min(16, (int)linea1.length())));
+    lcd.setCursor(0,1);
+    lcd.print(linea2.substring(0, min(16, (int)linea2.length())));
+  }
+}
 
 ```
 
+#### ETAPA 5 — SETUP (inicio del sistema)
+
+Aquí se prende todo por primera vez: matriz, pantallas, botones y los valores iniciales del juego. También se muestra el primer mensaje al usuario.
+
+```cpp
+// ===================== SETUP ======================
+void setup(){
+  matriz.begin();
+  matriz.setBrightness(50);
+  matriz.show();
+  randomSeed(analogRead(A3)); // Para que los números random sean distintos cada vez
+
+  // Configurar botones
+  pinMode(PIN_JOYSTICK_BOTON, INPUT_PULLUP);
+  pinMode(PIN_INICIO, INPUT_PULLUP);
+  pinMode(PIN_COLOR, INPUT_PULLUP);
+  pinMode(PIN_BOTON_COMELON, INPUT_PULLUP);
+  pinMode(PIN_BOTON_CAOS, INPUT_PULLUP);
+  pinMode(PIN_BACKLIGHT, OUTPUT);
+
+  // Pin de señal de música
+  pinMode(PIN_TRIGGER_MP3, OUTPUT);
+  digitalWrite(PIN_TRIGGER_MP3, LOW);
+
+  // Encender backlight del LCD
+  analogWrite(PIN_BACKLIGHT, 255);
+
+  // Guardar copia del cuadrado original
+  for(int i=0;i<64;i++){
+    formaBaseOriginal[i] = formaBase[i];
+  }
+
+  tiempoUltimaActividad = millis();
+  dibujarMatrizNormal();
+  
+  // Config LCD
+  lcd.begin(16,2);
+
+  // Mensaje inicial
+  actualizarLCD("VEN, ACéRCATE…", "poDRIas diVertirte", false);
+  mostrarLCD();
+}
+```
+
+#### ETAPA 6 — Loop Principal - Reinicio automático por inactividad
+
+Si pasa más de 15 segundos sin interacción, restaura el cuadrado original, reinicia el juego y borra cualquier pixel escapado o bloqueado. 
+
+```cpp
+// ===================== LOOP PRINCIPAL ======================
+void loop(){
+
+  // Si pasan 15 segundos sin tocar nada → todo vuelve a su estado inicial
+  if(millis() - tiempoUltimaActividad > 15000){
+    repararCuadrado();                // Restaurar figura y resetear juego
+    tiempoUltimaActividad = millis();
+  }
+```
+
+### 4. Botón INICIO — inicia el juego rompiendo un pixel
+
+Al presionar el botón de inicio, el juego comienza: se “rompe” un pixel del cuadrado base y ese pixel se convierte en el “pixel escapado” fuera de su lugar. Además dispara un pulso al Arduino secundario para activar la música.
+
+```cpp
+  // ================== BOTÓN INICIO ==================
+  // Da inicio al juego y rompe un pixel
+  if(digitalRead(PIN_INICIO)==LOW && !juegoIniciado){
+    tiempoUltimaActividad = millis(); 
+    juegoIniciado = true;
+    actualizarLCD("AH0ra Intent!","arregLxrm3", false);
+    mostrarLCD();
+
+    // Buscar todos los píxeles encendidos del cuadrado
+    int lados[64], total=0;
+    for(int i=0;i<64;i++) if(formaBase[i]==1) lados[total++] = i;
+
+    // Elegir uno aleatoriamente para romperlo
+    if(total>0){
+      int elegido=lados[random(total)];
+      pixelBloqueado=elegido;       // Guardamos cual se rompió
+      formaBase[pixelBloqueado]=0;  // Apagamos ese pixel dentro del cuadrado
+
+      // Crear pixel escapado en una posición vecina
+      int x=obtenerX(elegido), y=obtenerY(elegido);
+      if(x<7) pixelEscapado=obtenerIndice(x+1,y);
+      else if(x>0) pixelEscapado=obtenerIndice(x-1,y);
+      else if(y<7) pixelEscapado=obtenerIndice(x,y+1);
+      else pixelEscapado=obtenerIndice(x,y-1);
+
+      dibujarMatrizNormal();
+    }
+```
 ### 5. Música
 
 Se usa un segundo Arduino con un módulo DFPlayer Mini. El Arduino principal envía un pulso cuando se aprieta el botón Inicio, y el secundario recibe esa señal para reproducir una pista musical en loop, generando la atmósfera del juego.
 
-#### Arduino principal:
-
 ```cpp
-// Pin que manda una señal tipo pulso al Arduino secundario (el que reproduce música)
-#define PIN_TRIGGER_MP3 A3
 
-// Pin de señal de música
-  pinMode(PIN_TRIGGER_MP3, OUTPUT);
-  digitalWrite(PIN_TRIGGER_MP3, LOW)
-
- // Enviar un pulso al Arduino secundario para que active la música
+    // Enviar un pulso al Arduino secundario para que active la música
     digitalWrite(PIN_TRIGGER_MP3, HIGH);
-    delay(100);  // Duración del pulso
+    delay(100);   // Duración del pulso
     digitalWrite(PIN_TRIGGER_MP3, LOW);
 
     delay(250);
   }
+```
+### Botón COMELÓN — destruye más pixeles del cuadrado
 
+Permite al usuario “romper” más píxeles del cuadrado. Cada vez que se aprieta, se borra otro pixel del cuadrado original, y se genera un nuevo “escape” cercano. al 9no click el cuadrado vuelve a su forma con un pixel escapado.
+
+```cpp
+// ================== BOTÓN COMELON ==================
+  // Rompe otro pixel del cuadrado (botón destructivo)
+  if(digitalRead(PIN_BOTON_COMELON)==LOW){
+    tiempoUltimaActividad = millis();
+
+    // Mensajes random en el LCD
+    int opcion = random(3);
+    if(opcion==0) actualizarLCD("N0 deB1st3","hacer es0", false);
+    else if(opcion==1) actualizarLCD("uppss, deberí4s","p3nsarl0 mej0r", false);
+    else actualizarLCD("es3 botón n0","3s el mej0r", false);
+    mostrarLCD();
+
+    // Buscar pixeles activos dentro del cuadrado
+    int lados[64], total=0;
+    for(int i=0;i<64;i++) if(formaBase[i]==1) lados[total++] = i;
+
+    // Si aún no se destruyeron 10 pixeles
+    if(pixelesRotos < maxPixelesRotos && total>0){
+      int elegido = lados[random(total)];
+      pixelBloqueado = elegido;
+      formaBase[pixelBloqueado] = 0;
+
+      // Crear pixel escapado vecino
+      int x=obtenerX(elegido), y=obtenerY(elegido);
+      if(x<7) pixelEscapado=obtenerIndice(x+1,y);
+      else if(x>0) pixelEscapado=obtenerIndice(x-1,y);
+      else if(y<7) pixelEscapado=obtenerIndice(x,y+1);
+      else if(y>0) pixelEscapado=obtenerIndice(x,y-1);
+
+      pixelesRotos++;
+
+    // Si ya se destruyeron muchos pixeles → reinicio troll
+    } else if(pixelesRotos>=maxPixelesRotos){
+      for(int i=0;i<64;i++) formaBase[i]=formaBaseOriginal[i];
+
+      int elegido=random(64);
+      while(formaBase[elegido]==0) elegido=random(64);
+
+      pixelBloqueado=elegido;
+      formaBase[pixelBloqueado]=0;
+
+      int x=obtenerX(elegido), y=obtenerY(elegido);
+      if(x<7) pixelEscapado=obtenerIndice(x+1,y);
+      else if(x>0) pixelEscapado=obtenerIndice(x-1,y);
+      else if(y<7) pixelEscapado=obtenerIndice(x,y+1);
+      else if(y>0) pixelEscapado=obtenerIndice(x,y-1);
+
+      pixelesRotos=1;
+    }
+
+    dibujarMatrizNormal();
+    delay(250);
+  }
+```
+
+### Botón COLOR — cambia el color del pixel escapado y lo mueve aleatoriamente
+
+Cambia el color del pixel escapado (evitando rojo) y lo teletransporta a otra posición aleatoria de la matriz. 
+
+```cpp
+  // ================== BOTÓN COLOR ==================
+  // Cambia color + salta a posición vecina random (Idea 2)
+  if(pixelEscapado>=0 && digitalRead(PIN_COLOR)==LOW){
+    tiempoUltimaActividad = millis();
+
+    // Cambiar color
+    colorPixelEscapado = generarColorNoRojo();
+
+    // Frases troll aleatorias
+    int opc = random(3);
+    if(opc==0) actualizarLCD("pa d0nd3 v4s?", "jajajaja", false);
+    else if(opc==1) actualizarLCD("uy si c4si", "m3ntiraaa", false);
+    mostrarLCD();
+
+
+    // Movimiento random en toda la matriz (0 a 63)
+    int nuevoLugar = pixelEscapado;
+    while(nuevoLugar == pixelEscapado) {
+      nuevoLugar = random(64);
+    }
+    pixelEscapado = nuevoLugar;
+
+    dibujarMatrizNormal();
+    delay(220);
+  }
+```
+
+### Botón CAOS — mezcla píxeles o reinicia el cuadrado
+
+Es una opción que permite en los primeros clics mezclar la posición de todos los pixeles activos al azar. En el quinto clic, resetea al cuadrado original (pero conservando el escapado).
+
+```cpp
+// ================== BOTÓN CAOS ==================
+  // Explosión de pixeles y vuelve al 5to click
+  static int contadorCaos = 0;
+
+  if(digitalRead(PIN_BOTON_CAOS)==LOW){
+    tiempoUltimaActividad = millis();
+    contadorCaos++;
+
+    int opcion=random(3);
+    if(opcion==0) actualizarLCD("N0 deb1st3","hacer es0", false);
+    else if(opcion==1) actualizarLCD("uppss, deberí4s","p3nsarl0 mej0r", false);
+    else actualizarLCD("es3 botón n0","3s el mej0r", false);
+    mostrarLCD();
+
+    // Si aún no es el 5to click → explota y mezcla
+    if(contadorCaos < 5){
+      bool nuevosPixeles[64];
+      for(int i=0;i<64;i++) nuevosPixeles[i]=0;
+
+      // Tomar todos los pixeles activos y reubicarlos aleatoriamente
+      int listaActivos[64], total=0;
+      for(int i=0;i<64;i++){
+        if(formaBase[i]==1) listaActivos[total++]=i;
+      }
+
+      for(int i=0;i<total;i++){
+        int destino = random(64);
+        while(nuevosPixeles[destino]==1) destino = random(64);
+        nuevosPixeles[destino]=1;
+      }
+
+      for(int i=0;i<64;i++) formaBase[i]=nuevosPixeles[i];
+
+      // Si había un pixel escapado y uno bloqueado → seguir mostrándolos igual
+      dibujarMatrizNormal();
+    }
+
+    // Si es la 5ta vez → volver al estado normal con pixel escapado como antes
+    else {
+      contadorCaos = 0; // reset del contador
+      for(int i=0;i<64;i++) formaBase[i]=formaBaseOriginal[i];
+      formaBase[pixelBloqueado] = 0;  // Mantener agujero
+      dibujarMatrizNormal();
+    }
+
+    delay(300);
+  }
+```
+### Joystick (botón) — Modo disco
+
+Al presionar el botón del joystick se activa o desactiva el “modo disco”. En ese modo, la matriz se llena de colores al azar constantemente. Mientras muestra en la pantalla LCD el mensaje de "NO ES MOMENTO DE DIVERTIRSE".
+
+```cpp
+// ================== MODO DISCO ==================
+  // Activado con botón del joystick
+  static int ultimo=HIGH;
+  int ahora = digitalRead(PIN_JOYSTICK_BOTON);
+  if(ultimo==HIGH && ahora==LOW){
+    modoDisco=!modoDisco;
+    tiempoUltimaActividad=millis();
+    if(modoDisco) actualizarLCD("N0 ES M0M3NT0","D3 DIV3RTIRS3", false);
+    mostrarLCD();
+    delay(200);
+  }
+  ultimo=ahora;
+
+  // Si está modo fiesta activo → dibujar colores locos
+  if(modoDisco){
+    tiempoUltimaActividad=millis();
+    dibujarMatrizDisco();
+    mostrarLCD();
+    delay(retrasoDisco);
+    return; // Se salta el resto para no mover el pixel escapado
+  }
+```
+
+### Joystick (direcciones)
+
+Permite mover el pixel escapado con el joystick (dirección invertida). Si el usuario mueve el joystick, el pixel escapado cambia su posición (o rebota si intenta entrar al hueco del pixel bloqueado).
+
+```cpp
+// ================== MOVER PIXEL ESCAPADO ==================
+  // Controlado por joystick (dirección invertida)
+// -------- MOVIMIENTO JOYSTICK + rebote --------
+  if(pixelEscapado>=0){
+    int x=obtenerX(pixelEscapado), y=obtenerY(pixelEscapado);
+    int nueva=x, nuevaY=y;
+
+    int vX=analogRead(PIN_JOYSTICK_X);
+    int vY=analogRead(PIN_JOYSTICK_Y);
+
+    // Registrar actividad del joystick para evitar reinicio si hay movimiento
+    if(vX > 520 || vX < 500 || vY > 520 || vY < 500){ 
+    tiempoUltimaActividad = millis(); 
+}
+
+    if(millis()-tiempoUltimoMovimiento>=retrasoMovimiento){
+      if(vX>800 && x>0) nueva=x-1;
+      else if(vX<200 && x<7) nueva=x+1;
+
+      if(vY>800 && y>0) nuevaY=y-1;
+      else if(vY<200 && y<7) nuevaY=y+1;
+
+      int indiceNuevo = obtenerIndice(nueva,nuevaY);
+
+      // rebote si intenta entrar al agujero
+      if(indiceNuevo==pixelBloqueado){
+        pixelEscapado = pixelBloqueado;
+        dibujarMatrizNormal();
+        delay(90); // 90 milis
+
+        int vecinos[4], cnt=0;
+        if(x<7) vecinos[cnt++]=obtenerIndice(x+1,y);
+        if(x>0) vecinos[cnt++]=obtenerIndice(x-1,y);
+        if(y<7) vecinos[cnt++]=obtenerIndice(x,y+1);
+        if(y>0) vecinos[cnt++]=obtenerIndice(x,y-1);
+
+        pixelEscapado = vecinos[random(cnt)];
+      } else {
+        pixelEscapado = indiceNuevo;
+      }
+
+      dibujarMatrizNormal();
+      tiempoUltimoMovimiento=millis();
+    }
+  }
+}
 ```
 
 #### Arduino secundario:
@@ -777,13 +858,32 @@ void loop() {
 
 ### Referentes de carcasa
 
-Primera fase: Segunda fase: 
+Primera fase: 
+|||
+|--|--|
+|<img src="./imagenes/RefAcrilico.JPG" alt="conexion" width="300"> | <img src="./imagenes/RefArcade01.JPG" alt="conexion" width="300">|
+|<img src="./imagenes/RefArcade02.JPG" alt="conexion" width="300"> |<img src="./imagenes/RefArcade03.JPG" alt="conexion" width="300"> |
 
-- La idea es utilizar corte láser y acrílico como materialidad principal. 
- 
+Segunda fase: 
+
+- La idea es utilizar corte láser y acrílico como materialidad principal.
+
+|||
+|--|--|
+|<img src="./imagenes/Neon-Fluorescent Acrylic Organizer_Pencil Case.jpeg" alt="conexion" width="300"> | <img src="./imagenes/Play Plax, 1970.jpeg" alt="conexion" width="300"> | 
+
 
 Links: 
 
+[referente](https://cl.pinterest.com/pin/198088083603835176/feedback/?invite_code=30fd10c56d244c36b8a9a41d281d5832&sender_id=661114557707883264)
+
+[referente](https://cl.pinterest.com/pin/23643966788418210/feedback/?invite_code=af42162fde36425c8c1192a8112cada6&sender_id=661114557707883264)
+
+[referente](https://cl.pinterest.com/pin/351912465989238/feedback/?invite_code=c9f2c30c64db4177b9bbfd99e3631143&sender_id=661114557707883264)
+
+[referente](https://cl.pinterest.com/pin/6896205672491507/)
+
+[referente](https://cl.pinterest.com/pin/7599893116105926/)
 
 ##  Organización proyecto
 
@@ -795,12 +895,18 @@ Carta Gant:
 
 ### Fotografías y videos del proyecto funcionando
 
+|||
+|--|--|
+|<img src="./imagenes/Proyectofinalizado.jpeg" alt="interiorCarcasa" width="300">| <img src="./imagenes/Proyectofinalizado4.jpeg" alt="interiorCarcasa" width="300">|
+
+
 ### Interior máquina 
 
 |||
 |--|--|
 |<img src="./imagenes/interiorCarcasa1.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa2.jpeg" alt="interiorCarcasa" width="300"> |
-|<img src="./imagenes/interiorCarcasa3.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa4.jpeg" alt="interiorCarcasa" width="300"> |
+|<img src="./imagenes/interiorCarcasa3.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa4.jpeg" alt="interiorCarcasa" width="300"> | <img src="./imagenes/interiorCarcasa1.jpeg" alt="conexion" width="300">|
+|<img src="./imagenes/interiorCarcasa2.jpeg" alt="conexion" width="300">|<img src="./imagenes/interiorCaraca3.jpeg" alt="conexion" width="300">|
 
 ## Bibliografía 
 
