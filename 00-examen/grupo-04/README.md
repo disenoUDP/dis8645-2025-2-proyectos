@@ -172,8 +172,8 @@ LINK MERMAID (porque no se ve completo y no sabemos porqué): [MERMAID DIAGRAMA 
 
 `PROPUESTA VISUAL`
 
-- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Piskel](https://www.piskelapp.com/)
-- Paleta de colores: tonos de celestes, verdes, azules, rosados, etcétera
+- Para la gráfica decidimos usar pixel art. Utilizamos la aplicación web [Pixilart](https://www.pixilart.com/)
+- Paleta de colores: tonos de celestes, verdes, azules, rosados, amarillos, etcétera
 - Tipografía: pixel-retro
 - Máquina física: control retro de la red atrapahadas, hecho con impresión 3D
 - Cursor: red atrapa hadas hecho con pixel art
