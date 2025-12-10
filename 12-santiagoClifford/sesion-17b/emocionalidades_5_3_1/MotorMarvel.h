@@ -10,7 +10,7 @@ public:
   int in2;
   bool abrazando;
   unsigned long inicioAbrazo = 0;
-unsigned long duracionAbrazo = 5000; // por ejemplo 800ms
+unsigned long duracionAbrazo = 6000; // por ejemplo 800ms
 unsigned long tiempo;
 
   MotorMarvel();

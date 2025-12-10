@@ -23,6 +23,8 @@ void ActuadorN3P::emitirAlarmaEstado1() {
     // if (tiempoActualAudio - tiempoNuevoEstado1 >= intervaloAudio) {
     int randomFile = random(0, 2);
     modulito.playFolder(1, randomFile);
+      Serial.println("audio1");
+
     audioReproduciendo = true;
     Serial.print("Reproduciendo archivo ");
     Serial.println(randomFile);

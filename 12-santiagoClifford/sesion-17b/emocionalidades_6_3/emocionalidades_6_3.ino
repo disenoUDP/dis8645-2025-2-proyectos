@@ -41,13 +41,13 @@ int estadoAnterior = -1;
 // parte en estado 0
 
 unsigned long inicioEstado1 = 0;
-unsigned long duracionEstado1 = 4000;
+unsigned long duracionEstado1 = 2000;
 unsigned long inicioEstado2 = 0;
-unsigned long duracionEstado2 = 6000;
+unsigned long duracionEstado2 = 2000;
 unsigned long inicioEstado3 = 0;
-unsigned long duracionEstado3 = 8000;
+unsigned long duracionEstado3 = 2000;
 unsigned long inicioEstado4 = 0;
-unsigned long duracionEstado4 = 10000;
+unsigned long duracionEstado4 = 8000;
 
 unsigned long momentoCambioEstado = 0;
 
@@ -68,11 +68,7 @@ void loop() {
   // si sensor de presion detecta presion, abrazar = true
   depresion.funcionaDePresion();
   hedgehog.funcionaSonic();
-  motoMoto.Setear();
-
-  motoMoto.actualizarAbrazo();
-
-
+  // motoMoto.Setear();
   //estadoAnterior = estadoActual;
   // actualizar lecturas de sensores
   // o detectar si es hora de volver a estado 0
@@ -106,6 +102,7 @@ void loop() {
       Serial.println("transicion -> estado 0_CALMAO (por presion)");
     }
   }
+
   if (estadoActual == 0) {
 
     Serial.println("ESTADO: 0_CALMAO");
@@ -122,7 +119,6 @@ void loop() {
   } else if (estadoActual != estadoAnterior && estadoActual == 1) {
     Serial.println(depresion.valorDePresion);
     Serial.println("ESTADO: 1_PEDIR_AMOR");
-inicioEstado1=millis();
 
     if (millis() - inicioEstado1 >= duracionEstado1) {
       estadoActual = 2;
@@ -158,75 +154,24 @@ inicioEstado1=millis();
     }
   }
 
-else if (estadoActual != estadoAnterior && estadoActual == 2) {
-  Serial.println("ESTADO: 2_PATALETA_LEVE");
-  inicioEstado2 = millis();
+  else if (estadoActual != estadoAnterior && estadoActual == 2) {
+    Serial.println("ESTADO: 2_PATALETA_LEVE");
+    inicioEstado2 = millis();
 
-  if (millis() - inicioEstado2 >= duracionEstado2) {
+    if (millis() - inicioEstado2 >= duracionEstado2) {
 
-    estadoActual = 3;
-  } else {
+      estadoActual = 3;
+    } else {
 
-    // emitir audio del estado 2
-    // emitir audio del estado 1
-    n3p.emitirAlarmaEstado2();
-    if (depresion.watitaRascada == true) {
-      Serial.print("WATOM");
-      // motoMoto.abrazar();
-      motoMoto.activarAbrazo();  //resetea el timer
+      // emitir audio del estado 2
+      // emitir audio del estado 1
+      n3p.emitirAlarmaEstado2();
 
-
-      Serial.println("transicion -> estado 0_CALMAO (por presion)");
-      // hedgehog.carinoPotencial=false;
-      // estadoAnterior = estadoActual;
-      estadoActual = 0;
-      // enEstado1 = false;
-    }
-  }
-}
-else if (estadoActual != estadoAnterior && estadoActual == 3) {
-  Serial.println("ESTADO: 3_PATALETA_BRIGIDA");
-  inicioEstado3 = millis();
-  if (millis() - inicioEstado3 >= duracionEstado3) {
-
-    estadoActual = 4;
-  } else {
-
-    // emitir audio del estado 2
-    // emitir audio del estado 1
-    n3p.emitirAlarmaEstado3();
-    if (depresion.watitaRascada == true) {
-      // motoMoto.abrazar();
-      motoMoto.activarAbrazo();  //resetea el timer
-
-      Serial.print("WATOM");
-
-
-      Serial.println("transicion -> estado 0_CALMAO (por presion)");
-      // hedgehog.carinoPotencial=false;
-      // estadoAnterior = estadoActual;
-      estadoActual = 0;
-      // enEstado1 = false;
-    }
-  }
-}
-else if (estadoActual != estadoAnterior && estadoActual == 4) {
-  Serial.println("ESTADO: 4_AUTODESTRUCCION");
-  inicioEstado4 = millis();
-
-  if (millis() - inicioEstado4 >= duracionEstado4) {
-
-    estadoActual = 0;
-  } else {
-
-    // emitir audio del estado 2
-    // emitir audio del estado 1
-    n3p.emitirAlarmaEstado4();
-    if (depresion.watitaRascada == true) {
-      Serial.print("WATOM");
-      if (motoMoto.abrazando == true) {
+      if (depresion.watitaRascada == true) {
+        Serial.print("WATOM");
         // motoMoto.abrazar();
         motoMoto.activarAbrazo();  //resetea el timer
+
 
         Serial.println("transicion -> estado 0_CALMAO (por presion)");
         // hedgehog.carinoPotencial=false;
@@ -235,8 +180,58 @@ else if (estadoActual != estadoAnterior && estadoActual == 4) {
         // enEstado1 = false;
       }
     }
+  } else if (estadoActual != estadoAnterior && estadoActual == 3) {
+    Serial.println("ESTADO: 3_PATALETA_BRIGIDA");
+    inicioEstado3 = millis();
+    if (millis() - inicioEstado3 >= duracionEstado3) {
+
+      estadoActual = 4;
+    } else {
+
+      // emitir audio del estado 2
+      // emitir audio del estado 1
+      n3p.emitirAlarmaEstado3();
+      if (depresion.watitaRascada == true) {
+        // motoMoto.abrazar();
+        motoMoto.activarAbrazo();  //resetea el timer
+
+        Serial.print("WATOM");
+
+
+        Serial.println("transicion -> estado 0_CALMAO (por presion)");
+        // hedgehog.carinoPotencial=false;
+        // estadoAnterior = estadoActual;
+        estadoActual = 0;
+        // enEstado1 = false;
+      }
+    }
+  } else if (estadoActual != estadoAnterior && estadoActual == 4) {
+    Serial.println("ESTADO: 4_AUTODESTRUCCION");
+    inicioEstado4 = millis();
+
+    if (millis() - inicioEstado4 >= duracionEstado4) {
+
+      estadoActual = 0;
+    } else {
+
+      // emitir audio del estado 2
+      // emitir audio del estado 1
+      n3p.emitirAlarmaEstado4();
+      if (depresion.watitaRascada == true) {
+        Serial.print("WATOM");
+        if (motoMoto.abrazando == true) {
+          // motoMoto.abrazar();
+          motoMoto.activarAbrazo();  //resetea el timer
+
+          Serial.println("transicion -> estado 0_CALMAO (por presion)");
+          // hedgehog.carinoPotencial=false;
+          // estadoAnterior = estadoActual;
+          estadoActual = 0;
+          // enEstado1 = false;
+        }
+      }
+    }
   }
-}
 }
 
 // si sensor de presion pasa de PRESION A NO PRESION
