@@ -1,6 +1,6 @@
-# **Grupo 06 Waos**
+# Grupo 06 Waos
 
-## **Integrantes**
+## Integrantes
 
 - Bernardita Jesús / [Bernardita-Jesus](https://github.com/Bernardita-Jesus)
 
@@ -14,15 +14,15 @@
 
 - Josefa Quape / [Joquape](https://github.com/Joquape)
 
-## **Examen** 
+## Examen 
 
-### **¿Qué es W.E.B.O?**
+### ¿Qué es W.E.B.O
 
 W.E.B.O la Entidad de Balance Ovoide, la paradoja del temporizador que no temporiza.
 
 Esta idea se desarrolló a partir de volver inconveniente lo conveniente.
 
-### **¿Qué es un temporizador?**
+### ¿Qué es un temporizador
 
 Es un dispositivo que permite medir el tiempo.
 
@@ -36,7 +36,7 @@ Un temporizador adecuado como el que se encuentra en un teléfono móvil, tiene 
 
 W.E.B.O es la respuesta a esta interrogante.
 
-### **¿Cómo funciona W.E.B.O?**
+### ¿Cómo funciona W.E.B.O
 
 Está pensado para una persona que necesita temporizar intervalos desde 5 segundos en adelante, según la demanda de su actividad.
 
@@ -45,7 +45,7 @@ Ella es la encargada de alertar el fin del temporizador, pero esto presenta cier
 
 Ava se aburre simplemente realizando la cuenta regresiva del temporizador, así que cada cierto tiempo, se pondrá a bailar, haciendo piruetas de una manera tan intensa que… WEBO se puede caer de lado(apoyo visual para mostrar lo que sucede), esto es muy malo, porque Ava detesta estar en esa posición, por lo que hará sonar una alarma de alto volumen, para avisarle al usuario que algo malo ocurrió.
 
-### **Sentimiento**
+### Sentimiento
 
 Entonces el sentimiento central del proyecto es **la frustración.**
 
@@ -59,19 +59,67 @@ Esto surge porque la alarma se convierte en una acusación de que el usuario fal
 
 WEBO transforma una acción simple en una experiencia molesta, mostrando cómo la frustración puede hacer que un **objeto útil se vuelva una carga**.
 
-### **Instrucciones de uso**
+### Instrucciones de uso
 
 - Usuario ve a WEBO.
+
+![usuario ve a WEBO](./imagenes/sebaViendoWEBO.jpeg)
+
+Acá se puede ver al usuario mirando a W.E.B.O.
+
+---
+
 - Necesita temporizar algo.
-- Presiona el botón .
-- Despierta a Ava .
-- Vuelve a presionar el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
-- Si Ava empieza a girar **evita** que se caiga o ladee. 
-- Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó.
-- Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
+
+![usuario ve que debe temporizar](./imagenes/sebaViendoHora.jpeg)
+
+El usuario necesita temporizar algo
+
+---
+- Presiona el botón.
+
+![usuario presiona botón](./imagenes/sebaPresionandoBoton.jpeg)
+
+Para activar a Ava el usuario presiona el botón
+
+---
+- Despierta a Ava.
+
+![GIF Ava durmiendo y despertando](./imagenes/AVADESPIERTA.gif)
+
+Muestra de la animación que ocurrirá al activar a Ava
+
+---
+- Mantener presionado el botón para definir el tiempo a temporizar (Los segundos agregados son de intervalos a partir de los 5).
+
+![usuario mantiene presionado el botón](./imagenes/sebaPresionandoBoton.jpeg)
+
+Para activar el temporizador el usuario sigue presionando el botón
+
+---
+- Si Ava empieza a girar evita que se caiga o ladee.
+
+![Lo que ocurre en el interior](./imagenes/desbalance.gif)
+
+Lo que ocurrira en el interior.
+
+![Lo que ocurre en el display](./imagenes/AVAGIRANDO.gif)
+
+Ava cuando se ponga a girar.
+
+---
+- Si esto ocurre, Ava va a empezar una alarma, que **NO** es la que anuncia que el tiempo acabó. Asegurarse que no se ladee hasta que termine el tiempo y suene la alarma.
+
+![Ava Molesta](./imagenes/AVAINDIGNADA.jpg)
+
+Imagen Ava molesta
+
+---
 - Repetir el proceso cada vez que quieras temporizar.
 
-### **Bill of Materials**
+---
+
+### Bill of Materials
 
 | Componente                        | Cantidad | Precio | Proveedor                                                               |
 |-----------------------------------|----------|--------|-------------------------------------------------------------------------|
@@ -96,7 +144,7 @@ WEBO transforma una acción simple en una experiencia molesta, mostrando cómo l
 
 **Presupuesto estimado total – $56.426** 
 
-### **Diagrama de flujo**
+### Diagrama de flujo esperado
 
 ``` mermaid
 ---
@@ -108,7 +156,7 @@ flowchart TB
     B -- Sí --> C{"Presionar botón"}
     B L_B_D_0@-- No --> D["No hace nada"]
     C --> E["Despierta Ava"]
-    E -- Para temporizar --> F{"presionar botón nuevamente"}
+    E -- Para temporizar --> F{"Mantener presionado el botón"}
     F -- La cuenta regresiva comienza a partir de los 5 seg --> G["Ava se aburre"]
     G -- Sí --> H["Comienza a bailar/girar"]
     G -- No --> I["Se queda en su posición"]
@@ -125,11 +173,9 @@ flowchart TB
     L_B_D_0@{ curve: linear }
 ```
 
-### **Fabricación**
+### Fabricación
 
-
-
-#### **Interface**
+#### Interfaz
 
 ![Ave del paraíso 1](./imagenes/AVEDELPARAISO-1.gif)
 
@@ -147,7 +193,7 @@ Ava puede sentir muchas emociones. Puede estar en un estado normal, dormir, habl
 
 ![Ava girando](./imagenes/AVAGIRANDO.gif) ![Ava saltando](./imagenes/AVASALTANDO.gif) ![Ava hablando](./imagenes/AVAHABLANDO.gif)
 
-### **Carcasa**
+### Carcasa
 
 #### Referentes y definición formal
 
@@ -215,7 +261,7 @@ Para esto realizamos un modelado exterior e interior y, a presión, se fue incor
 
 ![render](imagenes/alginato.jpeg)
 
-#### **Código**
+#### Código
 
 #### Sensores y actuadores
 
@@ -234,7 +280,7 @@ Mini parlante altavoz
 Luego de definir esto hablaremos de nuestro archivo .ino 
 
 ```cpp
-// Aquí pasan todas las interacciones entre todos los componentes
+// Aquí pasan todas las interacciones entre todos los componentes.
 
 #include "ActuadorDisplay.h"
 #include "ActuadorMotor.h"
@@ -242,7 +288,7 @@ Luego de definir esto hablaremos de nuestro archivo .ino
 #include "SensorTilt.h"
 #include "SensorSD.h"
 
-// sensor y actuador correspondientes
+// Sensores y actuadores correspondientes
 ActuadorDisplay actuadorDisplay;
 ActuadorMotor actuadorMotor;
 SensorBoton sensorBoton;
@@ -258,55 +304,57 @@ void setup() {
 }
 
 void loop() {
-  // Constantemente funciona el sensor de inclinación, de esto dependen casi todas las siguientes interacciones
+  // Constantemente funciona el sensor de inclinación; de esto dependen casi todas las siguientes interacciones.
   sensorTilt.funcionaTilt();
 
-  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
+  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca en el display sea correcto según los segundos actuales.
   sensorBoton.funcionaBoton();
 
-  // El display muestra a AVA celebrando, siempre y cuando el temporizador termina correctamente con 0 segundos
+  // El display muestra a AVA celebrando, siempre y cuando el temporizador termine correctamente con 0 segundos.
   actuadorDisplay.celebracionDisplay();
 
 
-  // Cuando no esta caido, osea:
+  // Cuando no está caído, o sea:
 
   //----------------------------------
-  //-------- WEBO ESTÁ PARADO --------
+  //-------- WEBO ESTA PARADO --------
   //----------------------------------
 
-  // Si es que el sensor de inclinación está hacia arriba, osea no inclinado
+  // Sí es que el sensor de inclinación está hacia arriba, o sea, no inclinado.
   if (!sensorTilt.caido) {
-    // El display muestra el tiempo restante en segundos, con AVA realizando al cuent regresiva
+    // El display muestra el tiempo restante en segundos, con AVA realizando la cuenta regresiva.
     actuadorDisplay.cuentaDisplay();
-    // Que el motor se active y se desactive en intervalos establecidos
+    // Que el motor se active y se desactive en intervalos establecidos.
     actuadorMotor.funcionaMotor();
-    // cuando el motor se activa y está girando, AVA también gira
+    // Cuando el motor se activa y está girando, AVA también gira.
     actuadorDisplay.girandoDisplay();
-    // Si es que el temporizador se cumple correctamente sonará la alarma débil
-    sensorSD.funcionaSDAlarmaDebil();
-    // Siempre y cuando el temporizador sea menor a 1 segundo y recién se va a empezar la interacción, o después de la celebración de AVA, ya que se cansa y se queda dormida
-  actuadorDisplay.duermeDisplay();
 
-  // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca el display sea correcto según los segundos actuales
-  sensorBoton.funcionaBoton();
+    // Siempre y cuando el temporizador sea menor a 1 segundo y recién se va a empezar la interacción, o después de la celebración de AVA, ya que se cansa y se queda dormida.
+    actuadorDisplay.duermeDisplay();
+
+    // El botón controla el pasar del tiempo, el poder aumentar el temporizador y que lo que aparezca en el display sea correcto según los segundos actuales.
+    sensorBoton.funcionaBoton();
+
+    if (segundosTiempo < 1 && !estadoDurmiendo) {
+      sensorSD.funcionaSDAlarmaFuerte();
+    }
   }
 
-  // Cuando está inclinado, osea:
+  // Cuando está inclinado, o sea:
 
   //----------------------------------
   //-------- WEBO ESTA CAIDO ---------
   //----------------------------------
 
   else {
-    // suena la pataleta y AVA está enojada porque se cayo
-    sensorSD.funcionaSDAlarmaFuerte();
+    // Suena la pataleta y AVA está enojada porque se cayó.
     actuadorDisplay.caidaDisplay();
+    sensorSD.funcionaSDAlarmaFuerte();
   }
-
-
+}
 ```
 
-#### **Complicaciones,  problemas y hallazgos**
+#### Complicaciones,  problemas y hallazgos
 
 El primer gran inconveniente que encontramos fue el reproductor mp3 mini, que a nivel de curso nos falló en numerosas ocasiones.
 
@@ -369,9 +417,6 @@ Lo que más destacamos fue conseguir que cambiara de estado de espera / durmiend
 - (S/f). Github.com. Recuperado el 6 de diciembre de 2025, de https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino 
 - Simple countdown timer. (2020, junio 28). Arduino Forum. https://forum.arduino.cc/t/simple-countdown-timer/662809/4 
 - No title. (s/f-b). Arduino.cc. Recuperado el 6 de diciembre de 2025, de https://docs.arduino.cc/built-in-examples/digital/Button/
-
-https://es.wikipedia.org/wiki/Game_Boy
-
-https://es.wikipedia.org/wiki/Game_%26_Watch
-
-https://es.wikipedia.org/wiki/Tamagotchi
+- Colaboradores de Wikipedia. (2025a, agosto 27). Game boy. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Game_Boy
+- Colaboradores de Wikipedia. (2025b, noviembre 8). Game & watch. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Game_%26_Watch 
+- Colaboradores de Wikipedia. (2025c, diciembre 2). Tamagotchi. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Tamagotchi
